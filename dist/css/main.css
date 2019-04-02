@@ -1,0 +1,632 @@
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerRegular/MullerRegular.eot");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLight/MullerLight.eot");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerMedium/MullerMedium.eot");
+  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBold/MullerBold.eot");
+  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+}
+
+::-webkit-input-placeholder {
+  color: #666;
+}
+
+::-moz-placeholder {
+  color: #666;
+}
+
+:-ms-input-placeholder {
+  color: #666;
+}
+
+::-ms-input-placeholder {
+  color: #666;
+}
+
+::placeholder {
+  color: #666;
+}
+
+::-moz-selection {
+  background-color: #e93333;
+  color: #fff;
+}
+
+::selection {
+  background-color: #e93333;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: "MullerRegular";
+  overflow-x: hidden;
+  color: #000000;
+  background-color: #F8F8F8;
+}
+
+body a {
+  outline: none;
+}
+
+body input, body textarea {
+  border: #666 1px solid;
+  outline: none;
+}
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {
+  border-color: red;
+}
+
+body input:required:valid, body textarea:required:valid {
+  border-color: green;
+}
+
+body .mm-wrapper__blocker {
+  z-index: 2000;
+}
+
+body .mm-menu_offcanvas {
+  z-index: 1000;
+}
+
+body .mm-panel {
+  background-color: #303030;
+  padding-top: 50%;
+}
+
+body .mm-panel ul.mm-listview li.mm-listitem {
+  padding-left: 30px;
+  border: none;
+}
+
+body .mm-panel ul.mm-listview li.mm-listitem a.mm-listitem__text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 22px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .mm-panel ul.mm-listview .line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-left: 0;
+}
+
+body .mm-panel ul.mm-listview .line.mm-listitem::after {
+  left: 0;
+  background-color: #fff;
+}
+
+body .mm-panel ul.mm-listview li.mm-listitem::after {
+  display: none;
+}
+
+body .mm-panel ul.mm-listview li.mm-listitem:hover a.mm-listitem__text {
+  color: #ff2c2d;
+}
+
+body .mm-panel ul.mm-listview li.mm-listitem.mm-listitem_selected a.mm-listitem__text {
+  background-color: transparent;
+}
+
+body header.container-fluid {
+  background-color: #212121;
+  padding: 30px 0;
+}
+
+body header.container-fluid .menu {
+  padding-left: 47.5px;
+}
+
+body header.container-fluid .menu .circle {
+  position: relative;
+  z-index: 1500;
+  cursor: pointer;
+  background-color: #ff1c1c;
+  width: 66px;
+  height: 66px;
+  outline: none;
+}
+
+body header.container-fluid .menu .hamburger {
+  outline: none;
+}
+
+body header.container-fluid .menu .hamburger .hamburger-box {
+  width: 35px;
+}
+
+body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner,
+body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner::after,
+body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner::before {
+  background-color: #fff;
+  width: 35px;
+}
+
+body header.container-fluid .menu .hamburger:hover, body header.container-fluid .menu .hamburger.is-active:hover {
+  opacity: 1;
+}
+
+body header.container-fluid .logo .textLogo {
+  line-height: 1.2;
+  margin-left: 10px;
+}
+
+body header.container-fluid .logo .textLogo span {
+  color: #fff;
+}
+
+body header.container-fluid .logo .textLogo span.name {
+  letter-spacing: 3px;
+  font-family: 'MullerExtraBold';
+  text-transform: uppercase;
+  font-size: 26.53px;
+}
+
+body header.container-fluid .logo .textLogo span.desc {
+  font-family: 'MullerRegular';
+  font-size: 15px;
+}
+
+body header.container-fluid .adress .circleAdress {
+  width: 54px;
+  height: 54px;
+  background-color: transparent;
+  border: 1px solid #616161;
+}
+
+body header.container-fluid .adress span.desc {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #eaeaea;
+  line-height: 1.2;
+  margin-left: 24px;
+}
+
+body header.container-fluid .socials .social {
+  cursor: pointer;
+  width: 54px;
+  height: 54px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body header.container-fluid .socials .social.Vk {
+  background-color: transparent;
+  border: 1px solid #616161;
+}
+
+body header.container-fluid .socials .social.Fb, body header.container-fluid .socials .social.Inst {
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px solid #616161;
+}
+
+body header.container-fluid .socials .social:hover {
+  background-color: #FF2F2F;
+  border: 1px solid #FF2F2F;
+}
+
+body header.container-fluid .phoneCont {
+  padding-right: 54px;
+}
+
+body header.container-fluid .phoneCont .circlePhone {
+  background-color: #fff;
+  width: 54px;
+  height: 54px;
+  margin-right: 20px;
+}
+
+body header.container-fluid .phoneCont .text {
+  position: relative;
+  top: 2px;
+  line-height: 1.2;
+}
+
+body header.container-fluid .phoneCont .text span {
+  color: #fff;
+}
+
+body header.container-fluid .phoneCont .text span.phone {
+  line-height: 1.35;
+  font-family: 'MullerBold';
+  font-size: 22px;
+}
+
+body header.container-fluid .phoneCont .text span.desc {
+  font-family: 'MullerRegular';
+  font-size: 14px;
+}
+
+body footer.container-fluid {
+  background-color: #fff;
+  padding: 78px 0;
+}
+
+body footer.container-fluid .logoFooter {
+  padding-left: 57.5px;
+}
+
+body footer.container-fluid .logoFooter .imgLogo {
+  position: relative;
+  top: -6px;
+}
+
+body footer.container-fluid .logoFooter .textLogo {
+  margin-left: 5px;
+  line-height: 0.85;
+}
+
+body footer.container-fluid .logoFooter .textLogo span {
+  color: #000;
+}
+
+body footer.container-fluid .logoFooter .textLogo span.name {
+  line-height: 1.25;
+  text-transform: uppercase;
+  font-family: 'MullerExtraBold';
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+body footer.container-fluid .logoFooter .textLogo span.desc {
+  font-family: 'MullerLight';
+  font-size: 12px;
+}
+
+body footer.container-fluid .adress {
+  padding-left: 60px;
+}
+
+body footer.container-fluid .adress .circleAdress {
+  width: 54px;
+  height: 54px;
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+body footer.container-fluid .adress span.desc {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #000;
+  line-height: 1.2;
+  margin-left: 24px;
+}
+
+body footer.container-fluid .socials {
+  padding-left: 100px;
+}
+
+body footer.container-fluid .socials .social {
+  cursor: pointer;
+  width: 54px;
+  height: 54px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body footer.container-fluid .socials .social.Vk {
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+body footer.container-fluid .socials .social.Fb, body footer.container-fluid .socials .social.Inst {
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+body footer.container-fluid .socials .social:hover {
+  background-color: #FF2F2F;
+  border: 1px solid #FF2F2F;
+}
+
+body footer.container-fluid .phoneCont {
+  padding-right: 54px;
+}
+
+body footer.container-fluid .phoneCont .circlePhone {
+  background-color: transparent;
+  border: 1px solid #000;
+  width: 54px;
+  height: 54px;
+  margin-right: 20px;
+}
+
+body footer.container-fluid .phoneCont .text {
+  position: relative;
+  top: 2px;
+  line-height: 1.2;
+}
+
+body footer.container-fluid .phoneCont .text span {
+  color: #000;
+}
+
+body footer.container-fluid .phoneCont .text span.phone {
+  line-height: 1.35;
+  font-family: 'MullerBold';
+  font-size: 22px;
+}
+
+body footer.container-fluid .phoneCont .text span.desc {
+  font-family: 'MullerRegular';
+  font-size: 14px;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-responsive.img-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1600px) {
+  body header.container-fluid .menu {
+    padding-left: 24px;
+  }
+  body header.container-fluid .phoneCont {
+    padding-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  body footer.container-fluid .adress {
+    padding-left: 10px;
+  }
+  body footer.container-fluid .phoneCont {
+    padding-right: 15px;
+  }
+  body footer.container-fluid .logoFooter {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  body header.container-fluid .menu, body header.container-fluid .logo, body header.container-fluid .adress, body header.container-fluid .socials, body header.container-fluid .phoneCont {
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+  }
+  body header.container-fluid .adress {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  body header.container-fluid .adress span.desc {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  body header.container-fluid .socials .social {
+    width: 48px;
+    height: 48px;
+  }
+  body header.container-fluid .phoneCont {
+    padding-right: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  body header.container-fluid .phoneCont .circlePhone {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  body header.container-fluid .menu {
+    padding-left: 15px;
+  }
+  body footer.container-fluid .logoFooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+  }
+  body footer.container-fluid .logoFooter .imgLogo {
+    top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  body footer.container-fluid .logoFooter .textLogo {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  body header.container-fluid .menu, body header.container-fluid .logo, body header.container-fluid .adress, body header.container-fluid .socials, body header.container-fluid .phoneCont {
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  body header.container-fluid .socials {
+    display: none !important;
+  }
+  body footer.container-fluid .phoneCont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+  }
+  body footer.container-fluid .phoneCont .circlePhone {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+  }
+  body footer.container-fluid .adress {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+  }
+  body footer.container-fluid .adress .circleAdress {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  body footer.container-fluid .adress span.desc {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body footer.container-fluid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  body footer.container-fluid .logoFooter {
+    margin-bottom: 10px;
+  }
+  body footer.container-fluid .logoFooter .imgLogo {
+    margin-bottom: 10px;
+  }
+  body footer.container-fluid .phoneCont .circlePhone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  body footer.container-fluid .socials {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body header.container-fluid .adress {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body header.container-fluid .phoneCont {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body header.container-fluid .menu .circle {
+    width: 60px;
+    height: 60px;
+  }
+  body header.container-fluid .menu .circle .line {
+    width: 26.5px;
+  }
+  body header.container-fluid .logo .textLogo span.name {
+    font-size: 22px;
+  }
+  body header.container-fluid .logo .textLogo span.desc {
+    font-size: 13px;
+  }
+  body header.container-fluid .logo .imgLogo svg {
+    height: 32px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  body footer.container-fluid .container .adress .circleAdress, body header.container-fluid .container .adress .circleAdress {
+    margin-left: 0;
+  }
+  body footer.container-fluid .container .adress span.desc, body header.container-fluid .container .adress span.desc {
+    margin-left: 10px;
+  }
+}
