@@ -1,0 +1,1228 @@
+body
+	position: relative
+	.scroll
+		transition: 1s
+		cursor: pointer
+		position: fixed
+		z-index: 200
+		bottom: 45px
+		left: 50px
+		.text
+			text-transform: uppercase
+			color: #fff
+			font-family: 'MullerMedium'
+			font-size: 11px
+			text-shadow: 0 0 15px #000
+			transform: rotate(-90deg) translate(45px, -17px)
+		.circle
+			border-width: 1px
+			border-color: rgba(32, 32, 32, 0.2)
+			border-style: solid
+			border-radius: 50%
+			width: 60px
+			height: 60px
+			margin-top: 15px
+			.mouse
+				position: relative
+				border-width: 2px
+				border-color: #ff2e2f
+				border-style: solid
+				background-color: transparent
+				width: 21.5px
+				height: 27.5px
+				border-radius: 10px
+				.weel
+					position: absolute
+					bottom: 5px
+					left: 0
+					right: 0
+					margin: auto
+					background-color: #ff2e2f
+					width: 5px
+					height: 5px
+					border-radius: 50%
+					animation-name: scroll
+					animation-duration: 1.5s
+					animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500)
+					animation-iteration-count: infinite
+				@keyframes scroll 
+					0%, 20% 
+						transform: translateY(0) scaleY(1)
+					10% 
+						opacity: 1
+					100% 
+						transform: translateY(20px) scaleY(2)
+						opacity: 0.01
+					
+
+	.head
+		line-height: 1.2
+		font-family: 'MullerExtraBold'
+		font-size: 42px
+		color: #262626
+		.red
+			color: #e83333
+	.red
+		color: #e83333
+	footer
+		.socials
+			a.social
+				svg, path
+					transition: 0.5s
+			a.social:hover
+				svg, path
+					fill: #fff
+	header.container-fluid
+		overflow: hidden
+		position: relative
+		background-image: url("../img/be/be-header-bg.jpg")
+		background-size: cover
+		background-position: top center
+		background-repeat: no-repeat
+		nav
+			background-color: transparent
+			.logo, .adress, .socials, .phoneCont
+				position: relative
+				z-index: 20
+			.logo
+				.textLogo
+					span.name, span.desc
+						color: #000
+			.adress
+				span.desc
+					color: #000
+				.circleAdress
+					background-color: #fff
+					border: 1px solid rgba(32, 32, 32, 0.1)
+					svg, path
+						fill: #FF2A2B
+			.socials
+				a.social.Vk,
+				a.social.Fb,
+				a.social.Inst
+					border: 1px solid rgba(255, 255, 255, 0.2)
+					svg, path
+						transition: 0.5s
+				a.social:hover
+					background-color: #fff
+					border-color: #fff
+					svg, path
+						fill: #FF2A2B
+		img.imgC
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			z-index: 100
+			margin: auto
+			pointer-events: none
+		.content
+			padding-top: 195px
+			padding-bottom: 195px
+			p.desc
+				position: relative
+				z-index: 1
+				font-family: 'MullerMedium'
+				font-size: 24px
+				color: #000
+				line-height: 1.3
+			p.desc::before
+				content: ''
+				background-color: rgb(255, 46, 47)
+				position: absolute
+				width: 66px
+				height: 4px
+				top: 10px
+				left: -95px
+			.bottom
+				padding-top: 185px
+				.wrap
+					position: relative
+					.circleSm
+						position: absolute
+						top: -70px
+						left: -70px
+						width: 310px
+						height: 310px
+						border: 1px solid #ECECEC
+						background-color: transparent
+						border-radius: 50%
+					.circleMd
+						position: absolute
+						top: -150px
+						left: -150px
+						width: 470px
+						height: 470px
+						border: 1px solid #ECECEC
+						background-color: transparent
+						border-radius: 50%
+					.circleLg
+						position: absolute
+						top: -250px
+						left: -250px
+						width: 670px
+						height: 670px
+						border: 1px solid #ECECEC
+						background-color: transparent
+						border-radius: 50%
+					img.iconBg
+						position: absolute
+						top: -95px
+						right: -60px
+					.button
+						transition: 0.5s
+						animation: pulsation 2s infinite
+						overflow: hidden
+						position: relative
+						cursor: pointer
+						border-radius: 50%
+						background-color: rgb(255, 46, 47)
+						box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31)
+						width: 170px
+						height: 170px
+						span
+							font-family: 'MullerExtraBold'
+							font-size: 18px
+							color: #fff
+							text-transform: uppercase
+						svg
+							transition: 0.5s
+							position: absolute
+							bottom: -15px
+							right: 0
+							left: 25px
+							margin: auto
+					@keyframes pulsation
+						0%
+							box-shadow: 0 0 200px rgba(255, 44, 45, 0.9)
+						70%
+							box-shadow: 0 0 0 200px rgba(255, 44, 45, 0)
+						100% 
+							box-shadow: 0 0 0 0 rgba(255, 44, 46, 0)
+					.button:hover
+						animation: none
+						box-shadow: 0 0 200px rgba(255, 44, 45, 0.9)
+						svg
+							opacity: 0
+				.circle
+					border-radius: 50%
+					background-color: rgb(255, 46, 47)
+					width: 122px
+					height: 122px
+					position: relative
+					.fantom
+						position: absolute
+						border-radius: 50%
+						background-color: rgba(255, 46, 46, 0.071)
+						width: 170px
+						height: 170px
+					span
+						font-family: 'MullerExtraBold'
+						font-size: 60px
+						color: #fff
+				.text
+					margin-left: 10px
+					.subText
+						background-color: #fff
+						border-radius: 13.5px
+						font-family: 'MullerExtraBold'
+						font-size: 14px
+						color: #000
+						text-transform: uppercase
+						display: inline-block
+						padding-top: 3px
+						padding-bottom: 3px
+						padding-left: 15px
+						padding-right: 15px
+					span.month
+						font-family: 'MullerExtraBold'
+						font-size: 32px
+						color: #fff
+						text-transform: uppercase
+	main
+		overflow-x: hidden
+		section.purpose
+			position: relative
+			z-index: 30
+			padding-top: 130px
+			padding-bottom: 130px
+			background-image: url('../img/be/be-purpose-bg.jpg')
+			background-size: cover
+			background-repeat: no-repeat
+			.headblock	
+				position: relative
+				span.head
+					font-family: 'MullerExtraBold'
+					font-size: 40px
+					color: #fff
+					position: relative
+				span.head::before
+					content: ''
+					position: absolute
+					top: 12.5px
+					left: -90px
+					background-color: rgb(255, 46, 47)
+					width: 56px
+					height: 4px
+				p.desc
+					margin-top: 30px
+					color: #fff
+					font-family: 'MullerLight'
+					font-size: 17px
+			img.fotoBg
+				margin-left: 50px
+				margin-top: -55px
+			.wrap
+				position: relative
+				width: 100%
+				.rightB
+					position: absolute
+					top: 200px
+					right: -150px
+					line-height: 1.3
+					.text
+						font-family: 'MullerMedium'
+						font-size: 18px
+						color: #fff
+						margin-bottom: 40px
+					.line
+						position: absolute
+						bottom: 40px
+						left: -35px
+						width: 2px
+						height: 50px
+						background-color: #6dcef5
+				.step
+					text-align: center
+					.number
+						text-align: center
+						color: #fff
+						font-family: 'MullerMedium'
+						font-size: 17px
+					.separ
+						margin-top: 15px
+						margin-bottom: 35px
+						border-width: 1px
+						border-color: rgba(255, 255, 255, 0.302)
+						border-style: dashed
+						background-color: transparent
+						height: 0
+						position: relative
+					.separ::after, .separ::before
+						content: ''
+						border-radius: 50%
+						width: 10px
+						height: 10px
+						background-color: #fff
+						position: absolute
+						top: 0
+						bottom: 0
+						margin: auto
+
+					.separ::before
+						left: 0
+					.separ::after
+						right: 0
+					span.name
+						line-height: 1.3
+						color: #fff
+						font-family: 'MullerBold'
+						font-size: 20px
+					p.desc
+						letter-spacing: 1.7px
+						margin-top: 10px
+						margin-bottom: 20px
+						font-size: 13px
+						font-family: "MullerMedium"
+						color: rgba(255, 255, 255, 0.4)
+						text-transform: uppercase
+						text-align: center
+					.text	
+						text-align: left
+						span.name
+							line-height: 1.4
+							font-family: 'MullerBold'
+							font-size: 22px
+							color: #fff
+							text-align: left
+						p.desc
+							font-family: 'MullerLight'
+							font-size: 16px
+							color: #fff
+							margin-top: 15px
+							line-height: 1.3
+							text-align: left
+							text-transform: none
+					.button
+						cursor: pointer
+						background-color: transparent
+						border-width: 2px
+						border-color: #ff2e2f
+						border-style: solid
+						width: 194px
+						height: 56px
+						border-radius: 30px
+						transition: 0.3s
+						span
+							color: #fff
+							font-family: 'MullerMedium'
+							font-size: 16px
+					.button:hover
+						background-color: #ff2e2f
+						border-color: #ff2e2f
+
+
+				.step1
+					margin-top: 160px
+					.circle
+						overflow: hidden
+						position: relative
+						z-index: 1
+						flex-direction: column
+						border-radius: 50%
+						background-color: rgb(255, 46, 47)
+						width: 148px
+						height: 148px
+						.block
+							margin-bottom: 5px
+							span
+								text-transform: uppercase
+							span.thin
+								font-family: 'MullerRegular'
+								font-size: 10px
+								color: #fff
+							span.fat
+								font-family: 'MullerBold'
+								font-size: 17px
+								color: #fff
+						.skyBg
+							position: absolute
+							z-index: -1
+							bottom: -60px
+							width: 100%
+							height: 50%
+							background-color: #00CFF7
+					.separ
+						position: relative
+						span.month
+							position: absolute
+							left: -90px
+							top: -7px
+							font-size: 12px
+							font-family: "MullerMedium"
+							color: rgba(255, 255, 255, 0.4)
+							text-transform: uppercase
+
+					.text
+						p.desc
+							max-width: 148px
+					.number
+						margin-top: 35px
+					.button
+						width: 100%
+				.step2
+					margin-top: 120px
+					.circle
+						overflow: hidden
+						position: relative
+						z-index: 1
+						flex-direction: column
+						border-radius: 50%
+						background-color: rgb(255, 46, 47)
+						width: 188px
+						height: 188px
+						.block
+							margin-bottom: 7.5px
+							span
+								text-transform: uppercase
+							span.thin
+								font-family: 'MullerRegular'
+								font-size: 10px
+								color: #fff
+							span.fat
+								font-family: 'MullerBold'
+								font-size: 15px
+								color: #fff
+						.skyBg
+							position: absolute
+							z-index: -1
+							bottom: -60px
+							width: 100%
+							height: 50%
+							background-color: #00CFF7
+					.number
+						margin-top: 35px
+					.text
+						p.desc
+							max-width: 188px
+					.button
+						width: 100%
+				.step3
+					margin-top: 50px
+					.circle
+						overflow: hidden
+						position: relative
+						z-index: 1
+						flex-direction: column
+						border-radius: 50%
+						background-color: rgb(255, 46, 47)
+						width: 229px
+						height: 229px
+						.block
+							margin-bottom: 10px
+							span
+								line-height: 2
+								text-transform: uppercase
+							span.thin
+								font-family: 'MullerRegular'
+								font-size: 10px
+								color: #fff
+							span.fat
+								font-family: 'MullerBold'
+								font-size: 15px
+								color: #fff
+						.skyBg
+							position: absolute
+							z-index: -1
+							bottom: -60px
+							width: 100%
+							height: 50%
+							background-color: #00CFF7
+					.number
+						margin-top: 35px
+					.text
+						p.desc
+							max-width: 229px
+				.step4
+					.circle
+						overflow: hidden
+						position: relative
+						z-index: 1
+						flex-direction: column
+						border-radius: 50%
+						background-color: rgb(255, 46, 47)
+						width: 279px
+						height: 279px
+						.block
+							margin-bottom: 12.5px
+							span
+								line-height: 2.2
+								text-transform: uppercase
+							span.thin
+								font-family: 'MullerRegular'
+								font-size: 10px
+								color: #fff
+							span.fat
+								font-family: 'MullerBold'
+								font-size: 15px
+								color: #fff
+						.skyBg
+							position: absolute
+							z-index: -1
+							bottom: -60px
+							width: 100%
+							height: 50%
+							background-color: #00CFF7
+					.number
+						margin-top: 15px
+					.text
+						p.desc
+							max-width: 279px
+		section.first
+			position: relative
+			.circleBg
+				position: absolute
+				right: -425px
+				bottom: -357.5px
+				z-index: 9999
+				border-width: 1px
+				border-color: rgba(255, 255, 255, 0.302)
+				border-style: solid
+				border-radius: 50%
+				width: 892px
+				height: 892px
+				pointer-events: none
+			.numbers
+				background-image: url('../img/be/be-first-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				padding-bottom: 75px
+				.question
+					position: absolute
+					top: -115px
+					left: 0
+					right: 0
+					margin: auto
+					border-radius: 50%
+					background-color: rgb(255, 46, 47)
+					box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31)
+					width: 230px
+					height: 230px
+					z-index: 40
+					text-align: center
+					span
+						line-height: 1.4
+						font-family: 'MullerBold'
+						font-size: 24px
+						color: #fff
+				img.questionBg
+					position: absolute
+					top: -215px
+					left: -15px
+					right: 0
+					z-index: 30
+					margin: auto
+					pointer-events: none
+
+				.aboutNumbers
+					padding-top: 190px
+					.headblock
+						position: relative
+						span.head
+							position: relative
+						span.head::before
+							content: ''
+							position: absolute
+							top: 12.5px
+							left: -135px
+							background-color: rgb(255, 46, 47)
+							width: 69px
+							height: 6px
+						span.number
+							position: absolute
+							top: -32.5px
+							left: -90px
+							font-size: 70px
+							font-family: 'MullerBold'
+							color: rgba(0, 0, 0, 0.102)
+				.points
+					padding-top: 75px
+					.point
+						line-height: 1.2
+						span.big
+							font-family: 'MullerBold'
+							font-size: 84px
+							color: #ff2e2f
+						span.desc
+							font-family: 'MullerRegular'
+							font-size: 20px
+							color: #313131
+					.slashLine
+						background-color: rgb(0, 0, 0)
+						opacity: 0.102
+						width: 1px
+						height: 150px
+						transform: rotate(20deg)
+			.points
+				position: relative
+				img.mask 
+					position: absolute
+					top: 0
+					bottom: 0
+					height: 100%
+					left: 5%
+					z-index: 30
+					pointer-events: none
+				.content
+					padding-top: 120px
+					padding-bottom: 75px
+					span.head, ul, .arrows
+						z-index: 30
+						position: relative
+					ul
+						padding-top: 50px
+						padding-left: 0
+						margin-left: -15px
+						margin-bottom: 195px
+						list-style: none
+						li
+							img.icon
+								width: 55px
+								height: auto
+							p.desc
+								margin-left: 25px
+								font-family: 'MullerRegular'
+								font-size: 17px
+								color: #313131
+								max-width: 85%
+					.arrows
+						.arrow
+							cursor: pointer
+							transition: 0.3s
+							border-width: 2px
+							border-color: rgb(53, 56, 59)
+							border-style: solid
+							border-radius: 50%
+							width: 50px
+							height: 50px
+							margin-right: 15px
+							svg, path
+								transition: 0.15s
+						.arrow:hover
+							background-color: #ff2e2f
+							border-color: #ff2e2f
+							svg, path
+								fill: #fff
+						p.desc
+							user-select: none
+							font-family: 'MullerRegular'
+							font-size: 15px
+							color: #919191
+							margin-bottom: 0
+							margin-left: 15px
+							line-height: 1.3
+				.csl
+					width: 75%
+					height: 100%
+					overflow-y: hidden
+					position: absolute
+					top: 0
+					right: 0
+					z-index: 10
+					img
+						position: relative
+						z-index: 10
+						margin: 0
+						padding: 0
+						outline: none
+						filter: brightness(65%)
+				.counter
+					position: absolute
+					bottom: 80px
+					right: 130px
+					z-index: 30
+					background-image: url('../img/be/be-first-carousel-counter.png')
+					background-size: cover
+					background-repeat: no-repeat
+					width: 160px
+					height: 160px
+					span.single
+						font-family: 'MullerBold'
+						font-size: 28px
+						color: #000
+						margin-bottom: 25px
+					span.all
+						font-family: 'MullerMedium'
+						font-size: 15px
+						margin-top: 20px
+						margin-left: 10px
+						color: #000
+					.line
+						background-color: #ff2e2f
+						width: 2px
+						height: 20px
+						margin-left: 10px
+						transform: rotate(20deg)
+		section.second
+			.header
+				background-image: url('../img/be/be-second-header-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				padding-top: 125px
+				.container
+					position: relative
+					img.imgPos
+						transition: 0.3s
+						position: absolute
+						bottom: -225px
+						right: 100px
+						z-index: 100
+					.headblock
+						position: relative
+						span.head
+							position: relative
+							color: #fff
+							span.red
+								color: #ff2e2f
+						span.head::before
+							content: ''
+							position: absolute
+							top: 12.5px
+							left: -160px
+							background-color: #ff2e2f
+							width: 69px
+							height: 6px
+						span.number
+							position: absolute
+							top: -32.5px
+							left: -115px
+							font-size: 70px
+							font-family: 'MullerBold'
+							color: rgba(255, 255, 255, 0.051)
+					.fact
+						padding-top: 35px
+						padding-bottom: 35px
+						.procent
+							display: inline-flex
+							font-family: 'MullerBold'
+							font-size: 84px
+							color: #fff
+							.red
+								color: #ff2e2f
+						p.desc
+							font-family: 'MullerRegular'
+							font-size: 22px
+							color: #fff
+							margin-left: 40px
+			.content
+				position: relative
+				background-color: #fff
+				padding-top: 130px
+				padding-bottom: 150px
+				img.bg
+					position: absolute
+					right: 0
+					top: 0
+					height: 100%
+					opacity: 0
+					transition: 0.5s
+				img.bg#content-bg1
+					opacity: 1
+				span.head
+					font-size: 37.5px
+					color: #313131
+				p.desc
+					font-family: 'MullerLight'
+					font-size: 17px
+					color: #313131
+					margin-top: 30px
+				ul
+					list-style: none
+					padding-left: 0
+					padding-top: 30px
+					li 
+						margin-bottom: 15px
+						cursor: pointer
+						p.text
+							font-family: 'MullerRegular'
+							font-size: 18px
+							color: #313131
+							text-decoration: underline
+							margin-left: 15px
+							margin-bottom: 0
+							transition: 0.3s
+						.circle
+							border-width: 1px
+							border-color: #EAEAEA
+							border-style: solid
+							border-radius: 50%
+							background-color: rgb(255, 255, 255)
+							width: 113px
+							height: 113px
+							transition: 0.3s
+							img
+								transition: 0.3s
+								filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4)
+					li:hover
+						.circle
+							border-color: #ff3334
+							background-color: #ff3334
+							img 
+								filter: none
+						p.text
+							font-family: 'MullerBold'
+							text-decoration: none
+		section.third
+			.header
+				padding-top: 120px
+				padding-bottom: 120px
+				background-image: url('../img/be/be-third-header-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				.container
+					.headblock
+						position: relative
+						span.head
+							position: relative
+							color: #fff
+							span.red
+								color: #ff3334
+						span.head::before
+							content: ''
+							position: absolute
+							top: 12.5px
+							left: -160px
+							background-color: rgb(255, 51, 52)
+							width: 69px
+							height: 6px
+						span.number
+							position: absolute
+							top: -32.5px
+							left: -115px
+							font-size: 70px
+							font-family: 'MullerBold'
+							color: rgba(255, 255, 255, 0.102)
+			.content
+				position: relative
+				z-index: 10
+				padding-bottom: 100px
+				padding-top: 100px
+				background-color: #fff
+				background-image: url('../img/be/be-third-content-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				background-position: top center
+				.container
+					ul
+						margin-top: 55px
+						list-style: none
+						padding-left: 0
+						li
+							margin-bottom: 40px
+							p.desc
+								font-family: 'MullerRegular'
+								font-size: 17px
+								color: #313131
+								margin-left: 30px
+								margin-bottom: 0
+							img
+								width: 45px
+
+		section.fourth
+			.header
+				position: relative
+				z-index: 20
+				padding-top: 120px
+				padding-bottom: 45px
+				background-image: url('../img/be/be-fourth-header-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				.container
+					.headblock
+						position: relative
+						span.head
+							position: relative
+							color: #fff
+							span.red
+								color: #ff2e2f
+						span.head::before
+							content: ''
+							position: absolute
+							top: 12.5px
+							left: -160px
+							background-color: #ff2e2f
+							width: 69px
+							height: 6px
+
+						span.number
+							position: absolute
+							top: -32.5px
+							left: -115px
+							font-size: 70px
+							font-family: 'MullerBold'
+							color: rgba(255, 255, 255, 0.102)
+					.slash
+						background-color: rgb(255, 255, 255)
+						opacity: 0.2
+						height: 120px
+						width: 1px
+						transform: rotate(15deg)
+					.infblock
+						line-height: 1.2
+						padding-right: 50px
+						span.name
+							font-size: 80px
+							color: #fff
+							font-family: 'MullerBold'
+							span.red
+								color: #ff2e2f
+						p.desc
+							font-family: 'MullerRegular'
+							font-size: 18px
+							color: #fff
+			.content
+				position: relative
+				z-index: 1
+				background-color: #F3F4F5
+				padding-top: 170px
+				padding-bottom: 75px
+				.circleBgT, .circleBgB
+					position: absolute
+					border-width: 1px
+					border-color: rgba(0, 0, 5, 0.102)
+					border-style: solid
+					border-radius: 50%
+					z-index: -1
+					pointer-events: none
+				.circleBgT
+					top: -465px
+					left: -200px
+					width: 1001px
+					height: 1001px
+				.circleBgB
+					bottom: -365px
+					right: -475px
+					width: 923px
+					height: 923px
+					border-color: rgba(134, 134, 134, 0.2)
+				.wrap
+					position: relative
+					.step3
+						img.posImg
+							position: absolute
+							bottom: -100px
+							right: -150px
+							z-index: -1
+						.numberBg
+							bottom: -120px
+							left: -135px
+						.bg
+							mask-image: url('../img/be/be-fourth-content-step-mask3.png')
+					.step2
+						img.posImg
+							position: absolute
+							top: -160px
+							left: -180px
+							z-index: -1
+						.numberBg
+							right: -165px
+							bottom: -120px
+						.bg
+							mask-image: url('../img/be/be-fourth-content-step-mask2.png')
+					.step1
+						.numberBg
+							top: -120px
+							left: -135px
+						.bg
+							mask-image: url('../img/be/be-fourth-content-step-mask1.png')
+					.step:hover
+						box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33)
+						.bg
+							.fillred
+								opacity: 0.5
+					.step
+						transition: 0.5s
+						position: relative
+						padding-left: 80px
+						padding-top: 50px
+						padding-bottom: 70px
+						background-color: #fff
+						width: 100%
+						margin-bottom: 110px
+						.numberBg
+							font-size: 200px
+							font-family: "MullerBold"
+							color: rgba(0, 0, 0, 0.071)
+							position: absolute
+							z-index: -1
+							transform: rotate(-90deg)
+						.bg
+							pointer-events: none
+							position: absolute
+							top: 0
+							bottom: 0
+							right: 0
+							height: 100%
+							width: 100%
+							z-index: 20
+							mask-size: cover
+							mask-position: right 
+							img
+								position: absolute
+								top: 0
+								bottom: 0
+								right: 0
+								height: 100%
+							.fillred
+								pointer-events: none
+								transition: 0.5s
+								position: absolute
+								top: 0
+								bottom: 0
+								right: 0
+								height: 100%
+								width: 100%
+								opacity: 0
+								background-color: #ff2e2f
+						.headblock
+							span.head
+								font-size: 32px
+								font-family: 'MullerExtraBold'
+								color: #000
+							span.number
+								font-family: 'MullerBold'
+								font-size: 24px
+								color: #ff2e2f
+							.slash
+								background-color: rgb(56, 59, 62)
+								opacity: 0.2
+								transform: rotate(20deg)
+								width: 1px
+								height: 25px
+								margin-left: 20px
+								margin-right: 20px	
+						ul
+							margin-top: 35px
+							margin-bottom: 35px
+							padding-left: 0
+							list-style: none
+							li
+								margin-bottom: 15px
+								.line
+									background-color: #ff2e2f
+									width: 17px
+									height: 2px
+									margin-top: 12px
+									margin-right: 10px
+								p.desc
+									font-family: 'MullerLight'
+									font-size: 16px
+									color: #313131
+									margin-bottom: 0
+						.buttons
+							position: relative
+							z-index: 20
+							.btnR
+								background-color: #ff2e2f
+								width: 210px
+								height: 58px
+								border-radius: 30px
+								cursor: pointer
+								span
+									font-family: 'MullerMedium'
+									font-size: 15px
+									color: #fff
+							.btnW
+								margin-left: 20px
+								border-width: 1px
+								border-color: rgba(0, 0, 0, 0.102)
+								border-style: solid
+								border-radius: 30px
+								width: 248px
+								height: 56px
+								cursor: pointer
+								span
+									font-family: 'MullerMedium'
+									font-size: 15px
+									color: #000
+		section.result
+			.header
+				background-image: url('../img/be/be-result-header-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				padding-top: 105px
+				padding-bottom: 105px
+				span.head
+					color: #fff
+				span.head::after
+					display: none
+				.numbers
+					span.number
+						font-family: 'MullerExtraBold'
+						font-size: 54px
+						color: #fff
+						letter-spacing: 1px
+						span.red
+							color: #ff2e2f
+							font-size: 84px
+					.slash
+						background-color: rgb(255, 255, 255)
+						opacity: 0.2
+						transform: rotate(12.5deg)
+						height: 120px
+						width: 1px
+						margin-left: 140px
+						margin-right: 100px
+		section.howSignUp
+			background-image: url('../img/be/be-howSignUp-bg.jpg')
+			background-size: cover
+			background-repeat: no-repeat
+			padding-top: 100px
+			padding-bottom: 70px
+			span.head
+				color: #fff
+				font-family: 'MullerExtraBold'
+				font-size: 44px
+			.point
+				position: relative
+				margin-top: 100px
+				object
+					width: 75px
+					height: auto
+					svg, path
+						width: 75px
+						height: auto
+				p.desc
+					margin-bottom: 0
+					margin-left: 15px
+					font-family: 'MullerRegular'
+					font-size: 16px
+					color: #fff
+				.number
+					position: absolute
+					top: -35px
+					left: 0
+					font-size: 12px
+					font-family: "MullerMedium"
+					color: rgba(255, 255, 255, 0.302)
+			.button
+				cursor: pointer
+				margin-top: 30px
+				background-color: rgb(255, 255, 255)
+				width: 220px
+				height: 54px
+				border-radius: 27px
+				span 
+					color: #000
+					font-family: 'MullerMedium'
+					font-size: 15px
+			.signUp
+				margin-top: 40px
+				margin-left: auto
+				margin-right: auto
+				transition: 0.5s
+				animation: pulsation 2s infinite
+				overflow: hidden
+				position: relative
+				cursor: pointer
+				border-radius: 50%
+				background-color: rgb(255, 46, 47)
+				box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31)
+				width: 170px
+				height: 170px
+				span
+					font-family: 'MullerExtraBold'
+					font-size: 18px
+					color: #fff
+					text-transform: uppercase
+				svg
+					transition: 0.5s
+					position: absolute
+					bottom: -15px
+					right: 0
+					left: 25px
+					margin: auto
+			.signUp:hover
+				animation: none
+				box-shadow: 0 0 200px rgba(255, 44, 45, 0.9)
+				svg
+					opacity: 0
+			@keyframes pulsation
+				0%
+					box-shadow: 0 0 200px rgba(255, 44, 45, 0.9)
+				70%
+					box-shadow: 0 0 0 200px rgba(255, 44, 45, 0)
+				100% 
+					box-shadow: 0 0 0 0 rgba(255, 44, 46, 0)
+
+
+@media only screen and(max-width: 1600px)
+	body
+		header.container-fluid
+			.adress
+				justify-content: start !important
+		section.header
+			.content
+				padding-top: 190px
+				.bottom
+					padding-top: 200px
+@media only screen and(max-width: 1400px)
+	body
+		header.container-fluid
+			.adress
+				span.desc
+					margin-left: 15px
+		section.header
+			.content
+				padding-top: 155px
