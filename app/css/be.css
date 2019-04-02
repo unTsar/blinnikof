@@ -1,0 +1,1856 @@
+body {
+  position: relative;
+}
+
+body .scroll {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+  position: fixed;
+  z-index: 200;
+  bottom: 45px;
+  left: 50px;
+}
+
+body .scroll .text {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'MullerMedium';
+  font-size: 11px;
+  text-shadow: 0 0 15px #000;
+  -webkit-transform: rotate(-90deg) translate(45px, -17px);
+      -ms-transform: rotate(-90deg) translate(45px, -17px);
+          transform: rotate(-90deg) translate(45px, -17px);
+}
+
+body .scroll .circle {
+  border-width: 1px;
+  border-color: rgba(32, 32, 32, 0.2);
+  border-style: solid;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+}
+
+body .scroll .circle .mouse {
+  position: relative;
+  border-width: 2px;
+  border-color: #ff2e2f;
+  border-style: solid;
+  background-color: transparent;
+  width: 21.5px;
+  height: 27.5px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+body .scroll .circle .mouse .weel {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ff2e2f;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+          animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scroll {
+  0%, 20% {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(20px) scaleY(2);
+            transform: translateY(20px) scaleY(2);
+    opacity: 0.01;
+  }
+}
+
+@keyframes scroll {
+  0%, 20% {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(20px) scaleY(2);
+            transform: translateY(20px) scaleY(2);
+    opacity: 0.01;
+  }
+}
+
+body .head {
+  line-height: 1.2;
+  font-family: 'MullerExtraBold';
+  font-size: 42px;
+  color: #262626;
+}
+
+body .head .red {
+  color: #e83333;
+}
+
+body .red {
+  color: #e83333;
+}
+
+body footer .socials a.social svg, body footer .socials a.social path {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body footer .socials a.social:hover svg, body footer .socials a.social:hover path {
+  fill: #fff;
+}
+
+body header.container-fluid {
+  overflow: hidden;
+  position: relative;
+  background-image: url("../img/be/be-header-bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+body header.container-fluid nav {
+  background-color: transparent;
+}
+
+body header.container-fluid nav .logo, body header.container-fluid nav .adress, body header.container-fluid nav .socials, body header.container-fluid nav .phoneCont {
+  position: relative;
+  z-index: 20;
+}
+
+body header.container-fluid nav .logo .textLogo span.name, body header.container-fluid nav .logo .textLogo span.desc {
+  color: #000;
+}
+
+body header.container-fluid nav .adress span.desc {
+  color: #000;
+}
+
+body header.container-fluid nav .adress .circleAdress {
+  background-color: #fff;
+  border: 1px solid rgba(32, 32, 32, 0.1);
+}
+
+body header.container-fluid nav .adress .circleAdress svg, body header.container-fluid nav .adress .circleAdress path {
+  fill: #FF2A2B;
+}
+
+body header.container-fluid nav .socials a.social.Vk,
+body header.container-fluid nav .socials a.social.Fb,
+body header.container-fluid nav .socials a.social.Inst {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body header.container-fluid nav .socials a.social.Vk svg, body header.container-fluid nav .socials a.social.Vk path,
+body header.container-fluid nav .socials a.social.Fb svg,
+body header.container-fluid nav .socials a.social.Fb path,
+body header.container-fluid nav .socials a.social.Inst svg,
+body header.container-fluid nav .socials a.social.Inst path {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body header.container-fluid nav .socials a.social:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+body header.container-fluid nav .socials a.social:hover svg, body header.container-fluid nav .socials a.social:hover path {
+  fill: #FF2A2B;
+}
+
+body header.container-fluid img.imgC {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin: auto;
+  pointer-events: none;
+}
+
+body header.container-fluid .content {
+  padding-top: 195px;
+  padding-bottom: 195px;
+}
+
+body header.container-fluid .content p.desc {
+  position: relative;
+  z-index: 1;
+  font-family: 'MullerMedium';
+  font-size: 24px;
+  color: #000;
+  line-height: 1.3;
+}
+
+body header.container-fluid .content p.desc::before {
+  content: '';
+  background-color: #ff2e2f;
+  position: absolute;
+  width: 66px;
+  height: 4px;
+  top: 10px;
+  left: -95px;
+}
+
+body header.container-fluid .content .bottom {
+  padding-top: 185px;
+}
+
+body header.container-fluid .content .bottom .wrap {
+  position: relative;
+}
+
+body header.container-fluid .content .bottom .wrap .circleSm {
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  width: 310px;
+  height: 310px;
+  border: 1px solid #ECECEC;
+  background-color: transparent;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+body header.container-fluid .content .bottom .wrap .circleMd {
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  width: 470px;
+  height: 470px;
+  border: 1px solid #ECECEC;
+  background-color: transparent;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+body header.container-fluid .content .bottom .wrap .circleLg {
+  position: absolute;
+  top: -250px;
+  left: -250px;
+  width: 670px;
+  height: 670px;
+  border: 1px solid #ECECEC;
+  background-color: transparent;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+body header.container-fluid .content .bottom .wrap img.iconBg {
+  position: absolute;
+  top: -95px;
+  right: -60px;
+}
+
+body header.container-fluid .content .bottom .wrap .button {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: pulsation 2s infinite;
+          animation: pulsation 2s infinite;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ff2e2f;
+  -webkit-box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
+          box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
+  width: 170px;
+  height: 170px;
+}
+
+body header.container-fluid .content .bottom .wrap .button span {
+  font-family: 'MullerExtraBold';
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+body header.container-fluid .content .bottom .wrap .button svg {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  left: 25px;
+  margin: auto;
+}
+
+@-webkit-keyframes pulsation {
+  0% {
+    -webkit-box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+            box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
+            box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
+            box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
+  }
+}
+
+@keyframes pulsation {
+  0% {
+    -webkit-box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+            box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
+            box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
+            box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
+  }
+}
+
+body header.container-fluid .content .bottom .wrap .button:hover {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+          box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+}
+
+body header.container-fluid .content .bottom .wrap .button:hover svg {
+  opacity: 0;
+}
+
+body header.container-fluid .content .bottom .circle {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ff2e2f;
+  width: 122px;
+  height: 122px;
+  position: relative;
+}
+
+body header.container-fluid .content .bottom .circle .fantom {
+  position: absolute;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: rgba(255, 46, 46, 0.071);
+  width: 170px;
+  height: 170px;
+}
+
+body header.container-fluid .content .bottom .circle span {
+  font-family: 'MullerExtraBold';
+  font-size: 60px;
+  color: #fff;
+}
+
+body header.container-fluid .content .bottom .text {
+  margin-left: 10px;
+}
+
+body header.container-fluid .content .bottom .text .subText {
+  background-color: #fff;
+  -webkit-border-radius: 13.5px;
+          border-radius: 13.5px;
+  font-family: 'MullerExtraBold';
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body header.container-fluid .content .bottom .text span.month {
+  font-family: 'MullerExtraBold';
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+body main {
+  overflow-x: hidden;
+}
+
+body main section.purpose {
+  position: relative;
+  z-index: 30;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-image: url("../img/be/be-purpose-bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body main section.purpose .headblock {
+  position: relative;
+}
+
+body main section.purpose .headblock span.head {
+  font-family: 'MullerExtraBold';
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+}
+
+body main section.purpose .headblock span.head::before {
+  content: '';
+  position: absolute;
+  top: 12.5px;
+  left: -90px;
+  background-color: #ff2e2f;
+  width: 56px;
+  height: 4px;
+}
+
+body main section.purpose .headblock p.desc {
+  margin-top: 30px;
+  color: #fff;
+  font-family: 'MullerLight';
+  font-size: 17px;
+}
+
+body main section.purpose img.fotoBg {
+  margin-left: 50px;
+  margin-top: -55px;
+}
+
+body main section.purpose .wrap {
+  position: relative;
+  width: 100%;
+}
+
+body main section.purpose .wrap .rightB {
+  position: absolute;
+  top: 200px;
+  right: -150px;
+  line-height: 1.3;
+}
+
+body main section.purpose .wrap .rightB .text {
+  font-family: 'MullerMedium';
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+body main section.purpose .wrap .rightB .line {
+  position: absolute;
+  bottom: 40px;
+  left: -35px;
+  width: 2px;
+  height: 50px;
+  background-color: #6dcef5;
+}
+
+body main section.purpose .wrap .step {
+  text-align: center;
+}
+
+body main section.purpose .wrap .step .number {
+  text-align: center;
+  color: #fff;
+  font-family: 'MullerMedium';
+  font-size: 17px;
+}
+
+body main section.purpose .wrap .step .separ {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.302);
+  border-style: dashed;
+  background-color: transparent;
+  height: 0;
+  position: relative;
+}
+
+body main section.purpose .wrap .step .separ::after, body main section.purpose .wrap .step .separ::before {
+  content: '';
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+body main section.purpose .wrap .step .separ::before {
+  left: 0;
+}
+
+body main section.purpose .wrap .step .separ::after {
+  right: 0;
+}
+
+body main section.purpose .wrap .step span.name {
+  line-height: 1.3;
+  color: #fff;
+  font-family: 'MullerBold';
+  font-size: 20px;
+}
+
+body main section.purpose .wrap .step p.desc {
+  letter-spacing: 1.7px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-family: "MullerMedium";
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body main section.purpose .wrap .step .text {
+  text-align: left;
+}
+
+body main section.purpose .wrap .step .text span.name {
+  line-height: 1.4;
+  font-family: 'MullerBold';
+  font-size: 22px;
+  color: #fff;
+  text-align: left;
+}
+
+body main section.purpose .wrap .step .text p.desc {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #fff;
+  margin-top: 15px;
+  line-height: 1.3;
+  text-align: left;
+  text-transform: none;
+}
+
+body main section.purpose .wrap .step .button {
+  cursor: pointer;
+  background-color: transparent;
+  border-width: 2px;
+  border-color: #ff2e2f;
+  border-style: solid;
+  width: 194px;
+  height: 56px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main section.purpose .wrap .step .button span {
+  color: #fff;
+  font-family: 'MullerMedium';
+  font-size: 16px;
+}
+
+body main section.purpose .wrap .step .button:hover {
+  background-color: #ff2e2f;
+  border-color: #ff2e2f;
+}
+
+body main section.purpose .wrap .step1 {
+  margin-top: 160px;
+}
+
+body main section.purpose .wrap .step1 .circle {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ff2e2f;
+  width: 148px;
+  height: 148px;
+}
+
+body main section.purpose .wrap .step1 .circle .block {
+  margin-bottom: 5px;
+}
+
+body main section.purpose .wrap .step1 .circle .block span {
+  text-transform: uppercase;
+}
+
+body main section.purpose .wrap .step1 .circle .block span.thin {
+  font-family: 'MullerRegular';
+  font-size: 10px;
+  color: #fff;
+}
+
+body main section.purpose .wrap .step1 .circle .block span.fat {
+  font-family: 'MullerBold';
+  font-size: 17px;
+  color: #fff;
+}
+
+body main section.purpose .wrap .step1 .circle .skyBg {
+  position: absolute;
+  z-index: -1;
+  bottom: -60px;
+  width: 100%;
+  height: 50%;
+  background-color: #00CFF7;
+}
+
+body main section.purpose .wrap .step1 .separ {
+  position: relative;
+}
+
+body main section.purpose .wrap .step1 .separ span.month {
+  position: absolute;
+  left: -90px;
+  top: -7px;
+  font-size: 12px;
+  font-family: "MullerMedium";
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+}
+
+body main section.purpose .wrap .step1 .text p.desc {
+  max-width: 148px;
+}
+
+body main section.purpose .wrap .step1 .number {
+  margin-top: 35px;
+}
+
+body main section.purpose .wrap .step1 .button {
+  width: 100%;
+}
+
+body main section.purpose .wrap .step2 {
+  margin-top: 120px;
+}
+
+body main section.purpose .wrap .step2 .circle {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ff2e2f;
+  width: 188px;
+  height: 188px;
+}
+
+body main section.purpose .wrap .step2 .circle .block {
+  margin-bottom: 7.5px;
+}
+
+body main section.purpose .wrap .step2 .circle .block span {
+  text-transform: uppercase;
+}
+
+body main section.purpose .wrap .step2 .circle .block span.thin {
+  font-family: 'MullerRegular';
+  font-size: 10px;
+  color: #fff;
+}
+
+body main section.purpose .wrap .step2 .circle .block span.fat {
+  font-family: 'MullerBold';
+  font-size: 15px;
+  color: #fff;
+}
+
+body main section.purpose .wrap .step2 .circle .skyBg {
+  position: absolute;
+  z-index: -1;
+  bottom: -60px;
+  width: 100%;
+  height: 50%;
+  background-color: #00CFF7;
+}
+
+body main section.purpose .wrap .step2 .number {
+  margin-top: 35px;
+}
+
+body main section.purpose .wrap .step2 .text p.desc {
+  max-width: 188px;
+}
+
+body main section.purpose .wrap .step2 .button {
+  width: 100%;
+}
+
+body main section.purpose .wrap .step3 {
+  margin-top: 50px;
+}
+
+body main section.purpose .wrap .step3 .circle {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ff2e2f;
+  width: 229px;
+  height: 229px;
+}
+
+body main section.purpose .wrap .step3 .circle .block {
+  margin-bottom: 10px;
+}
+
+body main section.purpose .wrap .step3 .circle .block span {
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+body main section.purpose .wrap .step3 .circle .block span.thin {
+  font-family: 'MullerRegular';
+  font-size: 10px;
+  color: #fff;
+}
+
+body main section.purpose .wrap .step3 .circle .block span.fat {
+  font-family: 'MullerBold';
+  font-size: 15px;
+  color: #fff;
+}
+
+body main section.purpose .wrap .step3 .circle .skyBg {
+  position: absolute;
+  z-index: -1;
+  bottom: -60px;
+  width: 100%;
+  height: 50%;
+  background-color: #00CFF7;
+}
+
+body main section.purpose .wrap .step3 .number {
+  margin-top: 35px;
+}
+
+body main section.purpose .wrap .step3 .text p.desc {
+  max-width: 229px;
+}
+
+body main section.purpose .wrap .step4 .circle {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ff2e2f;
+  width: 279px;
+  height: 279px;
+}
+
+body main section.purpose .wrap .step4 .circle .block {
+  margin-bottom: 12.5px;
+}
+
+body main section.purpose .wrap .step4 .circle .block span {
+  line-height: 2.2;
+  text-transform: uppercase;
+}
+
+body main section.purpose .wrap .step4 .circle .block span.thin {
+  font-family: 'MullerRegular';
+  font-size: 10px;
+  color: #fff;
+}
+
+body main section.purpose .wrap .step4 .circle .block span.fat {
+  font-family: 'MullerBold';
+  font-size: 15px;
+  color: #fff;
+}
+
+body main section.purpose .wrap .step4 .circle .skyBg {
+  position: absolute;
+  z-index: -1;
+  bottom: -60px;
+  width: 100%;
+  height: 50%;
+  background-color: #00CFF7;
+}
+
+body main section.purpose .wrap .step4 .number {
+  margin-top: 15px;
+}
+
+body main section.purpose .wrap .step4 .text p.desc {
+  max-width: 279px;
+}
+
+body main section.first {
+  position: relative;
+}
+
+body main section.first .circleBg {
+  position: absolute;
+  right: -425px;
+  bottom: -357.5px;
+  z-index: 9999;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.302);
+  border-style: solid;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 892px;
+  height: 892px;
+  pointer-events: none;
+}
+
+body main section.first .numbers {
+  background-image: url("../img/be/be-first-bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 75px;
+}
+
+body main section.first .numbers .question {
+  position: absolute;
+  top: -115px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ff2e2f;
+  -webkit-box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
+          box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
+  width: 230px;
+  height: 230px;
+  z-index: 40;
+  text-align: center;
+}
+
+body main section.first .numbers .question span {
+  line-height: 1.4;
+  font-family: 'MullerBold';
+  font-size: 24px;
+  color: #fff;
+}
+
+body main section.first .numbers img.questionBg {
+  position: absolute;
+  top: -215px;
+  left: -15px;
+  right: 0;
+  z-index: 30;
+  margin: auto;
+  pointer-events: none;
+}
+
+body main section.first .numbers .aboutNumbers {
+  padding-top: 190px;
+}
+
+body main section.first .numbers .aboutNumbers .headblock {
+  position: relative;
+}
+
+body main section.first .numbers .aboutNumbers .headblock span.head {
+  position: relative;
+}
+
+body main section.first .numbers .aboutNumbers .headblock span.head::before {
+  content: '';
+  position: absolute;
+  top: 12.5px;
+  left: -135px;
+  background-color: #ff2e2f;
+  width: 69px;
+  height: 6px;
+}
+
+body main section.first .numbers .aboutNumbers .headblock span.number {
+  position: absolute;
+  top: -32.5px;
+  left: -90px;
+  font-size: 70px;
+  font-family: 'MullerBold';
+  color: rgba(0, 0, 0, 0.102);
+}
+
+body main section.first .numbers .points {
+  padding-top: 75px;
+}
+
+body main section.first .numbers .points .point {
+  line-height: 1.2;
+}
+
+body main section.first .numbers .points .point span.big {
+  font-family: 'MullerBold';
+  font-size: 84px;
+  color: #ff2e2f;
+}
+
+body main section.first .numbers .points .point span.desc {
+  font-family: 'MullerRegular';
+  font-size: 20px;
+  color: #313131;
+}
+
+body main section.first .numbers .points .slashLine {
+  background-color: black;
+  opacity: 0.102;
+  width: 1px;
+  height: 150px;
+  -webkit-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+body main section.first .points {
+  position: relative;
+}
+
+body main section.first .points img.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 5%;
+  z-index: 30;
+  pointer-events: none;
+}
+
+body main section.first .points .content {
+  padding-top: 120px;
+  padding-bottom: 75px;
+}
+
+body main section.first .points .content span.head, body main section.first .points .content ul, body main section.first .points .content .arrows {
+  z-index: 30;
+  position: relative;
+}
+
+body main section.first .points .content ul {
+  padding-top: 50px;
+  padding-left: 0;
+  margin-left: -15px;
+  margin-bottom: 195px;
+  list-style: none;
+}
+
+body main section.first .points .content ul li img.icon {
+  width: 55px;
+  height: auto;
+}
+
+body main section.first .points .content ul li p.desc {
+  margin-left: 25px;
+  font-family: 'MullerRegular';
+  font-size: 17px;
+  color: #313131;
+  max-width: 85%;
+}
+
+body main section.first .points .content .arrows .arrow {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border-width: 2px;
+  border-color: #35383b;
+  border-style: solid;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+body main section.first .points .content .arrows .arrow svg, body main section.first .points .content .arrows .arrow path {
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+}
+
+body main section.first .points .content .arrows .arrow:hover {
+  background-color: #ff2e2f;
+  border-color: #ff2e2f;
+}
+
+body main section.first .points .content .arrows .arrow:hover svg, body main section.first .points .content .arrows .arrow:hover path {
+  fill: #fff;
+}
+
+body main section.first .points .content .arrows p.desc {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'MullerRegular';
+  font-size: 15px;
+  color: #919191;
+  margin-bottom: 0;
+  margin-left: 15px;
+  line-height: 1.3;
+}
+
+body main section.first .points .csl {
+  width: 75%;
+  height: 100%;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+body main section.first .points .csl img {
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-filter: brightness(65%);
+          filter: brightness(65%);
+}
+
+body main section.first .points .counter {
+  position: absolute;
+  bottom: 80px;
+  right: 130px;
+  z-index: 30;
+  background-image: url("../img/be/be-first-carousel-counter.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 160px;
+}
+
+body main section.first .points .counter span.single {
+  font-family: 'MullerBold';
+  font-size: 28px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+body main section.first .points .counter span.all {
+  font-family: 'MullerMedium';
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #000;
+}
+
+body main section.first .points .counter .line {
+  background-color: #ff2e2f;
+  width: 2px;
+  height: 20px;
+  margin-left: 10px;
+  -webkit-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+body main section.second .header {
+  background-image: url("../img/be/be-second-header-bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 125px;
+}
+
+body main section.second .header .container {
+  position: relative;
+}
+
+body main section.second .header .container img.imgPos {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  bottom: -225px;
+  right: 100px;
+  z-index: 100;
+}
+
+body main section.second .header .container .headblock {
+  position: relative;
+}
+
+body main section.second .header .container .headblock span.head {
+  position: relative;
+  color: #fff;
+}
+
+body main section.second .header .container .headblock span.head span.red {
+  color: #ff2e2f;
+}
+
+body main section.second .header .container .headblock span.head::before {
+  content: '';
+  position: absolute;
+  top: 12.5px;
+  left: -160px;
+  background-color: #ff2e2f;
+  width: 69px;
+  height: 6px;
+}
+
+body main section.second .header .container .headblock span.number {
+  position: absolute;
+  top: -32.5px;
+  left: -115px;
+  font-size: 70px;
+  font-family: 'MullerBold';
+  color: rgba(255, 255, 255, 0.051);
+}
+
+body main section.second .header .container .fact {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+body main section.second .header .container .fact .procent {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: 'MullerBold';
+  font-size: 84px;
+  color: #fff;
+}
+
+body main section.second .header .container .fact .procent .red {
+  color: #ff2e2f;
+}
+
+body main section.second .header .container .fact p.desc {
+  font-family: 'MullerRegular';
+  font-size: 22px;
+  color: #fff;
+  margin-left: 40px;
+}
+
+body main section.second .content {
+  position: relative;
+  background-color: #fff;
+  padding-top: 130px;
+  padding-bottom: 150px;
+}
+
+body main section.second .content img.bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body main section.second .content img.bg#content-bg1 {
+  opacity: 1;
+}
+
+body main section.second .content span.head {
+  font-size: 37.5px;
+  color: #313131;
+}
+
+body main section.second .content p.desc {
+  font-family: 'MullerLight';
+  font-size: 17px;
+  color: #313131;
+  margin-top: 30px;
+}
+
+body main section.second .content ul {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 30px;
+}
+
+body main section.second .content ul li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+body main section.second .content ul li p.text {
+  font-family: 'MullerRegular';
+  font-size: 18px;
+  color: #313131;
+  text-decoration: underline;
+  margin-left: 15px;
+  margin-bottom: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main section.second .content ul li .circle {
+  border-width: 1px;
+  border-color: #EAEAEA;
+  border-style: solid;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: white;
+  width: 113px;
+  height: 113px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main section.second .content ul li .circle img {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4);
+          filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4);
+}
+
+body main section.second .content ul li:hover .circle {
+  border-color: #ff3334;
+  background-color: #ff3334;
+}
+
+body main section.second .content ul li:hover .circle img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+body main section.second .content ul li:hover p.text {
+  font-family: 'MullerBold';
+  text-decoration: none;
+}
+
+body main section.third .header {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url("../img/be/be-third-header-bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body main section.third .header .container .headblock {
+  position: relative;
+}
+
+body main section.third .header .container .headblock span.head {
+  position: relative;
+  color: #fff;
+}
+
+body main section.third .header .container .headblock span.head span.red {
+  color: #ff3334;
+}
+
+body main section.third .header .container .headblock span.head::before {
+  content: '';
+  position: absolute;
+  top: 12.5px;
+  left: -160px;
+  background-color: #ff3334;
+  width: 69px;
+  height: 6px;
+}
+
+body main section.third .header .container .headblock span.number {
+  position: absolute;
+  top: -32.5px;
+  left: -115px;
+  font-size: 70px;
+  font-family: 'MullerBold';
+  color: rgba(255, 255, 255, 0.102);
+}
+
+body main section.third .content {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: #fff;
+  background-image: url("../img/be/be-third-content-bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+body main section.third .content .container ul {
+  margin-top: 55px;
+  list-style: none;
+  padding-left: 0;
+}
+
+body main section.third .content .container ul li {
+  margin-bottom: 40px;
+}
+
+body main section.third .content .container ul li p.desc {
+  font-family: 'MullerRegular';
+  font-size: 17px;
+  color: #313131;
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+body main section.third .content .container ul li img {
+  width: 45px;
+}
+
+body main section.fourth .header {
+  position: relative;
+  z-index: 20;
+  padding-top: 120px;
+  padding-bottom: 45px;
+  background-image: url("../img/be/be-fourth-header-bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body main section.fourth .header .container .headblock {
+  position: relative;
+}
+
+body main section.fourth .header .container .headblock span.head {
+  position: relative;
+  color: #fff;
+}
+
+body main section.fourth .header .container .headblock span.head span.red {
+  color: #ff2e2f;
+}
+
+body main section.fourth .header .container .headblock span.head::before {
+  content: '';
+  position: absolute;
+  top: 12.5px;
+  left: -160px;
+  background-color: #ff2e2f;
+  width: 69px;
+  height: 6px;
+}
+
+body main section.fourth .header .container .headblock span.number {
+  position: absolute;
+  top: -32.5px;
+  left: -115px;
+  font-size: 70px;
+  font-family: 'MullerBold';
+  color: rgba(255, 255, 255, 0.102);
+}
+
+body main section.fourth .header .container .slash {
+  background-color: white;
+  opacity: 0.2;
+  height: 120px;
+  width: 1px;
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+body main section.fourth .header .container .infblock {
+  line-height: 1.2;
+  padding-right: 50px;
+}
+
+body main section.fourth .header .container .infblock span.name {
+  font-size: 80px;
+  color: #fff;
+  font-family: 'MullerBold';
+}
+
+body main section.fourth .header .container .infblock span.name span.red {
+  color: #ff2e2f;
+}
+
+body main section.fourth .header .container .infblock p.desc {
+  font-family: 'MullerRegular';
+  font-size: 18px;
+  color: #fff;
+}
+
+body main section.fourth .content {
+  position: relative;
+  z-index: 1;
+  background-color: #F3F4F5;
+  padding-top: 170px;
+  padding-bottom: 75px;
+}
+
+body main section.fourth .content .circleBgT, body main section.fourth .content .circleBgB {
+  position: absolute;
+  border-width: 1px;
+  border-color: rgba(0, 0, 5, 0.102);
+  border-style: solid;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body main section.fourth .content .circleBgT {
+  top: -465px;
+  left: -200px;
+  width: 1001px;
+  height: 1001px;
+}
+
+body main section.fourth .content .circleBgB {
+  bottom: -365px;
+  right: -475px;
+  width: 923px;
+  height: 923px;
+  border-color: rgba(134, 134, 134, 0.2);
+}
+
+body main section.fourth .content .wrap {
+  position: relative;
+}
+
+body main section.fourth .content .wrap .step3 img.posImg {
+  position: absolute;
+  bottom: -100px;
+  right: -150px;
+  z-index: -1;
+}
+
+body main section.fourth .content .wrap .step3 .numberBg {
+  bottom: -120px;
+  left: -135px;
+}
+
+body main section.fourth .content .wrap .step3 .bg {
+  -webkit-mask-image: url("../img/be/be-fourth-content-step-mask3.png");
+          mask-image: url("../img/be/be-fourth-content-step-mask3.png");
+}
+
+body main section.fourth .content .wrap .step2 img.posImg {
+  position: absolute;
+  top: -160px;
+  left: -180px;
+  z-index: -1;
+}
+
+body main section.fourth .content .wrap .step2 .numberBg {
+  right: -165px;
+  bottom: -120px;
+}
+
+body main section.fourth .content .wrap .step2 .bg {
+  -webkit-mask-image: url("../img/be/be-fourth-content-step-mask2.png");
+          mask-image: url("../img/be/be-fourth-content-step-mask2.png");
+}
+
+body main section.fourth .content .wrap .step1 .numberBg {
+  top: -120px;
+  left: -135px;
+}
+
+body main section.fourth .content .wrap .step1 .bg {
+  -webkit-mask-image: url("../img/be/be-fourth-content-step-mask1.png");
+          mask-image: url("../img/be/be-fourth-content-step-mask1.png");
+}
+
+body main section.fourth .content .wrap .step:hover {
+  -webkit-box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
+          box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
+}
+
+body main section.fourth .content .wrap .step:hover .bg .fillred {
+  opacity: 0.5;
+}
+
+body main section.fourth .content .wrap .step {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 110px;
+}
+
+body main section.fourth .content .wrap .step .numberBg {
+  font-size: 200px;
+  font-family: "MullerBold";
+  color: rgba(0, 0, 0, 0.071);
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+body main section.fourth .content .wrap .step .bg {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-position: right;
+          mask-position: right;
+}
+
+body main section.fourth .content .wrap .step .bg img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+
+body main section.fourth .content .wrap .step .bg .fillred {
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #ff2e2f;
+}
+
+body main section.fourth .content .wrap .step .headblock span.head {
+  font-size: 32px;
+  font-family: 'MullerExtraBold';
+  color: #000;
+}
+
+body main section.fourth .content .wrap .step .headblock span.number {
+  font-family: 'MullerBold';
+  font-size: 24px;
+  color: #ff2e2f;
+}
+
+body main section.fourth .content .wrap .step .headblock .slash {
+  background-color: #383b3e;
+  opacity: 0.2;
+  -webkit-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
+  width: 1px;
+  height: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body main section.fourth .content .wrap .step ul {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-left: 0;
+  list-style: none;
+}
+
+body main section.fourth .content .wrap .step ul li {
+  margin-bottom: 15px;
+}
+
+body main section.fourth .content .wrap .step ul li .line {
+  background-color: #ff2e2f;
+  width: 17px;
+  height: 2px;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+body main section.fourth .content .wrap .step ul li p.desc {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #313131;
+  margin-bottom: 0;
+}
+
+body main section.fourth .content .wrap .step .buttons {
+  position: relative;
+  z-index: 20;
+}
+
+body main section.fourth .content .wrap .step .buttons .btnR {
+  background-color: #ff2e2f;
+  width: 210px;
+  height: 58px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  cursor: pointer;
+}
+
+body main section.fourth .content .wrap .step .buttons .btnR span {
+  font-family: 'MullerMedium';
+  font-size: 15px;
+  color: #fff;
+}
+
+body main section.fourth .content .wrap .step .buttons .btnW {
+  margin-left: 20px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.102);
+  border-style: solid;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  width: 248px;
+  height: 56px;
+  cursor: pointer;
+}
+
+body main section.fourth .content .wrap .step .buttons .btnW span {
+  font-family: 'MullerMedium';
+  font-size: 15px;
+  color: #000;
+}
+
+body main section.result .header {
+  background-image: url("../img/be/be-result-header-bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+body main section.result .header span.head {
+  color: #fff;
+}
+
+body main section.result .header span.head::after {
+  display: none;
+}
+
+body main section.result .header .numbers span.number {
+  font-family: 'MullerExtraBold';
+  font-size: 54px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+body main section.result .header .numbers span.number span.red {
+  color: #ff2e2f;
+  font-size: 84px;
+}
+
+body main section.result .header .numbers .slash {
+  background-color: white;
+  opacity: 0.2;
+  -webkit-transform: rotate(12.5deg);
+      -ms-transform: rotate(12.5deg);
+          transform: rotate(12.5deg);
+  height: 120px;
+  width: 1px;
+  margin-left: 140px;
+  margin-right: 100px;
+}
+
+body main section.howSignUp {
+  background-image: url("../img/be/be-howSignUp-bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+body main section.howSignUp span.head {
+  color: #fff;
+  font-family: 'MullerExtraBold';
+  font-size: 44px;
+}
+
+body main section.howSignUp .point {
+  position: relative;
+  margin-top: 100px;
+}
+
+body main section.howSignUp .point object {
+  width: 75px;
+  height: auto;
+}
+
+body main section.howSignUp .point object svg, body main section.howSignUp .point object path {
+  width: 75px;
+  height: auto;
+}
+
+body main section.howSignUp .point p.desc {
+  margin-bottom: 0;
+  margin-left: 15px;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #fff;
+}
+
+body main section.howSignUp .point .number {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  font-size: 12px;
+  font-family: "MullerMedium";
+  color: rgba(255, 255, 255, 0.302);
+}
+
+body main section.howSignUp .button {
+  cursor: pointer;
+  margin-top: 30px;
+  background-color: white;
+  width: 220px;
+  height: 54px;
+  -webkit-border-radius: 27px;
+          border-radius: 27px;
+}
+
+body main section.howSignUp .button span {
+  color: #000;
+  font-family: 'MullerMedium';
+  font-size: 15px;
+}
+
+body main section.howSignUp .signUp {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: pulsation 2s infinite;
+          animation: pulsation 2s infinite;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ff2e2f;
+  -webkit-box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
+          box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
+  width: 170px;
+  height: 170px;
+}
+
+body main section.howSignUp .signUp span {
+  font-family: 'MullerExtraBold';
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+body main section.howSignUp .signUp svg {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  left: 25px;
+  margin: auto;
+}
+
+body main section.howSignUp .signUp:hover {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+          box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+}
+
+body main section.howSignUp .signUp:hover svg {
+  opacity: 0;
+}
+
+@keyframes pulsation {
+  0% {
+    -webkit-box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+            box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
+            box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
+            box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  body header.container-fluid .adress {
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  body section.header .content {
+    padding-top: 190px;
+  }
+  body section.header .content .bottom {
+    padding-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  body header.container-fluid .adress span.desc {
+    margin-left: 15px;
+  }
+  body section.header .content {
+    padding-top: 155px;
+  }
+}

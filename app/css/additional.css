@@ -1,0 +1,495 @@
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerRegular/MullerRegular.eot");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLight/MullerLight.eot");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerMedium/MullerMedium.eot");
+  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBold/MullerBold.eot");
+  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+}
+
+.popup {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  height: auto;
+  padding: 25px;
+  background-color: #F8F8F8;
+  -webkit-box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
+          box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #313131;
+  display: none;
+}
+
+main section.list .container {
+  padding-top: 65px;
+}
+
+main section.list .container span.breadcrumbs {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #969696;
+}
+
+main section.list .container span.breadcrumbs span.active {
+  position: relative;
+  color: #262626;
+}
+
+main section.list .container span.breadcrumbs span.active::before {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  background-color: #AFAFAF;
+  width: 100%;
+  height: 2px;
+}
+
+main section.list .container .head {
+  margin-top: 50px;
+  margin-bottom: 110px;
+}
+
+main section.list .container .head span.head {
+  line-height: 1.2;
+  font-family: 'MullerExtraBold';
+  font-size: 50px;
+  color: #262626;
+}
+
+main section.list .container .head span.head span.red {
+  color: #e83333;
+}
+
+main section.list .container .head .line {
+  width: 67px;
+  height: 3px;
+  background-color: #FF2E2E;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+main section.list .container .head p.text {
+  font-family: 'MullerLight';
+  font-size: 20px;
+  color: #000;
+  line-height: 1.3;
+}
+
+main section.list .container .item:hover img.fotof {
+  opacity: 1;
+}
+
+main section.list .container .item:hover {
+  -webkit-box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
+          box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
+}
+
+main section.list .container .item {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #fff;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+main section.list .container .item .foto-mobile {
+  display: none;
+}
+
+main section.list .container .item .c7 {
+  padding-top: 50px;
+}
+
+main section.list .container .item .c7 .name.d-flex, main section.list .container .item .c7 .desc, main section.list .container .item .c7 .separ, main section.list .container .item .c7 .list, main section.list .container .item .c7 .buttons {
+  position: relative;
+  z-index: 10;
+  padding-left: 83px;
+}
+
+main section.list .container .item .c7 .name {
+  font-family: 'MullerExtraBold';
+  font-size: 32px;
+  color: #000;
+}
+
+main section.list .container .item .c7 .name .line {
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 1px;
+  height: 30px;
+  -webkit-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
+  background-color: #E8E8E8;
+}
+
+main section.list .container .item .c7 .name span.red {
+  font-family: 'MullerBold';
+  color: #e93333;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+main section.list .container .item .c7 .desc {
+  width: 90%;
+  margin-top: 30px;
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #313131;
+  position: relative;
+}
+
+main section.list .container .item .c7 .desc .red {
+  color: #e93333;
+  font-family: 'MullerMedium';
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+main section.list .container .item .c7 .desc::before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 50px;
+  width: 17.5px;
+  height: 2px;
+  background-color: #FF2F2F;
+}
+
+main section.list .container .item .c7 .separ {
+  width: 90%;
+  height: 1px;
+  background-color: #EBEBEC;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main section.list .container .item .c7 .list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main section.list .container .item .c7 .list span.name {
+  font-family: 'MullerMedium';
+  font-size: 18px;
+  color: #313131;
+  line-height: 1;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+main section.list .container .item .c7 .list .flexCol {
+  margin-left: 55px;
+}
+
+main section.list .container .item .c7 .list .flexCol .elem {
+  line-height: 1.2;
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #313131;
+  position: relative;
+}
+
+main section.list .container .item .c7 .list .flexCol .elem::before {
+  content: '';
+  position: absolute;
+  top: 7.5px;
+  left: -20px;
+  height: 2px;
+  width: 12.5px;
+  background-color: #FF2F2F;
+}
+
+main section.list .container .item .c7 .buttons {
+  cursor: pointer;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+main section.list .container .item .c7 .buttons .button1 {
+  width: 210px;
+  height: 57.5px;
+  background-color: #FF2F2F;
+}
+
+main section.list .container .item .c7 .buttons .button1 span {
+  font-family: 'MullerMedium';
+  font-size: 16px;
+  color: #fff;
+}
+
+main section.list .container .item .c7 .buttons .button2 {
+  margin-left: 20px;
+  width: 250px;
+  height: 57.5px;
+  background-color: #343A42;
+}
+
+main section.list .container .item .c7 .buttons .button2 span {
+  font-family: 'MullerMedium';
+  font-size: 16px;
+  color: #fff;
+}
+
+main section.list .container .item img.foto, main section.list .container .item img.fotof {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+main section.list .container .item img.fotof {
+  z-index: 3;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main section.list .container .item img.number {
+  position: absolute;
+  top: -70px;
+  left: -60px;
+  z-index: -1;
+}
+
+main section.list .container .advert {
+  margin-bottom: 55px;
+  padding-top: 10px;
+  font-family: 'MullerExtraBold';
+  font-size: 40px;
+  color: #000;
+  line-height: 1.2;
+}
+
+main section.list .container .advert span.red {
+  color: #e83333;
+}
+
+main section.list .container .advert .button {
+  cursor: pointer;
+  margin-left: 50px;
+  background-color: #e93333;
+  width: 320px;
+  height: 64px;
+  font-family: 'MullerMedium';
+  font-size: 18px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1199px) {
+  body main section.list .container .head .row span.head {
+    font-size: 44px;
+  }
+  body main section.list .container .item.row .c7 {
+    padding-top: 25px;
+  }
+  body main section.list .container .item.row .c7 .name.d-flex, body main section.list .container .item.row .c7 .desc, body main section.list .container .item.row .c7 .separ, body main section.list .container .item.row .c7 .list, body main section.list .container .item.row .c7 .buttons {
+    padding-left: 50px;
+  }
+  body main section.list .container .item.row .c7 .buttons {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  body main section.list .container .item.row .c7 .desc {
+    margin-top: 15px;
+  }
+  body main section.list .container .item.row .c7 .desc::before {
+    left: 20px;
+  }
+  body main section.list .container .item.row .c7 .list .flexCol {
+    margin-left: 35px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body main section.list .container .item:hover .foto-mobile img.red {
+    opacity: 1;
+  }
+  body main section.list .container .item .foto-mobile {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+  }
+  body main section.list .container .item .foto-mobile img {
+    position: relative;
+    z-index: 1;
+  }
+  body main section.list .container .item .foto-mobile img.red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body main section.list .container .item .c5 {
+    display: none;
+  }
+  body main section.list .container .item .c5 img.foto, body main section.list .container .item .c5 img.fotof {
+    display: none;
+  }
+  body main section.list .container .item img.number {
+    width: 80px;
+    top: -55px;
+    left: -45px;
+  }
+  body main section.list .container .advert {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 30px;
+  }
+  body main section.list .container .advert .button {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body .popup {
+    width: 75%;
+  }
+  body main section.list .container .item .foto-mobile {
+    width: 100%;
+    height: auto;
+  }
+  body main section.list .container .item .foto-mobile img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body main section.list .container .head .row span.head {
+    font-size: 30px;
+  }
+  body main section.list .container .item.row img.number {
+    display: none;
+  }
+  body main section.list .container .item.row .c7 {
+    padding-top: 10px;
+  }
+  body main section.list .container .item.row .c7 .name.d-flex, body main section.list .container .item.row .c7 .desc, body main section.list .container .item.row .c7 .separ, body main section.list .container .item.row .c7 .list, body main section.list .container .item.row .c7 .buttons {
+    padding-left: 40px;
+  }
+  body main section.list .container .item.row .c7 .name.d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 25px;
+    line-height: 1.2;
+    padding-left: 0;
+  }
+  body main section.list .container .item.row .c7 .desc::before {
+    left: 10px;
+  }
+  body main section.list .container .item.row .c7 .list.d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body main section.list .container .item.row .c7 .list.d-flex span.name {
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    margin-bottom: 10px;
+  }
+  body main section.list .container .item.row .c7 .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  body main section.list .container .item.row .c7 .buttons .button1, body main section.list .container .item.row .c7 .buttons .button2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  body main section.list .container .item.row .c7 .buttons .button2 {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body .popup {
+    width: 90%;
+  }
+}

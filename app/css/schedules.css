@@ -1,0 +1,525 @@
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerRegular/MullerRegular.eot");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLight/MullerLight.eot");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerMedium/MullerMedium.eot");
+  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBold/MullerBold.eot");
+  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+}
+
+main .head {
+  line-height: 1.2;
+  font-family: 'MullerExtraBold';
+  font-size: 50px;
+  color: #262626;
+}
+
+main .head .red {
+  color: #e83333;
+}
+
+main .red {
+  color: #e83333;
+}
+
+main section.breadcrumbs {
+  padding-top: 65px;
+}
+
+main section.breadcrumbs span {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #969696;
+}
+
+main section.breadcrumbs span span.active {
+  position: relative;
+  color: #262626;
+}
+
+main section.breadcrumbs span span.active::before {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  background-color: #AFAFAF;
+  width: 100%;
+  height: 2px;
+}
+
+main section.dates {
+  margin-bottom: 65px;
+}
+
+main section.dates .header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+main section.dates .header .line {
+  width: 67px;
+  height: 3px;
+  background-color: #FF2E2E;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+main section.dates .header p.text {
+  font-family: 'MullerMedium';
+  font-size: 22px;
+  color: #000;
+  line-height: 1.3;
+  margin-top: 10px;
+}
+
+main section.dates .header .button {
+  margin-left: 25px;
+  width: 193px;
+  height: 58px;
+  -webkit-border-radius: 29px;
+          border-radius: 29px;
+  background-color: #ff3232;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'MullerMedium';
+  cursor: pointer;
+}
+
+main section.dates .list {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  padding: 65px 0 65px 65px;
+  -webkit-box-shadow: 0px 0px 32px 0px rgba(70, 71, 72, 0.07);
+          box-shadow: 0px 0px 32px 0px rgba(70, 71, 72, 0.07);
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  font-family: 'MullerMedium';
+  font-size: 20px;
+}
+
+main section.dates .list .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main section.dates .list .wrap .elem {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+main section.dates .list .wrap .elem .circle {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ff3232;
+}
+
+main section.dates .list .wrap .elem .circle span.number {
+  color: #fff;
+  font-family: 'MullerBold';
+  font-size: 14px;
+}
+
+main section.dates .list .wrap .elem span.date {
+  margin-top: 3px;
+  margin-left: 5px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #000;
+  line-height: 1.8;
+}
+
+main section.dates .list .wrap .elem span.date:hover {
+  color: #ff3232;
+}
+
+main section.dates .list:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  right: 150px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+main section.lessons .head {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main section.lessons .item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(70, 71, 72, 0.07);
+          box-shadow: 0px 0px 11px 0px rgba(70, 71, 72, 0.07);
+  padding-bottom: 30px;
+}
+
+main section.lessons .item .topDate {
+  border-bottom: 1px solid #EDEDED;
+  font-family: 'MullerBold';
+  font-size: 19px;
+  color: #000;
+  height: 60px;
+}
+
+main section.lessons .item .content {
+  padding-left: 30px;
+}
+
+main section.lessons .item .content .name {
+  font-family: 'MullerBold';
+  font-size: 20px;
+  color: #000;
+  line-height: 1.2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main section.lessons .item .content .places {
+  margin-top: 17.5px;
+  margin-bottom: 17.5px;
+}
+
+main section.lessons .item .content .places .text {
+  font-family: 'MullerLight';
+  font-size: 18px;
+  color: #000;
+  margin-left: 10px;
+  margin-top: 2.5px;
+}
+
+main section.lessons .item .content .places .circle {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #fff;
+}
+
+main section.lessons .item .content .places .circle.red {
+  background-color: #ff3232;
+}
+
+main section.lessons .item .content .places .circle.green {
+  background-color: #91b853;
+}
+
+main section.lessons .item .content .places .circle.green span {
+  font-family: 'MullerBold';
+  font-size: 16px;
+}
+
+main section.lessons .item .content .times {
+  padding-right: 25px;
+  margin-bottom: 30px;
+}
+
+main section.lessons .item .content .times .line span.day {
+  font-family: 'MullerLight';
+  font-size: 18px;
+  color: #000;
+}
+
+main section.lessons .item .content .times .line span.time {
+  font-family: 'MullerMedium';
+  font-size: 18px;
+  color: #323232;
+}
+
+main section.lessons .item .button {
+  margin-left: 30px;
+  width: 200px;
+  height: 55px;
+  background-color: transparent;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  border: 2px solid #ff3232;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+main section.lessons .item .button span {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: 'MullerMedium';
+  font-size: 18px;
+  color: #e22020;
+}
+
+main section.lessons .item .button:hover {
+  background-color: #ff3232;
+}
+
+main section.lessons .item .button:hover span {
+  color: #fff;
+}
+
+main section.form .head {
+  margin-top: 30px;
+}
+
+main section.form .line {
+  width: 67px;
+  height: 3px;
+  background-color: #FF2E2E;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main section.form .desc {
+  font-family: 'MullerMedium';
+  font-size: 22px;
+  color: #000;
+}
+
+main section.form form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+main section.form form input {
+  padding-left: 30px;
+  width: 100%;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  height: 60px;
+  border: 1px solid #E4E7EB;
+  background-color: #fff;
+  margin-bottom: 20px;
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #5f5f5f;
+}
+
+main section.form form input::-webkit-input-placeholder,
+main section.form form input::-moz-placeholder,
+main section.form form input:-moz-placeholder,
+main section.form form input:-ms-input-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #5f5f5f;
+}
+
+main section.form form input.submit {
+  padding: 0;
+  text-align: center;
+  width: 270px;
+  height: 75px;
+  -webkit-border-radius: 35px;
+          border-radius: 35px;
+  background-color: transparent;
+  border: 2px solid #ff3232;
+  color: #ff3232;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: 'MullerMedium';
+  font-size: 20px;
+}
+
+main section.form form input.submit:hover {
+  color: #fff;
+  background-color: #ff3232;
+}
+
+@media only screen and (max-width: 1200px) {
+  body main section.dates .list::after {
+    right: 80px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body main .head {
+    font-size: 40px;
+  }
+  body main section.form .desc {
+    font-size: 20px;
+  }
+  body main section.form form input.submit {
+    width: 250px;
+    height: 60px;
+  }
+  body main section.dates .header p.text {
+    font-size: 20px;
+  }
+  body main section.dates .list::after {
+    right: 115px;
+  }
+  body main section.dates .list {
+    padding: 40px 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main section.dates .list .wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+  body main section.dates .list .wrap span {
+    line-height: 2;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body main .head {
+    font-size: 30px;
+  }
+  body main section.dates .list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main section.dates .list .wrap {
+    grid-template-columns: 1fr;
+  }
+  body main section.dates .list .wrap span.date {
+    font-size: 17px;
+  }
+  body main section.dates .list::after {
+    right: 65px;
+  }
+  body main section.dates .header p.text {
+    font-size: 17px;
+  }
+  body main section.lessons .item {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section.lessons .item .content {
+    padding-left: 15px;
+  }
+  body main section.lessons .item .button {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    margin: 0;
+  }
+  body main section.form .desc {
+    font-size: 17px;
+  }
+  body main section.form form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body main section.dates .list::after {
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  body main section.dates .header .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section.dates .header .wrap .button {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    margin-left: 0;
+  }
+  body main section.lessons .item {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body main section.lessons .item {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body main .head {
+    font-size: 25px;
+  }
+}

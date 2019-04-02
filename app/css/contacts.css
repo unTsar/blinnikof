@@ -1,0 +1,189 @@
+section.contacts {
+  padding-top: 265px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+section.contacts .ymap .map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  -webkit-mask: url("../img/additional/bg6-mask.png");
+          mask: url("../img/additional/bg6-mask.png");
+  -webkit-mask-position: top;
+          mask-position: top;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+section.contacts .ymap .bg-mobile {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 111;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}
+
+section.contacts .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+section.contacts [class*="ymaps-2"][class*="-ground-pane"] {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter--webkit-filter: grayscale(100%);
+}
+
+section.contacts .container {
+  position: relative;
+}
+
+section.contacts .container .c6 {
+  position: relative;
+  z-index: 3;
+}
+
+section.contacts .container .c6 span.name {
+  font-family: 'MullerExtraBold';
+  font-size: 60px;
+  color: #000;
+}
+
+section.contacts .container .c6 span.name .red {
+  color: #ff3232;
+}
+
+section.contacts .container .c6 .desc {
+  margin-top: 45px;
+  font-family: 'MullerMedium';
+  font-size: 26px;
+  color: #000;
+}
+
+section.contacts .container .c6 .separ {
+  height: 3px;
+  width: 64px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #ff3232;
+}
+
+section.contacts .container .c6 .list {
+  margin-top: 50px;
+}
+
+section.contacts .container .c6 .list .item {
+  margin-bottom: 25px;
+}
+
+section.contacts .container .c6 .list .item img {
+  margin-right: 30px;
+  margin-top: 3px;
+  width: 19px;
+}
+
+section.contacts .container .c6 .list .item span, section.contacts .container .c6 .list .item img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+section.contacts .container .c6 .list .item span {
+  font-family: 'MullerRegular';
+  font-size: 18px;
+  color: #313131;
+  line-height: 1.4;
+}
+
+section.contacts .container .c6 .list .item.phone span {
+  font-family: 'MullerBold';
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 1200px) {
+  body main section.contacts .container .c6 span.name {
+    font-size: 45px;
+  }
+  body main section.contacts .container .c6 .desc {
+    font-size: 22px;
+  }
+  body main section.contacts .container .c6 .list .item span {
+    font-size: 16px;
+  }
+  body main section.contacts .container .c6 .list .item.phone span {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  body main section.contacts .container .c6 .desc {
+    margin-top: 15px;
+  }
+  body main section.contacts .container .c6 .separ {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  body main section.contacts .container .c6 .list {
+    margin-top: 20px;
+  }
+  body main section.contacts .container .c6 .list .item {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body main section.contacts .container .c6 span.name {
+    font-size: 38px;
+  }
+  body main section.contacts .container .c6 .desc {
+    font-size: 18px;
+  }
+  body main section.contacts .container .c6 .list .item span {
+    font-size: 14px;
+  }
+  body main section.contacts .container .c6 .list .item.phone span {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body main section.contacts {
+    padding-top: 15px;
+  }
+  body main section.contacts .ymap {
+    position: relative;
+    height: 700px;
+  }
+  body main section.contacts .ymap .map {
+    position: relative;
+  }
+  body main section.contacts .ymap .bg-mobile {
+    display: block;
+  }
+  body main section.contacts .bg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body main section.contacts .container .c6 span.name {
+    font-size: 33px;
+  }
+}
