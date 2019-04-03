@@ -6,7 +6,8 @@ block styles
 	link(rel="stylesheet", href="css/contacts.css")
 
 block content
-	
+
+	include _partials/header.pug
 	main
 		section.container.breadcrumbs 
 			span Главная / <span class="active">Расписание занятий</span>
@@ -516,6 +517,8 @@ block content
 						input(type="text" placeholder="Желаемое время")
 				input.submit(type="submit" value="Отправить")
 		include _partials/contacts.pug
+
+	include _partials/footer.pug
 
 block scripts
 	//- Yandex Map
