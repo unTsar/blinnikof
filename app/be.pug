@@ -263,11 +263,16 @@ block content
 							br
 							|тренировок
 				.csl
-					.slick
-						img(src="img/be/be-first-slide1.jpg", alt="be-first-slide1")
-						img(src="img/be/be-first-slide2.jpg", alt="be-first-slide2")
-						img(src="img/be/be-first-slide3.jpg", alt="be-first-slide3")
-						img(src="img/be/be-first-slide4.jpg", alt="be-first-slide4")
+					.carousel.slide(data-ride="carousel")
+						.carousel-inner
+							.carousel-item.active
+								img.d-block.img-fluid(src="img/be/be-first-slide1.jpg", alt="be-first-slide1")
+							.carousel-item
+								img.d-block.img-fluid(src="img/be/be-first-slide2.jpg", alt="be-first-slide2")
+							.carousel-item
+								img.d-block.img-fluid(src="img/be/be-first-slide3.jpg", alt="be-first-slide3")
+							.carousel-item
+								img.d-block.img-fluid(src="img/be/be-first-slide4.jpg", alt="be-first-slide4")
 		section.second#section3
 			.header
 				.container
@@ -569,6 +574,9 @@ block scripts
 	//- scripts here
 	//- Slick.js (carousel)
 	script(src="js/slick.min.js")
+
+	//- Hammer.js
+	script(src="js/hammer.min.js")
 
 	//- Jquery ScrollTo 
 	script(src="js/jquery.scrollTo.min.js")
