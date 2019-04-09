@@ -15,7 +15,6 @@ $(document).ready(function(){
 	// $(".slick").on('afterChange', function(event, slick, currentSlide){
 	// 	$("#counter").text('0' + (currentSlide + 1));
  //  	});
-
     $('.carousel').carousel({
       interval: 2000
     });
