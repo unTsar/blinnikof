@@ -227,111 +227,117 @@ main
 				background-color: #ff3232
 
 @media only screen and (max-width: 1200px)
-	body
-		main
-			section.dates
-				.list::after	
-					right: 80px
+	html
+		body
+			main
+				section.dates
+					.list::after	
+						right: 80px
 @media only screen and (max-width: 992px)
-	body
-		main 
-			.head
-				font-size: 40px
-			section.form
-				.desc
-					font-size: 20px
-				form
-					input.submit
-						width: 250px
-						height: 60px
-			section.dates
-				.header
-					p.text
+	html
+		body
+			main 
+				.head
+					font-size: 40px
+				section.form
+					.desc
 						font-size: 20px
-				.list::after	
-					right: 115px
-				.list
-					padding: 40px 0
-					display: -webkit-flex
-					display: -moz-flex
-					display: -ms-flex
-					display: -o-flex
-					display: flex
-					justify-content: center
-					.wrap
-						grid-template-columns: 1fr 1fr
-						span
-							line-height: 2
-							margin-left: 25px
-							margin-right: 25px
+					form
+						input.submit
+							width: 250px
+							height: 60px
+				section.dates
+					.header
+						p.text
+							font-size: 20px
+					.list::after	
+						right: 115px
+					.list
+						padding: 40px 0
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						justify-content: center
+						.wrap
+							grid-template-columns: 1fr 1fr
+							span
+								line-height: 2
+								margin-left: 25px
+								margin-right: 25px
 @media only screen and (max-width: 768px)
-	body
-		main
-			.head
-				font-size: 30px
-			section.dates
-				.list
-					justify-content: center
-					.wrap
-						grid-template-columns: 1fr
-						span.date
+	html
+		body
+			main
+				.head
+					font-size: 30px
+				section.dates
+					.list
+						justify-content: center
+						.wrap
+							grid-template-columns: 1fr
+							span.date
+								font-size: 17px
+					.list::after	
+						right: 65px
+					.header
+						p.text
 							font-size: 17px
-				.list::after	
-					right: 65px
-				.header
-					p.text
-						font-size: 17px
-			section.lessons
-				.item
-					width: 70%
-					margin-left: auto
-					margin-right: auto
-					display: -webkit-flex
-					display: -moz-flex
-					display: -ms-flex
-					display: -o-flex
-					display: flex
-					flex-direction: column
-					.content
-						padding-left: 15px
-					.button
-						align-self: center
-						margin: 0
-			section.form
-				.desc
-					font-size: 17px
-				form
-					padding-top: 15px
-					padding-bottom: 15px
-@media only screen and (max-width: 576px)
-	body
-		main
-			section.dates
-				.list::after	
-					right: 0
-					left: 0
-					margin: auto
-				.header
-					.wrap
+				section.lessons
+					.item
+						width: 70%
+						margin-left: auto
+						margin-right: auto
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
 						flex-direction: column
-
+						.content
+							padding-left: 15px
 						.button
 							align-self: center
-							margin-left: 0
-			section.lessons
-				.item
-					width: 75%
+							margin: 0
+				section.form
+					.desc
+						font-size: 17px
+					form
+						padding-top: 15px
+						padding-bottom: 15px
+@media only screen and (max-width: 576px)
+	html
+		body
+			main
+				section.dates
+					.list::after	
+						right: 0
+						left: 0
+						margin: auto
+					.header
+						.wrap
+							flex-direction: column
+
+							.button
+								align-self: center
+								margin-left: 0
+				section.lessons
+					.item
+						width: 75%
 @media only screen and (max-width: 400px)
-	body
-		main
-			section.lessons
-				.item
-					width: 85%
+	html
+		body
+			main
+				section.lessons
+					.item
+						width: 85%
 @media only screen and (max-width: 375px)
-	body
-		main
-			.head
-				font-size: 25px
+	html
+		body
+			main
+				.head
+					font-size: 25px
 
 	
 

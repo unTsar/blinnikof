@@ -385,29 +385,29 @@ main section.form form input.submit:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-  body main section.dates .list::after {
+  html body main section.dates .list::after {
     right: 80px;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  body main .head {
+  html body main .head {
     font-size: 40px;
   }
-  body main section.form .desc {
+  html body main section.form .desc {
     font-size: 20px;
   }
-  body main section.form form input.submit {
+  html body main section.form form input.submit {
     width: 250px;
     height: 60px;
   }
-  body main section.dates .header p.text {
+  html body main section.dates .header p.text {
     font-size: 20px;
   }
-  body main section.dates .list::after {
+  html body main section.dates .list::after {
     right: 115px;
   }
-  body main section.dates .list {
+  html body main section.dates .list {
     padding: 40px 0;
     display: -webkit-flex;
     display: -moz-flex;
@@ -421,10 +421,10 @@ main section.form form input.submit:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body main section.dates .list .wrap {
+  html body main section.dates .list .wrap {
     grid-template-columns: 1fr 1fr;
   }
-  body main section.dates .list .wrap span {
+  html body main section.dates .list .wrap span {
     line-height: 2;
     margin-left: 25px;
     margin-right: 25px;
@@ -432,28 +432,28 @@ main section.form form input.submit:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  body main .head {
+  html body main .head {
     font-size: 30px;
   }
-  body main section.dates .list {
+  html body main section.dates .list {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body main section.dates .list .wrap {
+  html body main section.dates .list .wrap {
     grid-template-columns: 1fr;
   }
-  body main section.dates .list .wrap span.date {
+  html body main section.dates .list .wrap span.date {
     font-size: 17px;
   }
-  body main section.dates .list::after {
+  html body main section.dates .list::after {
     right: 65px;
   }
-  body main section.dates .header p.text {
+  html body main section.dates .header p.text {
     font-size: 17px;
   }
-  body main section.lessons .item {
+  html body main section.lessons .item {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -470,56 +470,56 @@ main section.form form input.submit:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body main section.lessons .item .content {
+  html body main section.lessons .item .content {
     padding-left: 15px;
   }
-  body main section.lessons .item .button {
+  html body main section.lessons .item .button {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center;
     margin: 0;
   }
-  body main section.form .desc {
+  html body main section.form .desc {
     font-size: 17px;
   }
-  body main section.form form {
+  html body main section.form form {
     padding-top: 15px;
     padding-bottom: 15px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  body main section.dates .list::after {
+  html body main section.dates .list::after {
     right: 0;
     left: 0;
     margin: auto;
   }
-  body main section.dates .header .wrap {
+  html body main section.dates .header .wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body main section.dates .header .wrap .button {
+  html body main section.dates .header .wrap .button {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center;
     margin-left: 0;
   }
-  body main section.lessons .item {
+  html body main section.lessons .item {
     width: 75%;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  body main section.lessons .item {
+  html body main section.lessons .item {
     width: 85%;
   }
 }
 
 @media only screen and (max-width: 375px) {
-  body main .head {
+  html body main .head {
     font-size: 25px;
   }
 }
