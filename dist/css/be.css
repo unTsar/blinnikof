@@ -134,6 +134,8 @@ body header.container-fluid {
 }
 
 body header.container-fluid nav {
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: transparent;
 }
 
@@ -198,6 +200,10 @@ body header.container-fluid img.imgC {
 body header.container-fluid .content {
   padding-top: 195px;
   padding-bottom: 195px;
+}
+
+body header.container-fluid .content .textMobile {
+  display: none;
 }
 
 body header.container-fluid .content p.desc {
@@ -394,10 +400,6 @@ body header.container-fluid .content .bottom .text span.month {
   font-size: 32px;
   color: #fff;
   text-transform: uppercase;
-}
-
-body main {
-  overflow-x: hidden;
 }
 
 body main section.purpose {
@@ -833,21 +835,6 @@ body main section.first {
   position: relative;
 }
 
-body main section.first .circleBg {
-  position: absolute;
-  right: -425px;
-  bottom: -357.5px;
-  z-index: 9999;
-  border-width: 1px;
-  border-color: rgba(255, 255, 255, 0.302);
-  border-style: solid;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  width: 892px;
-  height: 892px;
-  pointer-events: none;
-}
-
 body main section.first .numbers {
   background-image: url("../img/be/be-first-bg.jpg");
   -webkit-background-size: cover;
@@ -953,13 +940,29 @@ body main section.first .numbers .points .slashLine {
 
 body main section.first .points {
   position: relative;
+  overflow: hidden;
+}
+
+body main section.first .points .circleBg {
+  position: absolute;
+  right: -425px;
+  bottom: -357.5px;
+  z-index: 9999;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.302);
+  border-style: solid;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 892px;
+  height: 892px;
+  pointer-events: none;
 }
 
 body main section.first .points img.mask {
   position: absolute;
   top: 0;
   bottom: 0;
-  height: 100%;
+  width: 100%;
   left: 0;
   z-index: 30;
   pointer-events: none;
@@ -1031,6 +1034,7 @@ body main section.first .points .content .arrows p.desc {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
   font-family: 'MullerRegular';
   font-size: 15px;
   color: #919191;
@@ -1040,12 +1044,11 @@ body main section.first .points .content .arrows p.desc {
 }
 
 body main section.first .points .csl {
-  width: 75%;
-  height: 100%;
   overflow-y: hidden;
   position: absolute;
   top: 0;
   right: 0;
+  width: 100%;
   z-index: 10;
 }
 
@@ -1054,7 +1057,9 @@ body main section.first .points .csl img {
   z-index: 10;
   margin: 0;
   padding: 0;
+  width: 100%;
   outline: none;
+  cursor: default;
   pointer-events: none;
   -webkit-filter: brightness(65%);
   filter: brightness(65%);
@@ -1832,26 +1837,194 @@ body main section.howSignUp .signUp:hover svg {
   }
 }
 
-@media only screen and (max-width: 1600px) {
-  body header.container-fluid .adress {
-    -webkit-box-pack: start !important;
-    -webkit-justify-content: start !important;
-    -ms-flex-pack: start !important;
-    justify-content: start !important;
+@media only screen and (max-width: 1800px) {
+  body main section.first .points .content ul {
+    margin-bottom: 100px;
   }
-  body section.header .content {
-    padding-top: 190px;
+}
+
+@media only screen and (max-width: 1719px) {
+  body main section.purpose {
+    display: none;
   }
-  body section.header .content .bottom {
-    padding-top: 200px;
+}
+
+@media only screen and (max-width: 1700px) {
+  body main section.first .points .circleBg {
+    right: -315px;
+    bottom: -380px;
+    width: 800px;
+    height: 800px;
+  }
+  body main section.first .points .content {
+    padding-top: 50px;
+  }
+  body main section.first .points .content ul {
+    margin-bottom: 50px;
   }
 }
 
 @media only screen and (max-width: 1400px) {
-  body header.container-fluid .adress span.desc {
-    margin-left: 15px;
+  body header.container-fluid .content p.desc::before {
+    width: 55px;
+    left: -75px;
   }
-  body section.header .content {
-    padding-top: 155px;
+  body main section.purpose {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  body header.container-fluid .content p.desc {
+    margin-left: 75px;
+  }
+  body header.container-fluid img.imgC {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  body header.container-fluid nav .socials {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end !important;
+    -webkit-justify-content: flex-end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  body header.container-fluid nav .adress {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body header.container-fluid {
+    background-image: url("../img/be/be-header-mobileBg.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body header.container-fluid nav .logo .textLogo span.desc, body header.container-fluid nav .logo .textLogo span.name {
+    color: #fff;
+  }
+  body header.container-fluid nav .socials {
+    display: none !important;
+  }
+  body header.container-fluid img.imgC {
+    display: none;
+  }
+  body header.container-fluid .content {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+  body header.container-fluid .content .textMobile {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 70px;
+    font-family: 'MullerExtraBold';
+  }
+  body header.container-fluid .content p.desc {
+    color: #fff;
+  }
+  body header.container-fluid .content .bottom {
+    padding-top: 0;
+  }
+  body header.container-fluid .content .bottom .wrap .button {
+    width: 150px;
+    height: 150px;
+  }
+  body header.container-fluid .content .bottom .wrap .circleSm, body header.container-fluid .content .bottom .wrap .circleMd, body header.container-fluid .content .bottom .wrap .circleLg, body header.container-fluid .content .bottom .wrap .circleXl, body header.container-fluid .content .bottom .wrap img.iconBg {
+    display: none;
+  }
+  body main section.first .numbers .question {
+    width: 200px;
+    height: 200px;
+  }
+  body main section.first .numbers img.questionBg {
+    width: 330px;
+  }
+  body main section.first .numbers .points .slashLine {
+    margin: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body header.container-fluid .content .btnLink {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-pack: end !important;
+    -webkit-justify-content: flex-end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+  }
+  body header.container-fluid .content .dateStart {
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: flex-start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+  body header.container-fluid .content .textMobile {
+    font-size: 50px;
+  }
+  body header.container-fluid .content .bottom {
+    padding-top: 20px;
+  }
+  body main section.first .numbers .points {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  body main section.first .numbers .points .slashLine {
+    display: none;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  body main section.first .numbers .points .point {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body main section.first .numbers .aboutNumbers .headblock span.head {
+    font-size: 32px;
+  }
+  body main section.first .numbers .aboutNumbers .headblock span.head::before {
+    top: 9.5px;
+    left: -115px;
+    width: 45px;
+  }
+  body main section.first .numbers .aboutNumbers .headblock span.number {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body header.container-fluid .content .textMobile {
+    line-height: 1.3;
+  }
+  body header.container-fluid .content .btnLink {
+    margin-top: 50px;
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  body header.container-fluid .content .dateStart {
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  body main section.first .numbers .aboutNumbers {
+    padding-left: 0;
   }
 }

@@ -118,72 +118,72 @@ section.contacts .container .c6 .list .item.phone span {
 }
 
 @media only screen and (max-width: 1200px) {
-  html body main section.contacts .container .c6 span.name {
+  body main section.contacts .container .c6 span.name {
     font-size: 45px;
   }
-  html body main section.contacts .container .c6 .desc {
+  body main section.contacts .container .c6 .desc {
     font-size: 22px;
   }
-  html body main section.contacts .container .c6 .list .item span {
+  body main section.contacts .container .c6 .list .item span {
     font-size: 16px;
   }
-  html body main section.contacts .container .c6 .list .item.phone span {
+  body main section.contacts .container .c6 .list .item.phone span {
     font-size: 22px;
   }
 }
 
 @media only screen and (max-width: 1199px) {
-  html body main section.contacts .container .c6 .desc {
+  body main section.contacts .container .c6 .desc {
     margin-top: 15px;
   }
-  html body main section.contacts .container .c6 .separ {
+  body main section.contacts .container .c6 .separ {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  html body main section.contacts .container .c6 .list {
+  body main section.contacts .container .c6 .list {
     margin-top: 20px;
   }
-  html body main section.contacts .container .c6 .list .item {
+  body main section.contacts .container .c6 .list .item {
     margin-bottom: 15px;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  html body main section.contacts .container .c6 span.name {
+  body main section.contacts .container .c6 span.name {
     font-size: 38px;
   }
-  html body main section.contacts .container .c6 .desc {
+  body main section.contacts .container .c6 .desc {
     font-size: 18px;
   }
-  html body main section.contacts .container .c6 .list .item span {
+  body main section.contacts .container .c6 .list .item span {
     font-size: 14px;
   }
-  html body main section.contacts .container .c6 .list .item.phone span {
+  body main section.contacts .container .c6 .list .item.phone span {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  html body main section.contacts {
+  body main section.contacts {
     padding-top: 15px;
   }
-  html body main section.contacts .ymap {
+  body main section.contacts .ymap {
     position: relative;
     height: 700px;
   }
-  html body main section.contacts .ymap .map {
+  body main section.contacts .ymap .map {
     position: relative;
   }
-  html body main section.contacts .ymap .bg-mobile {
+  body main section.contacts .ymap .bg-mobile {
     display: block;
   }
-  html body main section.contacts .bg {
+  body main section.contacts .bg {
     display: none;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  html body main section.contacts .container .c6 span.name {
+  body main section.contacts .container .c6 span.name {
     font-size: 33px;
   }
 }

@@ -194,129 +194,124 @@ main
 					font-size: 18px
 					color: #fff
 @media only screen and(max-width: 1199px)
-	html
-		body
-			main
-				section.list
-					.container
-						.head
-							.row
-								span.head
-									font-size: 44px
-						.item.row
-							.c7
-								padding-top: 25px
-								.name.d-flex, .desc, .separ, .list, .buttons
-									padding-left: 50px
-								.buttons
-									margin-top: 25px
-									margin-bottom: 25px
-								.desc
-									margin-top: 15px
-								.desc::before
-									left: 20px
-								.list
-									.flexCol
-										margin-left: 35px
-@media only screen and(max-width: 992px)
-	html
-		body
-			main
-				section.list
-					.container
-						.item:hover .foto-mobile img.red
-							opacity: 1
-						.item
-							.foto-mobile
-								position: relative
-								display: block
-								margin-left: auto
-								margin-right: auto
-								z-index: 1
-								img
-									position: relative
-									z-index: 1
-								img.red
-									position: absolute
-									top: 0
-									left: 0
-									right: 0
-									margin: auto
-									z-index: 3
-									opacity: 0
-									transition: 0.5s
-							.c5
-								display: none
-								img.foto, img.fotof
-									display: none
-							img.number
-								width: 80px
-								top: -55px
-								left: -45px
-						.advert
-							flex-direction: column
-							justify-content: center
-							font-size: 30px
-							.button
-								margin-left: 0
+	body
+		main
+			section.list
+				.container
+					.head
+						.row
+							span.head
+								font-size: 44px
+					.item.row
+						.c7
+							padding-top: 25px
+							.name.d-flex, .desc, .separ, .list, .buttons
+								padding-left: 50px
+							.buttons
+								margin-top: 25px
+								margin-bottom: 25px
+							.desc
 								margin-top: 15px
-@media only screen and (max-width: 767px)
-	html
-		body
-			.popup
-				width: 75%	
-			main
-				section.list
-					.container
-						.item
-							.foto-mobile
-								width: 100%
-								height: auto
-								img
-									width: 100%
-@media only screen and(max-width: 600px)
-	html
-		body
-			main
-				section.list
-					.container
-						.head
-							.row
-								span.head
-									font-size: 30px
-						.item.row
-							img.number
+							.desc::before
+								left: 20px
+							.list
+								.flexCol
+									margin-left: 35px
+@media only screen and(max-width: 992px)
+	body
+		main
+			section.list
+				.container
+					.item:hover .foto-mobile img.red
+						opacity: 1
+					.item
+						.foto-mobile
+							position: relative
+							display: block
+							margin-left: auto
+							margin-right: auto
+							z-index: 1
+							img
+								position: relative
+								z-index: 1
+							img.red
+								position: absolute
+								top: 0
+								left: 0
+								right: 0
+								margin: auto
+								z-index: 3
+								opacity: 0
+								transition: 0.5s
+						.c5
+							display: none
+							img.foto, img.fotof
 								display: none
-							.c7
-								padding-top: 10px
-								.name.d-flex, .desc, .separ, .list, .buttons
-									padding-left: 40px
-								.name.d-flex
-									flex-direction: column
-									font-size: 25px
-									line-height: 1.2
-									padding-left: 0
-								.desc::before
-									left: 10px
-								.list.d-flex
-									flex-direction: column
-									align-items: flex-start
-									span.name
-										align-self: flex-start
-										margin-bottom: 10px
-								.buttons
-									flex-direction: column
+						img.number
+							width: 80px
+							top: -55px
+							left: -45px
+					.advert
+						flex-direction: column
+						justify-content: center
+						font-size: 30px
+						.button
+							margin-left: 0
+							margin-top: 15px
+@media only screen and (max-width: 767px)
+	body
+		.popup
+			width: 75%	
+		main
+			section.list
+				.container
+					.item
+						.foto-mobile
+							width: 100%
+							height: auto
+							img
+								width: 100%
+@media only screen and(max-width: 600px)
+	body
+		main
+			section.list
+				.container
+					.head
+						.row
+							span.head
+								font-size: 30px
+					.item.row
+						img.number
+							display: none
+						.c7
+							padding-top: 10px
+							.name.d-flex, .desc, .separ, .list, .buttons
+								padding-left: 40px
+							.name.d-flex
+								flex-direction: column
+								font-size: 25px
+								line-height: 1.2
+								padding-left: 0
+							.desc::before
+								left: 10px
+							.list.d-flex
+								flex-direction: column
+								align-items: flex-start
+								span.name
+									align-self: flex-start
+									margin-bottom: 10px
+							.buttons
+								flex-direction: column
+								margin-top: 10px
+								margin-bottom: 10px
+								.button1, .button2
 									margin-top: 10px
 									margin-bottom: 10px
-									.button1, .button2
-										margin-top: 10px
-										margin-bottom: 10px
-									.button2
-										margin-left: 0
+								.button2
+									margin-left: 0
 @media only screen and(max-width: 450px)
-	html
-		body
-			.popup
-				width: 90%
+	body
+		.popup
+			width: 90%
 
 

@@ -84,58 +84,54 @@
   color: #fff;
 }
 
-html {
-  overflow-x: hidden;
-}
-
-html body {
+body {
   width: 100%;
   font-size: 16px;
   min-width: 320px;
   position: relative;
+  overflow-x: hidden;
   line-height: 1.65;
   font-family: "MullerRegular";
-  overflow-x: hidden;
   color: #000000;
   background-color: #F8F8F8;
 }
 
-html body a {
+body a {
   outline: none;
 }
 
-html body input, html body textarea {
+body input, body textarea {
   border: #666 1px solid;
   outline: none;
 }
 
-html body input:focus:required:invalid, html body textarea:focus:required:invalid {
+body input:focus:required:invalid, body textarea:focus:required:invalid {
   border-color: red;
 }
 
-html body input:required:valid, html body textarea:required:valid {
+body input:required:valid, body textarea:required:valid {
   border-color: green;
 }
 
-html body .mm-wrapper__blocker {
+body .mm-wrapper__blocker {
   z-index: 2000;
 }
 
-html body .mm-menu_offcanvas {
+body .mm-menu_offcanvas {
   z-index: 1000;
 }
 
-html body .mm-panel {
+body .mm-panel {
   background-color: #303030;
   padding-top: 50%;
 }
 
-html body .mm-panel ul.mm-listview li.mm-listitem {
+body .mm-panel ul.mm-listview li.mm-listitem {
   padding-left: 30px;
   border: none;
 }
 
-html body .mm-panel ul.mm-listview li.mm-listitem a.mm-listitem__text {
+body .mm-panel ul.mm-listview li.mm-listitem a.mm-listitem__text {
   margin-top: 5px;
   margin-bottom: 5px;
   color: #fff;
@@ -145,40 +141,40 @@ html body .mm-panel ul.mm-listview li.mm-listitem a.mm-listitem__text {
   transition: 0.3s;
 }
 
-html body .mm-panel ul.mm-listview .line {
+body .mm-panel ul.mm-listview .line {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
   padding-left: 0;
 }
 
-html body .mm-panel ul.mm-listview .line.mm-listitem::after {
+body .mm-panel ul.mm-listview .line.mm-listitem::after {
   left: 0;
   background-color: #fff;
 }
 
-html body .mm-panel ul.mm-listview li.mm-listitem::after {
+body .mm-panel ul.mm-listview li.mm-listitem::after {
   display: none;
 }
 
-html body .mm-panel ul.mm-listview li.mm-listitem:hover a.mm-listitem__text {
+body .mm-panel ul.mm-listview li.mm-listitem:hover a.mm-listitem__text {
   color: #ff2c2d;
 }
 
-html body .mm-panel ul.mm-listview li.mm-listitem.mm-listitem_selected a.mm-listitem__text {
+body .mm-panel ul.mm-listview li.mm-listitem.mm-listitem_selected a.mm-listitem__text {
   background-color: transparent;
 }
 
-html body header.container-fluid {
+body header.container-fluid {
   background-color: #212121;
   padding: 30px 0;
 }
 
-html body header.container-fluid .menu {
+body header.container-fluid .menu {
   padding-left: 47.5px;
 }
 
-html body header.container-fluid .menu .circle {
+body header.container-fluid .menu .circle {
   position: relative;
   z-index: 1500;
   cursor: pointer;
@@ -188,54 +184,54 @@ html body header.container-fluid .menu .circle {
   outline: none;
 }
 
-html body header.container-fluid .menu .hamburger {
+body header.container-fluid .menu .hamburger {
   outline: none;
 }
 
-html body header.container-fluid .menu .hamburger .hamburger-box {
+body header.container-fluid .menu .hamburger .hamburger-box {
   width: 35px;
 }
 
-html body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner,
-html body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner::after,
-html body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner::before {
+body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner,
+body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner::after,
+body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner::before {
   background-color: #fff;
   width: 35px;
 }
 
-html body header.container-fluid .menu .hamburger:hover, html body header.container-fluid .menu .hamburger.is-active:hover {
+body header.container-fluid .menu .hamburger:hover, body header.container-fluid .menu .hamburger.is-active:hover {
   opacity: 1;
 }
 
-html body header.container-fluid .logo .textLogo {
+body header.container-fluid .logo .textLogo {
   line-height: 1.2;
   margin-left: 10px;
 }
 
-html body header.container-fluid .logo .textLogo span {
+body header.container-fluid .logo .textLogo span {
   color: #fff;
 }
 
-html body header.container-fluid .logo .textLogo span.name {
+body header.container-fluid .logo .textLogo span.name {
   letter-spacing: 3px;
   font-family: 'MullerExtraBold';
   text-transform: uppercase;
   font-size: 26.53px;
 }
 
-html body header.container-fluid .logo .textLogo span.desc {
+body header.container-fluid .logo .textLogo span.desc {
   font-family: 'MullerRegular';
   font-size: 15px;
 }
 
-html body header.container-fluid .adress .circleAdress {
+body header.container-fluid .adress .circleAdress {
   width: 54px;
   height: 54px;
   background-color: transparent;
   border: 1px solid #616161;
 }
 
-html body header.container-fluid .adress span.desc {
+body header.container-fluid .adress span.desc {
   font-family: 'MullerRegular';
   font-size: 16px;
   color: #eaeaea;
@@ -243,7 +239,7 @@ html body header.container-fluid .adress span.desc {
   margin-left: 24px;
 }
 
-html body header.container-fluid .socials .social {
+body header.container-fluid .socials .social {
   cursor: pointer;
   width: 54px;
   height: 54px;
@@ -252,78 +248,78 @@ html body header.container-fluid .socials .social {
   transition: 0.5s;
 }
 
-html body header.container-fluid .socials .social.Vk {
+body header.container-fluid .socials .social.Vk {
   background-color: transparent;
   border: 1px solid #616161;
 }
 
-html body header.container-fluid .socials .social.Fb, html body header.container-fluid .socials .social.Inst {
+body header.container-fluid .socials .social.Fb, body header.container-fluid .socials .social.Inst {
   margin-left: 10px;
   background-color: transparent;
   border: 1px solid #616161;
 }
 
-html body header.container-fluid .socials .social:hover {
+body header.container-fluid .socials .social:hover {
   background-color: #FF2F2F;
   border: 1px solid #FF2F2F;
 }
 
-html body header.container-fluid .phoneCont {
+body header.container-fluid .phoneCont {
   padding-right: 54px;
 }
 
-html body header.container-fluid .phoneCont .circlePhone {
+body header.container-fluid .phoneCont .circlePhone {
   background-color: #fff;
   width: 54px;
   height: 54px;
   margin-right: 20px;
 }
 
-html body header.container-fluid .phoneCont .text {
+body header.container-fluid .phoneCont .text {
   position: relative;
   top: 2px;
   line-height: 1.2;
 }
 
-html body header.container-fluid .phoneCont .text span {
+body header.container-fluid .phoneCont .text span {
   color: #fff;
 }
 
-html body header.container-fluid .phoneCont .text span.phone {
+body header.container-fluid .phoneCont .text span.phone {
   line-height: 1.35;
   font-family: 'MullerBold';
   font-size: 22px;
 }
 
-html body header.container-fluid .phoneCont .text span.desc {
+body header.container-fluid .phoneCont .text span.desc {
   font-family: 'MullerRegular';
   font-size: 14px;
 }
 
-html body footer.container-fluid {
+body footer.container-fluid {
   background-color: #fff;
   padding: 78px 0;
 }
 
-html body footer.container-fluid .logoFooter {
+body footer.container-fluid .logoFooter {
   padding-left: 57.5px;
 }
 
-html body footer.container-fluid .logoFooter .imgLogo {
+body footer.container-fluid .logoFooter .imgLogo {
   position: relative;
   top: -6px;
 }
 
-html body footer.container-fluid .logoFooter .textLogo {
+body footer.container-fluid .logoFooter .textLogo {
   margin-left: 5px;
   line-height: 0.85;
 }
 
-html body footer.container-fluid .logoFooter .textLogo span {
+body footer.container-fluid .logoFooter .textLogo span {
   color: #000;
 }
 
-html body footer.container-fluid .logoFooter .textLogo span.name {
+body footer.container-fluid .logoFooter .textLogo span.name {
   line-height: 1.25;
   text-transform: uppercase;
   font-family: 'MullerExtraBold';
@@ -331,23 +327,23 @@ html body footer.container-fluid .logoFooter .textLogo span.name {
   letter-spacing: 3px;
 }
 
-html body footer.container-fluid .logoFooter .textLogo span.desc {
+body footer.container-fluid .logoFooter .textLogo span.desc {
   font-family: 'MullerLight';
   font-size: 12px;
 }
 
-html body footer.container-fluid .adress {
+body footer.container-fluid .adress {
   padding-left: 60px;
 }
 
-html body footer.container-fluid .adress .circleAdress {
+body footer.container-fluid .adress .circleAdress {
   width: 54px;
   height: 54px;
   background-color: transparent;
   border: 1px solid #000;
 }
 
-html body footer.container-fluid .adress span.desc {
+body footer.container-fluid .adress span.desc {
   font-family: 'MullerRegular';
   font-size: 16px;
   color: #000;
@@ -355,11 +351,11 @@ html body footer.container-fluid .adress span.desc {
   margin-left: 24px;
 }
 
-html body footer.container-fluid .socials {
+body footer.container-fluid .socials {
   padding-left: 100px;
 }
 
-html body footer.container-fluid .socials .social {
+body footer.container-fluid .socials .social {
   cursor: pointer;
   width: 54px;
   height: 54px;
@@ -368,27 +364,27 @@ html body footer.container-fluid .socials .social {
   transition: 0.5s;
 }
 
-html body footer.container-fluid .socials .social.Vk {
+body footer.container-fluid .socials .social.Vk {
   background-color: transparent;
   border: 1px solid #000;
 }
 
-html body footer.container-fluid .socials .social.Fb, html body footer.container-fluid .socials .social.Inst {
+body footer.container-fluid .socials .social.Fb, body footer.container-fluid .socials .social.Inst {
   margin-left: 10px;
   background-color: transparent;
   border: 1px solid #000;
 }
 
-html body footer.container-fluid .socials .social:hover {
+body footer.container-fluid .socials .social:hover {
   background-color: #FF2F2F;
   border: 1px solid #FF2F2F;
 }
 
-html body footer.container-fluid .phoneCont {
+body footer.container-fluid .phoneCont {
   padding-right: 54px;
 }
 
-html body footer.container-fluid .phoneCont .circlePhone {
+body footer.container-fluid .phoneCont .circlePhone {
   background-color: transparent;
   border: 1px solid #000;
   width: 54px;
@@ -396,79 +392,79 @@ html body footer.container-fluid .phoneCont .circlePhone {
   margin-right: 20px;
 }
 
-html body footer.container-fluid .phoneCont .text {
+body footer.container-fluid .phoneCont .text {
   position: relative;
   top: 2px;
   line-height: 1.2;
 }
 
-html body footer.container-fluid .phoneCont .text span {
+body footer.container-fluid .phoneCont .text span {
   color: #000;
 }
 
-html body footer.container-fluid .phoneCont .text span.phone {
+body footer.container-fluid .phoneCont .text span.phone {
   line-height: 1.35;
   font-family: 'MullerBold';
   font-size: 22px;
 }
 
-html body footer.container-fluid .phoneCont .text span.desc {
+body footer.container-fluid .phoneCont .text span.desc {
   font-family: 'MullerRegular';
   font-size: 14px;
 }
 
-html .img-responsive {
+.img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-html .img-responsive.img-width {
+.img-responsive.img-width {
   width: 100%;
 }
 
-html .text-center {
+.text-center {
   text-align: center;
 }
 
-html b, html strong {
+b, strong {
   font-weight: bold;
 }
 
 @media only screen and (max-width: 1600px) {
-  html body header.container-fluid .menu {
+  body header.container-fluid .menu {
     padding-left: 24px;
   }
-  html body header.container-fluid .phoneCont {
+  body header.container-fluid .phoneCont {
     padding-right: 24px;
   }
 }
 
 @media only screen and (max-width: 1500px) {
-  html body footer.container-fluid .adress {
+  body footer.container-fluid .adress {
     padding-left: 10px;
   }
-  html body footer.container-fluid .phoneCont {
+  body footer.container-fluid .phoneCont {
     padding-right: 15px;
   }
-  html body footer.container-fluid .logoFooter {
+  body footer.container-fluid .logoFooter {
     padding-left: 15px;
   }
 }
 
 @media only screen and (max-width: 1400px) {
-  html body section.first .numbers .aboutNumbers {
+  body section.first .numbers .aboutNumbers {
     padding-left: 100px;
   }
 }
 
 @media only screen and (max-width: 1300px) {
-  html body header.container-fluid .menu, html body header.container-fluid .logo, html body header.container-fluid .adress, html body header.container-fluid .socials, html body header.container-fluid .phoneCont {
+  body header.container-fluid .menu, body header.container-fluid .logo, body header.container-fluid .adress, body header.container-fluid .socials, body header.container-fluid .phoneCont {
     -webkit-align-content: stretch;
         -ms-flex-line-pack: stretch;
             align-content: stretch;
   }
-  html body header.container-fluid .adress {
+  body header.container-fluid .adress {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -476,15 +472,15 @@ html b, html strong {
             flex-direction: column;
     text-align: center;
   }
-  html body header.container-fluid .adress span.desc {
+  body header.container-fluid .adress span.desc {
     margin-top: 10px;
     margin-left: 0;
   }
-  html body header.container-fluid .socials .social {
+  body header.container-fluid .socials .social {
     width: 48px;
     height: 48px;
   }
-  html body header.container-fluid .phoneCont {
+  body header.container-fluid .phoneCont {
     padding-right: 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -493,14 +489,14 @@ html b, html strong {
             flex-direction: column;
     text-align: center;
   }
-  html body header.container-fluid .phoneCont .circlePhone {
+  body header.container-fluid .phoneCont .circlePhone {
     margin-right: 0;
     margin-bottom: 10px;
   }
-  html body header.container-fluid .menu {
+  body header.container-fluid .menu {
     padding-left: 15px;
   }
-  html body footer.container-fluid .logoFooter {
+  body footer.container-fluid .logoFooter {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -512,27 +508,27 @@ html b, html strong {
             justify-content: space-between;
     text-align: center;
   }
-  html body footer.container-fluid .logoFooter .imgLogo {
+  body footer.container-fluid .logoFooter .imgLogo {
     top: 0;
     margin-top: auto;
     margin-bottom: auto;
   }
-  html body footer.container-fluid .logoFooter .textLogo {
+  body footer.container-fluid .logoFooter .textLogo {
     margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 1199px) {
-  html body header.container-fluid .menu, html body header.container-fluid .logo, html body header.container-fluid .adress, html body header.container-fluid .socials, html body header.container-fluid .phoneCont {
+  body header.container-fluid .menu, body header.container-fluid .logo, body header.container-fluid .adress, body header.container-fluid .socials, body header.container-fluid .phoneCont {
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
-  html body header.container-fluid .socials {
+  body header.container-fluid .socials {
     display: none !important;
   }
-  html body footer.container-fluid .phoneCont {
+  body footer.container-fluid .phoneCont {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -544,12 +540,12 @@ html b, html strong {
             justify-content: space-between;
     text-align: center;
   }
-  html body footer.container-fluid .phoneCont .circlePhone {
+  body footer.container-fluid .phoneCont .circlePhone {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 0;
   }
-  html body footer.container-fluid .adress {
+  body footer.container-fluid .adress {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -561,35 +557,35 @@ html b, html strong {
             justify-content: space-between;
     text-align: center;
   }
-  html body footer.container-fluid .adress .circleAdress {
+  body footer.container-fluid .adress .circleAdress {
     margin-top: auto;
     margin-bottom: auto;
   }
-  html body footer.container-fluid .adress span.desc {
+  body footer.container-fluid .adress span.desc {
     margin-top: 10px;
     margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  html body footer.container-fluid {
+  body footer.container-fluid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  html body footer.container-fluid .logoFooter {
+  body footer.container-fluid .logoFooter {
     margin-bottom: 10px;
   }
-  html body footer.container-fluid .logoFooter .imgLogo {
+  body footer.container-fluid .logoFooter .imgLogo {
     margin-bottom: 10px;
   }
-  html body footer.container-fluid .phoneCont .circlePhone {
+  body footer.container-fluid .phoneCont .circlePhone {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  html body footer.container-fluid .socials {
+  body footer.container-fluid .socials {
     margin-top: 10px;
     margin-bottom: 10px;
     -webkit-box-pack: center;
@@ -601,42 +597,42 @@ html b, html strong {
 }
 
 @media only screen and (max-width: 991px) {
-  html body header.container-fluid .adress {
+  body header.container-fluid .adress {
     display: none !important;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  html body header.container-fluid .phoneCont {
+  body header.container-fluid .phoneCont {
     display: none !important;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  html body header.container-fluid .menu .circle {
+  body header.container-fluid .menu .circle {
     width: 60px;
     height: 60px;
   }
-  html body header.container-fluid .menu .circle .line {
+  body header.container-fluid .menu .circle .line {
     width: 26.5px;
   }
-  html body header.container-fluid .logo .textLogo span.name {
+  body header.container-fluid .logo .textLogo span.name {
     font-size: 22px;
   }
-  html body header.container-fluid .logo .textLogo span.desc {
+  body header.container-fluid .logo .textLogo span.desc {
     font-size: 13px;
   }
-  html body header.container-fluid .logo .imgLogo svg {
+  body header.container-fluid .logo .imgLogo svg {
     height: 32px;
     width: auto;
   }
 }
 
 @media only screen and (max-width: 340px) {
-  html body footer.container-fluid .container .adress .circleAdress, html body header.container-fluid .container .adress .circleAdress {
+  body footer.container-fluid .container .adress .circleAdress, body header.container-fluid .container .adress .circleAdress {
     margin-left: 0;
   }
-  html body footer.container-fluid .container .adress span.desc, html body header.container-fluid .container .adress span.desc {
+  body footer.container-fluid .container .adress span.desc, body header.container-fluid .container .adress span.desc {
     margin-left: 10px;
   }
 }
