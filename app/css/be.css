@@ -1872,6 +1872,21 @@ body main section.howSignUp .signUp:hover svg {
   body main section.purpose {
     display: none;
   }
+  body main section.first .points .content span.head br {
+    display: none;
+  }
+  body main section.first .points .content span.head span.red {
+    margin-left: 5px;
+  }
+  body main section.first .points .content ul li p.desc {
+    font-size: 15px;
+  }
+  body main section.first .points .content ul li img.icon {
+    width: 40px;
+  }
+  body main section.first .points .counter {
+    bottom: 140px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1896,6 +1911,50 @@ body main section.howSignUp .signUp:hover svg {
   }
   body header.container-fluid nav .adress {
     display: none !important;
+  }
+  body main section.first .points .circleBg {
+    right: -250px;
+    bottom: -250px;
+    width: 600px;
+    height: 600px;
+  }
+  body main section.first .points .counter {
+    width: 150px;
+    height: 150px;
+    bottom: 75px;
+    right: 75px;
+  }
+  body main section.first .points .content ul {
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  body main section.first .points .content .arrows .arrow {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  body main section.first .points .counter {
+    width: 125px;
+    height: 125px;
+    bottom: 115px;
+    right: 75px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body main section.first .points .counter {
+    bottom: 75px;
+  }
+  body main section.first .points .content {
+    padding-bottom: 15px;
+  }
+  body main section.first .points img.mask {
+    display: none;
+  }
+  body main section.first .points .csl {
+    position: relative;
   }
 }
 
@@ -1951,6 +2010,25 @@ body main section.howSignUp .signUp:hover svg {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  body main section.first .points .circleBg {
+    width: 500px;
+    height: 500px;
+  }
+  body main section.first .points .counter {
+    width: 110px;
+    height: 110px;
+    bottom: 35px;
+    right: 35px;
+  }
+  body main section.first .points .counter span.single {
+    font-size: 20px;
+  }
+  body main section.first .points .counter span.all {
+    font-size: 12.5px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   body header.container-fluid .content .btnLink {
     -webkit-box-ordinal-group: 3;
@@ -1994,6 +2072,9 @@ body main section.howSignUp .signUp:hover svg {
 }
 
 @media only screen and (max-width: 600px) {
+  body main section.first .points .content span.head br {
+    display: block;
+  }
   body main section.first .numbers .aboutNumbers .headblock span.head {
     font-size: 32px;
   }
@@ -2026,5 +2107,22 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.first .numbers .aboutNumbers {
     padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body main section.first .points .content span.head {
+    font-size: 35px;
+  }
+  body main section.first .points .content ul li p.desc {
+    font-size: 13px;
+  }
+  body main section.first .points .content .arrows .arrow {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+  body main section.first .points .content .arrows p.desc {
+    font-size: 13px;
   }
 }
