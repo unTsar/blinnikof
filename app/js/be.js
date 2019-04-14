@@ -1,20 +1,5 @@
 $(document).ready(function(){
-	// $('.slick').slick({
-	// 	infinite: true,
-	// 	prevArrow: $('.prevSlick'),
-	// 	nextArrow: $('.nextSlick'),
-	// 	speed: 200,
-	// 	autoplay: true,
- //  	autoplaySpeed: 3500,
- //    centerPadding: "0px",
- //    cssEase: "cubic-bezier(0.4, 0, 1, 1)",
- //    easing: "cubic-bezier(0.4, 0, 1, 1)"
-	// });
-
-
-	// $(".slick").on('afterChange', function(event, slick, currentSlide){
-	// 	$("#counter").text('0' + (currentSlide + 1));
- //  	});
+    // Carousel 1
     $('.carousel').carousel({
       interval: 2000
     });
@@ -35,6 +20,8 @@ $(document).ready(function(){
     $('.carousel').on('slide.bs.carousel', function (e) {
       $("#counter").text('0' + (e.to + 1));
     })
+    // Carousel 2
+    
   	// Fade bg content
   	$('#content-bg1-button').click(function() {
   		$('#content-bg2').fadeTo(0.5, 0);

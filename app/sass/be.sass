@@ -630,7 +630,6 @@ body
 					pointer-events: none
 				.content
 					padding-top: 120px
-					padding-bottom: 75px
 					span.head, ul, .arrows
 						z-index: 30
 						position: relative
@@ -651,6 +650,7 @@ body
 								color: #313131
 								max-width: 85%
 					.arrows
+						padding-bottom: 15px
 						.arrow
 							cursor: pointer
 							transition: 0.3s
@@ -776,12 +776,11 @@ body
 				position: relative
 				background-color: #fff
 				padding-top: 130px
-				padding-bottom: 150px
 				img.bg
 					position: absolute
 					right: 0
 					top: 0
-					height: 100%
+					width: 100%
 					opacity: 0
 					transition: 0.5s
 				img.bg#content-bg1
@@ -798,6 +797,7 @@ body
 					list-style: none
 					padding-left: 0
 					padding-top: 30px
+					padding-bottom: 100px
 					li 
 						margin-bottom: 15px
 						cursor: pointer
@@ -1240,6 +1240,20 @@ body
 						padding-top: 50px
 						ul
 							margin-bottom: 50px
+@media only screen and(max-width: 1600px)
+	body
+		main 
+			section.second
+				.content
+					padding-top: 60px
+@media only screen and(max-width: 1500px)
+	body
+		main
+			section.second
+				.header
+					.container
+						.headblock
+							margin-left: 100px
 @media only screen and(max-width: 1400px)
 	body
 		header.container-fluid
@@ -1266,6 +1280,21 @@ body
 									width: 40px
 					.counter
 						bottom: 140px
+			section.second
+				.content
+					padding-top: 15px
+					span.head
+						font-size: 35.5px
+					p.desc
+						margin-top: 15px
+						font-size: 15px
+					ul
+						padding-top: 0
+						padding-bottom: 15px
+						li
+							.circle
+								img
+									width: 60%
 @media only screen and(max-width: 1300px)
 	body 
 		header.container-fluid
@@ -1305,6 +1334,16 @@ body
 							.arrow
 								width: 45px
 								height: 45px
+			section.second
+				.header
+					.container
+						img.imgPos
+							display: none
+				.content
+					img.bg
+						display: none
+					ul
+						display: none
 @media only screen and(max-width: 1100px)
 	body
 		main
@@ -1322,8 +1361,6 @@ body
 				.points
 					.counter
 						bottom: 75px
-					.content
-						padding-bottom: 15px
 					img.mask
 						display: none
 					.csl
@@ -1374,6 +1411,15 @@ body
 					.points
 						.slashLine
 							margin: 0 40px
+			section.second
+				.header
+					.container
+						.fact
+							p.desc
+								font-size: 18px
+							.procent
+								font-size: 65px
+
 @media only screen and(max-width: 800px)
 	body
 		main
@@ -1415,6 +1461,11 @@ body
 							align-items: center
 						.point
 							text-align: center
+			section.second
+				.header
+					.container
+						img.imgPos
+							display: none
 @media only screen and(max-width: 600px)
 	body
 		main
@@ -1453,6 +1504,20 @@ body
 				.numbers
 					.aboutNumbers
 						padding-left: 0
+@media only screen and(max-width: 500px)
+	body
+		main
+			section.second
+				.header
+					.container
+						.headblock
+							margin-left: 0
+							span.head::before
+								display: none
+							span.head
+								font-size: 35px
+							.number
+								display: none
 @media only screen and(max-width: 400px)
 	body
 		main
@@ -1471,4 +1536,11 @@ body
 								height: 35px
 								margin-right: 10px
 							p.desc
-								font-size: 13px
+								font-size: 11px
+			section.second
+				.header
+					.container
+						.fact	
+							flex-direction: column
+							p.desc
+								margin-left: 0
