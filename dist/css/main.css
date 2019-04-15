@@ -622,7 +622,7 @@ b, strong {
   body header.container-fluid .logo .textLogo span.desc {
     font-size: 13px;
   }
-  body header.container-fluid .logo .imgLogo svg {
+  body header.container-fluid .logo .imgsLogo svg {
     height: 32px;
     width: auto;
   }

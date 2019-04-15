@@ -229,7 +229,7 @@ block content
 				.circleBg
 				img(src="img/be/be-first-carousel-mask.png", alt="be-first-carousel-mask").mask
 				.counter.d-flex.align-items-center.justify-content-center
-					span.single#counter 01
+					span.single#counter1 01
 					.line
 					span.all 4
 
@@ -262,7 +262,7 @@ block content
 							br
 							|тренировок
 				.csl
-					.carousel.slide(data-ride="carousel")
+					#carousel1.slide(data-ride="carousel")
 						.carousel-inner
 							.carousel-item.active
 								img.d-block.img-fluid(src="img/be/be-first-slide1.jpg", alt="be-first-slide1")
@@ -316,50 +316,93 @@ block content
 								p.text|Онлайн-поддержка
 									br
 									|диетолога на весь курс
-		//- section.third#section4
-		//- 	.header
-		//- 		.container
-		//- 			.headblock
-		//- 				span.head|Система доведения
-		//- 					br
-		//- 					|<span class="red">до результата</span> каждого
-		//- 				span.number 03
-		//- 	.content
-		//- 		.container
-		//- 			span.head|Куратор группы в
-		//- 				br
-		//- 				|ответе за результаты
-		//- 			ul
-		//- 				li.d-flex.align-items-center
-		//- 					img(src="img/be/be-third-content-list-img1.png", alt="be-third-content-list-img1")
-		//- 					p.desc|У каждой группы есть личный куратор-наставник, 
-		//- 						br
-		//- 						|который в ответе за достижение цели каждого
-		//- 						br
-		//- 						|ученика группы
-		//- 				li.d-flex.align-items-center
-		//- 					img(src="img/be/be-third-content-list-img2.png", alt="be-third-content-list-img2")
-		//- 					p.desc|Куратор взвешивает, замеряет объемы ДО
-		//- 						br
-		//- 						|и ПОСЛЕ и делает фото учеников на каждой
-		//- 						br
-		//- 						|ступени
-		//- 				li.d-flex.align-items-center
-		//- 					img(src="img/be/be-third-content-list-img3.png", alt="be-third-content-list-img3")
-		//- 					p.desc|Все замеры заносятся в ваш личный профиль
-		//- 						br
-		//- 						|похудения, который постоянно отслеживает личный
-		//- 						br
-		//- 						|куратор и диетолог школы
-		//- 				li.d-flex.align-items-center
-		//- 					img(src="img/be/be-third-content-list-img4.png", alt="be-third-content-list-img4")
-		//- 					p.desc|Куратор и диетолог всегда на чеку, корректируя ваш
-		//- 						br
-		//- 						|тренинг и питание, если достижение результатов
-		//- 						br
-		//- 						|замедляется, чтобы вы неуклонно добились своей
-		//- 						br
-		//- 						|цели
+				.cslMobile#carousel2.slide.carousel-fade(data-ride="carousel")
+					.carousel-inner
+						.carousel-item.active
+							.container
+								.head.d-flex.align-items-center#content-bg1-button
+									.circle.d-flex.align-items-center.justify-content-center
+										img(src="img/be/be-second-content-list-img1.png", alt="be-second-content-list-img1")
+									p.text|Индивидуальное питание
+										br
+										|каждому участнику
+							img.d-block.img-fluid(src="img/be/be-second-content-csl-slide1.png", alt="be-second-content-csl-slide1")
+						.carousel-item
+							.container
+								.head.d-flex.align-items-center#content-bg2-button
+									.circle.d-flex.align-items-center.justify-content-center
+										img(src="img/be/be-second-content-list-img2.png", alt="be-second-content-list-img2")
+									p.text|Лекции о правильном
+										br
+										|питании. 3 блока от
+										br
+										|диетолога
+							img.d-block.img-fluid(src="img/be/be-second-content-csl-slide2.png", alt="be-second-content-csl-slide2")
+						.carousel-item
+							.container
+								.head.d-flex.align-items-center#content-bg3-button
+									.circle.d-flex.align-items-center.justify-content-center
+										img(src="img/be/be-second-content-list-img3.png", alt="be-second-content-list-img3")
+									p.text|Онлайн-поддержка
+										br
+										|диетолога на весь курс
+							img.d-block.img-fluid(src="img/be/be-second-content-csl-slide3.png", alt="be-second-content-csl-slide3")
+				.cslMobile-control.justify-content-between.align-items-center
+					.counter.d-flex.align-items-center.justify-content-center
+						span.single#counter2 01
+						.line
+						span.all 3
+					.arrows.d-flex.align-items-center
+						.arrow.prevCsl.d-flex.align-items-center.justify-content-center
+							<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="18px" height="12px"><path fill-rule="evenodd"  fill="rgb(46, 49, 51)"d="M5.480,0.266 C5.894,-0.120 6.581,-0.120 7.009,0.266 C7.423,0.639 7.423,1.259 7.009,1.632 L3.711,5.017 L16.930,5.017 C17.526,5.020 18.000,5.446 18.000,5.984 C18.000,6.523 17.526,6.963 16.930,6.963 L3.711,6.963 L7.009,10.337 C7.423,10.723 7.423,11.343 7.009,11.716 C6.581,12.102 5.893,12.102 5.480,11.716 L0.346,6.674 C-0.081,6.301 -0.081,5.680 0.346,5.308 L5.480,0.266 Z"/></svg>
+						.arrow.nextCsl.d-flex.align-items-center.justify-content-center
+							<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="19px" height="12px"><path fill-rule="evenodd"  fill="rgb(46, 49, 51)"d="M12.541,0.266 C12.127,-0.120 11.438,-0.120 11.010,0.266 C10.596,0.639 10.596,1.259 11.010,1.632 L14.314,5.017 L1.072,5.017 C0.475,5.020 -0.000,5.446 -0.000,5.984 C-0.000,6.523 0.475,6.963 1.072,6.963 L14.314,6.963 L11.010,10.337 C10.596,10.723 10.596,11.343 11.010,11.716 C11.438,12.102 12.128,12.102 12.541,11.716 L17.684,6.674 C18.113,6.301 18.113,5.680 17.684,5.308 L12.541,0.266 Z"/></svg>
+		section.third#section4
+			.header
+				.container
+					.headblock
+						span.head|Система доведения
+							br
+							|<span class="red">до результата</span> каждого
+						span.number 03
+			.content
+				img.imgBg-mobile(src="img/be/be-third-content-imgBg-mobile.png", alt="be-third-content-imgBg-mobile")
+				img.imgBg(src="img/be/be-third-content-bg.jpg", alt="be-third-content-bg")
+				.container
+					span.head|Куратор группы в 
+						br
+						|ответе за результаты
+					ul
+						li.d-flex.align-items-center
+							img(src="img/be/be-third-content-list-img1.png", alt="be-third-content-list-img1")
+							p.desc|У каждой группы есть личный куратор-наставник, 
+								br
+								|который в ответе за достижение цели каждого
+								br
+								|ученика группы
+						li.d-flex.align-items-center
+							img(src="img/be/be-third-content-list-img2.png", alt="be-third-content-list-img2")
+							p.desc|Куратор взвешивает, замеряет объемы ДО
+								br
+								|и ПОСЛЕ и делает фото учеников на каждой
+								br
+								|ступени
+						li.d-flex.align-items-center
+							img(src="img/be/be-third-content-list-img3.png", alt="be-third-content-list-img3")
+							p.desc|Все замеры заносятся в ваш личный профиль
+								br
+								|похудения, который постоянно отслеживает личный
+								br
+								|куратор и диетолог школы
+						li.d-flex.align-items-center
+							img(src="img/be/be-third-content-list-img4.png", alt="be-third-content-list-img4")
+							p.desc|Куратор и диетолог всегда на чеку, корректируя ваш
+								br
+								|тренинг и питание, если достижение результатов
+								br
+								|замедляется, чтобы вы неуклонно добились своей
+								br
+								|цели
 		//- section.fourth#section5
 		//- 	.header
 		//- 		.container

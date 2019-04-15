@@ -970,7 +970,6 @@ body main section.first .points img.mask {
 
 body main section.first .points .content {
   padding-top: 120px;
-  padding-bottom: 75px;
 }
 
 body main section.first .points .content span.head, body main section.first .points .content ul, body main section.first .points .content .arrows {
@@ -997,6 +996,10 @@ body main section.first .points .content ul li p.desc {
   font-size: 17px;
   color: #313131;
   max-width: 85%;
+}
+
+body main section.first .points .content .arrows {
+  padding-bottom: 15px;
 }
 
 body main section.first .points .content .arrows .arrow {
@@ -1187,14 +1190,124 @@ body main section.second .content {
   position: relative;
   background-color: #fff;
   padding-top: 130px;
-  padding-bottom: 150px;
+}
+
+body main section.second .content .cslMobile-control {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: none;
+}
+
+body main section.second .content .cslMobile-control .counter {
+  margin-left: 15px;
+}
+
+body main section.second .content .cslMobile-control .counter span.single {
+  font-family: 'MullerBold';
+  font-size: 28px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+body main section.second .content .cslMobile-control .counter span.all {
+  font-family: 'MullerMedium';
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #000;
+}
+
+body main section.second .content .cslMobile-control .counter .line {
+  background-color: #ff2e2f;
+  width: 2px;
+  height: 20px;
+  margin-left: 10px;
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+body main section.second .content .cslMobile-control .arrows .arrow {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border-width: 2px;
+  border-color: #35383b;
+  border-style: solid;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+body main section.second .content .cslMobile-control .arrows .arrow svg, body main section.second .content .cslMobile-control .arrows .arrow path {
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+}
+
+body main section.second .content .cslMobile-control .arrows .arrow:hover {
+  background-color: #ff2e2f;
+  border-color: #ff2e2f;
+}
+
+body main section.second .content .cslMobile-control .arrows .arrow:hover svg, body main section.second .content .cslMobile-control .arrows .arrow:hover path {
+  fill: #fff;
+}
+
+body main section.second .content .cslMobile {
+  display: none;
+}
+
+body main section.second .content .cslMobile .carousel-item .head {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+body main section.second .content .cslMobile .carousel-item .head p.text {
+  font-family: 'MullerRegular';
+  font-size: 18px;
+  color: #313131;
+  text-decoration: underline;
+  margin-left: 15px;
+  margin-bottom: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main section.second .content .cslMobile .carousel-item .head .circle {
+  -webkit-box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 5px #fff;
+  border-width: 1px;
+  border-color: #EAEAEA;
+  border-style: solid;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+  width: 113px;
+  height: 113px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main section.second .content .cslMobile .carousel-item .head .circle img {
+  width: 60%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4);
+  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4);
 }
 
 body main section.second .content img.bg {
   position: absolute;
   right: 0;
   top: 0;
-  height: 100%;
+  width: 100%;
   opacity: 0;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1221,6 +1334,7 @@ body main section.second .content ul {
   list-style: none;
   padding-left: 0;
   padding-top: 30px;
+  padding-bottom: 100px;
 }
 
 body main section.second .content ul li {
@@ -1324,11 +1438,22 @@ body main section.third .content {
   padding-bottom: 100px;
   padding-top: 100px;
   background-color: #fff;
-  background-image: url("../img/be/be-third-content-bg.jpg");
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+}
+
+body main section.third .content img.imgBg-mobile {
+  display: none;
+  width: 100%;
+}
+
+body main section.third .content img.imgBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  pointer-events: none;
 }
 
 body main section.third .content .container ul {
@@ -1862,6 +1987,28 @@ body main section.howSignUp .signUp:hover svg {
   body main section.first .points .content ul {
     margin-bottom: 50px;
   }
+  body main section.third .content {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  body main section.second .content {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  body main section.second .header .container .headblock, body main section.third .header .container .headblock {
+    margin-left: 100px;
+  }
+  body main section.third .content .container ul {
+    margin-top: 25px;
+  }
+  body main section.third .content .container ul li {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -1872,6 +2019,38 @@ body main section.howSignUp .signUp:hover svg {
   body main section.purpose {
     display: none;
   }
+  body main section.first .points .content span.head br {
+    display: none;
+  }
+  body main section.first .points .content span.head span.red {
+    margin-left: 5px;
+  }
+  body main section.first .points .content ul li p.desc {
+    font-size: 15px;
+  }
+  body main section.first .points .content ul li img.icon {
+    width: 40px;
+  }
+  body main section.first .points .counter {
+    bottom: 140px;
+  }
+  body main section.second .content {
+    padding-top: 15px;
+  }
+  body main section.second .content span.head {
+    font-size: 35.5px;
+  }
+  body main section.second .content p.desc {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  body main section.second .content ul {
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+  body main section.second .content ul li .circle img {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1880,6 +2059,18 @@ body main section.howSignUp .signUp:hover svg {
   }
   body header.container-fluid img.imgC {
     width: 75%;
+  }
+  body main section.third .content .container span.head br {
+    display: none;
+  }
+  body main section.third .content .container ul {
+    margin-top: 15px;
+  }
+  body main section.third .content .container ul li {
+    margin-bottom: 15px;
+  }
+  body main section.third .content .container ul li p.desc {
+    margin-left: 15px;
   }
 }
 
@@ -1896,6 +2087,87 @@ body main section.howSignUp .signUp:hover svg {
   }
   body header.container-fluid nav .adress {
     display: none !important;
+  }
+  body main section.first .points .circleBg {
+    right: -250px;
+    bottom: -250px;
+    width: 600px;
+    height: 600px;
+  }
+  body main section.first .points .counter {
+    width: 150px;
+    height: 150px;
+    bottom: 75px;
+    right: 75px;
+  }
+  body main section.first .points .content ul {
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  body main section.first .points .content .arrows .arrow {
+    width: 45px;
+    height: 45px;
+  }
+  body main section.second .header .container img.imgPos {
+    display: none;
+  }
+  body main section.second .content img.bg {
+    display: none;
+  }
+  body main section.second .content ul {
+    display: none;
+  }
+  body main section.second .content .cslMobile {
+    display: block;
+  }
+  body main section.second .content .cslMobile img {
+    width: 100%;
+  }
+  body main section.second .content .cslMobile-control {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main section.third .content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  body main section.first .points .counter {
+    width: 125px;
+    height: 125px;
+    bottom: 115px;
+    right: 75px;
+  }
+  body main section.third .content {
+    padding-top: 0;
+  }
+  body main section.third .content img.imgBg {
+    display: none;
+  }
+  body main section.third .content img.imgBg-mobile {
+    display: block;
+  }
+  body main section.third .content .container {
+    padding-top: 25px;
+  }
+  body main section.third .content .container ul li p.desc {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body main section.first .points .counter {
+    bottom: 75px;
+  }
+  body main section.first .points img.mask {
+    display: none;
+  }
+  body main section.first .points .csl {
+    position: relative;
   }
 }
 
@@ -1949,6 +2221,31 @@ body main section.howSignUp .signUp:hover svg {
   body main section.first .numbers .points .slashLine {
     margin: 0 40px;
   }
+  body main section.second .header .container .fact p.desc {
+    font-size: 18px;
+  }
+  body main section.second .header .container .fact .procent {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body main section.first .points .circleBg {
+    width: 500px;
+    height: 500px;
+  }
+  body main section.first .points .counter {
+    width: 110px;
+    height: 110px;
+    bottom: 35px;
+    right: 35px;
+  }
+  body main section.first .points .counter span.single {
+    font-size: 20px;
+  }
+  body main section.first .points .counter span.all {
+    font-size: 12.5px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1991,9 +2288,15 @@ body main section.howSignUp .signUp:hover svg {
   body main section.first .numbers .points .point {
     text-align: center;
   }
+  body main section.second .header .container img.imgPos {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  body main section.first .points .content span.head br {
+    display: block;
+  }
   body main section.first .numbers .aboutNumbers .headblock span.head {
     font-size: 32px;
   }
@@ -2026,5 +2329,77 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.first .numbers .aboutNumbers {
     padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body main section.second .header .container .headblock, body main section.third .header .container .headblock {
+    margin-left: 0;
+  }
+  body main section.second .header .container .headblock span.head::before, body main section.third .header .container .headblock span.head::before {
+    display: none;
+  }
+  body main section.second .header .container .headblock span.head, body main section.third .header .container .headblock span.head {
+    font-size: 35px;
+  }
+  body main section.second .header .container .headblock .number, body main section.third .header .container .headblock .number {
+    display: none;
+  }
+  body main section.second .content .cslMobile .carousel-item .head .circle, body main section.third .content .cslMobile .carousel-item .head .circle {
+    width: 90px;
+    height: 90px;
+  }
+  body main section.third .content .container span.head {
+    font-size: 35px;
+  }
+  body main section.third .content .container ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  body main section.third .content .container ul li p.desc {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body .scroll {
+    left: 15px;
+  }
+  body main section.first .points .content span.head {
+    font-size: 35px;
+  }
+  body main section.first .points .content ul li p.desc {
+    font-size: 13px;
+  }
+  body main section.first .points .content .arrows .arrow {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+  body main section.first .points .content .arrows p.desc {
+    font-size: 11px;
+  }
+  body main section.second .header .container .fact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  body main section.second .header .container .fact p.desc {
+    margin-left: 0;
   }
 }

@@ -1,39 +1,47 @@
 $(document).ready(function(){
-	// $('.slick').slick({
-	// 	infinite: true,
-	// 	prevArrow: $('.prevSlick'),
-	// 	nextArrow: $('.nextSlick'),
-	// 	speed: 200,
-	// 	autoplay: true,
- //  	autoplaySpeed: 3500,
- //    centerPadding: "0px",
- //    cssEase: "cubic-bezier(0.4, 0, 1, 1)",
- //    easing: "cubic-bezier(0.4, 0, 1, 1)"
-	// });
+    // Carousel 1
+    $('#carousel1').carousel({
+      interval: 2000,
 
-
-	// $(".slick").on('afterChange', function(event, slick, currentSlide){
-	// 	$("#counter").text('0' + (currentSlide + 1));
- //  	});
-    $('.carousel').carousel({
-      interval: 2000
     });
-    var hammer = new Hammer(document.querySelector('.carousel'));
+    var hammer = new Hammer(document.querySelector('#carousel1'));
     hammer.get("pan");
     hammer.on("panleft", function(){
-        $('.carousel').carousel("next");
+        $('#carousel1').carousel("next");
     });
     hammer.on("panright", function(){
-        $('.carousel').carousel("prev");
+        $('#carousel1').carousel("prev");
     });
     $('.prevSlick').click(function() {
-      $('.carousel').carousel('prev');
+      $('#carousel1').carousel('prev');
     })
     $('.nextSlick').click(function() {
-      $('.carousel').carousel('next');
+      $('#carousel1').carousel('next');
     })
-    $('.carousel').on('slide.bs.carousel', function (e) {
-      $("#counter").text('0' + (e.to + 1));
+    $('#carousel1').on('slide.bs.carousel', function (e) {
+      $("#counter1").text('0' + (e.to + 1));
+    })
+    // Carousel 2
+    $('#carousel2').carousel({
+      interval: false,
+      
+    });
+    var hammer = new Hammer(document.querySelector('#carousel2'));
+    hammer.get("pan");
+    hammer.on("panleft", function(){
+        $('#carousel2').carousel("next");
+    });
+    hammer.on("panright", function(){
+        $('#carousel2').carousel("prev");
+    });
+    $('.prevCsl').click(function() {
+      $('#carousel2').carousel('prev');
+    })
+    $('.nextCsl').click(function() {
+      $('#carousel2').carousel('next');
+    })
+    $('#carousel2').on('slide.bs.carousel', function (e) {
+      $("#counter2").text('0' + (e.to + 1));
     })
   	// Fade bg content
   	$('#content-bg1-button').click(function() {

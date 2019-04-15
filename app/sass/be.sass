@@ -776,6 +776,75 @@ body
 				position: relative
 				background-color: #fff
 				padding-top: 130px
+				.cslMobile-control
+					padding-top: 15px
+					padding-bottom: 15px
+					display: none
+					.counter
+						margin-left: 15px
+						span.single
+							font-family: 'MullerBold'
+							font-size: 28px
+							color: #000
+							margin-bottom: 5px
+						span.all
+							font-family: 'MullerMedium'
+							font-size: 15px
+							margin-top: 10px
+							margin-left: 10px
+							color: #000
+						.line
+							background-color: #ff2e2f
+							width: 2px
+							height: 20px
+							margin-left: 10px
+							transform: rotate(20deg)
+					.arrows
+						.arrow
+							cursor: pointer
+							transition: 0.3s
+							border-width: 2px
+							border-color: rgb(53, 56, 59)
+							border-style: solid
+							border-radius: 50%
+							width: 50px
+							height: 50px
+							margin-right: 15px
+							svg, path
+								transition: 0.15s
+						.arrow:hover
+							background-color: #ff2e2f
+							border-color: #ff2e2f
+							svg, path
+								fill: #fff
+				.cslMobile
+					display: none
+					.carousel-item
+						.head
+							margin-bottom: 15px
+							cursor: pointer
+							p.text
+								font-family: 'MullerRegular'
+								font-size: 18px
+								color: #313131
+								text-decoration: underline
+								margin-left: 15px
+								margin-bottom: 0
+								transition: 0.3s
+							.circle
+								box-shadow: 0 0 5px #fff
+								border-width: 1px
+								border-color: #EAEAEA
+								border-style: solid
+								border-radius: 50%
+								background-color: rgb(255, 255, 255)
+								width: 113px
+								height: 113px
+								transition: 0.3s
+								img
+									width: 60%
+									transition: 0.3s
+									filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4)
 				img.bg
 					position: absolute
 					right: 0
@@ -866,10 +935,18 @@ body
 				padding-bottom: 100px
 				padding-top: 100px
 				background-color: #fff
-				background-image: url('../img/be/be-third-content-bg.jpg')
-				background-size: cover
-				background-repeat: no-repeat
-				background-position: top center
+				img.imgBg-mobile
+					display: none
+					width: 100%
+				img.imgBg
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					z-index: -1
+					width: 100%
+					pointer-events: none
 				.container
 					ul
 						margin-top: 55px
@@ -1240,6 +1317,10 @@ body
 						padding-top: 50px
 						ul
 							margin-bottom: 50px
+			section.third
+				.content
+					padding-bottom: 25px
+					padding-top: 25px
 @media only screen and(max-width: 1600px)
 	body
 		main 
@@ -1249,11 +1330,18 @@ body
 @media only screen and(max-width: 1500px)
 	body
 		main
-			section.second
+			section.second, section.third
 				.header
 					.container
 						.headblock
 							margin-left: 100px
+			section.third
+				.content
+					.container
+						ul
+							margin-top: 25px
+							li
+								margin-bottom: 20px
 @media only screen and(max-width: 1400px)
 	body
 		header.container-fluid
@@ -1303,6 +1391,19 @@ body
 					margin-left: 75px
 			img.imgC
 				width: 75%
+		main
+			section.third
+				.content
+					.container
+						span.head
+							br
+								display: none
+						ul
+							margin-top: 15px
+							li
+								margin-bottom: 15px
+								p.desc
+									margin-left: 15px
 @media only screen and(max-width: 1199px)
 	body
 		header.container-fluid
@@ -1344,6 +1445,16 @@ body
 						display: none
 					ul
 						display: none
+					.cslMobile
+						display: block
+						img
+							width: 100%
+					.cslMobile-control
+						display: flex
+			section.third
+				.content
+					padding-top: 15px
+					padding-bottom: 15px
 @media only screen and(max-width: 1100px)
 	body
 		main
@@ -1354,6 +1465,19 @@ body
 						height: 125px
 						bottom: 115px
 						right: 75px
+			section.third
+				.content
+					padding-top: 0
+					img.imgBg
+						display: none
+					img.imgBg-mobile
+						display: block
+					.container
+						padding-top: 25px
+						ul
+							li
+								p.desc
+									margin-left: 30px
 @media only screen and(max-width: 1023px)
 	body
 		main
@@ -1507,7 +1631,7 @@ body
 @media only screen and(max-width: 500px)
 	body
 		main
-			section.second
+			section.second, section.third
 				.header
 					.container
 						.headblock
@@ -1518,8 +1642,31 @@ body
 								font-size: 35px
 							.number
 								display: none
+				.content
+					.cslMobile
+						.carousel-item
+							.head
+								.circle
+									width: 90px
+									height: 90px
+			section.third
+				.content
+					.container
+						span.head
+							font-size: 35px
+						ul
+							li
+								flex-direction: column
+								align-items: center !important
+								justify-content: center !important
+								p.desc
+									margin-left: 0
+									text-align: center
+									margin-top: 10px
 @media only screen and(max-width: 400px)
 	body
+		.scroll
+			left: 15px
 		main
 			section.first
 				.points
