@@ -1435,7 +1435,7 @@ body main section.third .header .container .headblock span.number {
 body main section.third .content {
   position: relative;
   z-index: 10;
-  padding-bottom: 100px;
+  padding-bottom: 0;
   padding-top: 100px;
   background-color: #fff;
 }
@@ -1553,6 +1553,7 @@ body main section.fourth .header .container .infblock p.desc {
 }
 
 body main section.fourth .content {
+  overflow: hidden;
   position: relative;
   z-index: 1;
   background-color: #F3F4F5;
@@ -1988,7 +1989,6 @@ body main section.howSignUp .signUp:hover svg {
     margin-bottom: 50px;
   }
   body main section.third .content {
-    padding-bottom: 25px;
     padding-top: 25px;
   }
 }
@@ -2000,7 +2000,7 @@ body main section.howSignUp .signUp:hover svg {
 }
 
 @media only screen and (max-width: 1500px) {
-  body main section.second .header .container .headblock, body main section.third .header .container .headblock {
+  body main section.second .header .container .headblock, body main section.third .header .container .headblock, body main section.fourth .header .container .headblock {
     margin-left: 100px;
   }
   body main section.third .content .container ul {
@@ -2072,6 +2072,21 @@ body main section.howSignUp .signUp:hover svg {
   body main section.third .content .container ul li p.desc {
     margin-left: 15px;
   }
+  body main section.fourth .content .wrap .step .numberBg {
+    font-size: 160px;
+  }
+  body main section.fourth .content .wrap .step1 .numberBg {
+    top: -160px;
+    left: -110px;
+  }
+  body main section.fourth .content .wrap .step2 .numberBg {
+    right: -125px;
+    bottom: -95px;
+  }
+  body main section.fourth .content .wrap .step3 .numberBg {
+    bottom: -160px;
+    left: -110px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -2131,7 +2146,20 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.third .content {
     padding-top: 15px;
-    padding-bottom: 15px;
+  }
+  body main section.fourth .header .container .infblock span.name {
+    font-size: 65px;
+  }
+  body main section.fourth .content .wrap .step {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+  }
+  body main section.result .header .container .numbers {
+    margin-top: 15px;
+  }
+  body main section.result .header .container .numbers span.number {
+    line-height: 1.2;
   }
 }
 
@@ -2229,6 +2257,41 @@ body main section.howSignUp .signUp:hover svg {
   }
 }
 
+@media only screen and (max-width: 991px) {
+  body main section.fourth .header {
+    padding-top: 60px;
+  }
+  body main section.fourth .header .container .infblock {
+    margin-top: 15px;
+    padding-right: 0;
+  }
+  body main section.fourth .header .container .slash {
+    display: none;
+  }
+  body main section.fourth .content .container .wrap .step {
+    padding-top: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+  body main section.fourth .content .container .wrap .step .bg {
+    position: relative;
+    height: auto;
+    -webkit-mask: none;
+            mask: none;
+  }
+  body main section.fourth .content .container .wrap .step .bg img {
+    position: relative;
+    width: 100%;
+  }
+  body main section.fourth .content .container .wrap .step .headblock, body main section.fourth .content .container .wrap .step ul, body main section.fourth .content .container .wrap .step .buttons {
+    text-align: left;
+    padding-left: 50px;
+  }
+  body main section.fourth .content .container .wrap .step .headblock {
+    margin-top: 25px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   body main section.first .points .circleBg {
     width: 500px;
@@ -2245,6 +2308,22 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.first .points .counter span.all {
     font-size: 12.5px;
+  }
+  body main section.result .header {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  body main section.result .header .container span.head {
+    font-size: 35px;
+  }
+  body main section.result .header .container .numbers .slash {
+    height: 90px;
+  }
+  body main section.result .header .container .numbers span.number {
+    font-size: 35px;
+  }
+  body main section.result .header .container .numbers span.number span.red {
+    font-size: 60px;
   }
 }
 
@@ -2289,6 +2368,16 @@ body main section.howSignUp .signUp:hover svg {
     text-align: center;
   }
   body main section.second .header .container img.imgPos {
+    display: none;
+  }
+  body main section.result .header .container .numbers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section.result .header .container .numbers .slash {
     display: none;
   }
 }
@@ -2372,6 +2461,51 @@ body main section.howSignUp .signUp:hover svg {
     text-align: center;
     margin-top: 10px;
   }
+  body main section.fourth .header .container .headblock {
+    margin-left: 0;
+  }
+  body main section.fourth .header .container .headblock span.head {
+    font-size: 35px;
+  }
+  body main section.fourth .header .container .headblock span.number {
+    display: none;
+  }
+  body main section.fourth .header .container .headblock span.head::before {
+    display: none;
+  }
+  body main section.fourth .header .container .infblock {
+    margin-top: 25px;
+  }
+  body main section.fourth .header .container .infblock span.name {
+    font-size: 40px;
+  }
+  body main section.fourth .content .container .wrap .step ul, body main section.fourth .content .container .wrap .step .buttons {
+    padding-left: 15px;
+  }
+  body main section.fourth .content .container .wrap .step .headblock {
+    padding-left: 10px;
+  }
+  body main section.fourth .content .container .wrap .step .headblock span.head {
+    font-size: 30px;
+  }
+  body main section.fourth .content .container .wrap .step .headblock span.number {
+    font-size: 22px;
+  }
+  body main section.fourth .content .container .wrap .step .buttons .btnR {
+    width: 150px;
+  }
+  body main section.fourth .content .container .wrap .step .buttons .btnW {
+    width: 200px;
+  }
+  body main section.result .header .container span.head {
+    font-size: 25px;
+  }
+  body main section.result .header .container .numbers span.number {
+    font-size: 25px;
+  }
+  body main section.result .header .container .numbers span.number span.red {
+    font-size: 45px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -2401,5 +2535,25 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.second .header .container .fact p.desc {
     margin-left: 0;
+  }
+  body main section.fourth .content .container .wrap .step .headblock span.head {
+    font-size: 25px;
+  }
+  body main section.fourth .content .container .wrap .step .headblock span.number {
+    font-size: 17px;
+  }
+  body main section.fourth .content .container .wrap .step ul li p.desc {
+    font-size: 14px;
+  }
+  body main section.fourth .content .container .wrap .step .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section.fourth .content .container .wrap .step .buttons .btnW {
+    margin-left: 0;
+    margin-top: 15px;
   }
 }

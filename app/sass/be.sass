@@ -932,7 +932,7 @@ body
 			.content
 				position: relative
 				z-index: 10
-				padding-bottom: 100px
+				padding-bottom: 0
 				padding-top: 100px
 				background-color: #fff
 				img.imgBg-mobile
@@ -1016,6 +1016,7 @@ body
 							font-size: 18px
 							color: #fff
 			.content
+				overflow: hidden
 				position: relative
 				z-index: 1
 				background-color: #F3F4F5
@@ -1319,7 +1320,6 @@ body
 							margin-bottom: 50px
 			section.third
 				.content
-					padding-bottom: 25px
 					padding-top: 25px
 @media only screen and(max-width: 1600px)
 	body
@@ -1330,7 +1330,7 @@ body
 @media only screen and(max-width: 1500px)
 	body
 		main
-			section.second, section.third
+			section.second, section.third, section.fourth
 				.header
 					.container
 						.headblock
@@ -1404,6 +1404,25 @@ body
 								margin-bottom: 15px
 								p.desc
 									margin-left: 15px
+			section.fourth
+				.content
+					.wrap
+						.step
+							.numberBg
+								font-size: 160px
+						.step1
+							.numberBg
+								top: -160px
+								left: -110px
+						.step2
+							.numberBg
+								right: -125px
+								bottom: -95px
+						.step3
+							.numberBg
+								bottom: -160px
+								left: -110px
+
 @media only screen and(max-width: 1199px)
 	body
 		header.container-fluid
@@ -1454,7 +1473,25 @@ body
 			section.third
 				.content
 					padding-top: 15px
-					padding-bottom: 15px
+			section.fourth
+				.header
+					.container
+						.infblock
+							span.name
+								font-size: 65px
+				.content
+					.wrap
+						.step	
+							padding-top: 20px
+							padding-bottom: 20px
+							padding-left: 35px
+			section.result
+				.header
+					.container
+						.numbers
+							margin-top: 15px
+							span.number
+								line-height: 1.2
 @media only screen and(max-width: 1100px)
 	body
 		main
@@ -1543,7 +1580,37 @@ body
 								font-size: 18px
 							.procent
 								font-size: 65px
-
+@media only screen and(max-width: 991px)
+	body
+		main 
+			section.fourth
+				.header
+					padding-top: 60px
+					.container
+						.infblock
+							margin-top: 15px
+							padding-right: 0
+						.slash	
+							display: none
+				.content
+					.container
+						.wrap
+							.step
+								padding-top: 0
+								padding-left: 0
+								text-align: center
+								.bg
+									position: relative
+									height: auto
+									mask: none
+									img 
+										position: relative
+										width: 100%
+								.headblock, ul, .buttons
+									text-align: left
+									padding-left: 50px
+								.headblock	
+									margin-top: 25px
 @media only screen and(max-width: 800px)
 	body
 		main
@@ -1561,6 +1628,21 @@ body
 							font-size: 20px
 						span.all
 							font-size: 12.5px
+			section.result
+				.header
+					padding-top: 35px
+					padding-bottom: 35px
+					.container
+						span.head
+							font-size: 35px
+						.numbers
+							.slash
+								height: 90px
+							span.number
+								font-size: 35px
+							span.number
+								span.red
+									font-size: 60px
 
 @media only screen and(max-width: 767px)
 	body
@@ -1590,6 +1672,13 @@ body
 					.container
 						img.imgPos
 							display: none
+			section.result
+				.header
+					.container
+						.numbers
+							flex-direction: column
+							.slash
+								display: none
 @media only screen and(max-width: 600px)
 	body
 		main
@@ -1663,6 +1752,48 @@ body
 									margin-left: 0
 									text-align: center
 									margin-top: 10px
+			section.fourth
+				.header
+					.container
+						.headblock
+							margin-left: 0
+							span.head
+								font-size: 35px
+							span.number
+								display: none
+							span.head::before
+								display: none
+						.infblock
+							margin-top: 25px
+							span.name
+								font-size: 40px
+				.content
+					.container
+						.wrap
+							.step
+								ul, .buttons
+									padding-left: 15px
+								.headblock
+									padding-left: 10px	
+									span.head
+										font-size: 30px
+									span.number
+										font-size: 22px
+								.buttons
+									.btnR
+										width: 150px
+									.btnW
+										width: 200px
+			section.result
+				.header
+					.container
+						span.head
+							font-size: 25px
+						.numbers
+							span.number
+								font-size: 25px
+								span.red
+									font-size: 45px
 @media only screen and(max-width: 400px)
 	body
 		.scroll
@@ -1691,3 +1822,22 @@ body
 							flex-direction: column
 							p.desc
 								margin-left: 0
+			section.fourth
+				.content
+					.container
+						.wrap
+							.step
+								.headblock	
+									span.head
+										font-size: 25px
+									span.number
+										font-size: 17px
+								ul
+									li
+										p.desc
+											font-size: 14px
+								.buttons
+									flex-direction: column
+									.btnW
+										margin-left: 0
+										margin-top: 15px
