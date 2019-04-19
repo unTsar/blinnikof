@@ -637,7 +637,7 @@ body
 						padding-top: 50px
 						padding-left: 0
 						margin-left: -15px
-						margin-bottom: 195px
+						margin-bottom: 135px
 						list-style: none
 						li
 							img.icon
@@ -651,6 +651,7 @@ body
 								max-width: 85%
 					.arrows
 						padding-bottom: 15px
+						margin-bottom: 50px
 						.arrow
 							cursor: pointer
 							transition: 0.3s
@@ -677,6 +678,11 @@ body
 							margin-bottom: 0
 							margin-left: 15px
 							line-height: 1.3
+				.headblock-mobile
+					display: none
+					span.head
+						z-index: 30
+						position: relative
 				.csl
 					overflow-y: hidden
 					position: absolute
@@ -694,6 +700,47 @@ body
 						cursor: default
 						pointer-events: none
 						filter: brightness(65%)
+				.cslMobile-control
+					padding-top: 15px
+					padding-bottom: 15px
+					display: none
+					.cslCounter
+						margin-left: 15px
+						span.single
+							font-family: 'MullerBold'
+							font-size: 28px
+							color: #000
+							margin-bottom: 5px
+						span.all
+							font-family: 'MullerMedium'
+							font-size: 15px
+							margin-top: 10px
+							margin-left: 10px
+							color: #000
+						.line
+							background-color: #ff2e2f
+							width: 2px
+							height: 20px
+							margin-left: 10px
+							transform: rotate(20deg)
+					.arrows
+						.arrow
+							cursor: pointer
+							transition: 0.3s
+							border-width: 2px
+							border-color: rgb(53, 56, 59)
+							border-style: solid
+							border-radius: 50%
+							width: 50px
+							height: 50px
+							margin-right: 15px
+							svg, path
+								transition: 0.15s
+						.arrow:hover
+							background-color: #ff2e2f
+							border-color: #ff2e2f
+							svg, path
+								fill: #fff
 				.counter
 					position: absolute
 					bottom: 80px
@@ -1502,6 +1549,11 @@ body
 						height: 125px
 						bottom: 115px
 						right: 75px
+					.content
+						padding-top: 5px
+						.arrows
+							padding-bottom: 0
+							margin-bottom: 35px
 			section.third
 				.content
 					padding-top: 0
@@ -1519,13 +1571,26 @@ body
 	body
 		main
 			section.first
-				.points
-					.counter
-						bottom: 75px
+				.points.container-fluid
 					img.mask
 						display: none
 					.csl
 						position: relative
+					.circleBg
+						display: none 
+					.counter
+						display: none !important
+					.headblock-mobile
+						display: block
+						margin-bottom: 25px
+					.cslMobile-control
+						display: flex
+					.content
+						padding-top: 25px
+						span.head
+							display: none
+						.arrows
+							display: none !important
 @media only screen and(max-width: 992px)
 	body
 		header.container-fluid
@@ -1657,6 +1722,15 @@ body
 					font-size: 50px
 				.bottom
 					padding-top: 20px
+					.circle
+						background-color: #fff
+						span
+							color: #ff2e2f
+					.text
+						.subText
+							background-color: #ff2e2f
+							color: #fff
+
 		main
 			section.first
 				.numbers
@@ -1684,10 +1758,12 @@ body
 		main
 			section.first
 				.points
-					.content
+					.headblock-mobile
 						span.head
+							font-size: 32px
 							br
 								display: block
+
 				.numbers
 					.aboutNumbers
 						.headblock
@@ -1717,6 +1793,14 @@ body
 				.numbers
 					.aboutNumbers
 						padding-left: 0
+						.headblock
+							span.number
+								top: -75px
+								left: 15px
+							span.head::before
+								top: -37.5px
+								left: 0
+								width: 35px
 @media only screen and(max-width: 500px)
 	body
 		main
@@ -1806,8 +1890,14 @@ body
 							font-size: 35px
 						ul
 							li
+								flex-direction: column
+								img.icon
+									width: 55px
 								p.desc
 									font-size: 13px
+									margin-left: 0
+									margin-top: 20px
+									margin-bottom: 20px
 						.arrows
 							.arrow
 								width: 35px
@@ -1815,6 +1905,8 @@ body
 								margin-right: 10px
 							p.desc
 								font-size: 11px
+
+
 			section.second
 				.header
 					.container
