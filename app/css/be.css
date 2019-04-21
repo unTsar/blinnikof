@@ -1181,7 +1181,13 @@ body main section.first .points .counter .line {
           transform: rotate(20deg);
 }
 
+body main section.second {
+  overflow: hidden;
+}
+
 body main section.second .header {
+  position: relative;
+  z-index: 40;
   background-image: url("../img/be/be-second-header-bg.jpg");
   -webkit-background-size: cover;
           background-size: cover;
@@ -1334,6 +1340,21 @@ body main section.second .content .cslMobile-control .arrows .arrow:hover svg, b
 
 body main section.second .content .cslMobile {
   display: none;
+}
+
+body main section.second .content .cslMobile .carousel-item .head:hover .circle {
+  border-color: #ff3334;
+  background-color: #ff3334;
+}
+
+body main section.second .content .cslMobile .carousel-item .head:hover .circle img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+body main section.second .content .cslMobile .carousel-item .head:hover .circle p.text {
+  font-family: 'MullerBold';
+  text-decoration: none;
 }
 
 body main section.second .content .cslMobile .carousel-item .head {
@@ -2199,7 +2220,12 @@ body main section.howSignUp .signUp:hover svg {
     height: 45px;
   }
   body main section.second .header .container img.imgPos {
-    display: none;
+    right: -15%;
+    top: -35%;
+    width: 300px;
+  }
+  body main section.second .header .container .fact .procent .red {
+    color: #fff;
   }
   body main section.second .content img.bg {
     display: none;
@@ -2482,7 +2508,10 @@ body main section.howSignUp .signUp:hover svg {
     text-align: center;
   }
   body main section.second .header .container img.imgPos {
-    display: none;
+    right: -15%;
+    top: -15%;
+    width: 250px;
+    z-index: -1;
   }
   body main section.result .header .container .numbers {
     -webkit-box-orient: vertical;
@@ -2490,9 +2519,25 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
   }
   body main section.result .header .container .numbers .slash {
     display: none;
+  }
+  body main section.howSignUp {
+    background-image: url("../img/be/be-result-header-bg.jpg");
+    background-repeat: repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+  }
+  body main section.howSignUp .button {
+    background-color: #ff2e2f;
+  }
+  body main section.howSignUp .button span {
+    color: #fff;
   }
 }
 
@@ -2512,6 +2557,17 @@ body main section.howSignUp .signUp:hover svg {
     width: 45px;
   }
   body main section.first .numbers .aboutNumbers .headblock span.number {
+    font-size: 60px;
+  }
+  body main section.second .header .container .headblock span.head {
+    font-size: 32px;
+  }
+  body main section.second .header .container .headblock span.head::before {
+    top: 5.5px;
+    left: -135px;
+    width: 45px;
+  }
+  body main section.second .header .container .headblock span.number {
     font-size: 60px;
   }
 }
@@ -2545,22 +2601,110 @@ body main section.howSignUp .signUp:hover svg {
     left: 0;
     width: 35px;
   }
+  body main section.second .header .container img.imgPos {
+    right: -5%;
+    top: -5%;
+  }
+  body main section.second .header .container .headblock {
+    margin-left: 0px;
+  }
+  body main section.second .header .container .headblock span.number {
+    top: -82.5px;
+    left: 15px;
+  }
+  body main section.second .header .container .headblock span.head::before {
+    top: -44.5px;
+    left: 0;
+    width: 35px;
+  }
+  body main section.second .header .container .fact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
+  }
+  body main section.second .header .container .fact p.desc {
+    margin-left: 0;
+  }
+  body main section.third .header .container img.imgPos {
+    right: -5%;
+    top: -5%;
+  }
+  body main section.third .header .container .headblock {
+    padding-top: 25px;
+    margin-left: 0;
+  }
+  body main section.third .header .container .headblock span.number {
+    top: -82.5px;
+    left: 15px;
+  }
+  body main section.third .header .container .headblock span.head::before {
+    top: -62.5px;
+    left: 0;
+    width: 35px;
+  }
+  body main section.third .header .container .fact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
+  }
+  body main section.third .header .container .fact p.desc {
+    margin-left: 0;
+  }
+  body main section.fourth .header {
+    padding-top: 75px;
+  }
+  body main section.fourth .header .container img.imgPos {
+    right: -5%;
+    top: -5%;
+  }
+  body main section.fourth .header .container .headblock {
+    margin-left: 0px;
+  }
+  body main section.fourth .header .container .headblock span.number {
+    top: -82.5px;
+    left: 15px;
+  }
+  body main section.fourth .header .container .headblock span.head::before {
+    top: -36.5px;
+    left: 0;
+    width: 35px;
+  }
+  body main section.fourth .header .container .fact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
+  }
+  body main section.fourth .header .container .fact p.desc {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  body main section.second .header .container .headblock, body main section.third .header .container .headblock {
-    margin-left: 0;
-  }
-  body main section.second .header .container .headblock span.head::before, body main section.third .header .container .headblock span.head::before {
-    display: none;
-  }
-  body main section.second .header .container .headblock span.head, body main section.third .header .container .headblock span.head {
+  body main section.second .header .container .headblock span.head {
     font-size: 35px;
   }
-  body main section.second .header .container .headblock .number, body main section.third .header .container .headblock .number {
-    display: none;
+  body main section.third .header .container .headblock span.head {
+    font-size: 35px;
   }
-  body main section.second .content .cslMobile .carousel-item .head .circle, body main section.third .content .cslMobile .carousel-item .head .circle {
+  body main section.third .content .cslMobile .carousel-item .head .circle {
     width: 90px;
     height: 90px;
   }
@@ -2573,10 +2717,10 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center !important;
-    -webkit-align-items: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
         -ms-flex-pack: center !important;
@@ -2584,7 +2728,7 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.third .content .container ul li p.desc {
     margin-left: 0;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
   }
   body main section.fourth .header .container .headblock {
@@ -2592,12 +2736,6 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.fourth .header .container .headblock span.head {
     font-size: 35px;
-  }
-  body main section.fourth .header .container .headblock span.number {
-    display: none;
-  }
-  body main section.fourth .header .container .headblock span.head::before {
-    display: none;
   }
   body main section.fourth .header .container .infblock {
     margin-top: 25px;
@@ -2638,6 +2776,16 @@ body main section.howSignUp .signUp:hover svg {
   body .scroll {
     left: 15px;
   }
+  body main section.second .header .container img.imgPos {
+    right: -22.5%;
+    top: 15%;
+  }
+  body main section.second .header .container .fact .procent {
+    font-size: 60px;
+  }
+  body main section.second .header .container .fact p.desc {
+    font-size: 16px;
+  }
   body main section.first .points .content span.head {
     font-size: 35px;
   }
@@ -2664,16 +2812,6 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.first .points .content .arrows p.desc {
     font-size: 11px;
-  }
-  body main section.second .header .container .fact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body main section.second .header .container .fact p.desc {
-    margin-left: 0;
   }
   body main section.fourth .content .container .wrap .step .headblock span.head {
     font-size: 25px;

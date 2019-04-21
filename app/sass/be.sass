@@ -769,7 +769,10 @@ body
 						margin-left: 10px
 						transform: rotate(20deg)
 		section.second
+			overflow: hidden
 			.header
+				position: relative
+				z-index: 40
 				background-image: url('../img/be/be-second-header-bg.jpg')
 				background-size: cover
 				background-repeat: no-repeat
@@ -867,6 +870,15 @@ body
 				.cslMobile
 					display: none
 					.carousel-item
+						.head:hover
+							.circle
+								border-color: #ff3334
+								background-color: #ff3334
+								img 
+									filter: none
+								p.text
+									font-family: 'MullerBold'
+									text-decoration: none
 						.head
 							margin-bottom: 15px
 							cursor: pointer
@@ -1505,7 +1517,14 @@ body
 				.header
 					.container
 						img.imgPos
-							display: none
+							right: -15%
+							top: -35%
+							width: 300px
+						.fact
+							.procent
+								.red
+									color: #fff
+
 				.content
 					img.bg
 						display: none
@@ -1745,14 +1764,27 @@ body
 				.header
 					.container
 						img.imgPos
-							display: none
+							right: -15%
+							top: -15%
+							width: 250px
+							z-index: -1
 			section.result
 				.header
 					.container
 						.numbers
 							flex-direction: column
+							align-items: start !important
 							.slash
 								display: none
+			section.howSignUp
+				background-image: url('../img/be/be-result-header-bg.jpg')
+				background-repeat: repeat
+				background-size: contain
+				.button
+					background-color: #ff2e2f
+					span
+						color: #fff
+
 @media only screen and(max-width: 600px)
 	body
 		main
@@ -1772,6 +1804,18 @@ body
 							span.head::before
 								top: 9.5px
 								left: -115px
+								width: 45px
+							span.number
+								font-size: 60px
+			section.second
+				.header
+					.container
+						.headblock
+							span.head
+								font-size: 32px
+							span.head::before
+								top: 5.5px
+								left: -135px
 								width: 45px
 							span.number
 								font-size: 60px
@@ -1801,20 +1845,83 @@ body
 								top: -37.5px
 								left: 0
 								width: 35px
+			section.second
+				.header
+					.container
+						img.imgPos
+							right: -5%
+							top: -5%
+						.headblock
+							margin-left: 0px
+							span.number
+								top: -82.5px
+								left: 15px
+							span.head::before
+								top: -44.5px
+								left: 0
+								width: 35px
+						.fact	
+							flex-direction: column
+							align-items: start !important
+							p.desc
+								margin-left: 0
+			section.third
+				.header
+					.container
+						img.imgPos
+							right: -5%
+							top: -5%
+						.headblock
+							padding-top: 25px
+							margin-left: 0
+							span.number
+								top: -82.5px
+								left: 15px
+							span.head::before
+								top: -62.5px
+								left: 0
+								width: 35px
+						.fact	
+							flex-direction: column
+							align-items: start !important
+							p.desc
+								margin-left: 0
+			section.fourth
+				.header
+					padding-top: 75px
+					.container
+						img.imgPos
+							right: -5%
+							top: -5%
+						.headblock
+							margin-left: 0px
+							span.number
+								top: -82.5px
+								left: 15px
+							span.head::before
+								top: -36.5px
+								left: 0
+								width: 35px
+						.fact	
+							flex-direction: column
+							align-items: start !important
+							p.desc
+								margin-left: 0
 @media only screen and(max-width: 500px)
 	body
 		main
-			section.second, section.third
+			section.second
 				.header
 					.container
 						.headblock
-							margin-left: 0
-							span.head::before
-								display: none
 							span.head
 								font-size: 35px
-							.number
-								display: none
+			section.third
+				.header
+					.container
+						.headblock
+							span.head
+								font-size: 35px
 				.content
 					.cslMobile
 						.carousel-item
@@ -1830,11 +1937,11 @@ body
 						ul
 							li
 								flex-direction: column
-								align-items: center !important
+								align-items: start !important
 								justify-content: center !important
 								p.desc
 									margin-left: 0
-									text-align: center
+									text-align: left
 									margin-top: 10px
 			section.fourth
 				.header
@@ -1843,10 +1950,6 @@ body
 							margin-left: 0
 							span.head
 								font-size: 35px
-							span.number
-								display: none
-							span.head::before
-								display: none
 						.infblock
 							margin-top: 25px
 							span.name
@@ -1883,6 +1986,17 @@ body
 		.scroll
 			left: 15px
 		main
+			section.second
+				.header
+					.container
+						img.imgPos
+							right: -22.5%
+							top: 15%
+						.fact
+							.procent
+								font-size: 60px
+							p.desc
+								font-size: 16px
 			section.first
 				.points
 					.content
@@ -1905,15 +2019,6 @@ body
 								margin-right: 10px
 							p.desc
 								font-size: 11px
-
-
-			section.second
-				.header
-					.container
-						.fact	
-							flex-direction: column
-							p.desc
-								margin-left: 0
 			section.fourth
 				.content
 					.container
