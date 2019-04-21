@@ -2786,6 +2786,10 @@ body main section.howSignUp .signUp:hover svg {
   body main section.second .header .container .fact p.desc {
     font-size: 16px;
   }
+  body main section.second .content .cslMobile .carousel-item .head .circle {
+    width: 65px;
+    height: 65px;
+  }
   body main section.first .points .content span.head {
     font-size: 35px;
   }
