@@ -19,8 +19,9 @@ $(document).ready(function(){
       $('#carousel1').carousel('next');
     })
     $('#carousel1').on('slide.bs.carousel', function (e) {
-      $("#counter1").text('0' + (e.to + 1));
+      $(".counter1").text('0' + (e.to + 1));
     })
+
     // Carousel 2
     $('#carousel2').carousel({
       interval: false,

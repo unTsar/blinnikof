@@ -981,7 +981,7 @@ body main section.first .points .content ul {
   padding-top: 50px;
   padding-left: 0;
   margin-left: -15px;
-  margin-bottom: 195px;
+  margin-bottom: 135px;
   list-style: none;
 }
 
@@ -1000,6 +1000,7 @@ body main section.first .points .content ul li p.desc {
 
 body main section.first .points .content .arrows {
   padding-bottom: 15px;
+  margin-bottom: 50px;
 }
 
 body main section.first .points .content .arrows .arrow {
@@ -1046,6 +1047,15 @@ body main section.first .points .content .arrows p.desc {
   line-height: 1.3;
 }
 
+body main section.first .points .headblock-mobile {
+  display: none;
+}
+
+body main section.first .points .headblock-mobile span.head {
+  z-index: 30;
+  position: relative;
+}
+
 body main section.first .points .csl {
   overflow-y: hidden;
   position: absolute;
@@ -1066,6 +1076,71 @@ body main section.first .points .csl img {
   pointer-events: none;
   -webkit-filter: brightness(65%);
   filter: brightness(65%);
+}
+
+body main section.first .points .cslMobile-control {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: none;
+}
+
+body main section.first .points .cslMobile-control .cslCounter {
+  margin-left: 15px;
+}
+
+body main section.first .points .cslMobile-control .cslCounter span.single {
+  font-family: 'MullerBold';
+  font-size: 28px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+body main section.first .points .cslMobile-control .cslCounter span.all {
+  font-family: 'MullerMedium';
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #000;
+}
+
+body main section.first .points .cslMobile-control .cslCounter .line {
+  background-color: #ff2e2f;
+  width: 2px;
+  height: 20px;
+  margin-left: 10px;
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+body main section.first .points .cslMobile-control .arrows .arrow {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border-width: 2px;
+  border-color: #35383b;
+  border-style: solid;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+body main section.first .points .cslMobile-control .arrows .arrow svg, body main section.first .points .cslMobile-control .arrows .arrow path {
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+}
+
+body main section.first .points .cslMobile-control .arrows .arrow:hover {
+  background-color: #ff2e2f;
+  border-color: #ff2e2f;
+}
+
+body main section.first .points .cslMobile-control .arrows .arrow:hover svg, body main section.first .points .cslMobile-control .arrows .arrow:hover path {
+  fill: #fff;
 }
 
 body main section.first .points .counter {
@@ -1106,7 +1181,13 @@ body main section.first .points .counter .line {
   transform: rotate(20deg);
 }
 
+body main section.second {
+  overflow: hidden;
+}
+
 body main section.second .header {
+  position: relative;
+  z-index: 40;
   background-image: url("../img/be/be-second-header-bg.jpg");
   -webkit-background-size: cover;
   background-size: cover;
@@ -1259,6 +1340,21 @@ body main section.second .content .cslMobile-control .arrows .arrow:hover svg, b
 
 body main section.second .content .cslMobile {
   display: none;
+}
+
+body main section.second .content .cslMobile .carousel-item .head:hover .circle {
+  border-color: #ff3334;
+  background-color: #ff3334;
+}
+
+body main section.second .content .cslMobile .carousel-item .head:hover .circle img {
+  -webkit-filter: none;
+  filter: none;
+}
+
+body main section.second .content .cslMobile .carousel-item .head:hover .circle p.text {
+  font-family: 'MullerBold';
+  text-decoration: none;
 }
 
 body main section.second .content .cslMobile .carousel-item .head {
@@ -2124,7 +2220,12 @@ body main section.howSignUp .signUp:hover svg {
     height: 45px;
   }
   body main section.second .header .container img.imgPos {
-    display: none;
+    right: -15%;
+    top: -35%;
+    width: 300px;
+  }
+  body main section.second .header .container .fact .procent .red {
+    color: #fff;
   }
   body main section.second .content img.bg {
     display: none;
@@ -2170,6 +2271,13 @@ body main section.howSignUp .signUp:hover svg {
     bottom: 115px;
     right: 75px;
   }
+  body main section.first .points .content {
+    padding-top: 5px;
+  }
+  body main section.first .points .content .arrows {
+    padding-bottom: 0;
+    margin-bottom: 35px;
+  }
   body main section.third .content {
     padding-top: 0;
   }
@@ -2188,14 +2296,36 @@ body main section.howSignUp .signUp:hover svg {
 }
 
 @media only screen and (max-width: 1023px) {
-  body main section.first .points .counter {
-    bottom: 75px;
-  }
-  body main section.first .points img.mask {
+  body main section.first .points.container-fluid img.mask {
     display: none;
   }
-  body main section.first .points .csl {
+  body main section.first .points.container-fluid .csl {
     position: relative;
+  }
+  body main section.first .points.container-fluid .circleBg {
+    display: none;
+  }
+  body main section.first .points.container-fluid .counter {
+    display: none !important;
+  }
+  body main section.first .points.container-fluid .headblock-mobile {
+    display: block;
+    margin-bottom: 25px;
+  }
+  body main section.first .points.container-fluid .cslMobile-control {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main section.first .points.container-fluid .content {
+    padding-top: 25px;
+  }
+  body main section.first .points.container-fluid .content span.head {
+    display: none;
+  }
+  body main section.first .points.container-fluid .content .arrows {
+    display: none !important;
   }
 }
 
@@ -2350,6 +2480,16 @@ body main section.howSignUp .signUp:hover svg {
   body header.container-fluid .content .bottom {
     padding-top: 20px;
   }
+  body header.container-fluid .content .bottom .circle {
+    background-color: #fff;
+  }
+  body header.container-fluid .content .bottom .circle span {
+    color: #ff2e2f;
+  }
+  body header.container-fluid .content .bottom .text .subText {
+    background-color: #ff2e2f;
+    color: #fff;
+  }
   body main section.first .numbers .points {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2368,7 +2508,10 @@ body main section.howSignUp .signUp:hover svg {
     text-align: center;
   }
   body main section.second .header .container img.imgPos {
-    display: none;
+    right: -15%;
+    top: -15%;
+    width: 250px;
+    z-index: -1;
   }
   body main section.result .header .container .numbers {
     -webkit-box-orient: vertical;
@@ -2376,14 +2519,33 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+    -ms-flex-align: start !important;
+    align-items: start !important;
   }
   body main section.result .header .container .numbers .slash {
     display: none;
   }
+  body main section.howSignUp {
+    background-image: url("../img/be/be-result-header-bg.jpg");
+    background-repeat: repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  body main section.howSignUp .button {
+    background-color: #ff2e2f;
+  }
+  body main section.howSignUp .button span {
+    color: #fff;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  body main section.first .points .content span.head br {
+  body main section.first .points .headblock-mobile span.head {
+    font-size: 32px;
+  }
+  body main section.first .points .headblock-mobile span.head br {
     display: block;
   }
   body main section.first .numbers .aboutNumbers .headblock span.head {
@@ -2395,6 +2557,17 @@ body main section.howSignUp .signUp:hover svg {
     width: 45px;
   }
   body main section.first .numbers .aboutNumbers .headblock span.number {
+    font-size: 60px;
+  }
+  body main section.second .header .container .headblock span.head {
+    font-size: 32px;
+  }
+  body main section.second .header .container .headblock span.head::before {
+    top: 5.5px;
+    left: -135px;
+    width: 45px;
+  }
+  body main section.second .header .container .headblock span.number {
     font-size: 60px;
   }
 }
@@ -2419,22 +2592,119 @@ body main section.howSignUp .signUp:hover svg {
   body main section.first .numbers .aboutNumbers {
     padding-left: 0;
   }
+  body main section.first .numbers .aboutNumbers .headblock span.number {
+    top: -75px;
+    left: 15px;
+  }
+  body main section.first .numbers .aboutNumbers .headblock span.head::before {
+    top: -37.5px;
+    left: 0;
+    width: 35px;
+  }
+  body main section.second .header .container img.imgPos {
+    right: -5%;
+    top: -5%;
+  }
+  body main section.second .header .container .headblock {
+    margin-left: 0px;
+  }
+  body main section.second .header .container .headblock span.number {
+    top: -82.5px;
+    left: 15px;
+  }
+  body main section.second .header .container .headblock span.head::before {
+    top: -44.5px;
+    left: 0;
+    width: 35px;
+  }
+  body main section.second .header .container .fact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+    -ms-flex-align: start !important;
+    align-items: start !important;
+  }
+  body main section.second .header .container .fact p.desc {
+    margin-left: 0;
+  }
+  body main section.third .header .container img.imgPos {
+    right: -5%;
+    top: -5%;
+  }
+  body main section.third .header .container .headblock {
+    padding-top: 25px;
+    margin-left: 0;
+  }
+  body main section.third .header .container .headblock span.number {
+    top: -82.5px;
+    left: 15px;
+  }
+  body main section.third .header .container .headblock span.head::before {
+    top: -62.5px;
+    left: 0;
+    width: 35px;
+  }
+  body main section.third .header .container .fact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+    -ms-flex-align: start !important;
+    align-items: start !important;
+  }
+  body main section.third .header .container .fact p.desc {
+    margin-left: 0;
+  }
+  body main section.fourth .header {
+    padding-top: 75px;
+  }
+  body main section.fourth .header .container img.imgPos {
+    right: -5%;
+    top: -5%;
+  }
+  body main section.fourth .header .container .headblock {
+    margin-left: 0px;
+  }
+  body main section.fourth .header .container .headblock span.number {
+    top: -82.5px;
+    left: 15px;
+  }
+  body main section.fourth .header .container .headblock span.head::before {
+    top: -36.5px;
+    left: 0;
+    width: 35px;
+  }
+  body main section.fourth .header .container .fact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+    -ms-flex-align: start !important;
+    align-items: start !important;
+  }
+  body main section.fourth .header .container .fact p.desc {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  body main section.second .header .container .headblock, body main section.third .header .container .headblock {
-    margin-left: 0;
-  }
-  body main section.second .header .container .headblock span.head::before, body main section.third .header .container .headblock span.head::before {
-    display: none;
-  }
-  body main section.second .header .container .headblock span.head, body main section.third .header .container .headblock span.head {
+  body main section.second .header .container .headblock span.head {
     font-size: 35px;
   }
-  body main section.second .header .container .headblock .number, body main section.third .header .container .headblock .number {
-    display: none;
+  body main section.third .header .container .headblock span.head {
+    font-size: 35px;
   }
-  body main section.second .content .cslMobile .carousel-item .head .circle, body main section.third .content .cslMobile .carousel-item .head .circle {
+  body main section.third .content .cslMobile .carousel-item .head .circle {
     width: 90px;
     height: 90px;
   }
@@ -2447,10 +2717,10 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center !important;
-    -webkit-align-items: center !important;
-    -ms-flex-align: center !important;
-    align-items: center !important;
+    -webkit-box-align: start !important;
+    -webkit-align-items: start !important;
+    -ms-flex-align: start !important;
+    align-items: start !important;
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
     -ms-flex-pack: center !important;
@@ -2458,7 +2728,7 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.third .content .container ul li p.desc {
     margin-left: 0;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
   }
   body main section.fourth .header .container .headblock {
@@ -2466,12 +2736,6 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.fourth .header .container .headblock span.head {
     font-size: 35px;
-  }
-  body main section.fourth .header .container .headblock span.number {
-    display: none;
-  }
-  body main section.fourth .header .container .headblock span.head::before {
-    display: none;
   }
   body main section.fourth .header .container .infblock {
     margin-top: 25px;
@@ -2512,11 +2776,34 @@ body main section.howSignUp .signUp:hover svg {
   body .scroll {
     left: 15px;
   }
+  body main section.second .header .container img.imgPos {
+    right: -22.5%;
+    top: 15%;
+  }
+  body main section.second .header .container .fact .procent {
+    font-size: 60px;
+  }
+  body main section.second .header .container .fact p.desc {
+    font-size: 16px;
+  }
   body main section.first .points .content span.head {
     font-size: 35px;
   }
+  body main section.first .points .content ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  body main section.first .points .content ul li img.icon {
+    width: 55px;
+  }
   body main section.first .points .content ul li p.desc {
     font-size: 13px;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   body main section.first .points .content .arrows .arrow {
     width: 35px;
@@ -2525,16 +2812,6 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.first .points .content .arrows p.desc {
     font-size: 11px;
-  }
-  body main section.second .header .container .fact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  body main section.second .header .container .fact p.desc {
-    margin-left: 0;
   }
   body main section.fourth .content .container .wrap .step .headblock span.head {
     font-size: 25px;
