@@ -296,6 +296,61 @@ body
 						width: 2px
 						height: 50px
 						background-color: #6dcef5
+			.cslMobile-control
+				display: flex
+				justify-content: center
+				padding-top: 35px
+				padding-bottom: 35px
+				.arrows
+					.arrow
+						cursor: pointer
+						transition: 0.3s
+						background-color: #fff
+						border-radius: 50%
+						width: 50px
+						height: 50px
+						margin-right: 15px
+						svg, path
+							fill: #000
+							transition: 0.15s
+					.arrow:hover
+						background-color: #ff2e2f
+						border-color: #ff2e2f
+						svg, path
+							fill: #fff
+			.cslMobile, .cslMobile-control
+				display: none
+			.cslMobile
+				.step
+					margin-top: 0 !important
+					.headblock, .number
+						max-width: none !important
+					.circle
+						height: 279px !important
+						width: 279px !important
+					.separ
+						max-width: 279px
+					.circle, .separ
+						margin-left: auto
+						margin-right: auto
+						span.month
+							display: none
+					.text
+						text-align: center !important
+						span.name
+							margin-left: auto
+							margin-right: auto
+							text-align: center
+						p.desc
+							margin-left: auto
+							margin-right: auto
+							max-width: 279px !important
+							text-align: center !important
+					.button
+						width: 279px !important
+						margin-left: auto
+						margin-right: auto
+			.wrap, .cslMobile
 				.step
 					text-align: center
 					.number
@@ -419,9 +474,12 @@ body
 
 					.text
 						p.desc
-							max-width: 148px
+							max-width: 190px
 					.number
 						margin-top: 35px
+						max-width: 148px
+					.headblock
+						max-width: 148px
 					.button
 						width: 100%
 				.step2
@@ -456,9 +514,12 @@ body
 							background-color: #00CFF7
 					.number
 						margin-top: 35px
+						max-width: 188px
+					.headblock
+						max-width: 188px
 					.text
 						p.desc
-							max-width: 188px
+							max-width: 230px
 					.button
 						width: 100%
 				.step3
@@ -494,9 +555,12 @@ body
 							background-color: #00CFF7
 					.number
 						margin-top: 35px
+						max-width: 229px
+					.headblock
+						max-width: 229px
 					.text
 						p.desc
-							max-width: 229px
+							max-width: 271px
 				.step4
 					.circle
 						overflow: hidden
@@ -529,9 +593,12 @@ body
 							background-color: #00CFF7
 					.number
 						margin-top: 15px
+						max-width: 279px
+					.headblock
+						max-width: 279px
 					.text
 						p.desc
-							max-width: 279px
+							max-width: 321px
 		section.first
 			position: relative
 			.numbers
@@ -1357,12 +1424,6 @@ body
 					.content
 						ul
 							margin-bottom: 100px
-
-@media only screen and(max-width: 1719px)
-	body
-		main
-			section.purpose
-				display: none
 @media only screen and(max-width: 1700px)
 	body
 		main
@@ -1401,6 +1462,10 @@ body
 							margin-top: 25px
 							li
 								margin-bottom: 20px
+			section.purpose
+				.wrap
+					.rightB
+						display: none
 @media only screen and(max-width: 1400px)
 	body
 		header.container-fluid
@@ -1408,9 +1473,13 @@ body
 				p.desc::before
 					width: 55px
 					left: -75px
-		main 
+		main
 			section.purpose
-				display: none
+				.wrap
+					.step
+						.separ
+							span.month
+								display: none
 			section.first
 				.points
 					.content
@@ -1492,6 +1561,13 @@ body
 				.adress
 					display: none !important
 		main
+			section.purpose
+				.desktopBlock
+					display: none
+				.cslMobile
+					display: block
+				.cslMobile-control
+					display: flex
 			section.first
 				.points
 					.circleBg

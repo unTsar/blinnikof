@@ -474,18 +474,113 @@ body main section.purpose .wrap .rightB .line {
   background-color: #6dcef5;
 }
 
-body main section.purpose .wrap .step {
+body main section.purpose .cslMobile-control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+body main section.purpose .cslMobile-control .arrows .arrow {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+body main section.purpose .cslMobile-control .arrows .arrow svg, body main section.purpose .cslMobile-control .arrows .arrow path {
+  fill: #000;
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+}
+
+body main section.purpose .cslMobile-control .arrows .arrow:hover {
+  background-color: #ff2e2f;
+  border-color: #ff2e2f;
+}
+
+body main section.purpose .cslMobile-control .arrows .arrow:hover svg, body main section.purpose .cslMobile-control .arrows .arrow:hover path {
+  fill: #fff;
+}
+
+body main section.purpose .cslMobile, body main section.purpose .cslMobile-control {
+  display: none;
+}
+
+body main section.purpose .cslMobile .step {
+  margin-top: 0 !important;
+}
+
+body main section.purpose .cslMobile .step .headblock, body main section.purpose .cslMobile .step .number {
+  max-width: none !important;
+}
+
+body main section.purpose .cslMobile .step .circle {
+  height: 279px !important;
+  width: 279px !important;
+}
+
+body main section.purpose .cslMobile .step .separ {
+  max-width: 279px;
+}
+
+body main section.purpose .cslMobile .step .circle, body main section.purpose .cslMobile .step .separ {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main section.purpose .cslMobile .step .circle span.month, body main section.purpose .cslMobile .step .separ span.month {
+  display: none;
+}
+
+body main section.purpose .cslMobile .step .text {
+  text-align: center !important;
+}
+
+body main section.purpose .cslMobile .step .text span.name {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-body main section.purpose .wrap .step .number {
+body main section.purpose .cslMobile .step .text p.desc {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 279px !important;
+  text-align: center !important;
+}
+
+body main section.purpose .cslMobile .step .button {
+  width: 279px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main section.purpose .wrap .step, body main section.purpose .cslMobile .step {
+  text-align: center;
+}
+
+body main section.purpose .wrap .step .number, body main section.purpose .cslMobile .step .number {
   text-align: center;
   color: #fff;
   font-family: 'MullerMedium';
   font-size: 17px;
 }
 
-body main section.purpose .wrap .step .separ {
+body main section.purpose .wrap .step .separ, body main section.purpose .cslMobile .step .separ {
   margin-top: 15px;
   margin-bottom: 35px;
   border-width: 1px;
@@ -496,7 +591,7 @@ body main section.purpose .wrap .step .separ {
   position: relative;
 }
 
-body main section.purpose .wrap .step .separ::after, body main section.purpose .wrap .step .separ::before {
+body main section.purpose .wrap .step .separ::after, body main section.purpose .wrap .step .separ::before, body main section.purpose .cslMobile .step .separ::after, body main section.purpose .cslMobile .step .separ::before {
   content: '';
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -509,22 +604,22 @@ body main section.purpose .wrap .step .separ::after, body main section.purpose .
   margin: auto;
 }
 
-body main section.purpose .wrap .step .separ::before {
+body main section.purpose .wrap .step .separ::before, body main section.purpose .cslMobile .step .separ::before {
   left: 0;
 }
 
-body main section.purpose .wrap .step .separ::after {
+body main section.purpose .wrap .step .separ::after, body main section.purpose .cslMobile .step .separ::after {
   right: 0;
 }
 
-body main section.purpose .wrap .step span.name {
+body main section.purpose .wrap .step span.name, body main section.purpose .cslMobile .step span.name {
   line-height: 1.3;
   color: #fff;
   font-family: 'MullerBold';
   font-size: 20px;
 }
 
-body main section.purpose .wrap .step p.desc {
+body main section.purpose .wrap .step p.desc, body main section.purpose .cslMobile .step p.desc {
   letter-spacing: 1.7px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -535,11 +630,11 @@ body main section.purpose .wrap .step p.desc {
   text-align: center;
 }
 
-body main section.purpose .wrap .step .text {
+body main section.purpose .wrap .step .text, body main section.purpose .cslMobile .step .text {
   text-align: left;
 }
 
-body main section.purpose .wrap .step .text span.name {
+body main section.purpose .wrap .step .text span.name, body main section.purpose .cslMobile .step .text span.name {
   line-height: 1.4;
   font-family: 'MullerBold';
   font-size: 22px;
@@ -547,7 +642,7 @@ body main section.purpose .wrap .step .text span.name {
   text-align: left;
 }
 
-body main section.purpose .wrap .step .text p.desc {
+body main section.purpose .wrap .step .text p.desc, body main section.purpose .cslMobile .step .text p.desc {
   font-family: 'MullerLight';
   font-size: 16px;
   color: #fff;
@@ -557,7 +652,7 @@ body main section.purpose .wrap .step .text p.desc {
   text-transform: none;
 }
 
-body main section.purpose .wrap .step .button {
+body main section.purpose .wrap .step .button, body main section.purpose .cslMobile .step .button {
   cursor: pointer;
   background-color: transparent;
   border-width: 2px;
@@ -572,22 +667,22 @@ body main section.purpose .wrap .step .button {
   transition: 0.3s;
 }
 
-body main section.purpose .wrap .step .button span {
+body main section.purpose .wrap .step .button span, body main section.purpose .cslMobile .step .button span {
   color: #fff;
   font-family: 'MullerMedium';
   font-size: 16px;
 }
 
-body main section.purpose .wrap .step .button:hover {
+body main section.purpose .wrap .step .button:hover, body main section.purpose .cslMobile .step .button:hover {
   background-color: #ff2e2f;
   border-color: #ff2e2f;
 }
 
-body main section.purpose .wrap .step1 {
+body main section.purpose .wrap .step1, body main section.purpose .cslMobile .step1 {
   margin-top: 160px;
 }
 
-body main section.purpose .wrap .step1 .circle {
+body main section.purpose .wrap .step1 .circle, body main section.purpose .cslMobile .step1 .circle {
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -603,27 +698,27 @@ body main section.purpose .wrap .step1 .circle {
   height: 148px;
 }
 
-body main section.purpose .wrap .step1 .circle .block {
+body main section.purpose .wrap .step1 .circle .block, body main section.purpose .cslMobile .step1 .circle .block {
   margin-bottom: 5px;
 }
 
-body main section.purpose .wrap .step1 .circle .block span {
+body main section.purpose .wrap .step1 .circle .block span, body main section.purpose .cslMobile .step1 .circle .block span {
   text-transform: uppercase;
 }
 
-body main section.purpose .wrap .step1 .circle .block span.thin {
+body main section.purpose .wrap .step1 .circle .block span.thin, body main section.purpose .cslMobile .step1 .circle .block span.thin {
   font-family: 'MullerRegular';
   font-size: 10px;
   color: #fff;
 }
 
-body main section.purpose .wrap .step1 .circle .block span.fat {
+body main section.purpose .wrap .step1 .circle .block span.fat, body main section.purpose .cslMobile .step1 .circle .block span.fat {
   font-family: 'MullerBold';
   font-size: 17px;
   color: #fff;
 }
 
-body main section.purpose .wrap .step1 .circle .skyBg {
+body main section.purpose .wrap .step1 .circle .skyBg, body main section.purpose .cslMobile .step1 .circle .skyBg {
   position: absolute;
   z-index: -1;
   bottom: -60px;
@@ -632,11 +727,11 @@ body main section.purpose .wrap .step1 .circle .skyBg {
   background-color: #00CFF7;
 }
 
-body main section.purpose .wrap .step1 .separ {
+body main section.purpose .wrap .step1 .separ, body main section.purpose .cslMobile .step1 .separ {
   position: relative;
 }
 
-body main section.purpose .wrap .step1 .separ span.month {
+body main section.purpose .wrap .step1 .separ span.month, body main section.purpose .cslMobile .step1 .separ span.month {
   position: absolute;
   left: -90px;
   top: -7px;
@@ -646,23 +741,28 @@ body main section.purpose .wrap .step1 .separ span.month {
   text-transform: uppercase;
 }
 
-body main section.purpose .wrap .step1 .text p.desc {
+body main section.purpose .wrap .step1 .text p.desc, body main section.purpose .cslMobile .step1 .text p.desc {
+  max-width: 190px;
+}
+
+body main section.purpose .wrap .step1 .number, body main section.purpose .cslMobile .step1 .number {
+  margin-top: 35px;
   max-width: 148px;
 }
 
-body main section.purpose .wrap .step1 .number {
-  margin-top: 35px;
+body main section.purpose .wrap .step1 .headblock, body main section.purpose .cslMobile .step1 .headblock {
+  max-width: 148px;
 }
 
-body main section.purpose .wrap .step1 .button {
+body main section.purpose .wrap .step1 .button, body main section.purpose .cslMobile .step1 .button {
   width: 100%;
 }
 
-body main section.purpose .wrap .step2 {
+body main section.purpose .wrap .step2, body main section.purpose .cslMobile .step2 {
   margin-top: 120px;
 }
 
-body main section.purpose .wrap .step2 .circle {
+body main section.purpose .wrap .step2 .circle, body main section.purpose .cslMobile .step2 .circle {
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -678,27 +778,27 @@ body main section.purpose .wrap .step2 .circle {
   height: 188px;
 }
 
-body main section.purpose .wrap .step2 .circle .block {
+body main section.purpose .wrap .step2 .circle .block, body main section.purpose .cslMobile .step2 .circle .block {
   margin-bottom: 7.5px;
 }
 
-body main section.purpose .wrap .step2 .circle .block span {
+body main section.purpose .wrap .step2 .circle .block span, body main section.purpose .cslMobile .step2 .circle .block span {
   text-transform: uppercase;
 }
 
-body main section.purpose .wrap .step2 .circle .block span.thin {
+body main section.purpose .wrap .step2 .circle .block span.thin, body main section.purpose .cslMobile .step2 .circle .block span.thin {
   font-family: 'MullerRegular';
   font-size: 10px;
   color: #fff;
 }
 
-body main section.purpose .wrap .step2 .circle .block span.fat {
+body main section.purpose .wrap .step2 .circle .block span.fat, body main section.purpose .cslMobile .step2 .circle .block span.fat {
   font-family: 'MullerBold';
   font-size: 15px;
   color: #fff;
 }
 
-body main section.purpose .wrap .step2 .circle .skyBg {
+body main section.purpose .wrap .step2 .circle .skyBg, body main section.purpose .cslMobile .step2 .circle .skyBg {
   position: absolute;
   z-index: -1;
   bottom: -60px;
@@ -707,23 +807,28 @@ body main section.purpose .wrap .step2 .circle .skyBg {
   background-color: #00CFF7;
 }
 
-body main section.purpose .wrap .step2 .number {
+body main section.purpose .wrap .step2 .number, body main section.purpose .cslMobile .step2 .number {
   margin-top: 35px;
-}
-
-body main section.purpose .wrap .step2 .text p.desc {
   max-width: 188px;
 }
 
-body main section.purpose .wrap .step2 .button {
+body main section.purpose .wrap .step2 .headblock, body main section.purpose .cslMobile .step2 .headblock {
+  max-width: 188px;
+}
+
+body main section.purpose .wrap .step2 .text p.desc, body main section.purpose .cslMobile .step2 .text p.desc {
+  max-width: 230px;
+}
+
+body main section.purpose .wrap .step2 .button, body main section.purpose .cslMobile .step2 .button {
   width: 100%;
 }
 
-body main section.purpose .wrap .step3 {
+body main section.purpose .wrap .step3, body main section.purpose .cslMobile .step3 {
   margin-top: 50px;
 }
 
-body main section.purpose .wrap .step3 .circle {
+body main section.purpose .wrap .step3 .circle, body main section.purpose .cslMobile .step3 .circle {
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -739,28 +844,28 @@ body main section.purpose .wrap .step3 .circle {
   height: 229px;
 }
 
-body main section.purpose .wrap .step3 .circle .block {
+body main section.purpose .wrap .step3 .circle .block, body main section.purpose .cslMobile .step3 .circle .block {
   margin-bottom: 10px;
 }
 
-body main section.purpose .wrap .step3 .circle .block span {
+body main section.purpose .wrap .step3 .circle .block span, body main section.purpose .cslMobile .step3 .circle .block span {
   line-height: 2;
   text-transform: uppercase;
 }
 
-body main section.purpose .wrap .step3 .circle .block span.thin {
+body main section.purpose .wrap .step3 .circle .block span.thin, body main section.purpose .cslMobile .step3 .circle .block span.thin {
   font-family: 'MullerRegular';
   font-size: 10px;
   color: #fff;
 }
 
-body main section.purpose .wrap .step3 .circle .block span.fat {
+body main section.purpose .wrap .step3 .circle .block span.fat, body main section.purpose .cslMobile .step3 .circle .block span.fat {
   font-family: 'MullerBold';
   font-size: 15px;
   color: #fff;
 }
 
-body main section.purpose .wrap .step3 .circle .skyBg {
+body main section.purpose .wrap .step3 .circle .skyBg, body main section.purpose .cslMobile .step3 .circle .skyBg {
   position: absolute;
   z-index: -1;
   bottom: -60px;
@@ -769,15 +874,20 @@ body main section.purpose .wrap .step3 .circle .skyBg {
   background-color: #00CFF7;
 }
 
-body main section.purpose .wrap .step3 .number {
+body main section.purpose .wrap .step3 .number, body main section.purpose .cslMobile .step3 .number {
   margin-top: 35px;
-}
-
-body main section.purpose .wrap .step3 .text p.desc {
   max-width: 229px;
 }
 
-body main section.purpose .wrap .step4 .circle {
+body main section.purpose .wrap .step3 .headblock, body main section.purpose .cslMobile .step3 .headblock {
+  max-width: 229px;
+}
+
+body main section.purpose .wrap .step3 .text p.desc, body main section.purpose .cslMobile .step3 .text p.desc {
+  max-width: 271px;
+}
+
+body main section.purpose .wrap .step4 .circle, body main section.purpose .cslMobile .step4 .circle {
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -793,28 +903,28 @@ body main section.purpose .wrap .step4 .circle {
   height: 279px;
 }
 
-body main section.purpose .wrap .step4 .circle .block {
+body main section.purpose .wrap .step4 .circle .block, body main section.purpose .cslMobile .step4 .circle .block {
   margin-bottom: 12.5px;
 }
 
-body main section.purpose .wrap .step4 .circle .block span {
+body main section.purpose .wrap .step4 .circle .block span, body main section.purpose .cslMobile .step4 .circle .block span {
   line-height: 2.2;
   text-transform: uppercase;
 }
 
-body main section.purpose .wrap .step4 .circle .block span.thin {
+body main section.purpose .wrap .step4 .circle .block span.thin, body main section.purpose .cslMobile .step4 .circle .block span.thin {
   font-family: 'MullerRegular';
   font-size: 10px;
   color: #fff;
 }
 
-body main section.purpose .wrap .step4 .circle .block span.fat {
+body main section.purpose .wrap .step4 .circle .block span.fat, body main section.purpose .cslMobile .step4 .circle .block span.fat {
   font-family: 'MullerBold';
   font-size: 15px;
   color: #fff;
 }
 
-body main section.purpose .wrap .step4 .circle .skyBg {
+body main section.purpose .wrap .step4 .circle .skyBg, body main section.purpose .cslMobile .step4 .circle .skyBg {
   position: absolute;
   z-index: -1;
   bottom: -60px;
@@ -823,12 +933,17 @@ body main section.purpose .wrap .step4 .circle .skyBg {
   background-color: #00CFF7;
 }
 
-body main section.purpose .wrap .step4 .number {
+body main section.purpose .wrap .step4 .number, body main section.purpose .cslMobile .step4 .number {
   margin-top: 15px;
+  max-width: 279px;
 }
 
-body main section.purpose .wrap .step4 .text p.desc {
+body main section.purpose .wrap .step4 .headblock, body main section.purpose .cslMobile .step4 .headblock {
   max-width: 279px;
+}
+
+body main section.purpose .wrap .step4 .text p.desc, body main section.purpose .cslMobile .step4 .text p.desc {
+  max-width: 321px;
 }
 
 body main section.first {
@@ -2065,12 +2180,6 @@ body main section.howSignUp .signUp:hover svg {
   }
 }
 
-@media only screen and (max-width: 1719px) {
-  body main section.purpose {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 1700px) {
   body main section.first .points .circleBg {
     right: -315px;
@@ -2105,6 +2214,9 @@ body main section.howSignUp .signUp:hover svg {
   body main section.third .content .container ul li {
     margin-bottom: 20px;
   }
+  body main section.purpose .wrap .rightB {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -2112,7 +2224,7 @@ body main section.howSignUp .signUp:hover svg {
     width: 55px;
     left: -75px;
   }
-  body main section.purpose {
+  body main section.purpose .wrap .step .separ span.month {
     display: none;
   }
   body main section.first .points .content span.head br {
@@ -2198,6 +2310,18 @@ body main section.howSignUp .signUp:hover svg {
   }
   body header.container-fluid nav .adress {
     display: none !important;
+  }
+  body main section.purpose .desktopBlock {
+    display: none;
+  }
+  body main section.purpose .cslMobile {
+    display: block;
+  }
+  body main section.purpose .cslMobile-control {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   body main section.first .points .circleBg {
     right: -250px;
