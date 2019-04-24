@@ -124,7 +124,6 @@ body footer .socials a.social:hover svg, body footer .socials a.social:hover pat
 }
 
 body header.container-fluid {
-  overflow: hidden;
   position: relative;
   background-image: url("../img/be/be-header-bg.jpg");
   -webkit-background-size: cover;
@@ -134,6 +133,7 @@ body header.container-fluid {
 }
 
 body header.container-fluid nav {
+  width: 100%;
   padding-left: 10px;
   padding-right: 10px;
   background-color: transparent;
@@ -283,6 +283,7 @@ body header.container-fluid .content .bottom .wrap .button {
           animation: pulsation 2s infinite;
   overflow: hidden;
   position: relative;
+  z-index: 100;
   cursor: pointer;
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -453,7 +454,7 @@ body main section.purpose .wrap {
 
 body main section.purpose .wrap .rightB {
   position: absolute;
-  top: 200px;
+  top: 160px;
   right: -150px;
   line-height: 1.3;
 }
@@ -479,6 +480,15 @@ body main section.purpose .cslMobile-control {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -497,7 +507,8 @@ body main section.purpose .cslMobile-control .arrows .arrow {
           border-radius: 50%;
   width: 50px;
   height: 50px;
-  margin-right: 15px;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
 }
 
 body main section.purpose .cslMobile-control .arrows .arrow svg, body main section.purpose .cslMobile-control .arrows .arrow path {
@@ -514,6 +525,22 @@ body main section.purpose .cslMobile-control .arrows .arrow:hover {
 
 body main section.purpose .cslMobile-control .arrows .arrow:hover svg, body main section.purpose .cslMobile-control .arrows .arrow:hover path {
   fill: #fff;
+}
+
+body main section.purpose .cslMobile-control .desc {
+  text-align: center;
+}
+
+body main section.purpose .cslMobile-control .desc img.icon {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+body main section.purpose .cslMobile-control .desc p {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #fff;
+  max-width: 279px;
 }
 
 body main section.purpose .cslMobile, body main section.purpose .cslMobile-control {
@@ -547,6 +574,9 @@ body main section.purpose .cslMobile .step .circle span.month, body main section
 }
 
 body main section.purpose .cslMobile .step .text {
+  max-width: 279px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center !important;
 }
 
@@ -2420,6 +2450,9 @@ body main section.howSignUp .signUp:hover svg {
 }
 
 @media only screen and (max-width: 1023px) {
+  body main section.purpose .headerBlock {
+    margin-left: 100px;
+  }
   body main section.first .points.container-fluid img.mask {
     display: none;
   }
@@ -2492,6 +2525,10 @@ body main section.howSignUp .signUp:hover svg {
   }
   body header.container-fluid .content .bottom .wrap .circleSm, body header.container-fluid .content .bottom .wrap .circleMd, body header.container-fluid .content .bottom .wrap .circleLg, body header.container-fluid .content .bottom .wrap .circleXl, body header.container-fluid .content .bottom .wrap img.iconBg {
     display: none;
+  }
+  body main section.purpose img.fotoBg {
+    margin-left: 0;
+    margin-top: 0;
   }
   body main section.first .numbers .question {
     width: 200px;
@@ -2614,6 +2651,17 @@ body main section.howSignUp .signUp:hover svg {
     background-color: #ff2e2f;
     color: #fff;
   }
+  body main section.purpose {
+    background-image: url("../img/be/be-purpose-mobile-bg.jpg");
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: repeat;
+  }
+  body main section.first .numbers {
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: repeat;
+  }
   body main section.first .numbers .points {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2632,8 +2680,8 @@ body main section.howSignUp .signUp:hover svg {
     text-align: center;
   }
   body main section.second .header .container img.imgPos {
-    right: -15%;
-    top: -15%;
+    right: -25%;
+    top: -25%;
     width: 250px;
     z-index: -1;
   }
@@ -2666,6 +2714,12 @@ body main section.howSignUp .signUp:hover svg {
 }
 
 @media only screen and (max-width: 600px) {
+  body main section.purpose .headerBlock span.head {
+    font-size: 32px;
+  }
+  body main section.purpose .headerBlock p.desc {
+    font-size: 15px;
+  }
   body main section.first .points .headblock-mobile span.head {
     font-size: 32px;
   }
@@ -2683,6 +2737,12 @@ body main section.howSignUp .signUp:hover svg {
   body main section.first .numbers .aboutNumbers .headblock span.number {
     font-size: 60px;
   }
+  body main section.second .header .container img.imgPos {
+    right: -25%;
+    top: 0;
+    width: 250px;
+    z-index: -1;
+  }
   body main section.second .header .container .headblock span.head {
     font-size: 32px;
   }
@@ -2697,8 +2757,33 @@ body main section.howSignUp .signUp:hover svg {
 }
 
 @media only screen and (max-width: 550px) {
+  body header.container-fluid {
+    background-image: url("../img/be/be-header-mobileBg.png");
+  }
+  body header.container-fluid .content {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  body header.container-fluid .content p.desc {
+    font-size: 17px;
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  body header.container-fluid .content p.desc::before {
+    left: 0;
+    top: -15px;
+  }
+  body header.container-fluid .content .bottom .circle {
+    width: 100px;
+    height: 100px;
+  }
+  body header.container-fluid .content .bottom .wrap .button {
+    width: 135px;
+    height: 135px;
+  }
   body header.container-fluid .content .textMobile {
-    line-height: 1.3;
+    font-size: 32px;
+    line-height: 1.1;
   }
   body header.container-fluid .content .btnLink {
     margin-top: 50px;
@@ -2713,6 +2798,16 @@ body main section.howSignUp .signUp:hover svg {
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
+  body main section.purpose img.fotoBg {
+    width: 75%;
+  }
+  body main section.purpose .headerBlock {
+    margin-left: 0;
+  }
+  body main section.purpose .headerBlock span.head::before {
+    left: 0;
+    top: -30px;
+  }
   body main section.first .numbers .aboutNumbers {
     padding-left: 0;
   }
@@ -2724,6 +2819,11 @@ body main section.howSignUp .signUp:hover svg {
     top: -37.5px;
     left: 0;
     width: 35px;
+  }
+  body main section.second .header {
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: repeat;
   }
   body main section.second .header .container img.imgPos {
     right: -5%;
@@ -2754,6 +2854,11 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.second .header .container .fact p.desc {
     margin-left: 0;
+  }
+  body main section.third .header {
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: repeat;
   }
   body main section.third .header .container img.imgPos {
     right: -5%;
@@ -2787,6 +2892,9 @@ body main section.howSignUp .signUp:hover svg {
     margin-left: 0;
   }
   body main section.fourth .header {
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: repeat;
     padding-top: 75px;
   }
   body main section.fourth .header .container img.imgPos {
@@ -2822,6 +2930,9 @@ body main section.howSignUp .signUp:hover svg {
 }
 
 @media only screen and (max-width: 500px) {
+  body .scroll {
+    display: none;
+  }
   body main section.second .header .container .headblock span.head {
     font-size: 35px;
   }
@@ -2901,8 +3012,8 @@ body main section.howSignUp .signUp:hover svg {
     left: 15px;
   }
   body main section.second .header .container img.imgPos {
-    right: -22.5%;
-    top: 15%;
+    right: -25%;
+    top: 0;
   }
   body main section.second .header .container .fact .procent {
     font-size: 60px;

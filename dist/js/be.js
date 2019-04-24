@@ -44,6 +44,27 @@ $(document).ready(function(){
     $('#carousel2').on('slide.bs.carousel', function (e) {
       $("#counter2").text('0' + (e.to + 1));
     })
+    // Carousel 3
+    $('#carousel3').carousel({
+      interval: false,
+      
+    });
+    var hammer = new Hammer(document.querySelector('#carousel3'));
+    hammer.get("pan");
+    hammer.on("panleft", function(){
+        $('#carousel3').carousel("next");
+    });
+    hammer.on("panright", function(){
+        $('#carousel3').carousel("prev");
+    });
+    $('.prevCsl2').click(function() {
+      $('#carousel3').carousel('prev');
+    })
+    $('.nextCsl2').click(function() {
+      $('#carousel3').carousel('next');
+    })
+
+
   	// Fade bg content
   	$('#content-bg1-button').click(function() {
   		$('#content-bg2').fadeTo(0.5, 0);
@@ -75,6 +96,18 @@ $(document).ready(function(){
       $.scrollTo('#step3', 1000);
     });
     $('#toStep4').click(function(){
+      $.scrollTo('#step3', 1000);
+    });
+    $('#toStep1m').click(function(){
+      $.scrollTo('#step1', 1000);
+    });
+    $('#toStep2m').click(function(){
+      $.scrollTo('#step2', 1000);
+    });
+    $('#toStep3m').click(function(){
+      $.scrollTo('#step3', 1000);
+    });
+    $('#toStep4m').click(function(){
       $.scrollTo('#step3', 1000);
     });
 
