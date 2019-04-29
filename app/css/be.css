@@ -301,6 +301,12 @@ body header.container-fluid .content .bottom .wrap .button span {
   text-transform: uppercase;
 }
 
+body header.container-fluid .content .bottom .wrap .button .mobile {
+  display: none;
+  font-family: 'MullerBold';
+  font-size: 17px;
+}
+
 body header.container-fluid .content .bottom .wrap .button svg {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -412,6 +418,10 @@ body main section.purpose {
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
+}
+
+body main section.purpose .desktopBlock {
+  margin-top: 50px;
 }
 
 body main section.purpose .headblock {
@@ -547,60 +557,35 @@ body main section.purpose .cslMobile, body main section.purpose .cslMobile-contr
   display: none;
 }
 
-body main section.purpose .cslMobile .step {
-  margin-top: 0 !important;
-}
-
-body main section.purpose .cslMobile .step .headblock, body main section.purpose .cslMobile .step .number {
-  max-width: none !important;
-}
-
-body main section.purpose .cslMobile .step .circle {
-  height: 279px !important;
-  width: 279px !important;
-}
-
-body main section.purpose .cslMobile .step .separ {
-  max-width: 279px;
-}
-
-body main section.purpose .cslMobile .step .circle, body main section.purpose .cslMobile .step .separ {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body main section.purpose .cslMobile .step .circle span.month, body main section.purpose .cslMobile .step .separ span.month {
-  display: none;
-}
-
-body main section.purpose .cslMobile .step .text {
-  max-width: 279px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center !important;
-}
-
-body main section.purpose .cslMobile .step .text span.name {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-body main section.purpose .cslMobile .step .text p.desc {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 279px !important;
-  text-align: center !important;
-}
-
-body main section.purpose .cslMobile .step .button {
-  width: 279px !important;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body main section.purpose .wrap .step, body main section.purpose .cslMobile .step {
   text-align: center;
+}
+
+body main section.purpose .wrap .step .circle .block, body main section.purpose .wrap .step .circle .skyBg, body main section.purpose .cslMobile .step .circle .block, body main section.purpose .cslMobile .step .circle .skyBg {
+  line-height: 1.2;
+}
+
+body main section.purpose .wrap .step .circle .block span, body main section.purpose .wrap .step .circle .skyBg span, body main section.purpose .cslMobile .step .circle .block span, body main section.purpose .cslMobile .step .circle .skyBg span {
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+body main section.purpose .wrap .step .circle .block span.thin, body main section.purpose .wrap .step .circle .skyBg span.thin, body main section.purpose .cslMobile .step .circle .block span.thin, body main section.purpose .cslMobile .step .circle .skyBg span.thin {
+  font-family: 'MullerRegular';
+  font-size: 10px;
+  color: #fff;
+}
+
+body main section.purpose .wrap .step .circle .block span.mid, body main section.purpose .wrap .step .circle .skyBg span.mid, body main section.purpose .cslMobile .step .circle .block span.mid, body main section.purpose .cslMobile .step .circle .skyBg span.mid {
+  font-family: 'MullerBold';
+  font-size: 10px;
+  color: #fff;
+}
+
+body main section.purpose .wrap .step .circle .block span.fat, body main section.purpose .wrap .step .circle .skyBg span.fat, body main section.purpose .cslMobile .step .circle .block span.fat, body main section.purpose .cslMobile .step .circle .skyBg span.fat {
+  font-family: 'MullerBold';
+  font-size: 15px;
+  color: #fff;
 }
 
 body main section.purpose .wrap .step .number, body main section.purpose .cslMobile .step .number {
@@ -682,6 +667,11 @@ body main section.purpose .wrap .step .text p.desc, body main section.purpose .c
   text-transform: none;
 }
 
+body main section.purpose .wrap .step .text p.desc span.PurposeBtn, body main section.purpose .cslMobile .step .text p.desc span.PurposeBtn {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 body main section.purpose .wrap .step .button, body main section.purpose .cslMobile .step .button {
   cursor: pointer;
   background-color: transparent;
@@ -728,26 +718,6 @@ body main section.purpose .wrap .step1 .circle, body main section.purpose .cslMo
   height: 148px;
 }
 
-body main section.purpose .wrap .step1 .circle .block, body main section.purpose .cslMobile .step1 .circle .block {
-  margin-bottom: 5px;
-}
-
-body main section.purpose .wrap .step1 .circle .block span, body main section.purpose .cslMobile .step1 .circle .block span {
-  text-transform: uppercase;
-}
-
-body main section.purpose .wrap .step1 .circle .block span.thin, body main section.purpose .cslMobile .step1 .circle .block span.thin {
-  font-family: 'MullerRegular';
-  font-size: 10px;
-  color: #fff;
-}
-
-body main section.purpose .wrap .step1 .circle .block span.fat, body main section.purpose .cslMobile .step1 .circle .block span.fat {
-  font-family: 'MullerBold';
-  font-size: 17px;
-  color: #fff;
-}
-
 body main section.purpose .wrap .step1 .circle .skyBg, body main section.purpose .cslMobile .step1 .circle .skyBg {
   position: absolute;
   z-index: -1;
@@ -758,6 +728,7 @@ body main section.purpose .wrap .step1 .circle .skyBg, body main section.purpose
 }
 
 body main section.purpose .wrap .step1 .separ, body main section.purpose .cslMobile .step1 .separ {
+  max-width: 148px;
   position: relative;
 }
 
@@ -772,7 +743,7 @@ body main section.purpose .wrap .step1 .separ span.month, body main section.purp
 }
 
 body main section.purpose .wrap .step1 .text p.desc, body main section.purpose .cslMobile .step1 .text p.desc {
-  max-width: 190px;
+  max-width: 229px;
 }
 
 body main section.purpose .wrap .step1 .number, body main section.purpose .cslMobile .step1 .number {
@@ -809,29 +780,13 @@ body main section.purpose .wrap .step2 .circle, body main section.purpose .cslMo
 }
 
 body main section.purpose .wrap .step2 .circle .block, body main section.purpose .cslMobile .step2 .circle .block {
-  margin-bottom: 7.5px;
-}
-
-body main section.purpose .wrap .step2 .circle .block span, body main section.purpose .cslMobile .step2 .circle .block span {
-  text-transform: uppercase;
-}
-
-body main section.purpose .wrap .step2 .circle .block span.thin, body main section.purpose .cslMobile .step2 .circle .block span.thin {
-  font-family: 'MullerRegular';
-  font-size: 10px;
-  color: #fff;
-}
-
-body main section.purpose .wrap .step2 .circle .block span.fat, body main section.purpose .cslMobile .step2 .circle .block span.fat {
-  font-family: 'MullerBold';
-  font-size: 15px;
-  color: #fff;
+  margin-bottom: 30px;
 }
 
 body main section.purpose .wrap .step2 .circle .skyBg, body main section.purpose .cslMobile .step2 .circle .skyBg {
   position: absolute;
   z-index: -1;
-  bottom: -60px;
+  bottom: -55px;
   width: 100%;
   height: 50%;
   background-color: #00CFF7;
@@ -842,12 +797,16 @@ body main section.purpose .wrap .step2 .number, body main section.purpose .cslMo
   max-width: 188px;
 }
 
+body main section.purpose .wrap .step2 .separ, body main section.purpose .cslMobile .step2 .separ {
+  max-width: 188px;
+}
+
 body main section.purpose .wrap .step2 .headblock, body main section.purpose .cslMobile .step2 .headblock {
   max-width: 188px;
 }
 
 body main section.purpose .wrap .step2 .text p.desc, body main section.purpose .cslMobile .step2 .text p.desc {
-  max-width: 230px;
+  max-width: 263px;
 }
 
 body main section.purpose .wrap .step2 .button, body main section.purpose .cslMobile .step2 .button {
@@ -875,30 +834,14 @@ body main section.purpose .wrap .step3 .circle, body main section.purpose .cslMo
 }
 
 body main section.purpose .wrap .step3 .circle .block, body main section.purpose .cslMobile .step3 .circle .block {
-  margin-bottom: 10px;
-}
-
-body main section.purpose .wrap .step3 .circle .block span, body main section.purpose .cslMobile .step3 .circle .block span {
-  line-height: 2;
-  text-transform: uppercase;
-}
-
-body main section.purpose .wrap .step3 .circle .block span.thin, body main section.purpose .cslMobile .step3 .circle .block span.thin {
-  font-family: 'MullerRegular';
-  font-size: 10px;
-  color: #fff;
-}
-
-body main section.purpose .wrap .step3 .circle .block span.fat, body main section.purpose .cslMobile .step3 .circle .block span.fat {
-  font-family: 'MullerBold';
-  font-size: 15px;
-  color: #fff;
+  margin-bottom: 30px;
 }
 
 body main section.purpose .wrap .step3 .circle .skyBg, body main section.purpose .cslMobile .step3 .circle .skyBg {
   position: absolute;
   z-index: -1;
-  bottom: -60px;
+  bottom: -55px;
+  padding-top: 7.5px;
   width: 100%;
   height: 50%;
   background-color: #00CFF7;
@@ -909,12 +852,16 @@ body main section.purpose .wrap .step3 .number, body main section.purpose .cslMo
   max-width: 229px;
 }
 
+body main section.purpose .wrap .step3 .separ, body main section.purpose .cslMobile .step3 .separ {
+  max-width: 229px;
+}
+
 body main section.purpose .wrap .step3 .headblock, body main section.purpose .cslMobile .step3 .headblock {
   max-width: 229px;
 }
 
 body main section.purpose .wrap .step3 .text p.desc, body main section.purpose .cslMobile .step3 .text p.desc {
-  max-width: 271px;
+  max-width: 292px;
 }
 
 body main section.purpose .wrap .step4 .circle, body main section.purpose .cslMobile .step4 .circle {
@@ -934,30 +881,14 @@ body main section.purpose .wrap .step4 .circle, body main section.purpose .cslMo
 }
 
 body main section.purpose .wrap .step4 .circle .block, body main section.purpose .cslMobile .step4 .circle .block {
-  margin-bottom: 12.5px;
-}
-
-body main section.purpose .wrap .step4 .circle .block span, body main section.purpose .cslMobile .step4 .circle .block span {
-  line-height: 2.2;
-  text-transform: uppercase;
-}
-
-body main section.purpose .wrap .step4 .circle .block span.thin, body main section.purpose .cslMobile .step4 .circle .block span.thin {
-  font-family: 'MullerRegular';
-  font-size: 10px;
-  color: #fff;
-}
-
-body main section.purpose .wrap .step4 .circle .block span.fat, body main section.purpose .cslMobile .step4 .circle .block span.fat {
-  font-family: 'MullerBold';
-  font-size: 15px;
-  color: #fff;
+  margin-bottom: 65px;
 }
 
 body main section.purpose .wrap .step4 .circle .skyBg, body main section.purpose .cslMobile .step4 .circle .skyBg {
   position: absolute;
   z-index: -1;
-  bottom: -60px;
+  bottom: -55px;
+  padding-top: 20px;
   width: 100%;
   height: 50%;
   background-color: #00CFF7;
@@ -968,12 +899,151 @@ body main section.purpose .wrap .step4 .number, body main section.purpose .cslMo
   max-width: 279px;
 }
 
+body main section.purpose .wrap .step4 .separ, body main section.purpose .cslMobile .step4 .separ {
+  max-width: 279px;
+}
+
 body main section.purpose .wrap .step4 .headblock, body main section.purpose .cslMobile .step4 .headblock {
   max-width: 279px;
 }
 
 body main section.purpose .wrap .step4 .text p.desc, body main section.purpose .cslMobile .step4 .text p.desc {
-  max-width: 321px;
+  max-width: 284px;
+}
+
+body main section.purpose .cslMobile {
+  width: 100%;
+  position: relative;
+}
+
+body main section.purpose .cslMobile .arrowPrev, body main section.purpose .cslMobile .arrowNext {
+  z-index: 100;
+  cursor: pointer;
+  width: 50px;
+  position: absolute;
+  top: 230px;
+}
+
+body main section.purpose .cslMobile .arrowPrev svg, body main section.purpose .cslMobile .arrowNext svg {
+  fill: #fff;
+}
+
+body main section.purpose .cslMobile .arrowPrev {
+  left: 10px;
+}
+
+body main section.purpose .cslMobile .arrowNext {
+  right: 10px;
+}
+
+body main section.purpose .cslMobile .step4 {
+  margin-top: 0;
+}
+
+body main section.purpose .cslMobile .step3 {
+  margin-top: 15px;
+}
+
+body main section.purpose .cslMobile .step2 {
+  margin-top: 40px;
+}
+
+body main section.purpose .cslMobile .step1 {
+  margin-top: 40px;
+}
+
+body main section.purpose .cslMobile .step {
+  padding-top: 15px;
+}
+
+body main section.purpose .cslMobile .step .headblock, body main section.purpose .cslMobile .step .number {
+  max-width: none !important;
+}
+
+body main section.purpose .cslMobile .step .circle {
+  height: 279px;
+  width: 279px;
+}
+
+body main section.purpose .cslMobile .step .circle .block {
+  margin-bottom: 60px;
+}
+
+body main section.purpose .cslMobile .step .circle .skyBg {
+  padding-top: 20px;
+}
+
+body main section.purpose .cslMobile .step .separ {
+  max-width: 279px;
+}
+
+body main section.purpose .cslMobile .step .circle, body main section.purpose .cslMobile .step .separ {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body main section.purpose .cslMobile .step .circle span.month, body main section.purpose .cslMobile .step .separ span.month {
+  display: none;
+}
+
+body main section.purpose .cslMobile .step .text {
+  max-width: 279px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center !important;
+}
+
+body main section.purpose .cslMobile .step .text span.name {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'MullerBold';
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+body main section.purpose .cslMobile .step .text .subname {
+  font-family: 'MullerBold';
+  color: #fff;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+body main section.purpose .cslMobile .step .text p.desc {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 279px !important;
+  text-align: center !important;
+  font-size: 12px;
+  color: #fff;
+}
+
+body main section.purpose .cslMobile .step .text .resultsName {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "MullerBold";
+  font-size: 12px;
+  color: #fff;
+  max-width: 240px;
+}
+
+body main section.purpose .cslMobile .step .text p.results {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 240px;
+  font-size: 12px;
+  color: #fff;
+  font-family: 'MullerLight';
+}
+
+body main section.purpose .cslMobile .step .button {
+  width: 279px !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body main section.first {
@@ -1210,12 +1280,18 @@ body main section.first .points .csl {
   z-index: 10;
 }
 
-body main section.first .points .csl img {
+body main section.first .points .csl .carousel-inner {
+  width: 75%;
+  margin-left: auto;
+}
+
+body main section.first .points .csl .carousel-inner img {
   position: relative;
   z-index: 10;
   margin: 0;
   padding: 0;
   width: 100%;
+  margin-left: auto;
   outline: none;
   cursor: default;
   pointer-events: none;
@@ -1338,6 +1414,12 @@ body main section.second .header {
           background-size: cover;
   background-repeat: no-repeat;
   padding-top: 125px;
+}
+
+body main section.second .header img.imgPosM {
+  display: none;
+  position: absolute;
+  z-index: 100;
 }
 
 body main section.second .header .container {
@@ -1511,7 +1593,6 @@ body main section.second .content .cslMobile .carousel-item .head p.text {
   font-family: 'MullerRegular';
   font-size: 18px;
   color: #313131;
-  text-decoration: underline;
   margin-left: 15px;
   margin-bottom: 0;
   -webkit-transition: 0.3s;
@@ -1681,6 +1762,11 @@ body main section.third .content {
   background-color: #fff;
 }
 
+body main section.third .content .headMobile {
+  display: none;
+  margin: 25px;
+}
+
 body main section.third .content img.imgBg-mobile {
   display: none;
   width: 100%;
@@ -1708,7 +1794,8 @@ body main section.third .content .container ul li {
 }
 
 body main section.third .content .container ul li p.desc {
-  font-family: 'MullerRegular';
+  font-family: 'MullerLight';
+  line-height: 1.3;
   font-size: 17px;
   color: #313131;
   margin-left: 30px;
@@ -2373,10 +2460,13 @@ body main section.howSignUp .signUp:hover svg {
     width: 45px;
     height: 45px;
   }
+  body main section.second .header img.imgPosM {
+    display: block;
+    right: 0;
+    bottom: 0;
+  }
   body main section.second .header .container img.imgPos {
-    right: -15%;
-    top: -35%;
-    width: 300px;
+    display: none;
   }
   body main section.second .header .container .fact .procent .red {
     color: #fff;
@@ -2435,6 +2525,9 @@ body main section.howSignUp .signUp:hover svg {
   body main section.third .content {
     padding-top: 0;
   }
+  body main section.third .content .headMobile {
+    display: block;
+  }
   body main section.third .content img.imgBg {
     display: none;
   }
@@ -2443,6 +2536,9 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.third .content .container {
     padding-top: 25px;
+  }
+  body main section.third .content .container span.head {
+    display: none;
   }
   body main section.third .content .container ul li p.desc {
     margin-left: 30px;
@@ -2458,6 +2554,12 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.first .points.container-fluid .csl {
     position: relative;
+  }
+  body main section.first .points.container-fluid .csl .carousel-inner {
+    width: 100%;
+  }
+  body main section.first .points.container-fluid .csl .carousel-inner img {
+    width: 100%;
   }
   body main section.first .points.container-fluid .circleBg {
     display: none;
@@ -2657,6 +2759,16 @@ body main section.howSignUp .signUp:hover svg {
             background-size: contain;
     background-repeat: repeat;
   }
+  body main section.purpose .cslMobile .step .circle {
+    width: 229px;
+    height: 229px;
+  }
+  body main section.purpose .cslMobile .step .circle .block {
+    margin-bottom: 30px;
+  }
+  body main section.purpose .cslMobile .step .circle .skyBg {
+    padding-top: 10px;
+  }
   body main section.first .numbers {
     -webkit-background-size: contain;
             background-size: contain;
@@ -2678,12 +2790,6 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.first .numbers .points .point {
     text-align: center;
-  }
-  body main section.second .header .container img.imgPos {
-    right: -25%;
-    top: -25%;
-    width: 250px;
-    z-index: -1;
   }
   body main section.result .header .container .numbers {
     -webkit-box-orient: vertical;
@@ -2737,12 +2843,6 @@ body main section.howSignUp .signUp:hover svg {
   body main section.first .numbers .aboutNumbers .headblock span.number {
     font-size: 60px;
   }
-  body main section.second .header .container img.imgPos {
-    right: -25%;
-    top: 0;
-    width: 250px;
-    z-index: -1;
-  }
   body main section.second .header .container .headblock span.head {
     font-size: 32px;
   }
@@ -2762,7 +2862,7 @@ body main section.howSignUp .signUp:hover svg {
   }
   body header.container-fluid .content {
     padding-bottom: 25px;
-    padding-top: 25px;
+    padding-top: 100px;
   }
   body header.container-fluid .content p.desc {
     font-size: 17px;
@@ -2781,6 +2881,12 @@ body main section.howSignUp .signUp:hover svg {
     width: 135px;
     height: 135px;
   }
+  body header.container-fluid .content .bottom .wrap .button span {
+    display: none;
+  }
+  body header.container-fluid .content .bottom .wrap .button .mobile {
+    display: block;
+  }
   body header.container-fluid .content .textMobile {
     font-size: 32px;
     line-height: 1.1;
@@ -2797,6 +2903,9 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-justify-content: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+  }
+  body main section.purpose {
+    padding-top: 25px;
   }
   body main section.purpose img.fotoBg {
     width: 75%;
@@ -2825,12 +2934,9 @@ body main section.howSignUp .signUp:hover svg {
             background-size: contain;
     background-repeat: repeat;
   }
-  body main section.second .header .container img.imgPos {
-    right: -5%;
-    top: -5%;
-  }
   body main section.second .header .container .headblock {
     margin-left: 0px;
+    padding-right: 15px;
   }
   body main section.second .header .container .headblock span.number {
     top: -82.5px;
@@ -2854,13 +2960,14 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.second .header .container .fact p.desc {
     margin-left: 0;
+    max-width: 175px;
   }
   body main section.third .header {
     -webkit-background-size: contain;
             background-size: contain;
     background-repeat: repeat;
   }
-  body main section.third .header .container img.imgPos {
+  body main section.third .header img.imgPosM {
     right: -5%;
     top: -5%;
   }
@@ -2897,7 +3004,7 @@ body main section.howSignUp .signUp:hover svg {
     background-repeat: repeat;
     padding-top: 75px;
   }
-  body main section.fourth .header .container img.imgPos {
+  body main section.fourth .header img.imgPosM {
     right: -5%;
     top: -5%;
   }
@@ -2933,6 +3040,16 @@ body main section.howSignUp .signUp:hover svg {
   body .scroll {
     display: none;
   }
+  body main section.purpose .cslMobile .arrowPrev {
+    left: 0px;
+  }
+  body main section.purpose .cslMobile .arrowNext {
+    right: 0px;
+  }
+  body main section.first .points {
+    padding-left: 0;
+    padding-right: 0;
+  }
   body main section.second .header .container .headblock span.head {
     font-size: 35px;
   }
@@ -2960,11 +3077,15 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-justify-content: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+    padding-left: 12.5px;
   }
   body main section.third .content .container ul li p.desc {
     margin-left: 0;
     text-align: left;
     margin-top: 10px;
+  }
+  body main section.third .content .container ul li p.desc br {
+    display: none;
   }
   body main section.fourth .header .container .headblock {
     margin-left: 0;
@@ -3011,9 +3132,8 @@ body main section.howSignUp .signUp:hover svg {
   body .scroll {
     left: 15px;
   }
-  body main section.second .header .container img.imgPos {
-    right: -25%;
-    top: 0;
+  body main section.second .header img.imgPosM {
+    width: 130px;
   }
   body main section.second .header .container .fact .procent {
     font-size: 60px;
@@ -3051,6 +3171,9 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.first .points .content .arrows p.desc {
     font-size: 11px;
+  }
+  body main section.third .content .headMobile {
+    font-size: 32px;
   }
   body main section.fourth .content .container .wrap .step .headblock span.head {
     font-size: 25px;
