@@ -990,6 +990,7 @@ body main section.purpose .cslMobile .step .text {
   max-width: 279px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.3;
   text-align: center !important;
 }
 
@@ -1001,13 +1002,15 @@ body main section.purpose .cslMobile .step .text span.name {
   color: #fff;
   font-size: 24px;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 body main section.purpose .cslMobile .step .text .subname {
   font-family: 'MullerBold';
   color: #fff;
   font-size: 24px;
-  margin: 10px 0;
+  margin: 2.5px 0;
+  line-height: 1.2;
 }
 
 body main section.purpose .cslMobile .step .text p.desc {
@@ -2434,6 +2437,12 @@ body main section.howSignUp .signUp:hover svg {
   body main section.purpose .cslMobile {
     display: block;
   }
+  body main section.purpose .cslMobile .step .text p.desc {
+    letter-spacing: normal;
+  }
+  body main section.purpose .cslMobile .step .text .resultsName {
+    margin-top: 25px;
+  }
   body main section.purpose .cslMobile-control {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2579,6 +2588,10 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.first .points.container-fluid .content {
     padding-top: 25px;
+  }
+  body main section.first .points.container-fluid .content ul li p.desc {
+    font-size: 17px;
+    font-family: 'MullerLight';
   }
   body main section.first .points.container-fluid .content span.head {
     display: none;
