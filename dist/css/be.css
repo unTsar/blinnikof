@@ -2591,6 +2591,9 @@ body main section.howSignUp .signUp:hover svg {
   body main section.second .content ul li .circle img {
     width: 60%;
   }
+  body main section.result .content {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
