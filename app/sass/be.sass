@@ -226,6 +226,7 @@ body
 						background-color: rgba(255, 46, 46, 0.071)
 						width: 170px
 						height: 170px
+						pointer-events: none
 					span
 						font-family: 'MullerExtraBold'
 						font-size: 60px
@@ -637,12 +638,14 @@ body
 							font-size: 24px
 							margin: 2.5px 0
 							line-height: 1.2
+							.red
+								color: rgb(255, 46, 47)
 						p.desc
 							margin-left: auto
 							margin-right: auto
 							max-width: 279px !important
 							text-align: center !important
-							font-size: 12px
+							font-size: 14px
 							color: #fff
 						.resultsName
 							margin-top: 50px
@@ -650,7 +653,7 @@ body
 							margin-right: auto
 							text-align: center
 							font-family: "MullerBold"
-							font-size: 12px
+							font-size: 14px
 							color: #fff
 							max-width: 240px
 						p.results
@@ -658,7 +661,7 @@ body
 							margin-right: auto
 							text-align: center
 							max-width: 240px
-							font-size: 12px
+							font-size: 14px
 							color: #fff
 							font-family: 'MullerLight'
 					.button
@@ -680,7 +683,7 @@ body
 					margin: auto
 					border-radius: 50%
 					background-color: rgb(255, 46, 47)
-					box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31)
+					box-shadow: 0 22.8px 68.4px 0 #FF2727
 					width: 230px
 					height: 230px
 					z-index: 40
@@ -688,7 +691,7 @@ body
 					span
 						line-height: 1.4
 						font-family: 'MullerBold'
-						font-size: 24px
+						font-size: 22.8px
 						color: #fff
 				img.questionBg
 					position: absolute
@@ -908,6 +911,8 @@ body
 		section.second
 			overflow: hidden
 			.header
+				padding-left: 15px
+				padding-right: 15px
 				position: relative
 				z-index: 40
 				background-image: url('../img/be/be-second-header-bg.jpg')
@@ -1041,7 +1046,7 @@ body
 								height: 113px
 								transition: 0.3s
 								img
-									width: 60%
+									width: 66%
 									transition: 0.3s
 									filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4)
 				img.bg
@@ -1100,6 +1105,8 @@ body
 							text-decoration: none
 		section.third
 			.header
+				padding-left: 15px
+				padding-right: 15px
 				padding-top: 120px
 				padding-bottom: 120px
 				background-image: url('../img/be/be-third-header-bg.jpg')
@@ -1168,6 +1175,8 @@ body
 
 		section.fourth
 			.header
+				padding-left: 15px
+				padding-right: 15px
 				position: relative
 				z-index: 20
 				padding-top: 120px
@@ -1386,6 +1395,8 @@ body
 									color: #000
 		section.result
 			.header
+				padding-left: 15px
+				padding-right: 15px
 				background-image: url('../img/be/be-result-header-bg.jpg')
 				background-size: cover
 				background-repeat: no-repeat
@@ -1418,19 +1429,22 @@ body
 			background-repeat: no-repeat
 			padding-top: 100px
 			padding-bottom: 70px
+			padding-left: 15px
+			padding-right: 15px
 			span.head
 				color: #fff
 				font-family: 'MullerExtraBold'
 				font-size: 44px
 			.point
 				position: relative
+				display: grid
+				grid-template-columns: 75px auto
+				align-items: start
+				justify-items: start
 				margin-top: 100px
-				object
+				img
 					width: 75px
 					height: auto
-					svg, path
-						width: 75px
-						height: auto
 				p.desc
 					margin-bottom: 0
 					margin-left: 15px
@@ -1956,6 +1970,13 @@ body
 							align-items: center
 						.point
 							text-align: center
+							span.big
+								font-size: 63px
+							span.desc
+								font-family: 'MullerLight'
+								font-size: 15px
+								br
+									display: none
 			section.second
 				.content
 					span.head
@@ -2035,8 +2056,10 @@ body
 					top: -15px
 				.bottom
 					.circle
-						width: 100px
-						height: 100px
+						width: 90px
+						height: 90px
+						span
+							font-size: 45px
 					.wrap
 						.button
 							width: 135px
@@ -2045,11 +2068,19 @@ body
 								display: none
 							.mobile
 								display: block
+								font-size: 12px
+								letter-spacing: 1px
+							svg
+								width: 37.5px
+								height: auto
+								bottom: 0px
+								right: 0
+								left: 0
 				.textMobile
 					font-size: 35px
 					line-height: 1.1
 				.btnLink
-					margin-top: 50px
+					margin-top: 25px
 					justify-content: center !important
 				.dateStart
 					justify-content: center !important
@@ -2066,7 +2097,7 @@ body
 			section.first
 				.numbers
 					.aboutNumbers
-						padding-left: 0
+						padding-left: 15px
 						.headblock
 							span.number
 								top: -75px
@@ -2098,6 +2129,7 @@ body
 								max-width: 175px
 			section.third
 				.header
+					padding-bottom: 60px
 					background-size: contain
 					background-repeat: repeat
 					img.imgPosM
@@ -2142,6 +2174,22 @@ body
 							align-items: start !important
 							p.desc
 								margin-left: 0
+			section.howSignUp
+				padding-top: 50px
+				span.head
+					font-size: 34.8px
+				.signUp
+					width: 135px
+					height: 135px
+					span
+						font-size: 12px
+						letter-spacing: 1px
+					svg
+						width: 37.5px
+						height: auto
+						bottom: 0px
+						right: 0
+						left: 0
 @media only screen and(max-width: 500px)
 	body
 		.scroll
@@ -2157,6 +2205,9 @@ body
 				.points
 					padding-left: 0
 					padding-right: 0
+					.content, .headblock-mobile
+						padding-left: 30px
+						padding-right: 30px
 			section.second
 				.header
 					.container
@@ -2253,9 +2304,19 @@ body
 					.cslMobile
 						.carousel-item
 							.head
+								padding-left: 15px
+								padding-right: 15px
+								flex-direction: column
+								align-items: start !important
 								.circle
-									width: 60px
-									height: 60px
+									width: 103px
+									height: 103px
+									img
+										width: 73%
+								p.text
+									margin-left: 0
+									margin-top: 15px
+									margin-bottom: 15px
 			section.first
 				.points
 					.content
