@@ -252,6 +252,26 @@ $(document).ready(function(){
       $('#textHide4m').slideToggle(250);
     })
 
+
+    // Carousel 4 Result
+    $('#carousel4').carousel({
+      interval: false
+    })
+    var hammer = new Hammer(document.querySelector('#carousel4'));
+    hammer.get("swipe");
+    hammer.on("swipeleft", function(){
+        $('#carousel4').carousel("next");
+    });
+    hammer.on("swiperight", function(){
+        $('#carousel4').carousel("prev");
+    });
+    $('#ResultCslArrowPrev').click(function() {
+      $('#carousel4').carousel('prev');
+    })
+    $('#ResultCslArrowNext').click(function() {
+      $('#carousel4').carousel('next');
+    })
+
   	// Fade bg content
   	$('#content-bg1-button').click(function() {
   		$('#content-bg2').fadeTo(0.5, 0);
