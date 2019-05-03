@@ -1425,6 +1425,7 @@ body
 			.content
 				padding-top: 155px
 				padding-bottom: 140px
+				overflow: hidden
 				.container
 					position: relative
 					.arrowPrev, .arrowNext
@@ -1454,6 +1455,7 @@ body
 						position: relative
 						img.fantom1, img.fantom2
 							position: absolute
+							pointer-events: none
 						img.fantom1
 							bottom: -175px
 							left: -235px
@@ -1732,8 +1734,6 @@ body
 								img
 									width: 60%
 			section.result
-				.content
-					display: none
 @media only screen and(max-width: 1300px)
 	body 
 		header.container-fluid
@@ -1865,6 +1865,19 @@ body
 							margin-top: 15px
 							span.number
 								line-height: 1.2
+				.content
+					.container
+						.csl
+							.carousel
+								.carousel-inner
+									.carousel-item
+										.picture
+											.pre, .post
+												img 
+													width: 175px
+										.textBlock
+											.text
+												margin-top: 15px
 @media only screen and(max-width: 1100px)
 	body
 		main
@@ -2023,6 +2036,24 @@ body
 									padding-left: 50px
 								.headblock	
 									margin-top: 25px
+			section.result
+				.content
+					.container
+						.csl
+							.carousel
+								.carousel-inner
+									.carousel-item
+										.wrap
+											flex-direction: column
+										.picture
+											justify-content: space-between
+											.pre, .post
+												img
+													width: 100%
+										.textBlock
+											padding-left: 15px
+											padding-right: 15px
+
 @media only screen and(max-width: 800px)
 	body
 		main
@@ -2122,6 +2153,12 @@ body
 							align-items: start !important
 							.slash
 								display: none
+				.content
+					padding-top: 50px
+					padding-bottom: 100px
+					.container
+						.csl
+							margin-top: 35px
 			section.howSignUp
 				background-image: url('../img/be/be-result-header-bg.jpg')
 				background-repeat: repeat
@@ -2171,6 +2208,25 @@ body
 								width: 45px
 							span.number
 								font-size: 60px
+			section.result
+				.content
+					.container
+						.arrowNext
+							width: 40px
+							height: 40px
+							margin-right: 10px
+						.arrowPrev
+							width: 40px
+							height: 40px
+							margin-left: 10px
+						.csl
+							.carousel
+								.carousel-inner
+									.carousel-item
+										.textBlock
+											.topLine
+												span.name
+													font-size: 14px
 
 
 @media only screen and(max-width: 550px)
@@ -2415,6 +2471,10 @@ body
 								font-size: 25px
 								span.red
 									font-size: 45px
+				.content
+					.container
+						span.head
+							font-size: 35px
 @media only screen and(max-width: 400px)
 	body
 		.scroll
