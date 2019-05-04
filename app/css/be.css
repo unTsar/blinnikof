@@ -190,7 +190,7 @@ body header.container-fluid img.imgC {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: -15px;
   right: 0;
   z-index: 100;
   margin: auto;
@@ -419,6 +419,11 @@ body main section.purpose {
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
+}
+
+body main section.purpose .row_custom {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 body main section.purpose .desktopBlock {
@@ -2273,8 +2278,8 @@ body main section.result .content .container .csl .carousel-inner .carousel-item
   background-color: #fff;
   padding-top: 35px;
   padding-bottom: 35px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 body main section.result .content .container .csl .carousel-inner .carousel-item .picture .pre .headText, body main section.result .content .container .csl .carousel-inner .carousel-item .picture .post .headText {
@@ -2601,6 +2606,7 @@ body main section.howSignUp .signUp:hover svg {
   }
   body header.container-fluid img.imgC {
     width: 75%;
+    left: -50px;
   }
   body main section.third .content .container span.head br {
     display: none;
@@ -3054,9 +3060,6 @@ body main section.howSignUp .signUp:hover svg {
   body main section.first .numbers .points .point span.desc br {
     display: none;
   }
-  body main section.second .content span.head {
-    font-size: 24px;
-  }
   body main section.result .header .container .numbers {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3160,11 +3163,14 @@ body main section.howSignUp .signUp:hover svg {
     top: -15px;
   }
   body header.container-fluid .content .bottom .circle {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
   }
   body header.container-fluid .content .bottom .circle span {
-    font-size: 45px;
+    font-size: 40px;
+  }
+  body header.container-fluid .content .bottom .text span.month {
+    font-size: 24px;
   }
   body header.container-fluid .content .bottom .wrap .button {
     width: 135px;
@@ -3545,5 +3551,9 @@ body main section.howSignUp .signUp:hover svg {
   body main section.fourth .content .container .wrap .step .buttons .btnW {
     margin-left: 0;
     margin-top: 15px;
+  }
+  body main section.result .content .container .csl .carousel .carousel-inner .carousel-item {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
