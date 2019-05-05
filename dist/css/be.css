@@ -3175,6 +3175,7 @@ body main section.howSignUp .signUp:hover svg {
   body header.container-fluid .content .bottom .wrap .button {
     width: 135px;
     height: 135px;
+    margin-top: 20px;
   }
   body header.container-fluid .content .bottom .wrap .button span {
     display: none;
