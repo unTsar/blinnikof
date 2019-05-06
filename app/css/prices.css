@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerRegular/MullerRegular.eot");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLight/MullerLight.eot");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerMedium/MullerMedium.eot");
+  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBold/MullerBold.eot");
+  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+}
+
+main section.header .container {
+  padding-top: 65px;
+}
+
+main section.header .container span.breadcrumbs {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #969696;
+}
+
+main section.header .container span.breadcrumbs span.active {
+  position: relative;
+  color: #262626;
+}
+
+main section.header .container span.breadcrumbs span.active::before {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  background-color: #AFAFAF;
+  width: 100%;
+  height: 2px;
+}
+
+main section.header .container .head {
+  margin-top: 50px;
+  margin-bottom: 110px;
+}
+
+main section.header .container .head span.head {
+  line-height: 1.2;
+  font-family: 'MullerExtraBold';
+  font-size: 50px;
+  color: #262626;
+}
+
+main section.header .container .head span.head span.red {
+  color: #e83333;
+}
+
+main section.header .container .head .line {
+  width: 67px;
+  height: 3px;
+  background-color: #FF2E2E;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+main section.header .container .head p.text {
+  font-family: 'MullerLight';
+  font-size: 20px;
+  color: #000;
+  line-height: 1.3;
+}
+
+main section.schoolProgress {
+  padding-top: 150px;
+  padding-bottom: 85px;
+  background-image: url("../img/prices/prices-schoolProgress-bg.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main section.schoolProgress .head {
+  padding-bottom: 35px;
+}
+
+main section.schoolProgress .head span.head {
+  color: #fff;
+  font-family: 'MullerExtraBold';
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+main section.schoolProgress .head span.head span.red {
+  color: #e83333;
+}
+
+main section.schoolProgress .steps {
+  padding-top: 35px;
+  padding-bottom: 80px;
+}
+
+main section.schoolProgress .steps .step {
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
+          box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
+}
+
+main section.schoolProgress .steps .step .header {
+  padding-top: 25px;
+  padding-bottom: 17.5px;
+  border-bottom-color: rgba(0, 0, 0, 0.102);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+main section.schoolProgress .steps .step .header .circle {
+  margin-right: 5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #e93333;
+  width: 38px;
+  height: 38px;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'MullerExtraBold';
+}
+
+main section.schoolProgress .steps .step .header span.name {
+  text-transform: uppercase;
+  font-family: 'MullerExtraBold';
+  font-size: 17px;
+  color: #010101;
+}
+
+main section.schoolProgress .steps .step .header span.name span.red {
+  color: #ff2e2f;
+  margin-right: 5px;
+}
+
+main section.sizePlus {
+  border-top-color: #ff2c2d;
+  border-top-width: 4px;
+  border-top-style: solid;
+}
+
+@media only screen and (max-width: 1199px) {
+  body main section.list .container .head .row span.head {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body main section.list .container .head .row span.head {
+    font-size: 30px;
+  }
+}

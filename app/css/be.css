@@ -1767,6 +1767,7 @@ body main section.third .content {
   padding-bottom: 0;
   padding-top: 100px;
   background-color: #fff;
+  overflow: hidden;
 }
 
 body main section.third .content .headMobile {

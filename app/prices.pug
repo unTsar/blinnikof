@@ -1,0 +1,64 @@
+extends _layouts/home
+
+block styles
+
+    //- Slick.js (carousel) Style
+    link(rel="stylesheet", href="css/prices.css")
+    link(rel="stylesheet", href="css/contacts.css")
+
+
+block content
+
+    include _partials/header.pug
+    main
+        section.header
+            .container
+                span.breadcrumbs Главная / <span class="active">Цены на занятия</span>
+                .head
+                    .row
+                        .col-12
+                            span.head Наши 
+                                span.red занятия
+        section.schoolProgress
+            .container
+                .head
+                    .row
+                        .col-12
+                            span.head Школа достижения результатов 
+                                span.red #BodyEvolution
+                .steps.row
+                    .col-4
+                        .step
+                            .header.d-flex.justify-content-center.align-items-center
+                                .circle.d-flex.align-items-center.justify-content-center
+                                    span 1
+                                span.name #[span.red ступень ] BodyEvolution
+                            .desc
+                            .buy
+                                .button
+                    .col-4
+                        .step
+                            .header.d-flex.justify-content-center.align-items-center
+                                .circle.d-flex.align-items-center.justify-content-center
+                                    span 2
+                                span.name #[span.red ступень ] BodyEvolution
+                            .desc
+                            .buy
+                                .button
+                    .col-4
+                        .step
+                            .header.d-flex.justify-content-center.align-items-center
+                                .circle.d-flex.align-items-center.justify-content-center
+                                    span 3
+                                span.name #[span.red ступень ] BodyEvolution
+                            .desc
+                            .buy
+                                .button
+        section.sizePlus
+        section.schoolSupport
+    include _partials/contacts.pug
+    include _partials/footer.pug
+
+
+block scripts
+    script(src="js/map.js")
