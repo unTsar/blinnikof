@@ -2,9 +2,9 @@ extends _layouts/home
 
 block styles
 
-    //- Slick.js (carousel) Style
-    link(rel="stylesheet", href="css/prices.css")
+    link(rel="stylesheet", href="css/main.css")
     link(rel="stylesheet", href="css/contacts.css")
+    link(rel="stylesheet", href="css/prices.css")
 
 
 block content
@@ -24,39 +24,95 @@ block content
                 .head
                     .row
                         .col-12
-                            span.head Школа достижения результатов 
-                                span.red #BodyEvolution
+                            span.head Школа достижения результатов #[br] #[span.red #BodyEvolution]
                 .steps.row
-                    .col-4
+                    .col-12.col-lg-4
                         .step
                             .header.d-flex.justify-content-center.align-items-center
-                                .circle.d-flex.align-items-center.justify-content-center
-                                    span 1
-                                span.name #[span.red ступень ] BodyEvolution
+                                .wrap.d-flex.align-items-center
+                                    .circle.d-flex.align-items-center.justify-content-center
+                                        span 1
+                                    span.red ступень
+                                span.name BodyEvolution
                             .desc
+                                ul
+                                    li
+                                        span 4-х недельный фитнес интенсив
+                                    li
+                                        span Программа питания
+                                    li
+                                        span Сбросить лишний вес
+                                    li
+                                        span Убрать лишние сантиметры
+                                    li
+                                        span Изменить качество кожи
+                                    li
+                                        span Придать тонус и рельеф телу
                             .buy
-                                .button
-                    .col-4
+                                .text
+                                    span.price 13 900 р.
+                                    a(href="be.html") Подробнее о курсе
+                                .button.d-flex.align-items-center.justify-content-center
+                                    span Купить
+                    .col-12.col-lg-4
                         .step
                             .header.d-flex.justify-content-center.align-items-center
-                                .circle.d-flex.align-items-center.justify-content-center
-                                    span 2
-                                span.name #[span.red ступень ] BodyEvolution
+                                .wrap.d-flex.align-items-center
+                                    .circle.d-flex.align-items-center.justify-content-center
+                                        span 2
+                                    span.red ступень
+                                span.name BodyEvolution
                             .desc
+                                ul
+                                    li
+                                        span 4-х недельный фитнес интенсив
+                                    li
+                                        span Программа питания
+                                    li
+                                        span Сбросить лишний вес
+                                    li
+                                        span Убрать лишние сантиметры
+                                    li
+                                        span Изменить качество кожи
+                                    li
+                                        span Придать тонус и рельеф телу
                             .buy
-                                .button
-                    .col-4
+                                .text
+                                    span.price 12 900 р.
+                                    a(href="be.html") Подробнее о курсе
+                                .button.d-flex.align-items-center.justify-content-center
+                                    span Купить
+                    .col-12.col-lg-4
                         .step
                             .header.d-flex.justify-content-center.align-items-center
-                                .circle.d-flex.align-items-center.justify-content-center
-                                    span 3
-                                span.name #[span.red ступень ] BodyEvolution
+                                .wrap.d-flex.align-items-center
+                                    .circle.d-flex.align-items-center.justify-content-center
+                                        span 3
+                                    span.red ступень
+                                span.name BodyEvolution
                             .desc
+                                ul
+                                    li
+                                        span 4-х недельный фитнес интенсив
+                                    li
+                                        span Программа питания
+                                    li
+                                        span Сбросить лишний вес
+                                    li
+                                        span Убрать лишние сантиметры
+                                    li
+                                        span Изменить качество кожи
+                                    li
+                                        span Придать тонус и рельеф телу
                             .buy
-                                .button
+                                .text
+                                    span.price 11 900 р.
+                                    a(href="be.html") Подробнее о курсе
+                                .button.d-flex.align-items-center.justify-content-center
+                                    span Купить
         section.sizePlus
         section.schoolSupport
-    include _partials/contacts.pug
+        include _partials/contacts.pug
     include _partials/footer.pug
 
 

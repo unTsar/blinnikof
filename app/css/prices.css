@@ -116,6 +116,7 @@ main section.schoolProgress {
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
+  background-position: center top;
 }
 
 main section.schoolProgress .head {
@@ -149,9 +150,6 @@ main section.schoolProgress .steps .step {
 main section.schoolProgress .steps .step .header {
   padding-top: 25px;
   padding-bottom: 17.5px;
-  border-bottom-color: rgba(0, 0, 0, 0.102);
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
 }
 
 main section.schoolProgress .steps .step .header .circle {
@@ -171,11 +169,81 @@ main section.schoolProgress .steps .step .header span.name {
   font-family: 'MullerExtraBold';
   font-size: 17px;
   color: #010101;
+  line-height: 1.2;
 }
 
-main section.schoolProgress .steps .step .header span.name span.red {
+main section.schoolProgress .steps .step .header span.red {
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-family: 'MullerExtraBold';
+  font-size: 17px;
   color: #ff2e2f;
-  margin-right: 5px;
+  margin-right: 10px;
+}
+
+main section.schoolProgress .steps .step .desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top-color: rgba(0, 0, 0, 0.102);
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.102);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+main section.schoolProgress .steps .step .desc ul {
+  padding-left: 70px;
+  list-style-image: url("../img/prices/prices-schoolProgress-ul-img.jpg");
+}
+
+main section.schoolProgress .steps .step .desc ul li {
+  padding-left: 7.5px;
+}
+
+main section.schoolProgress .steps .step .desc ul li span {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #474747;
+}
+
+main section.schoolProgress .steps .step .buy {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+main section.schoolProgress .steps .step .buy .text span.price {
+  font-family: 'MullerBold';
+  font-size: 27px;
+  color: #000;
+  vertical-align: middle;
+}
+
+main section.schoolProgress .steps .step .buy .text a {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #ff2e2f;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+main section.schoolProgress .steps .step .buy .button {
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #373737;
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  font-family: 'MullerMedium';
+  font-size: 18px;
 }
 
 main section.sizePlus {
@@ -184,14 +252,91 @@ main section.sizePlus {
   border-top-style: solid;
 }
 
+@media only screen and (max-width: 1367px) {
+  body main section.schoolProgress .container .head span.head {
+    font-size: 42px;
+  }
+  body main section.schoolProgress .container .head span.head br {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
-  body main section.list .container .head .row span.head {
+  body main section.header .container .head .row span.head {
     font-size: 44px;
+  }
+  body main section.schoolProgress .steps .step .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section.schoolProgress .steps .step .header .wrap {
+    margin-bottom: 10px;
+  }
+  body main section.schoolProgress .steps .step .header .wrap span.red {
+    line-height: 1;
+  }
+  body main section.schoolProgress .steps .step .desc ul {
+    padding-left: 35px;
+    padding-right: 10px;
+  }
+  body main section.schoolProgress .steps .step .buy .text span.price {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body main section.schoolProgress .container .steps .step {
+    margin-bottom: 25px;
+  }
+  body main section.schoolProgress .container .steps .step .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main section.schoolProgress .container .steps .step .header .wrap {
+    margin-bottom: 0;
+  }
+  body main section.schoolProgress .container .steps .step .header .wrap span.name {
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body main section.schoolProgress .container .head span.head {
+    font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  body main section.list .container .head .row span.head {
+  body main section.header .container .head {
+    margin-bottom: 0;
+  }
+  body main section.header .container .head .row span.head {
     font-size: 30px;
+  }
+  body main section.schoolProgress {
+    padding-top: 190px;
+    padding-bottom: 0;
+  }
+  body main section.schoolProgress .container .steps {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body main section.schoolProgress .container .steps .step .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section.schoolProgress .container .steps .step .header .wrap {
+    margin-bottom: 10px;
   }
 }

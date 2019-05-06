@@ -46,6 +46,7 @@ main
 		background-image: url("../img/prices/prices-schoolProgress-bg.png")
 		background-size: cover
 		background-repeat: no-repeat
+		background-position: center top
 		.head
 			padding-bottom: 35px
 			span.head
@@ -65,9 +66,6 @@ main
 				.header
 					padding-top: 25px
 					padding-bottom: 17.5px
-					border-bottom-color: rgba(0, 0, 0, 0.102)
-					border-bottom-width: 2px
-					border-bottom-style: solid
 					.circle
 						margin-right: 5px
 						border-radius: 50%
@@ -82,9 +80,63 @@ main
 						font-family: 'MullerExtraBold'
 						font-size: 17px
 						color: #010101
-						span.red
+						line-height: 1.2
+					span.red
+						line-height: 1.2
+						text-transform: uppercase
+						font-family: 'MullerExtraBold'
+						font-size: 17px
+						color: #ff2e2f
+						margin-right: 10px
+				.desc
+					padding-top: 30px
+					padding-bottom: 30px
+					border-top-color: rgba(0, 0, 0, 0.102)
+					border-top-width: 2px
+					border-top-style: solid
+					border-bottom-color: rgba(0, 0, 0, 0.102)
+					border-bottom-width: 2px
+					border-bottom-style: solid
+					ul
+						padding-left: 70px
+						list-style-image: url('../img/prices/prices-schoolProgress-ul-img.jpg')
+						li
+							padding-left: 7.5px
+							span 
+								font-family: 'MullerLight'
+								font-size: 16px
+								color: #474747
+				.buy
+					padding-top: 25px
+					padding-bottom: 30px
+					text-align: center
+					.text
+						span.price
+							font-family: 'MullerBold'
+							font-size: 27px
+							color: #000
+							vertical-align: middle
+						a
+							font-family: 'MullerRegular'
+							font-size: 16px
 							color: #ff2e2f
-							margin-right: 5px
+							text-decoration: underline
+							cursor: pointer
+							outline: none
+							margin-left: 5px
+							vertical-align: middle
+					.button
+						border-radius: 30px
+						cursor: pointer
+						margin-top: 25px
+						margin-left: auto
+						margin-right: auto
+						background-color: rgb(55, 55, 55)
+						width: 200px
+						height: 60px
+						color: #fff
+						font-family: 'MullerMedium'
+						font-size: 18px
 
 
 	section.sizePlus
@@ -93,22 +145,91 @@ main
 		border-top-style: solid
 	section.schoolSupport
 
+@media only screen and(max-width: 1367px)
+	body 
+		main
+			section.schoolProgress
+				.container
+					.head
+						span.head
+							font-size: 42px
+							br
+								display: none
 @media only screen and(max-width: 1199px)
 	body
 		main
-			section.list
+			section.header
 				.container
 					.head
 						.row
 							span.head
 								font-size: 44px
+			section.schoolProgress
+				.steps
+					.step
+						.header
+							flex-direction: column
+							.wrap
+								margin-bottom: 10px
+								span.red
+									line-height: 1
+						.desc
+							ul
+								padding-left: 35px
+								padding-right: 10px
+						.buy
+							.text
+								span.price
+									font-size: 21px
+@media only screen and(max-width: 991px)
+	body
+		main
+			section.schoolProgress
+				.container
+					.steps
+						.step
+							margin-bottom: 25px
+							.header
+								flex-direction: row
+								.wrap
+									margin-bottom: 0
+									span.name
+										line-height: 1
+@media only screen and(max-width: 767px)
+	body
+		main 
+			section.schoolProgress
+				.container
+					.head
+						span.head
+							font-size: 30px
+
 @media only screen and(max-width: 600px)
 	body
 		main
-			section.list
+			section.header
 				.container
 					.head
+						margin-bottom: 0
 						.row
 							span.head
 								font-size: 30px
+			section.schoolProgress
+				padding-top: 190px
+				padding-bottom: 0
+				.container
+					.steps
+						padding-bottom: 0
+@media only screen and(max-width: 400px)
+	body
+		main 
+			section.schoolProgress
+				.container
+					.steps
+						.step
+							.header
+								flex-direction: column
+								.wrap
+									margin-bottom: 10px
+
 
