@@ -1,0 +1,19 @@
+extends _layouts/home
+
+block styles
+
+    link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="css/contacts.css")
+    link(rel="stylesheet", href="css/profile.css")
+
+
+block content
+
+    include _partials/header.pug
+
+    main  
+        include _partials/contacts.pug
+    include _partials/footer.pug
+
+block scripts
+    script(src="js/map.js")

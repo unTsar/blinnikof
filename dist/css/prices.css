@@ -249,7 +249,7 @@ main section.sizePlus {
   border-top-color: #ff2c2d;
   border-top-width: 4px;
   border-top-style: solid;
-  background-image: url("../img/prices/prices-sizePlus-bg.jpg");
+  background-image: url("../img/prices/prices-sizePlus-bg.png");
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -576,6 +576,7 @@ main section.schoolSupport .courses .course .buy .button {
 
 @media only screen and (max-width: 991px) {
   body main section.schoolProgress {
+    background-color: #303030;
     padding-top: 190px;
     padding-bottom: 0;
     -webkit-background-size: auto auto;
@@ -661,6 +662,7 @@ main section.schoolSupport .courses .course .buy .button {
     font-size: 30px;
   }
   body main section.sizePlus {
+    background-color: #303030;
     -webkit-background-size: auto auto;
     background-size: auto;
   }
