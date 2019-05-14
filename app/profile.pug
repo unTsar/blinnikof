@@ -12,6 +12,54 @@ block content
     include _partials/header.pug
 
     main  
+        section.header
+            .container
+                span.breadcrumbs Главная / <span class="active">Личный кабинет</span>
+                .head
+                    .row
+                        .col-12
+                            span.head Личный кабинет
+                .buttons
+                    .button.active.d-flex.align-items-center.justify-content-center
+                        span Общая информация
+                    .button.d-flex.align-items-center.justify-content-center
+                        span Заказы BodyEvolution
+                    .button.d-flex.align-items-center.justify-content-center
+                        span Абонементы
+                    .button.d-flex.align-items-center.justify-content-center
+                        span Твой прогресс
+                    .button.d-flex.align-items-center.justify-content-center
+                        span Запись к диетологу
+        section.personInf
+            .container
+                .row
+                    .col-3
+                        .photo
+                            img.img-fluid.d-block(src="img/profile/profile-personInf-photo.jpg", alt="profile-personInf-photo")
+                            .button.d-flex.align-items-center.justify-content-around
+                                span Загрузить фотографию
+                                img(src="img/profile/profile-personInf-icon.png", alt="profile-personInf-icon")
+
+                    .col-1
+                    .col-3
+                        .text.bold
+                            .item Имя
+                            .item Фамилия
+                            .item Телефон
+                            .item E-mail
+                            .item Ступень
+                            .item Карты
+                    .col-5
+                        .text
+                            .item Николай
+                            .item Борщенко
+                            .item +7 (928) 368-34-15
+                            .item nikoss@list.ru
+                            .item 1-ая
+                            .item Нет привязанных карт
+        section.promo
+        section.socials
+
         include _partials/contacts.pug
     include _partials/footer.pug
 

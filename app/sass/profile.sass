@@ -2,3 +2,86 @@
 @import "fonts"
 
 main
+	section.header
+		.container
+			padding-top: 65px
+			span.breadcrumbs
+				font-family: 'MullerRegular'
+				font-size: 16px
+				color: #969696
+				span.active
+					position: relative
+					color: #262626
+				span.active::before
+					position: absolute
+					bottom: 0
+					content: ''
+					background-color: #AFAFAF
+					width: 100%
+					height: 2px
+			.head
+				margin-top: 50px
+				span.head
+					line-height: 1.2
+					font-family: 'MullerExtraBold'
+					font-size: 50px
+					color: #262626
+				.line
+					width: 67px
+					height: 3px
+					background-color: #FF2E2E
+					margin-top: 20px
+					margin-bottom: 30px
+				p.text
+					font-family: 'MullerLight'
+					font-size: 20px
+					color: #000
+					line-height: 1.3
+			.buttons
+				margin-top: 35px
+				display: grid
+				grid-template-columns: repeat(5, 1fr)
+				grid-gap: 25px
+				.button:hover, .button.active
+					background-color: #ff2e2f
+				.button
+					border-radius: 25px
+					height: 50px
+					background-color: #373737
+					transition: 0.3s
+					cursor: pointer
+					span
+						font-size: 16px
+						color: #fff
+						font-family: "MullerBold"
+						font-weight: 600
+						letter-spacing: 0.25px
+	section.personInf
+		padding-top: 105px
+		padding-bottom: 105px
+		.photo
+			.button
+				background-color: #373737
+				width: 100%
+				height: 55px
+				cursor: pointer
+				border-radius: 25px
+				margin-top: 10px
+				padding-left: 10px
+				padding-right: 10px
+				span
+					font-size: 16px
+					color: #fff
+					font-family: "MullerBold"
+					font-weight: 600
+					letter-spacing: 0.25px
+		.text
+			.item
+				font-family: "MullerLight"
+				font-size: 16px
+				color: #333333
+				margin-top: 20px
+				margin-bottom: 20px
+		.text.bold
+			.item
+				font-family: "MullerMedium"

@@ -138,12 +138,24 @@ main section.schoolProgress .steps {
   padding-bottom: 80px;
 }
 
+main section.schoolProgress .steps .step:hover {
+  -webkit-box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
+  box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
+}
+
+main section.schoolProgress .steps .step:hover .buy .button {
+  background-color: #ff2e2f;
+}
+
 main section.schoolProgress .steps .step {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   background-color: #fff;
   -webkit-box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
   box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 main section.schoolProgress .steps .step .header {
@@ -231,6 +243,9 @@ main section.schoolProgress .steps .step .buy .text a {
 }
 
 main section.schoolProgress .steps .step .buy .button {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   -webkit-border-radius: 30px;
   border-radius: 30px;
   cursor: pointer;
@@ -263,7 +278,19 @@ main section.sizePlus .courses {
   margin-right: auto;
 }
 
+main section.sizePlus .courses .course:hover {
+  -webkit-box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
+  box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
+}
+
+main section.sizePlus .courses .course:hover .buy .button {
+  background-color: #ff2e2f;
+}
+
 main section.sizePlus .courses .course {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   -webkit-border-radius: 8px;
   border-radius: 8px;
   background-color: #fff;
@@ -363,6 +390,9 @@ main section.sizePlus .courses .course .buy .text a {
 }
 
 main section.sizePlus .courses .course .buy .button {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   -webkit-border-radius: 30px;
   border-radius: 30px;
   cursor: pointer;

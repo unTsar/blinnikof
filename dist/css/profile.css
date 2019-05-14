@@ -53,3 +53,120 @@
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
 }
+
+main section.header .container {
+  padding-top: 65px;
+}
+
+main section.header .container span.breadcrumbs {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #969696;
+}
+
+main section.header .container span.breadcrumbs span.active {
+  position: relative;
+  color: #262626;
+}
+
+main section.header .container span.breadcrumbs span.active::before {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  background-color: #AFAFAF;
+  width: 100%;
+  height: 2px;
+}
+
+main section.header .container .head {
+  margin-top: 50px;
+}
+
+main section.header .container .head span.head {
+  line-height: 1.2;
+  font-family: 'MullerExtraBold';
+  font-size: 50px;
+  color: #262626;
+}
+
+main section.header .container .head .line {
+  width: 67px;
+  height: 3px;
+  background-color: #FF2E2E;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+main section.header .container .head p.text {
+  font-family: 'MullerLight';
+  font-size: 20px;
+  color: #000;
+  line-height: 1.3;
+}
+
+main section.header .container .buttons {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+}
+
+main section.header .container .buttons .button:hover, main section.header .container .buttons .button.active {
+  background-color: #ff2e2f;
+}
+
+main section.header .container .buttons .button {
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  height: 50px;
+  background-color: #373737;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+main section.header .container .buttons .button span {
+  font-size: 16px;
+  color: #fff;
+  font-family: "MullerBold";
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+main section.personInf {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+main section.personInf .photo .button {
+  background-color: #373737;
+  width: 100%;
+  height: 55px;
+  cursor: pointer;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+main section.personInf .photo .button span {
+  font-size: 16px;
+  color: #fff;
+  font-family: "MullerBold";
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+main section.personInf .text .item {
+  font-family: "MullerLight";
+  font-size: 16px;
+  color: #333333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main section.personInf .text.bold .item {
+  font-family: "MullerMedium";
+}
