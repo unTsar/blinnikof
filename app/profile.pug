@@ -20,15 +20,15 @@ block content
                         .col-12
                             span.head Личный кабинет
                 .buttons
-                    .button.active.d-flex.align-items-center.justify-content-center
+                    .header-scrollTo-btn#scrollTo-btn1.button.active.d-flex.align-items-center.justify-content-center
                         span Общая информация
-                    .button.d-flex.align-items-center.justify-content-center
+                    .header-scrollTo-btn#scrollTo-btn2.button.d-flex.align-items-center.justify-content-center
                         span Заказы BodyEvolution
-                    .button.d-flex.align-items-center.justify-content-center
+                    .header-scrollTo-btn#scrollTo-btn3.button.d-flex.align-items-center.justify-content-center
                         span Абонементы
-                    .button.d-flex.align-items-center.justify-content-center
+                    .header-scrollTo-btn#scrollTo-btn4.button.d-flex.align-items-center.justify-content-center
                         span Твой прогресс
-                    .button.d-flex.align-items-center.justify-content-center
+                    .header-scrollTo-btn#scrollTo-btn5.button.d-flex.align-items-center.justify-content-center
                         span Запись к диетологу
         section.personInf
             .container
@@ -57,11 +57,236 @@ block content
                             .item nikoss@list.ru
                             .item 1-ая
                             .item Нет привязанных карт
-        section.promo
-        section.socials
+        .container
+            section.promo
+                .head
+                    span.name Промокод для подруги:
+                    .line
+                    .profile-button1.profile-buttonClose.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-button1.profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+                .hidden#profile-hidden1(style="display: none;")
+                    p.desc Поделитесь промокодом со своей близкой подругой или не очень и получите личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution
+                    .bLine
+                        .row
+                            .col-3
+                                span.red REF-5923-22884 
+                            .col-9
+                                span.text на скидку 1000 руб., действителен до #[span.b 20 июня 2019 г., 23:30:05 ] 
+                                    .badge(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge")
+                                        span ?
+            section.socials
+                .head
+                    span.name Соцсети:
+                    .line
+                    .profile-button2.profile-buttonClose.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-button2.profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+                .hidden#profile-hidden2(style="display: none;")
+                    p.desc Вы можете привязать к своему профилю свой аккаунт в социальной сети, это позволит вам авторизоваться в один клик.
+                    p.desc Нажмите на кнопку той социальной сети, через которую вы хотите входить в свой единый профиль. В открывшемся окне соцсети подтвердите разрешение на авторизацию. Вход через социальную сеть будет разрешен автоматически. Профиль будет дозаполнен открытыми данными, полученными из вашего аккаунта в социальной сети. 
+                    .row
+                        .col-6
+                            span.subname Доступные к привязке:
+                            .socialIcons
+                                img.social(src="img/profile/profile-socials-icon1.jpg", alt="profile-socials-icon1")
+                                img.social(src="img/profile/profile-socials-icon2.jpg", alt="profile-socials-icon2")
+                                img.social(src="img/profile/profile-socials-icon3.jpg", alt="profile-socials-icon3")
+                        .col-6
+                            span.subname Привязанные:
+
+            section.appForm
+                .head
+                    span.name Анкета
+                    .line
+                    .profile-button3.profile-buttonClose.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-button3.profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+                .hidden#profile-hidden3(style="display: none;")
+                    .button.d-flex.align-items-center.justify-content-center
+                        span Заполнить анкету
+            section.orders
+                .head
+                    span.name Заказы
+                    .line
+                    .profile-button4.profile-buttonClose.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-button4.profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+                .hidden#profile-hidden4(style="display: none;")
+                    .buttons.d-flex
+                        .button.active.d-flex.align-items-center.justify-content-center
+                            span Без оплаты
+                        .button.d-flex.align-items-center.justify-content-center
+                            span Оплачено
+                    .list
+                        .topLine
+                            .container
+                                .row
+                                    .col-3
+                                        span Заказ #
+                                    .col-5
+                                        span Название
+                                    .col-4
+                                        span Время создания
+                        .line
+                            .container
+                                .row
+                                    .col-3
+                                        span.b 02784
+                                    .col-5
+                                        span.b Ягодицы+Ноги+Пресс
+                                    .col-4
+                                        span.gr 09.05, СР
+                                        span.gr 19:00
+                        .line
+                            .container
+                                .row
+                                    .col-3
+                                        span.b 06587
+                                    .col-5
+                                        span.b Smart LadyFit
+                                    .col-4
+                                        span.gr 10.05, ЧТ
+                                        span.gr 19:00
+                        .line
+                            .container
+                                .row
+                                    .col-3
+                                        span.b 88975
+                                    .col-5
+                                        span.b Ягодицы+Ноги+Пресс
+                                    .col-4
+                                        span.gr 09.05, СР
+                                        span.gr 19:00
+            section.sTicket
+                .head
+                    span.name Абонементы
+                    .line
+                    .profile-button5.profile-buttonClose.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-button5.profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+                .hidden#profile-hidden5(style="display: none;")
+                    .list
+                        .topLine
+                            .container
+                                .row
+                                    .col-3
+                                        span Заказ #
+                                    .col-4
+                                        span Урок
+                                    .col-2
+                                        span Цена
+                                    .col-3
+                                        span Со скидкой
+                        .line
+                            .container
+                                .row
+                                    .col-3
+                                        span.lite Ничего не найдено
+            section.schedule
+                .head
+                    span.name Расписание
+                    .line
+                .content
+                    .list
+                        .topLine
+                            .container
+                                .row
+                                    .col-5
+                                        span Название курса
+                                    .col-1
+                                        span Дата
+                                    .col-2
+                                        span Время
+                                    .col-4
+                                        span Зал
+                        .line
+                            .container
+                                .row
+                                    .col-3
+                                        span.lite Ничего не найдено
+            section.appNutrition
+                .head
+                    span.name Запись к диетологу
+                    .line
+                    .profile-button6.profile-buttonClose.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-button6.profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+                .hidden#profile-hidden6(style="display: none;")
+                    .buttons.d-flex
+                        .button.active.d-flex.align-items-center.justify-content-center
+                            span Без оплаты
+                        .button.d-flex.align-items-center.justify-content-center
+                            span Оплачено
+                    .list
+                        .topLine
+                            .container
+                                .row
+                                    .col-8
+                                        span Наименование консультации
+                                    .col-4
+                                        span Время прохождения
+                        .line
+                            .container
+                                .row
+                                    .col-8
+                                        span.b Ягодицы+Ноги+Пресс
+                                    .col-4
+                                        span.gr 09.05, СР
+                                        span.gr 19:00
+            section.stats
+                .head
+                    span.name Статистика
+                    .line
+                    .profile-button7.profile-buttonClose.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-button7.profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+                .hidden#profile-hidden7(style="display: none;")
+                    .list
+                        .topLine
+                            .container
+                                .row
+                                    .col-3
+                                        span Создано
+                                    .col-1
+                                        span Вес
+                                    .col-1
+                                        span Талия
+                                    .col-1
+                                        span Живот
+                                    .col-1
+                                        span Бёдра
+                                    .col-1
+                                        span Имт
+                                    .col-4
+                                        span Изображение
+                        .line
+                            .container
+                                .row
+                                    .col-3
+                                        span.lite Ничего не найдено
+            section.collages
+                .head
+                    span.name Коллажи
+                    .line
+                .content
+                    span.lite Здесь будут фотографии прогресса
+
+
 
         include _partials/contacts.pug
     include _partials/footer.pug
 
 block scripts
     script(src="js/map.js")
+    script(src="js/tether.min.js")
+    script(src='js/jquery.scrollTo.min.js')
+    script(src="js/profile.js")
+

@@ -170,3 +170,278 @@ main section.personInf .text .item {
 main section.personInf .text.bold .item {
   font-family: "MullerMedium";
 }
+
+main section.promo, main section.socials, main section.appForm, main section.orders, main section.sTicket, main section.schedule, main section.appNutrition, main section.stats, main section.collages {
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+main section.promo .head, main section.socials .head, main section.appForm .head, main section.orders .head, main section.sTicket .head, main section.schedule .head, main section.appNutrition .head, main section.stats .head, main section.collages .head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  margin-bottom: 5px;
+}
+
+main section.promo .head span.name, main section.socials .head span.name, main section.appForm .head span.name, main section.orders .head span.name, main section.sTicket .head span.name, main section.schedule .head span.name, main section.appNutrition .head span.name, main section.stats .head span.name, main section.collages .head span.name {
+  font-family: 'MullerExtraBold';
+  font-size: 30px;
+  color: #333;
+}
+
+main section.promo .head .line, main section.socials .head .line, main section.appForm .head .line, main section.orders .head .line, main section.sTicket .head .line, main section.schedule .head .line, main section.appNutrition .head .line, main section.stats .head .line, main section.collages .head .line {
+  background-color: black;
+  opacity: 0.102;
+  height: 1px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+main section.promo .head .profile-buttonClose, main section.socials .head .profile-buttonClose, main section.appForm .head .profile-buttonClose, main section.orders .head .profile-buttonClose, main section.sTicket .head .profile-buttonClose, main section.schedule .head .profile-buttonClose, main section.appNutrition .head .profile-buttonClose, main section.stats .head .profile-buttonClose, main section.collages .head .profile-buttonClose {
+  background-color: #ff2c2d;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.promo .head .profile-buttonClose img, main section.socials .head .profile-buttonClose img, main section.appForm .head .profile-buttonClose img, main section.orders .head .profile-buttonClose img, main section.sTicket .head .profile-buttonClose img, main section.schedule .head .profile-buttonClose img, main section.appNutrition .head .profile-buttonClose img, main section.stats .head .profile-buttonClose img, main section.collages .head .profile-buttonClose img {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+main section.promo .head .profile-buttonOpen, main section.socials .head .profile-buttonOpen, main section.appForm .head .profile-buttonOpen, main section.orders .head .profile-buttonOpen, main section.sTicket .head .profile-buttonOpen, main section.schedule .head .profile-buttonOpen, main section.appNutrition .head .profile-buttonOpen, main section.stats .head .profile-buttonOpen, main section.collages .head .profile-buttonOpen {
+  background-color: #3b3b3b;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+main section.promo .head .profile-buttonOpen img, main section.socials .head .profile-buttonOpen img, main section.appForm .head .profile-buttonOpen img, main section.orders .head .profile-buttonOpen img, main section.sTicket .head .profile-buttonOpen img, main section.schedule .head .profile-buttonOpen img, main section.appNutrition .head .profile-buttonOpen img, main section.stats .head .profile-buttonOpen img, main section.collages .head .profile-buttonOpen img {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+main section.promo p.desc, main section.socials p.desc, main section.appForm p.desc, main section.orders p.desc, main section.sTicket p.desc, main section.schedule p.desc, main section.appNutrition p.desc, main section.stats p.desc, main section.collages p.desc {
+  color: #333;
+  font-size: 16px;
+  font-family: 'MullerLight';
+  margin-top: 30px;
+  letter-spacing: 0.25px;
+}
+
+main section.promo .bLine, main section.socials .bLine, main section.appForm .bLine, main section.orders .bLine, main section.sTicket .bLine, main section.schedule .bLine, main section.appNutrition .bLine, main section.stats .bLine, main section.collages .bLine {
+  margin-top: 50px;
+}
+
+main section.promo .bLine span, main section.socials .bLine span, main section.appForm .bLine span, main section.orders .bLine span, main section.sTicket .bLine span, main section.schedule .bLine span, main section.appNutrition .bLine span, main section.stats .bLine span, main section.collages .bLine span {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  letter-spacing: 0.25px;
+}
+
+main section.promo .bLine span.red, main section.socials .bLine span.red, main section.appForm .bLine span.red, main section.orders .bLine span.red, main section.sTicket .bLine span.red, main section.schedule .bLine span.red, main section.appNutrition .bLine span.red, main section.stats .bLine span.red, main section.collages .bLine span.red {
+  color: #ff2e2f;
+  font-family: 'MullerRegular';
+  font-weight: bold;
+}
+
+main section.promo .bLine span.text, main section.socials .bLine span.text, main section.appForm .bLine span.text, main section.orders .bLine span.text, main section.sTicket .bLine span.text, main section.schedule .bLine span.text, main section.appNutrition .bLine span.text, main section.stats .bLine span.text, main section.collages .bLine span.text {
+  color: #333;
+}
+
+main section.promo .bLine span.text span.b, main section.socials .bLine span.text span.b, main section.appForm .bLine span.text span.b, main section.orders .bLine span.text span.b, main section.sTicket .bLine span.text span.b, main section.schedule .bLine span.text span.b, main section.appNutrition .bLine span.text span.b, main section.stats .bLine span.text span.b, main section.collages .bLine span.text span.b {
+  color: #333;
+  font-family: 'MullerBold';
+}
+
+main section.promo .hidden .bLine span.text, main section.promo .hidden .bLine span.b, main section.promo .hidden .bLine .badge {
+  vertical-align: middle;
+}
+
+main section.promo .hidden .bLine .badge {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #fff;
+  background-color: #777;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+main section.promo .hidden .bLine .badge span {
+  font-size: 12px;
+  line-height: 0;
+}
+
+main section.promo .hidden .bLine .tooltip {
+  line-height: 1.4;
+}
+
+main section.promo .hidden .bLine .tooltip .name {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+main section.promo .hidden .bLine .tooltip ol {
+  text-align: left;
+}
+
+main section.promo .hidden .bLine .tooltip ol li {
+  font-size: 12px;
+}
+
+main section.socials .hidden span.subname {
+  font-size: 16px;
+  color: #333;
+  font-family: 'MullerLight';
+}
+
+main section.socials .hidden .socialIcons {
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+main section.socials .hidden .socialIcons img.social {
+  cursor: pointer;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+main section.appForm .hidden .button:hover {
+  background-color: #ff2e2f;
+}
+
+main section.appForm .hidden .button {
+  margin-top: 50px;
+  margin-left: 15px;
+  width: 195px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  height: 50px;
+  background-color: #373737;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+main section.appForm .hidden .button span {
+  font-size: 16px;
+  color: #fff;
+  font-family: "MullerBold";
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+main section.orders .hidden .button:hover, main section.orders .hidden .button.active, main section.appNutrition .hidden .button:hover, main section.appNutrition .hidden .button.active {
+  background-color: #ff2e2f;
+}
+
+main section.orders .hidden .button, main section.appNutrition .hidden .button {
+  margin-top: 50px;
+  margin-right: 15px;
+  width: 195px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  height: 50px;
+  background-color: #373737;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+main section.orders .hidden .button span, main section.appNutrition .hidden .button span {
+  font-size: 16px;
+  color: #fff;
+  font-family: "MullerBold";
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+main section.orders, main section.sTicket, main section.schedule, main section.appNutrition, main section.stats, main section.collages {
+  padding-left: 0;
+}
+
+main section.orders .head, main section.sTicket .head, main section.schedule .head, main section.appNutrition .head, main section.stats .head, main section.collages .head {
+  padding-left: 80px;
+}
+
+main section.orders .hidden, main section.orders .content, main section.sTicket .hidden, main section.sTicket .content, main section.schedule .hidden, main section.schedule .content, main section.appNutrition .hidden, main section.appNutrition .content, main section.stats .hidden, main section.stats .content, main section.collages .hidden, main section.collages .content {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+main section.orders .hidden .list, main section.orders .content .list, main section.sTicket .hidden .list, main section.sTicket .content .list, main section.schedule .hidden .list, main section.schedule .content .list, main section.appNutrition .hidden .list, main section.appNutrition .content .list, main section.stats .hidden .list, main section.stats .content .list, main section.collages .hidden .list, main section.collages .content .list {
+  padding-top: 40px;
+}
+
+main section.orders .hidden .list .topLine, main section.orders .content .list .topLine, main section.sTicket .hidden .list .topLine, main section.sTicket .content .list .topLine, main section.schedule .hidden .list .topLine, main section.schedule .content .list .topLine, main section.appNutrition .hidden .list .topLine, main section.appNutrition .content .list .topLine, main section.stats .hidden .list .topLine, main section.stats .content .list .topLine, main section.collages .hidden .list .topLine, main section.collages .content .list .topLine {
+  padding: 15px;
+  background-color: #3b3b3b;
+  width: 100%;
+  -webkit-border-top-left-radius: 15px;
+          border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+          border-top-right-radius: 15px;
+}
+
+main section.orders .hidden .list .topLine span, main section.orders .content .list .topLine span, main section.sTicket .hidden .list .topLine span, main section.sTicket .content .list .topLine span, main section.schedule .hidden .list .topLine span, main section.schedule .content .list .topLine span, main section.appNutrition .hidden .list .topLine span, main section.appNutrition .content .list .topLine span, main section.stats .hidden .list .topLine span, main section.stats .content .list .topLine span, main section.collages .hidden .list .topLine span, main section.collages .content .list .topLine span {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'MullerBold';
+  font-size: 16px;
+  letter-spacing: 0.75px;
+}
+
+main section.orders .hidden .list .line, main section.orders .content .list .line, main section.sTicket .hidden .list .line, main section.sTicket .content .list .line, main section.schedule .hidden .list .line, main section.schedule .content .list .line, main section.appNutrition .hidden .list .line, main section.appNutrition .content .list .line, main section.stats .hidden .list .line, main section.stats .content .list .line, main section.collages .hidden .list .line, main section.collages .content .list .line {
+  padding: 15px;
+  width: 100%;
+  background-color: #fff;
+}
+
+main section.orders span.b, main section.sTicket span.b, main section.schedule span.b, main section.appNutrition span.b, main section.stats span.b, main section.collages span.b {
+  font-family: 'MullerMedium';
+  font-size: 16px;
+  color: #323232;
+}
+
+main section.orders span.gr, main section.sTicket span.gr, main section.schedule span.gr, main section.appNutrition span.gr, main section.stats span.gr, main section.collages span.gr {
+  font-size: 16px;
+  font-family: 'MullerRegular';
+  color: #575757;
+  margin-right: 25px;
+}
+
+main section.orders span.lite, main section.sTicket span.lite, main section.schedule span.lite, main section.appNutrition span.lite, main section.stats span.lite, main section.collages span.lite {
+  font-family: 'MullerLight';
+  color: #3b3b3b;
+  font-size: 16px;
+}

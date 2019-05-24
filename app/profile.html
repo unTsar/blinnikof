@@ -65,11 +65,11 @@
             </div>
           </div>
           <div class="buttons">
-            <div class="button active d-flex align-items-center justify-content-center"><span>Общая информация</span></div>
-            <div class="button d-flex align-items-center justify-content-center"><span>Заказы BodyEvolution</span></div>
-            <div class="button d-flex align-items-center justify-content-center"><span>Абонементы</span></div>
-            <div class="button d-flex align-items-center justify-content-center"><span>Твой прогресс</span></div>
-            <div class="button d-flex align-items-center justify-content-center"><span>Запись к диетологу</span></div>
+            <div class="header-scrollTo-btn button active d-flex align-items-center justify-content-center" id="scrollTo-btn1"><span>Общая информация</span></div>
+            <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" id="scrollTo-btn2"><span>Заказы BodyEvolution</span></div>
+            <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" id="scrollTo-btn3"><span>Абонементы</span></div>
+            <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" id="scrollTo-btn4"><span>Твой прогресс</span></div>
+            <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" id="scrollTo-btn5"><span>Запись к диетологу</span></div>
           </div>
         </div>
       </section>
@@ -105,8 +105,225 @@
           </div>
         </div>
       </section>
-      <section class="promo"></section>
-      <section class="socials"></section>
+      <div class="container">
+        <section class="promo">
+          <div class="head"><span class="name">Промокод для подруги:</span>
+            <div class="line"></div>
+            <div class="profile-button1 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-button1 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+          </div>
+          <div class="hidden" id="profile-hidden1" style="display: none;">
+            <p class="desc">Поделитесь промокодом со своей близкой подругой или не очень и получите личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution</p>
+            <div class="bLine">
+              <div class="row">
+                <div class="col-3"><span class="red">REF-5923-22884 </span></div>
+                <div class="col-9"><span class="text">на скидку 1000 руб., действителен до <span class="b">20 июня 2019 г., 23:30:05 </span> 
+                    <div class="badge" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="&lt;div class='name'&gt;Правила:&lt;/div&gt;&lt;ol&gt;&lt;li&gt;Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.&lt;/li&gt;&lt;li&gt;После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.&lt;/li&gt;&lt;li&gt;На занятия по абонементам данный промокод не распространяется.&lt;/li&gt;&lt;/ol&gt;" data-container=".badge"><span>?</span></div></span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="socials">
+          <div class="head"><span class="name">Соцсети:</span>
+            <div class="line"></div>
+            <div class="profile-button2 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-button2 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+          </div>
+          <div class="hidden" id="profile-hidden2" style="display: none;">
+            <p class="desc">Вы можете привязать к своему профилю свой аккаунт в социальной сети, это позволит вам авторизоваться в один клик.</p>
+            <p class="desc">Нажмите на кнопку той социальной сети, через которую вы хотите входить в свой единый профиль. В открывшемся окне соцсети подтвердите разрешение на авторизацию. Вход через социальную сеть будет разрешен автоматически. Профиль будет дозаполнен открытыми данными, полученными из вашего аккаунта в социальной сети. </p>
+            <div class="row">
+              <div class="col-6"><span class="subname">Доступные к привязке:</span>
+                <div class="socialIcons"><img class="social" src="img/profile/profile-socials-icon1.jpg" alt="profile-socials-icon1"><img class="social" src="img/profile/profile-socials-icon2.jpg" alt="profile-socials-icon2"><img class="social" src="img/profile/profile-socials-icon3.jpg" alt="profile-socials-icon3"></div>
+              </div>
+              <div class="col-6"><span class="subname">Привязанные:</span></div>
+            </div>
+          </div>
+        </section>
+        <section class="appForm">
+          <div class="head"><span class="name">Анкета</span>
+            <div class="line"></div>
+            <div class="profile-button3 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-button3 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+          </div>
+          <div class="hidden" id="profile-hidden3" style="display: none;">
+            <div class="button d-flex align-items-center justify-content-center"><span>Заполнить анкету</span></div>
+          </div>
+        </section>
+        <section class="orders">
+          <div class="head"><span class="name">Заказы</span>
+            <div class="line"></div>
+            <div class="profile-button4 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-button4 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+          </div>
+          <div class="hidden" id="profile-hidden4" style="display: none;">
+            <div class="buttons d-flex">
+              <div class="button active d-flex align-items-center justify-content-center"><span>Без оплаты</span></div>
+              <div class="button d-flex align-items-center justify-content-center"><span>Оплачено</span></div>
+            </div>
+            <div class="list">
+              <div class="topLine">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><span>Заказ #</span></div>
+                    <div class="col-5"><span>Название</span></div>
+                    <div class="col-4"><span>Время создания</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="line">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><span class="b">02784</span></div>
+                    <div class="col-5"><span class="b">Ягодицы+Ноги+Пресс</span></div>
+                    <div class="col-4"><span class="gr">09.05, СР</span><span class="gr">19:00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="line">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><span class="b">06587</span></div>
+                    <div class="col-5"><span class="b">Smart LadyFit</span></div>
+                    <div class="col-4"><span class="gr">10.05, ЧТ</span><span class="gr">19:00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="line">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><span class="b">88975</span></div>
+                    <div class="col-5"><span class="b">Ягодицы+Ноги+Пресс</span></div>
+                    <div class="col-4"><span class="gr">09.05, СР</span><span class="gr">19:00</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sTicket">
+          <div class="head"><span class="name">Абонементы</span>
+            <div class="line"></div>
+            <div class="profile-button5 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-button5 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+          </div>
+          <div class="hidden" id="profile-hidden5" style="display: none;">
+            <div class="list">
+              <div class="topLine">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><span>Заказ #</span></div>
+                    <div class="col-4"><span>Урок</span></div>
+                    <div class="col-2"><span>Цена</span></div>
+                    <div class="col-3"><span>Со скидкой</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="line">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><span class="lite">Ничего не найдено</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="schedule">
+          <div class="head"><span class="name">Расписание</span>
+            <div class="line"></div>
+          </div>
+          <div class="content">
+            <div class="list">
+              <div class="topLine">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-5"><span>Название курса</span></div>
+                    <div class="col-1"><span>Дата</span></div>
+                    <div class="col-2"><span>Время</span></div>
+                    <div class="col-4"><span>Зал</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="line">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><span class="lite">Ничего не найдено</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="appNutrition">
+          <div class="head"><span class="name">Запись к диетологу</span>
+            <div class="line"></div>
+            <div class="profile-button6 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-button6 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+          </div>
+          <div class="hidden" id="profile-hidden6" style="display: none;">
+            <div class="buttons d-flex">
+              <div class="button active d-flex align-items-center justify-content-center"><span>Без оплаты</span></div>
+              <div class="button d-flex align-items-center justify-content-center"><span>Оплачено</span></div>
+            </div>
+            <div class="list">
+              <div class="topLine">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-8"><span>Наименование консультации</span></div>
+                    <div class="col-4"><span>Время прохождения</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="line">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-8"><span class="b">Ягодицы+Ноги+Пресс</span></div>
+                    <div class="col-4"><span class="gr">09.05, СР</span><span class="gr">19:00</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="stats">
+          <div class="head"><span class="name">Статистика</span>
+            <div class="line"></div>
+            <div class="profile-button7 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-button7 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+          </div>
+          <div class="hidden" id="profile-hidden7" style="display: none;">
+            <div class="list">
+              <div class="topLine">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><span>Создано</span></div>
+                    <div class="col-1"><span>Вес</span></div>
+                    <div class="col-1"><span>Талия</span></div>
+                    <div class="col-1"><span>Живот</span></div>
+                    <div class="col-1"><span>Бёдра</span></div>
+                    <div class="col-1"><span>Имт</span></div>
+                    <div class="col-4"><span>Изображение</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="line">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-3"><span class="lite">Ничего не найдено</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="collages">
+          <div class="head"><span class="name">Коллажи</span>
+            <div class="line"></div>
+          </div>
+          <div class="content"><span class="lite">Здесь будут фотографии прогресса</span></div>
+        </section>
+      </div>
       <section class="contacts">
         <div class="container">
           <div class="col-12 col-md-6 c6"><span class="name">Наши <span class="red">контакты</span></span><br><span class="desc">Вы можете найти нас:</span>
@@ -146,4 +363,7 @@
   <script src="js/jquery.mmenu.js"></script>
   <script src="js/common.js"></script>
   <script src="js/map.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/profile.js"></script>
 </html>
