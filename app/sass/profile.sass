@@ -155,6 +155,7 @@ main
 				span.text, span.b, .badge
 					vertical-align: middle
 				.badge
+					position: relative
 					cursor: pointer
 					width: 20px
 					height: 20px
@@ -273,12 +274,144 @@ main
 			color: #3b3b3b
 			font-size: 16px
 
-
-
-
-
-
-
-
-
+@media only screen and(max-width: 1200px)
+	body
+		main
+			section.header
+				.container
+					.buttons
+						.button
+							span
+								font-size: 13px
+								text-align: center
+			section.personInf
+				.photo
+					.button
+						padding-left: 15px
+						span
+							font-size: 12px
+							text-align: center
+@media only screen and(max-width: 1199px)
+	body
+		main
+			section.stats
+				.hidden
+					.list
+						.topLine
+							span
+								font-size: 12px
+@media only screen and(max-width: 991px)
+	body
+		main 
+			section.header
+				.container
+					.buttons
+						grid-template-columns: repeat(3, 1fr)
+			section.personInf
+				.photo
+					.button, img.imgPerson
+						margin-left: auto
+						margin-right: auto
+					.button
+						width: 225px
+			section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats, section.collages
+				padding-left: 0
+				.head
+					padding-left: 30px
+				.hidden, .content
+					padding-left: 0px
+					padding-right: 0px
+					.list
+						.topLine
+							padding-top: 10px
+							padding-bottom: 10px
+							padding-left: 5px
+							padding-right: 5px
+							span
+								font-size: 12.5px
+				span.b
+					font-family: 'MullerMedium'
+					font-size: 12.5px
+					color: #323232
+				span.gr
+					font-size: 12.5px
+					font-family: 'MullerRegular'
+					color: #575757
+					margin-right: 25px
+				span.lite
+					font-family: 'MullerLight'
+					color: #3b3b3b
+					font-size: 12.5px
+			section.stats
+				.hidden	
+					.topLine
+						.container
+							span
+								font-size: 10px
+@media only screen and(max-width: 767px)
+	body
+		main 
+			section.header
+				.container
+					.buttons
+						grid-template-columns: repeat(2, 1fr)
+			section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats, section.collages
+				.head
+					padding-left: 0px
+					.profile-buttonOpen, .profile-buttonClose
+						width: 40px
+						height: 40px
+				.hidden, .content
+					.list
+						.topLine
+							.container
+								span
+									font-size: 10px
+				span.b
+					font-family: 'MullerMedium'
+					font-size: 10px
+					color: #323232
+				span.gr
+					font-size: 10px
+					font-family: 'MullerRegular'
+					color: #575757
+					margin-right: 25px
+				span.lite
+					font-family: 'MullerLight'
+					color: #3b3b3b
+					font-size: 10px
+			section.stats
+				.hidden	
+					.topLine
+						.container
+							span
+								font-size: 8px
+							.col
+								width: auto
+								padding-left: 2.5px
+								padding-right: 2.5px
+@media only screen and(max-width: 500px)
+	body
+		main
+			section.socials
+				.hidden	
+					.socialIcons
+						padding-left: 0
+			section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats, section.collages
+				.head
+					span.name
+						line-height: 1.2
+				.hidden, .content
+					.topLine
+						.container
+							span
+								line-height: 1.2
+			section.schedule
+				.content
+					.topLine
+						.container
+							.col 
+								width: auto
+								padding-left: 2.5px
+								padding-right: 2.5px
 		

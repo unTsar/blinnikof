@@ -276,6 +276,7 @@ main section.promo .hidden .bLine span.text, main section.promo .hidden .bLine s
 }
 
 main section.promo .hidden .bLine .badge {
+  position: relative;
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -444,4 +445,132 @@ main section.orders span.lite, main section.sTicket span.lite, main section.sche
   font-family: 'MullerLight';
   color: #3b3b3b;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+  body main section.header .container .buttons .button span {
+    font-size: 13px;
+    text-align: center;
+  }
+  body main section.personInf .photo .button {
+    padding-left: 15px;
+  }
+  body main section.personInf .photo .button span {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  body main section.stats .hidden .list .topLine span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body main section.header .container .buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body main section.personInf .photo .button, body main section.personInf .photo img.imgPerson {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body main section.personInf .photo .button {
+    width: 225px;
+  }
+  body main section.promo, body main section.socials, body main section.appForm, body main section.orders, body main section.sTicket, body main section.schedule, body main section.appNutrition, body main section.stats, body main section.collages {
+    padding-left: 0;
+  }
+  body main section.promo .head, body main section.socials .head, body main section.appForm .head, body main section.orders .head, body main section.sTicket .head, body main section.schedule .head, body main section.appNutrition .head, body main section.stats .head, body main section.collages .head {
+    padding-left: 30px;
+  }
+  body main section.promo .hidden, body main section.promo .content, body main section.socials .hidden, body main section.socials .content, body main section.appForm .hidden, body main section.appForm .content, body main section.orders .hidden, body main section.orders .content, body main section.sTicket .hidden, body main section.sTicket .content, body main section.schedule .hidden, body main section.schedule .content, body main section.appNutrition .hidden, body main section.appNutrition .content, body main section.stats .hidden, body main section.stats .content, body main section.collages .hidden, body main section.collages .content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  body main section.promo .hidden .list .topLine, body main section.promo .content .list .topLine, body main section.socials .hidden .list .topLine, body main section.socials .content .list .topLine, body main section.appForm .hidden .list .topLine, body main section.appForm .content .list .topLine, body main section.orders .hidden .list .topLine, body main section.orders .content .list .topLine, body main section.sTicket .hidden .list .topLine, body main section.sTicket .content .list .topLine, body main section.schedule .hidden .list .topLine, body main section.schedule .content .list .topLine, body main section.appNutrition .hidden .list .topLine, body main section.appNutrition .content .list .topLine, body main section.stats .hidden .list .topLine, body main section.stats .content .list .topLine, body main section.collages .hidden .list .topLine, body main section.collages .content .list .topLine {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  body main section.promo .hidden .list .topLine span, body main section.promo .content .list .topLine span, body main section.socials .hidden .list .topLine span, body main section.socials .content .list .topLine span, body main section.appForm .hidden .list .topLine span, body main section.appForm .content .list .topLine span, body main section.orders .hidden .list .topLine span, body main section.orders .content .list .topLine span, body main section.sTicket .hidden .list .topLine span, body main section.sTicket .content .list .topLine span, body main section.schedule .hidden .list .topLine span, body main section.schedule .content .list .topLine span, body main section.appNutrition .hidden .list .topLine span, body main section.appNutrition .content .list .topLine span, body main section.stats .hidden .list .topLine span, body main section.stats .content .list .topLine span, body main section.collages .hidden .list .topLine span, body main section.collages .content .list .topLine span {
+    font-size: 12.5px;
+  }
+  body main section.promo span.b, body main section.socials span.b, body main section.appForm span.b, body main section.orders span.b, body main section.sTicket span.b, body main section.schedule span.b, body main section.appNutrition span.b, body main section.stats span.b, body main section.collages span.b {
+    font-family: 'MullerMedium';
+    font-size: 12.5px;
+    color: #323232;
+  }
+  body main section.promo span.gr, body main section.socials span.gr, body main section.appForm span.gr, body main section.orders span.gr, body main section.sTicket span.gr, body main section.schedule span.gr, body main section.appNutrition span.gr, body main section.stats span.gr, body main section.collages span.gr {
+    font-size: 12.5px;
+    font-family: 'MullerRegular';
+    color: #575757;
+    margin-right: 25px;
+  }
+  body main section.promo span.lite, body main section.socials span.lite, body main section.appForm span.lite, body main section.orders span.lite, body main section.sTicket span.lite, body main section.schedule span.lite, body main section.appNutrition span.lite, body main section.stats span.lite, body main section.collages span.lite {
+    font-family: 'MullerLight';
+    color: #3b3b3b;
+    font-size: 12.5px;
+  }
+  body main section.stats .hidden .topLine .container span {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body main section.header .container .buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body main section.promo .head, body main section.socials .head, body main section.appForm .head, body main section.orders .head, body main section.sTicket .head, body main section.schedule .head, body main section.appNutrition .head, body main section.stats .head, body main section.collages .head {
+    padding-left: 0px;
+  }
+  body main section.promo .head .profile-buttonOpen, body main section.promo .head .profile-buttonClose, body main section.socials .head .profile-buttonOpen, body main section.socials .head .profile-buttonClose, body main section.appForm .head .profile-buttonOpen, body main section.appForm .head .profile-buttonClose, body main section.orders .head .profile-buttonOpen, body main section.orders .head .profile-buttonClose, body main section.sTicket .head .profile-buttonOpen, body main section.sTicket .head .profile-buttonClose, body main section.schedule .head .profile-buttonOpen, body main section.schedule .head .profile-buttonClose, body main section.appNutrition .head .profile-buttonOpen, body main section.appNutrition .head .profile-buttonClose, body main section.stats .head .profile-buttonOpen, body main section.stats .head .profile-buttonClose, body main section.collages .head .profile-buttonOpen, body main section.collages .head .profile-buttonClose {
+    width: 40px;
+    height: 40px;
+  }
+  body main section.promo .hidden .list .topLine .container span, body main section.promo .content .list .topLine .container span, body main section.socials .hidden .list .topLine .container span, body main section.socials .content .list .topLine .container span, body main section.appForm .hidden .list .topLine .container span, body main section.appForm .content .list .topLine .container span, body main section.orders .hidden .list .topLine .container span, body main section.orders .content .list .topLine .container span, body main section.sTicket .hidden .list .topLine .container span, body main section.sTicket .content .list .topLine .container span, body main section.schedule .hidden .list .topLine .container span, body main section.schedule .content .list .topLine .container span, body main section.appNutrition .hidden .list .topLine .container span, body main section.appNutrition .content .list .topLine .container span, body main section.stats .hidden .list .topLine .container span, body main section.stats .content .list .topLine .container span, body main section.collages .hidden .list .topLine .container span, body main section.collages .content .list .topLine .container span {
+    font-size: 10px;
+  }
+  body main section.promo span.b, body main section.socials span.b, body main section.appForm span.b, body main section.orders span.b, body main section.sTicket span.b, body main section.schedule span.b, body main section.appNutrition span.b, body main section.stats span.b, body main section.collages span.b {
+    font-family: 'MullerMedium';
+    font-size: 10px;
+    color: #323232;
+  }
+  body main section.promo span.gr, body main section.socials span.gr, body main section.appForm span.gr, body main section.orders span.gr, body main section.sTicket span.gr, body main section.schedule span.gr, body main section.appNutrition span.gr, body main section.stats span.gr, body main section.collages span.gr {
+    font-size: 10px;
+    font-family: 'MullerRegular';
+    color: #575757;
+    margin-right: 25px;
+  }
+  body main section.promo span.lite, body main section.socials span.lite, body main section.appForm span.lite, body main section.orders span.lite, body main section.sTicket span.lite, body main section.schedule span.lite, body main section.appNutrition span.lite, body main section.stats span.lite, body main section.collages span.lite {
+    font-family: 'MullerLight';
+    color: #3b3b3b;
+    font-size: 10px;
+  }
+  body main section.stats .hidden .topLine .container span {
+    font-size: 8px;
+  }
+  body main section.stats .hidden .topLine .container .col {
+    width: auto;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body main section.socials .hidden .socialIcons {
+    padding-left: 0;
+  }
+  body main section.promo .head span.name, body main section.socials .head span.name, body main section.appForm .head span.name, body main section.orders .head span.name, body main section.sTicket .head span.name, body main section.schedule .head span.name, body main section.appNutrition .head span.name, body main section.stats .head span.name, body main section.collages .head span.name {
+    line-height: 1.2;
+  }
+  body main section.promo .hidden .topLine .container span, body main section.promo .content .topLine .container span, body main section.socials .hidden .topLine .container span, body main section.socials .content .topLine .container span, body main section.appForm .hidden .topLine .container span, body main section.appForm .content .topLine .container span, body main section.orders .hidden .topLine .container span, body main section.orders .content .topLine .container span, body main section.sTicket .hidden .topLine .container span, body main section.sTicket .content .topLine .container span, body main section.schedule .hidden .topLine .container span, body main section.schedule .content .topLine .container span, body main section.appNutrition .hidden .topLine .container span, body main section.appNutrition .content .topLine .container span, body main section.stats .hidden .topLine .container span, body main section.stats .content .topLine .container span, body main section.collages .hidden .topLine .container span, body main section.collages .content .topLine .container span {
+    line-height: 1.2;
+  }
+  body main section.schedule .content .topLine .container .col {
+    width: auto;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+  }
 }

@@ -36,18 +36,18 @@ $(document).ready(function(){
 
 	// ScrollTo
 	$('#scrollTo-btn1').click(function(){
-      $.scrollTo('.personInf', 250);
+      $.scrollTo('.personInf', 500);
     });
     $('#scrollTo-btn2').click(function(){
-      $.scrollTo('.orders', 250);
+      $.scrollTo('.orders', 500);
     });
     $('#scrollTo-btn3').click(function(){
-      $.scrollTo('.sTicket', 250);
+      $.scrollTo('.sTicket', 500);
     });
     $('#scrollTo-btn4').click(function(){
-      $.scrollTo('.stats', 250);
+      $.scrollTo('.stats', 500);
     });
     $('#scrollTo-btn5').click(function(){
-      $.scrollTo('.appNutrition', 250);
+      $.scrollTo('.appNutrition', 500);
     });
 });
