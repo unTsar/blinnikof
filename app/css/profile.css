@@ -297,6 +297,7 @@ main section.promo .hidden .bLine .badge span {
 
 main section.promo .hidden .bLine .tooltip {
   line-height: 1.4;
+  width: 200px;
 }
 
 main section.promo .hidden .bLine .tooltip .name {
