@@ -57,101 +57,113 @@ main
 						font-weight: 600
 						letter-spacing: 0.25px
 	section.personInf
-		padding-top: 105px
-		padding-bottom: 105px
-		.photo
-			.button
-				background-color: #373737
-				width: 100%
-				height: 55px
-				cursor: pointer
-				border-radius: 25px
-				margin-top: 10px
-				padding-left: 10px
-				padding-right: 10px
-				span
-					font-size: 16px
-					color: #fff
-					font-family: "MullerBold"
-					font-weight: 600
-					letter-spacing: 0.25px
-		.text
-			.item
-				font-family: "MullerLight"
-				font-size: 16px
-				color: #333333
-				margin-top: 20px
-				margin-bottom: 20px
-		.text.bold
-			.item
-				font-family: "MullerMedium"
-	section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats, section.collages
-		padding-left: 50px
-		padding-bottom: 50px
-		.head
-			display: grid
-			grid-template-columns: auto 1fr auto
-			align-items: center
-			padding-left: 30px
-			margin-bottom: 5px
-			span.name
-				font-family: 'MullerExtraBold'
-				font-size: 30px
-				color: #333
-			.line
-				background-color: rgb(0, 0, 0)
-				opacity: 0.102
-				height: 1px
-				margin-left: 30px
-				margin-right: 10px
-			.profile-buttonClose
-				background-color: rgb(255, 44, 45)
-				width: 50px
-				height: 50px
-				border-radius: 50%
-				cursor: pointer
+		padding-top: 50px
+		padding-bottom: 25px
+		.container
+			background-color: #fff
+			padding-top: 50px
+			padding-bottom: 25px
+			border-radius: 25px
+			.content
 				display: flex
-				img
-					-ms-user-select: none
-					-moz-user-select: none
-					-khtml-user-select: none
-					-webkit-user-select: none
-			.profile-buttonOpen
-				background-color: rgb(59, 59, 59)
-				width: 50px
-				height: 50px
-				border-radius: 50%
-				cursor: pointer
-				display: none
-				img
-					-ms-user-select: none
-					-moz-user-select: none
-					-khtml-user-select: none
-					-webkit-user-select: none
-		p.desc
-			color: #333
-			font-size: 16px
-			font-family: 'MullerLight'
-			margin-top: 30px
-			letter-spacing: 0.25px
-		.bLine
-			margin-top: 50px
-			span
-				font-family: 'MullerLight'
-				font-size: 16px
-				letter-spacing: 0.25px
-			span.red
-				color: #ff2e2f
-				font-family: 'MullerRegular'
-				font-weight: bold
-			span.text
-				color: #333
-				span.b
+				.photo
+					margin-right: 30px
+					.button
+						background-color: #373737
+						width: 265px
+						height: 55px
+						cursor: pointer
+						border-radius: 25px
+						margin-top: 10px
+						padding-left: 10px
+						padding-right: 10px
+						span
+							font-size: 16px
+							color: #fff
+							font-family: "MullerBold"
+							font-weight: 600
+							letter-spacing: 0.25px
+				.text
+					width: 100%
+					.line.gray
+						background-color: rgb(249, 249, 249)
+					.line
+						padding-left: 100px
+						display: grid
+						grid-template-columns: 40% 60%
+						.item
+							font-family: "MullerLight"
+							font-size: 16px
+							color: #333333
+							margin-top: 20px
+							margin-bottom: 20px
+						.itemB
+							font-family: "MullerMedium"
+	section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats
+		.hidden, .content
+			padding-left: 30px
+			padding-right: 50px
+		.container.contentBlock
+			padding-left: 50px
+			padding-bottom: 25px
+			padding-top: 25px
+			background-color: #fff
+			border-radius: 25px
+			margin-top: 25px
+			margin-bottom: 25px
+			.head
+				display: grid
+				grid-template-columns: auto 1fr auto
+				align-items: center
+				padding-left: 30px
+				margin-bottom: 5px
+				span.name
+					font-family: 'MullerExtraBold'
+					font-size: 30px
 					color: #333
-					font-family: 'MullerBold'
+				.line
+					background-color: rgb(0, 0, 0)
+					opacity: 0.102
+					height: 1px
+					margin-left: 30px
+					margin-right: 10px
+				.profile-buttonClose
+					background-color: rgb(255, 44, 45)
+					width: 50px
+					height: 50px
+					border-radius: 50%
+					cursor: pointer
+					display: flex
+					img
+						-ms-user-select: none
+						-moz-user-select: none
+						-khtml-user-select: none
+						-webkit-user-select: none
+				.profile-buttonOpen
+					background-color: rgb(59, 59, 59)
+					width: 50px
+					height: 50px
+					border-radius: 50%
+					cursor: pointer
+					display: none
+					img
+						-ms-user-select: none
+						-moz-user-select: none
+						-khtml-user-select: none
+						-webkit-user-select: none
+			p.desc
+				color: #333
+				font-size: 16px
+				font-family: 'MullerLight'
+				margin-top: 30px
+				letter-spacing: 0.25px
+		span.red
+			color: #ff2e2f
+			font-family: 'MullerRegular'
+			font-weight: bold
 	section.promo
 		.hidden
-			.bLine
+			.list
 				span.text, span.b, .badge
 					vertical-align: middle
 				.badge
@@ -183,21 +195,14 @@ main
 							font-size: 12px
 	section.socials
 		.hidden
-			span.subname
-				font-size: 16px
-				color: #333
-				font-family: 'MullerLight'
-			.socialIcons
-				padding-left: 30px
-				padding-top: 5px
-				img.social
-					cursor: pointer
-					-ms-user-select: none
-					-moz-user-select: none
-					-khtml-user-select: none
-					-webkit-user-select: none
-					margin-left: 5px
-					margin-right: 5px
+			img.social
+				cursor: pointer
+				-ms-user-select: none
+				-moz-user-select: none
+				-khtml-user-select: none
+				-webkit-user-select: none
+				margin-left: 5px
+				margin-right: 5px
 	section.appForm
 		.hidden	
 			.button:hover
@@ -236,13 +241,11 @@ main
 					font-family: "MullerBold"
 					font-weight: 600
 					letter-spacing: 0.25px
-	section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats, section.collages
+	section.promo, section.socials, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats
 		padding-left: 0
 		.head
 			padding-left: 80px
 		.hidden, .content
-			padding-left: 50px
-			padding-right: 50px
 			.list
 				padding-top: 40px
 				.topLine
@@ -255,12 +258,14 @@ main
 						text-transform: uppercase
 						color: #fff
 						font-family: 'MullerBold'
-						font-size: 16px
+						font-size: 13px
 						letter-spacing: 0.75px
 				.line
 					padding: 15px
 					width: 100%
 					background-color: #fff
+				.line.gray
+					background-color: #F5F5F5
 		span.b
 			font-family: 'MullerMedium'
 			font-size: 16px
@@ -274,7 +279,8 @@ main
 			font-family: 'MullerLight'
 			color: #3b3b3b
 			font-size: 16px
-
+		.collages
+			margin-top: 35px
 @media only screen and(max-width: 1200px)
 	body
 		main
@@ -315,7 +321,7 @@ main
 						margin-right: auto
 					.button
 						width: 225px
-			section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats, section.collages
+			section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats
 				padding-left: 0
 				.head
 					padding-left: 30px
@@ -356,7 +362,7 @@ main
 				.container
 					.buttons
 						grid-template-columns: repeat(2, 1fr)
-			section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats, section.collages
+			section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats
 				.head
 					padding-left: 0px
 					.profile-buttonOpen, .profile-buttonClose
@@ -398,7 +404,7 @@ main
 				.hidden	
 					.socialIcons
 						padding-left: 0
-			section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats, section.collages
+			section.promo, section.socials, section.appForm, section.orders, section.sTicket, section.schedule, section.appNutrition, section.stats
 				.head
 					span.name
 						line-height: 1.2

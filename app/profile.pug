@@ -32,33 +32,33 @@ block content
                         span Запись к диетологу
         section.personInf
             .container
-                .row
-                    .col-12.col-lg-3
-                        .photo
-                            img.imgPerson.img-fluid.d-block(src="img/profile/profile-personInf-photo.jpg", alt="profile-personInf-photo")
-                            .button.d-flex.align-items-center.justify-content-around
-                                span Загрузить фотографию
-                                img(src="img/profile/profile-personInf-icon.png", alt="profile-personInf-icon")
-
-                    .col-lg-1
-                    .col-6.col-lg-3
-                        .text.bold
-                            .item Имя
-                            .item Фамилия
-                            .item Телефон
-                            .item E-mail
-                            .item Ступень
-                            .item Карты
-                    .col-6.col-lg-5
-                        .text
+                .content
+                    .photo
+                        img.imgPerson.img-fluid.d-block(src="img/profile/profile-personInf-photo.jpg", alt="profile-personInf-photo")
+                        .button.d-flex.align-items-center.justify-content-around
+                            span Загрузить фотографию
+                            img(src="img/profile/profile-personInf-icon.png", alt="profile-personInf-icon")
+                    .text
+                        .line.gray
+                            .item.itemB Имя
                             .item Николай
+                        .line
+                            .item.itemB Фамилия
                             .item Борщенко
+                        .line.gray
+                            .item.itemB Телефон
                             .item +7 (928) 368-34-15
+                        .line
+                            .item.itemB E-mail
                             .item nikoss@list.ru
+                        .line.gray
+                            .item.itemB Ступень
                             .item 1-ая
+                        .line
+                            .item.itemB Карты
                             .item Нет привязанных карт
-        .container
-            section.promo
+        section.promo
+            .container.contentBlock
                 .head
                     span.name Промокод для подруги:
                     .line
@@ -68,15 +68,43 @@ block content
                         img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
                 .hidden#profile-hidden1(style="display: none;")
                     p.desc Поделитесь промокодом со своей близкой подругой или не очень и получите личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution
-                    .bLine
-                        .row
-                            .col-12.col-md-3
-                                span.red REF-5923-22884 
-                            .col-12.col-md-9
-                                span.text на скидку 1000 руб., действителен до #[span.b 20 июня 2019 г., 23:30:05 ] 
-                                    .badge(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge")
-                                        span ?
-            section.socials
+                    .list
+                        .topLine
+                            .container
+                                .row
+                                    .col-9
+                                        span Название
+                                    .col-3
+                                        span Номер
+                        .line.gray
+                            .container
+                                .row
+                                    .col-9
+                                        span.text на скидку 1000 руб., действителен до #[span.b 20 июня 2019 г., 23:30:05 ] 
+                                            .badge.badge1(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge1")
+                                                span ?
+                                    .col-3
+                                        span.red REF-5923-22884 
+                        .line
+                            .container
+                                .row
+                                    .col-9
+                                        span.text на скидку 1000 руб., действителен до #[span.b 20 июня 2019 г., 23:30:05 ] 
+                                            .badge.badge2(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge2")
+                                                span ?
+                                    .col-3
+                                        span.red REF-5923-22884 
+                        .line.gray
+                            .container
+                                .row
+                                    .col-9
+                                        span.text на скидку 1000 руб., действителен до #[span.b 20 июня 2019 г., 23:30:05 ] 
+                                            .badge.badge3(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge3")
+                                                span ?
+                                    .col-3
+                                        span.red REF-5923-22884 
+        section.socials
+            .container.contentBlock
                 .head
                     span.name Соцсети:
                     .line
@@ -87,17 +115,29 @@ block content
                 .hidden#profile-hidden2(style="display: none;")
                     p.desc Вы можете привязать к своему профилю свой аккаунт в социальной сети, это позволит вам авторизоваться в один клик.
                     p.desc Нажмите на кнопку той социальной сети, через которую вы хотите входить в свой единый профиль. В открывшемся окне соцсети подтвердите разрешение на авторизацию. Вход через социальную сеть будет разрешен автоматически. Профиль будет дозаполнен открытыми данными, полученными из вашего аккаунта в социальной сети. 
-                    .row
-                        .col-6
-                            span.subname Доступные к привязке:
-                            .socialIcons
-                                img.social(src="img/profile/profile-socials-icon1.jpg", alt="profile-socials-icon1")
-                                img.social(src="img/profile/profile-socials-icon2.jpg", alt="profile-socials-icon2")
-                                img.social(src="img/profile/profile-socials-icon3.jpg", alt="profile-socials-icon3")
-                        .col-6
-                            span.subname Привязанные:
-
-            section.appForm
+                    .list
+                        .topLine
+                            .container
+                                .row
+                                    .col-8
+                                        span Доступные к привязке:
+                                    .col-4
+                                        span Привязанные:
+                        .line.gray
+                            .container
+                                .row
+                                    .col-8
+                                        img.social(src="img/profile/profile-socials-icon1.jpg", alt="profile-socials-icon1")
+                                    .col-4
+                                        img.social(src="img/profile/profile-socials-icon3.jpg", alt="profile-socials-icon3")
+                        .line
+                            .container
+                                .row
+                                    .col-8
+                                        img.social(src="img/profile/profile-socials-icon2.jpg", alt="profile-socials-icon2")
+                                    .col-4
+        section.appForm
+            .container.contentBlock
                 .head
                     span.name Анкета
                     .line
@@ -108,7 +148,8 @@ block content
                 .hidden#profile-hidden3(style="display: none;")
                     .button.d-flex.align-items-center.justify-content-center
                         span Заполнить анкету
-            section.orders
+        section.orders
+            .container.contentBlock
                 .head
                     span.name Заказы
                     .line
@@ -132,7 +173,7 @@ block content
                                         span Название
                                     .col-4
                                         span Время создания
-                        .line
+                        .line.gray
                             .container
                                 .row
                                     .col-3
@@ -152,7 +193,7 @@ block content
                                     .col-4
                                         span.gr 10.05, ЧТ
                                         span.gr 19:00
-                        .line
+                        .line.gray
                             .container
                                 .row
                                     .col-3
@@ -162,7 +203,8 @@ block content
                                     .col-4
                                         span.gr 09.05, СР
                                         span.gr 19:00
-            section.sTicket
+        section.sTicket
+            .container.contentBlock
                 .head
                     span.name Абонементы
                     .line
@@ -183,12 +225,13 @@ block content
                                         span Цена
                                     .col-3
                                         span Со скидкой
-                        .line
+                        .line.gray
                             .container
                                 .row
                                     .col-12
                                         span.lite Ничего не найдено
-            section.schedule
+        section.schedule
+            .container.contentBlock
                 .head
                     span.name Расписание
                     .line
@@ -205,12 +248,13 @@ block content
                                         span Время
                                     .col.col-sm-4
                                         span Зал
-                        .line
+                        .line.gray
                             .container
                                 .row
                                     .col-12
                                         span.lite Ничего не найдено
-            section.appNutrition
+        section.appNutrition
+            .container.contentBlock
                 .head
                     span.name Запись к диетологу
                     .line
@@ -232,7 +276,7 @@ block content
                                         span Наименование консультации
                                     .col-6.col-sm-4
                                         span Время прохождения
-                        .line
+                        .line.gray
                             .container
                                 .row
                                     .col-6.col-sm-8
@@ -240,7 +284,8 @@ block content
                                     .col-6.col-sm-4
                                         span.gr 09.05, СР
                                         span.gr 19:00
-            section.stats
+        section.stats
+            .container.contentBlock
                 .head
                     span.name Статистика
                     .line
@@ -267,17 +312,17 @@ block content
                                         span Имт
                                     .col.col-md-4
                                         span Изображение
-                        .line
+                        .line.gray
                             .container
                                 .row
                                     .col-12
                                         span.lite Ничего не найдено
-            section.collages
-                .head
-                    span.name Коллажи
-                    .line
-                .content
-                    span.lite Здесь будут фотографии прогресса
+                .collages
+                    .head
+                        span.name Коллажи
+                        .line
+                    .content
+                        span.lite Здесь будут фотографии прогресса
 
 
 
