@@ -68,42 +68,51 @@
             <div class="header-scrollTo-btn button active d-flex align-items-center justify-content-center" id="scrollTo-btn1"><span>Общая информация</span></div>
             <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" id="scrollTo-btn2"><span>Заказы BodyEvolution</span></div>
             <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" id="scrollTo-btn3"><span>Абонементы</span></div>
-            <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" id="scrollTo-btn4"><span>Твой прогресс</span></div>
+            <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" id="scrollTo-btn4"><span>Твой прогресс</span></div><a class="button d-flex align-items-center justify-content-center" href="#"><span>Видео-лекции</span></a>
             <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" id="scrollTo-btn5"><span>Запись к диетологу</span></div>
           </div>
         </div>
       </section>
       <section class="personInf">
         <div class="container">
-          <div class="content">
-            <div class="photo"><img class="imgPerson img-fluid d-block" src="img/profile/profile-personInf-photo.jpg" alt="profile-personInf-photo">
-              <div class="button d-flex align-items-center justify-content-around"><span>Загрузить фотографию</span><img src="img/profile/profile-personInf-icon.png" alt="profile-personInf-icon"></div>
+          <div class="row">
+            <div class="col-3">
+              <div class="photo"><img class="imgPerson img-fluid d-block" src="img/profile/profile-personInf-photo.jpg" alt="profile-personInf-photo">
+                <div class="button d-flex align-items-center justify-content-around"><span>Загрузить фотографию</span></div>
+              </div>
             </div>
-            <div class="text">
-              <div class="line gray">
-                <div class="item itemB">Имя</div>
-                <div class="item">Николай</div>
+            <div class="col-6">
+              <div class="text">
+                <div class="line gray">
+                  <div class="item itemB">Имя</div>
+                  <div class="item">Николай</div>
+                </div>
+                <div class="line">
+                  <div class="item itemB">Фамилия</div>
+                  <div class="item">Борщенко</div>
+                </div>
+                <div class="line gray">
+                  <div class="item itemB">Телефон</div>
+                  <div class="item">+7 (928) 368-34-15</div>
+                </div>
+                <div class="line">
+                  <div class="item itemB">E-mail</div>
+                  <div class="item itemRed">nikoss@list.ru</div>
+                </div>
+                <div class="line gray">
+                  <div class="item itemB">Ступень</div>
+                  <div class="item">1-ая</div>
+                </div>
+                <div class="line">
+                  <div class="item itemB">Карты</div>
+                  <div class="item d-flex">**** 1234 
+                    <div class="buttonCancel d-flex align-items-center justify-content-center">Отвязать</div>
+                  </div>
+                </div>
               </div>
-              <div class="line">
-                <div class="item itemB">Фамилия</div>
-                <div class="item">Борщенко</div>
-              </div>
-              <div class="line gray">
-                <div class="item itemB">Телефон</div>
-                <div class="item">+7 (928) 368-34-15</div>
-              </div>
-              <div class="line">
-                <div class="item itemB">E-mail</div>
-                <div class="item">nikoss@list.ru</div>
-              </div>
-              <div class="line gray">
-                <div class="item itemB">Ступень</div>
-                <div class="item">1-ая</div>
-              </div>
-              <div class="line">
-                <div class="item itemB">Карты</div>
-                <div class="item">Нет привязанных карт</div>
-              </div>
+            </div>
+            <div class="col-3">
+              <div class="iconQr"><img src="img/profile/QR.png" alt="QR.png"></div>
             </div>
           </div>
         </div>
@@ -112,47 +121,25 @@
         <div class="container contentBlock">
           <div class="head"><span class="name">Промокод для подруги:</span>
             <div class="line"></div>
-            <div class="profile-button1 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-            <div class="profile-button1 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+            <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
           </div>
-          <div class="hidden" id="profile-hidden1" style="display: none;">
+          <div class="hidden" style="display: none;">
             <p class="desc">Поделитесь промокодом со своей близкой подругой или не очень и получите личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution</p>
             <div class="list">
-              <div class="topLine">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-9"><span>Название</span></div>
-                    <div class="col-3"><span>Номер</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="line gray">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-9"><span class="text">на скидку 1000 руб., действителен до <span class="b">20 июня 2019 г., 23:30:05 </span> 
-                        <div class="badge badge1" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="&lt;div class='name'&gt;Правила:&lt;/div&gt;&lt;ol&gt;&lt;li&gt;Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.&lt;/li&gt;&lt;li&gt;После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.&lt;/li&gt;&lt;li&gt;На занятия по абонементам данный промокод не распространяется.&lt;/li&gt;&lt;/ol&gt;" data-container=".badge1"><span>?</span></div></span></div>
-                    <div class="col-3"><span class="red">REF-5923-22884 </span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="line">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-9"><span class="text">на скидку 1000 руб., действителен до <span class="b">20 июня 2019 г., 23:30:05 </span> 
-                        <div class="badge badge2" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="&lt;div class='name'&gt;Правила:&lt;/div&gt;&lt;ol&gt;&lt;li&gt;Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.&lt;/li&gt;&lt;li&gt;После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.&lt;/li&gt;&lt;li&gt;На занятия по абонементам данный промокод не распространяется.&lt;/li&gt;&lt;/ol&gt;" data-container=".badge2"><span>?</span></div></span></div>
-                    <div class="col-3"><span class="red">REF-5923-22884 </span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="line gray">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-9"><span class="text">на скидку 1000 руб., действителен до <span class="b">20 июня 2019 г., 23:30:05 </span> 
-                        <div class="badge badge3" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="&lt;div class='name'&gt;Правила:&lt;/div&gt;&lt;ol&gt;&lt;li&gt;Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.&lt;/li&gt;&lt;li&gt;После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.&lt;/li&gt;&lt;li&gt;На занятия по абонементам данный промокод не распространяется.&lt;/li&gt;&lt;/ol&gt;" data-container=".badge3"><span>?</span></div></span></div>
-                    <div class="col-3"><span class="red">REF-5923-22884 </span></div>
-                  </div>
-                </div>
-              </div>
+              <div class="topLine"><span>Название</span><span>Номер</span></div>
+              <div class="line gray"><span class="text bb">на скидку 1000 руб., действителен до 22 июня 2019 г., 11:49:41 
+                  <div class="badge badge1" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="&lt;div class='name'&gt;Правила:&lt;/div&gt;&lt;ol&gt;&lt;li&gt;Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.&lt;/li&gt;&lt;li&gt;После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.&lt;/li&gt;&lt;li&gt;На занятия по абонементам данный промокод не распространяется.&lt;/li&gt;&lt;/ol&gt;" data-container=".badge1">
+                    <div class="inner"></div>
+                  </div></span><span class="red">REF-5923-22884 </span></div>
+              <div class="line"><span class="text bb">на скидку 1000 руб., действителен до  22 июня 2019 г., 11:49:41 
+                  <div class="badge badge2" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="&lt;div class='name'&gt;Правила:&lt;/div&gt;&lt;ol&gt;&lt;li&gt;Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.&lt;/li&gt;&lt;li&gt;После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.&lt;/li&gt;&lt;li&gt;На занятия по абонементам данный промокод не распространяется.&lt;/li&gt;&lt;/ol&gt;" data-container=".badge2">
+                    <div class="inner"></div>
+                  </div></span><span class="red">REF-5923-22884 </span></div>
+              <div class="line gray"><span class="text bb">на скидку 1000 руб., действителен до  22 июня 2019 г., 11:49:41
+                  <div class="badge badge3" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="&lt;div class='name'&gt;Правила:&lt;/div&gt;&lt;ol&gt;&lt;li&gt;Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.&lt;/li&gt;&lt;li&gt;После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.&lt;/li&gt;&lt;li&gt;На занятия по абонементам данный промокод не распространяется.&lt;/li&gt;&lt;/ol&gt;" data-container=".badge3">
+                    <div class="inner"></div>
+                  </div></span><span class="red">REF-5923-22884 </span></div>
             </div>
           </div>
         </div>
@@ -161,37 +148,16 @@
         <div class="container contentBlock">
           <div class="head"><span class="name">Соцсети:</span>
             <div class="line"></div>
-            <div class="profile-button2 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-            <div class="profile-button2 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+            <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
           </div>
-          <div class="hidden" id="profile-hidden2" style="display: none;">
+          <div class="hidden" style="display: none;">
             <p class="desc">Вы можете привязать к своему профилю свой аккаунт в социальной сети, это позволит вам авторизоваться в один клик.</p>
             <p class="desc">Нажмите на кнопку той социальной сети, через которую вы хотите входить в свой единый профиль. В открывшемся окне соцсети подтвердите разрешение на авторизацию. Вход через социальную сеть будет разрешен автоматически. Профиль будет дозаполнен открытыми данными, полученными из вашего аккаунта в социальной сети. </p>
             <div class="list">
-              <div class="topLine">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-8"><span>Доступные к привязке:</span></div>
-                    <div class="col-4"><span>Привязанные:</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="line gray">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-8"><img class="social" src="img/profile/profile-socials-icon1.jpg" alt="profile-socials-icon1"></div>
-                    <div class="col-4"><img class="social" src="img/profile/profile-socials-icon3.jpg" alt="profile-socials-icon3"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="line">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-8"><img class="social" src="img/profile/profile-socials-icon2.jpg" alt="profile-socials-icon2"></div>
-                    <div class="col-4"></div>
-                  </div>
-                </div>
-              </div>
+              <div class="topLine"><span>Доступные к привязке:</span><span>Привязанные:</span></div>
+              <div class="line gray"><img class="social" src="img/profile/profile-socials-icon1.jpg" alt="profile-socials-icon1"><img class="social" src="img/profile/profile-socials-icon3.jpg" alt="profile-socials-icon3"></div>
+              <div class="line"><img class="social" src="img/profile/profile-socials-icon2.jpg" alt="profile-socials-icon2"></div>
             </div>
           </div>
         </div>
@@ -200,11 +166,15 @@
         <div class="container contentBlock">
           <div class="head"><span class="name">Анкета</span>
             <div class="line"></div>
-            <div class="profile-button3 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-            <div class="profile-button3 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+            <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
           </div>
-          <div class="hidden" id="profile-hidden3" style="display: none;">
-            <div class="button d-flex align-items-center justify-content-center"><span>Заполнить анкету</span></div>
+          <div class="hidden" style="display: none;">
+            <div class="list">
+              <div class="topLine"><span>Введите данные</span></div>
+              <div class="line gray"><span class="bb">ФИО</span><span>Петрова</span></div>
+              <div class="line"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -212,182 +182,138 @@
         <div class="container contentBlock">
           <div class="head"><span class="name">Заказы</span>
             <div class="line"></div>
-            <div class="profile-button4 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-            <div class="profile-button4 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+            <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
           </div>
-          <div class="hidden" id="profile-hidden4" style="display: none;">
+          <div class="hidden" style="display: none;">
             <div class="buttons d-flex">
               <div class="button active d-flex align-items-center justify-content-center"><span>Без оплаты</span></div>
               <div class="button d-flex align-items-center justify-content-center"><span>Оплачено</span></div>
             </div>
             <div class="list">
-              <div class="topLine">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-3"><span>Заказ #</span></div>
-                    <div class="col-5"><span>Название</span></div>
-                    <div class="col-4"><span>Время создания</span></div>
-                  </div>
-                </div>
+              <div class="topLine"><span>Заказ #</span><span>Название</span><span>Время создания</span></div>
+              <div class="line gray"><span class="b">02784</span><span class="b">Ягодицы+Ноги+Пресс</span>
+                <div class="date"><span class="gr">09.05, СР</span><span class="gr">19:00</span></div>
+                <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
               </div>
-              <div class="line gray">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-3"><span class="b">02784</span></div>
-                    <div class="col-5"><span class="b">Ягодицы+Ноги+Пресс</span></div>
-                    <div class="col-4"><span class="gr">09.05, СР</span><span class="gr">19:00</span></div>
-                  </div>
-                </div>
+              <div class="line"><span class="b">06587</span><span class="b">Smart LadyFit</span>
+                <div class="date"><span class="gr">10.05, ЧТ</span><span class="gr">19:00</span></div>
+                <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
               </div>
-              <div class="line">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-3"><span class="b">06587</span></div>
-                    <div class="col-5"><span class="b">Smart LadyFit</span></div>
-                    <div class="col-4"><span class="gr">10.05, ЧТ</span><span class="gr">19:00</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="line gray">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-3"><span class="b">88975</span></div>
-                    <div class="col-5"><span class="b">Ягодицы+Ноги+Пресс</span></div>
-                    <div class="col-4"><span class="gr">09.05, СР</span><span class="gr">19:00</span></div>
-                  </div>
-                </div>
+              <div class="line gray"><span class="b">88975</span><span class="b">Ягодицы+Ноги+Пресс</span>
+                <div class="date"><span class="gr">09.05, СР</span><span class="gr">19:00</span></div>
+                <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="sTicket">
+      <section class="sTicketInf">
         <div class="container contentBlock">
-          <div class="head"><span class="name">Абонементы</span>
-            <div class="line"></div>
-            <div class="profile-button5 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-            <div class="profile-button5 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
-          </div>
-          <div class="hidden" id="profile-hidden5" style="display: none;">
-            <div class="list">
-              <div class="topLine">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-3"><span>Заказ #</span></div>
-                    <div class="col-4"><span>Урок</span></div>
-                    <div class="col-2"><span>Цена</span></div>
-                    <div class="col-3"><span>Со скидкой</span></div>
-                  </div>
+          <div class="sTicket">
+            <div class="head"><span class="name">Абонементы</span>
+              <div class="line"></div>
+              <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+              <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+            </div>
+            <div class="hidden" style="display: none;">
+              <div class="buttons d-flex">
+                <div class="button active d-flex align-items-center justify-content-center"><span>Без оплаты</span></div>
+                <div class="button d-flex align-items-center justify-content-center"><span>Оплачено</span></div>
+              </div>
+              <div class="list">
+                <div class="topLine"><span>Заказ #</span><span>Урок</span><span>Цена</span><span>Со скидкой</span></div>
+                <div class="line gray"><span class="b">25213</span><span class="b">Абонемент 2</span><span>3000 р.</span><span>2800 р.</span>
+                  <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
                 </div>
               </div>
-              <div class="line gray">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-12"><span class="lite">Ничего не найдено</span></div>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="schedule">
+            <div class="head"><span class="name">Расписание</span>
+              <div class="line"></div>
+              <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+              <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+            </div>
+            <div class="hidden" style="display: none;">
+              <div class="list">
+                <div class="topLine"><span>Название курса</span><span>Дата</span><span>Время</span><span>Зал</span></div>
+                <div class="line gray"><span class="b">Ягодицы+Ноги+Пресс</span><span>03 июля 2019 г.</span><span>20:00</span><span>21</span></div>
+                <div class="line"><span class="b">Ягодицы+Ноги+Пресс</span><span>03 июля 2019 г.</span><span>20:00</span><span>21</span></div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="schedule">
-        <div class="container contentBlock">
-          <div class="head"><span class="name">Расписание</span>
-            <div class="line"></div>
-          </div>
-          <div class="content">
-            <div class="list">
-              <div class="topLine">
-                <div class="container">
-                  <div class="row">
-                    <div class="col col-sm-5"><span>Название курса</span></div>
-                    <div class="col col-sm-1"><span>Дата</span></div>
-                    <div class="col col-sm-2"><span>Время</span></div>
-                    <div class="col col-sm-4"><span>Зал</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="line gray">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-12"><span class="lite">Ничего не найдено</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="appNutrition">
+      <section class="appointDiet">
         <div class="container contentBlock">
           <div class="head"><span class="name">Запись к диетологу</span>
             <div class="line"></div>
-            <div class="profile-button6 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-            <div class="profile-button6 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+            <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+            <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
           </div>
-          <div class="hidden" id="profile-hidden6" style="display: none;">
+          <div class="hidden" style="display: none;">
             <div class="buttons d-flex">
               <div class="button active d-flex align-items-center justify-content-center"><span>Без оплаты</span></div>
               <div class="button d-flex align-items-center justify-content-center"><span>Оплачено</span></div>
             </div>
             <div class="list">
-              <div class="topLine">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-6 col-sm-8"><span>Наименование консультации</span></div>
-                    <div class="col-6 col-sm-4"><span>Время прохождения</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="line gray">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-6 col-sm-8"><span class="b">Ягодицы+Ноги+Пресс</span></div>
-                    <div class="col-6 col-sm-4"><span class="gr">09.05, СР</span><span class="gr">19:00</span></div>
-                  </div>
-                </div>
+              <div class="topLine"><span>Наименование консультации</span><span>Цена</span><span>Со скидкой</span></div>
+              <div class="line gray"><span class="b">Ягодицы+Ноги+Пресс</span><span class="gr">2000 р.</span><span class="gr">2000 р.</span>
+                <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="stats">
+      <section class="progressInf">
         <div class="container contentBlock">
-          <div class="head"><span class="name">Статистика</span>
-            <div class="line"></div>
-            <div class="profile-button7 profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-            <div class="profile-button7 profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
-          </div>
-          <div class="hidden" id="profile-hidden7" style="display: none;">
-            <div class="list">
-              <div class="topLine">
-                <div class="container">
-                  <div class="row">
-                    <div class="col col-md-3"><span>Создано</span></div>
-                    <div class="col col-md-1"><span>Вес</span></div>
-                    <div class="col col-md-1"><span>Талия</span></div>
-                    <div class="col col-md-1"><span>Живот</span></div>
-                    <div class="col col-md-1"><span>Бёдра</span></div>
-                    <div class="col col-md-1"><span>Имт</span></div>
-                    <div class="col col-md-4"><span>Изображение</span></div>
+          <div class="stats">
+            <div class="head"><span class="name">Твой прогресс</span>
+              <div class="line"></div>
+              <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+              <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
+            </div>
+            <div class="hidden" style="display: none;">
+              <div class="list">
+                <div class="topLine"><span>Создано</span><span>Вес</span><span>Талия</span><span>Живот</span><span>Бёдра</span><span>Имт</span><span>Изображение</span></div>
+                <div class="line gray"><span class="gr">25.06.19 <span class="time">22:34:39</span></span>
+                  <div class="item d-flex"><span class="m">75</span>
+                    <div class="circle-progress d-flex align-items-center justify-content-center">-5</div>
                   </div>
-                </div>
-              </div>
-              <div class="line gray">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-12"><span class="lite">Ничего не найдено</span></div>
+                  <div class="item d-flex"><span class="m small">79</span>
+                    <div class="circle-progress d-flex align-items-center justify-content-center">-8</div>
                   </div>
+                  <div class="item d-flex"><span class="m small">85</span>
+                    <div class="circle-progress d-flex align-items-center justify-content-center">-11</div>
+                  </div>
+                  <div class="item d-flex"><span class="m small">100</span>
+                    <div class="circle-progress d-flex align-items-center justify-content-center">-15</div>
+                  </div>
+                  <div class="item d-flex"><span class="m small">27.9</span>
+                    <div class="circle-progress d-flex align-items-center justify-content-center">-1.8</div>
+                  </div><img src="img/profile/stats-icon1.png" alt="stats-icon1.png">
                 </div>
+                <div class="line"><span class="gr">25.06.19 <span class="time">22:34:39</span></span><span class="m">75</span><span class="m small">79</span><span class="m small">85</span><span class="m small">100</span><span class="m small">27.9</span><img src="img/profile/stats-icon2.png" alt="stats-icon2.png"></div>
               </div>
             </div>
           </div>
           <div class="collages">
             <div class="head"><span class="name">Коллажи</span>
               <div class="line"></div>
+              <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
+              <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
             </div>
-            <div class="content"><span class="lite">Здесь будут фотографии прогресса</span></div>
+            <div class="hidden" style="display: none;">
+              <div class="d-flex">
+                <div class="item">
+                  <div class="borderOuter"><img src="img/profile/collages-item1.png" alt="collages-item1.png"></div><span class="name">#Группа 01_Июнь</span>
+                </div>
+                <div class="item">
+                  <div class="borderOuter"><img src="img/profile/collages-item2.png" alt="collages-item2.png"></div><span class="name">#Группа 01_Июнь</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

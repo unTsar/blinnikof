@@ -96,8 +96,9 @@ body {
   background-color: #F8F8F8;
 }
 
-body a {
+body a, body a:active, body a:focus, body a:link, body a:visited {
   outline: none;
+  text-decoration: none;
 }
 
 body input, body textarea {
