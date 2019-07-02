@@ -434,6 +434,7 @@ body main section.purpose .headblock span.head {
 body main section.purpose .headblock span.head::before {
   content: '';
   position: absolute;
+  z-index: 11;
   top: 12.5px;
   left: -90px;
   background-color: #ff2e2f;

@@ -20,17 +20,17 @@ block content
                         .col-12
                             span.head Личный кабинет
                 .buttons
-                    .header-scrollTo-btn#scrollTo-btn1.button.active.d-flex.align-items-center.justify-content-center
+                    .header-scrollTo-btn(onclick="$.scrollTo('.personInf', 500);").button.active.d-flex.align-items-center.justify-content-center
                         span Общая информация
-                    .header-scrollTo-btn#scrollTo-btn2.button.d-flex.align-items-center.justify-content-center
+                    .header-scrollTo-btn(onclick="$.scrollTo('.orders', 500);").button.d-flex.align-items-center.justify-content-center
                         span Заказы BodyEvolution
-                    .header-scrollTo-btn#scrollTo-btn3.button.d-flex.align-items-center.justify-content-center
+                    .header-scrollTo-btn(onclick="$.scrollTo('.sTicket', 500);").button.d-flex.align-items-center.justify-content-center
                         span Абонементы
-                    .header-scrollTo-btn#scrollTo-btn4.button.d-flex.align-items-center.justify-content-center
+                    .header-scrollTo-btn(onclick="$.scrollTo('.stats', 500);").button.d-flex.align-items-center.justify-content-center
                         span Твой прогресс
                     a(href="#").button.d-flex.align-items-center.justify-content-center
                         span Видео-лекции
-                    .header-scrollTo-btn#scrollTo-btn5.button.d-flex.align-items-center.justify-content-center
+                    .header-scrollTo-btn(onclick="$.scrollTo('.appointDiet', 500);").button.d-flex.align-items-center.justify-content-center
                         span Запись к диетологу
         section.personInf
             .container
@@ -68,9 +68,9 @@ block content
                 .head
                     span.name Промокод для подруги:
                     .line
-                    .profile-buttonClose.align-items-center.justify-content-center
-                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
                     .profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-buttonClose.align-items-center.justify-content-center
                         img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
                 .hidden(style="display: none;")
                     p.desc Поделитесь промокодом со своей близкой подругой или не очень и получите личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution
@@ -98,9 +98,9 @@ block content
                 .head
                     span.name Соцсети:
                     .line
-                    .profile-buttonClose.align-items-center.justify-content-center
-                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
                     .profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-buttonClose.align-items-center.justify-content-center
                         img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
                 .hidden(style="display: none;")
                     p.desc Вы можете привязать к своему профилю свой аккаунт в социальной сети, это позволит вам авторизоваться в один клик.
@@ -119,9 +119,9 @@ block content
                 .head
                     span.name Анкета
                     .line
-                    .profile-buttonClose.align-items-center.justify-content-center
-                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
                     .profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-buttonClose.align-items-center.justify-content-center
                         img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
                 .hidden(style="display: none;")
                     //- .button.d-flex.align-items-center.justify-content-center
@@ -133,22 +133,121 @@ block content
                             span.bb ФИО
                             span Петрова
                         .line
+                            span.bb Укажите ваш Инстаграм
+                        .line.gray
+                            span.bb День рождения
+                        .line
+                            span.bb Рост
+                        .line.gray
+                            span.bb Вес
+                        .line
+                            span.bb ИМТ
+                        .line.gray
+                            span.bb Желаемый вес
+                        .line
+                            span.bb Цель занятий
+                        .fullAppForm
+                            .head.d-flex.justify-content-between
+                                span.name Вся анкета
+                                .profile-buttonOpen.align-items-center.justify-content-center
+                                    img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                                .profile-buttonClose.align-items-center.justify-content-center
+                                    img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+                            .hidden(style="display: none;")
+                                .line.gray
+                                    span.bb Есть ли у вас мечта, которая должна непременно осуществиться вместе с обретенной стройностью фигуры?
+                                    span тест
+                                .line
+                                    span.bb Вегетарианец?
+                                    span нет
+                                .line.gray
+                                    span.bb Непереносимость продуктов если есть и каких?
+                                .line
+                                    span.bb Занимались ли вы до этого курса физическими нагрузками (фитнес, танцы, групповые программы)?
+                                    span тест
+                                .line.gray
+                                    span.bb Какое время назад и как долго?
+                                    span тест
+                                .line
+                                    span.bb Сколько раз сейчас физические нагрузки в неделю, если есть (йога, танцы, тренажерный зал и т.д.)?
+                                    span тест
+                                .line.gray
+                                    span.bb Как питаетесь сейчас?
+                                    span тест
+                                .line
+                                    span.bb Сколько раз в день?
+                                    span тест
+                                .line.gray
+                                    span.bb Какие продукты?
+                                    span тест
+                                .line
+                                    span.bb Сколько пьете воды?
+                                    span тест
+                                .line.gray
+                                    span.bb Принимаете ли вы какие-то гормональные или лекарственные препараты , или витаминные комплексы?
+                                    span тест
+                                .line
+                                    span.bb Являетесь ли вы кормящей мамой ? Если да, то как давно?
+                                    span тест
+                                .line.gray
+                                    span.bb Есть ли заболевания опорно-двигательного аппарата (спина, колени, шея, грыжи, сколиоз, мениски)?
+                                    span тест
+                                .line
+                                    span.bb Есть ли заболевания сердечно-сосудистой системы (тахикардия, аритмия, гипертония, гипотония)?
+                                    span тест
+                                .line.gray
+                                    span.bb Есть ли заболевания желудочно-кишечного тракта (гастрит, язва и др.)?
+                                    span тест
+                                .line
+                                    span.bb Есть ли заболевания моче-выделительной системы (камни в почках, пиелонефрит, цистит и др.)?
+                                    span тест
+                                .line.gray
+                                    span.bb Есть ли заболевания внутренних органов, которые здесь не представлены?
+                                    span тест
+                                .line
+                                    span.bb Были ли травмы или операции? Если да, то как давно?
+                                    span тест
+                                .line.gray
+                                    span.bb Заболевания эндокринной системы? ( щитовидная железа, поджелудочная железа, надпочечники )
+                                    span тест
+                                .line
+                                    span.bb Как вы о нас узнали?
+                                    span тест
+                                .line.gray
+                                    span.bb Есть ли аллергия или непереносимость продуктов: рыба?
+                                    span Нет
+                                .line
+                                    span.bb Есть ли аллергия или непереносимость продуктов: морепродукты?
+                                    span Да
+                                .line.gray
+                                    span.bb Есть ли аллергия или непереносимость продуктов: птица?
+                                    span Нет
+                                .line
+                                    span.bb Есть ли аллергия или непереносимость продуктов: говядина?
+                                    span Да
+                                .line.gray
+                                    span.bb Есть ли аллергия или непереносимость продуктов: творог?
+                                    span Нет
+                                .line
+                                    span.bb Есть ли аллергия или непереносимость продуктов: орехи?
+                                    span Нет
+                        
         section.orders
             .container.contentBlock
                 .head
                     span.name Заказы
                     .line
-                    .profile-buttonClose.align-items-center.justify-content-center
-                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
                     .profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-buttonClose.align-items-center.justify-content-center
                         img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
                 .hidden(style="display: none;")
                     .buttons.d-flex
-                        .button.active.d-flex.align-items-center.justify-content-center
+                        .button.orders-buttonUnpaid.active.d-flex.align-items-center.justify-content-center
                             span Без оплаты
-                        .button.d-flex.align-items-center.justify-content-center
+                        .button.orders-buttonPaid.d-flex.align-items-center.justify-content-center
                             span Оплачено
-                    .list
+                    .list.orders-listUnpaid
                         .topLine
                             span Заказ #
                             span Название
@@ -177,23 +276,34 @@ block content
                                 span.gr 19:00
                             .buttonPay.d-flex.align-items-center.justify-content-center
                                 span Оплатить
+                    .list.orders-listPaid(style="display: none;")
+                        .topLine
+                            span Заказ #
+                            span Название
+                            span Дата поступления средств
+                        .line.gray
+                            span.b 02784
+                            span.b Ягодицы+Ноги+Пресс
+                            .date
+                                span.gr 25.06.19 
+                                span.gr 18:24:02
         section.sTicketInf
             .container.contentBlock
                 .sTicket
                     .head
                         span.name Абонементы
                         .line
-                        .profile-buttonClose.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
                         .profile-buttonOpen.align-items-center.justify-content-center
+                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                        .profile-buttonClose.align-items-center.justify-content-center
                             img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
                     .hidden(style="display: none;")
                         .buttons.d-flex
-                            .button.active.d-flex.align-items-center.justify-content-center
+                            .button.orders-buttonUnpaid#profile-buttonUnpaid-sTicket.active.d-flex.align-items-center.justify-content-center
                                 span Без оплаты
-                            .button.d-flex.align-items-center.justify-content-center
+                            .button.orders-buttonPaid#profile-buttonPaid-sTicket.d-flex.align-items-center.justify-content-center
                                 span Оплачено
-                        .list
+                        .list.orders-listUnpaid
                             .topLine
                                 span Заказ #
                                 span Урок
@@ -206,15 +316,29 @@ block content
                                 span 2800 р.
                                 .buttonPay.d-flex.align-items-center.justify-content-center
                                     span Оплатить
+                        .list.orders-listPaid(style="display: none;")
+                            .topLine
+                                span Заказ #
+                                span Урок
+                                span Цена
+                                span Со скидкой
+                            .line.gray
+                                span.b 25214
+                                span.b Абонемент 3
+                                span 3000 р.
+                                span 2800 р.
+                                .buttonPay.d-flex.align-items-center.justify-content-center
+                                    span Оплатить
+                        .list.orders-listPaid(style="display: none;")
                 .schedule
                     .head
                         span.name Расписание
                         .line
-                        .profile-buttonClose.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
                         .profile-buttonOpen.align-items-center.justify-content-center
+                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                        .profile-buttonClose.align-items-center.justify-content-center
                             img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                    .hidden(style="display: none;")
+                    .hidden.schedule-Unpaid(style="display: none;")
                         .list
                             .topLine
                                 span Название курса
@@ -231,22 +355,43 @@ block content
                                 span 03 июля 2019 г.
                                 span 20:00
                                 span 21
+                    .schedule-Paid(style="display: none;")
+                        .list
+                            .topLine
+                                span Название курса
+                                span Дата
+                                span Время
+                                span Зал
+                            .line.gray
+                                span.b Ягодицы+Ноги+Пресс
+                                span 03 июля 2019 г.
+                                span 20:00
+                                span 21
+                                .buttonPay.d-flex.align-items-center.justify-content-center
+                                    span Перенести
+                            .line
+                                span.b Ягодицы+Ноги+Пресс
+                                span 03 июля 2019 г.
+                                span 20:00
+                                span 21
+                                .buttonPay.d-flex.align-items-center.justify-content-center
+                                    span Перенести
         section.appointDiet
             .container.contentBlock
                 .head
                     span.name Запись к диетологу
                     .line
-                    .profile-buttonClose.align-items-center.justify-content-center
-                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
                     .profile-buttonOpen.align-items-center.justify-content-center
+                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                    .profile-buttonClose.align-items-center.justify-content-center
                         img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
                 .hidden(style="display: none;")
                     .buttons.d-flex
-                        .button.active.d-flex.align-items-center.justify-content-center
+                        .button.orders-buttonUnpaid.active.d-flex.align-items-center.justify-content-center
                             span Без оплаты
-                        .button.d-flex.align-items-center.justify-content-center
+                        .button.orders-buttonPaid.d-flex.align-items-center.justify-content-center
                             span Оплачено
-                    .list
+                    .list.orders-listUnpaid
                         .topLine
                             span Наименование консультации
                             span Цена
@@ -257,15 +402,24 @@ block content
                             span.gr 2000 р.
                             .buttonPay.d-flex.align-items-center.justify-content-center
                                 span Оплатить
+                    .list.orders-listPaid(style="display: none;")
+                        .topLine
+                            span Наименование консультации
+                            span Время прохождения
+                        .line.gray
+                            span.b Ягодицы+Ноги+Пресс
+                            .time
+                                span.gr 26.06.19
+                                span.gr 12:00
         section.progressInf
             .container.contentBlock
                 .stats
                     .head
                         span.name Твой прогресс
                         .line
-                        .profile-buttonClose.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
                         .profile-buttonOpen.align-items-center.justify-content-center
+                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                        .profile-buttonClose.align-items-center.justify-content-center
                             img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
                     .hidden(style="display: none;")
                         .list
@@ -307,9 +461,9 @@ block content
                     .head
                         span.name Коллажи
                         .line
-                        .profile-buttonClose.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
                         .profile-buttonOpen.align-items-center.justify-content-center
+                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+                        .profile-buttonClose.align-items-center.justify-content-center
                             img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
                     .hidden(style="display: none;")
                         .d-flex

@@ -336,6 +336,27 @@ main section.appForm .hidden .list .topLine, main section.appForm .hidden .list 
   grid-template-columns: 92% 8%;
 }
 
+main section.appForm .hidden .list .fullAppForm .head {
+  margin-bottom: 10px;
+}
+
+main section.appForm .hidden .list .fullAppForm .head span.name {
+  color: #ff2e2f;
+  font-size: 20px;
+  font-family: 'MullerExtraBold';
+}
+
+main section.appForm .hidden .list .fullAppForm .hidden {
+  padding: 0;
+}
+
+main section.appForm .hidden .list .fullAppForm .hidden .topLine, main section.appForm .hidden .list .fullAppForm .hidden .line {
+  display: grid;
+  grid-template-columns: 96% 4%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 main section.orders .hidden .button:hover, main section.orders .hidden .button.active, main section.appointDiet .hidden .button:hover, main section.appointDiet .hidden .button.active, main section.sTicketInf .hidden .button:hover, main section.sTicketInf .hidden .button.active {
   background-color: #ff2e2f;
 }
@@ -362,38 +383,18 @@ main section.orders .hidden .button span, main section.appointDiet .hidden .butt
   letter-spacing: 0.25px;
 }
 
-main section.sTicketInf .list .line .buttonPay, main section.orders .list .line .buttonPay, main section.appointDiet .list .line .buttonPay {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-  -webkit-border-radius: 11px;
-          border-radius: 11px;
-  background-color: #3B3B3B;
-  color: #ffffff;
-  font-size: 10px;
-  font-family: 'MullerMedium';
-  height: 20px;
-  max-width: 75px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-main section.sTicketInf .list .line .buttonPay span, main section.orders .list .line .buttonPay span, main section.appointDiet .list .line .buttonPay span {
-  height: 15px;
-}
-
-main section.sTicketInf .list .line .buttonPay:hover, main section.orders .list .line .buttonPay:hover, main section.appointDiet .list .line .buttonPay:hover {
-  background-color: #ff2e2f;
-}
-
 main section.orders .list {
   padding-bottom: 5px;
 }
 
-main section.orders .list .topLine, main section.orders .list .line {
+main section.orders .orders-listUnpaid .topLine, main section.orders .orders-listUnpaid .line {
   display: grid;
   grid-template-columns: 21% 38% 25% 16%;
+}
+
+main section.orders .orders-listPaid .topLine, main section.orders .orders-listPaid .line {
+  display: grid;
+  grid-template-columns: 20% 43% 37%;
 }
 
 main section.sTicketInf .sTicket .list .topLine, main section.sTicketInf .sTicket .list .line {
@@ -407,7 +408,7 @@ main section.sTicketInf .schedule {
 
 main section.sTicketInf .schedule .list .topLine, main section.sTicketInf .schedule .list .line {
   display: grid;
-  grid-template-columns: 38% 12% 22% 28%;
+  grid-template-columns: 38% 12% 22% 12% 16%;
 }
 
 main section.sTicketInf .schedule .list .topLine span, main section.sTicketInf .schedule .list .line span {
@@ -418,9 +419,22 @@ main section.sTicketInf .schedule .list .topLine span.b, main section.sTicketInf
   font-size: 16px;
 }
 
-main section.appointDiet .hidden .list .topLine, main section.appointDiet .hidden .list .line {
+main section.sTicketInf .schedule .list .topLine .buttonPay, main section.sTicketInf .schedule .list .line .buttonPay {
+  background-color: #8e8989;
+}
+
+main section.sTicketInf .schedule .list .topLine .buttonPay span, main section.sTicketInf .schedule .list .line .buttonPay span {
+  font-size: 10px;
+}
+
+main section.appointDiet .hidden .orders-listUnpaid .topLine, main section.appointDiet .hidden .orders-listUnpaid .line {
   display: grid;
   grid-template-columns: 46% 17% 20% 17%;
+}
+
+main section.appointDiet .hidden .orders-listPaid .topLine, main section.appointDiet .hidden .orders-listPaid .line {
+  display: grid;
+  grid-template-columns: 46% 54%;
 }
 
 main section.progressInf .stats .hidden .list .topLine, main section.progressInf .stats .hidden .list .line {
@@ -477,6 +491,31 @@ main section.progressInf .collages .item span.name {
   color: #333333;
 }
 
+main section.sTicketInf .list .line .buttonPay, main section.orders .list .line .buttonPay, main section.appointDiet .list .line .buttonPay {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-border-radius: 11px;
+          border-radius: 11px;
+  background-color: #3B3B3B;
+  color: #ffffff;
+  font-size: 10px;
+  font-family: 'MullerMedium';
+  height: 20px;
+  max-width: 75px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+main section.sTicketInf .list .line .buttonPay span, main section.orders .list .line .buttonPay span, main section.appointDiet .list .line .buttonPay span {
+  height: 15px;
+}
+
+main section.sTicketInf .list .line .buttonPay:hover, main section.orders .list .line .buttonPay:hover, main section.appointDiet .list .line .buttonPay:hover {
+  background-color: #ff2e2f;
+}
+
 main section.appForm, main section.promo, main section.socials, main section.orders, main section.sTicketInf, main section.schedule, main section.appointDiet, main section.progressInf {
   padding-left: 0;
 }
@@ -521,7 +560,7 @@ main section.appForm .container.contentBlock .head .line, main section.promo .co
   margin-right: 10px;
 }
 
-main section.appForm .container.contentBlock .head .profile-buttonClose, main section.promo .container.contentBlock .head .profile-buttonClose, main section.socials .container.contentBlock .head .profile-buttonClose, main section.orders .container.contentBlock .head .profile-buttonClose, main section.sTicketInf .container.contentBlock .head .profile-buttonClose, main section.schedule .container.contentBlock .head .profile-buttonClose, main section.appointDiet .container.contentBlock .head .profile-buttonClose, main section.progressInf .container.contentBlock .head .profile-buttonClose {
+main section.appForm .container.contentBlock .head .profile-buttonOpen, main section.promo .container.contentBlock .head .profile-buttonOpen, main section.socials .container.contentBlock .head .profile-buttonOpen, main section.orders .container.contentBlock .head .profile-buttonOpen, main section.sTicketInf .container.contentBlock .head .profile-buttonOpen, main section.schedule .container.contentBlock .head .profile-buttonOpen, main section.appointDiet .container.contentBlock .head .profile-buttonOpen, main section.progressInf .container.contentBlock .head .profile-buttonOpen {
   background-color: #ff2e2f;
   width: 50px;
   height: 50px;
@@ -534,18 +573,18 @@ main section.appForm .container.contentBlock .head .profile-buttonClose, main se
   display: flex;
 }
 
-main section.appForm .container.contentBlock .head .profile-buttonClose img, main section.promo .container.contentBlock .head .profile-buttonClose img, main section.socials .container.contentBlock .head .profile-buttonClose img, main section.orders .container.contentBlock .head .profile-buttonClose img, main section.sTicketInf .container.contentBlock .head .profile-buttonClose img, main section.schedule .container.contentBlock .head .profile-buttonClose img, main section.appointDiet .container.contentBlock .head .profile-buttonClose img, main section.progressInf .container.contentBlock .head .profile-buttonClose img {
+main section.appForm .container.contentBlock .head .profile-buttonOpen img, main section.promo .container.contentBlock .head .profile-buttonOpen img, main section.socials .container.contentBlock .head .profile-buttonOpen img, main section.orders .container.contentBlock .head .profile-buttonOpen img, main section.sTicketInf .container.contentBlock .head .profile-buttonOpen img, main section.schedule .container.contentBlock .head .profile-buttonOpen img, main section.appointDiet .container.contentBlock .head .profile-buttonOpen img, main section.progressInf .container.contentBlock .head .profile-buttonOpen img {
   -ms-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
 }
 
-main section.appForm .container.contentBlock .head .profile-buttonClose:hover, main section.promo .container.contentBlock .head .profile-buttonClose:hover, main section.socials .container.contentBlock .head .profile-buttonClose:hover, main section.orders .container.contentBlock .head .profile-buttonClose:hover, main section.sTicketInf .container.contentBlock .head .profile-buttonClose:hover, main section.schedule .container.contentBlock .head .profile-buttonClose:hover, main section.appointDiet .container.contentBlock .head .profile-buttonClose:hover, main section.progressInf .container.contentBlock .head .profile-buttonClose:hover {
+main section.appForm .container.contentBlock .head .profile-buttonOpen:hover, main section.promo .container.contentBlock .head .profile-buttonOpen:hover, main section.socials .container.contentBlock .head .profile-buttonOpen:hover, main section.orders .container.contentBlock .head .profile-buttonOpen:hover, main section.sTicketInf .container.contentBlock .head .profile-buttonOpen:hover, main section.schedule .container.contentBlock .head .profile-buttonOpen:hover, main section.appointDiet .container.contentBlock .head .profile-buttonOpen:hover, main section.progressInf .container.contentBlock .head .profile-buttonOpen:hover {
   background-color: #fa8384;
 }
 
-main section.appForm .container.contentBlock .head .profile-buttonOpen, main section.promo .container.contentBlock .head .profile-buttonOpen, main section.socials .container.contentBlock .head .profile-buttonOpen, main section.orders .container.contentBlock .head .profile-buttonOpen, main section.sTicketInf .container.contentBlock .head .profile-buttonOpen, main section.schedule .container.contentBlock .head .profile-buttonOpen, main section.appointDiet .container.contentBlock .head .profile-buttonOpen, main section.progressInf .container.contentBlock .head .profile-buttonOpen {
+main section.appForm .container.contentBlock .head .profile-buttonClose, main section.promo .container.contentBlock .head .profile-buttonClose, main section.socials .container.contentBlock .head .profile-buttonClose, main section.orders .container.contentBlock .head .profile-buttonClose, main section.sTicketInf .container.contentBlock .head .profile-buttonClose, main section.schedule .container.contentBlock .head .profile-buttonClose, main section.appointDiet .container.contentBlock .head .profile-buttonClose, main section.progressInf .container.contentBlock .head .profile-buttonClose {
   background-color: #3b3b3b;
   width: 50px;
   height: 50px;
@@ -555,14 +594,14 @@ main section.appForm .container.contentBlock .head .profile-buttonOpen, main sec
   display: none;
 }
 
-main section.appForm .container.contentBlock .head .profile-buttonOpen img, main section.promo .container.contentBlock .head .profile-buttonOpen img, main section.socials .container.contentBlock .head .profile-buttonOpen img, main section.orders .container.contentBlock .head .profile-buttonOpen img, main section.sTicketInf .container.contentBlock .head .profile-buttonOpen img, main section.schedule .container.contentBlock .head .profile-buttonOpen img, main section.appointDiet .container.contentBlock .head .profile-buttonOpen img, main section.progressInf .container.contentBlock .head .profile-buttonOpen img {
+main section.appForm .container.contentBlock .head .profile-buttonClose img, main section.promo .container.contentBlock .head .profile-buttonClose img, main section.socials .container.contentBlock .head .profile-buttonClose img, main section.orders .container.contentBlock .head .profile-buttonClose img, main section.sTicketInf .container.contentBlock .head .profile-buttonClose img, main section.schedule .container.contentBlock .head .profile-buttonClose img, main section.appointDiet .container.contentBlock .head .profile-buttonClose img, main section.progressInf .container.contentBlock .head .profile-buttonClose img {
   -ms-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
 }
 
-main section.appForm .container.contentBlock .head .profile-buttonOpen:hover, main section.promo .container.contentBlock .head .profile-buttonOpen:hover, main section.socials .container.contentBlock .head .profile-buttonOpen:hover, main section.orders .container.contentBlock .head .profile-buttonOpen:hover, main section.sTicketInf .container.contentBlock .head .profile-buttonOpen:hover, main section.schedule .container.contentBlock .head .profile-buttonOpen:hover, main section.appointDiet .container.contentBlock .head .profile-buttonOpen:hover, main section.progressInf .container.contentBlock .head .profile-buttonOpen:hover {
+main section.appForm .container.contentBlock .head .profile-buttonClose:hover, main section.promo .container.contentBlock .head .profile-buttonClose:hover, main section.socials .container.contentBlock .head .profile-buttonClose:hover, main section.orders .container.contentBlock .head .profile-buttonClose:hover, main section.sTicketInf .container.contentBlock .head .profile-buttonClose:hover, main section.schedule .container.contentBlock .head .profile-buttonClose:hover, main section.appointDiet .container.contentBlock .head .profile-buttonClose:hover, main section.progressInf .container.contentBlock .head .profile-buttonClose:hover {
   background-color: #9b9797;
 }
 
@@ -588,7 +627,7 @@ main section.appForm .hidden, main section.appForm .content, main section.promo 
 }
 
 main section.appForm .hidden .list, main section.appForm .content .list, main section.promo .hidden .list, main section.promo .content .list, main section.socials .hidden .list, main section.socials .content .list, main section.orders .hidden .list, main section.orders .content .list, main section.sTicketInf .hidden .list, main section.sTicketInf .content .list, main section.schedule .hidden .list, main section.schedule .content .list, main section.appointDiet .hidden .list, main section.appointDiet .content .list, main section.progressInf .hidden .list, main section.progressInf .content .list {
-  padding-top: 35px;
+  margin-top: 35px;
 }
 
 main section.appForm .hidden .list .topLine, main section.appForm .content .list .topLine, main section.promo .hidden .list .topLine, main section.promo .content .list .topLine, main section.socials .hidden .list .topLine, main section.socials .content .list .topLine, main section.orders .hidden .list .topLine, main section.orders .content .list .topLine, main section.sTicketInf .hidden .list .topLine, main section.sTicketInf .content .list .topLine, main section.schedule .hidden .list .topLine, main section.schedule .content .list .topLine, main section.appointDiet .hidden .list .topLine, main section.appointDiet .content .list .topLine, main section.progressInf .hidden .list .topLine, main section.progressInf .content .list .topLine {
@@ -641,7 +680,7 @@ main section.appForm span.gr, main section.promo span.gr, main section.socials s
   font-size: 16px;
   font-family: 'MullerRegular';
   color: #575757;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 main section.appForm span.lite, main section.promo span.lite, main section.socials span.lite, main section.orders span.lite, main section.sTicketInf span.lite, main section.schedule span.lite, main section.appointDiet span.lite, main section.progressInf span.lite {

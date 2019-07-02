@@ -189,6 +189,21 @@ main
 				.topLine, .line
 					display: grid
 					grid-template-columns: 92% 8%
+				.fullAppForm
+					.head
+						margin-bottom: 10px
+						span.name
+							color: #ff2e2f
+							font-size: 20px
+							font-family: 'MullerExtraBold'
+							
+					.hidden
+						padding: 0
+						.topLine, .line
+							display: grid
+							grid-template-columns: 96% 4%
+							padding-left: 15px
+							padding-right: 15px
 	section.orders, section.appointDiet, section.sTicketInf
 		.hidden
 			.button:hover, .button.active
@@ -208,31 +223,17 @@ main
 					font-family: "MullerBold"
 					font-weight: 600
 					letter-spacing: 0.25px
-	section.sTicketInf, section.orders, section.appointDiet
-		.list
-			.line
-				.buttonPay
-					transition: 0.3s
-					cursor: pointer
-					border-radius: 11px
-					background-color: #3B3B3B
-					color: #ffffff
-					font-size: 10px
-					font-family: 'MullerMedium'
-					height: 20px
-					max-width: 75px
-					padding-left: 10px
-					padding-right: 10px
-					span
-						height: 15px
-				.buttonPay:hover
-					background-color: #ff2e2f
 	section.orders
 		.list
 			padding-bottom: 5px
+		.orders-listUnpaid
 			.topLine, .line
 				display: grid
 				grid-template-columns: 21% 38% 25% 16%
+		.orders-listPaid
+			.topLine, .line
+				display: grid
+				grid-template-columns: 20% 43% 37%
 	section.sTicketInf
 		.sTicket
 			.list
@@ -244,17 +245,25 @@ main
 			.list
 				.topLine, .line
 					display: grid
-					grid-template-columns: 38% 12% 22% 28%
+					grid-template-columns: 38% 12% 22% 12% 16%
 					span
 						font-size: 14px
 					span.b
 						font-size: 16px
+					.buttonPay
+						background-color: #8e8989
+						span
+							font-size: 10px
 	section.appointDiet
 		.hidden
-			.list
+			.orders-listUnpaid
 				.topLine, .line
 					display: grid
 					grid-template-columns: 46% 17% 20% 17% 
+			.orders-listPaid
+				.topLine, .line
+					display: grid
+					grid-template-columns: 46% 54%
 	section.progressInf
 		.stats
 			.hidden
@@ -294,6 +303,25 @@ main
 					margin-left: 15px
 					margin-top: 10px
 					color: #333333
+	section.sTicketInf, section.orders, section.appointDiet
+		.list
+			.line
+				.buttonPay
+					transition: 0.3s
+					cursor: pointer
+					border-radius: 11px
+					background-color: #3B3B3B
+					color: #ffffff
+					font-size: 10px
+					font-family: 'MullerMedium'
+					height: 20px
+					max-width: 75px
+					padding-left: 10px
+					padding-right: 10px
+					span
+						height: 15px
+				.buttonPay:hover
+					background-color: #ff2e2f
 	section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
 		padding-left: 0
 		.head
@@ -322,7 +350,7 @@ main
 					height: 1px
 					margin-left: 30px
 					margin-right: 10px
-				.profile-buttonClose
+				.profile-buttonOpen
 					background-color: #ff2e2f
 					width: 50px
 					height: 50px
@@ -334,9 +362,9 @@ main
 						-moz-user-select: none
 						-khtml-user-select: none
 						-webkit-user-select: none
-				.profile-buttonClose:hover
+				.profile-buttonOpen:hover
 					background-color: #fa8384
-				.profile-buttonOpen
+				.profile-buttonClose
 					background-color: rgb(59, 59, 59)
 					width: 50px
 					height: 50px
@@ -348,7 +376,7 @@ main
 						-moz-user-select: none
 						-khtml-user-select: none
 						-webkit-user-select: none
-				.profile-buttonOpen:hover
+				.profile-buttonClose:hover
 					background-color: #9b9797
 				.profile-buttonClose, .profile-buttonOpen
 					transition: 0.5s
@@ -364,7 +392,7 @@ main
 			padding-left: 30px
 			padding-right: 50px
 			.list
-				padding-top: 35px
+				margin-top: 35px
 				.topLine
 					padding-top: 15px
 					padding-bottom: 15px
@@ -401,7 +429,7 @@ main
 			font-size: 16px
 			font-family: 'MullerRegular'
 			color: #575757
-			margin-right: 25px
+			margin-right: 20px
 		span.lite
 			font-family: 'MullerLight'
 			color: #3b3b3b
