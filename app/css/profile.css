@@ -54,6 +54,11 @@
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
 }
 
+main section.contacts .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 main section.header .container {
   padding-top: 65px;
 }
@@ -110,6 +115,9 @@ main section.header .container .buttons {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -143,7 +151,7 @@ main section.header .container .buttons .button span {
 
 main section.personInf {
   padding-top: 60px;
-  padding-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 main section.personInf .container {
@@ -704,21 +712,24 @@ main section.appForm .collages, main section.promo .collages, main section.socia
   margin-top: 35px;
 }
 
+span.mob, .mob {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
+  body main section.header .container .buttons {
+    grid-gap: 5px;
+  }
   body main section.header .container .buttons .button span {
-    font-size: 13px;
-    text-align: center;
-  }
-  body main section.personInf .photo .button {
-    padding-left: 15px;
-  }
-  body main section.personInf .photo .button span {
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 1199px) {
+  body main section.personInf .container .iconQr img {
+    width: 100%;
+  }
   body main section.progressInf .hidden .list .topLine span {
     font-size: 12px;
   }
@@ -726,108 +737,258 @@ main section.appForm .collages, main section.promo .collages, main section.socia
 
 @media only screen and (max-width: 991px) {
   body main section.header .container .buttons {
-    grid-template-columns: repeat(3, 1fr);
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  body main section.personInf .photo .button, body main section.personInf .photo img.imgPerson {
-    margin-left: auto;
-    margin-right: auto;
+  body main section.header .container .buttons .button {
+    margin-top: 5px;
+    margin-right: 5px;
   }
-  body main section.personInf .photo .button {
-    width: 225px;
+  body main section.personInf {
+    padding-top: 40px;
   }
-  body main section.promo, body main section.socials, body main section.appForm, body main section.orders, body main section.sTicketInf, body main section.schedule, body main section.appointDiet, body main section.progressInf {
-    padding-left: 0;
+  body main section.personInf .container .iconQr {
+    padding-top: 0;
+    margin-left: 0;
   }
-  body main section.promo .head, body main section.socials .head, body main section.appForm .head, body main section.orders .head, body main section.sTicketInf .head, body main section.schedule .head, body main section.appointDiet .head, body main section.progressInf .head {
-    padding-left: 30px;
+  body main section.personInf .container .photo img.imgPerson {
+    width: 80%;
   }
-  body main section.promo .hidden, body main section.promo .content, body main section.socials .hidden, body main section.socials .content, body main section.appForm .hidden, body main section.appForm .content, body main section.orders .hidden, body main section.orders .content, body main section.sTicketInf .hidden, body main section.sTicketInf .content, body main section.schedule .hidden, body main section.schedule .content, body main section.appointDiet .hidden, body main section.appointDiet .content, body main section.progressInf .hidden, body main section.progressInf .content {
-    padding-left: 0px;
-    padding-right: 0px;
+  body main section.personInf .container .photo .button {
+    width: 80%;
   }
-  body main section.promo .hidden .list .topLine, body main section.promo .content .list .topLine, body main section.socials .hidden .list .topLine, body main section.socials .content .list .topLine, body main section.appForm .hidden .list .topLine, body main section.appForm .content .list .topLine, body main section.orders .hidden .list .topLine, body main section.orders .content .list .topLine, body main section.sTicketInf .hidden .list .topLine, body main section.sTicketInf .content .list .topLine, body main section.schedule .hidden .list .topLine, body main section.schedule .content .list .topLine, body main section.appointDiet .hidden .list .topLine, body main section.appointDiet .content .list .topLine, body main section.progressInf .hidden .list .topLine, body main section.progressInf .content .list .topLine {
+  body main section.personInf .container .text {
+    margin-top: 25px;
+  }
+  body main section.promo .hidden .list .badge {
+    margin-left: 7.5px;
+  }
+  body main section.appForm .head, body main section.promo .head, body main section.socials .head, body main section.orders .head, body main section.sTicketInf .head, body main section.schedule .head, body main section.appointDiet .head, body main section.progressInf .head {
+    padding-left: 40px;
+  }
+  body main section.appForm .container.contentBlock, body main section.promo .container.contentBlock, body main section.socials .container.contentBlock, body main section.orders .container.contentBlock, body main section.sTicketInf .container.contentBlock, body main section.schedule .container.contentBlock, body main section.appointDiet .container.contentBlock, body main section.progressInf .container.contentBlock {
+    padding-left: 25px;
+    padding-bottom: 30px;
+    padding-top: 25px;
+  }
+  body main section.appForm .container.contentBlock .head, body main section.promo .container.contentBlock .head, body main section.socials .container.contentBlock .head, body main section.orders .container.contentBlock .head, body main section.sTicketInf .container.contentBlock .head, body main section.schedule .container.contentBlock .head, body main section.appointDiet .container.contentBlock .head, body main section.progressInf .container.contentBlock .head {
+    padding-left: 20px;
+  }
+  body main section.appForm .container.contentBlock .head span.name, body main section.promo .container.contentBlock .head span.name, body main section.socials .container.contentBlock .head span.name, body main section.orders .container.contentBlock .head span.name, body main section.sTicketInf .container.contentBlock .head span.name, body main section.schedule .container.contentBlock .head span.name, body main section.appointDiet .container.contentBlock .head span.name, body main section.progressInf .container.contentBlock .head span.name {
+    font-size: 25px;
+  }
+  body main section.appForm .container.contentBlock .head .line, body main section.promo .container.contentBlock .head .line, body main section.socials .container.contentBlock .head .line, body main section.orders .container.contentBlock .head .line, body main section.sTicketInf .container.contentBlock .head .line, body main section.schedule .container.contentBlock .head .line, body main section.appointDiet .container.contentBlock .head .line, body main section.progressInf .container.contentBlock .head .line {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  body main section.appForm .hidden, body main section.appForm .content, body main section.promo .hidden, body main section.promo .content, body main section.socials .hidden, body main section.socials .content, body main section.orders .hidden, body main section.orders .content, body main section.sTicketInf .hidden, body main section.sTicketInf .content, body main section.schedule .hidden, body main section.schedule .content, body main section.appointDiet .hidden, body main section.appointDiet .content, body main section.progressInf .hidden, body main section.progressInf .content {
+    padding-left: 15px;
+  }
+  body main section.appForm .hidden .list .topLine, body main section.appForm .content .list .topLine, body main section.promo .hidden .list .topLine, body main section.promo .content .list .topLine, body main section.socials .hidden .list .topLine, body main section.socials .content .list .topLine, body main section.orders .hidden .list .topLine, body main section.orders .content .list .topLine, body main section.sTicketInf .hidden .list .topLine, body main section.sTicketInf .content .list .topLine, body main section.schedule .hidden .list .topLine, body main section.schedule .content .list .topLine, body main section.appointDiet .hidden .list .topLine, body main section.appointDiet .content .list .topLine, body main section.progressInf .hidden .list .topLine, body main section.progressInf .content .list .topLine {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  body main section.promo .hidden .list .topLine span, body main section.promo .content .list .topLine span, body main section.socials .hidden .list .topLine span, body main section.socials .content .list .topLine span, body main section.appForm .hidden .list .topLine span, body main section.appForm .content .list .topLine span, body main section.orders .hidden .list .topLine span, body main section.orders .content .list .topLine span, body main section.sTicketInf .hidden .list .topLine span, body main section.sTicketInf .content .list .topLine span, body main section.schedule .hidden .list .topLine span, body main section.schedule .content .list .topLine span, body main section.appointDiet .hidden .list .topLine span, body main section.appointDiet .content .list .topLine span, body main section.progressInf .hidden .list .topLine span, body main section.progressInf .content .list .topLine span {
-    font-size: 12.5px;
+  body main section.appForm .hidden .list .topLine span, body main section.appForm .content .list .topLine span, body main section.promo .hidden .list .topLine span, body main section.promo .content .list .topLine span, body main section.socials .hidden .list .topLine span, body main section.socials .content .list .topLine span, body main section.orders .hidden .list .topLine span, body main section.orders .content .list .topLine span, body main section.sTicketInf .hidden .list .topLine span, body main section.sTicketInf .content .list .topLine span, body main section.schedule .hidden .list .topLine span, body main section.schedule .content .list .topLine span, body main section.appointDiet .hidden .list .topLine span, body main section.appointDiet .content .list .topLine span, body main section.progressInf .hidden .list .topLine span, body main section.progressInf .content .list .topLine span {
+    font-size: 12px;
   }
-  body main section.promo span.b, body main section.socials span.b, body main section.appForm span.b, body main section.orders span.b, body main section.sTicketInf span.b, body main section.schedule span.b, body main section.appointDiet span.b, body main section.progressInf span.b {
-    font-family: 'MullerMedium';
-    font-size: 12.5px;
-    color: #323232;
+  body main section.appForm .hidden .list .line, body main section.appForm .content .list .line, body main section.promo .hidden .list .line, body main section.promo .content .list .line, body main section.socials .hidden .list .line, body main section.socials .content .list .line, body main section.orders .hidden .list .line, body main section.orders .content .list .line, body main section.sTicketInf .hidden .list .line, body main section.sTicketInf .content .list .line, body main section.schedule .hidden .list .line, body main section.schedule .content .list .line, body main section.appointDiet .hidden .list .line, body main section.appointDiet .content .list .line, body main section.progressInf .hidden .list .line, body main section.progressInf .content .list .line {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  body main section.promo span.gr, body main section.socials span.gr, body main section.appForm span.gr, body main section.orders span.gr, body main section.sTicketInf span.gr, body main section.schedule span.gr, body main section.appointDiet span.gr, body main section.progressInf span.gr {
-    font-size: 12.5px;
-    font-family: 'MullerRegular';
-    color: #575757;
-    margin-right: 25px;
-  }
-  body main section.promo span.lite, body main section.socials span.lite, body main section.appForm span.lite, body main section.orders span.lite, body main section.sTicketInf span.lite, body main section.schedule span.lite, body main section.appointDiet span.lite, body main section.progressInf span.lite {
-    font-family: 'MullerLight';
-    color: #3b3b3b;
-    font-size: 12.5px;
-  }
-  body main section.progressInf .hidden .topLine .container span {
-    font-size: 10px;
+  body main section.appForm .hidden .list .line span, body main section.appForm .content .list .line span, body main section.promo .hidden .list .line span, body main section.promo .content .list .line span, body main section.socials .hidden .list .line span, body main section.socials .content .list .line span, body main section.orders .hidden .list .line span, body main section.orders .content .list .line span, body main section.sTicketInf .hidden .list .line span, body main section.sTicketInf .content .list .line span, body main section.schedule .hidden .list .line span, body main section.schedule .content .list .line span, body main section.appointDiet .hidden .list .line span, body main section.appointDiet .content .list .line span, body main section.progressInf .hidden .list .line span, body main section.progressInf .content .list .line span {
+    font-size: 14px;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+  body main section.header .container .Outer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section.header .container .Outer .head {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  body main section.header .container .head {
+    margin-top: 35px;
+  }
+  body main section.header .container .head span.head {
+    font-size: 40px;
+  }
   body main section.header .container .buttons {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, auto);
   }
-  body main section.promo .head, body main section.socials .head, body main section.appForm .head, body main section.orders .head, body main section.sTicketInf .head, body main section.schedule .head, body main section.appointDiet .head, body main section.progressInf .head {
-    padding-left: 0px;
+  body main section.header .container .buttons a.button {
+    -webkit-box-ordinal-group: 7;
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6;
   }
-  body main section.promo .head .profile-buttonOpen, body main section.promo .head .profile-buttonClose, body main section.socials .head .profile-buttonOpen, body main section.socials .head .profile-buttonClose, body main section.appForm .head .profile-buttonOpen, body main section.appForm .head .profile-buttonClose, body main section.orders .head .profile-buttonOpen, body main section.orders .head .profile-buttonClose, body main section.sTicketInf .head .profile-buttonOpen, body main section.sTicketInf .head .profile-buttonClose, body main section.schedule .head .profile-buttonOpen, body main section.schedule .head .profile-buttonClose, body main section.appointDiet .head .profile-buttonOpen, body main section.appointDiet .head .profile-buttonClose, body main section.progressInf .head .profile-buttonOpen, body main section.progressInf .head .profile-buttonClose {
-    width: 40px;
-    height: 40px;
+  body main section.personInf .container .photo img.imgPerson {
+    width: 70%;
   }
-  body main section.promo .hidden .list .topLine .container span, body main section.promo .content .list .topLine .container span, body main section.socials .hidden .list .topLine .container span, body main section.socials .content .list .topLine .container span, body main section.appForm .hidden .list .topLine .container span, body main section.appForm .content .list .topLine .container span, body main section.orders .hidden .list .topLine .container span, body main section.orders .content .list .topLine .container span, body main section.sTicketInf .hidden .list .topLine .container span, body main section.sTicketInf .content .list .topLine .container span, body main section.schedule .hidden .list .topLine .container span, body main section.schedule .content .list .topLine .container span, body main section.appointDiet .hidden .list .topLine .container span, body main section.appointDiet .content .list .topLine .container span, body main section.progressInf .hidden .list .topLine .container span, body main section.progressInf .content .list .topLine .container span {
-    font-size: 10px;
+  body main section.personInf .container .photo .button {
+    width: 70%;
   }
-  body main section.promo span.b, body main section.socials span.b, body main section.appForm span.b, body main section.orders span.b, body main section.sTicketInf span.b, body main section.schedule span.b, body main section.appointDiet span.b, body main section.progressInf span.b {
-    font-family: 'MullerMedium';
-    font-size: 10px;
-    color: #323232;
+  body main section.personInf .container .iconQr {
+    margin-top: 25px;
   }
-  body main section.promo span.gr, body main section.socials span.gr, body main section.appForm span.gr, body main section.orders span.gr, body main section.sTicketInf span.gr, body main section.schedule span.gr, body main section.appointDiet span.gr, body main section.progressInf span.gr {
-    font-size: 10px;
-    font-family: 'MullerRegular';
-    color: #575757;
-    margin-right: 25px;
+  body main section.promo .container.contentBlock .hidden .list .topLine, body main section.promo .container.contentBlock .hidden .list .line {
+    grid-template-columns: 1fr;
+    padding-right: 50px;
   }
-  body main section.promo span.lite, body main section.socials span.lite, body main section.appForm span.lite, body main section.orders span.lite, body main section.sTicketInf span.lite, body main section.schedule span.lite, body main section.appointDiet span.lite, body main section.progressInf span.lite {
-    font-family: 'MullerLight';
-    color: #3b3b3b;
-    font-size: 10px;
+  body main section.promo .container.contentBlock .hidden .list .topLine span.desk, body main section.promo .container.contentBlock .hidden .list .line span.desk {
+    display: none;
   }
-  body main section.progressInf .hidden .topLine .container span {
-    font-size: 8px;
+  body main section.promo .container.contentBlock .hidden .list .topLine span.mob, body main section.promo .container.contentBlock .hidden .list .line span.mob {
+    display: block;
   }
-  body main section.progressInf .hidden .topLine .container .col {
-    width: auto;
-    padding-left: 2.5px;
-    padding-right: 2.5px;
+  body main section.appForm .container.contentBlock, body main section.promo .container.contentBlock, body main section.socials .container.contentBlock, body main section.orders .container.contentBlock, body main section.sTicketInf .container.contentBlock, body main section.schedule .container.contentBlock, body main section.appointDiet .container.contentBlock, body main section.progressInf .container.contentBlock {
+    padding-left: 15px;
+  }
+  body main section.appForm .container.contentBlock .head, body main section.promo .container.contentBlock .head, body main section.socials .container.contentBlock .head, body main section.orders .container.contentBlock .head, body main section.sTicketInf .container.contentBlock .head, body main section.schedule .container.contentBlock .head, body main section.appointDiet .container.contentBlock .head, body main section.progressInf .container.contentBlock .head {
+    padding-left: 0;
+  }
+  body main section.appForm .container.contentBlock .head span.name, body main section.promo .container.contentBlock .head span.name, body main section.socials .container.contentBlock .head span.name, body main section.orders .container.contentBlock .head span.name, body main section.sTicketInf .container.contentBlock .head span.name, body main section.schedule .container.contentBlock .head span.name, body main section.appointDiet .container.contentBlock .head span.name, body main section.progressInf .container.contentBlock .head span.name {
+    font-size: 22px;
+  }
+  body main section.appForm .container.contentBlock .head .profile-buttonOpen, body main section.promo .container.contentBlock .head .profile-buttonOpen, body main section.socials .container.contentBlock .head .profile-buttonOpen, body main section.orders .container.contentBlock .head .profile-buttonOpen, body main section.sTicketInf .container.contentBlock .head .profile-buttonOpen, body main section.schedule .container.contentBlock .head .profile-buttonOpen, body main section.appointDiet .container.contentBlock .head .profile-buttonOpen, body main section.progressInf .container.contentBlock .head .profile-buttonOpen {
+    width: 30px;
+    height: 30px;
+  }
+  body main section.appForm .container.contentBlock .head .profile-buttonOpen img, body main section.promo .container.contentBlock .head .profile-buttonOpen img, body main section.socials .container.contentBlock .head .profile-buttonOpen img, body main section.orders .container.contentBlock .head .profile-buttonOpen img, body main section.sTicketInf .container.contentBlock .head .profile-buttonOpen img, body main section.schedule .container.contentBlock .head .profile-buttonOpen img, body main section.appointDiet .container.contentBlock .head .profile-buttonOpen img, body main section.progressInf .container.contentBlock .head .profile-buttonOpen img {
+    width: 10px;
+  }
+  body main section.appForm .container.contentBlock .head .profile-buttonClose, body main section.promo .container.contentBlock .head .profile-buttonClose, body main section.socials .container.contentBlock .head .profile-buttonClose, body main section.orders .container.contentBlock .head .profile-buttonClose, body main section.sTicketInf .container.contentBlock .head .profile-buttonClose, body main section.schedule .container.contentBlock .head .profile-buttonClose, body main section.appointDiet .container.contentBlock .head .profile-buttonClose, body main section.progressInf .container.contentBlock .head .profile-buttonClose {
+    width: 30px;
+    height: 30px;
+  }
+  body main section.appForm .container.contentBlock .head .profile-buttonClose img, body main section.promo .container.contentBlock .head .profile-buttonClose img, body main section.socials .container.contentBlock .head .profile-buttonClose img, body main section.orders .container.contentBlock .head .profile-buttonClose img, body main section.sTicketInf .container.contentBlock .head .profile-buttonClose img, body main section.schedule .container.contentBlock .head .profile-buttonClose img, body main section.appointDiet .container.contentBlock .head .profile-buttonClose img, body main section.progressInf .container.contentBlock .head .profile-buttonClose img {
+    width: 10px;
+  }
+  body main section.appForm .container.contentBlock .head .profile-buttonClose, body main section.appForm .container.contentBlock .head .profile-buttonOpen, body main section.promo .container.contentBlock .head .profile-buttonClose, body main section.promo .container.contentBlock .head .profile-buttonOpen, body main section.socials .container.contentBlock .head .profile-buttonClose, body main section.socials .container.contentBlock .head .profile-buttonOpen, body main section.orders .container.contentBlock .head .profile-buttonClose, body main section.orders .container.contentBlock .head .profile-buttonOpen, body main section.sTicketInf .container.contentBlock .head .profile-buttonClose, body main section.sTicketInf .container.contentBlock .head .profile-buttonOpen, body main section.schedule .container.contentBlock .head .profile-buttonClose, body main section.schedule .container.contentBlock .head .profile-buttonOpen, body main section.appointDiet .container.contentBlock .head .profile-buttonClose, body main section.appointDiet .container.contentBlock .head .profile-buttonOpen, body main section.progressInf .container.contentBlock .head .profile-buttonClose, body main section.progressInf .container.contentBlock .head .profile-buttonOpen {
+    margin-left: 10px;
+  }
+  body main section.appForm .hidden, body main section.appForm .content, body main section.promo .hidden, body main section.promo .content, body main section.socials .hidden, body main section.socials .content, body main section.orders .hidden, body main section.orders .content, body main section.sTicketInf .hidden, body main section.sTicketInf .content, body main section.schedule .hidden, body main section.schedule .content, body main section.appointDiet .hidden, body main section.appointDiet .content, body main section.progressInf .hidden, body main section.progressInf .content {
+    padding-right: 0px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body main section.header .container .buttons .button {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  body main section.header .container .buttons .button span {
+    font-size: 13px;
+  }
+  body main section.personInf .container .text .line {
+    padding-left: 50px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  body main section.socials .hidden .socialIcons {
-    padding-left: 0;
+  body main section.header .container .head {
+    margin-top: 15px;
   }
-  body main section.promo .head span.name, body main section.socials .head span.name, body main section.appForm .head span.name, body main section.orders .head span.name, body main section.sTicketInf .head span.name, body main section.schedule .head span.name, body main section.appointDiet .head span.name, body main section.progressInf .head span.name {
-    line-height: 1.2;
+  body main section.header .container .head span.head {
+    font-size: 30px;
   }
-  body main section.promo .hidden .topLine .container span, body main section.promo .content .topLine .container span, body main section.socials .hidden .topLine .container span, body main section.socials .content .topLine .container span, body main section.appForm .hidden .topLine .container span, body main section.appForm .content .topLine .container span, body main section.orders .hidden .topLine .container span, body main section.orders .content .topLine .container span, body main section.sTicketInf .hidden .topLine .container span, body main section.sTicketInf .content .topLine .container span, body main section.schedule .hidden .topLine .container span, body main section.schedule .content .topLine .container span, body main section.appointDiet .hidden .topLine .container span, body main section.appointDiet .content .topLine .container span, body main section.progressInf .hidden .topLine .container span, body main section.progressInf .content .topLine .container span {
-    line-height: 1.2;
+  body main section.header .container .buttons {
+    margin-top: 15px;
   }
-  body main section.schedule .content .topLine .container .col {
-    width: auto;
-    padding-left: 2.5px;
-    padding-right: 2.5px;
+  body main section.header .container .buttons .button {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  body main section.header .container .buttons .button span.desk {
+    display: none;
+  }
+  body main section.header .container .buttons .button span.mob {
+    display: block;
+  }
+  body main section.socials .container.contentBlock .hidden .list.desk {
+    display: none;
+  }
+  body main section.socials .container.contentBlock .hidden .list.mob {
+    display: block;
+    border: none;
+  }
+  body main section.socials .container.contentBlock .hidden .list.mob .topLine, body main section.socials .container.contentBlock .hidden .list.mob .line {
+    grid-template-columns: 1fr;
+  }
+  body main section.appForm .container.contentBlock .head .line, body main section.promo .container.contentBlock .head .line, body main section.socials .container.contentBlock .head .line, body main section.orders .container.contentBlock .head .line, body main section.sTicketInf .container.contentBlock .head .line, body main section.schedule .container.contentBlock .head .line, body main section.appointDiet .container.contentBlock .head .line, body main section.progressInf .container.contentBlock .head .line {
+    display: none;
+  }
+  body main section.appForm .container.contentBlock .head .profile-buttonOpen, body main section.appForm .container.contentBlock .head .profile-buttonClose, body main section.promo .container.contentBlock .head .profile-buttonOpen, body main section.promo .container.contentBlock .head .profile-buttonClose, body main section.socials .container.contentBlock .head .profile-buttonOpen, body main section.socials .container.contentBlock .head .profile-buttonClose, body main section.orders .container.contentBlock .head .profile-buttonOpen, body main section.orders .container.contentBlock .head .profile-buttonClose, body main section.sTicketInf .container.contentBlock .head .profile-buttonOpen, body main section.sTicketInf .container.contentBlock .head .profile-buttonClose, body main section.schedule .container.contentBlock .head .profile-buttonOpen, body main section.schedule .container.contentBlock .head .profile-buttonClose, body main section.appointDiet .container.contentBlock .head .profile-buttonOpen, body main section.appointDiet .container.contentBlock .head .profile-buttonClose, body main section.progressInf .container.contentBlock .head .profile-buttonOpen, body main section.progressInf .container.contentBlock .head .profile-buttonClose {
+    justify-self: right;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body main section.header .container .buttons {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  body main section.header .container .buttons .button {
+    height: 35px;
+  }
+  body main section.header .container .buttons .button span {
+    font-size: 10px;
+  }
+  body main section.personInf .container {
+    padding-top: 20px;
+  }
+  body main section.personInf .container .photo img.imgPerson {
+    width: 100%;
+  }
+  body main section.personInf .container .photo .button {
+    width: 100%;
+  }
+  body main section.personInf .container .text .line {
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: 37% 63%;
+  }
+  body main section.personInf .container .text .line .item .buttonCancel {
+    margin-left: 10px;
+  }
+  body main section.promo .container.contentBlock .hidden .list .line .badge .tooltip .tooltip-inner {
+    margin-left: -40px;
+  }
+  body main section.appForm .container.contentBlock .head span.name, body main section.promo .container.contentBlock .head span.name, body main section.socials .container.contentBlock .head span.name, body main section.orders .container.contentBlock .head span.name, body main section.sTicketInf .container.contentBlock .head span.name, body main section.schedule .container.contentBlock .head span.name, body main section.appointDiet .container.contentBlock .head span.name, body main section.progressInf .container.contentBlock .head span.name {
+    font-size: 18px;
+  }
+  body main section.appForm .container.contentBlock .hidden p.desc, body main section.appForm .container.contentBlock .content p.desc, body main section.promo .container.contentBlock .hidden p.desc, body main section.promo .container.contentBlock .content p.desc, body main section.socials .container.contentBlock .hidden p.desc, body main section.socials .container.contentBlock .content p.desc, body main section.orders .container.contentBlock .hidden p.desc, body main section.orders .container.contentBlock .content p.desc, body main section.sTicketInf .container.contentBlock .hidden p.desc, body main section.sTicketInf .container.contentBlock .content p.desc, body main section.schedule .container.contentBlock .hidden p.desc, body main section.schedule .container.contentBlock .content p.desc, body main section.appointDiet .container.contentBlock .hidden p.desc, body main section.appointDiet .container.contentBlock .content p.desc, body main section.progressInf .container.contentBlock .hidden p.desc, body main section.progressInf .container.contentBlock .content p.desc {
+    font-size: 14px;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .line, body main section.appForm .container.contentBlock .hidden .list .topLine, body main section.appForm .container.contentBlock .content .list .line, body main section.appForm .container.contentBlock .content .list .topLine, body main section.promo .container.contentBlock .hidden .list .line, body main section.promo .container.contentBlock .hidden .list .topLine, body main section.promo .container.contentBlock .content .list .line, body main section.promo .container.contentBlock .content .list .topLine, body main section.socials .container.contentBlock .hidden .list .line, body main section.socials .container.contentBlock .hidden .list .topLine, body main section.socials .container.contentBlock .content .list .line, body main section.socials .container.contentBlock .content .list .topLine, body main section.orders .container.contentBlock .hidden .list .line, body main section.orders .container.contentBlock .hidden .list .topLine, body main section.orders .container.contentBlock .content .list .line, body main section.orders .container.contentBlock .content .list .topLine, body main section.sTicketInf .container.contentBlock .hidden .list .line, body main section.sTicketInf .container.contentBlock .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .content .list .line, body main section.sTicketInf .container.contentBlock .content .list .topLine, body main section.schedule .container.contentBlock .hidden .list .line, body main section.schedule .container.contentBlock .hidden .list .topLine, body main section.schedule .container.contentBlock .content .list .line, body main section.schedule .container.contentBlock .content .list .topLine, body main section.appointDiet .container.contentBlock .hidden .list .line, body main section.appointDiet .container.contentBlock .hidden .list .topLine, body main section.appointDiet .container.contentBlock .content .list .line, body main section.appointDiet .container.contentBlock .content .list .topLine, body main section.progressInf .container.contentBlock .hidden .list .line, body main section.progressInf .container.contentBlock .hidden .list .topLine, body main section.progressInf .container.contentBlock .content .list .line, body main section.progressInf .container.contentBlock .content .list .topLine {
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body main section.header .container .buttons .button {
+    height: 25px;
   }
 }

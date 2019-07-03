@@ -56,32 +56,34 @@
         <div class="text"><span class="phone">+7 (495) 71-71-01</span><br><span class="desc">Ежедневно с 10:00-20:00 <br/>(Сб-Вс  10:00-17:00)</span></div>
       </div>
     </header>
-    <main> 
+    <main class="container-fluid">
       <section class="header">
         <div class="container"><span class="breadcrumbs">Главная / <span class="active">Личный кабинет</span></span>
-          <div class="head">
-            <div class="row">
-              <div class="col-12"><span class="head">Личный кабинет</span></div>
+          <div class="Outer">
+            <div class="head">
+              <div class="row">
+                <div class="col-12"><span class="head">Личный кабинет</span></div>
+              </div>
             </div>
-          </div>
-          <div class="buttons">
-            <div class="header-scrollTo-btn button active d-flex align-items-center justify-content-center" onclick="$.scrollTo('.personInf', 500);"><span>Общая информация</span></div>
-            <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.orders', 500);"><span>Заказы BodyEvolution</span></div>
-            <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.sTicket', 500);"><span>Абонементы</span></div>
-            <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.stats', 500);"><span>Твой прогресс</span></div><a class="button d-flex align-items-center justify-content-center" href="#"><span>Видео-лекции</span></a>
-            <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.appointDiet', 500);"><span>Запись к диетологу</span></div>
+            <div class="buttons">
+              <div class="header-scrollTo-btn button active d-flex align-items-center justify-content-center" onclick="$.scrollTo('.personInf', 500);"><span>Общая информация</span></div>
+              <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.orders', 500);"><span class="desk">Заказы BodyEvolution</span><span class="mob">BodyEvolution</span></div>
+              <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.sTicket', 500);"><span>Абонементы</span></div>
+              <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.stats', 500);"><span>Твой прогресс</span></div><a class="button d-flex align-items-center justify-content-center" href="#"><span>Видео-лекции</span></a>
+              <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.appointDiet', 500);"><span>Запись к диетологу</span></div>
+            </div>
           </div>
         </div>
       </section>
       <section class="personInf">
         <div class="container">
           <div class="row">
-            <div class="col-3">
-              <div class="photo"><img class="imgPerson img-fluid d-block" src="img/profile/profile-personInf-photo.jpg" alt="profile-personInf-photo">
+            <div class="col-12 col-md-6 order-1 col-lg-3">
+              <div class="photo d-flex flex-column align-items-center justify-content-center"><img class="imgPerson img-fluid d-block" src="img/profile/profile-personInf-photo.jpg" alt="profile-personInf-photo">
                 <div class="button d-flex align-items-center justify-content-around"><span>Загрузить фотографию</span></div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 order-3 order-lg-2 col-lg-6">
               <div class="text">
                 <div class="line gray">
                   <div class="item itemB">Имя</div>
@@ -111,8 +113,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="iconQr"><img src="img/profile/QR.png" alt="QR.png"></div>
+            <div class="col-12 col-md-6 order-2 order-lg-3 col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="iconQr d-flex align-items-center justify-content-center"><img src="img/profile/QR.png" alt="QR.png"></div>
             </div>
           </div>
         </div>
@@ -127,7 +129,7 @@
           <div class="hidden" style="display: none;">
             <p class="desc">Поделитесь промокодом со своей близкой подругой или не очень и получите личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution</p>
             <div class="list">
-              <div class="topLine"><span>Название</span><span>Номер</span></div>
+              <div class="topLine"><span class="desk">Название</span><span class="desk">Номер</span><span class="mob">Название и номер</span></div>
               <div class="line gray"><span class="text bb">на скидку 1000 руб., действителен до 22 июня 2019 г., 11:49:41 
                   <div class="badge badge1" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="&lt;div class='name'&gt;Правила:&lt;/div&gt;&lt;ol&gt;&lt;li&gt;Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.&lt;/li&gt;&lt;li&gt;После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.&lt;/li&gt;&lt;li&gt;На занятия по абонементам данный промокод не распространяется.&lt;/li&gt;&lt;/ol&gt;" data-container=".badge1">
                     <div class="inner"></div>
@@ -154,235 +156,17 @@
           <div class="hidden" style="display: none;">
             <p class="desc">Вы можете привязать к своему профилю свой аккаунт в социальной сети, это позволит вам авторизоваться в один клик.</p>
             <p class="desc">Нажмите на кнопку той социальной сети, через которую вы хотите входить в свой единый профиль. В открывшемся окне соцсети подтвердите разрешение на авторизацию. Вход через социальную сеть будет разрешен автоматически. Профиль будет дозаполнен открытыми данными, полученными из вашего аккаунта в социальной сети. </p>
-            <div class="list">
+            <div class="list desk">
               <div class="topLine"><span>Доступные к привязке:</span><span>Привязанные:</span></div>
               <div class="line gray"><img class="social" src="img/profile/profile-socials-icon1.jpg" alt="profile-socials-icon1"><img class="social" src="img/profile/profile-socials-icon3.jpg" alt="profile-socials-icon3"></div>
               <div class="line"><img class="social" src="img/profile/profile-socials-icon2.jpg" alt="profile-socials-icon2"></div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="appForm">
-        <div class="container contentBlock">
-          <div class="head"><span class="name">Анкета</span>
-            <div class="line"></div>
-            <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-            <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
-          </div>
-          <div class="hidden" style="display: none;">
-            <div class="list">
-              <div class="topLine"><span>Введите данные</span></div>
-              <div class="line gray"><span class="bb">ФИО</span><span>Петрова</span></div>
-              <div class="line"><span class="bb">Укажите ваш Инстаграм</span></div>
-              <div class="line gray"><span class="bb">День рождения</span></div>
-              <div class="line"><span class="bb">Рост</span></div>
-              <div class="line gray"><span class="bb">Вес</span></div>
-              <div class="line"><span class="bb">ИМТ</span></div>
-              <div class="line gray"><span class="bb">Желаемый вес</span></div>
-              <div class="line"><span class="bb">Цель занятий</span></div>
-              <div class="fullAppForm">
-                <div class="head d-flex justify-content-between"><span class="name">Вся анкета</span>
-                  <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-                  <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
-                </div>
-                <div class="hidden" style="display: none;">
-                  <div class="line gray"><span class="bb">Есть ли у вас мечта, которая должна непременно осуществиться вместе с обретенной стройностью фигуры?</span><span>тест</span></div>
-                  <div class="line"><span class="bb">Вегетарианец?</span><span>нет</span></div>
-                  <div class="line gray"><span class="bb">Непереносимость продуктов если есть и каких?</span></div>
-                  <div class="line"><span class="bb">Занимались ли вы до этого курса физическими нагрузками (фитнес, танцы, групповые программы)?</span><span>тест</span></div>
-                  <div class="line gray"><span class="bb">Какое время назад и как долго?</span><span>тест</span></div>
-                  <div class="line"><span class="bb">Сколько раз сейчас физические нагрузки в неделю, если есть (йога, танцы, тренажерный зал и т.д.)?</span><span>тест</span></div>
-                  <div class="line gray"><span class="bb">Как питаетесь сейчас?</span><span>тест</span></div>
-                  <div class="line"><span class="bb">Сколько раз в день?</span><span>тест</span></div>
-                  <div class="line gray"><span class="bb">Какие продукты?</span><span>тест</span></div>
-                  <div class="line"><span class="bb">Сколько пьете воды?</span><span>тест</span></div>
-                  <div class="line gray"><span class="bb">Принимаете ли вы какие-то гормональные или лекарственные препараты , или витаминные комплексы?</span><span>тест</span></div>
-                  <div class="line"><span class="bb">Являетесь ли вы кормящей мамой ? Если да, то как давно?</span><span>тест</span></div>
-                  <div class="line gray"><span class="bb">Есть ли заболевания опорно-двигательного аппарата (спина, колени, шея, грыжи, сколиоз, мениски)?</span><span>тест</span></div>
-                  <div class="line"><span class="bb">Есть ли заболевания сердечно-сосудистой системы (тахикардия, аритмия, гипертония, гипотония)?</span><span>тест</span></div>
-                  <div class="line gray"><span class="bb">Есть ли заболевания желудочно-кишечного тракта (гастрит, язва и др.)?</span><span>тест</span></div>
-                  <div class="line"><span class="bb">Есть ли заболевания моче-выделительной системы (камни в почках, пиелонефрит, цистит и др.)?</span><span>тест</span></div>
-                  <div class="line gray"><span class="bb">Есть ли заболевания внутренних органов, которые здесь не представлены?</span><span>тест</span></div>
-                  <div class="line"><span class="bb">Были ли травмы или операции? Если да, то как давно?</span><span>тест</span></div>
-                  <div class="line gray"><span class="bb">Заболевания эндокринной системы? ( щитовидная железа, поджелудочная железа, надпочечники )</span><span>тест</span></div>
-                  <div class="line"><span class="bb">Как вы о нас узнали?</span><span>тест</span></div>
-                  <div class="line gray"><span class="bb">Есть ли аллергия или непереносимость продуктов: рыба?</span><span>Нет</span></div>
-                  <div class="line"><span class="bb">Есть ли аллергия или непереносимость продуктов: морепродукты?</span><span>Да</span></div>
-                  <div class="line gray"><span class="bb">Есть ли аллергия или непереносимость продуктов: птица?</span><span>Нет</span></div>
-                  <div class="line"><span class="bb">Есть ли аллергия или непереносимость продуктов: говядина?</span><span>Да</span></div>
-                  <div class="line gray"><span class="bb">Есть ли аллергия или непереносимость продуктов: творог?</span><span>Нет</span></div>
-                  <div class="line"><span class="bb">Есть ли аллергия или непереносимость продуктов: орехи?</span><span>Нет</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="orders">
-        <div class="container contentBlock">
-          <div class="head"><span class="name">Заказы</span>
-            <div class="line"></div>
-            <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-            <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
-          </div>
-          <div class="hidden" style="display: none;">
-            <div class="buttons d-flex">
-              <div class="button orders-buttonUnpaid active d-flex align-items-center justify-content-center"><span>Без оплаты</span></div>
-              <div class="button orders-buttonPaid d-flex align-items-center justify-content-center"><span>Оплачено</span></div>
-            </div>
-            <div class="list orders-listUnpaid">
-              <div class="topLine"><span>Заказ #</span><span>Название</span><span>Время создания</span></div>
-              <div class="line gray"><span class="b">02784</span><span class="b">Ягодицы+Ноги+Пресс</span>
-                <div class="date"><span class="gr">09.05, СР</span><span class="gr">19:00</span></div>
-                <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
-              </div>
-              <div class="line"><span class="b">06587</span><span class="b">Smart LadyFit</span>
-                <div class="date"><span class="gr">10.05, ЧТ</span><span class="gr">19:00</span></div>
-                <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
-              </div>
-              <div class="line gray"><span class="b">88975</span><span class="b">Ягодицы+Ноги+Пресс</span>
-                <div class="date"><span class="gr">09.05, СР</span><span class="gr">19:00</span></div>
-                <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
-              </div>
-            </div>
-            <div class="list orders-listPaid" style="display: none;">
-              <div class="topLine"><span>Заказ #</span><span>Название</span><span>Дата поступления средств</span></div>
-              <div class="line gray"><span class="b">02784</span><span class="b">Ягодицы+Ноги+Пресс</span>
-                <div class="date"><span class="gr">25.06.19 </span><span class="gr">18:24:02</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="sTicketInf">
-        <div class="container contentBlock">
-          <div class="sTicket">
-            <div class="head"><span class="name">Абонементы</span>
-              <div class="line"></div>
-              <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-              <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
-            </div>
-            <div class="hidden" style="display: none;">
-              <div class="buttons d-flex">
-                <div class="button orders-buttonUnpaid active d-flex align-items-center justify-content-center" id="profile-buttonUnpaid-sTicket"><span>Без оплаты</span></div>
-                <div class="button orders-buttonPaid d-flex align-items-center justify-content-center" id="profile-buttonPaid-sTicket"><span>Оплачено</span></div>
-              </div>
-              <div class="list orders-listUnpaid">
-                <div class="topLine"><span>Заказ #</span><span>Урок</span><span>Цена</span><span>Со скидкой</span></div>
-                <div class="line gray"><span class="b">25213</span><span class="b">Абонемент 2</span><span>3000 р.</span><span>2800 р.</span>
-                  <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
-                </div>
-              </div>
-              <div class="list orders-listPaid" style="display: none;">
-                <div class="topLine"><span>Заказ #</span><span>Урок</span><span>Цена</span><span>Со скидкой</span></div>
-                <div class="line gray"><span class="b">25214</span><span class="b">Абонемент 3</span><span>3000 р.</span><span>2800 р.</span>
-                  <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
-                </div>
-              </div>
-              <div class="list orders-listPaid" style="display: none;"></div>
-            </div>
-          </div>
-          <div class="schedule">
-            <div class="head"><span class="name">Расписание</span>
-              <div class="line"></div>
-              <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-              <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
-            </div>
-            <div class="hidden schedule-Unpaid" style="display: none;">
-              <div class="list">
-                <div class="topLine"><span>Название курса</span><span>Дата</span><span>Время</span><span>Зал</span></div>
-                <div class="line gray"><span class="b">Ягодицы+Ноги+Пресс</span><span>03 июля 2019 г.</span><span>20:00</span><span>21</span></div>
-                <div class="line"><span class="b">Ягодицы+Ноги+Пресс</span><span>03 июля 2019 г.</span><span>20:00</span><span>21</span></div>
-              </div>
-            </div>
-            <div class="schedule-Paid" style="display: none;">
-              <div class="list">
-                <div class="topLine"><span>Название курса</span><span>Дата</span><span>Время</span><span>Зал</span></div>
-                <div class="line gray"><span class="b">Ягодицы+Ноги+Пресс</span><span>03 июля 2019 г.</span><span>20:00</span><span>21</span>
-                  <div class="buttonPay d-flex align-items-center justify-content-center"><span>Перенести</span></div>
-                </div>
-                <div class="line"><span class="b">Ягодицы+Ноги+Пресс</span><span>03 июля 2019 г.</span><span>20:00</span><span>21</span>
-                  <div class="buttonPay d-flex align-items-center justify-content-center"><span>Перенести</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="appointDiet">
-        <div class="container contentBlock">
-          <div class="head"><span class="name">Запись к диетологу</span>
-            <div class="line"></div>
-            <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-            <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
-          </div>
-          <div class="hidden" style="display: none;">
-            <div class="buttons d-flex">
-              <div class="button orders-buttonUnpaid active d-flex align-items-center justify-content-center"><span>Без оплаты</span></div>
-              <div class="button orders-buttonPaid d-flex align-items-center justify-content-center"><span>Оплачено</span></div>
-            </div>
-            <div class="list orders-listUnpaid">
-              <div class="topLine"><span>Наименование консультации</span><span>Цена</span><span>Со скидкой</span></div>
-              <div class="line gray"><span class="b">Ягодицы+Ноги+Пресс</span><span class="gr">2000 р.</span><span class="gr">2000 р.</span>
-                <div class="buttonPay d-flex align-items-center justify-content-center"><span>Оплатить</span></div>
-              </div>
-            </div>
-            <div class="list orders-listPaid" style="display: none;">
-              <div class="topLine"><span>Наименование консультации</span><span>Время прохождения</span></div>
-              <div class="line gray"><span class="b">Ягодицы+Ноги+Пресс</span>
-                <div class="time"><span class="gr">26.06.19</span><span class="gr">12:00</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="progressInf">
-        <div class="container contentBlock">
-          <div class="stats">
-            <div class="head"><span class="name">Твой прогресс</span>
-              <div class="line"></div>
-              <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-              <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
-            </div>
-            <div class="hidden" style="display: none;">
-              <div class="list">
-                <div class="topLine"><span>Создано</span><span>Вес</span><span>Талия</span><span>Живот</span><span>Бёдра</span><span>Имт</span><span>Изображение</span></div>
-                <div class="line gray"><span class="gr">25.06.19 <span class="time">22:34:39</span></span>
-                  <div class="item d-flex"><span class="m">75</span>
-                    <div class="circle-progress d-flex align-items-center justify-content-center">-5</div>
-                  </div>
-                  <div class="item d-flex"><span class="m small">79</span>
-                    <div class="circle-progress d-flex align-items-center justify-content-center">-8</div>
-                  </div>
-                  <div class="item d-flex"><span class="m small">85</span>
-                    <div class="circle-progress d-flex align-items-center justify-content-center">-11</div>
-                  </div>
-                  <div class="item d-flex"><span class="m small">100</span>
-                    <div class="circle-progress d-flex align-items-center justify-content-center">-15</div>
-                  </div>
-                  <div class="item d-flex"><span class="m small">27.9</span>
-                    <div class="circle-progress d-flex align-items-center justify-content-center">-1.8</div>
-                  </div><img src="img/profile/stats-icon1.png" alt="stats-icon1.png">
-                </div>
-                <div class="line"><span class="gr">25.06.19 <span class="time">22:34:39</span></span><span class="m">75</span><span class="m small">79</span><span class="m small">85</span><span class="m small">100</span><span class="m small">27.9</span><img src="img/profile/stats-icon2.png" alt="stats-icon2.png"></div>
-              </div>
-            </div>
-          </div>
-          <div class="collages">
-            <div class="head"><span class="name">Коллажи</span>
-              <div class="line"></div>
-              <div class="profile-buttonOpen align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowDown.png" alt="profile-arrowDown"></div>
-              <div class="profile-buttonClose align-items-center justify-content-center"><img class="arrow" src="img/profile/profile-arrowUp.png" alt="profile-arrowUp.png"></div>
-            </div>
-            <div class="hidden" style="display: none;">
-              <div class="d-flex">
-                <div class="item">
-                  <div class="borderOuter"><img src="img/profile/collages-item1.png" alt="collages-item1.png"></div><span class="name">#Группа 01_Июнь</span>
-                </div>
-                <div class="item">
-                  <div class="borderOuter"><img src="img/profile/collages-item2.png" alt="collages-item2.png"></div><span class="name">#Группа 01_Июнь</span>
-                </div>
-              </div>
+            <div class="list mob">
+              <div class="topLine"><span>Доступные к привязке:</span></div>
+              <div class="line gray"><img class="social" src="img/profile/profile-socials-icon1.jpg" alt="profile-socials-icon1"></div>
+              <div class="line"><img class="social" src="img/profile/profile-socials-icon2.jpg" alt="profile-socials-icon2"></div>
+              <div class="topLine"><span>Привязанные</span></div>
+              <div class="line gray"><img class="social" src="img/profile/profile-socials-icon3.jpg" alt="profile-socials-icon3"></div>
             </div>
           </div>
         </div>

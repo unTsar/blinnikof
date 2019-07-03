@@ -2,6 +2,10 @@
 @import "fonts"
 
 main
+	section.contacts
+		.container
+			padding-left: 0
+			padding-right: 0
 	section.header
 		.container
 			padding-top: 65px
@@ -40,6 +44,7 @@ main
 			.buttons
 				margin-top: 35px
 				display: flex
+				flex-wrap: wrap
 				justify-content: space-between
 				.button:hover, .button.active
 					background-color: #ff2e2f
@@ -59,7 +64,7 @@ main
 						letter-spacing: 0.25px
 	section.personInf
 		padding-top: 60px
-		padding-bottom: 25px
+		margin-bottom: 35px
 		.container
 			background-color: #fff
 			padding-top: 40px
@@ -443,26 +448,28 @@ main
 			font-weight: bold
 		.collages
 			margin-top: 35px
+
+span.mob, .mob
+		display: none
 @media only screen and(max-width: 1200px)
 	body
 		main
 			section.header
 				.container
 					.buttons
+						grid-gap: 5px
 						.button
 							span
-								font-size: 13px
+								font-size: 14px
 								text-align: center
-			section.personInf
-				.photo
-					.button
-						padding-left: 15px
-						span
-							font-size: 12px
-							text-align: center
 @media only screen and(max-width: 1199px)
 	body
 		main
+			section.personInf
+				.container
+					.iconQr
+						img
+							width: 100%
 			section.progressInf
 				.hidden
 					.list
@@ -475,112 +482,229 @@ main
 			section.header
 				.container
 					.buttons
-						grid-template-columns: repeat(3, 1fr)
+						justify-content: flex-start
+						.button
+							margin-top: 5px
+							margin-right: 5px
 			section.personInf
-				.photo
-					.button, img.imgPerson
-						margin-left: auto
-						margin-right: auto
-					.button
-						width: 225px
-			section.promo, section.socials, section.appForm, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
-				padding-left: 0
+				padding-top: 40px
+				.container
+					.iconQr
+						padding-top: 0
+						margin-left: 0
+					.photo
+						img.imgPerson
+							width: 80%
+						.button
+							width: 80%
+					.text
+						margin-top: 25px
+			section.promo
+				.hidden
+					.list
+						.badge
+							margin-left: 7.5px
+			section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
 				.head
-					padding-left: 30px
+					padding-left: 40px
+				.container.contentBlock
+					padding-left: 25px
+					padding-bottom: 30px
+					padding-top: 25px
+					.head
+						padding-left: 20px
+						span.name
+							font-size: 25px
+						.line
+							margin-left: 20px
+							margin-right: 10px
 				.hidden, .content
-					padding-left: 0px
-					padding-right: 0px
+					padding-left: 15px
 					.list
 						.topLine
 							padding-top: 10px
 							padding-bottom: 10px
-							padding-left: 5px
-							padding-right: 5px
+							padding-left: 15px
+							padding-right: 15px
 							span
-								font-size: 12.5px
-				span.b
-					font-family: 'MullerMedium'
-					font-size: 12.5px
-					color: #323232
-				span.gr
-					font-size: 12.5px
-					font-family: 'MullerRegular'
-					color: #575757
-					margin-right: 25px
-				span.lite
-					font-family: 'MullerLight'
-					color: #3b3b3b
-					font-size: 12.5px
-			section.progressInf
-				.hidden	
-					.topLine
-						.container
+								font-size: 12px
+						.line
+							padding-top: 10px
+							padding-bottom: 10px
+							padding-left: 15px
+							padding-right: 15px
 							span
-								font-size: 10px
-@media only screen and(max-width: 767px)
+								font-size: 14px
+
+@media only screen and(max-width: 768px)
 	body
 		main 
 			section.header
 				.container
+					.Outer
+						display: flex
+						flex-direction: column
+						.head
+							order: 2
+					.head
+						margin-top: 35px
+						span.head
+							font-size: 40px
 					.buttons
-						grid-template-columns: repeat(2, 1fr)
-			section.promo, section.socials, section.appForm, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
-				.head
-					padding-left: 0px
-					.profile-buttonOpen, .profile-buttonClose
-						width: 40px
-						height: 40px
+						grid-template-columns: repeat(3, auto)
+						a.button
+							order: 6
+			section.personInf
+				.container
+					.photo
+						img.imgPerson
+							width: 70%
+						.button
+							width: 70%
+					.iconQr
+						margin-top: 25px
+			section.promo
+				.container.contentBlock
+					.hidden
+						.list
+							.topLine, .line
+								grid-template-columns: 1fr
+								padding-right: 50px
+								span.desk
+									display: none
+								span.mob
+									display: block
+			section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
+				.container.contentBlock
+					padding-left: 15px
+					.head
+						padding-left: 0
+						span.name
+							font-size: 22px
+						.profile-buttonOpen
+							width: 30px
+							height: 30px
+							img
+								width: 10px
+						.profile-buttonClose
+							width: 30px
+							height: 30px
+							img
+								width: 10px
+						.profile-buttonClose, .profile-buttonOpen
+							margin-left: 10px
 				.hidden, .content
-					.list
-						.topLine
-							.container
-								span
-									font-size: 10px
-				span.b
-					font-family: 'MullerMedium'
-					font-size: 10px
-					color: #323232
-				span.gr
-					font-size: 10px
-					font-family: 'MullerRegular'
-					color: #575757
-					margin-right: 25px
-				span.lite
-					font-family: 'MullerLight'
-					color: #3b3b3b
-					font-size: 10px
-			section.progressInf
-				.hidden	
-					.topLine
-						.container
+					padding-right: 0px
+					padding-left: 0
+@media only screen and(max-width: 600px)
+	body
+		main
+			section.header
+				.container
+					.buttons
+						.button
+							padding-left: 10px
+							padding-right: 10px
 							span
-								font-size: 8px
-							.col
-								width: auto
-								padding-left: 2.5px
-								padding-right: 2.5px
+								font-size: 13px
+			section.personInf
+				.container
+					.text
+						.line
+							padding-left: 50px
 @media only screen and(max-width: 500px)
 	body
 		main
+			section.header
+				.container
+					.head
+						margin-top: 15px
+						span.head
+							font-size: 30px
+					.buttons
+						margin-top: 15px
+						.button
+							padding-left: 5px
+							padding-right: 5px
+							span.desk
+								display: none
+							span.mob
+								display: block
 			section.socials
-				.hidden	
-					.socialIcons
-						padding-left: 0
-			section.promo, section.socials, section.appForm, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
-				.head
-					span.name
-						line-height: 1.2
-				.hidden, .content
-					.topLine
-						.container
+				.container.contentBlock
+					.hidden
+						.list.desk
+							display: none
+						.list.mob
+							display: block
+							border: none
+							.topLine, .line
+								grid-template-columns: 1fr
+
+			section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
+				.container.contentBlock
+					.head
+						.line
+							display: none
+						.profile-buttonOpen, .profile-buttonClose
+							justify-self: right
+
+
+@media only screen and(max-width: 400px)
+	body
+		main
+			section.header
+				.container
+					.buttons
+						justify-content: center
+						margin-left: -15px
+						margin-right: -15px
+						.button
+							height: 35px
 							span
-								line-height: 1.2
-			section.schedule
-				.content
-					.topLine
-						.container
-							.col 
-								width: auto
-								padding-left: 2.5px
-								padding-right: 2.5px
-		
+								font-size: 10px
+			section.personInf
+				.container
+					padding-top: 20px
+					.photo
+						img.imgPerson
+							width: 100%
+						.button
+							width: 100%
+					.text
+						.line
+							padding-left: 15px
+							padding-right: 15px
+							grid-template-columns: 37% 63%
+							.item
+								.buttonCancel
+									margin-left: 10px
+			section.promo
+				.container.contentBlock
+					.hidden
+						.list
+							.line
+								.badge
+									.tooltip
+										.tooltip-inner
+											margin-left: -40px
+			section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
+				.container.contentBlock
+					.head
+						span.name
+							font-size: 18px
+					.hidden, .content
+						p.desc
+							font-size: 14px
+						.list
+							.line, .topLine
+								padding-right: 5px
+
+@media only screen and(max-width: 350px)
+	body
+		main
+			section.header
+				.container
+					.buttons
+						.button
+							height: 25px

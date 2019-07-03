@@ -166,12 +166,13 @@ section.contacts .container .c6 .list .item.phone span {
 
 @media only screen and (max-width: 768px) {
   body main section.contacts {
-    padding-top: 15px;
+    padding-top: 35px;
     padding-bottom: 0;
   }
   body main section.contacts .ymap {
     position: relative;
     height: 700px;
+    margin-top: -100px;
   }
   body main section.contacts .ymap .map {
     position: relative;
