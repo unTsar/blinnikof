@@ -24,16 +24,16 @@ $(document).ready(function(){
 		$(this).addClass('active');
 		$(this).siblings('.orders-buttonPaid').removeClass('active');
 
-		$(this).parents('.buttons').siblings('.orders-listPaid').slideUp(175);
-		$(this).parents('.buttons').siblings('.orders-listUnpaid').slideDown(175);
+		$(this).parents('.buttons').siblings('.orders-listPaid').slideUp(75);
+		$(this).parents('.buttons').siblings('.orders-listUnpaid').slideDown(75);
 	})
 	$('.orders-buttonPaid').click(function() {
 
 		$(this).addClass('active');
 		$(this).siblings('.orders-buttonUnpaid').removeClass('active');
 
-		$(this).parents('.buttons').siblings('.orders-listUnpaid').slideUp(175);
-		$(this).parents('.buttons').siblings('.orders-listPaid').slideDown(175);
+		$(this).parents('.buttons').siblings('.orders-listUnpaid').slideUp(75);
+		$(this).parents('.buttons').siblings('.orders-listPaid').slideDown(75);
 	})
 
 	$('#profile-buttonUnpaid-sTicket').click(function() {

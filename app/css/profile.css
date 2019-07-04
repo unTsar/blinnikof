@@ -54,9 +54,9 @@
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
 }
 
-main section.contacts .container {
-  padding-left: 0;
-  padding-right: 0;
+main section.contacts {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 main section.header .container {
@@ -341,7 +341,16 @@ main section.appForm .hidden .list {
 
 main section.appForm .hidden .list .topLine, main section.appForm .hidden .list .line {
   display: grid;
-  grid-template-columns: 92% 8%;
+  grid-template-columns: 1fr 1fr;
+}
+
+main section.appForm .hidden .list .topLine span.jusR, main section.appForm .hidden .list .line span.jusR {
+  justify-self: right;
+  margin-right: 5px;
+}
+
+main section.appForm .hidden .list .topLine {
+  grid-template-columns: 1fr;
 }
 
 main section.appForm .hidden .list .fullAppForm .head {
@@ -350,8 +359,23 @@ main section.appForm .hidden .list .fullAppForm .head {
 
 main section.appForm .hidden .list .fullAppForm .head span.name {
   color: #ff2e2f;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   font-size: 20px;
   font-family: 'MullerExtraBold';
+}
+
+main section.appForm .hidden .list .fullAppForm .head:hover span.name {
+  color: #fa8384;
+}
+
+main section.appForm .hidden .list .fullAppForm .head:hover .profile-buttonOpen {
+  background-color: #fa8384;
+}
+
+main section.appForm .hidden .list .fullAppForm .head:hover .profile-buttonClose {
+  background-color: #9b9797;
 }
 
 main section.appForm .hidden .list .fullAppForm .hidden {
@@ -360,9 +384,24 @@ main section.appForm .hidden .list .fullAppForm .hidden {
 
 main section.appForm .hidden .list .fullAppForm .hidden .topLine, main section.appForm .hidden .list .fullAppForm .hidden .line {
   display: grid;
-  grid-template-columns: 96% 4%;
+  grid-template-columns: 80% 20%;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+main section.appForm .hidden .list .fullAppForm .hidden .topLine span.jusR, main section.appForm .hidden .list .fullAppForm .hidden .line span.jusR {
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+main section.appForm .hidden .list .fullAppForm .hidden .topLine span.mob, main section.appForm .hidden .list .fullAppForm .hidden .topLine .mob, main section.appForm .hidden .list .fullAppForm .hidden .line span.mob, main section.appForm .hidden .list .fullAppForm .hidden .line .mob {
+  display: none;
+}
+
+main section.appForm .hidden .list .fullAppForm .hidden .line.mob {
+  display: none;
 }
 
 main section.orders .hidden .button:hover, main section.orders .hidden .button.active, main section.appointDiet .hidden .button:hover, main section.appointDiet .hidden .button.active, main section.sTicketInf .hidden .button:hover, main section.sTicketInf .hidden .button.active {
@@ -463,6 +502,8 @@ main section.progressInf .stats .hidden .list .topLine span.time, main section.p
 }
 
 main section.progressInf .stats .hidden .list .topLine img, main section.progressInf .stats .hidden .list .line img {
+  width: 17px;
+  height: auto;
   margin-left: 47.5px;
   margin-top: -13px;
   margin-bottom: -13px;
@@ -478,6 +519,10 @@ main section.progressInf .stats .hidden .list .topLine .circle-progress, main se
   font-family: 'MullerBold';
   font-size: 12px;
   margin-left: 7.5px;
+}
+
+main section.progressInf .stats .hidden .list.mob {
+  display: none;
 }
 
 main section.progressInf .collages .item {
@@ -557,6 +602,7 @@ main section.appForm .container.contentBlock .head, main section.promo .containe
 main section.appForm .container.contentBlock .head span.name, main section.promo .container.contentBlock .head span.name, main section.socials .container.contentBlock .head span.name, main section.orders .container.contentBlock .head span.name, main section.sTicketInf .container.contentBlock .head span.name, main section.schedule .container.contentBlock .head span.name, main section.appointDiet .container.contentBlock .head span.name, main section.progressInf .container.contentBlock .head span.name {
   font-family: 'MullerExtraBold';
   font-size: 30px;
+  line-height: 1.2;
   color: #333;
 }
 
@@ -712,7 +758,15 @@ main section.appForm .collages, main section.promo .collages, main section.socia
   margin-top: 35px;
 }
 
-span.mob, .mob {
+main span.mob, main .mob {
+  display: none;
+}
+
+main .container.contentBlock .hidden .list .line.mob, main .container.contentBlock .hidden .list .line.gray.mob, main .container.contentBlock .hidden .list .topLine.mob, main .container.contentBlock .content .list .line.mob, main .container.contentBlock .content .list .line.gray.mob, main .container.contentBlock .content .list .topLine.mob, main .container .hidden .list .line.mob, main .container .hidden .list .line.gray.mob, main .container .hidden .list .topLine.mob, main .container .content .list .line.mob, main .container .content .list .line.gray.mob, main .container .content .list .topLine.mob {
+  display: none;
+}
+
+main .container.contentBlock .hidden .list .line.mob span.mob, main .container.contentBlock .hidden .list .line.mob .mob, main .container.contentBlock .hidden .list .line.gray.mob span.mob, main .container.contentBlock .hidden .list .line.gray.mob .mob, main .container.contentBlock .hidden .list .topLine.mob span.mob, main .container.contentBlock .hidden .list .topLine.mob .mob, main .container.contentBlock .content .list .line.mob span.mob, main .container.contentBlock .content .list .line.mob .mob, main .container.contentBlock .content .list .line.gray.mob span.mob, main .container.contentBlock .content .list .line.gray.mob .mob, main .container.contentBlock .content .list .topLine.mob span.mob, main .container.contentBlock .content .list .topLine.mob .mob, main .container .hidden .list .line.mob span.mob, main .container .hidden .list .line.mob .mob, main .container .hidden .list .line.gray.mob span.mob, main .container .hidden .list .line.gray.mob .mob, main .container .hidden .list .topLine.mob span.mob, main .container .hidden .list .topLine.mob .mob, main .container .content .list .line.mob span.mob, main .container .content .list .line.mob .mob, main .container .content .list .line.gray.mob span.mob, main .container .content .list .line.gray.mob .mob, main .container .content .list .topLine.mob span.mob, main .container .content .list .topLine.mob .mob {
   display: none;
 }
 
@@ -732,6 +786,9 @@ span.mob, .mob {
   }
   body main section.progressInf .hidden .list .topLine span {
     font-size: 12px;
+  }
+  body main section.sTicketInf .container.contentBlock .schedule .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .schedule .hidden .list .line, body main section.sTicketInf .container.contentBlock .schedule .content .list .topLine, body main section.sTicketInf .container.contentBlock .schedule .content .list .line {
+    grid-template-columns: 33% 17% 22% 12% 16%;
   }
 }
 
@@ -764,6 +821,19 @@ span.mob, .mob {
   }
   body main section.promo .hidden .list .badge {
     margin-left: 7.5px;
+  }
+  body main section.sTicketInf .container.contentBlock .schedule .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .schedule .hidden .list .line, body main section.sTicketInf .container.contentBlock .schedule .content .list .topLine, body main section.sTicketInf .container.contentBlock .schedule .content .list .line {
+    grid-template-columns: 33% 20% 22% 12% 13%;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list .line span.gr, body main section.progressInf .container.contentBlock .stats .hidden .list .line.gray span.gr, body main section.progressInf .container.contentBlock .stats .content .list .line span.gr, body main section.progressInf .container.contentBlock .stats .content .list .line.gray span.gr {
+    margin: 0;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list .line img, body main section.progressInf .container.contentBlock .stats .hidden .list .line.gray img, body main section.progressInf .container.contentBlock .stats .content .list .line img, body main section.progressInf .container.contentBlock .stats .content .list .line.gray img {
+    margin-top: -7px;
+    margin-bottom: -7px;
+  }
+  body main section.progressInf .container.contentBlock .collages .hidden .d-flex .item .borderOuter img {
+    width: 240px;
   }
   body main section.appForm .head, body main section.promo .head, body main section.socials .head, body main section.orders .head, body main section.sTicketInf .head, body main section.schedule .head, body main section.appointDiet .head, body main section.progressInf .head {
     padding-left: 40px;
@@ -803,6 +873,9 @@ span.mob, .mob {
   }
   body main section.appForm .hidden .list .line span, body main section.appForm .content .list .line span, body main section.promo .hidden .list .line span, body main section.promo .content .list .line span, body main section.socials .hidden .list .line span, body main section.socials .content .list .line span, body main section.orders .hidden .list .line span, body main section.orders .content .list .line span, body main section.sTicketInf .hidden .list .line span, body main section.sTicketInf .content .list .line span, body main section.schedule .hidden .list .line span, body main section.schedule .content .list .line span, body main section.appointDiet .hidden .list .line span, body main section.appointDiet .content .list .line span, body main section.progressInf .hidden .list .line span, body main section.progressInf .content .list .line span {
     font-size: 14px;
+  }
+  body main section.appForm .hidden .list .line .buttonPay span, body main section.appForm .hidden .list .topLine .buttonPay span, body main section.appForm .content .list .line .buttonPay span, body main section.appForm .content .list .topLine .buttonPay span, body main section.promo .hidden .list .line .buttonPay span, body main section.promo .hidden .list .topLine .buttonPay span, body main section.promo .content .list .line .buttonPay span, body main section.promo .content .list .topLine .buttonPay span, body main section.socials .hidden .list .line .buttonPay span, body main section.socials .hidden .list .topLine .buttonPay span, body main section.socials .content .list .line .buttonPay span, body main section.socials .content .list .topLine .buttonPay span, body main section.orders .hidden .list .line .buttonPay span, body main section.orders .hidden .list .topLine .buttonPay span, body main section.orders .content .list .line .buttonPay span, body main section.orders .content .list .topLine .buttonPay span, body main section.sTicketInf .hidden .list .line .buttonPay span, body main section.sTicketInf .hidden .list .topLine .buttonPay span, body main section.sTicketInf .content .list .line .buttonPay span, body main section.sTicketInf .content .list .topLine .buttonPay span, body main section.schedule .hidden .list .line .buttonPay span, body main section.schedule .hidden .list .topLine .buttonPay span, body main section.schedule .content .list .line .buttonPay span, body main section.schedule .content .list .topLine .buttonPay span, body main section.appointDiet .hidden .list .line .buttonPay span, body main section.appointDiet .hidden .list .topLine .buttonPay span, body main section.appointDiet .content .list .line .buttonPay span, body main section.appointDiet .content .list .topLine .buttonPay span, body main section.progressInf .hidden .list .line .buttonPay span, body main section.progressInf .hidden .list .topLine .buttonPay span, body main section.progressInf .content .list .line .buttonPay span, body main section.progressInf .content .list .topLine .buttonPay span {
+    font-size: 10px;
   }
 }
 
@@ -850,13 +923,136 @@ span.mob, .mob {
   }
   body main section.promo .container.contentBlock .hidden .list .topLine, body main section.promo .container.contentBlock .hidden .list .line {
     grid-template-columns: 1fr;
-    padding-right: 50px;
   }
   body main section.promo .container.contentBlock .hidden .list .topLine span.desk, body main section.promo .container.contentBlock .hidden .list .line span.desk {
     display: none;
   }
   body main section.promo .container.contentBlock .hidden .list .topLine span.mob, body main section.promo .container.contentBlock .hidden .list .line span.mob {
     display: block;
+  }
+  body main section.orders .container.contentBlock .hidden .list .topLine, body main section.orders .container.contentBlock .hidden .list .line {
+    grid-template-columns: 47% 53%;
+  }
+  body main section.orders .container.contentBlock .hidden .list .topLine span.gray-mob, body main section.orders .container.contentBlock .hidden .list .line span.gray-mob {
+    color: #b4aeae;
+  }
+  body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .line, body main section.sTicketInf .container.contentBlock .sTicket .content .list .topLine, body main section.sTicketInf .container.contentBlock .sTicket .content .list .line {
+    grid-template-columns: 21% 25% 38% 16%;
+  }
+  body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .topLine span.desk, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .line span.desk, body main section.sTicketInf .container.contentBlock .sTicket .content .list .topLine span.desk, body main section.sTicketInf .container.contentBlock .sTicket .content .list .line span.desk {
+    display: none;
+  }
+  body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .topLine span.mob, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .line span.mob, body main section.sTicketInf .container.contentBlock .sTicket .content .list .topLine span.mob, body main section.sTicketInf .container.contentBlock .sTicket .content .list .line span.mob {
+    display: block;
+  }
+  body main section.sTicketInf .container.contentBlock .schedule .hidden .list, body main section.sTicketInf .container.contentBlock .schedule .content .list {
+    margin-top: 25px;
+  }
+  body main section.sTicketInf .container.contentBlock .schedule .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .schedule .hidden .list .line, body main section.sTicketInf .container.contentBlock .schedule .content .list .topLine, body main section.sTicketInf .container.contentBlock .schedule .content .list .line {
+    padding-right: 15px;
+    grid-template-areas: "a a a";
+    grid-template-columns: 50% 33% 17%;
+  }
+  body main section.sTicketInf .container.contentBlock .schedule .hidden .list .topLine span.gray-mob, body main section.sTicketInf .container.contentBlock .schedule .hidden .list .line span.gray-mob, body main section.sTicketInf .container.contentBlock .schedule .content .list .topLine span.gray-mob, body main section.sTicketInf .container.contentBlock .schedule .content .list .line span.gray-mob {
+    color: #b4aeae;
+  }
+  body main section.sTicketInf .container.contentBlock .schedule .hidden .list .topLine .gaa, body main section.sTicketInf .container.contentBlock .schedule .hidden .list .line .gaa, body main section.sTicketInf .container.contentBlock .schedule .content .list .topLine .gaa, body main section.sTicketInf .container.contentBlock .schedule .content .list .line .gaa {
+    grid-area: a;
+  }
+  body main section.sTicketInf .container.contentBlock .schedule .hidden .list .line, body main section.sTicketInf .container.contentBlock .schedule .content .list .line {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    grid-template-columns: 50% 33% 17%;
+  }
+  body main section.sTicketInf .container.contentBlock .schedule .hidden .list .line .gaa, body main section.sTicketInf .container.contentBlock .schedule .content .list .line .gaa {
+    margin-bottom: 10px;
+  }
+  body main section.sTicketInf .container.contentBlock .schedule .hidden .list .line .buttonPay, body main section.sTicketInf .container.contentBlock .schedule .content .list .line .buttonPay {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-self: left;
+  }
+  body main section.appointDiet .container.contentBlock .hidden .list .topLine span.desk, body main section.appointDiet .container.contentBlock .hidden .list .line span.desk, body main section.appointDiet .container.contentBlock .content .list .topLine span.desk, body main section.appointDiet .container.contentBlock .content .list .line span.desk {
+    display: none;
+  }
+  body main section.appointDiet .container.contentBlock .hidden .list .topLine span.mob, body main section.appointDiet .container.contentBlock .hidden .list .line span.mob, body main section.appointDiet .container.contentBlock .content .list .topLine span.mob, body main section.appointDiet .container.contentBlock .content .list .line span.mob {
+    display: block;
+  }
+  body main section.appointDiet .container.contentBlock .hidden .list .topLine span.gray-mob, body main section.appointDiet .container.contentBlock .hidden .list .line span.gray-mob, body main section.appointDiet .container.contentBlock .content .list .topLine span.gray-mob, body main section.appointDiet .container.contentBlock .content .list .line span.gray-mob {
+    color: #b4aeae;
+  }
+  body main section.appointDiet .container.contentBlock .hidden .list .line, body main section.appointDiet .container.contentBlock .content .list .line {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  body main section.appointDiet .container.contentBlock .hidden .list.orders-listUnpaid .topLine, body main section.appointDiet .container.contentBlock .content .list.orders-listUnpaid .topLine {
+    grid-template-columns: 1fr;
+  }
+  body main section.appointDiet .container.contentBlock .hidden .list.orders-listUnpaid .line, body main section.appointDiet .container.contentBlock .content .list.orders-listUnpaid .line {
+    grid-template-areas: "a a";
+    grid-template-columns: 63% 37%;
+  }
+  body main section.appointDiet .container.contentBlock .hidden .list.orders-listUnpaid .line .gaa, body main section.appointDiet .container.contentBlock .content .list.orders-listUnpaid .line .gaa {
+    grid-area: a;
+  }
+  body main section.appointDiet .container.contentBlock .hidden .list.orders-listPaid .topLine, body main section.appointDiet .container.contentBlock .hidden .list.orders-listPaid .line, body main section.appointDiet .container.contentBlock .content .list.orders-listPaid .topLine, body main section.appointDiet .container.contentBlock .content .list.orders-listPaid .line {
+    grid-template-columns: 1fr;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.desk, body main section.progressInf .container.contentBlock .stats .content .list.desk {
+    display: none;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob, body main section.progressInf .container.contentBlock .stats .content .list.mob {
+    display: block;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-template-columns: 47% 53%;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine span.gr, body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine span.time, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine span.gr, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine span.time {
+    margin: 0;
+    font-family: 'MullerLight';
+    color: #f5f5f5;
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine span.gr, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine span.gr {
+    justify-self: right;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine span.gr span.time, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine span.gr span.time {
+    margin-left: 5px;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob .list-content, body main section.progressInf .container.contentBlock .stats .content .list.mob .list-content {
+    display: grid;
+    grid-template-columns: auto 70px;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob .list-content .valueBlock .line, body main section.progressInf .container.contentBlock .stats .content .list.mob .list-content .valueBlock .line {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 30px;
+    grid-template-columns: 56% 44%;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob .list-content .valueBlock .line span.bb, body main section.progressInf .container.contentBlock .stats .content .list.mob .list-content .valueBlock .line span.bb {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob .list-content .valueBlock .line .item, body main section.progressInf .container.contentBlock .stats .content .list.mob .list-content .valueBlock .line .item {
+    justify-self: right;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob img, body main section.progressInf .container.contentBlock .stats .content .list.mob img {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    width: 100%;
+  }
+  body main section.progressInf .container.contentBlock .collages .hidden .d-flex .item .borderOuter img {
+    width: 195px;
   }
   body main section.appForm .container.contentBlock, body main section.promo .container.contentBlock, body main section.socials .container.contentBlock, body main section.orders .container.contentBlock, body main section.sTicketInf .container.contentBlock, body main section.schedule .container.contentBlock, body main section.appointDiet .container.contentBlock, body main section.progressInf .container.contentBlock {
     padding-left: 15px;
@@ -901,6 +1097,9 @@ span.mob, .mob {
   body main section.personInf .container .text .line {
     padding-left: 50px;
   }
+  body main section.progressInf .container.contentBlock .collages .hidden .d-flex .item .borderOuter img {
+    width: 170px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -923,6 +1122,9 @@ span.mob, .mob {
   body main section.header .container .buttons .button span.mob {
     display: block;
   }
+  body main section.personInf {
+    padding-top: 20px;
+  }
   body main section.socials .container.contentBlock .hidden .list.desk {
     display: none;
   }
@@ -933,6 +1135,107 @@ span.mob, .mob {
   body main section.socials .container.contentBlock .hidden .list.mob .topLine, body main section.socials .container.contentBlock .hidden .list.mob .line {
     grid-template-columns: 1fr;
   }
+  body main section.orders .container.contentBlock .sTicket .hidden .list .topLine, body main section.orders .container.contentBlock .sTicket .content .list .topLine, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .sTicket .content .list .topLine {
+    grid-template-areas: "a b" "c c";
+    grid-template-columns: 51% 49%;
+  }
+  body main section.orders .container.contentBlock .sTicket .hidden .list .line, body main section.orders .container.contentBlock .sTicket .content .list .line, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .line, body main section.sTicketInf .container.contentBlock .sTicket .content .list .line {
+    grid-template-columns: 23.5% 11.75% 11.75% 26.5% 26.5%;
+    grid-template-areas: "a a a b b" "c c c c d";
+  }
+  body main section.orders .container.contentBlock .sTicket .hidden .list .gaa, body main section.orders .container.contentBlock .sTicket .content .list .gaa, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .gaa, body main section.sTicketInf .container.contentBlock .sTicket .content .list .gaa {
+    grid-area: a;
+  }
+  body main section.orders .container.contentBlock .sTicket .hidden .list .gab, body main section.orders .container.contentBlock .sTicket .content .list .gab, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .gab, body main section.sTicketInf .container.contentBlock .sTicket .content .list .gab {
+    grid-area: b;
+  }
+  body main section.orders .container.contentBlock .sTicket .hidden .list .gac, body main section.orders .container.contentBlock .sTicket .content .list .gac, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .gac, body main section.sTicketInf .container.contentBlock .sTicket .content .list .gac {
+    grid-area: c;
+  }
+  body main section.orders .container.contentBlock .sTicket .hidden .list .gad, body main section.orders .container.contentBlock .sTicket .content .list .gad, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .gad, body main section.sTicketInf .container.contentBlock .sTicket .content .list .gad {
+    grid-area: d;
+  }
+  body main section.orders .container.contentBlock .sTicket .hidden .list .line, body main section.orders .container.contentBlock .sTicket .hidden .list .topLine, body main section.orders .container.contentBlock .sTicket .content .list .line, body main section.orders .container.contentBlock .sTicket .content .list .topLine, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .line, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .sTicket .content .list .line, body main section.sTicketInf .container.contentBlock .sTicket .content .list .topLine {
+    padding-right: 15px !important;
+  }
+  body main section.orders .container.contentBlock .hidden .list .topLine, body main section.orders .container.contentBlock .content .list .topLine, body main section.sTicketInf .container.contentBlock .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .content .list .topLine {
+    grid-template-areas: "a b" "c c";
+    grid-template-columns: 51% 49%;
+  }
+  body main section.orders .container.contentBlock .hidden .list .line, body main section.orders .container.contentBlock .content .list .line, body main section.sTicketInf .container.contentBlock .hidden .list .line, body main section.sTicketInf .container.contentBlock .content .list .line {
+    grid-template-columns: 23.5% 11.75% 11.75% 26.5% 26.5%;
+    grid-template-areas: "a a b b b" "c c c c d";
+  }
+  body main section.orders .container.contentBlock .hidden .list .gaa, body main section.orders .container.contentBlock .content .list .gaa, body main section.sTicketInf .container.contentBlock .hidden .list .gaa, body main section.sTicketInf .container.contentBlock .content .list .gaa {
+    grid-area: a;
+  }
+  body main section.orders .container.contentBlock .hidden .list .gab, body main section.orders .container.contentBlock .content .list .gab, body main section.sTicketInf .container.contentBlock .hidden .list .gab, body main section.sTicketInf .container.contentBlock .content .list .gab {
+    grid-area: b;
+  }
+  body main section.orders .container.contentBlock .hidden .list .gac, body main section.orders .container.contentBlock .content .list .gac, body main section.sTicketInf .container.contentBlock .hidden .list .gac, body main section.sTicketInf .container.contentBlock .content .list .gac {
+    grid-area: c;
+  }
+  body main section.orders .container.contentBlock .hidden .list .gad, body main section.orders .container.contentBlock .content .list .gad, body main section.sTicketInf .container.contentBlock .hidden .list .gad, body main section.sTicketInf .container.contentBlock .content .list .gad {
+    grid-area: d;
+  }
+  body main section.orders .container.contentBlock .hidden .list .line, body main section.orders .container.contentBlock .content .list .line, body main section.sTicketInf .container.contentBlock .hidden .list .line, body main section.sTicketInf .container.contentBlock .content .list .line {
+    padding-right: 15px !important;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .line.desk, body main section.appForm .container.contentBlock .hidden .list .line.gray.desk, body main section.appForm .container.contentBlock .content .list .line.desk, body main section.appForm .container.contentBlock .content .list .line.gray.desk {
+    display: none;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .line.mob, body main section.appForm .container.contentBlock .hidden .list .line.gray.mob, body main section.appForm .container.contentBlock .content .list .line.mob, body main section.appForm .container.contentBlock .content .list .line.gray.mob {
+    display: grid;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .line, body main section.appForm .container.contentBlock .hidden .list .topLine, body main section.appForm .container.contentBlock .content .list .line, body main section.appForm .container.contentBlock .content .list .topLine {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .line span.desk, body main section.appForm .container.contentBlock .hidden .list .topLine span.desk, body main section.appForm .container.contentBlock .content .list .line span.desk, body main section.appForm .container.contentBlock .content .list .topLine span.desk {
+    display: none;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .line span.mob, body main section.appForm .container.contentBlock .hidden .list .topLine span.mob, body main section.appForm .container.contentBlock .content .list .line span.mob, body main section.appForm .container.contentBlock .content .list .topLine span.mob {
+    display: block;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .line span.bb, body main section.appForm .container.contentBlock .hidden .list .topLine span.bb, body main section.appForm .container.contentBlock .content .list .line span.bb, body main section.appForm .container.contentBlock .content .list .topLine span.bb {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .line.gray-desk, body main section.appForm .container.contentBlock .content .list .line.gray-desk {
+    background-color: #ffffff;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .line.gray-mob, body main section.appForm .container.contentBlock .content .list .line.gray-mob {
+    background-color: #f5f5f5;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .fullAppForm, body main section.appForm .container.contentBlock .content .list .fullAppForm {
+    margin-top: 15px;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .fullAppForm .hidden .line, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .hidden .topLine, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .content .line, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .content .topLine, body main section.appForm .container.contentBlock .content .list .fullAppForm .hidden .line, body main section.appForm .container.contentBlock .content .list .fullAppForm .hidden .topLine, body main section.appForm .container.contentBlock .content .list .fullAppForm .content .line, body main section.appForm .container.contentBlock .content .list .fullAppForm .content .topLine {
+    grid-template-columns: 1fr;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .fullAppForm .hidden .line span, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .hidden .topLine span, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .content .line span, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .content .topLine span, body main section.appForm .container.contentBlock .content .list .fullAppForm .hidden .line span, body main section.appForm .container.contentBlock .content .list .fullAppForm .hidden .topLine span, body main section.appForm .container.contentBlock .content .list .fullAppForm .content .line span, body main section.appForm .container.contentBlock .content .list .fullAppForm .content .topLine span {
+    text-transform: none;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .fullAppForm .hidden .line span.jusR, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .hidden .topLine span.jusR, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .content .line span.jusR, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .content .topLine span.jusR, body main section.appForm .container.contentBlock .content .list .fullAppForm .hidden .line span.jusR, body main section.appForm .container.contentBlock .content .list .fullAppForm .hidden .topLine span.jusR, body main section.appForm .container.contentBlock .content .list .fullAppForm .content .line span.jusR, body main section.appForm .container.contentBlock .content .list .fullAppForm .content .topLine span.jusR {
+    display: none;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .fullAppForm .hidden .line span.bb, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .hidden .topLine span.bb, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .content .line span.bb, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .content .topLine span.bb, body main section.appForm .container.contentBlock .content .list .fullAppForm .hidden .line span.bb, body main section.appForm .container.contentBlock .content .list .fullAppForm .hidden .topLine span.bb, body main section.appForm .container.contentBlock .content .list .fullAppForm .content .line span.bb, body main section.appForm .container.contentBlock .content .list .fullAppForm .content .topLine span.bb {
+    font-size: 13px;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .fullAppForm .hidden .line.gray-mob, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .content .line.gray-mob, body main section.appForm .container.contentBlock .content .list .fullAppForm .hidden .line.gray-mob, body main section.appForm .container.contentBlock .content .list .fullAppForm .content .line.gray-mob {
+    background-color: #f5f5f5;
+  }
+  body main section.progressInf .container.contentBlock .collages .hidden .d-flex {
+    padding-top: 15px;
+  }
+  body main section.progressInf .container.contentBlock .collages .hidden .d-flex .item {
+    margin: 0 auto;
+  }
+  body main section.progressInf .container.contentBlock .collages .hidden .d-flex .item .borderOuter img {
+    width: 100%;
+  }
   body main section.appForm .container.contentBlock .head .line, body main section.promo .container.contentBlock .head .line, body main section.socials .container.contentBlock .head .line, body main section.orders .container.contentBlock .head .line, body main section.sTicketInf .container.contentBlock .head .line, body main section.schedule .container.contentBlock .head .line, body main section.appointDiet .container.contentBlock .head .line, body main section.progressInf .container.contentBlock .head .line {
     display: none;
   }
@@ -942,6 +1245,18 @@ span.mob, .mob {
 }
 
 @media only screen and (max-width: 400px) {
+  body main section.appForm .head span.name, body main section.promo .head span.name, body main section.socials .head span.name, body main section.orders .head span.name, body main section.sTicketInf .head span.name, body main section.schedule .head span.name, body main section.appointDiet .head span.name, body main section.progressInf .head span.name {
+    font-size: 18px;
+  }
+  body main section.appForm .hidden p.desc, body main section.appForm .content p.desc, body main section.promo .hidden p.desc, body main section.promo .content p.desc, body main section.socials .hidden p.desc, body main section.socials .content p.desc, body main section.orders .hidden p.desc, body main section.orders .content p.desc, body main section.sTicketInf .hidden p.desc, body main section.sTicketInf .content p.desc, body main section.schedule .hidden p.desc, body main section.schedule .content p.desc, body main section.appointDiet .hidden p.desc, body main section.appointDiet .content p.desc, body main section.progressInf .hidden p.desc, body main section.progressInf .content p.desc {
+    font-size: 14px;
+  }
+  body main section.appForm .hidden .list .line, body main section.appForm .hidden .list .topLine, body main section.appForm .content .list .line, body main section.appForm .content .list .topLine, body main section.promo .hidden .list .line, body main section.promo .hidden .list .topLine, body main section.promo .content .list .line, body main section.promo .content .list .topLine, body main section.socials .hidden .list .line, body main section.socials .hidden .list .topLine, body main section.socials .content .list .line, body main section.socials .content .list .topLine, body main section.orders .hidden .list .line, body main section.orders .hidden .list .topLine, body main section.orders .content .list .line, body main section.orders .content .list .topLine, body main section.sTicketInf .hidden .list .line, body main section.sTicketInf .hidden .list .topLine, body main section.sTicketInf .content .list .line, body main section.sTicketInf .content .list .topLine, body main section.schedule .hidden .list .line, body main section.schedule .hidden .list .topLine, body main section.schedule .content .list .line, body main section.schedule .content .list .topLine, body main section.appointDiet .hidden .list .line, body main section.appointDiet .hidden .list .topLine, body main section.appointDiet .content .list .line, body main section.appointDiet .content .list .topLine, body main section.progressInf .hidden .list .line, body main section.progressInf .hidden .list .topLine, body main section.progressInf .content .list .line, body main section.progressInf .content .list .topLine {
+    padding-right: 5px;
+  }
+  body main section.appForm .hidden .list .line span.gr, body main section.appForm .hidden .list .topLine span.gr, body main section.appForm .content .list .line span.gr, body main section.appForm .content .list .topLine span.gr, body main section.promo .hidden .list .line span.gr, body main section.promo .hidden .list .topLine span.gr, body main section.promo .content .list .line span.gr, body main section.promo .content .list .topLine span.gr, body main section.socials .hidden .list .line span.gr, body main section.socials .hidden .list .topLine span.gr, body main section.socials .content .list .line span.gr, body main section.socials .content .list .topLine span.gr, body main section.orders .hidden .list .line span.gr, body main section.orders .hidden .list .topLine span.gr, body main section.orders .content .list .line span.gr, body main section.orders .content .list .topLine span.gr, body main section.sTicketInf .hidden .list .line span.gr, body main section.sTicketInf .hidden .list .topLine span.gr, body main section.sTicketInf .content .list .line span.gr, body main section.sTicketInf .content .list .topLine span.gr, body main section.schedule .hidden .list .line span.gr, body main section.schedule .hidden .list .topLine span.gr, body main section.schedule .content .list .line span.gr, body main section.schedule .content .list .topLine span.gr, body main section.appointDiet .hidden .list .line span.gr, body main section.appointDiet .hidden .list .topLine span.gr, body main section.appointDiet .content .list .line span.gr, body main section.appointDiet .content .list .topLine span.gr, body main section.progressInf .hidden .list .line span.gr, body main section.progressInf .hidden .list .topLine span.gr, body main section.progressInf .content .list .line span.gr, body main section.progressInf .content .list .topLine span.gr {
+    margin-right: 7.5px;
+  }
   body main section.header .container .buttons {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -976,14 +1291,35 @@ span.mob, .mob {
   body main section.promo .container.contentBlock .hidden .list .line .badge .tooltip .tooltip-inner {
     margin-left: -40px;
   }
-  body main section.appForm .container.contentBlock .head span.name, body main section.promo .container.contentBlock .head span.name, body main section.socials .container.contentBlock .head span.name, body main section.orders .container.contentBlock .head span.name, body main section.sTicketInf .container.contentBlock .head span.name, body main section.schedule .container.contentBlock .head span.name, body main section.appointDiet .container.contentBlock .head span.name, body main section.progressInf .container.contentBlock .head span.name {
-    font-size: 18px;
+  body main section.orders .container.contentBlock .hidden .buttons, body main section.orders .container.contentBlock .content .buttons, body main section.sTicketInf .container.contentBlock .hidden .buttons, body main section.sTicketInf .container.contentBlock .content .buttons, body main section.appointDiet .container.contentBlock .hidden .buttons, body main section.appointDiet .container.contentBlock .content .buttons {
+    margin-top: 15px;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
-  body main section.appForm .container.contentBlock .hidden p.desc, body main section.appForm .container.contentBlock .content p.desc, body main section.promo .container.contentBlock .hidden p.desc, body main section.promo .container.contentBlock .content p.desc, body main section.socials .container.contentBlock .hidden p.desc, body main section.socials .container.contentBlock .content p.desc, body main section.orders .container.contentBlock .hidden p.desc, body main section.orders .container.contentBlock .content p.desc, body main section.sTicketInf .container.contentBlock .hidden p.desc, body main section.sTicketInf .container.contentBlock .content p.desc, body main section.schedule .container.contentBlock .hidden p.desc, body main section.schedule .container.contentBlock .content p.desc, body main section.appointDiet .container.contentBlock .hidden p.desc, body main section.appointDiet .container.contentBlock .content p.desc, body main section.progressInf .container.contentBlock .hidden p.desc, body main section.progressInf .container.contentBlock .content p.desc {
+  body main section.orders .container.contentBlock .hidden .buttons .button, body main section.orders .container.contentBlock .content .buttons .button, body main section.sTicketInf .container.contentBlock .hidden .buttons .button, body main section.sTicketInf .container.contentBlock .content .buttons .button, body main section.appointDiet .container.contentBlock .hidden .buttons .button, body main section.appointDiet .container.contentBlock .content .buttons .button {
+    width: 120px;
+    height: 35px;
+    margin: 0;
+  }
+  body main section.orders .container.contentBlock .hidden .buttons .button span, body main section.orders .container.contentBlock .content .buttons .button span, body main section.sTicketInf .container.contentBlock .hidden .buttons .button span, body main section.sTicketInf .container.contentBlock .content .buttons .button span, body main section.appointDiet .container.contentBlock .hidden .buttons .button span, body main section.appointDiet .container.contentBlock .content .buttons .button span {
     font-size: 14px;
   }
-  body main section.appForm .container.contentBlock .hidden .list .line, body main section.appForm .container.contentBlock .hidden .list .topLine, body main section.appForm .container.contentBlock .content .list .line, body main section.appForm .container.contentBlock .content .list .topLine, body main section.promo .container.contentBlock .hidden .list .line, body main section.promo .container.contentBlock .hidden .list .topLine, body main section.promo .container.contentBlock .content .list .line, body main section.promo .container.contentBlock .content .list .topLine, body main section.socials .container.contentBlock .hidden .list .line, body main section.socials .container.contentBlock .hidden .list .topLine, body main section.socials .container.contentBlock .content .list .line, body main section.socials .container.contentBlock .content .list .topLine, body main section.orders .container.contentBlock .hidden .list .line, body main section.orders .container.contentBlock .hidden .list .topLine, body main section.orders .container.contentBlock .content .list .line, body main section.orders .container.contentBlock .content .list .topLine, body main section.sTicketInf .container.contentBlock .hidden .list .line, body main section.sTicketInf .container.contentBlock .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .content .list .line, body main section.sTicketInf .container.contentBlock .content .list .topLine, body main section.schedule .container.contentBlock .hidden .list .line, body main section.schedule .container.contentBlock .hidden .list .topLine, body main section.schedule .container.contentBlock .content .list .line, body main section.schedule .container.contentBlock .content .list .topLine, body main section.appointDiet .container.contentBlock .hidden .list .line, body main section.appointDiet .container.contentBlock .hidden .list .topLine, body main section.appointDiet .container.contentBlock .content .list .line, body main section.appointDiet .container.contentBlock .content .list .topLine, body main section.progressInf .container.contentBlock .hidden .list .line, body main section.progressInf .container.contentBlock .hidden .list .topLine, body main section.progressInf .container.contentBlock .content .list .line, body main section.progressInf .container.contentBlock .content .list .topLine {
-    padding-right: 5px;
+  body main section.orders .container.contentBlock .hidden .list .line .buttonPay, body main section.orders .container.contentBlock .hidden .list .topLine .buttonPay, body main section.orders .container.contentBlock .content .list .line .buttonPay, body main section.orders .container.contentBlock .content .list .topLine .buttonPay, body main section.sTicketInf .container.contentBlock .hidden .list .line .buttonPay, body main section.sTicketInf .container.contentBlock .hidden .list .topLine .buttonPay, body main section.sTicketInf .container.contentBlock .content .list .line .buttonPay, body main section.sTicketInf .container.contentBlock .content .list .topLine .buttonPay, body main section.appointDiet .container.contentBlock .hidden .list .line .buttonPay, body main section.appointDiet .container.contentBlock .hidden .list .topLine .buttonPay, body main section.appointDiet .container.contentBlock .content .list .line .buttonPay, body main section.appointDiet .container.contentBlock .content .list .topLine .buttonPay {
+    justify-self: right;
+  }
+  body main section.appForm .container.contentBlock .hidden .list .fullAppForm .hidden .line, body main section.appForm .container.contentBlock .hidden .list .fullAppForm .content .line, body main section.appForm .container.contentBlock .content .list .fullAppForm .hidden .line, body main section.appForm .container.contentBlock .content .list .fullAppForm .content .line {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body main section.appointDiet .container.contentBlock .hidden .list .topLine .buttonPay, body main section.appointDiet .container.contentBlock .hidden .list .line .buttonPay, body main section.appointDiet .container.contentBlock .content .list .topLine .buttonPay, body main section.appointDiet .container.contentBlock .content .list .line .buttonPay {
+    justify-self: left;
+  }
+  body main section.appointDiet .container.contentBlock .hidden .list .topLine span, body main section.appointDiet .container.contentBlock .content .list .topLine span {
+    letter-spacing: 1px;
+  }
+  body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine {
+    padding-right: 15px;
   }
 }
 

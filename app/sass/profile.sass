@@ -3,9 +3,8 @@
 
 main
 	section.contacts
-		.container
-			padding-left: 0
-			padding-right: 0
+		margin-left: -15px
+		margin-right: -15px
 	section.header
 		.container
 			padding-top: 65px
@@ -193,22 +192,41 @@ main
 				padding-bottom: 5px
 				.topLine, .line
 					display: grid
-					grid-template-columns: 92% 8%
+					grid-template-columns: 1fr 1fr
+					span.jusR
+						justify-self: right
+						margin-right: 5px
+				.topLine
+					grid-template-columns: 1fr
 				.fullAppForm
 					.head
 						margin-bottom: 10px
 						span.name
 							color: #ff2e2f
+							transition: 0.3s
 							font-size: 20px
 							font-family: 'MullerExtraBold'
-							
+					.head:hover
+						span.name
+							color: #fa8384
+						.profile-buttonOpen
+							background-color: #fa8384
+						.profile-buttonClose
+							background-color: #9b9797
 					.hidden
 						padding: 0
 						.topLine, .line
 							display: grid
-							grid-template-columns: 96% 4%
+							grid-template-columns: 80% 20%
 							padding-left: 15px
 							padding-right: 15px
+							span.jusR
+								justify-content: right
+							span.mob, .mob
+								display: none
+						.line.mob
+							display: none
+
 	section.orders, section.appointDiet, section.sTicketInf
 		.hidden
 			.button:hover, .button.active
@@ -283,6 +301,8 @@ main
 						span.time
 							margin-left: 10px
 						img
+							width: 17px
+							height: auto
 							margin-left: 47.5px
 							margin-top: -13px
 							margin-bottom: -13px
@@ -295,6 +315,8 @@ main
 							font-family: 'MullerBold'
 							font-size: 12px
 							margin-left: 7.5px
+				.list.mob
+					display: none
 		.collages
 			.item
 				margin-right: 30px
@@ -348,6 +370,7 @@ main
 				span.name
 					font-family: 'MullerExtraBold'
 					font-size: 30px
+					line-height: 1.2
 					color: #333
 				.line
 					background-color: rgb(0, 0, 0)
@@ -449,8 +472,15 @@ main
 		.collages
 			margin-top: 35px
 
-span.mob, .mob
+	span.mob, .mob
 		display: none
+	.container.contentBlock, .container
+		.hidden, .content
+			.list
+				.line.mob, .line.gray.mob, .topLine.mob
+					display: none
+					span.mob, .mob
+						display: none
 @media only screen and(max-width: 1200px)
 	body
 		main
@@ -476,6 +506,13 @@ span.mob, .mob
 						.topLine
 							span
 								font-size: 12px
+			section.sTicketInf
+				.container.contentBlock
+					.schedule
+						.hidden, .content
+							.list
+								.topLine, .line
+									grid-template-columns: 33% 17% 22% 12% 16%
 @media only screen and(max-width: 991px)
 	body
 		main 
@@ -504,6 +541,31 @@ span.mob, .mob
 					.list
 						.badge
 							margin-left: 7.5px
+			section.sTicketInf
+				.container.contentBlock
+					.schedule
+						.hidden, .content
+							.list
+								.topLine, .line
+									grid-template-columns: 33% 20% 22% 12% 13%
+			section.progressInf
+				.container.contentBlock
+					.stats
+						.hidden, .content
+							.list
+								.line, .line.gray
+									span.gr
+										margin: 0
+									img
+										margin-top: -7px
+										margin-bottom: -7px
+					.collages
+						.hidden
+							.d-flex
+								.item
+									.borderOuter
+										img
+											width: 240px
 			section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
 				.head
 					padding-left: 40px
@@ -535,6 +597,10 @@ span.mob, .mob
 							padding-right: 15px
 							span
 								font-size: 14px
+						.line, .topLine
+							.buttonPay
+								span
+									font-size: 10px
 
 @media only screen and(max-width: 768px)
 	body
@@ -569,11 +635,125 @@ span.mob, .mob
 						.list
 							.topLine, .line
 								grid-template-columns: 1fr
-								padding-right: 50px
 								span.desk
 									display: none
 								span.mob
 									display: block
+			section.orders
+				.container.contentBlock
+					.hidden	
+						.list
+							.topLine, .line
+								grid-template-columns: 47% 53%
+								span.gray-mob
+									color: #b4aeae
+			section.sTicketInf
+				.container.contentBlock
+					.sTicket
+						.hidden, .content
+							.list
+								.topLine, .line
+									grid-template-columns: 21% 25% 38% 16%
+									span.desk
+										display: none
+									span.mob
+										display: block
+					.schedule
+						.hidden, .content
+							.list
+								margin-top: 25px
+								.topLine, .line
+									padding-right: 15px
+									grid-template-areas: "a a a"
+									grid-template-columns: 50% 33% 17%
+									span.gray-mob
+										color: #b4aeae
+									.gaa
+										grid-area: a
+								.topLine
+									// grid-template-columns: 27% 53% 20%
+								.line
+									padding-top: 15px
+									padding-bottom: 15px
+									grid-template-columns: 50% 33% 17%
+									.gaa
+										margin-bottom: 10px
+									.buttonPay
+										margin-top: 10px
+										margin-bottom: 10px
+										justify-self: left
+			section.appointDiet
+				.container.contentBlock
+					.hidden, .content
+						.list
+							.topLine, .line
+								span.desk
+									display: none
+								span.mob
+									display: block
+								span.gray-mob
+									color: #b4aeae
+							.line
+								padding-top: 20px
+								padding-bottom: 20px
+						.list.orders-listUnpaid
+							.topLine
+								grid-template-columns: 1fr
+							.line
+								grid-template-areas: "a a"
+								grid-template-columns: 63% 37%
+								.gaa
+									grid-area: a
+						.list.orders-listPaid
+							.topLine, .line
+								grid-template-areas: 
+								grid-template-columns: 1fr
+			section.progressInf
+				.container.contentBlock
+					.stats
+						.hidden, .content
+							.list.desk
+								display: none
+							.list.mob
+								display: block
+								.topLine
+									align-items: center
+									grid-template-columns: 47% 53%
+									span.gr, span.time
+										margin: 0
+										font-family: 'MullerLight'
+										color: #f5f5f5
+										font-size: 14px
+										letter-spacing: normal
+									span.gr
+										justify-self: right
+										span.time
+											margin-left: 5px
+								.list-content
+									display: grid
+									grid-template-columns: auto 70px
+									.valueBlock
+										.line
+											padding-top: 9px
+											padding-bottom: 9px
+											align-items: center
+											padding-right: 30px
+											grid-template-columns: 56% 44%
+											span.bb
+												text-transform: uppercase
+												font-size: 12px
+											.item
+												justify-self: right
+								img
+									align-self: center
+									width: 100%
+					.collages
+						.hidden
+							.d-flex
+								.item
+									.borderOuter
+										img
+											width: 195px
 			section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
 				.container.contentBlock
 					padding-left: 15px
@@ -612,6 +792,15 @@ span.mob, .mob
 					.text
 						.line
 							padding-left: 50px
+			section.progressInf
+				.container.contentBlock
+					.collages
+						.hidden
+							.d-flex
+								.item
+									.borderOuter
+										img
+											width: 170px
 @media only screen and(max-width: 500px)
 	body
 		main
@@ -630,6 +819,8 @@ span.mob, .mob
 								display: none
 							span.mob
 								display: block
+			section.personInf
+				padding-top: 20px
 			section.socials
 				.container.contentBlock
 					.hidden
@@ -640,7 +831,90 @@ span.mob, .mob
 							border: none
 							.topLine, .line
 								grid-template-columns: 1fr
-
+			section.orders, section.sTicketInf
+				.container.contentBlock
+					.sTicket
+						.hidden, .content
+							.list
+								.topLine
+									grid-template-areas: "a b" "c c"
+									grid-template-columns: 51% 49%
+								.line
+									grid-template-columns: 23.5% 11.75% 11.75% 26.5% 26.5%
+									grid-template-areas: "a a a b b" "c c c c d"
+								.gaa
+									grid-area: a
+								.gab
+									grid-area: b
+								.gac
+									grid-area: c
+								.gad
+									grid-area: d
+								.line, .topLine
+									padding-right: 15px !important
+					.hidden, .content
+						.list
+							.topLine
+								grid-template-areas: "a b" "c c"
+								grid-template-columns: 51% 49%
+							.line
+								grid-template-columns: 23.5% 11.75% 11.75% 26.5% 26.5%
+								grid-template-areas: "a a b b b" "c c c c d"
+							.gaa
+								grid-area: a
+							.gab
+								grid-area: b
+							.gac
+								grid-area: c
+							.gad
+								grid-area: d
+							.line
+								padding-right: 15px !important
+			section.appForm
+				.container.contentBlock
+					.hidden, .content
+						.list
+							.line.desk, .line.gray.desk
+								display: none
+							.line.mob, .line.gray.mob
+								display: grid
+							.line, .topLine
+								align-items: center
+								span.desk
+									display: none
+								span.mob
+									display: block
+								span.bb
+									text-transform: uppercase
+									font-size: 12px
+							.line.gray-desk
+								background-color: #ffffff
+							.line.gray-mob
+								background-color: #f5f5f5
+							.fullAppForm
+								margin-top: 15px
+								.hidden, .content
+									.line, .topLine
+										grid-template-columns: 1fr
+										span
+											text-transform: none
+										span.jusR
+											display: none
+										span.bb
+											font-size: 13px
+									.line.gray-mob
+										background-color: #f5f5f5
+			section.progressInf
+				.container.contentBlock
+					.collages
+						.hidden
+							.d-flex
+								padding-top: 15px
+								.item
+									margin: 0 auto
+									.borderOuter
+										img
+											width: 100%
 			section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
 				.container.contentBlock
 					.head
@@ -653,6 +927,18 @@ span.mob, .mob
 @media only screen and(max-width: 400px)
 	body
 		main
+			section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
+				.head
+					span.name
+						font-size: 18px
+				.hidden, .content
+					p.desc
+						font-size: 14px
+					.list
+						.line, .topLine
+							padding-right: 5px
+							span.gr
+								margin-right: 7.5px
 			section.header
 				.container
 					.buttons
@@ -688,17 +974,49 @@ span.mob, .mob
 									.tooltip
 										.tooltip-inner
 											margin-left: -40px
-			section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
+			section.orders, section.sTicketInf, section.appointDiet
 				.container.contentBlock
-					.head
-						span.name
-							font-size: 18px
 					.hidden, .content
-						p.desc
-							font-size: 14px
+						.buttons
+							margin-top: 15px
+							justify-content: space-around
+							.button
+								width: 120px
+								height: 35px
+								margin: 0
+								span
+									font-size: 14px
 						.list
 							.line, .topLine
-								padding-right: 5px
+								.buttonPay
+									justify-self: right
+			section.appForm
+				.container.contentBlock
+					.hidden, .content
+						.list
+							.fullAppForm
+								.hidden, .content
+									.line
+										padding-left: 15px
+										padding-right: 15px
+			section.appointDiet
+				.container.contentBlock
+					.hidden, .content
+						.list
+							.topLine, .line
+								.buttonPay
+									justify-self: left
+							.topLine
+								span
+									letter-spacing: 1px
+			section.progressInf
+				.container.contentBlock
+					.stats
+						.hidden, .content
+							.list.mob
+								.topLine
+									padding-right: 15px
+
 
 @media only screen and(max-width: 350px)
 	body
