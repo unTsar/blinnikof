@@ -345,7 +345,7 @@ main section.appForm .hidden .list .topLine, main section.appForm .hidden .list 
 }
 
 main section.appForm .hidden .list .topLine span.jusR, main section.appForm .hidden .list .line span.jusR {
-  justify-self: right;
+  text-align: right;
   margin-right: 5px;
 }
 
@@ -1019,7 +1019,7 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
     letter-spacing: normal;
   }
   body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine span.gr, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine span.gr {
-    justify-self: right;
+    text-align: right;
   }
   body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine span.gr span.time, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine span.gr span.time {
     margin-left: 5px;
@@ -1180,6 +1180,9 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   }
   body main section.orders .container.contentBlock .hidden .list .line, body main section.orders .container.contentBlock .content .list .line, body main section.sTicketInf .container.contentBlock .hidden .list .line, body main section.sTicketInf .container.contentBlock .content .list .line {
     padding-right: 15px !important;
+  }
+  body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .line span.gray-mob, body main section.sTicketInf .container.contentBlock .sTicket .hidden .list .topLine span.gray-mob, body main section.sTicketInf .container.contentBlock .sTicket .content .list .line span.gray-mob, body main section.sTicketInf .container.contentBlock .sTicket .content .list .topLine span.gray-mob {
+    color: #b4aeae;
   }
   body main section.appForm .container.contentBlock .hidden .list .line.desk, body main section.appForm .container.contentBlock .hidden .list .line.gray.desk, body main section.appForm .container.contentBlock .content .list .line.desk, body main section.appForm .container.contentBlock .content .list .line.gray.desk {
     display: none;
