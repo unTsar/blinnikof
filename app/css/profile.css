@@ -341,7 +341,7 @@ main section.appForm .hidden .list {
 
 main section.appForm .hidden .list .topLine, main section.appForm .hidden .list .line {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 46% 54%;
 }
 
 main section.appForm .hidden .list .topLine span.jusR, main section.appForm .hidden .list .line span.jusR {
@@ -1009,7 +1009,7 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    grid-template-columns: 47% 53%;
+    grid-template-columns: 40% 60%;
   }
   body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine span.gr, body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine span.time, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine span.gr, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine span.time {
     margin: 0;
