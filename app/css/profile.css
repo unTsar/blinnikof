@@ -54,11 +54,6 @@
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
 }
 
-main section.contacts {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
 main section.header .container {
   padding-top: 65px;
 }
