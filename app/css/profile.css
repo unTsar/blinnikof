@@ -58,26 +58,6 @@ main section.header .container {
   padding-top: 65px;
 }
 
-main section.header .container span.breadcrumbs {
-  font-family: 'MullerRegular';
-  font-size: 16px;
-  color: #969696;
-}
-
-main section.header .container span.breadcrumbs span.active {
-  position: relative;
-  color: #262626;
-}
-
-main section.header .container span.breadcrumbs span.active::before {
-  position: absolute;
-  bottom: 0;
-  content: '';
-  background-color: #AFAFAF;
-  width: 100%;
-  height: 2px;
-}
-
 main section.header .container .head {
   margin-top: 50px;
 }
@@ -145,7 +125,7 @@ main section.header .container .buttons .button span {
 }
 
 main section.personInf {
-  padding-top: 60px;
+  margin-top: 60px;
   margin-bottom: 35px;
 }
 
@@ -799,7 +779,7 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
     margin-right: 5px;
   }
   body main section.personInf {
-    padding-top: 40px;
+    margin-top: 40px;
   }
   body main section.personInf .container .iconQr {
     padding-top: 0;
@@ -1118,7 +1098,7 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
     display: block;
   }
   body main section.personInf {
-    padding-top: 20px;
+    margin-top: 20px;
   }
   body main section.socials .container.contentBlock .hidden .list.desk {
     display: none;

@@ -30,4 +30,6 @@ $(document).ready(function() {
 			$("#my-button").removeClass( "is-active" );
 		}, 10);
 	});
+
+	$(".mm-page").removeClass("mm-slideout");
 });

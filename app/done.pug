@@ -1,0 +1,44 @@
+extends _layouts/home
+
+block styles
+
+	link(rel="stylesheet", href="css/main.css")
+	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/done.css")
+
+
+block content
+	include _partials/header.pug
+	main
+		.container-fluid
+			.container
+				.header-breadcrumbs
+						.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="done.html") Оплата]
+				h1 #[span.red Мария], здравствуйте.
+				h2 Ваш заказ 123456 оплачен.
+				.col-12.col-lg-8.col
+					p.desc Мы поздравляем вас и очень рады, что с этого момента вы официально стали участником курса BodyEvolution и членом семьи школы V-CONCEPT.
+				.infBlock
+					.textInf
+						p.inf Напоминаем, что вы записаны в группу :
+						p.red #BodyEvolution_январь_05
+						p.inf.desk СТАРТ курса #[span.b 13 января 2019 года.]
+					.schedule
+						span.head Расписание тренировок:
+						.list
+							.item Понедельник 19.00
+							br
+							.item Среда 19.00
+							br
+							.item Пятница 19.00
+					.textInf.mob
+						p.inf СТАРТ курса #[br] #[span.b 13 января 2019 года.]
+				.col-12.col-lg-7.col
+					p.desc В ближайшее время на вашу электронную почту придет #[a.red(href="#") анкета] от нашего диетолога, на основе которой будет составлен ваш рацион питания
+
+		include _partials/contacts.pug
+	include _partials/footer.pug
+
+
+block scripts
+	script(src="js/map.js")

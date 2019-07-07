@@ -13,7 +13,8 @@ block content
     main
         section.header
             .container
-                span.breadcrumbs Главная / <span class="active">Цены на занятия</span>
+                .header-breadcrumbs
+                    .breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="prices.html") Цены на занятия]
                 .head
                     .row
                         .col-12

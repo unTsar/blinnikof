@@ -59,7 +59,10 @@
     <main>
       <div class="container-fluid">
         <section class="header">
-          <div class="container"><span class="breadcrumbs">Главная / <span class="active">Личный кабинет</span></span>
+          <div class="container">
+            <div class="header-breadcrumbs">
+              <div class="breadcrumbs"><a class="home" href="#">Главная</a> <span class="slash">/</span> <a class="active" href="profile.html">Личный кабинет</a></div>
+            </div>
             <div class="Outer">
               <div class="head">
                 <div class="row">
@@ -69,8 +72,8 @@
               <div class="buttons">
                 <div class="header-scrollTo-btn button active d-flex align-items-center justify-content-center" onclick="$.scrollTo('.personInf', 500);"><span>Общая информация</span></div>
                 <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.orders', 500);"><span class="desk">Заказы BodyEvolution</span><span class="mob">BodyEvolution</span></div>
-                <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.sTicket', 500);"><span>Абонементы</span></div>
-                <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.stats', 500);"><span>Твой прогресс</span></div><a class="button d-flex align-items-center justify-content-center" href="#"><span>Видео-лекции</span></a>
+                <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.sTicketInf', 500);"><span>Абонементы</span></div>
+                <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.progressInf', 500);"><span>Твой прогресс</span></div><a class="button d-flex align-items-center justify-content-center" href="#"><span>Видео-лекции</span></a>
                 <div class="header-scrollTo-btn button d-flex align-items-center justify-content-center" onclick="$.scrollTo('.appointDiet', 500);"><span>Запись к диетологу</span></div>
               </div>
             </div>

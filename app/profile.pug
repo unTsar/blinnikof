@@ -15,7 +15,8 @@ block content
         .container-fluid
             section.header
                 .container
-                    span.breadcrumbs Главная / <span class="active">Личный кабинет</span>
+                    .header-breadcrumbs
+                        .breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="profile.html") Личный кабинет]
                     .Outer
                         .head
                             .row
@@ -27,9 +28,9 @@ block content
                             .header-scrollTo-btn(onclick="$.scrollTo('.orders', 500);").button.d-flex.align-items-center.justify-content-center
                                 span.desk Заказы BodyEvolution
                                 span.mob BodyEvolution
-                            .header-scrollTo-btn(onclick="$.scrollTo('.sTicket', 500);").button.d-flex.align-items-center.justify-content-center
+                            .header-scrollTo-btn(onclick="$.scrollTo('.sTicketInf', 500);").button.d-flex.align-items-center.justify-content-center
                                 span Абонементы
-                            .header-scrollTo-btn(onclick="$.scrollTo('.stats', 500);").button.d-flex.align-items-center.justify-content-center
+                            .header-scrollTo-btn(onclick="$.scrollTo('.progressInf', 500);").button.d-flex.align-items-center.justify-content-center
                                 span Твой прогресс
                             a(href="#").button.d-flex.align-items-center.justify-content-center
                                 span Видео-лекции

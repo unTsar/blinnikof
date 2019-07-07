@@ -9,8 +9,9 @@ block content
 
 	include _partials/header.pug
 	main
-		section.container.breadcrumbs 
-			span Главная / <span class="active">Расписание занятий</span>
+		section.header-breadcrumbs
+			.container
+				.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="schedules.html") Расписание занятий]
 		section.container.dates
 			.header
 				.row

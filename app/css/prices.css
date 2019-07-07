@@ -58,26 +58,6 @@ main section.header .container {
   padding-top: 65px;
 }
 
-main section.header .container span.breadcrumbs {
-  font-family: 'MullerRegular';
-  font-size: 16px;
-  color: #969696;
-}
-
-main section.header .container span.breadcrumbs span.active {
-  position: relative;
-  color: #262626;
-}
-
-main section.header .container span.breadcrumbs span.active::before {
-  position: absolute;
-  bottom: 0;
-  content: '';
-  background-color: #AFAFAF;
-  width: 100%;
-  height: 2px;
-}
-
 main section.header .container .head {
   margin-top: 50px;
 }
