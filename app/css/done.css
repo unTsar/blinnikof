@@ -6,10 +6,6 @@ main .header-breadcrumbs .breadcrumbs a.active {
   color: #777777;
 }
 
-main .mob {
-  display: none;
-}
-
 main h1 {
   margin-top: 85px;
   margin-bottom: 0;
@@ -42,6 +38,10 @@ main .infBlock {
   margin-top: 57.5px;
   margin-bottom: 0;
   padding-bottom: 15px;
+}
+
+main .infBlock .textInf.mob {
+  display: none;
 }
 
 main .infBlock .textInf p.inf {
@@ -121,7 +121,7 @@ main .infBlock .schedule .list .item {
   body main .infBlock {
     margin-top: 30px;
   }
-  body main .infBlock .mob {
+  body main .infBlock .textInf.mob {
     display: block;
   }
   body main .infBlock .textInf .desk {
