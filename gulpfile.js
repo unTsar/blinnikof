@@ -1,18 +1,18 @@
 var gulp          = require('gulp'),
-		gutil         = require('gulp-util' ),
-		sass          = require('gulp-sass'),
-		pug			  = require('gulp-pug'),
-		browserSync   = require('browser-sync'),
-		concat        = require('gulp-concat'),
-		uglify        = require('gulp-uglify'),
-		cleancss      = require('gulp-clean-css'),
-		rename        = require('gulp-rename'),
-		autoprefixer  = require('gulp-autoprefixer'),
-		notify        = require('gulp-notify'),
-		rsync         = require('gulp-rsync'),
-		imagemin 	  = require('gulp-imagemin'),
-		pngquant      = require('gulp-pngquant'),
-		jpegoptim     = require('imagemin-jpegoptim');
+	gutil         = require('gulp-util' ),
+	sass          = require('gulp-sass'),
+	pug			  = require('gulp-pug'),
+	browserSync   = require('browser-sync'),
+	concat        = require('gulp-concat'),
+	uglify        = require('gulp-uglify'),
+	cleancss      = require('gulp-clean-css'),
+	rename        = require('gulp-rename'),
+	autoprefixer  = require('gulp-autoprefixer'),
+	notify        = require('gulp-notify'),
+	rsync         = require('gulp-rsync'),
+	imagemin 	  = require('gulp-imagemin'),
+	pngquant      = require('gulp-pngquant'),
+	jpegoptim     = require('imagemin-jpegoptim');
 
 gulp.task('browser-sync', function() {
 	browserSync({

@@ -375,6 +375,16 @@ b, strong
 		header.container-fluid
 			.phoneCont
 				display: none !important
+@media only screen and(max-width: 500px)
+	body 
+		.mm-menu_offcanvas
+			width: 100%
+			max-width: none
+			z-index: 5000
+		header.container-fluid
+			.menu
+				.circle
+					z-index: 5000
 @media only screen and(max-width: 400px)
 	body
 		header.container-fluid
@@ -394,6 +404,7 @@ b, strong
 					svg
 						height: 32px
 						width: auto
+
 @media only screen and(max-width: 340px)
 	body
 		footer.container-fluid, header.container-fluid

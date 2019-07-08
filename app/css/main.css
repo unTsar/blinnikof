@@ -31,6 +31,14 @@
 }
 
 @font-face {
+  font-family: "MullerThin";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerThin/MullerThin.eot");
+  src: url("../fonts/MullerThin/MullerThin.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerThin/MullerThin.woff") format("woff"), url("../fonts/MullerThin/MullerThin.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "MullerMedium";
   font-weight: normal;
   font-style: normal;
@@ -75,12 +83,12 @@
 }
 
 ::-moz-selection {
-  background-color: #e93333;
+  background-color: #ff2e2f;
   color: #fff;
 }
 
 ::selection {
-  background-color: #e93333;
+  background-color: #ff2e2f;
   color: #fff;
 }
 
@@ -647,6 +655,17 @@ b, strong {
 @media only screen and (max-width: 767px) {
   body header.container-fluid .phoneCont {
     display: none !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body .mm-menu_offcanvas {
+    width: 100%;
+    max-width: none;
+    z-index: 5000;
+  }
+  body header.container-fluid .menu .circle {
+    z-index: 5000;
   }
 }
 

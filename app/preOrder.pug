@@ -1,0 +1,54 @@
+extends _layouts/home
+
+block styles
+	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/preOrder.css")
+
+
+block content
+	include _partials/header.pug
+	main
+		.container-fluid
+			.container
+				.header-breadcrumbs
+					.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="done.html") Оплата]
+				h1 #[span.red Заказ] 22015
+				h2 Мария, здравствуйте.
+				p.text|Вы оставили предварительную заявку на курс BodyEvolution. 
+					br
+					|Мы с вами свяжемся в ближайшее время. 
+				p.text|Обращаем ваше внимание, что подача заявки не бронирует место в группе. 
+					br
+					|Запись в группу происходит #[a.red.underlined(href="#") только после оплаты.]
+				.infBlock
+					.textInf
+						p.inf Напоминаем, что вы записаны в группу :
+						p.red #BodyEvolution_январь_05
+						p.inf.desk СТАРТ курса #[span.b 13 января 2019 года.]
+					.schedule
+						span.head Расписание тренировок:
+						.list
+							.item Понедельник 19.00 
+							br
+							.item Среда 19.00 
+							br
+							.item Пятница 19.00
+					.textInf.mob
+						p.inf СТАРТ курса #[br] #[span.b 13 января 2019 года.]
+				.col-12.col-sm-6.col-md-5.col-lg-3.col
+					.button.d-flex.align-items-center.justify-content-center
+						span Перейти к оплате
+				p.text.sm|Если у вас остались вопросы, мы будем рады ответить  
+					br
+					|по тел. #[span.thin 8 (495) 125-32-25] или  
+					br
+					|по электронной почте #[span.thin info@v-concept.ru]
+				.col-12.col-lg-7.col
+					p.text.light(style="margin-right: -5px;") Также вся информация была вам отправлена на ваш электронный адрес с ссылкой на оплату.
+
+		include _partials/contacts.pug
+	include _partials/footer.pug
+
+
+block scripts
+	script(src="js/map.js")

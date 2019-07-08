@@ -4,6 +4,10 @@ section.contacts {
   position: relative;
 }
 
+section.contacts .ymap {
+  z-index: 50;
+}
+
 section.contacts .ymap .map {
   position: absolute;
   top: 0;
@@ -54,6 +58,7 @@ section.contacts [class*="ymaps-2"][class*="-ground-pane"] {
 
 section.contacts .container {
   position: relative;
+  z-index: 100;
 }
 
 section.contacts .container .c6 {
