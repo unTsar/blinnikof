@@ -74,26 +74,6 @@ main section.list .container {
   padding-top: 65px;
 }
 
-main section.list .container span.breadcrumbs {
-  font-family: 'MullerRegular';
-  font-size: 16px;
-  color: #969696;
-}
-
-main section.list .container span.breadcrumbs span.active {
-  position: relative;
-  color: #262626;
-}
-
-main section.list .container span.breadcrumbs span.active::before {
-  position: absolute;
-  bottom: 0;
-  content: '';
-  background-color: #AFAFAF;
-  width: 100%;
-  height: 2px;
-}
-
 main section.list .container .head {
   margin-top: 50px;
   margin-bottom: 110px;
