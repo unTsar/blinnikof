@@ -8,10 +8,16 @@ $(document).ready(function() {
 		if ($('#menu').hasClass('hidden')) {
 			$('#menu').removeClass('hidden')
 			$('#menu-pagedim').addClass('turned')
+			setTimeout(function () {
+				$('#menu-pagedim').addClass('turnedOpacity');
+		    }, 20);
 			$('body').addClass('fixed')
 		}else{
 			$('#menu').addClass('hidden');
-			$('#menu-pagedim').removeClass('turned')
+			$('#menu-pagedim').removeClass('turnedOpacity')
+			$('#menu-pagedim').one('transitionend', function(e) {
+		      $('#menu-pagedim').removeClass('turned');
+		    });
 			$('body').removeClass('fixed')
 		}
 	});
@@ -20,7 +26,10 @@ $(document).ready(function() {
 			$("#my-button").removeClass('is-active');
 			$('#menu').addClass('hidden');
 			$('body').removeClass('fixed')
-			$(this).removeClass('turned')
+			$(this).removeClass('turnedOpacity')
+			$(this).one('transitionend', function(e) {
+		      $(this).removeClass('turned');
+		    });
 		}
 	})
 });

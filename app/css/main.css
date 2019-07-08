@@ -143,6 +143,7 @@ body #menu-pagedim {
   -o-transition: 0.3s;
   transition: 0.3s;
   position: absolute;
+  display: none;
   left: 0;
   top: 0;
   width: 100%;
@@ -151,6 +152,10 @@ body #menu-pagedim {
 }
 
 body #menu-pagedim.turned {
+  display: block;
+}
+
+body #menu-pagedim.turnedOpacity {
   opacity: 0.3;
 }
 
