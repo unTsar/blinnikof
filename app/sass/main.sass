@@ -11,6 +11,10 @@
 html, body
 	width: 100%
 	min-width: 320px
+.fixed
+	position: fixed
+	width: 100%
+
 body
 	width: 100%
 	font-size: 16px
@@ -33,6 +37,54 @@ body
 			border-color: green
 	.red
 		color: #ff2e2f
+	#menu-pagedim
+		background-color: #000000
+		opacity: 0
+		transition: 0.3s
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 4500
+	#menu-pagedim.turned
+		opacity: 0.3
+	nav.menu.hidden
+		left: -500px
+	nav.menu
+		position: fixed
+		left: 0px
+		top: 0
+		z-index: 5000
+		height: 100%
+		min-width: 500px
+		transition: 0.5s
+		padding-top: 215px
+		ul 
+			padding: 0
+			list-style-type: none
+			.separLine
+				background-color: #eeeeee
+				width: 100%
+				height: 1px
+				margin-top: 20px
+				margin-bottom: 20px
+			li.item 
+				padding-left: 65px
+				padding-right: 65px
+				padding-top: 10px
+				padding-bottom: 10px
+				a
+					transition: 0.3s
+					text-decoration: none
+					outline: none
+					color: #ffffff
+					font-family: 'MullerLight'
+					font-size: 24px
+				a:hover
+					color: #ff2e2f
+
+		background-color: #303030
 	.header-breadcrumbs
 		.breadcrumbs
 			a.home
@@ -57,38 +109,7 @@ body
 				color: #777777
 			a, span 
 				vertical-align: bottom
-	.mm-wrapper__blocker
-		z-index: 2000
-	.mm-menu_offcanvas
-		z-index: 1000
-	.mm-panel
-		background-color: #303030
-		padding-top: 50%
-		ul.mm-listview
-			li.mm-listitem
-				padding-left: 30px
-				border: none
-				a.mm-listitem__text
-					margin-top: 5px
-					margin-bottom: 5px
-					color: #fff
-					font-size: 22px
-					transition: 0.3s
-			.line
-				margin-top: 20px
-				margin-bottom: 20px
-				width: 100%
-				padding-left: 0
-			.line.mm-listitem::after
-				left: 0
-				background-color: #fff
-			li.mm-listitem::after
-				display: none
-			li.mm-listitem:hover a.mm-listitem__text
-				color: #ff2c2d
-			li.mm-listitem.mm-listitem_selected
-				a.mm-listitem__text
-					background-color: transparent
+
 	header.container-fluid
 		background-color: #212121
 		padding: 30px 0
@@ -96,7 +117,7 @@ body
 			padding-left: 47.5px
 			.circle
 				position: relative
-				z-index: 1500
+				z-index: 5000
 				cursor: pointer
 				background-color: #ff1c1c
 				width: 66px
@@ -111,6 +132,7 @@ body
 					.hamburger-inner::before
 						background-color: #fff
 						width: 35px
+						transition-duration: 0.5s
 			.hamburger:hover, .hamburger.is-active:hover
 				opacity: 1
 		.logo
@@ -281,6 +303,12 @@ b, strong
 				padding-right: 15px
 			.logoFooter
 				padding-left: 15px
+@media only screen and(max-width: 1499px)
+	body
+		nav.menu
+			min-width: 450px
+		nav.menu.hidden
+			left: -450px
 @media only screen and(max-width: 1400px)
 	body
 		section.first
@@ -367,24 +395,37 @@ b, strong
 				padding-left: 15px
 @media only screen and(max-width: 991px)
 	body
+		nav.menu
+			min-width: 400px
+		nav.menu.hidden
+			left: -400px
 		header.container-fluid
 			.adress
 				display: none !important
 @media only screen and (max-width: 767px)
 	body
+		nav.menu
+			min-width: 390px
+		nav.menu.hidden
+			left: -390px
 		header.container-fluid
 			.phoneCont
 				display: none !important
+@media only screen and(max-width: 600px)
+	body
+		nav.menu
+			padding-top: 125px
 @media only screen and(max-width: 500px)
-	body 
-		.mm-menu_offcanvas
+	body
+		nav.menu
 			width: 100%
-			max-width: none
-			z-index: 5000
-		header.container-fluid
-			.menu
-				.circle
-					z-index: 5000
+			min-width: 320px
+			ul
+				li.item
+					a
+						font-size: 20px
+		nav.menu.hidden
+			left: -100%
 @media only screen and(max-width: 400px)
 	body
 		header.container-fluid

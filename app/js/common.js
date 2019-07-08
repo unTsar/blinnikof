@@ -1,35 +1,26 @@
 $(document).ready(function() {
-	$("#my-menu").mmenu({
-		"extensions": [
-			"fx-menu-slide",
-			"pagedim-black"
-		],
-		navbar: {
-			title: ""
-		},
-		offCanvas: {
-            pageSelector: "#my-wrapper"
-        },
-	});
-	var API = $("#my-menu").data( "mmenu" );
-
 	$("#my-button").click(function() {
-		API.open();
+		if ($(this).hasClass('is-active')) {
+			$(this).removeClass('is-active');
+		}else{
+			$(this).addClass('is-active');
+		}
+		if ($('#menu').hasClass('hidden')) {
+			$('#menu').removeClass('hidden')
+			$('#menu-pagedim').addClass('turned')
+			$('body').addClass('fixed')
+		}else{
+			$('#menu').addClass('hidden');
+			$('#menu-pagedim').removeClass('turned')
+			$('body').removeClass('fixed')
+		}
 	});
-	$("#my-button").click(function() {
-		API.close();
-	});
-
-	API.bind( "open:finish", function() {
-		setTimeout(function() {
-			$("#my-button").addClass( "is-active" );
-		}, 10);
-	});
-	API.bind( "close:finish", function() {
-		setTimeout(function() {
-			$("#my-button").removeClass( "is-active" );
-		}, 10);
-	});
-
-	$(".mm-page").removeClass("mm-slideout");
+	$("#menu-pagedim").click(function() {
+		if ($(this).hasClass('turned')) {
+			$("#my-button").removeClass('is-active');
+			$('#menu').addClass('hidden');
+			$('body').removeClass('fixed')
+			$(this).removeClass('turned')
+		}
+	})
 });

@@ -97,6 +97,11 @@ html, body {
   min-width: 320px;
 }
 
+.fixed {
+  position: fixed;
+  width: 100%;
+}
+
 body {
   width: 100%;
   font-size: 16px;
@@ -128,6 +133,77 @@ body input:required:valid, body textarea:required:valid {
 }
 
 body .red {
+  color: #ff2e2f;
+}
+
+body #menu-pagedim {
+  background-color: #000000;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4500;
+}
+
+body #menu-pagedim.turned {
+  opacity: 0.3;
+}
+
+body nav.menu.hidden {
+  left: -500px;
+}
+
+body nav.menu {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  z-index: 5000;
+  height: 100%;
+  min-width: 500px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 215px;
+  background-color: #303030;
+}
+
+body nav.menu ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+body nav.menu ul .separLine {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body nav.menu ul li.item {
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body nav.menu ul li.item a {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  font-family: 'MullerLight';
+  font-size: 24px;
+}
+
+body nav.menu ul li.item a:hover {
   color: #ff2e2f;
 }
 
@@ -163,58 +239,6 @@ body .header-breadcrumbs .breadcrumbs a, body .header-breadcrumbs .breadcrumbs s
   vertical-align: bottom;
 }
 
-body .mm-wrapper__blocker {
-  z-index: 2000;
-}
-
-body .mm-menu_offcanvas {
-  z-index: 1000;
-}
-
-body .mm-panel {
-  background-color: #303030;
-  padding-top: 50%;
-}
-
-body .mm-panel ul.mm-listview li.mm-listitem {
-  padding-left: 30px;
-  border: none;
-}
-
-body .mm-panel ul.mm-listview li.mm-listitem a.mm-listitem__text {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: #fff;
-  font-size: 22px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-body .mm-panel ul.mm-listview .line {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-  padding-left: 0;
-}
-
-body .mm-panel ul.mm-listview .line.mm-listitem::after {
-  left: 0;
-  background-color: #fff;
-}
-
-body .mm-panel ul.mm-listview li.mm-listitem::after {
-  display: none;
-}
-
-body .mm-panel ul.mm-listview li.mm-listitem:hover a.mm-listitem__text {
-  color: #ff2c2d;
-}
-
-body .mm-panel ul.mm-listview li.mm-listitem.mm-listitem_selected a.mm-listitem__text {
-  background-color: transparent;
-}
-
 body header.container-fluid {
   background-color: #212121;
   padding: 30px 0;
@@ -226,7 +250,7 @@ body header.container-fluid .menu {
 
 body header.container-fluid .menu .circle {
   position: relative;
-  z-index: 1500;
+  z-index: 5000;
   cursor: pointer;
   background-color: #ff1c1c;
   width: 66px;
@@ -247,6 +271,9 @@ body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner::af
 body header.container-fluid .menu .hamburger .hamburger-box .hamburger-inner::before {
   background-color: #fff;
   width: 35px;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 body header.container-fluid .menu .hamburger:hover, body header.container-fluid .menu .hamburger.is-active:hover {
@@ -502,6 +529,15 @@ b, strong {
   }
 }
 
+@media only screen and (max-width: 1499px) {
+  body nav.menu {
+    min-width: 450px;
+  }
+  body nav.menu.hidden {
+    left: -450px;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   body section.first .numbers .aboutNumbers {
     padding-left: 100px;
@@ -647,25 +683,45 @@ b, strong {
 }
 
 @media only screen and (max-width: 991px) {
+  body nav.menu {
+    min-width: 400px;
+  }
+  body nav.menu.hidden {
+    left: -400px;
+  }
   body header.container-fluid .adress {
     display: none !important;
   }
 }
 
 @media only screen and (max-width: 767px) {
+  body nav.menu {
+    min-width: 390px;
+  }
+  body nav.menu.hidden {
+    left: -390px;
+  }
   body header.container-fluid .phoneCont {
     display: none !important;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  body .mm-menu_offcanvas {
-    width: 100%;
-    max-width: none;
-    z-index: 5000;
+@media only screen and (max-width: 600px) {
+  body nav.menu {
+    padding-top: 125px;
   }
-  body header.container-fluid .menu .circle {
-    z-index: 5000;
+}
+
+@media only screen and (max-width: 500px) {
+  body nav.menu {
+    width: 100%;
+    min-width: 320px;
+  }
+  body nav.menu ul li.item a {
+    font-size: 20px;
+  }
+  body nav.menu.hidden {
+    left: -100%;
   }
 }
 

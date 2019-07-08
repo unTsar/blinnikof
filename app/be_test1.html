@@ -16,9 +16,6 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/hamburgers.css">
-    <link rel="stylesheet" href="css/jquery.mmenu.css">
-    <link rel="stylesheet" href="css/jquery.mmenu.effects.css">
-    <link rel="stylesheet" href="css/jquery.mmenu.pagedim.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=898ba7e1-09fd-4997-8dc5-402d4333d428&amp;lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" href="css/be.css">
@@ -96,17 +93,19 @@ main {
     </style>
   </head>
   <body>
-    <nav id="my-menu">
+    <div id="menu-pagedim"></div>
+    <nav class="menu hidden" id="menu">
       <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="be.html">BodyEvolution</a></li>
-        <li><a href="#">BodyEvolution Size +</a></li>
-        <li><a href="additional.html">Другие занятия</a></li>
-        <li><a href="#">Наши тренеры</a></li>
-        <li><a href="schedules.html">Расписание</a></li>
-        <li><a href="prices.html">Цены</a></li>
-        <div class="line"></div>
-        <li><a href="profile.html">Авторизация</a></li>
+        <li class="item"><a href="#">Главная</a></li>
+        <li class="item"><a href="be.html">BodyEvolution</a></li>
+        <li class="item"><a href="#">BodyEvolution Size+</a></li>
+        <li class="item"><a href="additional.html">Другие занятия</a></li>
+        <li class="item"><a href="#">Наши тренеры</a></li>
+        <li class="item"><a href="schedules.html">Расписание</a></li>
+        <li class="item"><a href="prices.html">Цены</a></li>
+        <li class="item"><a href="#">Контакты</a></li>
+        <div class="separLine"></div>
+        <li class="item"><a href="profile.html">Авторизация</a></li>
       </ul>
     </nav>
     <section class="elems">
@@ -932,7 +931,6 @@ main {
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery.mmenu.js"></script>
   <script src="js/common.js"></script>
   <script src="js/hammer.min.js"></script>
   <script src="js/jquery.scrollTo.min.js"></script>

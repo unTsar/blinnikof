@@ -24,11 +24,7 @@ html(lang="ru")
         link(rel="stylesheet", href="css/bootstrap.min.css")
 
         link(rel="stylesheet", href="css/hamburgers.css")
-
-        link(rel="stylesheet", href="css/jquery.mmenu.css")
-        link(rel="stylesheet", href="css/jquery.mmenu.effects.css")
-        link(rel="stylesheet", href="css/jquery.mmenu.pagedim.css")
-
+            
         link(rel="stylesheet", href="css/main.css")
 
 
@@ -45,7 +41,8 @@ html(lang="ru")
     
     body
 
-        include ../_partials/mmenu.pug
+        #menu-pagedim
+        include ../_partials/menu.pug
 
         block content
 
@@ -59,6 +56,6 @@ html(lang="ru")
     script(src="js/bootstrap.bundle.min.js")
 
     //- Jquery Mmenu
-    script(src="js/jquery.mmenu.js")
+    //- script(src="js/jquery.mmenu.js")
     script(src="js/common.js")
     block scripts

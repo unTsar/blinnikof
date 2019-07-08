@@ -52,6 +52,7 @@ main p.text .underlined::after {
 
 main p.text span.thin {
   font-family: 'MullerThin';
+  font-weight: bold;
 }
 
 main p.text.light {
