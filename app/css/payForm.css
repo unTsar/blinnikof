@@ -1,0 +1,429 @@
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerRegular/MullerRegular.eot");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLight/MullerLight.eot");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerThin";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerThin/MullerThin.eot");
+  src: url("../fonts/MullerThin/MullerThin.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerThin/MullerThin.woff") format("woff"), url("../fonts/MullerThin/MullerThin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerMedium/MullerMedium.eot");
+  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBold/MullerBold.eot");
+  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+}
+
+main .header-breadcrumbs {
+  padding-top: 65px;
+}
+
+main .header-breadcrumbs .breadcrumbs a.active {
+  color: #777777;
+}
+
+main .head {
+  padding-top: 50px;
+}
+
+main .head h1 {
+  font-family: 'MullerExtraBold';
+  font-size: 40px;
+  color: #333333;
+}
+
+main .head .line {
+  background-color: #ff2e2f;
+  margin-top: 15px;
+  width: 67px;
+  height: 4px;
+}
+
+main .head .desc {
+  margin-top: 20px;
+  color: #000000;
+  font-family: 'MullerMedium';
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+main .buttons {
+  padding-top: 37.5px;
+}
+
+main .buttons span.separ {
+  color: #000000;
+  font-family: 'MullerMedium';
+  font-size: 18px;
+  margin: 0 25px;
+}
+
+main .buttons a.buttonPay {
+  background-color: #ff2e2f;
+}
+
+main .buttons a.buttonPreOrder {
+  background-color: #3a3a3a;
+}
+
+main .buttons a.buttonPreOrder img {
+  margin-left: 12px;
+}
+
+main .buttons a.buttonPay, main .buttons a.buttonPreOrder {
+  -webkit-border-radius: 35px;
+          border-radius: 35px;
+  padding: 18px 50px;
+  color: #ffffff;
+  font-family: 'MullerMedium';
+  font-size: 20px;
+}
+
+main form.form .formPunct {
+  margin-top: 60px;
+}
+
+main form.form .formPunct .formHead span.number {
+  font-family: 'MullerExtraBold';
+  font-size: 20px;
+}
+
+main form.form .formPunct .formHead span.name {
+  font-family: 'MullerMedium';
+  font-size: 20px;
+  color: #333333;
+  margin-left: 15px;
+}
+
+main form.form .formPunct .formHead span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+main form.form .formPunct input, main form.form .formPunct select, main form.form .formPunct textarea {
+  margin-top: 30px;
+  padding-left: 30px;
+  width: 100%;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  height: 60px;
+  border: 1px solid #E4E7EB;
+  background-color: #fff;
+  font-family: 'MullerRegular';
+  font-size: 20px;
+  color: #333333;
+  outline: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main form.form .formPunct input:focus, main form.form .formPunct select:focus, main form.form .formPunct textarea:focus {
+  border-color: #91b853;
+}
+
+main form.form .formPunct .select {
+  margin-top: 30px;
+  position: relative;
+}
+
+main form.form .formPunct .select select {
+  margin-top: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct .select select option {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+main form.form .formPunct .select:after {
+  content: url("../img/arrowDown.jpg");
+  position: absolute;
+  right: 25px;
+  top: 17px;
+  bottom: 0;
+  margin: auto;
+}
+
+main form.form .formPunct textarea {
+  height: 150px;
+  padding-top: 20px;
+  resize: none;
+}
+
+main form.form .formPunct input::-webkit-input-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct input::-moz-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct input:-moz-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct input:-ms-input-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct select::-webkit-input-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct select::-moz-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct select:-moz-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct select:-ms-input-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct textarea::-webkit-input-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct textarea::-moz-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct textarea:-moz-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct textarea:-ms-input-placeholder {
+  font-family: 'MullerLight';
+  font-size: 16px;
+  color: #ababab;
+}
+
+main form.form .formPunct input.adressInput {
+  padding-left: 57px;
+  position: relative;
+}
+
+main form.form .formPunct .radio {
+  position: absolute;
+  left: 45px;
+  top: 43px;
+}
+
+main form.form .formPunct .radio input.radioInput {
+  display: none;
+}
+
+main form.form .formPunct .radio label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+main form.form .formPunct .radio label:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 1px solid #b8b8b8;
+}
+
+main form.form .formPunct .radio label::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  display: none;
+  left: 2px;
+  top: 0px;
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-image: url("../img/checkbox-icon_black.png");
+}
+
+main form.form .formPunct .radio input:checked + label::after {
+  display: block;
+}
+
+main form.form .formPunct input.adressInput::-webkit-input-placeholder {
+  font-family: 'MullerRegular';
+  font-size: 20px;
+  color: #aba #dadada;
+}
+
+main form.form .formPunct input.adressInput::-moz-placeholder {
+  font-family: 'MullerRegular';
+  font-size: 20px;
+  color: #dadada;
+}
+
+main form.form .formPunct input.adressInput:-moz-placeholder {
+  font-family: 'MullerRegular';
+  font-size: 20px;
+  color: #dadada;
+}
+
+main form.form .formPunct input.adressInput:-ms-input-placeholder {
+  font-family: 'MullerRegular';
+  font-size: 20px;
+  color: #dadada;
+}
+
+@media only screen and (max-width: 991px) {
+  body main .container .buttons a.buttonPay, body main .container .buttons a.buttonPreOrder {
+    padding: 14px 18px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body main .container .order3 {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  body main .container .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .container .buttons span.separ {
+    display: none;
+  }
+  body main .container .buttons a.buttonPay, body main .container .buttons a.buttonPreOrder {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body main .container form.form .formPunct .formHead span {
+    display: block;
+    margin-left: 0;
+  }
+  body main .container form.form .formPunct .formHead span.name {
+    font-size: 18px;
+  }
+  body main .container form.form .formPunct input, body main .container form.form .formPunct select, body main .container form.form .formPunct textarea {
+    font-size: 16px;
+  }
+  body main .container form.form .formPunct input.adressInput {
+    padding-left: 40px;
+  }
+  body main .container form.form .formPunct input.adressInput::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  body main .container form.form .formPunct input.adressInput::-moz-placeholder {
+    font-size: 16px;
+  }
+  body main .container form.form .formPunct input.adressInput:-moz-placeholder {
+    font-size: 16px;
+  }
+  body main .container form.form .formPunct input.adressInput:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  body main .container form.form .formPunct .radio {
+    left: 35px;
+  }
+  body main .container .head h1 {
+    font-size: 24px;
+  }
+  body main .container .head .desc {
+    font-size: 18px;
+  }
+  body main .container .buttons a.buttonPreOrder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,261 @@
+@import "vars"
+@import "fonts"
+
+main
+	.header-breadcrumbs
+		padding-top: 65px
+		.breadcrumbs
+			a.active
+				color: #777777
+	.head
+		padding-top: 50px
+		h1
+			font-family: 'MullerExtraBold'
+			font-size: 40px
+			color: #333333
+		.line
+			background-color: #ff2e2f
+			margin-top: 15px
+			width: 67px
+			height: 4px
+		.desc
+			margin-top: 20px
+			color: #000000
+			font-family: 'MullerMedium'
+			font-size: 20px
+			line-height: 1.4
+	.buttons
+		padding-top: 37.5px
+		span.separ
+			color: #000000
+			font-family: 'MullerMedium'
+			font-size: 18px
+			margin: 0 25px
+		a.buttonPay
+			background-color: #ff2e2f
+		a.buttonPreOrder
+			background-color: #3a3a3a
+			img
+				margin-left: 12px
+		a.buttonPay, a.buttonPreOrder
+			border-radius: 35px
+			padding: 18px 50px
+			color: #ffffff
+			font-family: 'MullerMedium'
+			font-size: 20px
+	form.form
+		.formPunct
+			margin-top: 60px
+			.formHead
+				span.number
+					font-family: 'MullerExtraBold'
+					font-size: 20px
+				span.name
+					font-family: 'MullerMedium'
+					font-size: 20px
+					color: #333333
+					margin-left: 15px
+				span
+					display: inline-block
+					vertical-align: top
+			input, select, textarea
+				margin-top: 30px
+				padding-left: 30px
+				width: 100%
+				border-radius: 30px
+				height: 60px
+				border: 1px solid #E4E7EB
+				background-color: #fff
+				font-family: 'MullerRegular'
+				font-size: 20px
+				color: #333333    
+				outline: none
+				transition: 0.3s
+			input:focus, select:focus, textarea:focus
+				border-color: #91b853
+			.select
+				margin-top: 30px
+				position: relative
+				select
+					margin-top: 0
+					-webkit-appearance: none
+					-moz-appearance: none
+					appearance: none
+					font-family: 'MullerLight'
+					font-size: 16px
+					color: #ababab
+					option
+						margin-top: 10px
+						margin-bottom: 10px
+			.select:after
+				content: url('../img/arrowDown.jpg')
+				position: absolute
+				right: 25px
+				top: 17px
+				bottom: 0
+				margin: auto
+			textarea
+				height: 150px
+				padding-top: 20px
+				resize: none
+			input::-webkit-input-placeholder
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			input::-moz-placeholder 
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			input:-moz-placeholder
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			input:-ms-input-placeholder
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			select::-webkit-input-placeholder
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			select::-moz-placeholder 
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			select:-moz-placeholder
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			select:-ms-input-placeholder
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			textarea::-webkit-input-placeholder
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			textarea::-moz-placeholder 
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			textarea:-moz-placeholder
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+			textarea:-ms-input-placeholder
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #ababab
+
+			input.adressInput
+				padding-left: 57px
+				position: relative
+			.radio
+				position: absolute
+				left: 45px
+				top: 43px
+				input.radioInput
+					display: none
+				label
+					position: relative
+					display: inline-block
+					cursor: pointer
+				label:before
+					content: ''
+					position: absolute
+					display: inline-block
+					left: 0
+					width: 14px
+					height: 14px
+					border-radius: 50%	
+					border: 1px solid #b8b8b8
+				label::after
+					content: ''
+					display: inline-block
+					position: absolute
+					display: none
+					left: 2px
+					top: 0px
+					width: 11px
+					height: 11px
+					background-repeat: no-repeat
+					background-size: cover
+					background-image: url('../img/checkbox-icon_black.png')
+				input:checked + label::after
+					display: block
+			input.adressInput::-webkit-input-placeholder
+				font-family: 'MullerRegular'
+				font-size: 20px
+				color: #aba#dadada
+			input.adressInput::-moz-placeholder 
+				font-family: 'MullerRegular'
+				font-size: 20px
+				color: #dadada
+			input.adressInput:-moz-placeholder
+				font-family: 'MullerRegular'
+				font-size: 20px
+				color: #dadada
+			input.adressInput:-ms-input-placeholder
+				font-family: 'MullerRegular'
+				font-size: 20px
+				color: #dadada
+
+
+@media only screen and(max-width: 991px)
+	body
+		main 
+			.container
+				.buttons
+					a.buttonPay, a.buttonPreOrder 
+						padding: 14px 18px
+						font-size: 18px
+@media only screen and(max-width: 767px)
+	body
+		main 
+			.container
+				.order3
+					order: 3
+				.buttons
+					flex-direction: column
+					span.separ
+						display: none
+					a.buttonPay, a.buttonPreOrder
+						margin-bottom: 15px
+						font-size: 16px
+@media only screen and(max-width: 500px)
+	body
+		main
+			.container
+				form.form
+					.formPunct
+						.formHead
+							span
+								display: block
+								margin-left: 0
+							span.name
+								font-size: 18px
+						input, select, textarea
+							font-size: 16px
+						input.adressInput
+							padding-left: 40px
+						input.adressInput::-webkit-input-placeholder
+							font-size: 16px
+						input.adressInput::-moz-placeholder 
+							font-size: 16px
+						input.adressInput:-moz-placeholder
+							font-size: 16px
+						input.adressInput:-ms-input-placeholder
+							font-size: 16px
+						.radio
+							left: 35px
+
+				.head
+					h1
+						font-size: 24px
+					.desc
+						font-size: 18px
+				.buttons
+					a.buttonPreOrder
+						flex-direction: column
+						text-align: center
+

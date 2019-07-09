@@ -1,0 +1,79 @@
+extends _layouts/home
+
+block styles
+	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/payForm.css")
+
+
+block content
+	include _partials/header.pug
+	main
+		.container
+			.header-breadcrumbs
+				.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="payForm.html") Оплата]
+			.head
+				.row
+					.col-12.col-md-8.col-lg-6
+						h1 Bodyevolution 1-я ступень за 13 900 руб.
+					.col-12.col-md-4.col-lg-3
+						.line
+						.desc Заполните форму, чтобы приступить к оплате
+			form.form(action="#")
+				.formPunct.n1
+					.formHead
+						span.number.red 01
+						span.name|Придерживаетесь ли вы 
+							br
+							|вегетарианства?
+					.row
+						.col-12.col-md-6.col-lg-5
+							.select
+								select(name="select1")
+									option(value="Нет" selected) Нет
+									option(value="Да") Да
+				.formPunct.n2
+					.formHead
+						span.number.red 02
+						span.name Выберите адрес школы:
+					.row
+						.col-12.col-lg-5
+							input.adressInput(type="text" value="Звенигородское шоссе, 3" placeholder="Название улицы, номер дома")
+							.radio
+								input.radioInput#radio1(type="radio", name="radio", value="v1")
+								label(for="radio1")
+						.col-12.col-lg-5
+							input.adressInput(type="text" placeholder="Название улицы, номер дома")
+							.radio
+								input.radioInput#radio2(type="radio", name="radio", value="v2")
+								label(for="radio2")
+				.formPunct.n3
+					.formHead
+						span.number.red 03
+						span.name Заполните эти данные о себе
+					.row
+						.col-12.col-md-6.col-lg-5
+							input(type="text" placeholder="Фамилия*")
+						.col-12.col-md-6.col-lg-5.order3
+							input(type="email" placeholder="E-mail*")
+					.row
+						.col-12.col-md-6.col-lg-5
+							input(type="text" placeholder="Имя*")
+							input(type="text" placeholder="Телефон*")
+						.col-12.col-md-6.col-lg-5
+							textarea(placeholder="Ваши комментарии / пожелания")
+
+			.buttons.d-flex.align-items-center
+				a(href="prePay.html").buttonPay.d-flex.align-items-center.justify-content-center
+					span Перейти к оплате
+				span.separ или
+				a(href="preOrder.html").buttonPreOrder.d-flex.align-items-center.justify-content-center
+					span Оставить предварительную заявку
+					img(src="img/question-icon.jpg", alt="question-icon.jpg")
+
+
+		include _partials/contacts.pug
+	include _partials/footer.pug
+
+
+block scripts
+	script(src="js/map.js")
