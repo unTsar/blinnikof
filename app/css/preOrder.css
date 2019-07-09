@@ -121,8 +121,7 @@ main .infBlock .schedule .list .item {
   line-height: 1;
 }
 
-main .button {
-  cursor: pointer;
+main a.button {
   margin-top: 50px;
   margin-bottom: 80px;
   background-color: #ff2e2f;

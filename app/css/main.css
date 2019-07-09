@@ -132,7 +132,7 @@ body input:required:valid, body textarea:required:valid {
   border-color: green;
 }
 
-body .red {
+body .red, body a.red {
   color: #ff2e2f;
 }
 

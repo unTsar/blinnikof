@@ -55,8 +55,46 @@
       </div>
     </header>
     <main>
+      <div class="popupError" id="popupError"><img src="img/warning.jpg" alt="warning.jpg">
+        <p>Чтобы перейти к оплате, необходимо отметить согласие с договором-офертой и правилами школы v_concept</p>
+        <div class="buttonOk d-flex align-items-center justify-content-center b-close"><span>Ok</span></div>
+      </div>
       <div class="container-fluid">
-        <div class="container"></div>
+        <div class="container">
+          <div class="header-breadcrumbs">
+            <div class="breadcrumbs"><a class="home" href="#">Главная</a> <span class="slash">/</span> <a class="active" href="prePay.html">Оплата</a></div>
+          </div>
+          <h1><span class="red">Заказ</span> 25165</h1>
+          <div class="subhead">
+            <h2>Мария, спасибо за ваш заказ</h2>
+            <div class="line"></div>
+          </div>
+          <div class="orderInf">
+            <div class="contentBlock">
+              <div class="list">
+                <div class="listTable desk">
+                  <div class="topLine"><span>Название урока</span><span>Группа</span><span>Стоимость</span></div>
+                  <div class="line gray"><span>#BodyEvolution 1-я ступень</span><span>#Группа 01_июль</span><span class="l">13 900,00 руб.</span></div>
+                </div>
+                <div class="listTable mob">
+                  <div class="topLine"><span>Название урока</span><span class="gr">Группа</span></div>
+                  <div class="line gray"><span>#BodyEvolution 1-я ступень</span><span>#Группа 01_июль</span></div>
+                  <div class="topLine noBrs"><span>Стоимость</span></div>
+                  <div class="line gray"><span class="l jusR">13 900,00 руб.	</span></div>
+                </div>
+                <div class="results d-flex flex-column justify-content-center align-items-end">
+                  <div class="item"><span class="b">Скидка: </span><span class="l">1 000,00 руб.</span></div>
+                  <div class="item"><span class="b">Итого: </span><span class="l">12 900,00 руб.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="acceptTerms d-flex">
+            <input id="checkboxAccept" type="checkbox" name="a">
+            <label for="checkboxAccept"></label>
+            <div class="text">Я ознакомился и принимаю <a class="red" href="#">условия договора-оферты</a> и <a class="red" href="#">правила школы v_concept</a></div>
+          </div><a class="button d-flex align-items-center justify-content-center" href="#" id="buttonPay"><span>Оплатить</span></a>
+        </div>
       </div>
       <section class="contacts">
         <div class="container">
@@ -96,4 +134,6 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/map.js"></script>
+  <script src="js/bpopup.js"></script>
+  <script src="js/prePay.js"></script>
 </html>
