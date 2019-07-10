@@ -31,24 +31,24 @@ block content
 								select(name="select1")
 									option(value="Нет" selected) Нет
 									option(value="Да") Да
+				//- .formPunct.n2
+				//- 	.formHead
+				//- 		span.number.red 02
+				//- 		span.name Выберите адрес школы:
+				//- 	.row
+				//- 		.col-12.col-lg-5
+				//- 			input.adressInput(type="text" value="Звенигородское шоссе, 3" placeholder="Название улицы, номер дома")
+				//- 			.radio
+				//- 				input.radioInput#radio1(type="radio", name="radio", value="v1")
+				//- 				label(for="radio1")
+				//- 		.col-12.col-lg-5
+				//- 			input.adressInput(type="text" placeholder="Название улицы, номер дома")
+				//- 			.radio
+				//- 				input.radioInput#radio2(type="radio", name="radio", value="v2")
+				//- 				label(for="radio2")
 				.formPunct.n2
 					.formHead
 						span.number.red 02
-						span.name Выберите адрес школы:
-					.row
-						.col-12.col-lg-5
-							input.adressInput(type="text" value="Звенигородское шоссе, 3" placeholder="Название улицы, номер дома")
-							.radio
-								input.radioInput#radio1(type="radio", name="radio", value="v1")
-								label(for="radio1")
-						.col-12.col-lg-5
-							input.adressInput(type="text" placeholder="Название улицы, номер дома")
-							.radio
-								input.radioInput#radio2(type="radio", name="radio", value="v2")
-								label(for="radio2")
-				.formPunct.n3
-					.formHead
-						span.number.red 03
 						span.name Заполните эти данные о себе
 					.row
 						.col-12.col-md-6.col-lg-5
@@ -58,7 +58,7 @@ block content
 					.row
 						.col-12.col-md-6.col-lg-5
 							input(type="text" placeholder="Имя*")
-							input(type="text" placeholder="Телефон*")
+							input(type="tel" placeholder="Телефон*")
 						.col-12.col-md-6.col-lg-5
 							textarea(placeholder="Ваши комментарии / пожелания")
 
@@ -77,3 +77,4 @@ block content
 
 block scripts
 	script(src="js/map.js")
+	script(src="js/jquery.maskedinput.min.js")

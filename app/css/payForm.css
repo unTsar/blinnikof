@@ -190,6 +190,10 @@ main form.form .formPunct .select select option {
   margin-bottom: 10px;
 }
 
+main form.form .formPunct .select select:focus {
+  color: #333333;
+}
+
 main form.form .formPunct .select:after {
   content: url("../img/arrowDown.jpg");
   position: absolute;
