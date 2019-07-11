@@ -114,8 +114,7 @@ main section.header .container .buttons .button:hover, main section.header .cont
 main section.header .container .buttons .button {
   padding-left: 15px;
   padding-right: 15px;
-  -webkit-border-radius: 25px;
-          border-radius: 25px;
+  border-radius: 25px;
   height: 50px;
   background-color: #373737;
   -webkit-transition: 0.3s;
@@ -141,8 +140,7 @@ main section.personInf .container {
   background-color: #fff;
   padding-top: 40px;
   padding-bottom: 25px;
-  -webkit-border-radius: 25px;
-          border-radius: 25px;
+  border-radius: 25px;
 }
 
 main section.personInf .container .photo .button {
@@ -150,8 +148,7 @@ main section.personInf .container .photo .button {
   width: 100%;
   height: 55px;
   cursor: pointer;
-  -webkit-border-radius: 25px;
-          border-radius: 25px;
+  border-radius: 25px;
   margin-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -191,8 +188,7 @@ main section.personInf .container .text .line .item .buttonCancel {
   cursor: pointer;
   max-width: 67px;
   height: 22px;
-  -webkit-border-radius: 11px;
-          border-radius: 11px;
+  border-radius: 11px;
   background-color: #8e8989;
   color: #ffffff;
   display: -webkit-box;
@@ -244,8 +240,7 @@ main section.promo .hidden .list .badge {
   margin-left: 15px;
   margin-bottom: 5.5px;
   background-image: url("../img/profile/badge.png");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 main section.promo .hidden .list .tooltip {
@@ -300,8 +295,7 @@ main section.appForm .hidden .button {
   margin-top: 50px;
   margin-left: 15px;
   width: 195px;
-  -webkit-border-radius: 25px;
-          border-radius: 25px;
+  border-radius: 25px;
   height: 50px;
   background-color: #373737;
   -webkit-transition: 0.3s;
@@ -395,8 +389,7 @@ main section.orders .hidden .button, main section.appointDiet .hidden .button, m
   margin-top: 35px;
   margin-right: 15px;
   width: 195px;
-  -webkit-border-radius: 25px;
-          border-radius: 25px;
+  border-radius: 25px;
   height: 50px;
   background-color: #373737;
   -webkit-transition: 0.3s;
@@ -493,8 +486,7 @@ main section.progressInf .stats .hidden .list .topLine img, main section.progres
 }
 
 main section.progressInf .stats .hidden .list .topLine .circle-progress, main section.progressInf .stats .hidden .list .line .circle-progress {
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #2FA318;
   width: 26px;
   height: 22px;
@@ -514,8 +506,7 @@ main section.progressInf .collages .item {
 
 main section.progressInf .collages .item .borderOuter {
   border: 1px solid #ddd8d8;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   padding: 7.5px;
 }
 
@@ -532,8 +523,7 @@ main section.sTicketInf .list .line .buttonPay, main section.orders .list .line 
   -o-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
-  -webkit-border-radius: 11px;
-          border-radius: 11px;
+  border-radius: 11px;
   background-color: #3B3B3B;
   color: #ffffff;
   font-size: 10px;
@@ -565,8 +555,7 @@ main section.appForm .container.contentBlock, main section.promo .container.cont
   padding-bottom: 40px;
   padding-top: 25px;
   background-color: #fff;
-  -webkit-border-radius: 25px;
-          border-radius: 25px;
+  border-radius: 25px;
   margin-top: 25px;
   margin-bottom: 35px;
 }
@@ -601,8 +590,7 @@ main section.appForm .container.contentBlock .head .profile-buttonOpen, main sec
   background-color: #ff2e2f;
   width: 50px;
   height: 50px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -625,8 +613,7 @@ main section.appForm .container.contentBlock .head .profile-buttonClose, main se
   background-color: #3b3b3b;
   width: 50px;
   height: 50px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   cursor: pointer;
   display: none;
 }
@@ -674,10 +661,8 @@ main section.appForm .hidden .list .topLine, main section.appForm .content .list
   padding-right: 30px;
   background-color: #3b3b3b;
   width: 100%;
-  -webkit-border-top-left-radius: 15px;
-          border-top-left-radius: 15px;
-  -webkit-border-top-right-radius: 15px;
-          border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 main section.appForm .hidden .list .topLine span, main section.appForm .content .list .topLine span, main section.promo .hidden .list .topLine span, main section.promo .content .list .topLine span, main section.socials .hidden .list .topLine span, main section.socials .content .list .topLine span, main section.orders .hidden .list .topLine span, main section.orders .content .list .topLine span, main section.sTicketInf .hidden .list .topLine span, main section.sTicketInf .content .list .topLine span, main section.schedule .hidden .list .topLine span, main section.schedule .content .list .topLine span, main section.appointDiet .hidden .list .topLine span, main section.appointDiet .content .list .topLine span, main section.progressInf .hidden .list .topLine span, main section.progressInf .content .list .topLine span {

@@ -72,8 +72,7 @@
   padding: 67px 15px;
   display: none;
   text-align: center;
-  -webkit-border-radius: 27px;
-          border-radius: 27px;
+  border-radius: 27px;
 }
 
 .popupError img {
@@ -98,8 +97,7 @@
   background-color: #333333;
   width: 97px;
   height: 54px;
-  -webkit-border-radius: 27px;
-          border-radius: 27px;
+  border-radius: 27px;
   margin-top: 27px;
   margin-left: auto;
   margin-right: auto;
@@ -158,8 +156,7 @@ main .orderInf .contentBlock {
   padding-bottom: 20px;
   padding-top: 50px;
   background-color: #fff;
-  -webkit-border-radius: 25px;
-          border-radius: 25px;
+  border-radius: 25px;
   margin-top: 60px;
 }
 
@@ -183,8 +180,7 @@ main .orderInf .contentBlock .list .listTable.mob .line {
 }
 
 main .orderInf .contentBlock .list .listTable.mob .noBrs {
-  -webkit-border-radius: 0px;
-          border-radius: 0px;
+  border-radius: 0px;
 }
 
 main .orderInf .contentBlock .list .topLine, main .orderInf .contentBlock .list .line {
@@ -199,10 +195,8 @@ main .orderInf .contentBlock .list .topLine {
   padding-right: 30px;
   background-color: #3b3b3b;
   width: 100%;
-  -webkit-border-top-left-radius: 15px;
-          border-top-left-radius: 15px;
-  -webkit-border-top-right-radius: 15px;
-          border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 main .orderInf .contentBlock .list .topLine span {
@@ -305,8 +299,7 @@ main .acceptTerms label::after {
   width: 21px;
   height: 21px;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-image: url("../img/checkbox-icon.png");
 }
 
@@ -318,8 +311,7 @@ main a.button {
   background-color: #ff2e2f;
   width: 193px;
   height: 54px;
-  -webkit-border-radius: 35px;
-          border-radius: 35px;
+  border-radius: 35px;
   font-family: 'MullerBold';
   font-size: 16px;
   color: #ffffff;
