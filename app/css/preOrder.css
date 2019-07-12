@@ -125,8 +125,7 @@ main a.button {
   margin-top: 50px;
   margin-bottom: 80px;
   background-color: #ff2e2f;
-  -webkit-border-radius: 35px;
-          border-radius: 35px;
+  border-radius: 35px;
   color: #ffffff;
   height: 68px;
   font-family: 'MullerMedium';

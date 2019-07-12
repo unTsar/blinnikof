@@ -119,8 +119,7 @@ main .buttons a.buttonPreOrder img {
 }
 
 main .buttons a.buttonPay, main .buttons a.buttonPreOrder {
-  -webkit-border-radius: 35px;
-          border-radius: 35px;
+  border-radius: 35px;
   padding: 18px 50px;
   color: #ffffff;
   font-family: 'MullerMedium';
@@ -152,8 +151,7 @@ main form.form .formPunct input, main form.form .formPunct select, main form.for
   margin-top: 30px;
   padding-left: 30px;
   width: 100%;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
+  border-radius: 30px;
   height: 60px;
   border: 1px solid #E4E7EB;
   background-color: #fff;
@@ -309,8 +307,7 @@ main form.form .formPunct .radio label:before {
   left: 0;
   width: 14px;
   height: 14px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   border: 1px solid #b8b8b8;
 }
 
@@ -324,8 +321,7 @@ main form.form .formPunct .radio label::after {
   width: 11px;
   height: 11px;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-image: url("../img/checkbox-icon_black.png");
 }
 
