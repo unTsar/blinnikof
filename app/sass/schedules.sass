@@ -1,0 +1,333 @@
+@import "vars"
+@import "fonts"
+
+main
+	section.header-breadcrumbs
+		padding-top: 65px
+	section.header
+		padding-top: 90px
+		h1
+			color: #333333
+			font-size: 60px
+			font-family: 'MullerExtraBold'
+		.header-desc
+			padding-left: 42.5px
+			.line
+				margin-top: 17.5px
+				width: 80px
+				height: 4px
+				background-color: #ff2e2f
+			p.text
+				font-family: 'MullerLight'
+				font-size: 20px
+				color: #333333
+				margin-top: 45px
+				margin-bottom: 0
+			.variations
+				padding-top: 50px
+				.varCol
+					margin-right: 100px
+					font-size: 20px
+					font-family: 'MullerMedium'
+					color: #333333
+					span
+						display: block
+	section.calendar
+		padding-top: 55px
+		.carousel
+			.slide
+				.topLine
+					font-family: 'MullerBold'
+					font-size: 24px
+					color: #ffffff
+					background-color: #3d3d3d
+					text-align: center
+					border-top-left-radius: 15px
+					border-top-right-radius: 15px
+					padding-top: 5px
+					padding-bottom: 5px
+					position: relative
+					.buttonPrev, .buttonNext
+						transition: 0.3s
+						position: absolute
+						width: 34px
+						height: 34px
+						top: 0
+						bottom: 0
+						margin: auto
+						background-color: #ffffff
+						border-radius: 50%
+						cursor: pointer
+						user-select: none
+						-webkit-user-select: none
+						-moz-user-select: none
+						-khtml-user-select: none
+						-ms-user-select: none
+						img
+							transition: 0.3s
+							width: 8px
+							height: auto
+					.buttonPrev:hover, .buttonNext:hover
+						background-color: #ff2e2f
+						img
+							filter: brightness(5)
+					.buttonPrev
+						left: 29px	
+						img
+							transform: rotate(180deg)
+					.buttonNext
+						right: 29px
+				.tableWeek
+					table.days
+						min-width: 1050px
+						border: none
+						margin-bottom: 30px
+						tr
+							th, td
+								border: 3px solid #e1dcdc
+								width: 158px
+							td.empty
+								border: none
+							td
+								padding: 0
+							th.date
+								background-color: #f8f8f8
+								font-family: 'MullerMedium'
+								font-size: 18px
+								color: #333333
+								text-align: center
+								padding: 27.5px 0
+							th.date.gray
+								background-color: #e6e6e6
+							.class
+								transition: 0.3s
+								background-color: #ffffff
+								padding-bottom: 30px
+								position: relative
+								.class-head
+									height: 80px
+									font-family: 'MullerBold'
+									font-size: 20px
+									color: #333333
+									text-align: center
+									.text
+										line-height: 1.2
+										width: 100%
+								.separLine
+									width: 91%
+									height: 1px
+									background-color: #dfdfdf
+									margin: auto
+								.elems
+									padding-top: 30px
+									padding-left: 15px
+									.elem
+										margin-bottom: 22.5px
+										align-items: center
+										.circle_green
+											width: 24px
+											height: 24px
+											border-radius: 50%
+											background-color: #009640
+											text-align: center
+											.number
+												color: #ffffff
+												font-size: 12px
+												line-height: 24px
+												font-family: 'MullerBold'
+										img.icon
+											width: 24px
+											height: auto
+										span
+											display: inline-block
+											font-size: 13.25px
+											font-family: 'MullerThin'
+											font-weight: bold
+											color: #333333
+											margin-left: 7.5px
+											line-height: 1.2
+										span.b
+											font-family: 'MullerRegular'
+											font-weight: bold
+										span.rep
+											font-family: 'MullerLightItalic'
+											font-size: 12px
+											color: #b8b8b8
+								.buttonChoose
+									user-select: none
+									-webkit-user-select: none
+									-moz-user-select: none
+									-ms-user-select: none
+									-khtml-user-select: none
+									transition: 0.3s
+									background-color: #2F2F2F
+									width: 120px
+									height: 45px
+									border-radius: 22.5px
+									color: #ffffff
+									font-family: 'MullerMedium'
+									font-size: 12px
+									text-transform: uppercase
+									margin-left: auto
+									margin-right: auto
+									cursor: pointer
+									span
+										margin-left: 17.5px
+									input
+										display: none
+									label
+										margin-top: -5.5px
+										cursor: pointer
+										display: inline-block
+										position: relative
+									label:before
+										content: ''
+										display: inline-block
+										position: absolute
+										left: 0
+										width: 11px
+										height: 11px
+										background-color: #ffffff
+										border: 1px solid #b6b6b6
+									label:after
+										content: ''
+										display: inline-block
+										position: absolute
+										display: none
+										left: 0
+										top: -2px
+										width: 12px
+										height: 12px
+										background-repeat: no-repeat
+										background-size: cover
+										background-image: url("../img/checkbox-icon_black.png")
+									input:checked + label:after
+										display: block
+							.class:hover
+								box-shadow: 0px 0px 17.5px #3d3d3d
+							.class.gray
+								background-color: #f1f1f1
+							.class.rep
+								.elems
+									.elem
+										.text
+											position: relative
+											top: 8px
+											span.rep
+												position: absolute
+												top: -15px
+							.class.disabled
+								.buttonChoose
+									background-color: #9A9A9A
+									pointer-events: none
+								.elems
+									.elem
+										.circle_green
+											background-color: #bfbfbf
+										.circle_green + span
+											color: #b8b8b8
+							.class.checked
+								background-color: #2f2f2f
+								.class-head
+									.text
+										color: #ffffff
+								.buttonChoose
+									background-color: #ffffff
+									color: #000000
+								.elems
+									.elem
+										span, span.b, span.rep
+											color: #ffffff
+										.text
+											color: #ffffff
+											span, span.b, span.rep
+												color: #ffffff
+	a.buttonReg
+		user-select: none
+		-webkit-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		-khtml-user-select: none
+		border-radius: 27px
+		background-color: #ff2e2f
+		width: 248px
+		height: 60px
+		margin-left: auto
+		margin-right: auto
+		font-family: 'MullerBold'
+		font-size: 16px
+		color: #ffffff
+		text-decoration: none
+		margin-top: 60px
+
+@media only screen and(max-width: 1199px)
+	body
+		main
+			.container
+				section.header
+					.header-desc
+						padding-left: 0
+				section.calendar
+					.carousel
+						.slide	
+							.tableWeek	
+								overflow-y: scroll
+@media only screen and(max-width: 991px)
+	body
+		main
+			.container
+				section.header
+					padding-top: 55px
+					h1
+						font-size: 45px
+					.header-desc
+						p.text
+							font-size: 18px
+							line-height: 1.3
+@media only screen and(max-width: 767px)
+	body
+		main
+			.container	
+				section.header
+					padding-left: 15px
+					padding-right: 15px
+					.header-desc
+						.variations
+							flex-direction: column
+							padding-top: 35px
+							.varCol
+								margin-right: 0
+@media only screen and(max-width: 500px)
+	body
+		main
+			.container
+				section.header-breadcrumbs
+					padding-top: 35px
+				section.header
+					padding-top: 35px
+					h1
+						font-size: 30px
+						margin-bottom: 0
+					.header-desc
+						p.text
+							font-size: 14px
+							margin-top: 25px
+						.line
+							display: none
+						.variations
+							padding-top: 25px
+							.varCol
+								span
+									font-size: 14px
+				section.calendar
+					padding-top: 35px
+					.carousel
+						.slide
+							.topLine
+								span
+									font-size: 16px
+								.buttonPrev, .buttonNext
+									width: 24px
+									height: 24px
+									img
+										width: 5px

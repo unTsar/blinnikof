@@ -78,3 +78,5 @@ block content
 block scripts
 	script(src="js/map.js")
 	script(src="js/jquery.maskedinput.min.js")
+
+	<script>$(function($) {$.mask.definitions['n'] = '[0-9]';$('input[type="tel"]').mask("+7 (nnn) nnn-nn-nn");});</script>

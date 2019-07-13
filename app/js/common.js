@@ -32,10 +32,4 @@ $(document).ready(function() {
 		    });
 		}
 	})
-
-	$(function($) {
-		$.mask.definitions['9'] = '';
-		$.mask.definitions['n'] = '[0-9]';
-		$('input[type="tel"]').mask("+7 (nnn) nnn-nn-nn");
-	});
 });
