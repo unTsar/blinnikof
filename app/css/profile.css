@@ -247,7 +247,7 @@ main section.promo .hidden .list .badge {
   height: 20px;
   margin-left: 15px;
   margin-bottom: 5.5px;
-  background-image: url("../img/profile/badge.png");
+  background-image: url("../img/badge.png");
   background-size: cover;
 }
 

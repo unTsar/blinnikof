@@ -31,6 +31,14 @@
 }
 
 @font-face {
+  font-family: "MullerLightItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot");
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLightItalic/MullerLightItalic.woff") format("woff"), url("../fonts/MullerLightItalic/MullerLightItalic.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "MullerThin";
   font-weight: normal;
   font-style: normal;
@@ -60,4 +68,517 @@
   font-style: normal;
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+}
+
+.popupPay p {
+  max-width: 410px;
+}
+
+.popupPay .buttons {
+  padding-top: 40px;
+}
+
+.popupPay .buttons .buttonPay, .popupPay .buttons .buttonCancel {
+  width: 155px;
+  height: 54px;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.popupPay .buttons .buttonCancel {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #333333;
+  border-radius: 27px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'MullerBold';
+  font-size: 16px;
+}
+
+.popupPay .buttons .buttonCancel:hover {
+  background-color: #ff2e2f;
+}
+
+.popupPay .buttons .buttonPay {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #ff2e2f;
+  border-radius: 27px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'MullerBold';
+  font-size: 16px;
+}
+
+.popupPay .buttons .buttonPay:hover {
+  -webkit-box-shadow: 0px 0px 20px #ff2e2f;
+          box-shadow: 0px 0px 20px #ff2e2f;
+}
+
+.popupError, .popupPay {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 32%;
+  height: auto;
+  background-color: #ffffff;
+  padding: 67px 15px;
+  display: none;
+  text-align: center;
+  border-radius: 27px;
+}
+
+.popupError img, .popupPay img {
+  width: 133px;
+  height: auto;
+}
+
+.popupError p, .popupPay p {
+  line-height: 1.3;
+  margin-top: 45px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 420px;
+  font-family: 'MullerRegular';
+  font-size: 24px;
+  color: #333333;
+}
+
+.popupError .buttonOk, .popupPay .buttonOk {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #333333;
+  width: 97px;
+  height: 54px;
+  border-radius: 27px;
+  margin-top: 27px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'MullerBold';
+  font-size: 16px;
+}
+
+.popupError .buttonOk:hover, .popupPay .buttonOk:hover {
+  background-color: #ff2e2f;
+}
+
+main .header-breadcrumbs {
+  padding-top: 65px;
+}
+
+main .header-breadcrumbs .breadcrumbs a.active {
+  color: #777777;
+}
+
+main h1 {
+  font-family: "MullerExtraBold";
+  color: #333333;
+  font-size: 60px;
+  margin-top: 90px;
+}
+
+main .cardBlock {
+  padding-top: 75px;
+}
+
+main .cardBlock .listCards {
+  padding-top: 15px;
+}
+
+main .cardBlock .listCards span.listCards-name {
+  font-family: 'MullerMedium';
+  font-size: 35px;
+  color: #333333;
+}
+
+main .cardBlock .listCards .items {
+  padding-top: 47.5px;
+}
+
+main .cardBlock .listCards .items .item {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 230px;
+  height: 60px;
+  padding-left: 20px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 17.5px;
+  font-family: 'MullerRegular';
+  font-size: 18px;
+  color: #333333;
+}
+
+main .cardBlock .listCards .items .item span {
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+main .cardBlock .listCards .items .item span.exCard {
+  word-spacing: 5px;
+}
+
+main .cardBlock .listCards .items .item img.icon {
+  width: 24px;
+  height: auto;
+  opacity: 0.5;
+}
+
+main .cardBlock .listCards .items .item.active {
+  border: 1px solid #ff2e2f;
+}
+
+main .cardBlock .listCards .items .item.active img.icon, main .cardBlock .listCards .items .item.active span {
+  opacity: 1;
+}
+
+main .cardBlock .listCards .blockPay {
+  padding-top: 70px;
+}
+
+main .cardBlock .listCards .blockPay .buttonPay:hover {
+  -webkit-box-shadow: 0px 0px 20px #ff2e2f;
+          box-shadow: 0px 0px 20px #ff2e2f;
+}
+
+main .cardBlock .listCards .blockPay .buttonPay {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #ff2e2f;
+  border-radius: 25px;
+  margin-top: 22.5px;
+  width: 193px;
+  height: 54px;
+  color: #ffffff;
+  font-family: 'MullerBold';
+  font-size: 16px;
+}
+
+main .cardBlock .listCards .blockPay .remember input, main .cardBlock .listCards .blockPay .remember label, main .cardBlock .listCards .blockPay .remember span, main .cardBlock .listCards .blockPay .remember .badge {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+main .cardBlock .listCards .blockPay .remember .badge {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  background-image: url("../img/badge.png");
+  background-size: cover;
+}
+
+main .cardBlock .listCards .blockPay .remember .tooltip {
+  width: 260px;
+  margin-bottom: 5px;
+  opacity: 1;
+}
+
+main .cardBlock .listCards .blockPay .remember .tooltip .tooltip-inner {
+  opacity: 1;
+  background-color: #3A3A3A;
+  width: 260px;
+  max-width: none;
+  line-height: 1.4;
+  font-family: 'MullerLight';
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 22px 17.5px;
+  text-align: left;
+}
+
+main .cardBlock .listCards .blockPay .remember .tooltip .arrow:before {
+  border-top-color: #3a3a3a;
+}
+
+main .cardBlock .listCards .blockPay .remember span {
+  margin-left: 20px;
+}
+
+main .cardBlock .listCards .blockPay .remember input {
+  display: none;
+}
+
+main .cardBlock .listCards .blockPay .remember label {
+  margin-bottom: 11px;
+  position: relative;
+  cursor: pointer;
+}
+
+main .cardBlock .listCards .blockPay .remember label:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #b6b6b6;
+  background-color: #ffffff;
+}
+
+main .cardBlock .listCards .blockPay .remember label:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  display: none;
+  left: 0px;
+  top: -2px;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/checkbox-icon.png");
+}
+
+main .cardBlock .listCards .blockPay .remember input:checked + label:after {
+  display: block;
+}
+
+main .cardBlock .line {
+  width: 4px;
+  height: 220px;
+  background-color: #ff2e2f;
+  margin-left: 37.5px;
+  margin-top: 30px;
+}
+
+main .cardBlock .cardFormOuter {
+  padding-left: 80px;
+  position: relative;
+}
+
+main .cardBlock .cardFormOuter .card-bottom {
+  position: absolute;
+  z-index: 10;
+  top: 16%;
+  left: 26%;
+  margin-left: 80px;
+  width: 613px;
+  height: 438px;
+  background-image: url("../img/pay/card-bottom-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .cardBlock .cardFormOuter .card-bottom .cardLine-bg {
+  height: 67px;
+  width: 100%;
+  margin-top: 85px;
+  margin-left: -7px;
+  background-color: #3b3b3b;
+}
+
+main .cardBlock .cardFormOuter .card-bottom input.cvc {
+  display: block;
+  margin-left: auto;
+  margin-right: 25px;
+  margin-top: 40px;
+  width: 123px;
+  border-radius: 28px;
+  background-color: #ffffff;
+  border: none;
+  padding: 15px 0;
+  text-align: center;
+}
+
+main .cardBlock .cardFormOuter .card-bottom input.cvc::-webkit-input-placeholder,
+main .cardBlock .cardFormOuter .card-bottom input.cvc::-moz-placeholder,
+main .cardBlock .cardFormOuter .card-bottom input.cvc:-moz-placeholder,
+main .cardBlock .cardFormOuter .card-bottom input.cvc:-ms-input-placeholder {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.5;
+  outline-color: transparent;
+  text-align: center;
+}
+
+main .cardBlock .cardFormOuter .card-bottom .text {
+  font-family: 'MullerBold';
+  font-size: 12px;
+  color: #333333;
+  text-transform: uppercase;
+  display: block;
+  margin-left: auto;
+  margin-right: 45px;
+  margin-top: 17.5px;
+  max-width: 85px;
+  line-height: 1.2;
+}
+
+main .cardBlock .cardFormOuter .cardForm {
+  position: relative;
+  z-index: 30;
+  width: 613px;
+  padding: 70px 57px 25px 57px;
+  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cfcdcd), to(#ebebeb));
+  background-image: -o-linear-gradient(bottom, #cfcdcd 0%, #ebebeb 100%);
+  background-image: linear-gradient(0deg, #cfcdcd 0%, #ebebeb 100%);
+  background-image: -moz-linear-gradient(0deg, #cfcdcd 0%, #ebebeb 100%);
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+main .cardBlock .cardFormOuter .cardForm img.masterCard {
+  width: 74px;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  right: 64px;
+}
+
+main .cardBlock .cardFormOuter .cardForm span.inputHead {
+  text-transform: uppercase;
+  font-family: 'MullerBold';
+  font-size: 14px;
+  color: #333333;
+  margin-left: 17.5px;
+}
+
+main .cardBlock .cardFormOuter .cardForm span.inputHead, main .cardBlock .cardFormOuter .cardForm input {
+  display: block;
+}
+
+main .cardBlock .cardFormOuter .cardForm input {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+  border: 1px solid #b5b5b5;
+  border-radius: 26.5px;
+  padding-left: 30px;
+  margin-top: 12.5px;
+  margin-bottom: 17.5px;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #333333;
+}
+
+main .cardBlock .cardFormOuter .cardForm input::-webkit-input-placeholder,
+main .cardBlock .cardFormOuter .cardForm input::-moz-placeholder,
+main .cardBlock .cardFormOuter .cardForm input:-moz-placeholder,
+main .cardBlock .cardFormOuter .cardForm input:-ms-input-placeholder {
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #333333;
+  opacity: 1;
+  outline-color: transparent;
+}
+
+main .cardBlock .cardFormOuter .cardForm input:focus {
+  border-color: #ff2e2f;
+}
+
+main .cardBlock .cardFormOuter .cardForm input.nameInput {
+  text-transform: uppercase;
+}
+
+main .cardBlock .cardFormOuter .cardForm .expDate .inputOuter.focus {
+  border-color: #ff2e2f;
+}
+
+main .cardBlock .cardFormOuter .cardForm .expDate .inputOuter {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  width: 238px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+  border: 1px solid #b5b5b5;
+  border-radius: 26.5px;
+  padding-left: 30px;
+  margin-top: 12.5px;
+  margin-bottom: 27.5px;
+  font-family: 'MullerRegular';
+  font-size: 16px;
+  color: #333333;
+}
+
+main .cardBlock .cardFormOuter .cardForm .expDate .inputOuter .line {
+  background-color: #000000;
+  width: 1px;
+  height: 17px;
+  margin: 0px 45px;
+  -webkit-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+main .cardBlock .cardFormOuter .cardForm .expDate .inputOuter input {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 35px;
+  height: auto;
+  padding-left: 3px;
+}
+
+main .cardBlock .cardFormOuter .cardForm .expDate .inputOuter input, main .cardBlock .cardFormOuter .cardForm .expDate .inputOuter .line {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 1400px) {
+  body .popupError, body .popupPay {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body .popupError, body .popupPay {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body .popupError, body .popupPay {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body .popupError, body .popupPay {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body .popupError p, body .popupPay p {
+    margin-top: 28px;
+    font-size: 16px;
+  }
+  body .popupError .buttonOk, body .popupPay .buttonOk {
+    margin-top: 22px;
+  }
+  body .popupError .buttons, body .popupPay .buttons {
+    padding-top: 22px;
+  }
 }

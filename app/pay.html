@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=898ba7e1-09fd-4997-8dc5-402d4333d428&amp;lang=ru_RU" type="text/javascript"></script>
     <link rel="stylesheet" href="css/contacts.css">
-    <link rel="stylesheet" href="css/payForm.css">
+    <link rel="stylesheet" href="css/pay.css">
   </head>
   <body>
     <div id="menu-pagedim"></div>
@@ -55,57 +55,61 @@
       </div>
     </header>
     <main>
+      <div class="popupPay" id="popupPay"><img src="img/pay/card-warning.jpg" alt="card-warning.jpg">
+        <p>Сейчас с вашей привязанной карты Bank card ****2426 будет списана сумма в размере 12 900 руб., вы уверены?</p>
+        <div class="buttons d-flex justify-content-center">
+          <div class="buttonCancel d-flex align-items-center justify-content-center b-close"><span>Отмена</span></div>
+          <div class="buttonPay d-flex align-items-center justify-content-center b-close"><span>Оплатить</span></div>
+        </div>
+      </div>
+      <div class="popupError" id="popupError"><img src="img/warning.jpg" alt="warning.jpg">
+        <p>Чтобы перейти к оплате, необходимо заполнить данные карты</p>
+        <div class="buttonOk d-flex align-items-center justify-content-center b-close"><span>Ok</span></div>
+      </div>
       <div class="container">
         <div class="header-breadcrumbs">
-          <div class="breadcrumbs"><a class="home" href="#">Главная</a> <span class="slash">/</span> <a class="active" href="payForm.html">Оплата</a></div>
+          <div class="breadcrumbs"><a class="home" href="#">Главная</a> <span class="slash">/</span> <a class="active" href="pay.html">Оплата</a></div>
         </div>
-        <div class="head">
-          <div class="row">
-            <div class="col-12 col-md-8 col-lg-6">
-              <h1>Bodyevolution 1-я ступень за 13 900 руб.</h1>
+        <h1><span class="red">Оплата</span> банковской картой</h1>
+        <div class="cardBlock d-flex">
+          <div class="listCards"><span class="listCards-name">Ваши карты</span>
+            <div class="items">
+              <div class="item listCards-item d-flex align-items-center exCard"><img class="icon" src="img/pay/credit-card.svg" alt="credit-card.svg"><span class="exCard">****  2426</span></div>
+              <div class="item listCards-item d-flex align-items-center" id="newCard-button"><img class="icon" src="img/pay/credit-card.svg" alt="credit-card.svg"><span class="newCard">Новая карта</span></div>
             </div>
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="line"></div>
-              <div class="desc">Заполните форму, чтобы приступить к оплате</div>
+            <div class="blockPay">
+              <div class="remember">
+                <input id="pay-checkbox" type="checkbox">
+                <label for="pay-checkbox"></label><span>Запомнить</span>
+                <div class="badge" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="При последующих платежах через личный кабинет реквизиты вашей карты будут запомнены, что избавит от внесения реквизитов карты повторно. Удалить сохранённые карты можно в личном кабинете." data-container=".badge"></div>
+              </div>
+              <div class="buttonPay d-flex align-items-center justify-content-center" id="buttonPay"><span>Оплатить</span></div>
             </div>
           </div>
-        </div>
-        <form class="form" action="#">
-          <div class="formPunct n1">
-            <div class="formHead"><span class="number red">01</span><span class="name">Придерживаетесь ли вы <br>вегетарианства?</span></div>
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-5">
-                <div class="select">
-                  <select name="select1">
-                    <option value="Нет" selected>Нет</option>
-                    <option value="Да">Да</option>
-                  </select>
+          <div class="line"></div>
+          <div class="cardFormOuter">
+            <div class="card-bottom">
+              <div class="cardLine-bg"></div>
+              <input class="cvc" id="card-bottom-cvc" type="text" placeholder="CVC/CVV" maxlength="3" onkeyup="limitInput('num', this);">
+              <div class="text">три цифры<br>на обороте<br>карты</div>
+            </div>
+            <div class="cardForm"><img class="masterCard" src="img/pay/mastercard.svg" alt="mastercard.svg">
+              <div class="cardNumber"><span class="inputHead">Номер карты</span>
+                <input id="cardNumber" type="text" placeholder="**** **** **** ****">
+              </div>
+              <div class="expDate"><span class="inputHead">Срок действия</span>
+                <div class="inputOuter">
+                  <input class="expDate-input" id="expDate-m" type="text" onkeyup="limitInput('num', this);" maxlength="2" placeholder="ММ">
+                  <div class="line"></div>
+                  <input class="expDate-input" id="expDate-y" type="text" onkeyup="limitInput('num', this);" maxlength="2" placeholder="ГГ">
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="formPunct n2">
-            <div class="formHead"><span class="number red">02</span><span class="name">Заполните эти данные о себе</span></div>
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-5">
-                <input type="text" placeholder="Фамилия*">
-              </div>
-              <div class="col-12 col-md-6 col-lg-5 order3">
-                <input type="email" placeholder="E-mail*">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-5">
-                <input type="text" placeholder="Имя*">
-                <input type="tel" placeholder="Телефон*">
-              </div>
-              <div class="col-12 col-md-6 col-lg-5">
-                <textarea placeholder="Ваши комментарии / пожелания"></textarea>
+              <div class="nameInput"><span class="inputHead">Фамилия и имя</span>
+                <input class="nameInput" id="nameInput" type="text" onkeyup="limitInput('en', this);" placeholder="IVAN IVANOV">
               </div>
             </div>
           </div>
-        </form>
-        <div class="buttons d-flex align-items-center"><a class="buttonPay d-flex align-items-center justify-content-center" href="prePay.html"><span>Перейти к оплате</span></a><span class="separ">или</span><a class="buttonPreOrder d-flex align-items-center justify-content-center" href="preOrder.html"><span>Оставить предварительную заявку</span><img src="img/question-icon.png" alt="question-icon.png"></a></div>
+        </div>
       </div>
       <section class="contacts">
         <div class="container">
@@ -145,5 +149,33 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/map.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script><script>$(function($) {$.mask.definitions['n'] = '[0-9]';$('input[type="tel"]').mask("+7 (nnn) nnn-nn-nn");});</script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/bpopup.js"></script>
+  <script src="js/pay.js"></script>
+  <script>
+    function limitInput( k, obj ) {
+    	switch( k ){
+    		case 'ru':
+    			if(obj.value.match(/[^а-яА-ЯёЁ0-9 -]/ig)){
+    				obj.value = obj.value.replace(/[^а-яА-ЯёЁ0-9 -]/ig, '')
+    				setTimeout(function(){obj.focus();}, 1)
+    			}
+    			break;
+    		case 'en' :
+    			if(obj.value.match(/[^a-zA-Z0-9 -]/ig)){
+    				obj.value = obj.value.replace(/[^a-zA-Z0-9 -]/ig, '')
+    				setTimeout(function(){obj.focus();}, 1)
+    			} 
+    			break;
+    		case 'num':
+    			if(obj.value.match(/[^0-9 -]/ig)){
+    				obj.value = obj.value.replace(/[^0-9 -]/ig, '')
+    				setTimeout(function(){obj.focus();}, 1)
+    			}
+    			break;
+    	}
+    }
+  </script>
 </html>

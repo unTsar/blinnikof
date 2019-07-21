@@ -118,6 +118,11 @@ main .buttons a.buttonPay {
   background-color: #ff2e2f;
 }
 
+main .buttons a.buttonPay:hover {
+  -webkit-box-shadow: 0px 0px 15px #ff2e2f;
+          box-shadow: 0px 0px 15px #ff2e2f;
+}
+
 main .buttons a.buttonPreOrder {
   background-color: #3a3a3a;
 }
@@ -126,7 +131,14 @@ main .buttons a.buttonPreOrder img {
   margin-left: 12px;
 }
 
+main .buttons a.buttonPreOrder:hover {
+  background-color: #ff2e2f;
+}
+
 main .buttons a.buttonPay, main .buttons a.buttonPreOrder {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   border-radius: 35px;
   padding: 18px 50px;
   color: #ffffff;
