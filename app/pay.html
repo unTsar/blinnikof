@@ -77,7 +77,7 @@
               <div class="item listCards-item d-flex align-items-center exCard"><img class="icon" src="img/pay/credit-card.svg" alt="credit-card.svg"><span class="exCard">****  2426</span></div>
               <div class="item listCards-item d-flex align-items-center" id="newCard-button"><img class="icon" src="img/pay/credit-card.svg" alt="credit-card.svg"><span class="newCard">Новая карта</span></div>
             </div>
-            <div class="blockPay">
+            <div class="blockPay desk">
               <div class="remember">
                 <input id="pay-checkbox" type="checkbox">
                 <label for="pay-checkbox"></label><span>Запомнить</span>
@@ -88,12 +88,12 @@
           </div>
           <div class="line"></div>
           <div class="cardFormOuter">
-            <div class="card-bottom">
+            <div class="card-bottom"><img class="card-bottom-bg" src="img/pay/card-bottom-bg.png" alt="card-bottom-bg.png">
               <div class="cardLine-bg"></div>
               <input class="cvc" id="card-bottom-cvc" type="text" placeholder="CVC/CVV" maxlength="3" onkeyup="limitInput('num', this);">
               <div class="text">три цифры<br>на обороте<br>карты</div>
             </div>
-            <div class="cardForm"><img class="masterCard" src="img/pay/mastercard.svg" alt="mastercard.svg">
+            <form class="cardForm" action=""><img class="masterCard" src="img/pay/mastercard.svg" alt="mastercard.svg">
               <div class="cardNumber"><span class="inputHead">Номер карты</span>
                 <input id="cardNumber" type="text" placeholder="**** **** **** ****">
               </div>
@@ -107,7 +107,15 @@
               <div class="nameInput"><span class="inputHead">Фамилия и имя</span>
                 <input class="nameInput" id="nameInput" type="text" onkeyup="limitInput('en', this);" placeholder="IVAN IVANOV">
               </div>
+            </form>
+          </div>
+          <div class="blockPay mob">
+            <div class="remember">
+              <input id="pay-checkbox-mob" type="checkbox">
+              <label for="pay-checkbox-mob"></label><span>Запомнить</span>
+              <div class="badge" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="При последующих платежах через личный кабинет реквизиты вашей карты будут запомнены, что избавит от внесения реквизитов карты повторно. Удалить сохранённые карты можно в личном кабинете." data-container=".badge"></div>
             </div>
+            <div class="buttonPay d-flex align-items-center justify-content-center" id="buttonPay-mob"><span>Оплатить</span></div>
           </div>
         </div>
       </div>

@@ -75,7 +75,7 @@ $(document).ready(function() {
 	})
 
 	// Popup
-	$('#buttonPay').click(function() {
+	$('.buttonPay').click(function() {
 		if($('.exCard').hasClass('active')){
 			$('#popupPay').bPopup({
 				position: ['50%', '50%'],

@@ -37,7 +37,7 @@ block content
 						.item.listCards-item.d-flex.align-items-center#newCard-button
 							img.icon(src="img/pay/credit-card.svg", alt="credit-card.svg")
 							span.newCard Новая карта
-					.blockPay
+					.blockPay.desk
 						.remember
 							input#pay-checkbox(type="checkbox")
 							label(for="pay-checkbox")
@@ -48,6 +48,7 @@ block content
 				.line
 				.cardFormOuter
 					.card-bottom
+						img.card-bottom-bg(src="img/pay/card-bottom-bg.png", alt="card-bottom-bg.png")
 						.cardLine-bg
 						input.cvc#card-bottom-cvc(type="text" placeholder="CVC/CVV" maxlength="3" onkeyup="limitInput('num', this);")
 						.text|три цифры
@@ -55,7 +56,7 @@ block content
 							|на обороте
 							br
 							|карты
-					.cardForm
+					form.cardForm(action="")
 						img.masterCard(src="img/pay/mastercard.svg", alt="mastercard.svg")
 						.cardNumber
 							span.inputHead Номер карты
@@ -69,6 +70,14 @@ block content
 						.nameInput
 							span.inputHead Фамилия и имя
 							input.nameInput#nameInput(type="text" onkeyup="limitInput('en', this);" placeholder="IVAN IVANOV")
+				.blockPay.mob
+					.remember
+						input#pay-checkbox-mob(type="checkbox")
+						label(for="pay-checkbox-mob")
+						span Запомнить
+						.badge(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="При последующих платежах через личный кабинет реквизиты вашей карты будут запомнены, что избавит от внесения реквизитов карты повторно. Удалить сохранённые карты можно в личном кабинете." data-container=".badge")
+					.buttonPay#buttonPay-mob.d-flex.align-items-center.justify-content-center
+						span Оплатить
 
 
 
