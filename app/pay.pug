@@ -42,7 +42,7 @@ block content
 							input#pay-checkbox(type="checkbox")
 							label(for="pay-checkbox")
 							span Запомнить
-							.badge(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="При последующих платежах через личный кабинет реквизиты вашей карты будут запомнены, что избавит от внесения реквизитов карты повторно. Удалить сохранённые карты можно в личном кабинете." data-container=".badge")
+							.badge.badge1(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="При последующих платежах через личный кабинет реквизиты вашей карты будут запомнены, что избавит от внесения реквизитов карты повторно. Удалить сохранённые карты можно в личном кабинете." data-container=".badge1")
 						.buttonPay#buttonPay.d-flex.align-items-center.justify-content-center
 							span Оплатить
 				.line
@@ -50,7 +50,7 @@ block content
 					.card-bottom
 						img.card-bottom-bg(src="img/pay/card-bottom-bg.png", alt="card-bottom-bg.png")
 						.cardLine-bg
-						input.cvc#card-bottom-cvc(type="text" placeholder="CVC/CVV" maxlength="3" onkeyup="limitInput('num', this);")
+						input.cvc#card-bottom-cvc(type="text" placeholder="CVC/CVV")
 						.text|три цифры
 							br
 							|на обороте
@@ -64,9 +64,9 @@ block content
 						.expDate
 							span.inputHead Срок действия
 							.inputOuter
-								input.expDate-input#expDate-m(type="text" onkeyup="limitInput('num', this);" maxlength="2" placeholder="ММ")
+								input.expDate-input#expDate-m(type="text" placeholder="ММ")
 								.line
-								input.expDate-input#expDate-y(type="text" onkeyup="limitInput('num', this);" maxlength="2" placeholder="ГГ")
+								input.expDate-input#expDate-y(type="text" placeholder="ГГ")
 						.nameInput
 							span.inputHead Фамилия и имя
 							input.nameInput#nameInput(type="text" onkeyup="limitInput('en', this);" placeholder="IVAN IVANOV")
@@ -75,7 +75,7 @@ block content
 						input#pay-checkbox-mob(type="checkbox")
 						label(for="pay-checkbox-mob")
 						span Запомнить
-						.badge(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="При последующих платежах через личный кабинет реквизиты вашей карты будут запомнены, что избавит от внесения реквизитов карты повторно. Удалить сохранённые карты можно в личном кабинете." data-container=".badge")
+						.badge.badge2(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="При последующих платежах через личный кабинет реквизиты вашей карты будут запомнены, что избавит от внесения реквизитов карты повторно. Удалить сохранённые карты можно в личном кабинете." data-container=".badge2")
 					.buttonPay#buttonPay-mob.d-flex.align-items-center.justify-content-center
 						span Оплатить
 

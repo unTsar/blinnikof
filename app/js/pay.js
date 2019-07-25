@@ -30,6 +30,9 @@ $(document).ready(function() {
 
 	// Mask
 	$('#cardNumber').mask("9999 9999 9999 9999")
+	$('#expDate-m').mask("99")
+	$('#expDate-y').mask("99")
+	$('#card-bottom-cvc').mask('999')
 	$('#cardNumber').keyup(function(e) {
 		if ($(this).val().match(/\d{4}\s\d{4}\s\d{4}\s\d{4}/)) {
 			$('#expDate-m').focus();
