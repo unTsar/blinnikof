@@ -42,7 +42,7 @@ $(document).ready(function() {
 		}
 	})
 	$('#expDate-m').keyup(function(e) {
-		if (this.value == '') {
+		if ($(this).val().match(/__/)) {
 			$('#cardNumber').focus();
 		}
 		if ($(this).val().match(/\d{2}/)) {
@@ -53,7 +53,7 @@ $(document).ready(function() {
 		}
 	})
 	$('#expDate-y').keyup(function(e) {
-		if (this.value == '') {
+		if ($(this).val().match(/__/)) {
 			$('#expDate-m').focus();
 		}
 		if ($(this).val().match(/\d{2}/)) {
@@ -72,7 +72,7 @@ $(document).ready(function() {
 		}
 	})
 	$('#card-bottom-cvc').keyup(function() {
-		if (this.value == '') {
+		if ($(this).val().match(/___/)) {
 			$('#nameInput').focus();
 		}
 	})
