@@ -122,6 +122,10 @@ main section.calendar {
   padding-top: 55px;
 }
 
+main section.calendar .carousel .slide {
+  padding: 0px 18px;
+}
+
 main section.calendar .carousel .slide .topLine {
   font-family: 'MullerBold';
   font-size: 24px;
@@ -130,6 +134,7 @@ main section.calendar .carousel .slide .topLine {
   text-align: center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  border-bottom: 1px solid #e1dcdc;
   padding-top: 5px;
   padding-bottom: 5px;
   position: relative;
@@ -192,13 +197,22 @@ main section.calendar .carousel .slide .tableWeek table.days {
   margin-bottom: 30px;
 }
 
+main section.calendar .carousel .slide .tableWeek table.days tr {
+  border-bottom: 2px solid #e1dcdc;
+}
+
+main section.calendar .carousel .slide .tableWeek table.days tr td.mob {
+  display: none;
+}
+
 main section.calendar .carousel .slide .tableWeek table.days tr th, main section.calendar .carousel .slide .tableWeek table.days tr td {
-  border: 3px solid #e1dcdc;
+  border: 1px solid #e1dcdc;
   width: 158px;
 }
 
 main section.calendar .carousel .slide .tableWeek table.days tr td.empty {
   border: none;
+  border-bottom: 2px solid transparent;
 }
 
 main section.calendar .carousel .slide .tableWeek table.days tr td {
@@ -370,6 +384,7 @@ main section.calendar .carousel .slide .tableWeek table.days tr .class .buttonCh
 main section.calendar .carousel .slide .tableWeek table.days tr .class:hover {
   -webkit-box-shadow: 0px 0px 17.5px #3d3d3d;
           box-shadow: 0px 0px 17.5px #3d3d3d;
+  z-index: 2000;
 }
 
 main section.calendar .carousel .slide .tableWeek table.days tr .class.gray {
@@ -447,8 +462,21 @@ main a.buttonReg {
   body main .container section.header .header-desc {
     padding-left: 0;
   }
+  body main .container section.calendar .carousel {
+    margin-left: -18px;
+  }
+  body main .container section.calendar .carousel .slide {
+    padding: 0;
+  }
+  body main .container section.calendar .carousel .slide .topLine {
+    margin-left: 18px;
+  }
   body main .container section.calendar .carousel .slide .tableWeek {
+    padding-left: 18px;
     overflow-y: scroll;
+  }
+  body main .container section.calendar .carousel .slide .tableWeek table.days td.mob {
+    display: table-cell;
   }
 }
 

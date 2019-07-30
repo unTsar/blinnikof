@@ -36,6 +36,7 @@ main
 		padding-top: 55px
 		.carousel
 			.slide
+				padding: 0px 18px
 				.topLine
 					font-family: 'MullerBold'
 					font-size: 24px
@@ -44,6 +45,7 @@ main
 					text-align: center
 					border-top-left-radius: 15px
 					border-top-right-radius: 15px
+					border-bottom: 1px solid #e1dcdc
 					padding-top: 5px
 					padding-bottom: 5px
 					position: relative
@@ -83,11 +85,15 @@ main
 						border: none
 						margin-bottom: 30px
 						tr
+							border-bottom: 2px solid #e1dcdc
+							td.mob
+								display: none
 							th, td
-								border: 3px solid #e1dcdc
+								border: 1px solid #e1dcdc
 								width: 158px
 							td.empty
 								border: none
+								border-bottom: 2px solid transparent
 							td
 								padding: 0
 							th.date
@@ -205,6 +211,7 @@ main
 										display: block
 							.class:hover
 								box-shadow: 0px 0px 17.5px #3d3d3d
+								z-index: 2000
 							.class.gray
 								background-color: #f1f1f1
 							.class.rep
@@ -269,9 +276,17 @@ main
 						padding-left: 0
 				section.calendar
 					.carousel
+						margin-left: -18px	
 						.slide	
-							.tableWeek	
+							padding: 0
+							.topLine
+								margin-left: 18px
+							.tableWeek
+								padding-left: 18px
 								overflow-y: scroll
+								table.days
+									td.mob
+										display: table-cell
 @media only screen and(max-width: 991px)
 	body
 		main
