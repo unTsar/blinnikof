@@ -2,6 +2,7 @@ extends _layouts/home
 
 block styles
 	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/select2.min.css")
 	link(rel="stylesheet", href="css/payForm.css")
 
 
@@ -28,9 +29,9 @@ block content
 					.row
 						.col-12.col-md-6.col-lg-5
 							.select
-								select(name="select1")
-									option(value="Нет" selected) Нет
-									option(value="Да") Да
+								select#selectForm.js-states.form-control(name="state")
+									option(value="No" selected) Нет
+									option(value="Yes") Да
 				//- .formPunct.n2
 				//- 	.formHead
 				//- 		span.number.red 02
@@ -78,5 +79,15 @@ block content
 block scripts
 	script(src="js/map.js")
 	script(src="js/jquery.maskedinput.min.js")
+	script(src="js/select2.min.js")
+	script.
+		$(function(){
+			$.mask.definitions['n'] = '[0-9]';
+			$('input[type="tel"]').mask("+7 (nnn) nnn-nn-nn");
+		});
 
-	<script>$(function($) {$.mask.definitions['n'] = '[0-9]';$('input[type="tel"]').mask("+7 (nnn) nnn-nn-nn");});</script>
+		$(document).ready(function(){
+			$('#selectForm').select2({
+				minimumResultsForSearch: Infinity
+			});
+		})

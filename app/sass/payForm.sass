@@ -1,6 +1,15 @@
 @import "vars"
 @import "fonts"
 
+.select2-dropdown
+	border-color: #E4E7EB
+	.select2-results
+		.select2-results__options
+			.select2-results__option
+				padding-left: 30px
+.select2-container--open
+	.select2-dropdown--below
+		border: none
 main
 	.header-breadcrumbs
 		padding-top: 65px
@@ -73,7 +82,7 @@ main
 				background-color: #fff
 				font-family: 'MullerRegular'
 				font-size: 20px
-				color: #333333    
+				color: #333333
 				outline: none
 				transition: 0.3s
 			input:focus, select:focus, textarea:focus
@@ -81,26 +90,44 @@ main
 			.select
 				margin-top: 30px
 				position: relative
-				select
-					margin-top: 0
-					-webkit-appearance: none
-					-moz-appearance: none
-					appearance: none
+				.select2-container--default
+					.select2-selection--single
+						width: 100%
+						outline: none
+						transition: 0.3s
+						border: none
+				.select2-container
+					.select2-selection--single
+						height: 60px
+						border: 1px solid #E4E7EB
+						border-radius: 30px
+						transition: 0.3s
+				.select2-selection__rendered
+					padding-left: 30px
 					font-family: 'MullerLight'
 					font-size: 16px
 					color: #ababab
-					option
-						margin-top: 10px
-						margin-bottom: 10px
-				select:focus
-					color: #333333
-			.select:after
-				content: url('../img/arrowDown.jpg')
-				position: absolute
-				right: 25px
-				top: 17px
-				bottom: 0
-				margin: auto
+					transition: 0.3s
+
+				.select2-container--default
+					.select2-selection--single
+						.select2-selection__rendered
+							line-height: 60px
+				.select2-container
+					.select2-selection--single
+						.select2-selection__arrow
+							height: 60px
+							b
+								border-color: #333 transparent transparent transparent
+								margin-left: -25px
+				.select2-container--open
+					.select2-selection__rendered
+						color: #333
+					.select2-selection--single
+						border-color: #91b853
+						.select2-selection__arrow
+							b
+								border-color: transparent transparent #333 transparent
 			textarea
 				height: 150px
 				padding-top: 20px
