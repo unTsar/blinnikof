@@ -106,7 +106,12 @@
             </div>
           </div>
         </form>
-        <div class="buttons d-flex align-items-center"><a class="buttonPay d-flex align-items-center justify-content-center" href="prePay.html"><span>Перейти к оплате</span></a><span class="separ">или</span><a class="buttonPreOrder d-flex align-items-center justify-content-center" href="preOrder.html"><span>Оставить предварительную заявку</span><img src="img/question-icon.png" alt="question-icon.png"></a></div>
+        <div class="buttons d-flex align-items-center"><a class="buttonPay d-flex align-items-center justify-content-center" href="prePay.html"><span>Перейти к оплате</span></a><span class="separ">или</span><a class="buttonPreOrder d-flex align-items-center justify-content-center" href="preOrder.html"><span>Оставить предварительную заявку</span>
+            <div class="badgeOuter d-flex align-items-center justify-content-center">
+              <div class="badge" id="badge" data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="Предварительная заявка не гарантирует вам запись в группу, но гарантирует, что мы узнаем о вас, свяжемся с вами и ответим на все ваши вопросы. Напоминаем, запись в группу осуществляется только после оплаты." data-container=".badge">
+                <div class="inner"></div>
+              </div>
+            </div></a></div>
       </div>
       <section class="contacts">
         <div class="container">
@@ -148,6 +153,7 @@
   <script src="js/map.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/select2.min.js"></script>
+  <script src="js/tether.min.js"></script>
   <script>
     $(function(){
     	$.mask.definitions['n'] = '[0-9]';
@@ -158,6 +164,13 @@
     	$('#selectForm').select2({
     		minimumResultsForSearch: Infinity
     	});
+    })
+    // Tooltip
+    $(function () {
+    	$('[data-toggle="tooltip"]').tooltip()
+    })
+    $('#badge').click(function(e){
+    	return false;
     })
   </script>
 </html>

@@ -69,7 +69,10 @@ block content
 				span.separ или
 				a(href="preOrder.html").buttonPreOrder.d-flex.align-items-center.justify-content-center
 					span Оставить предварительную заявку
-					img(src="img/question-icon.png", alt="question-icon.png")
+					.badgeOuter.d-flex.align-items-center.justify-content-center
+						.badge#badge(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="Предварительная заявка не гарантирует вам запись в группу, но гарантирует, что мы узнаем о вас, свяжемся с вами и ответим на все ваши вопросы. Напоминаем, запись в группу осуществляется только после оплаты." data-container=".badge")
+							.inner
+
 
 
 		include _partials/contacts.pug
@@ -80,6 +83,7 @@ block scripts
 	script(src="js/map.js")
 	script(src="js/jquery.maskedinput.min.js")
 	script(src="js/select2.min.js")
+	script(src="js/tether.min.js")
 	script.
 		$(function(){
 			$.mask.definitions['n'] = '[0-9]';
@@ -90,4 +94,11 @@ block scripts
 			$('#selectForm').select2({
 				minimumResultsForSearch: Infinity
 			});
+		})
+		// Tooltip
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+		$('#badge').click(function(e){
+			return false;
 		})

@@ -42,18 +42,38 @@ main
 			margin: 0 25px
 		a.buttonPay
 			background-color: #ff2e2f
+			padding: 18px 50px
 		a.buttonPay:hover
 			box-shadow: 0px 0px 15px #ff2e2f
 		a.buttonPreOrder
 			background-color: #3a3a3a
-			img
-				margin-left: 12px
+			padding: 0px 40px 0px 50px
+			.badgeOuter
+				position: relative
+				z-index: 1000
+				height: 100%
+				padding-top: 22.5px
+				padding-bottom: 22.5px
+				.badge
+					position: relative
+					cursor: pointer
+					width: 24px
+					height: 24px
+					margin-left: 12px
+					margin-right: 10px
+					background-image: url('../img/question-icon.png')
+					background-size: cover
+					.tooltip
+						line-height: 1.2
+						width: 200px
+						margin-bottom: 5px
+						font-size: 12px
+						opacity: 1
 		a.buttonPreOrder:hover
 			background-color: #ff2e2f
 		a.buttonPay, a.buttonPreOrder
 			transition: 0.3s
 			border-radius: 35px
-			padding: 18px 50px
 			color: #ffffff
 			font-family: 'MullerMedium'
 			font-size: 20px
@@ -241,8 +261,15 @@ main
 			.container
 				.buttons
 					a.buttonPay, a.buttonPreOrder 
-						padding: 14px 18px
 						font-size: 18px
+					a.buttonPay
+						padding: 14px 18px
+					a.buttonPreOrder
+						padding-left: 18px
+						padding-right: 18px
+						.badgeOuter
+							padding-top: 16.5px
+							padding-bottom: 16.5px
 @media only screen and(max-width: 767px)
 	body
 		main 
@@ -289,7 +316,33 @@ main
 					.desc
 						font-size: 18px
 				.buttons
+					a.buttonPay
+						padding-top: 7px
+						padding-bottom: 7px
 					a.buttonPreOrder
-						flex-direction: column
-						text-align: center
-
+						.badgeOuter
+							padding-top: 7px
+							padding-bottom: 7px
+							.tooltip
+								margin-left: -160px
+								margin-bottom: 10px
+								.arrow
+									left: auto !important
+									right: 14px
+					a.buttonPreOrder, a.buttonPay
+						span
+							font-size: 14px
+						.badge
+							width: 20px
+							height: 20px
+@media only screen and(max-width: 400px)
+	body
+		main
+			.container
+				.buttons
+					a.buttonPreOrder
+						padding-left: 7.5px
+						padding-right: 0
+						.badgeOuter
+							padding-top: 7px
+							padding-bottom: 10px

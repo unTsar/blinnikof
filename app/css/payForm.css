@@ -128,6 +128,7 @@ main .buttons span.separ {
 
 main .buttons a.buttonPay {
   background-color: #ff2e2f;
+  padding: 18px 50px;
 }
 
 main .buttons a.buttonPay:hover {
@@ -137,10 +138,34 @@ main .buttons a.buttonPay:hover {
 
 main .buttons a.buttonPreOrder {
   background-color: #3a3a3a;
+  padding: 0px 40px 0px 50px;
 }
 
-main .buttons a.buttonPreOrder img {
+main .buttons a.buttonPreOrder .badgeOuter {
+  position: relative;
+  z-index: 1000;
+  height: 100%;
+  padding-top: 22.5px;
+  padding-bottom: 22.5px;
+}
+
+main .buttons a.buttonPreOrder .badgeOuter .badge {
+  position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
   margin-left: 12px;
+  margin-right: 10px;
+  background-image: url("../img/question-icon.png");
+  background-size: cover;
+}
+
+main .buttons a.buttonPreOrder .badgeOuter .badge .tooltip {
+  line-height: 1.2;
+  width: 200px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  opacity: 1;
 }
 
 main .buttons a.buttonPreOrder:hover {
@@ -152,7 +177,6 @@ main .buttons a.buttonPay, main .buttons a.buttonPreOrder {
   -o-transition: 0.3s;
   transition: 0.3s;
   border-radius: 35px;
-  padding: 18px 50px;
   color: #ffffff;
   font-family: 'MullerMedium';
   font-size: 20px;
@@ -412,8 +436,18 @@ main form.form .formPunct input.adressInput:-ms-input-placeholder {
 
 @media only screen and (max-width: 991px) {
   body main .container .buttons a.buttonPay, body main .container .buttons a.buttonPreOrder {
-    padding: 14px 18px;
     font-size: 18px;
+  }
+  body main .container .buttons a.buttonPay {
+    padding: 14px 18px;
+  }
+  body main .container .buttons a.buttonPreOrder {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  body main .container .buttons a.buttonPreOrder .badgeOuter {
+    padding-top: 16.5px;
+    padding-bottom: 16.5px;
   }
 }
 
@@ -475,12 +509,38 @@ main form.form .formPunct input.adressInput:-ms-input-placeholder {
   body main .container .head .desc {
     font-size: 18px;
   }
+  body main .container .buttons a.buttonPay {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  body main .container .buttons a.buttonPreOrder .badgeOuter {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  body main .container .buttons a.buttonPreOrder .badgeOuter .tooltip {
+    margin-left: -160px;
+    margin-bottom: 10px;
+  }
+  body main .container .buttons a.buttonPreOrder .badgeOuter .tooltip .arrow {
+    left: auto !important;
+    right: 14px;
+  }
+  body main .container .buttons a.buttonPreOrder span, body main .container .buttons a.buttonPay span {
+    font-size: 14px;
+  }
+  body main .container .buttons a.buttonPreOrder .badge, body main .container .buttons a.buttonPay .badge {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   body main .container .buttons a.buttonPreOrder {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
+    padding-left: 7.5px;
+    padding-right: 0;
+  }
+  body main .container .buttons a.buttonPreOrder .badgeOuter {
+    padding-top: 7px;
+    padding-bottom: 10px;
   }
 }
