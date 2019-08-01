@@ -24,16 +24,18 @@ $(document).ready(function(){
 		$(this).addClass('active');
 		$(this).siblings('.orders-buttonPaid').removeClass('active');
 
-		$(this).parents('.buttons').siblings('.orders-listPaid').slideUp(75);
-		$(this).parents('.buttons').siblings('.orders-listUnpaid').slideDown(75);
+		$(this).parents('.buttons').siblings('.orders-listPaid').slideUp(175, function() {
+			$(this).siblings('.orders-listUnpaid').slideDown(175);
+		});
 	})
 	$('.orders-buttonPaid').click(function() {
 
 		$(this).addClass('active');
 		$(this).siblings('.orders-buttonUnpaid').removeClass('active');
 
-		$(this).parents('.buttons').siblings('.orders-listUnpaid').slideUp(75);
-		$(this).parents('.buttons').siblings('.orders-listPaid').slideDown(75);
+		$(this).parents('.buttons').siblings('.orders-listUnpaid').slideUp(175, function() {
+			$(this).siblings('.orders-listPaid').slideDown(175);
+		});
 	})
 
 	$('#profile-buttonUnpaid-sTicket').click(function() {
@@ -51,5 +53,19 @@ $(document).ready(function(){
 		}
 		$('.schedule-Unpaid').removeClass('hidden');
 		$('.schedule-Unpaid').hide();
+	})
+
+	// popup
+	$('#popup1-btn').click(function() {
+		$('#popup1').bPopup({
+			position: ['50%', '50%'],
+			positionStyle: 'fixed'
+		});
+	})
+	$('#popup2-btn').click(function() {
+		$('#popup2').bPopup({
+			position: ['50%', '50%'],
+			positionStyle: 'fixed'
+		});
 	})
 });

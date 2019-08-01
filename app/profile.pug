@@ -2,638 +2,643 @@ extends _layouts/home
 
 block styles
 
-    link(rel="stylesheet", href="css/contacts.css")
-    link(rel="stylesheet", href="css/profile.css")
+	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/profile.css")
 
 
 block content
 
-    include _partials/header.pug
+	include _partials/header.pug
 
-    main
-        .container-fluid
-            section.header
-                .container
-                    .header-breadcrumbs
-                        .breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="profile.html") Личный кабинет]
-                    .Outer
-                        .head
-                            .row
-                                .col-12
-                                    span.head Личный кабинет
-                        .buttons
-                            .header-scrollTo-btn(onclick="$.scrollTo('.personInf', 500);").button.active.d-flex.align-items-center.justify-content-center
-                                span Общая информация
-                            .header-scrollTo-btn(onclick="$.scrollTo('.orders', 500);").button.d-flex.align-items-center.justify-content-center
-                                span.desk Заказы BodyEvolution
-                                span.mob BodyEvolution
-                            .header-scrollTo-btn(onclick="$.scrollTo('.sTicketInf', 500);").button.d-flex.align-items-center.justify-content-center
-                                span Абонементы
-                            .header-scrollTo-btn(onclick="$.scrollTo('.progressInf', 500);").button.d-flex.align-items-center.justify-content-center
-                                span Твой прогресс
-                            a(href="#").button.d-flex.align-items-center.justify-content-center
-                                span Видео-лекции
-                            .header-scrollTo-btn(onclick="$.scrollTo('.appointDiet', 500);").button.d-flex.align-items-center.justify-content-center
-                                span Запись к диетологу
-            section.personInf
-                .container
-                    .row
-                        .col-12.col-md-6.order-1.col-lg-3
-                            .photo.d-flex.flex-column.align-items-center.justify-content-center
-                                img.imgPerson.img-fluid.d-block(src="img/profile/profile-personInf-photo.jpg", alt="profile-personInf-photo")
-                                .button.d-flex.align-items-center.justify-content-around
-                                    span Загрузить фотографию
-                        .col-12.order-3.order-lg-2.col-lg-6
-                            .text
-                                .line.gray
-                                    .item.itemB Имя
-                                    .item Николай
-                                .line
-                                    .item.itemB Фамилия
-                                    .item Борщенко
-                                .line.gray
-                                    .item.itemB Телефон
-                                    .item +7 (928) 368-34-15
-                                .line
-                                    .item.itemB E-mail
-                                    .item.itemRed nikoss@list.ru
-                                .line.gray
-                                    .item.itemB Ступень
-                                    .item 1-ая
-                                .line
-                                    .item.itemB Карты
-                                    .item.d-flex **** 1234 #[.buttonCancel.d-flex.align-items-center.justify-content-center Отвязать]
-                        .col-12.col-md-6.order-2.order-lg-3.col-lg-3.d-flex.align-items-center.justify-content-center
-                            .iconQr.d-flex.align-items-center.justify-content-center
-                                img(src="img/profile/QR.png", alt="QR.png")
-            section.promo
-                .container.contentBlock
-                    .head
-                        span.name Промокод для подруги:
-                        .line
-                        .profile-buttonOpen.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
-                        .profile-buttonClose.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                    .hidden(style="display: none;")
-                        p.desc Поделитесь промокодом со своей близкой подругой или не очень и получите личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution
-                        .list
-                            .topLine
-                                span.desk Название
-                                span.desk Номер
-                                span.mob Название и номер
-                            .line.gray
-                                span.text.bb на скидку 1000 руб., действителен до 22 июня 2019 г., 11:49:41 
-                                    .badge.badge1(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge1")
-                                        .inner
-                                span.red REF-5923-22884 
-                            .line
-                                span.text.bb на скидку 1000 руб., действителен до  22 июня 2019 г., 11:49:41 
-                                    .badge.badge2(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge2")
-                                        .inner
-                                span.red REF-5923-22884 
-                            .line.gray
-                                span.text.bb на скидку 1000 руб., действителен до  22 июня 2019 г., 11:49:41
-                                    .badge.badge3(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge3")
-                                        .inner
-                                span.red REF-5923-22884 
-            section.socials
-                .container.contentBlock
-                    .head
-                        span.name Соцсети:
-                        .line
-                        .profile-buttonOpen.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
-                        .profile-buttonClose.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                    .hidden(style="display: none;")
-                        p.desc Вы можете привязать к своему профилю свой аккаунт в социальной сети, это позволит вам авторизоваться в один клик.
-                        p.desc Нажмите на кнопку той социальной сети, через которую вы хотите входить в свой единый профиль. В открывшемся окне соцсети подтвердите разрешение на авторизацию. Вход через социальную сеть будет разрешен автоматически. Профиль будет дозаполнен открытыми данными, полученными из вашего аккаунта в социальной сети. 
-                        .list.desk
-                            .topLine
-                                span Доступные к привязке:
-                                span Привязанные:
-                            .line.gray
-                                img.social(src="img/profile/profile-socials-icon1.jpg", alt="profile-socials-icon1")
-                                img.social(src="img/profile/profile-socials-icon3.jpg", alt="profile-socials-icon3")
-                            .line
-                                img.social(src="img/profile/profile-socials-icon2.jpg", alt="profile-socials-icon2")
-                        .list.mob
-                            .topLine
-                                span Доступные к привязке:
-                            .line.gray
-                                img.social(src="img/profile/profile-socials-icon1.jpg", alt="profile-socials-icon1")
-                            .line
-                                img.social(src="img/profile/profile-socials-icon2.jpg", alt="profile-socials-icon2")
-                            .topLine
-                                span Привязанные
-                            .line.gray
-                                img.social(src="img/profile/profile-socials-icon3.jpg", alt="profile-socials-icon3")
-            section.appForm
-                .container.contentBlock
-                    .head
-                        span.name Анкета
-                        .line
-                        .profile-buttonOpen.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
-                        .profile-buttonClose.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                    .hidden(style="display: none;")
-                        //- .button.d-flex.align-items-center.justify-content-center
-                        //-     span Заполнить анкету
-                        .list
-                            .topLine
-                                span Введите данные
-                            .line.gray.desk
-                                span.bb ФИО
-                                span.jusR Петрова Мария Ивановна
-                            .line.gray.mob
-                                span.bb Фамилия
-                                span.jusR Петрова
-                            .line.mob
-                                span.bb Имя
-                                span.jusR Мария Ивановна
-                            .line.gray-mob
-                                span.desk.bb Укажите ваш Инстаграм
-                                span.mob.bb Ваш Инстаграм
-                                span.jusR petrova
+	.borderOuter.popup#popup1
+		img(src="img/profile/collages-item1.png", alt="collages-item1.png")
+	.borderOuter.popup#popup2
+		img(src="img/profile/collages-item2.png", alt="collages-item2.png")
+	main
+		.container-fluid
+			section.header
+				.container
+					.header-breadcrumbs
+						.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="profile.html") Личный кабинет]
+					.Outer
+						.head
+							.row
+								.col-12
+									span.head Личный кабинет
+						.buttons
+							.header-scrollTo-btn(onclick="$.scrollTo('.personInf', 500);").button.active.d-flex.align-items-center.justify-content-center
+								span Общая информация
+							.header-scrollTo-btn(onclick="$.scrollTo('.orders', 500);").button.d-flex.align-items-center.justify-content-center
+								span.desk Заказы BodyEvolution
+								span.mob BodyEvolution
+							.header-scrollTo-btn(onclick="$.scrollTo('.sTicketInf', 500);").button.d-flex.align-items-center.justify-content-center
+								span Абонементы
+							.header-scrollTo-btn(onclick="$.scrollTo('.progressInf', 500);").button.d-flex.align-items-center.justify-content-center
+								span Твой прогресс
+							a(href="#").button.d-flex.align-items-center.justify-content-center
+								span Видео-лекции
+							.header-scrollTo-btn(onclick="$.scrollTo('.appointDiet', 500);").button.d-flex.align-items-center.justify-content-center
+								span Запись к диетологу
+			section.personInf
+				.container
+					.row
+						.col-12.col-md-6.order-1.col-lg-3
+							.photo.d-flex.flex-column.align-items-center.justify-content-center
+								img.imgPerson.img-fluid.d-block(src="img/profile/profile-personInf-photo.jpg", alt="profile-personInf-photo")
+								.button.d-flex.align-items-center.justify-content-around
+									span Загрузить фотографию
+						.col-12.order-3.order-lg-2.col-lg-6
+							.text
+								.line.gray
+									.item.itemB Имя
+									.item Николай
+								.line
+									.item.itemB Фамилия
+									.item Борщенко
+								.line.gray
+									.item.itemB Телефон
+									.item +7 (928) 368-34-15
+								.line
+									.item.itemB E-mail
+									.item.itemRed nikoss@list.ru
+								.line.gray
+									.item.itemB Ступень
+									.item 1-ая
+								.line
+									.item.itemB Карты
+									.item.d-flex **** 1234 #[.buttonCancel.d-flex.align-items-center.justify-content-center Отвязать]
+						.col-12.col-md-6.order-2.order-lg-3.col-lg-3.d-flex.align-items-center.justify-content-center
+							.iconQr.d-flex.align-items-center.justify-content-center
+								img(src="img/profile/QR.png", alt="QR.png")
+			section.promo
+				.container.contentBlock
+					.head
+						span.name Промокод для подруги:
+						.line
+						.profile-buttonOpen.align-items-center.justify-content-center
+							img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+						.profile-buttonClose.align-items-center.justify-content-center
+							img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+					.hidden(style="display: none;")
+						p.desc Поделитесь промокодом со своей близкой подругой или не очень и получите личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution
+						.list
+							.topLine
+								span.desk Название
+								span.desk Номер
+								span.mob Название и номер
+							.line.gray
+								span.text.bb на скидку 1000 руб., действителен до 22 июня 2019 г., 11:49:41 
+									.badge.badge1(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge1")
+										.inner
+								span.red REF-5923-22884 
+							.line
+								span.text.bb на скидку 1000 руб., действителен до  22 июня 2019 г., 11:49:41 
+									.badge.badge2(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge2")
+										.inner
+								span.red REF-5923-22884 
+							.line.gray
+								span.text.bb на скидку 1000 руб., действителен до  22 июня 2019 г., 11:49:41
+									.badge.badge3(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="<div class='name'>Правила:</div><ol><li>Данный промокод действителен в течение 3-х месяцев со дня получения вами данного письма.</li><li>После того как промокод будет применен, вы получаете личную скидку в размере 1000 руб. на свой следующий заказ BodyEvolution или BodyEvolution Size plus.</li><li>На занятия по абонементам данный промокод не распространяется.</li></ol>" data-container=".badge3")
+										.inner
+								span.red REF-5923-22884 
+			section.socials
+				.container.contentBlock
+					.head
+						span.name Соцсети:
+						.line
+						.profile-buttonOpen.align-items-center.justify-content-center
+							img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+						.profile-buttonClose.align-items-center.justify-content-center
+							img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+					.hidden(style="display: none;")
+						p.desc Вы можете привязать к своему профилю свой аккаунт в социальной сети, это позволит вам авторизоваться в один клик.
+						p.desc Нажмите на кнопку той социальной сети, через которую вы хотите входить в свой единый профиль. В открывшемся окне соцсети подтвердите разрешение на авторизацию. Вход через социальную сеть будет разрешен автоматически. Профиль будет дозаполнен открытыми данными, полученными из вашего аккаунта в социальной сети. 
+						.list.desk
+							.topLine
+								span Доступные к привязке:
+								span Привязанные:
+							.line.gray
+								img.social(src="img/profile/profile-socials-icon1.jpg", alt="profile-socials-icon1")
+								img.social(src="img/profile/profile-socials-icon3.jpg", alt="profile-socials-icon3")
+							.line
+								img.social(src="img/profile/profile-socials-icon2.jpg", alt="profile-socials-icon2")
+						.list.mob
+							.topLine
+								span Доступные к привязке:
+							.line.gray
+								img.social(src="img/profile/profile-socials-icon1.jpg", alt="profile-socials-icon1")
+							.line
+								img.social(src="img/profile/profile-socials-icon2.jpg", alt="profile-socials-icon2")
+							.topLine
+								span Привязанные
+							.line.gray
+								img.social(src="img/profile/profile-socials-icon3.jpg", alt="profile-socials-icon3")
+			section.appForm
+				.container.contentBlock
+					.head
+						span.name Анкета
+						.line
+						.profile-buttonOpen.align-items-center.justify-content-center
+							img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+						.profile-buttonClose.align-items-center.justify-content-center
+							img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+					.hidden(style="display: none;")
+						//- .button.d-flex.align-items-center.justify-content-center
+						//-     span Заполнить анкету
+						.list
+							.topLine
+								span Введите данные
+							.line.gray.desk
+								span.bb ФИО
+								span.jusR Петрова Мария Ивановна
+							.line.gray.mob
+								span.bb Фамилия
+								span.jusR Петрова
+							.line.mob
+								span.bb Имя
+								span.jusR Мария Ивановна
+							.line.gray-mob
+								span.desk.bb Укажите ваш Инстаграм
+								span.mob.bb Ваш Инстаграм
+								span.jusR petrova
 
-                            .line.gray.gray-desk
-                                span.bb День рождения
-                                span.jusR 01.01.2000
-                            .line.gray-mob
-                                span.bb Рост
-                                span.jusR 160
-                            .line.gray.gray-desk
-                                span.bb Вес
-                                span.jusR 57
-                            .line.gray-mob
-                                span.bb ИМТ
-                                span.jusR 30.2
-                            .line.gray.gray-desk
-                                span.bb Желаемый вес
-                                span.jusR 52
-                            .line.gray-mob
-                                span.bb Цель занятий
-                                span.jusR стать стройной
-                            .fullAppForm
-                                .head.d-flex.justify-content-between
-                                    span.name Вся анкета
-                                    .profile-buttonOpen.align-items-center.justify-content-center
-                                        img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
-                                    .profile-buttonClose.align-items-center.justify-content-center
-                                        img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                                .hidden(style="display: none;")
-                                    .line.gray
-                                        span.bb Есть ли у вас мечта, которая должна непременно осуществиться вместе с обретенной стройностью фигуры?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Вегетарианец?
-                                        span.jusR нет
-                                    .line.mob
-                                        span Нет
-                                    .line.gray
-                                        span.bb Непереносимость продуктов если есть и каких?
-                                    .line.mob
-                                        span -
-                                    .line.gray-mob
-                                        span.bb Занимались ли вы до этого курса физическими нагрузками (фитнес, танцы, групповые программы)?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Какое время назад и как долго?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Сколько раз сейчас физические нагрузки в неделю, если есть (йога, танцы, тренажерный зал и т.д.)?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Как питаетесь сейчас?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Сколько раз в день?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Какие продукты?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Сколько пьете воды?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Принимаете ли вы какие-то гормональные или лекарственные препараты , или витаминные комплексы?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Являетесь ли вы кормящей мамой ? Если да, то как давно?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Есть ли заболевания опорно-двигательного аппарата (спина, колени, шея, грыжи, сколиоз, мениски)?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Есть ли заболевания сердечно-сосудистой системы (тахикардия, аритмия, гипертония, гипотония)?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Есть ли заболевания желудочно-кишечного тракта (гастрит, язва и др.)?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Есть ли заболевания моче-выделительной системы (камни в почках, пиелонефрит, цистит и др.)?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Есть ли заболевания внутренних органов, которые здесь не представлены?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Были ли травмы или операции? Если да, то как давно?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Заболевания эндокринной системы? ( щитовидная железа, поджелудочная железа, надпочечники )
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Как вы о нас узнали?
-                                        span.jusR тест
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Есть ли аллергия или непереносимость продуктов: рыба?
-                                        span.jusR Нет
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Есть ли аллергия или непереносимость продуктов: морепродукты?
-                                        span.jusR Да
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Есть ли аллергия или непереносимость продуктов: птица?
-                                        span.jusR Нет
-                                    .line.mob
-                                        span Тест
-                                    .line.gray-mob
-                                        span.bb Есть ли аллергия или непереносимость продуктов: говядина?
-                                        span.jusR Да
-                                    .line.mob
-                                        span Тест
-                                    .line.gray
-                                        span.bb Есть ли аллергия или непереносимость продуктов: творог?
-                                        span.jusR Нет
-                                    .line.mob
-                                        span Нет
-                                    .line.gray-mob
-                                        span.bb Есть ли аллергия или непереносимость продуктов: орехи?
-                                        span.jusR Нет  
-                                    .line.mob
-                                        span Нет        
-            section.orders
-                .container.contentBlock
-                    .head
-                        span.name Заказы
-                        .line
-                        .profile-buttonOpen.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
-                        .profile-buttonClose.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                    .hidden(style="display: none;")
-                        .buttons.d-flex
-                            .button.orders-buttonUnpaid.active.d-flex.align-items-center.justify-content-center
-                                span Без оплаты
-                            .button.orders-buttonPaid.d-flex.align-items-center.justify-content-center
-                                span Оплачено
-                        .list.orders-listUnpaid
-                            .topLine
-                                span.gaa Заказ #
-                                span.gab Название
-                                span.gray-mob.gac Дата создания
-                            .line.gray
-                                span.b.gaa 02784
-                                span.b.gab Ягодицы+Ноги+Пресс
-                                .date.gac
-                                    span.gr 09.05, СР
-                                    span.gr 19:00
-                                .buttonPay.d-flex.align-items-center.justify-content-center.gad
-                                    span Оплатить
-                            .line
-                                span.b.gaa 06587
-                                span.b.gab Smart LadyFit
-                                .date.gac
-                                    span.gr 10.05, ЧТ
-                                    span.gr 19:00
-                                .buttonPay.d-flex.align-items-center.justify-content-center.gad
-                                    span Оплатить
-                            .line.gray
-                                span.b.gaa 88975
-                                span.b.gab Ягодицы+Ноги+Пресс
-                                .date.gac
-                                    span.gr 09.05, СР
-                                    span.gr 19:00
-                                .buttonPay.d-flex.align-items-center.justify-content-center.gad
-                                    span Оплатить
-                        .list.orders-listPaid(style="display: none;")
-                            .topLine
-                                span.gaa Заказ #
-                                span.gab Название
-                                span.gray-mob.gac Дата поступления средств
-                            .line.gray
-                                span.b.gaa 02784
-                                span.b.gab Ягодицы+Ноги+Пресс
-                                .date.gac
-                                    span.gr 25.06.19 
-                                    span.gr 18:24:02
-            section.sTicketInf
-                .container.contentBlock
-                    .sTicket
-                        .head
-                            span.name Абонементы
-                            .line
-                            .profile-buttonOpen.align-items-center.justify-content-center
-                                img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
-                            .profile-buttonClose.align-items-center.justify-content-center
-                                img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                        .hidden(style="display: none;")
-                            .buttons.d-flex
-                                .button.orders-buttonUnpaid#profile-buttonUnpaid-sTicket.active.d-flex.align-items-center.justify-content-center
-                                    span Без оплаты
-                                .button.orders-buttonPaid#profile-buttonPaid-sTicket.d-flex.align-items-center.justify-content-center
-                                    span Оплачено
-                            .list.orders-listUnpaid
-                                .topLine
-                                    span.gaa Заказ #
-                                    span.gab Урок
-                                    span.desk Цена
-                                    span.desk Со скидкой
-                                    span.mob.gac.gray-mob Цена / Со скидкой
-                                .line.gray
-                                    span.b.gaa 25213
-                                    span.b.gab Абонемент 2
-                                    span.desk 3000 р.
-                                    span.desk 2800 р.
-                                    span.mob.gac 3000 р. / 2800 р.
-                                    .buttonPay.d-flex.align-items-center.justify-content-center.gad
-                                        span Оплатить
-                            .list.orders-listPaid(style="display: none;")
-                                .topLine
-                                    span.gaa Заказ #
-                                    span.gab Урок
-                                    span.desk Цена
-                                    span.desk Со скидкой
-                                    span.mob.gac.gray-mob Цена / Со скидкой
-                                .line.gray
-                                    span.b.gaa 25214
-                                    span.b.gab Абонемент 3
-                                    span.desk 3000 р.
-                                    span.desk 2800 р.
-                                    span.mob.gac 3000 р. / 2800 р.
-                                    .buttonPay.d-flex.align-items-center.justify-content-center.gad
-                                        span Оплатить
-                            .list.orders-listPaid(style="display: none;")
-                    .schedule
-                        .head
-                            span.name Расписание
-                            .line
-                            .profile-buttonOpen.align-items-center.justify-content-center
-                                img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
-                            .profile-buttonClose.align-items-center.justify-content-center
-                                img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                        .hidden.schedule-Unpaid(style="display: none;")
-                            .list
-                                .topLine
-                                    span.gaa Название курса
-                                    span.gray-mob Дата
-                                    span.gray-mob Время
-                                    span.gray-mob Зал
-                                .line.gray
-                                    span.b.gaa Ягодицы+Ноги+Пресс
-                                    span 03 июля 2019 г.
-                                    span 20:00
-                                    span 21
-                                .line
-                                    span.b.gaa Ягодицы+Ноги+Пресс
-                                    span 03 июля 2019 г.
-                                    span 20:00
-                                    span 21
-                        .schedule-Paid(style="display: none;")
-                            .list
-                                .topLine
-                                    span.gaa Название курса
-                                    span.gray-mob Дата
-                                    span.gray-mob Время
-                                    span.gray-mob Зал
-                                .line.gray
-                                    span.b.gaa Ягодицы+Ноги+Пресс
-                                    span 03 июля 2019 г.
-                                    span 20:00
-                                    span 21
-                                    .buttonPay.d-flex.align-items-center.justify-content-center
-                                        span Перенести
-                                .line
-                                    span.b.gaa Ягодицы+Ноги+Пресс
-                                    span 03 июля 2019 г.
-                                    span 20:00
-                                    span 21
-                                    .buttonPay.d-flex.align-items-center.justify-content-center
-                                        span Перенести
-            section.appointDiet
-                .container.contentBlock
-                    .head
-                        span.name Запись к диетологу
-                        .line
-                        .profile-buttonOpen.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
-                        .profile-buttonClose.align-items-center.justify-content-center
-                            img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                    .hidden(style="display: none;")
-                        .buttons.d-flex
-                            .button.orders-buttonUnpaid.active.d-flex.align-items-center.justify-content-center
-                                span Без оплаты
-                            .button.orders-buttonPaid.d-flex.align-items-center.justify-content-center
-                                span Оплачено
-                        .list.orders-listUnpaid
-                            .topLine
-                                span.gaa Наименование консультации
-                                span.desk Цена
-                                span.desk Со скидкой
-                                span.mob.gray-mob Цена / Со скидкой
-                            .line.gray
-                                span.b.gaa Ягодицы+Ноги+Пресс
-                                span.gr.desk 2000 р.
-                                span.gr.desk 2000 р.
-                                span.gr.mob 2000 р. / 2000 р.
-                                .buttonPay.d-flex.align-items-center.justify-content-center
-                                    span Оплатить
-                        .list.orders-listPaid(style="display: none;")
-                            .topLine
-                                span Наименование консультации
-                                span.gray-mob Время прохождения
-                            .line.gray
-                                span.b Ягодицы+Ноги+Пресс
-                                .time
-                                    span.gr 26.06.19
-                                    span.gr 12:00
-            section.progressInf
-                .container.contentBlock
-                    .stats
-                        .head
-                            span.name Твой прогресс
-                            .line
-                            .profile-buttonOpen.align-items-center.justify-content-center
-                                img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
-                            .profile-buttonClose.align-items-center.justify-content-center
-                                img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                        .hidden(style="display: none;")
-                            .list.desk
-                                .topLine
-                                    span Создано
-                                    span Вес
-                                    span Талия
-                                    span Живот
-                                    span Бёдра
-                                    span Имт
-                                    span Изображение
-                                .line.gray
-                                    span.gr 25.06.19 #[span.time 22:34:39]
-                                    .item.d-flex
-                                        span.m 75
-                                        .circle-progress.d-flex.align-items-center.justify-content-center -5
-                                    .item.d-flex
-                                        span.m.small 79
-                                        .circle-progress.d-flex.align-items-center.justify-content-center -8
-                                    .item.d-flex
-                                        span.m.small 85
-                                        .circle-progress.d-flex.align-items-center.justify-content-center -11
-                                    .item.d-flex
-                                        span.m.small 100
-                                        .circle-progress.d-flex.align-items-center.justify-content-center -15
-                                    .item.d-flex
-                                        span.m.small 27.9
-                                        .circle-progress.d-flex.align-items-center.justify-content-center -1.8
-                                    img(src="img/profile/stats-icon1.png", alt="stats-icon1.png")
-                                .line
-                                    span.gr 25.06.19 #[span.time 22:34:39]
-                                    span.m 75
-                                    span.m.small 79
-                                    span.m.small 85
-                                    span.m.small 100
-                                    span.m.small 27.9
-                                    img(src="img/profile/stats-icon2.png", alt="stats-icon2.png")
-                            .list.mob
-                                .topLine
-                                    span Создано
-                                    span.gr 25.06.19 #[span.time 22:34:39]
-                                .list-content
-                                    .valueBlock
-                                        .line.gray
-                                            span.bb Вес
-                                            .item.d-flex
-                                                span.m 75
-                                                .circle-progress.d-flex.align-items-center.justify-content-center -5
-                                        .line
-                                            span.bb Талия
-                                            .item.d-flex
-                                                span.m.small 79
-                                                .circle-progress.d-flex.align-items-center.justify-content-center -8
-                                        .line.gray
-                                            span.bb Живот
-                                            .item.d-flex
-                                                span.m.small 85
-                                                .circle-progress.d-flex.align-items-center.justify-content-center -11
-                                        .line
-                                            span.bb Бёдра
-                                            .item.d-flex
-                                                span.m.small 100
-                                                .circle-progress.d-flex.align-items-center.justify-content-center -15
-                                        .line.gray
-                                            span.bb ИМТ
-                                            .item.d-flex
-                                                span.m.small 27.9
-                                                .circle-progress.d-flex.align-items-center.justify-content-center -1.8
-                                    img(src="img/profile/stats-icon1.png", alt="stats-icon1.png")
-                            .list.mob
-                                .topLine
-                                    span Создано
-                                    span.gr 25.06.19 #[span.time 22:34:39]
-                                .list-content
-                                    .valueBlock
-                                        .line.gray
-                                            span.bb Вес
-                                            .item.d-flex
-                                                span.m 75
-                                                .circle-progress.d-flex.align-items-center.justify-content-center -5
-                                        .line
-                                            span.bb Талия
-                                            .item.d-flex
-                                                span.m.small 79
-                                                .circle-progress.d-flex.align-items-center.justify-content-center -8
-                                        .line.gray
-                                            span.bb Живот
-                                            .item.d-flex
-                                                span.m.small 85
-                                                .circle-progress.d-flex.align-items-center.justify-content-center -11
-                                        .line
-                                            span.bb Бёдра
-                                            .item.d-flex
-                                                span.m.small 100
-                                                .circle-progress.d-flex.align-items-center.justify-content-center -15
-                                        .line.gray
-                                            span.bb ИМТ
-                                            .item.d-flex
-                                                span.m.small 27.9
-                                                .circle-progress.d-flex.align-items-center.justify-content-center -1.8
-                                    img(src="img/profile/stats-icon1.png", alt="stats-icon1.png")
+							.line.gray.gray-desk
+								span.bb День рождения
+								span.jusR 01.01.2000
+							.line.gray-mob
+								span.bb Рост
+								span.jusR 160
+							.line.gray.gray-desk
+								span.bb Вес
+								span.jusR 57
+							.line.gray-mob
+								span.bb ИМТ
+								span.jusR 30.2
+							.line.gray.gray-desk
+								span.bb Желаемый вес
+								span.jusR 52
+							.line.gray-mob
+								span.bb Цель занятий
+								span.jusR стать стройной
+							.fullAppForm
+								.head.d-flex.justify-content-between
+									span.name Вся анкета
+									.profile-buttonOpen.align-items-center.justify-content-center
+										img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+									.profile-buttonClose.align-items-center.justify-content-center
+										img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+								.hidden(style="display: none;")
+									.line.gray
+										span.bb Есть ли у вас мечта, которая должна непременно осуществиться вместе с обретенной стройностью фигуры?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Вегетарианец?
+										span.jusR нет
+									.line.mob
+										span Нет
+									.line.gray
+										span.bb Непереносимость продуктов если есть и каких?
+									.line.mob
+										span -
+									.line.gray-mob
+										span.bb Занимались ли вы до этого курса физическими нагрузками (фитнес, танцы, групповые программы)?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Какое время назад и как долго?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Сколько раз сейчас физические нагрузки в неделю, если есть (йога, танцы, тренажерный зал и т.д.)?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Как питаетесь сейчас?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Сколько раз в день?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Какие продукты?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Сколько пьете воды?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Принимаете ли вы какие-то гормональные или лекарственные препараты , или витаминные комплексы?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Являетесь ли вы кормящей мамой ? Если да, то как давно?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Есть ли заболевания опорно-двигательного аппарата (спина, колени, шея, грыжи, сколиоз, мениски)?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Есть ли заболевания сердечно-сосудистой системы (тахикардия, аритмия, гипертония, гипотония)?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Есть ли заболевания желудочно-кишечного тракта (гастрит, язва и др.)?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Есть ли заболевания моче-выделительной системы (камни в почках, пиелонефрит, цистит и др.)?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Есть ли заболевания внутренних органов, которые здесь не представлены?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Были ли травмы или операции? Если да, то как давно?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Заболевания эндокринной системы? ( щитовидная железа, поджелудочная железа, надпочечники )
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Как вы о нас узнали?
+										span.jusR тест
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Есть ли аллергия или непереносимость продуктов: рыба?
+										span.jusR Нет
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Есть ли аллергия или непереносимость продуктов: морепродукты?
+										span.jusR Да
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Есть ли аллергия или непереносимость продуктов: птица?
+										span.jusR Нет
+									.line.mob
+										span Тест
+									.line.gray-mob
+										span.bb Есть ли аллергия или непереносимость продуктов: говядина?
+										span.jusR Да
+									.line.mob
+										span Тест
+									.line.gray
+										span.bb Есть ли аллергия или непереносимость продуктов: творог?
+										span.jusR Нет
+									.line.mob
+										span Нет
+									.line.gray-mob
+										span.bb Есть ли аллергия или непереносимость продуктов: орехи?
+										span.jusR Нет  
+									.line.mob
+										span Нет        
+			section.orders
+				.container.contentBlock
+					.head
+						span.name Заказы BodyEvolution
+						.line
+						.profile-buttonOpen.align-items-center.justify-content-center
+							img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+						.profile-buttonClose.align-items-center.justify-content-center
+							img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+					.hidden(style="display: none;")
+						.buttons.d-flex
+							.button.orders-buttonUnpaid.active.d-flex.align-items-center.justify-content-center
+								span Без оплаты
+							.button.orders-buttonPaid.d-flex.align-items-center.justify-content-center
+								span Оплачено
+						.list.orders-listUnpaid
+							.topLine
+								span.gaa Заказ #
+								span.gab Название
+								span.gray-mob.gac Дата создания
+							.line.gray
+								span.b.gaa 02784
+								span.b.gab Ягодицы+Ноги+Пресс
+								.date.gac
+									span.gr 09.05, СР
+									span.gr 19:00
+								.buttonPay.d-flex.align-items-center.justify-content-center.gad
+									span Оплатить
+							.line
+								span.b.gaa 06587
+								span.b.gab Smart LadyFit
+								.date.gac
+									span.gr 10.05, ЧТ
+									span.gr 19:00
+								.buttonPay.d-flex.align-items-center.justify-content-center.gad
+									span Оплатить
+							.line.gray
+								span.b.gaa 88975
+								span.b.gab Ягодицы+Ноги+Пресс
+								.date.gac
+									span.gr 09.05, СР
+									span.gr 19:00
+								.buttonPay.d-flex.align-items-center.justify-content-center.gad
+									span Оплатить
+						.list.orders-listPaid(style="display: none;")
+							.topLine
+								span.gaa Заказ #
+								span.gab Название
+								span.gray-mob.gac Дата поступления средств
+							.line.gray
+								span.b.gaa 02784
+								span.b.gab Ягодицы+Ноги+Пресс
+								.date.gac
+									span.gr 25.06.19 
+									span.gr 18:24:02
+			section.sTicketInf
+				.container.contentBlock
+					.sTicket
+						.head
+							span.name Абонементы
+							.line
+							.profile-buttonOpen.align-items-center.justify-content-center
+								img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+							.profile-buttonClose.align-items-center.justify-content-center
+								img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+						.hidden(style="display: none;")
+							.buttons.d-flex
+								.button.orders-buttonUnpaid#profile-buttonUnpaid-sTicket.active.d-flex.align-items-center.justify-content-center
+									span Без оплаты
+								.button.orders-buttonPaid#profile-buttonPaid-sTicket.d-flex.align-items-center.justify-content-center
+									span Оплачено
+							.list.orders-listUnpaid
+								.topLine
+									span.gaa Заказ #
+									span.gab Урок
+									span.desk Цена
+									span.desk Со скидкой
+									span.mob.gac.gray-mob Цена / Со скидкой
+								.line.gray
+									span.b.gaa 25213
+									span.b.gab Абонемент 2
+									span.desk 3000 р.
+									span.desk 2800 р.
+									span.mob.gac 3000 р. / 2800 р.
+									.buttonPay.d-flex.align-items-center.justify-content-center.gad
+										span Оплатить
+							.list.orders-listPaid(style="display: none;")
+								.topLine
+									span.gaa Заказ #
+									span.gab Урок
+									span.desk Цена
+									span.desk Со скидкой
+									span.mob.gac.gray-mob Цена / Со скидкой
+								.line.gray
+									span.b.gaa 25214
+									span.b.gab Абонемент 3
+									span.desk 3000 р.
+									span.desk 2800 р.
+									span.mob.gac 3000 р. / 2800 р.
+									.buttonPay.d-flex.align-items-center.justify-content-center.gad
+										span Оплатить
+							.list.orders-listPaid(style="display: none;")
+					.schedule
+						.head
+							span.name Расписание
+							.line
+							.profile-buttonOpen.align-items-center.justify-content-center
+								img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+							.profile-buttonClose.align-items-center.justify-content-center
+								img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+						.hidden.schedule-Unpaid(style="display: none;")
+							.list
+								.topLine
+									span.gaa Название курса
+									span.gray-mob Дата
+									span.gray-mob Время
+									span.gray-mob Зал
+								.line.gray
+									span.b.gaa Ягодицы+Ноги+Пресс
+									span 03 июля 2019 г.
+									span 20:00
+									span 21
+								.line
+									span.b.gaa Ягодицы+Ноги+Пресс
+									span 03 июля 2019 г.
+									span 20:00
+									span 21
+						.schedule-Paid(style="display: none;")
+							.list
+								.topLine
+									span.gaa Название курса
+									span.gray-mob Дата
+									span.gray-mob Время
+									span.gray-mob Зал
+								.line.gray
+									span.b.gaa Ягодицы+Ноги+Пресс
+									span 03 июля 2019 г.
+									span 20:00
+									span 21
+									.buttonPay.d-flex.align-items-center.justify-content-center
+										span Перенести
+								.line
+									span.b.gaa Ягодицы+Ноги+Пресс
+									span 03 июля 2019 г.
+									span 20:00
+									span 21
+									.buttonPay.d-flex.align-items-center.justify-content-center
+										span Перенести
+			section.appointDiet
+				.container.contentBlock
+					.head
+						span.name Запись к диетологу
+						.line
+						.profile-buttonOpen.align-items-center.justify-content-center
+							img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+						.profile-buttonClose.align-items-center.justify-content-center
+							img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+					.hidden(style="display: none;")
+						.buttons.d-flex
+							.button.orders-buttonUnpaid.active.d-flex.align-items-center.justify-content-center
+								span Без оплаты
+							.button.orders-buttonPaid.d-flex.align-items-center.justify-content-center
+								span Оплачено
+						.list.orders-listUnpaid
+							.topLine
+								span.gaa Наименование консультации
+								span.desk Цена
+								span.desk Со скидкой
+								span.mob.gray-mob Цена / Со скидкой
+							.line.gray
+								span.b.gaa Ягодицы+Ноги+Пресс
+								span.gr.desk 2000 р.
+								span.gr.desk 2000 р.
+								span.gr.mob 2000 р. / 2000 р.
+								.buttonPay.d-flex.align-items-center.justify-content-center
+									span Оплатить
+						.list.orders-listPaid(style="display: none;")
+							.topLine
+								span Наименование консультации
+								span.gray-mob Время прохождения
+							.line.gray
+								span.b Ягодицы+Ноги+Пресс
+								.time
+									span.gr 26.06.19
+									span.gr 12:00
+			section.progressInf
+				.container.contentBlock
+					.stats
+						.head
+							span.name Твой прогресс
+							.line
+							.profile-buttonOpen.align-items-center.justify-content-center
+								img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+							.profile-buttonClose.align-items-center.justify-content-center
+								img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+						.hidden(style="display: none;")
+							.list.desk
+								.topLine
+									span Создано
+									span Вес
+									span Талия
+									span Живот
+									span Бёдра
+									span Имт
+									span Изображение
+								.line.gray
+									span.gr 25.06.19 #[span.time 22:34:39]
+									.item.d-flex
+										span.m 75
+										.circle-progress.d-flex.align-items-center.justify-content-center -5
+									.item.d-flex
+										span.m.small 79
+										.circle-progress.d-flex.align-items-center.justify-content-center -8
+									.item.d-flex
+										span.m.small 85
+										.circle-progress.d-flex.align-items-center.justify-content-center -11
+									.item.d-flex
+										span.m.small 100
+										.circle-progress.d-flex.align-items-center.justify-content-center -15
+									.item.d-flex
+										span.m.small 27.9
+										.circle-progress.d-flex.align-items-center.justify-content-center -1.8
+									img(src="img/profile/stats-icon1.png", alt="stats-icon1.png")
+								.line
+									span.gr 25.06.19 #[span.time 22:34:39]
+									span.m 75
+									span.m.small 79
+									span.m.small 85
+									span.m.small 100
+									span.m.small 27.9
+									img(src="img/profile/stats-icon2.png", alt="stats-icon2.png")
+							.list.mob
+								.topLine
+									span Создано
+									span.gr 25.06.19 #[span.time 22:34:39]
+								.list-content
+									.valueBlock
+										.line.gray
+											span.bb Вес
+											.item.d-flex
+												span.m 75
+												.circle-progress.d-flex.align-items-center.justify-content-center -5
+										.line
+											span.bb Талия
+											.item.d-flex
+												span.m.small 79
+												.circle-progress.d-flex.align-items-center.justify-content-center -8
+										.line.gray
+											span.bb Живот
+											.item.d-flex
+												span.m.small 85
+												.circle-progress.d-flex.align-items-center.justify-content-center -11
+										.line
+											span.bb Бёдра
+											.item.d-flex
+												span.m.small 100
+												.circle-progress.d-flex.align-items-center.justify-content-center -15
+										.line.gray
+											span.bb ИМТ
+											.item.d-flex
+												span.m.small 27.9
+												.circle-progress.d-flex.align-items-center.justify-content-center -1.8
+									img(src="img/profile/stats-icon1.png", alt="stats-icon1.png")
+							.list.mob
+								.topLine
+									span Создано
+									span.gr 25.06.19 #[span.time 22:34:39]
+								.list-content
+									.valueBlock
+										.line.gray
+											span.bb Вес
+											.item.d-flex
+												span.m 75
+												.circle-progress.d-flex.align-items-center.justify-content-center -5
+										.line
+											span.bb Талия
+											.item.d-flex
+												span.m.small 79
+												.circle-progress.d-flex.align-items-center.justify-content-center -8
+										.line.gray
+											span.bb Живот
+											.item.d-flex
+												span.m.small 85
+												.circle-progress.d-flex.align-items-center.justify-content-center -11
+										.line
+											span.bb Бёдра
+											.item.d-flex
+												span.m.small 100
+												.circle-progress.d-flex.align-items-center.justify-content-center -15
+										.line.gray
+											span.bb ИМТ
+											.item.d-flex
+												span.m.small 27.9
+												.circle-progress.d-flex.align-items-center.justify-content-center -1.8
+									img(src="img/profile/stats-icon1.png", alt="stats-icon1.png")
 
-                    .collages
-                        .head
-                            span.name Коллажи
-                            .line
-                            .profile-buttonOpen.align-items-center.justify-content-center
-                                img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
-                            .profile-buttonClose.align-items-center.justify-content-center
-                                img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
-                        .hidden(style="display: none;")
-                            .d-flex.flex-wrap
-                                .item
-                                    .borderOuter
-                                        img(src="img/profile/collages-item1.png", alt="collages-item1.png")
-                                    span.name #Группа 01_Июнь
-                                .item
-                                    .borderOuter
-                                        img(src="img/profile/collages-item2.png", alt="collages-item2.png")
-                                    span.name #Группа 01_Июнь
+					.collages
+						.head
+							span.name Коллажи
+							.line
+							.profile-buttonOpen.align-items-center.justify-content-center
+								img.arrow(src="img/profile/profile-arrowDown.png", alt="profile-arrowDown")
+							.profile-buttonClose.align-items-center.justify-content-center
+								img.arrow(src="img/profile/profile-arrowUp.png", alt="profile-arrowUp.png")
+						.hidden(style="display: none;")
+							.d-flex.flex-wrap
+								.item
+									.borderOuter#popup1-btn
+										img(src="img/profile/collages-item1.png", alt="collages-item1.png")
+									span.name #Группа 01_Июнь
+								.item
+									.borderOuter#popup2-btn
+										img(src="img/profile/collages-item2.png", alt="collages-item2.png")
+									span.name #Группа 01_Июнь
 
-        include _partials/contacts.pug
-    include _partials/footer.pug
+		include _partials/contacts.pug
+	include _partials/footer.pug
 
 block scripts
-    script(src="js/map.js")
-    script(src="js/tether.min.js")
-    script(src='js/jquery.scrollTo.min.js')
-    script(src="js/profile.js")
+	script(src="js/map.js")
+	script(src="js/tether.min.js")
+	script(src='js/jquery.scrollTo.min.js')
+	script(src="js/bpopup.js")
+	script(src="js/profile.js")
 

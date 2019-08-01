@@ -1,6 +1,14 @@
 @import "vars"
 @import "fonts"
 
+.popup
+	transform: translate(-50%, -50%)
+	display: none
+	width: 25%
+	height: auto
+	img
+		width: 100%
+		height: auto
 main
 	section.header
 		.container
@@ -247,7 +255,7 @@ main
 					display: grid
 					grid-template-columns: 21% 25% 18% 20% 16%
 		.schedule
-			margin-top: 35px
+			padding-top: 35px
 			.list
 				.topLine, .line
 					display: grid
@@ -307,6 +315,7 @@ main
 					border: 1px solid #ddd8d8
 					border-radius: 10px
 					padding: 7.5px
+					cursor: pointer
 				span.name
 					font-family: 'MullerMedium'
 					font-size: 12px
@@ -464,8 +473,14 @@ main
 					display: none
 					span.mob, .mob
 						display: none
+@media only screen and(max-width: 1400px)
+	body
+		.popup
+			width: 30%
 @media only screen and(max-width: 1200px)
 	body
+		.popup
+			width: 35%
 		main
 			section.header
 				.container
@@ -498,6 +513,8 @@ main
 									grid-template-columns: 33% 17% 22% 12% 16%
 @media only screen and(max-width: 991px)
 	body
+		.popup
+			width: 40%
 		main 
 			section.header
 				.container
@@ -587,6 +604,8 @@ main
 
 @media only screen and(max-width: 768px)
 	body
+		.popup
+			width: 50%
 		main 
 			section.header
 				.container
@@ -761,6 +780,8 @@ main
 					padding-left: 0
 @media only screen and(max-width: 600px)
 	body
+		.popup
+			width: 60%
 		main
 			section.header
 				.container
@@ -786,6 +807,8 @@ main
 											width: 170px
 @media only screen and(max-width: 500px)
 	body
+		.popup
+			width: 70%
 		main
 			section.header
 				.container
@@ -917,6 +940,8 @@ main
 
 @media only screen and(max-width: 400px)
 	body
+		.popup
+			width: 80%
 		main
 			section.appForm, section.promo, section.socials, section.orders, section.sTicketInf, section.schedule, section.appointDiet, section.progressInf
 				.head

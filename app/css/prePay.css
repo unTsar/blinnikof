@@ -317,7 +317,7 @@ main .acceptTerms input:checked + label::after {
 
 main a.button {
   background-color: #ff2e2f;
-  width: 193px;
+  width: 215px;
   height: 54px;
   border-radius: 35px;
   font-family: 'MullerBold';

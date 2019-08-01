@@ -70,6 +70,20 @@
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
 }
 
+.popup {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  width: 25%;
+  height: auto;
+}
+
+.popup img {
+  width: 100%;
+  height: auto;
+}
+
 main section.header .container {
   padding-top: 65px;
 }
@@ -434,7 +448,7 @@ main section.sTicketInf .sTicket .list .topLine, main section.sTicketInf .sTicke
 }
 
 main section.sTicketInf .schedule {
-  margin-top: 35px;
+  padding-top: 35px;
 }
 
 main section.sTicketInf .schedule .list .topLine, main section.sTicketInf .schedule .list .line {
@@ -516,6 +530,7 @@ main section.progressInf .collages .item .borderOuter {
   border: 1px solid #ddd8d8;
   border-radius: 10px;
   padding: 7.5px;
+  cursor: pointer;
 }
 
 main section.progressInf .collages .item span.name {
@@ -746,7 +761,16 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   display: none;
 }
 
+@media only screen and (max-width: 1400px) {
+  body .popup {
+    width: 30%;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
+  body .popup {
+    width: 35%;
+  }
   body main section.header .container .buttons {
     grid-gap: 5px;
   }
@@ -769,6 +793,9 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
 }
 
 @media only screen and (max-width: 991px) {
+  body .popup {
+    width: 40%;
+  }
   body main section.header .container .buttons {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -856,6 +883,9 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
 }
 
 @media only screen and (max-width: 768px) {
+  body .popup {
+    width: 50%;
+  }
   body main section.header .container .Outer {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1063,6 +1093,9 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
 }
 
 @media only screen and (max-width: 600px) {
+  body .popup {
+    width: 60%;
+  }
   body main section.header .container .buttons .button {
     padding-left: 10px;
     padding-right: 10px;
@@ -1079,6 +1112,9 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
 }
 
 @media only screen and (max-width: 500px) {
+  body .popup {
+    width: 70%;
+  }
   body main section.header .container .head {
     margin-top: 15px;
   }
@@ -1224,6 +1260,9 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
 }
 
 @media only screen and (max-width: 400px) {
+  body .popup {
+    width: 80%;
+  }
   body main section.appForm .head span.name, body main section.promo .head span.name, body main section.socials .head span.name, body main section.orders .head span.name, body main section.sTicketInf .head span.name, body main section.schedule .head span.name, body main section.appointDiet .head span.name, body main section.progressInf .head span.name {
     font-size: 18px;
   }
