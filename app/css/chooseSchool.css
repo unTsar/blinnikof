@@ -1,0 +1,424 @@
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerRegular/MullerRegular.eot");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLight/MullerLight.eot");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerLightItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot");
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLightItalic/MullerLightItalic.woff") format("woff"), url("../fonts/MullerLightItalic/MullerLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerThin";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerThin/MullerThin.eot");
+  src: url("../fonts/MullerThin/MullerThin.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerThin/MullerThin.woff") format("woff"), url("../fonts/MullerThin/MullerThin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerMedium/MullerMedium.eot");
+  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBold/MullerBold.eot");
+  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+}
+
+main section.header-breadcrumbs {
+  padding-top: 65px;
+}
+
+main section.header {
+  padding-top: 90px;
+}
+
+main section.header h1 {
+  color: #333333;
+  font-size: 60px;
+  font-family: 'MullerExtraBold';
+  margin: 0;
+}
+
+main section.header .subhead .line {
+  margin-top: 13.5px;
+  width: 80px;
+  height: 4px;
+  background-color: #ff2e2f;
+}
+
+main section.header .subhead p.text {
+  font-family: 'MullerLight';
+  font-size: 20px;
+  color: #333333;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+main section.list {
+  padding-top: 90px;
+}
+
+main section.list .item {
+  margin-bottom: 90px;
+}
+
+main section.list .item h2 {
+  font-family: 'MullerExtraBold';
+  font-size: 45px;
+  color: #333333;
+  margin: 0;
+}
+
+main section.list .item span.tahoma {
+  font-family: 'Tahoma';
+  font-size: 40px;
+  font-weight: bold;
+}
+
+main section.list .item .inf {
+  margin-top: 45px;
+}
+
+main section.list .item .inf .line {
+  background-color: #ff2e2f;
+  width: 4px;
+  height: 78px;
+}
+
+main section.list .item .inf .textBlock {
+  padding-left: 22px;
+  padding-top: 5px;
+  line-height: 1;
+}
+
+main section.list .item .inf .textBlock .text {
+  font-family: 'MullerRegular';
+  font-size: 24px;
+  color: #333333;
+  line-height: 1;
+}
+
+main section.list .item .inf .textBlock .text.adress {
+  margin-top: 22px;
+}
+
+main section.list .item .inf .textBlock .text.b {
+  font-family: 'MullerBold';
+}
+
+main section.list .item .btnChoose.mob {
+  display: none;
+}
+
+main section.list .item .btnChoose {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  border-radius: 27px;
+  margin-top: 55px;
+  width: 178px;
+  height: 54px;
+  background-color: #ffffff;
+  border: 2px solid #333333;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main section.list .item .btnChoose input {
+  display: none;
+  pointer-events: none;
+}
+
+main section.list .item .btnChoose label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 13px;
+}
+
+main section.list .item .btnChoose label::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  pointer-events: none;
+  background-color: #ffffff;
+  border: 1px solid #b6b6b6;
+}
+
+main section.list .item .btnChoose label::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  display: none;
+  left: 0px;
+  top: -1px;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/checkbox-icon_black.png");
+}
+
+main section.list .item .btnChoose input:checked + label::after {
+  display: block;
+}
+
+main section.list .item .btnChoose span {
+  text-transform: uppercase;
+  color: #333333;
+  font-family: 'MullerBold';
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-left: 17px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main section.list .item .btnChoose.checked {
+  background-color: #333333;
+}
+
+main section.list .item .btnChoose.checked span {
+  color: #ffffff;
+}
+
+main section.list .item img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 419px;
+  -webkit-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2);
+}
+
+main .btnOrder {
+  width: 248px;
+  height: 60px;
+  border-radius: 27px;
+  background-color: #ff2e2f;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .btnOrder span {
+  font-family: 'MullerBold';
+  font-size: 16px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1200px) {
+  body main section.header h1 {
+    font-size: 50px;
+  }
+  body main section.list .item .inf .textBlock .text.adress {
+    margin-top: 5px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body main section.header {
+    padding-top: 55px;
+  }
+  body main section.header .subhead .line {
+    margin-top: 27.5px;
+  }
+  body main section.header .subhead p.text {
+    font-size: 17px;
+  }
+  body main section.header h1 {
+    font-size: 45px;
+  }
+  body main section.list {
+    padding-top: 65px;
+  }
+  body main section.list .item {
+    margin-bottom: 65px;
+  }
+  body main section.list .item h2 {
+    font-size: 30px;
+  }
+  body main section.list .item h2 span.tahoma {
+    font-size: 28px;
+  }
+  body main section.list .item .inf {
+    margin-top: 40px;
+  }
+  body main section.list .item .inf .textBlock .text.adress {
+    margin-top: 7.5px;
+    font-size: 20px;
+  }
+  body main section.list .item .btnChoose {
+    width: 121px;
+    height: 45px;
+    margin-top: 35px;
+  }
+  body main section.list .item .btnChoose span {
+    font-family: 'MullerMedium';
+    font-size: 12px;
+  }
+  body main section.list .item img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body main section.header-breadcrumbs {
+    padding-top: 35px;
+  }
+  body main section.header {
+    padding-top: 35px;
+  }
+  body main section.header h1 {
+    font-size: 40px;
+  }
+  body main section.header .subhead {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main section.header .subhead .line {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 5px;
+  }
+  body main section.list {
+    padding-top: 45px;
+  }
+  body main section.list .item {
+    margin-bottom: 45px;
+  }
+  body main section.list .item img {
+    margin-top: 30px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  body main section.list .item .btnChoose.desk {
+    display: none;
+  }
+  body main section.list .item .btnChoose.mob {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 125px;
+    height: 37px;
+  }
+  body main section.list .item .btnChoose.mob label::before {
+    border-color: #333333;
+  }
+  body main section.list .item .inf {
+    margin-top: 25px;
+  }
+  body main section.list .item .inf .textBlock .text.adress {
+    margin-top: 21.5px;
+  }
+  body main .btnOrder {
+    width: 220px;
+    height: 54px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body main section.header h1 {
+    font-size: 30px;
+  }
+  body main section.header .subhead p.text {
+    font-size: 16px;
+  }
+  body main section.header .subhead p.text br {
+    display: none;
+  }
+  body main section.list .item h2 {
+    font-size: 24px;
+  }
+  body main section.list .item h2 span.tahoma {
+    font-size: 22px;
+  }
+  body main section.list .item .inf .textBlock {
+    padding-top: 2.5px;
+    padding-left: 10px;
+  }
+  body main section.list .item .inf .textBlock .text, body main section.list .item .inf .textBlock .text.adress {
+    font-size: 18px;
+  }
+  body main section.list .item img {
+    width: 100%;
+  }
+  body main section.list .item .btnChoose {
+    margin-top: 30px;
+  }
+  body main a.btnOrder span {
+    font-size: 14px;
+  }
+}
