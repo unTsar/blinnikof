@@ -305,16 +305,16 @@ $(document).ready(function(){
     $('#toStep4').click(function(){
       $.scrollTo('#step3', 1000);
     });
-    $('#toStep1m').click(function(){
+    $('#toStep1mob').click(function(){
       $.scrollTo('#step1', 1000);
     });
-    $('#toStep2m').click(function(){
+    $('#toStep2mob').click(function(){
       $.scrollTo('#step2', 1000);
     });
-    $('#toStep3m').click(function(){
+    $('#toStep3mob').click(function(){
       $.scrollTo('#step3', 1000);
     });
-    $('#toStep4m').click(function(){
+    $('#toStep4mob').click(function(){
       $.scrollTo('#step3', 1000);
     });
 
