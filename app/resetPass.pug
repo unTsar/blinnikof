@@ -1,0 +1,39 @@
+extends _layouts/home
+
+block styles
+	link(rel="stylesheet", href="css/resetPass.css")
+	link(rel="stylesheet", href="css/contacts.css")
+
+block content
+	
+	include _partials/header.pug
+
+	main 
+		.container
+			section.header-breadcrumbs
+				.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="resetPass.html") Авторизация]
+			section.content
+				.row
+					.col-12.col-md-5.col-lg-6.col-xl-5
+						h2 Восстановление пароля
+					.col-12.col-md-7.col-lg-6.col-xl-5
+						.headtext
+							.line
+							.subhead Укажите Email, для которого хотите восстановить пароль.
+						.form
+							form(action="#")
+								.errMsg.d-flex.align-items-center
+									img(src="img/login/errMsg-icon.jpg", alt="errMsg-icon.jpg")
+									span Указанный Email не найден в базе данных.
+								input.input-form.input-form_red(type='email' placeholder="Ваш e-mail")
+						a(href="#").buttonSubmit.d-flex.align-items-center.justify-content-center
+							span Отправить
+					.col-xl-2
+
+		include _partials/contacts.pug
+	include _partials/footer.pug
+
+
+block scripts
+
+	script(src="js/map.js")
