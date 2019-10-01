@@ -25,16 +25,17 @@ block content
 									img.social(src="img/login/social-login-icon2.jpg", alt="social-login-icon2.jpg")
 								a(href="#")
 									img.social(src="img/login/social-login-icon3.jpg", alt="social-login-icon3.jpg")
-								a(href="#")
-									img.social(src="img/login/social-login-icon4.jpg", alt="social-login-icon4.jpg")
 					.col-12.col-md-7.col-lg-5.col-xl-4
 						.headtext
 							.line
 							.subhead Введите ваши данные для входа в личный кабинет:
 						.form
 							form(action="#")
-								input.input-form(type="text" placeholder="Ваше имя")
 								input.input-form(type="email" placeholder="Ваш e-mail")
+								input.input-form(type="password" placeholder="Ваш пароль")
+								.checkform
+									input.checkbox-formm#check1(type="checkbox")
+									label.check-label(for="check1") Запомнить
 						.buttons.d-flex.align-items-center.justify-content-between
 							a(href="#").button.buttonLogin.d-flex.align-items-center.justify-content-center
 								span Войти

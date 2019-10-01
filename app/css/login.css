@@ -146,6 +146,27 @@ body section.content .form .input-form:-ms-input-placeholder {
   font-size: 16px;
 }
 
+body section.content .form .input-form_red {
+  border-color: #ff2e2f;
+}
+
+body section.content .form .checkform {
+  margin-bottom: 20px;
+}
+
+body section.content .form .checkform .checkbox-form, body section.content .form .checkform .check-label {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body section.content .form .checkform .check-label {
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 3px;
+  margin-left: 2.5px;
+}
+
 body section.content .buttons .button {
   height: 60px;
   border-radius: 30px;
@@ -172,6 +193,9 @@ body section.content .buttons .buttonReset {
 }
 
 @media only screen and (max-width: 767px) {
+  body main .container section.content {
+    padding-bottom: 50px;
+  }
   body main .container section.content .logWith {
     padding-top: 20px;
   }
@@ -187,7 +211,7 @@ body section.content .buttons .buttonReset {
 }
 
 @media only screen and (max-width: 425px) {
-  body main .container section.content .form .input-form {
+  body main .container section.content .form .input-form, body main .container section.content .form .checkform {
     margin-bottom: 15px;
   }
 }

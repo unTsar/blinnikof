@@ -166,6 +166,9 @@ body section.content .buttonSubmit {
 }
 
 @media only screen and (max-width: 767px) {
+  body main .container section.content {
+    padding-bottom: 50px;
+  }
   body main .container section.content .headtext .subhead {
     margin-top: 20px;
   }
