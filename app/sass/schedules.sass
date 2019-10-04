@@ -1,6 +1,44 @@
 @import "vars"
 @import "fonts"
 
+.popupError
+	transform: translate(-50%, -50%)
+	width: 32%
+	height: auto
+	background-color: #ffffff
+	padding: 67px 15px
+	display: none
+	text-align: center
+	border-radius: 27px
+	img
+		width: 133px
+		height: auto
+	p
+		line-height: 1.3
+		margin-top: 45px
+		margin-bottom: 0
+		margin-left: auto
+		margin-right: auto
+		max-width: 420px
+		font-family: 'MullerRegular'
+		font-size: 24px
+		color: #333333
+	.buttonOk
+		cursor: pointer
+		background-color: #333333
+		width: 97px
+		height: 54px
+		border-radius: 27px
+		margin-top: 27px
+		margin-left: auto
+		margin-right: auto
+		color: #ffffff
+		text-transform: uppercase
+		font-family: 'MullerBold'
+		font-size: 16px
+		transition: 0.5s
+	.buttonOk:hover
+		background-color: #ff2e2f
 main
 	section.header-breadcrumbs
 		padding-top: 65px
@@ -267,6 +305,10 @@ main
 		text-decoration: none
 		margin-top: 60px
 
+@media only screen and(max-width: 1400px)
+	body
+		.popupError
+			width: 50%
 @media only screen and(max-width: 1199px)
 	body
 		main
@@ -289,6 +331,8 @@ main
 										display: table-cell
 @media only screen and(max-width: 991px)
 	body
+		.popupError
+			width: 65%
 		main
 			.container
 				section.header
@@ -301,6 +345,13 @@ main
 							line-height: 1.3
 @media only screen and(max-width: 767px)
 	body
+		.popupError
+			padding-top: 40px
+			padding-bottom: 40px
+			width: 57.5%
+			p
+				margin-top: 25px
+				font-size: 18px
 		main
 			.container	
 				section.header
@@ -312,6 +363,10 @@ main
 							padding-top: 35px
 							.varCol
 								margin-right: 0
+@media only screen and(max-width: 600px)
+	body 
+		.popupError
+			width: 90%
 @media only screen and(max-width: 500px)
 	body
 		main
@@ -346,3 +401,12 @@ main
 									height: 24px
 									img
 										width: 5px
+@media only screen and(max-width: 450px)
+	body 
+		.popupError
+			img
+				width: 95px
+			p
+				font-size: 14px
+			.buttonOk
+				margin-top: 22px

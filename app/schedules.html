@@ -57,6 +57,11 @@
       </div>
     </header>
     <main>
+      <div class="popupError" id="popupError"><img src="img/warning.jpg" alt="warning.jpg">
+        <p>
+           Количество выбранных <br>тренировок должно быть равным <br>одному из доступных абонементов: <br>1, 4, 8 или 12 занятий </p>
+        <div class="buttonOk d-flex align-items-center justify-content-center b-close"><span>Ok</span></div>
+      </div>
       <div class="container">
         <section class="header-breadcrumbs">
           <div class="breadcrumbs"><a class="home" href="#">Главная</a> <span class="slash">/</span> <a class="active" href="schedules.html">Расписание</a></div>
@@ -1408,7 +1413,7 @@
               </div>
             </div>
           </div>
-        </section><a class="buttonReg d-flex align-items-center justify-content-center" href="#"><span>Записаться на занятие</span></a>
+        </section><a class="buttonReg d-flex align-items-center justify-content-center" href="#" id="buttonReg"><span>Записаться на занятие</span></a>
       </div>
       <section class="contacts">
         <div class="container">
@@ -1449,5 +1454,18 @@
   <script src="js/common.js"></script>
   <script src="js/map.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bpopup.js"></script>
   <script src="js/schedules.js"></script>
+  <script>
+    $(document).ready(function() {
+    	$("#buttonReg").click(function() {
+    		$('#popupError').bPopup({
+    			position: ['50%', '50%'],
+    			positionStyle: 'fixed',
+    			escClose: false,
+    			modalClose: false
+    		});
+    	})
+    })
+  </script>
 </html>

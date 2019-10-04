@@ -135,5 +135,18 @@
   <script src="js/common.js"></script>
   <script src="js/map.js"></script>
   <script src="js/bpopup.js"></script>
-  <script src="js/prePay.js"></script>
+  <script>
+    $(document).ready(function() {
+    	$("#buttonPay").click(function() {
+    		if ($('#checkboxAccept').prop('checked') == false) {
+    			$('#popupError').bPopup({
+    				position: ['50%', '50%'],
+    				positionStyle: 'fixed',
+    				escClose: false,
+    				modalClose: false
+    			});
+    		}
+    	})
+    })
+  </script>
 </html>

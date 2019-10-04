@@ -12,6 +12,18 @@ block content
 	include _partials/header.pug
 
 	main
+		.popupError#popupError
+			img(src="img/warning.jpg", alt="warning.jpg")
+			p 
+				|Количество выбранных 
+				br
+				|тренировок должно быть равным 
+				br
+				|одному из доступных абонементов: 
+				br
+				|1, 4, 8 или 12 занятий 
+			.buttonOk.d-flex.align-items-center.justify-content-center.b-close
+				span Ok
 		.container
 			section.header-breadcrumbs
 				.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="schedules.html") Расписание]
@@ -1290,7 +1302,7 @@ block content
 												span Выбрать
 									td.empty
 									td.empty
-			a(href="#").buttonReg.d-flex.align-items-center.justify-content-center
+			a(href="#")#buttonReg.buttonReg.d-flex.align-items-center.justify-content-center
 				span Записаться на занятие
 
 
@@ -1300,5 +1312,18 @@ block content
 block scripts
 	script(src="js/map.js")
 	script(src="js/owl.carousel.min.js")
+	script(src="js/bpopup.js")
 	script(src="js/schedules.js")
+
+	script.
+		$(document).ready(function() {
+			$("#buttonReg").click(function() {
+				$('#popupError').bPopup({
+					position: ['50%', '50%'],
+					positionStyle: 'fixed',
+					escClose: false,
+					modalClose: false
+				});
+			})
+		})
 

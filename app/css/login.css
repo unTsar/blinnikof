@@ -163,7 +163,7 @@ body section.content .form .checkform .checkbox-form, body section.content .form
 body section.content .form .checkform .check-label {
   cursor: pointer;
   font-size: 14px;
-  margin-bottom: 3px;
+  margin-bottom: -2px;
   margin-left: 2.5px;
 }
 

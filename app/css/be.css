@@ -28,8 +28,7 @@ body .scroll .circle {
   border-width: 1px;
   border-color: rgba(32, 32, 32, 0.2);
   border-style: solid;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-top: 15px;
@@ -43,8 +42,7 @@ body .scroll .circle .mouse {
   background-color: transparent;
   width: 21.5px;
   height: 27.5px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
 }
 
 body .scroll .circle .mouse .weel {
@@ -56,8 +54,7 @@ body .scroll .circle .mouse .weel {
   background-color: #ff2e2f;
   width: 5px;
   height: 5px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   -webkit-animation-name: scroll;
           animation-name: scroll;
   -webkit-animation-duration: 1.5s;
@@ -126,8 +123,7 @@ body footer .socials a.social:hover svg, body footer .socials a.social:hover pat
 body header.container-fluid {
   position: relative;
   background-image: url("../img/be/be-header-bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -241,8 +237,7 @@ body header.container-fluid .content .bottom .wrap .circleSm {
   height: 310px;
   border: 1px solid #ECECEC;
   background-color: transparent;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
 }
 
 body header.container-fluid .content .bottom .wrap .circleMd {
@@ -253,8 +248,7 @@ body header.container-fluid .content .bottom .wrap .circleMd {
   height: 470px;
   border: 1px solid #ECECEC;
   background-color: transparent;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
 }
 
 body header.container-fluid .content .bottom .wrap .circleLg {
@@ -265,8 +259,7 @@ body header.container-fluid .content .bottom .wrap .circleLg {
   height: 670px;
   border: 1px solid #ECECEC;
   background-color: transparent;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
 }
 
 body header.container-fluid .content .bottom .wrap img.iconBg {
@@ -285,8 +278,7 @@ body header.container-fluid .content .bottom .wrap .button {
   position: relative;
   z-index: 100;
   cursor: pointer;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #ff2e2f;
   -webkit-box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
           box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
@@ -360,8 +352,7 @@ body header.container-fluid .content .bottom .wrap .button:hover svg {
 }
 
 body header.container-fluid .content .bottom .circle {
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #ff2e2f;
   width: 122px;
   height: 122px;
@@ -380,8 +371,7 @@ body header.container-fluid .content .bottom .text {
 
 body header.container-fluid .content .bottom .text .subText {
   background-color: #fff;
-  -webkit-border-radius: 13.5px;
-          border-radius: 13.5px;
+  border-radius: 13.5px;
   font-family: 'MullerExtraBold';
   font-size: 14px;
   color: #000;
@@ -406,8 +396,7 @@ body main section.purpose {
   padding-top: 130px;
   padding-bottom: 130px;
   background-image: url("../img/be/be-purpose-bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -510,8 +499,7 @@ body main section.purpose .cslMobile-control .arrows .arrow {
   -o-transition: 0.3s;
   transition: 0.3s;
   background-color: #fff;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   margin-right: 7.5px;
@@ -605,8 +593,7 @@ body main section.purpose .wrap .step .separ, body main section.purpose .cslMobi
 
 body main section.purpose .wrap .step .separ::after, body main section.purpose .wrap .step .separ::before, body main section.purpose .cslMobile .step .separ::after, body main section.purpose .cslMobile .step .separ::before {
   content: '';
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 10px;
   height: 10px;
   background-color: #fff;
@@ -677,8 +664,7 @@ body main section.purpose .wrap .step .button, body main section.purpose .cslMob
   border-style: solid;
   width: 194px;
   height: 56px;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
+  border-radius: 30px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -708,8 +694,7 @@ body main section.purpose .wrap .step1 .circle, body main section.purpose .cslMo
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #ff2e2f;
   width: 148px;
   height: 148px;
@@ -769,8 +754,7 @@ body main section.purpose .wrap .step2 .circle, body main section.purpose .cslMo
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #ff2e2f;
   width: 188px;
   height: 188px;
@@ -823,8 +807,7 @@ body main section.purpose .wrap .step3 .circle, body main section.purpose .cslMo
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #ff2e2f;
   width: 229px;
   height: 229px;
@@ -870,8 +853,7 @@ body main section.purpose .wrap .step4 .circle, body main section.purpose .cslMo
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #ff2e2f;
   width: 279px;
   height: 279px;
@@ -1056,8 +1038,7 @@ body main section.first {
 
 body main section.first .numbers {
   background-image: url("../img/be/be-first-bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 75px;
 }
@@ -1068,8 +1049,7 @@ body main section.first .numbers .question {
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #ff2e2f;
   -webkit-box-shadow: 0 22.8px 68.4px 0 #FF2727;
           box-shadow: 0 22.8px 68.4px 0 #FF2727;
@@ -1170,8 +1150,7 @@ body main section.first .points .circleBg {
   border-width: 1px;
   border-color: rgba(255, 255, 255, 0.302);
   border-style: solid;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 892px;
   height: 892px;
   pointer-events: none;
@@ -1230,8 +1209,7 @@ body main section.first .points .content .arrows .arrow {
   border-width: 2px;
   border-color: #35383b;
   border-style: solid;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   margin-right: 15px;
@@ -1346,8 +1324,7 @@ body main section.first .points .cslMobile-control .arrows .arrow {
   border-width: 2px;
   border-color: #35383b;
   border-style: solid;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   margin-right: 15px;
@@ -1374,8 +1351,7 @@ body main section.first .points .counter {
   right: 130px;
   z-index: 30;
   background-image: url("../img/be/be-first-carousel-counter.png");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 160px;
   height: 160px;
@@ -1416,8 +1392,7 @@ body main section.second .header {
   position: relative;
   z-index: 40;
   background-image: url("../img/be/be-second-header-bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 125px;
 }
@@ -1549,8 +1524,7 @@ body main section.second .content .cslMobile-control .arrows .arrow {
   border-width: 2px;
   border-color: #35383b;
   border-style: solid;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   margin-right: 15px;
@@ -1612,8 +1586,7 @@ body main section.second .content .cslMobile .carousel-item .head .circle {
   border-width: 1px;
   border-color: #EAEAEA;
   border-style: solid;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: white;
   width: 113px;
   height: 113px;
@@ -1686,8 +1659,7 @@ body main section.second .content ul li .circle {
   border-width: 1px;
   border-color: #EAEAEA;
   border-style: solid;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: white;
   width: 113px;
   height: 113px;
@@ -1725,8 +1697,7 @@ body main section.third .header {
   padding-top: 120px;
   padding-bottom: 120px;
   background-image: url("../img/be/be-third-header-bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -1823,8 +1794,7 @@ body main section.fourth .header {
   padding-top: 120px;
   padding-bottom: 45px;
   background-image: url("../img/be/be-fourth-header-bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -1905,8 +1875,7 @@ body main section.fourth .content .circleBgT, body main section.fourth .content 
   border-width: 1px;
   border-color: rgba(0, 0, 5, 0.102);
   border-style: solid;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   z-index: -1;
   pointer-events: none;
 }
@@ -2104,8 +2073,7 @@ body main section.fourth .content .wrap .step .buttons .btnR {
   background-color: #ff2e2f;
   width: 210px;
   height: 58px;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
@@ -2120,8 +2088,7 @@ body main section.fourth .content .wrap .step .buttons .btnW {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.102);
   border-style: solid;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
+  border-radius: 30px;
   width: 248px;
   height: 56px;
   cursor: pointer;
@@ -2137,8 +2104,7 @@ body main section.result .header {
   padding-left: 15px;
   padding-right: 15px;
   background-image: url("../img/be/be-result-header-bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 105px;
   padding-bottom: 105px;
@@ -2190,8 +2156,7 @@ body main section.result .content .container .arrowPrev, body main section.resul
   cursor: pointer;
   position: absolute;
   z-index: 30;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #ff2c2d;
   width: 50px;
   height: 50px;
@@ -2243,8 +2208,7 @@ body main section.result .content .container .csl ol.carousel-indicators {
 }
 
 body main section.result .content .container .csl ol.carousel-indicators li, body main section.result .content .container .csl ol.carousel-indicators li:hover {
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: black;
   width: 5px;
   height: 5px;
@@ -2376,8 +2340,7 @@ body main section.result .content .container .csl .carousel-inner .carousel-item
 
 body main section.howSignUp {
   background-image: url("../img/be/be-howSignUp-bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
   padding-bottom: 70px;
@@ -2431,8 +2394,7 @@ body main section.howSignUp .button {
   background-color: white;
   width: 220px;
   height: 54px;
-  -webkit-border-radius: 27px;
-          border-radius: 27px;
+  border-radius: 27px;
 }
 
 body main section.howSignUp .button span {
@@ -2453,8 +2415,7 @@ body main section.howSignUp .signUp {
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #ff2e2f;
   -webkit-box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
           box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
@@ -2822,8 +2783,7 @@ body main section.howSignUp .signUp:hover svg {
 @media only screen and (max-width: 992px) {
   body header.container-fluid {
     background-image: url("../img/be/be-header-mobileBg.png");
-    -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   body header.container-fluid nav .logo .textLogo span.desc, body header.container-fluid nav .logo .textLogo span.name {
@@ -3006,8 +2966,7 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.purpose {
     background-image: url("../img/be/be-purpose-mobile-bg.jpg");
-    -webkit-background-size: contain;
-            background-size: contain;
+    background-size: contain;
     background-repeat: repeat;
   }
   body main section.purpose .cslMobile .step .circle {
@@ -3021,8 +2980,7 @@ body main section.howSignUp .signUp:hover svg {
     padding-top: 10px;
   }
   body main section.first .numbers {
-    -webkit-background-size: contain;
-            background-size: contain;
+    background-size: contain;
     background-repeat: repeat;
   }
   body main section.first .numbers .points {
@@ -3076,8 +3034,7 @@ body main section.howSignUp .signUp:hover svg {
   body main section.howSignUp {
     background-image: url("../img/be/be-result-header-bg.jpg");
     background-repeat: repeat;
-    -webkit-background-size: contain;
-            background-size: contain;
+    background-size: contain;
   }
   body main section.howSignUp .button {
     background-color: #ff2e2f;
@@ -3227,8 +3184,7 @@ body main section.howSignUp .signUp:hover svg {
     width: 35px;
   }
   body main section.second .header {
-    -webkit-background-size: contain;
-            background-size: contain;
+    background-size: contain;
     background-repeat: repeat;
   }
   body main section.second .header .container .headblock {
@@ -3261,8 +3217,7 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.third .header {
     padding-bottom: 60px;
-    -webkit-background-size: contain;
-            background-size: contain;
+    background-size: contain;
     background-repeat: repeat;
   }
   body main section.third .header img.imgPosM {
@@ -3297,8 +3252,7 @@ body main section.howSignUp .signUp:hover svg {
     margin-left: 0;
   }
   body main section.fourth .header {
-    -webkit-background-size: contain;
-            background-size: contain;
+    background-size: contain;
     background-repeat: repeat;
     padding-top: 75px;
   }
