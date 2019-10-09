@@ -1,0 +1,68 @@
+extends _layouts/home
+
+block styles
+	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/sTicket-done.css")
+
+
+block content
+
+	include _partials/header.pug
+
+	main
+
+		.container
+			.header-breadcrumbs
+				.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.home(href="#") Расписание] #[span.slash /] #[a.active(href="sTicket-done.html") Оплата]
+			h1 #[span.red Мария,] здравствуйте.
+			h2 Ваш заказ 123456 оплачен.
+			p.desc 
+				|Мы поздравляем вас и очень рады, что с этого момента вы стали 
+				br
+				|членом семьи школы V-CONCEPT. 
+			.schedule-class
+				span.subhead Напоминаем #[span.b расписание тренировок:]
+				ul
+					li.d-flex.align-items-center
+						span.name Ягодицы+Ноги+Пресс 
+						span.date 18.09.19 
+						span.time 20:00 
+						span.gymNum зал 15 
+					li.d-flex.align-items-center
+						span.name LadyFit 
+						span.date 19.09.19 
+						span.time 20:00 
+						span.gymNum зал 10 
+					li.d-flex.align-items-center
+						span.name Ягодицы+Ноги+Пресс 
+						span.date 20.09.19 
+						span.time 20:00 
+						span.gymNum зал 15 
+					li.d-flex.align-items-center
+						span.name LadyFit  
+						span.date 21.09.19 
+						span.time 11:00 
+						span.gymNum зал 10 
+			p.desc
+				|В ближайшее время на вашу почту придет письмо 
+				br
+				|с расписанием ваших тренировок.
+			.important-table
+				.icon-block
+					span.icon-subhead Важно:
+					br
+					img(src="img/warning2.png", alt="warning2.png")
+				.list-block
+					ul
+						li Оплаченные занятия вы можете переносить самостоятельно в своем личном кабинете на другие дни по расписанию, при условии свободных мест. 
+						li Занятия переносятся не позже, чем за день до тренировки, то есть день в день занятия не переносятся и автоматически сгорают. 
+						li Перед первой тренировкой вам необходимо получить свой оплаченный абонемент на ресепшн, в последующем перед каждой тренировкой вы должны получать обязательную отметку на ресепшн в своем абонементе. 
+
+
+
+		include _partials/contacts.pug
+
+	include _partials/footer.pug
+
+block scripts
+	script(src="js/map.js")

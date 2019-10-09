@@ -1,0 +1,235 @@
+@import "vars"
+@import "fonts"
+
+main
+	.header-breadcrumbs
+		padding-top: 65px
+		.breadcrumbs
+			a.active
+				color: #777777
+	h1
+		font-family: 'MullerExtraBold'
+		font-size: 60px
+		color: #000
+		margin: 0
+		margin-top: 90px
+	h2
+		font-family: 'MullerMedium'
+		font-size: 30px
+		color: #333
+		margin: 0
+		margin-top: 25px
+	p.desc
+		font-family: 'MullerRegular'
+		font-size: 18px
+		color: #000
+		margin-top: 50px
+	.schedule-class
+		padding-top: 55px
+		span.subhead
+			font-family: 'MullerLight'
+			font-size: 20px
+			color: #000
+			span.b
+				font-family: 'MullerBold'
+		ul
+			position: relative
+			list-style-type: none
+			margin-top: 20px
+			padding-left: 25px
+			li
+				width: 50%
+				span
+					font-size: 20px
+				span.name
+					font-family: 'MullerLight'
+					color: #000
+					width: 214px
+				span.date, span.time, span.gymNum
+					color: #333
+				span.date, span.time
+					font-family: 'MullerMedium'
+				span.date
+					width: 80px
+					margin-left: 12.5%
+				span.time
+					width: 60px
+					margin-left: 15px
+				span.gymNum
+					width: 65px
+					margin-left: 17.5px
+					font-family: 'MullerLightItalic'
+		ul::before
+			content: ''
+			position: absolute
+			top: -2px
+			bottom: 0
+			left: 0
+			margin: auto
+			background-color: #ff2e2f
+			width: 4px
+			height: 87.5%
+	.important-table
+		margin-top: 60px
+		width: 100%
+		border-radius: 25px
+		border-color: #ff2e2f
+		border-width: 3px
+		border-style: solid
+		background-color: #f8f1f1
+		padding-top: 55px
+		padding-left: 90px
+		padding-bottom: 30px
+		.icon-block, .list-block
+			display: inline-block
+			vertical-align: top
+		.list-block
+			max-width: 75%
+			margin-left: 75px
+			ul
+				list-style-type: none
+				padding-left: 22px
+				li
+					position: relative
+					font-family: 'MullerMedium'
+					font-size: 20px
+					color: #333
+					margin-bottom: 30px
+				li::before
+					content: ''
+					position: absolute
+					top: 9px
+					left: -20px
+					background-color: #ff2e2f
+					border-radius: 50%
+					width: 9px
+					height: 9px
+		.icon-block
+			span.icon-subhead
+				font-family: 'MullerBold'
+				font-size: 28px
+				color: #333
+			img
+				margin-top: 15px
+@media only screen and(max-width: 1199px)
+	body
+		main
+			.schedule-class
+				ul 
+					li
+						width: 60%
+			.important-table
+				padding-right: 40px
+
+@media only screen and(max-width: 991px)
+	body
+		main
+			h1
+				font-size: 55px
+			.schedule-class
+				ul 
+					li
+						width: 85%
+			.important-table
+				padding-top: 45px
+				padding-left: 50px
+				padding-right: 30px
+				padding-bottom: 20px
+				.list-block
+					margin-left: 30px
+					ul
+						li
+							line-height: 1.4
+				.icon-block
+					img
+						width: 100px
+@media only screen and(max-width: 768px)
+	body
+		main
+			p.desc
+				margin-top: 45px
+			h1
+				font-size: 45px
+				margin-top: 50px
+			.schedule-class
+				padding-top: 35px
+@media only screen and(max-width: 767px)
+	body
+		main
+			.schedule-class
+				ul::before
+					height: 95%
+				ul
+					li
+						flex-wrap: wrap
+						margin-bottom: 7.5px
+						span.name
+							width: 100%
+						span.date
+							margin-left: 0
+			.important-table
+				padding-top: 30px
+				margin-bottom: 25px
+				.list-block
+					display: block
+					max-width: none
+					margin-top: 20px
+					margin-left: 0
+				.icon-block
+					display: flex
+					flex-direction: row-reverse
+					justify-content: center
+					align-items: center
+					span.icon-subhead
+						margin-left: 15px
+					img
+						width: 80px
+						margin-top: 0
+
+@media only screen and(max-width: 500px)
+	body
+		main
+
+			.important-table
+				padding-left: 15px
+				padding-right: 15px
+				padding-bottom: 0
+
+@media only screen and(max-width:  450px)
+	body
+		main
+			.container
+				h1
+					font-size: 30px
+@media only screen and(max-width: 400px)
+	body
+		main
+			.container
+				.header-breadcrumbs
+					padding-top: 35px
+				h2
+					font-size: 18px
+				p.desc
+					font-size: 14px
+					margin-top: 25px
+					br
+						display: none
+				.schedule-class
+					padding-top: 20px
+					span.subhead
+						font-size: 14px
+					ul
+						padding-left: 15px
+						li
+							span
+								font-size: 16px
+								margin-left: 0
+				.important-table
+					margin-top: 35px
+					.icon-block
+						span.icon-subhead
+							font-size: 24px
+					.list-block
+						ul
+							li
+								font-size: 16px
