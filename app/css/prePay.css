@@ -101,6 +101,9 @@
 }
 
 .popupError .buttonOk {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
   background-color: #333333;
   width: 97px;
@@ -113,6 +116,10 @@
   text-transform: uppercase;
   font-family: 'MullerBold';
   font-size: 16px;
+}
+
+.popupError .buttonOk:hover {
+  background-color: #ff2e2f;
 }
 
 main section.contacts {
