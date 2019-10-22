@@ -35,6 +35,10 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
+	input:not([type=checkbox]):not([type=radio]), textarea, select
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
 	.red, a.red
 		color: #ff2e2f
 	#menu-pagedim
