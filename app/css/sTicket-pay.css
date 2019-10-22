@@ -192,11 +192,11 @@ main section.schedules .schedules-list .topline .sList-col2, main section.schedu
 }
 
 main section.schedules .schedules-list .topline .sList-col3, main section.schedules .schedules-list .line .sList-col3 {
-  width: 38.5%;
+  width: 34.5%;
 }
 
 main section.schedules .schedules-list .topline .sList-col4, main section.schedules .schedules-list .line .sList-col4 {
-  width: 19.5%;
+  width: 23.5%;
 }
 
 main section.schedules .schedules-list .topline {
@@ -231,6 +231,14 @@ main section.schedules .schedules-list .line span {
 main section.schedules .schedules-list .line span.li {
   font-family: 'MullerLightItalic';
   font-size: 16px;
+}
+
+main section.schedules .schedules-list .line .subcol1 {
+  width: 125px;
+}
+
+main section.schedules .schedules-list .line .subcol {
+  display: inline-block;
 }
 
 main section.schedules .schedules-list .line.gray {
@@ -513,6 +521,9 @@ main section.formals a.buttonNext:hover {
     font-size: 12px;
     color: #b4aeae;
   }
+  body main section.schedules .schedules-list .line .sList-col .subcol1 {
+    width: 105px;
+  }
   body main section.schedules .schedules-list .line .sList-col4 span {
     font-family: 'MullerLight';
     font-size: 16px;
@@ -581,13 +592,16 @@ main section.formals a.buttonNext:hover {
     padding-bottom: 25px;
   }
   body main section.schedules .schedules-list .topline .sList-col3, body main section.schedules .schedules-list .line .sList-col3 {
-    width: 65%;
+    width: 57.5%;
     top: 0;
     margin-left: 25px;
   }
   body main section.schedules .schedules-list .topline .sList-col4, body main section.schedules .schedules-list .line .sList-col4 {
-    width: 28.5%;
+    width: 36%;
     margin-left: 0;
+  }
+  body main section.schedules .schedules-list .topline .sList-col4 .subcol1, body main section.schedules .schedules-list .line .sList-col4 .subcol1 {
+    width: 90px;
   }
   body main section.schedules .schedules-list .topline .sList-col3 span {
     font-family: 'MullerBold';
@@ -699,6 +713,9 @@ main section.formals a.buttonNext:hover {
   }
   body main section.schedules .schedules-list .line .sList-col3 {
     line-height: 1.4;
+  }
+  body main section.schedules .schedules-list .line .sList-col .subcol1 {
+    width: 75px;
   }
   body main section.important-table {
     padding-left: 15px;
@@ -828,10 +845,13 @@ main section.formals a.buttonNext:hover {
     max-width: 235px;
   }
   body main section.schedules .schedules-list .topline .sList-col3, body main section.schedules .schedules-list .line .sList-col3 {
-    width: 50%;
+    width: 44%;
   }
   body main section.schedules .schedules-list .topline .sList-col4, body main section.schedules .schedules-list .line .sList-col4 {
-    width: 39.5%;
+    width: 46%;
+  }
+  body main section.schedules .schedules-list .topline .sList-col4 .subcol1, body main section.schedules .schedules-list .line .sList-col4 .subcol1 {
+    width: 70px;
   }
   body main section.important-table {
     margin-top: 35px;
