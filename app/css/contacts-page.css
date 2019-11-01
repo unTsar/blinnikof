@@ -108,7 +108,7 @@ main section.list .item h2 {
 }
 
 main section.list .item span.tahoma {
-  font-family: 'Tahoma';
+  font-family: 'Tahoma', San Francisco, Helvetica, Arial;
   font-size: 40px;
   font-weight: bold;
 }
