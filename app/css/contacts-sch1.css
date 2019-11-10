@@ -1,0 +1,472 @@
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerRegular/MullerRegular.eot");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLight/MullerLight.eot");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerLightItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot");
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLightItalic/MullerLightItalic.woff") format("woff"), url("../fonts/MullerLightItalic/MullerLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerThin";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerThin/MullerThin.eot");
+  src: url("../fonts/MullerThin/MullerThin.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerThin/MullerThin.woff") format("woff"), url("../fonts/MullerThin/MullerThin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerMedium/MullerMedium.eot");
+  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBold/MullerBold.eot");
+  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+}
+
+main section.header-breadcrumbs {
+  padding-top: 65px;
+}
+
+main section.header-breadcrumbs span.tahoma {
+  font-family: 'Tahoma', San Francisco, Helvetica, Arial;
+  font-size: 14px;
+  vertical-align: baseline;
+}
+
+main section.header-breadcrumbs span.slash.red {
+  color: #ff2e2f;
+}
+
+main section.header {
+  padding-top: 45px;
+}
+
+main section.header h1 {
+  color: #333333;
+  font-size: 50px;
+  font-family: 'MullerExtraBold';
+  margin: 0;
+}
+
+main section.header h1 span.tahoma {
+  font-family: 'Tahoma', San Francisco, Helvetica, Arial;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+main section.header .line {
+  margin-top: 20px;
+  width: 80px;
+  height: 4px;
+  background-color: #ff2e2f;
+}
+
+main section.desc {
+  padding-top: 50px;
+}
+
+main section.desc img.img-school {
+  margin-left: 4%;
+}
+
+main section.desc .textblock, main section.desc img.img-school {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+
+main section.desc .textblock p.text {
+  font-family: 'MullerRegular';
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 25px 0;
+  line-height: 1.45;
+}
+
+main section.desc .textblock p.text span.tahoma {
+  font-family: 'Tahoma', San Francisco, Helvetica, Arial;
+  font-size: 16px;
+}
+
+main section.desc .line {
+  margin-top: 25px;
+  width: 80px;
+  height: 4px;
+  background-color: #ff2e2f;
+}
+
+main section.desc .contact-text {
+  margin-top: 35px;
+  font-family: 'MullerBold';
+  font-size: 24px;
+  color: #333;
+  line-height: 1.4;
+}
+
+main section.howToPass {
+  padding-top: 70px;
+}
+
+main section.howToPass .images-table {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-right: -22px;
+}
+
+main section.howToPass .images-table .img-item {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 67px;
+  position: relative;
+}
+
+main section.howToPass .images-table .img-item .img-number {
+  position: absolute;
+  top: -19px;
+  left: -19px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 6px solid #F8F8F8;
+  text-align: center;
+  line-height: 38px;
+  background-color: #ff2e2f;
+}
+
+main section.howToPass .images-table .img-item .img-number span {
+  color: #fff;
+  font-family: 'MullerBold';
+  font-size: 14px;
+}
+
+main section.howToPass a.buttonReg {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 30px;
+  background-color: #ff2e2f;
+  width: 270px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main section.howToPass a.buttonReg span {
+  font-family: 'MullerBold';
+  font-size: 16px;
+  color: #fff;
+}
+
+main section.howToPass a.buttonReg:hover {
+  -webkit-box-shadow: 0px 0px 15px #ff2e2f;
+          box-shadow: 0px 0px 15px #ff2e2f;
+}
+
+main section.contacts {
+  padding-top: 300px;
+  padding-bottom: 200px;
+}
+
+main section.contacts .container .c6 .social-block span.head {
+  font-family: 'MullerBold';
+  font-size: 20px;
+  color: #000;
+}
+
+main section.contacts .container .c6 .social-block .socials {
+  margin-top: 30px;
+}
+
+main section.contacts .container .c6 .social-block .socials .social {
+  cursor: pointer;
+  width: 54px;
+  height: 54px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main section.contacts .container .c6 .social-block .socials .social.Vk {
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+main section.contacts .container .c6 .social-block .socials .social.Fb, main section.contacts .container .c6 .social-block .socials .social.Inst {
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+main section.contacts .container .c6 .social-block .socials .social:hover {
+  background-color: #FF2F2F;
+  border: 1px solid #FF2F2F;
+}
+
+main section.contacts .container .c6 .list {
+  margin-top: 70px;
+}
+
+main section.contacts .container .c6 span.name {
+  line-height: 1.2;
+  font-size: 45px;
+}
+
+@media only screen and (max-width: 1199px) {
+  body main section.contacts .container .c6 span.name {
+    font-size: 40px;
+  }
+  body main section.contacts .container .c6 .list {
+    margin-top: 70px;
+  }
+  body main section.contacts .container .c6 .social-block {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body main .container-fluid section.header h1 {
+    font-size: 40px;
+  }
+  body main .container-fluid section.header h1 span.tahoma {
+    font-size: 36px;
+  }
+  body main .container-fluid section.desc {
+    padding-top: 40px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  body main .container-fluid section.desc img.img-school {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-left: 0;
+    width: 80%;
+    margin: 65px auto 0 auto;
+  }
+  body main .container-fluid section.desc .textblock, body main .container-fluid section.desc .contact-text {
+    width: 100%;
+  }
+  body main .container-fluid section.desc .contact-text {
+    margin-top: 25px;
+  }
+  body main .container-fluid section.howToPass {
+    padding-top: 65px;
+  }
+  body main .container-fluid section.howToPass .images-table .img-item {
+    margin-bottom: 50px;
+  }
+  body main .container-fluid section.howToPass .images-table .img-item img {
+    width: 313px;
+  }
+  body main .container-fluid section.howToPass a.buttonReg {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body main .container-fluid section.desc img.img-school {
+    width: 100%;
+  }
+  body main section.contacts .container .c6 {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  body main section.contacts .container .c6 span.name {
+    font-size: 30px;
+  }
+  body main section.contacts .container .c6 span.name br {
+    display: none;
+  }
+  body main section.contacts .container .c6 .list, body main section.contacts .container .c6 .social-block {
+    display: inline-block;
+    vertical-align: top;
+  }
+  body main section.contacts .container .c6 .social-block {
+    margin-top: 30px;
+    margin-left: 8%;
+  }
+  body main section.contacts .container .c6 .list {
+    margin-top: 30px;
+  }
+  body main section.contacts .container .c6 .list .item {
+    margin-bottom: 25px;
+  }
+  body main section.contacts .container .c6 .list .item span {
+    font-size: 18px;
+  }
+  body main section.contacts .container .c6 .list .item.phone span {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body main .container-fluid section.header {
+    padding-top: 35px;
+  }
+  body main .container-fluid section.header h1 {
+    font-size: 28px;
+  }
+  body main .container-fluid section.header h1 span.tahoma {
+    font-size: 28px;
+  }
+  body main .container-fluid section.desc .contact-text {
+    font-size: 20px;
+  }
+  body main .container-fluid section.desc img.img-school {
+    margin: 40px auto 0 auto;
+  }
+  body main .container-fluid section.howToPass .images-table {
+    margin-right: 0;
+  }
+  body main .container-fluid section.howToPass .images-table .img-item {
+    margin: 0 auto 30px auto;
+    padding-left: 15px;
+  }
+  body main .container-fluid section.howToPass .images-table .img-item img {
+    width: 100%;
+  }
+  body main section.contacts .container .c6 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body main section.contacts .container .c6 .list, body main section.contacts .container .c6 .social-block {
+    display: block;
+  }
+  body main section.contacts .container .c6 .social-block {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body main .container-fluid section.desc .contact-text {
+    font-size: 18px;
+  }
+  body main .container-fluid section.howToPass .images-table .img-item {
+    padding-left: 15px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body main .container-fluid section.desc {
+    padding-top: 35px;
+  }
+  body main .container-fluid section.desc .textblock p.text {
+    font-size: 14px;
+  }
+  body main .container-fluid section.desc .textblock p.text span.tahoma {
+    font-size: 14px;
+  }
+  body main .container-fluid section.desc .line {
+    margin-top: 0;
+  }
+  body main .container-fluid section.desc .contact-text br {
+    display: none;
+  }
+  body main .container-fluid section.desc .contact-text span.red {
+    display: block;
+  }
+  body main .container-fluid section.howToPass {
+    padding-top: 40px;
+  }
+  body main .container-fluid section.howToPass a.buttonReg {
+    width: 201px;
+    height: 53px;
+    border-radius: 26.5px;
+  }
+  body main .container-fluid section.howToPass a.buttonReg span {
+    font-size: 14px;
+  }
+  body main section.contacts .container .c6 span.name {
+    font-size: 24px;
+    margin-right: -5px;
+  }
+  body main section.contacts .container .c6 .list .item {
+    margin-bottom: 20px;
+  }
+  body main section.contacts .container .c6 .list .item img {
+    margin-right: 15px;
+  }
+  body main section.contacts .container .c6 .list .item span {
+    font-size: 16px;
+  }
+  body main section.contacts .container .c6 .list .item.phone span {
+    font-size: 20px;
+  }
+  body main section.contacts .container .c6 .social-block {
+    margin-top: 25px;
+  }
+  body main section.contacts .container .c6 .social-block .socials {
+    margin-top: 15px;
+  }
+}
