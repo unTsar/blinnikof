@@ -357,6 +357,8 @@ main section.contacts .container .c6 span.name {
     width: 100%;
     display: block;
     height: auto;
+    margin: 0;
+    margin-top: 40px;
   }
   body main section.contacts .container .c6 {
     margin-left: -15px;
@@ -402,9 +404,6 @@ main section.contacts .container .c6 span.name {
   }
   body main .container-fluid section.desc .contact-text {
     font-size: 20px;
-  }
-  body main .container-fluid section.desc img.img-school {
-    margin: 40px auto 0 auto;
   }
   body main .container-fluid section.howToPass .images-table {
     margin-right: 0;
