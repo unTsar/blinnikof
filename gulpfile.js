@@ -79,22 +79,22 @@ gulp.task('html:build', function(){
 
 
 gulp.task('img', function() {
-  //   gulp.src('app/img/**/*.jpg')
-  //       .pipe(imagemin([
-  //           jpegoptim({
-  //               progressive: true,
-  //               max: 40,
-  //               stripAll: true
-  //           })
-  //       ],{
-  //           verbose: true
-  //       }))
-		// .pipe(gulp.dest('dist/img'))
-  //   gulp.src('app/img/**/*.png')
-  //       .pipe(pngquant({quality: 50, speed: 5}))
-		// .pipe(gulp.dest('dist/img'))
-  //   gulp.src('app/img/**/*.svg')
-  //   .pipe(gulp.dest('dist/img')) 
+    gulp.src('app/img/**/*.jpg')
+        .pipe(imagemin([
+            jpegoptim({
+                progressive: true,
+                max: 40,
+                stripAll: true
+            })
+        ],{
+            verbose: true
+        }))
+		.pipe(gulp.dest('dist/img'))
+    gulp.src('app/img/**/*.png')
+        .pipe(pngquant({quality: 50, speed: 5}))
+		.pipe(gulp.dest('dist/img'))
+    gulp.src('app/img/**/*.svg')
+    .pipe(gulp.dest('dist/img')) 
   gulp.src('app/img/**/*.*')
   .pipe(gulp.dest('dist/img'))
 });
