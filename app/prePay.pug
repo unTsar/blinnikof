@@ -1,0 +1,80 @@
+extends _layouts/home
+
+block styles
+	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/prePay.css")
+
+
+block content
+	include _partials/header.pug
+	main
+		.popupError#popupError
+			img(src="img/warning.jpg", alt="warning.jpg")
+			p Чтобы перейти к оплате, необходимо отметить согласие с договором-офертой и правилами школы v_concept
+			.buttonOk.d-flex.align-items-center.justify-content-center.b-close
+				span Ok
+		.container-fluid
+			.container
+				.header-breadcrumbs
+					.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="prePay.html") Оплата]
+				h1 #[span.red Заказ] 25165
+				.subhead
+					h2 Мария, спасибо за ваш заказ
+					.line
+				.orderInf
+					.contentBlock
+						.list
+							.listTable.desk
+								.topLine
+									span Название урока
+									span Группа
+									span Стоимость
+								.line.gray
+									span #BodyEvolution 1-я ступень
+									span #Группа 01_июль
+									span.l 13 900,00 руб.
+							.listTable.mob
+								.topLine
+									span Название урока
+									span.gr Группа
+								.line.gray
+									span #BodyEvolution 1-я ступень
+									span #Группа 01_июль
+								.topLine.noBrs
+									span Стоимость
+								.line.gray
+									span.l.jusR 13 900,00 руб.	
+							.results.d-flex.flex-column.justify-content-center.align-items-end
+								.item
+									span.b Скидка: 
+									span.l 1 000,00 руб.
+								.item
+									span.b Итого: 
+									span.l 12 900,00 руб.
+				.acceptTerms.d-flex
+					input#checkboxAccept(type="checkbox", name="a")
+					label(for="checkboxAccept")
+					.text Я ознакомился и принимаю #[a.red(href="#") условия договора-оферты] и #[a.red(href="#") правила школы v_concept]
+				a(href="#")#buttonPay.button.d-flex.align-items-center.justify-content-center
+					span Оплатить
+		include _partials/contacts.pug
+	include _partials/footer.pug
+
+
+block scripts
+	script(src="js/map.js")
+	script(src="js/bpopup.js")
+
+	script.
+		$(document).ready(function() {
+			$("#buttonPay").click(function() {
+				if ($('#checkboxAccept').prop('checked') == false) {
+					$('#popupError').bPopup({
+						position: ['50%', '50%'],
+						positionStyle: 'fixed',
+						escClose: false,
+						modalClose: false
+					});
+				}
+			})
+		})

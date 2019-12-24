@@ -3,7 +3,7 @@ extends _layouts/home
 block styles
 	
 	link(rel="stylesheet", href="css/contacts.css")
-	link(rel="stylesheet", href="css/contacts-page.css")
+	link(rel="stylesheet", href="css/contacts-sch1.css")
 
 block content
 	include _partials/header.pug
@@ -11,44 +11,89 @@ block content
 		.container-fluid
 			.container
 				section.header-breadcrumbs
-					.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="contacts.html") Контакты]
+					.breadcrumbs #[a.home(href="#") Главная] #[span.slash.red /] #[a.red(href="contacts.html") Контакты] #[span.slash /] #[a.active(href="contacts-sch1.html") Школа #[span.tahoma №]1]
 				section.header
 					.row
 						.col-12
-							h1 <span class="red">Наши</span> контакты
+							h1 Школа #[span.tahoma №]1. #[span.red Как к нам добраться?]
 							.line
-				section.list
-					.item
-						.row
-							.col-12.col-md-6.col-xl-7
-								h2 Школа #[span.red #[span.tahoma №]1]
-								.inf.d-flex
-									.line
-									.textBlock
-										.text.b Адрес школы:
-										.text.adress Москва, 2-я Звенигородская ул., 12, стр.18
-								a(href="contacts-sch1.html").btnAdress.desk.align-items-center.justify-content-center
-									span Как добраться
-							.col-12.col-md-6.col-xl-5
-								img(src="img/chooseSchool/c-building.png", alt="c-building.png")
-								a(href="contacts-sch1.html").btnAdress.mob.align-items-center.justify-content-center
-									span Как добраться
-					.item
-						.row
-							.col-12.col-md-6.col-xl-7
-								h2 Школа #[span.red #[span.tahoma №]2]
-								.inf.d-flex
-									.line
-									.textBlock
-										.text.b Адрес школы:
-										.text.adress Москва, название улицы, номер дома
-								a(href="contacts-sch1.html").btnAdress.desk.align-items-center.justify-content-center
-									span Как добраться
-							.col-12.col-md-6.col-xl-5
-								img(src="img/chooseSchool/c-building.png", alt="c-building.png")
-								a(href="contacts-sch1.html").btnAdress.mob.align-items-center.justify-content-center
-									span Как добраться
-
+				section.desc
+					.textblock
+						p.head Если на метро (м.Кутузовская).
+						p.text Первый вагон из центра, по указателям ориентируемся на выход к Музею «Бородинская битва» или Театр «Петра Фоменка». Далее двигаемся по Кутузовскому проспекту до подземного перехода, спускаемся и налево, поднимаемся по леснице, по правую руку стоит памятник и далее через 50 метров вход на территорию под первый шлагбаум направо. Далее двигаемся по прямой около 100 метров. По правую руку находится 4-х этажное здание черного цвета с вывеской Gold and Dance. Вам сюда. (См. Фото прохода ниже). 
+						p.text Время в пути 5 минут. 
+						p.text Также находится рядом метро Парк Победы (время в пути 10 минут). 
+						p.head Если на машине. 
+						p.text Имеется платная парковка на территории 150 руб/час. Заезд на территорию во второй шлагбаум с Кутузовского проспекта с дублера. Не пропустите. 
+					img.img-school(src="img/howToPass-images/sch1-img.jpg", alt="sch1-img.jpg")
+					.line
+					.contact-text|Кто впервые к нам в школу, нужно позвонить, 
+						br
+						|Вас встретит администратор: #[span.red 8 (495)-125-32-25]
+				section.howToPass
+					.images-table
+						.img-item
+							img(src="img/howToPass-images/sch1/1.jpeg", alt="1.jpeg")
+							.img-number
+								span 01
+						.img-item
+							img(src="img/howToPass-images/sch1/2.jpeg", alt="2.jpeg")
+							.img-number
+								span 02
+						.img-item
+							img(src="img/howToPass-images/sch1/3.jpeg", alt="3.jpeg")
+							.img-number
+								span 03
+						.img-item
+							img(src="img/howToPass-images/sch1/4.jpeg", alt="4.jpeg")
+							.img-number
+								span 04
+						.img-item
+							img(src="img/howToPass-images/sch1/5.jpeg", alt="5.jpeg")
+							.img-number
+								span 05
+						.img-item
+							img(src="img/howToPass-images/sch1/6.jpeg", alt="6.jpeg")
+							.img-number
+								span 06
+						.img-item
+							img(src="img/howToPass-images/sch1/7.jpeg", alt="7.jpeg")
+							.img-number
+								span 07
+						.img-item
+							img(src="img/howToPass-images/sch1/8.jpeg", alt="8.jpeg")
+							.img-number
+								span 08
+						.img-item
+							img(src="img/howToPass-images/sch1/9.jpeg", alt="9.jpeg")
+							.img-number
+								span 09
+						.img-item
+							img(src="img/howToPass-images/sch1/10.jpeg", alt="10.jpeg")
+							.img-number
+								span 10
+						.img-item
+							img(src="img/howToPass-images/sch1/11.jpeg", alt="11.jpeg")
+							.img-number
+								span 11
+						.img-item
+							img(src="img/howToPass-images/sch1/12.jpeg", alt="12.jpeg")
+							.img-number
+								span 12
+						.img-item
+							img(src="img/howToPass-images/sch1/13.jpeg", alt="13.jpeg")
+							.img-number
+								span 13
+						.img-item
+							img(src="img/howToPass-images/sch1/14.jpeg", alt="14.jpeg")
+							.img-number
+								span 14
+						.img-item
+							img(src="img/howToPass-images/sch1/15.jpeg", alt="15.jpeg")
+							.img-number
+								span 15
+					a.buttonReg.d-flex.align-items-center.justify-content-center
+						span Записаться на занятие
 		section.contacts
 			.container
 				.col-12.col-lg-6.c6

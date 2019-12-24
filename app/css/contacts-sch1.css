@@ -130,6 +130,11 @@ main section.desc .textblock, main section.desc img.img-school {
   width: 48%;
 }
 
+main section.desc .textblock p.head {
+  font-family: 'MullerBold';
+  font-size: 18px;
+}
+
 main section.desc .textblock p.text {
   font-family: 'MullerRegular';
   font-size: 18px;
@@ -181,6 +186,11 @@ main section.howToPass .images-table .img-item {
   margin-left: 20px;
   margin-bottom: 67px;
   position: relative;
+}
+
+main section.howToPass .images-table .img-item img {
+  width: 337px;
+  height: auto;
 }
 
 main section.howToPass .images-table .img-item .img-number {
@@ -455,6 +465,9 @@ main section.contacts .container .c6 span.name {
   }
   body main .container-fluid section.howToPass a.buttonReg span {
     font-size: 14px;
+  }
+  body main section.desc .textblock p.head {
+    font-size: 16px;
   }
   body main section.contacts .container .c6 span.name {
     font-size: 24px;

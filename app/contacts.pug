@@ -3,7 +3,7 @@ extends _layouts/home
 block styles
 	
 	link(rel="stylesheet", href="css/contacts.css")
-	link(rel="stylesheet", href="css/contacts-sch1.css")
+	link(rel="stylesheet", href="css/contacts-page.css")
 
 block content
 	include _partials/header.pug
@@ -11,59 +11,44 @@ block content
 		.container-fluid
 			.container
 				section.header-breadcrumbs
-					.breadcrumbs #[a.home(href="#") Главная] #[span.slash.red /] #[a.red(href="contacts.html") Контакты] #[span.slash /] #[a.active(href="contacts-sch1.html") Школа #[span.tahoma №]1]
+					.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="contacts.html") Контакты]
 				section.header
 					.row
 						.col-12
-							h1 Школа #[span.tahoma №]1. #[span.red Как к нам добраться?]
+							h1 <span class="red">Наши</span> контакты
 							.line
-				section.desc
-					.textblock
-						p.text Школа #[span.tahoma №]1 находится на закрытой территории завода Спектр, на противоположной стороне от магазина "Электроника на Пресне". 
-						p.text Стеклянная проходная (рядом с отделением ЮнитКредитБанк) иметь при себе ПАСПОРТ или вод. удостоверение и сказать вы в школу танцев. 
-						p.text После проходной сразу направо, примерно 200 метров до конца зеленого дома и повернуть налево. Перед вами будет стоять 2-ух этажное красное кирпичное здание на нем надпись Gold&Dance 
-						p.text Парковка на Звенигородском шоссе на той или другой стороне, рядом есть маленькая стояночка. 
-					img.img-school(src="img/chooseSchool/c-building.png", alt="c-building.png")
-					.line
-					.contact-text|Кто впервые к нам в школу, нужно позвонить, 
-						br
-						|Вас встретит администратор: #[span.red 8 (495)-125-32-25]
-				section.howToPass
-					.images-table
-						.img-item
-							img(src="img/howToPass-images/howToPass-img1.jpg", alt="howToPass-img1.jpg")
-							.img-number
-								span 01
-						.img-item
-							img(src="img/howToPass-images/howToPass-img2.jpg", alt="howToPass-img2.jpg")
-							.img-number
-								span 02
-						.img-item
-							img(src="img/howToPass-images/howToPass-img3.jpg", alt="howToPass-img3.jpg")
-							.img-number
-								span 03
-						.img-item
-							img(src="img/howToPass-images/howToPass-img4.jpg", alt="howToPass-img4.jpg")
-							.img-number
-								span 04
-						.img-item
-							img(src="img/howToPass-images/howToPass-img5.jpg", alt="howToPass-img5.jpg")
-							.img-number
-								span 05
-						.img-item
-							img(src="img/howToPass-images/howToPass-img6.jpg", alt="howToPass-img6.jpg")
-							.img-number
-								span 06
-						.img-item
-							img(src="img/howToPass-images/howToPass-img7.jpg", alt="howToPass-img7.jpg")
-							.img-number
-								span 07
-						.img-item
-							img(src="img/howToPass-images/howToPass-img8.jpg", alt="howToPass-img8.jpg")
-							.img-number
-								span 08
-					a.buttonReg.d-flex.align-items-center.justify-content-center
-						span Записаться на занятие
+				section.list
+					.item
+						.row
+							.col-12.col-md-6.col-xl-7
+								h2 Школа #[span.red #[span.tahoma №]1]
+								.inf.d-flex
+									.line
+									.textBlock
+										.text.b Адрес школы:
+										.text.adress Москва, Кутузовский проспект, дом 36 стр.5
+								a(href="contacts-sch1.html").btnAdress.desk.align-items-center.justify-content-center
+									span Как добраться
+							.col-12.col-md-6.col-xl-5
+								img(src="img/howToPass-images/sch1-img.jpg", alt="sch1-img.jpg")
+								a(href="contacts-sch1.html").btnAdress.mob.align-items-center.justify-content-center
+									span Как добраться
+					.item
+						.row
+							.col-12.col-md-6.col-xl-7
+								h2 Школа #[span.red #[span.tahoma №]2]
+								.inf.d-flex
+									.line
+									.textBlock
+										.text.b Адрес школы:
+										.text.adress Москва, название улицы, номер дома
+								a(href="contacts-sch1.html").btnAdress.desk.align-items-center.justify-content-center
+									span Как добраться
+							.col-12.col-md-6.col-xl-5
+								img(src="img/chooseSchool/c-building.png", alt="c-building.png")
+								a(href="contacts-sch1.html").btnAdress.mob.align-items-center.justify-content-center
+									span Как добраться
+
 		section.contacts
 			.container
 				.col-12.col-lg-6.c6

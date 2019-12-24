@@ -82,6 +82,10 @@ body {
   background-color: #ffffff;
 }
 
+body section {
+  overflow: hidden;
+}
+
 body .scroll {
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -203,17 +207,20 @@ body header.container-fluid nav .menu span.button-desc {
   z-index: 1000;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -16px;
   width: 100px;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
   margin-top: 75px;
-  margin-left: 32px;
   font-family: 'MullerMedium';
   font-size: 11px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+body header.container-fluid nav .menu span.button-desc.hidden {
+  opacity: 0;
 }
 
 body header.container-fluid nav .logo, body header.container-fluid nav .adress, body header.container-fluid nav .socials, body header.container-fluid nav .phoneCont {
@@ -222,7 +229,7 @@ body header.container-fluid nav .logo, body header.container-fluid nav .adress, 
 }
 
 body header.container-fluid nav .adress {
-  padding-left: 140px;
+  padding-left: 7.5%;
 }
 
 body header.container-fluid nav .adress .circleAdress {
@@ -308,7 +315,7 @@ body header.container-fluid .headblock .button {
           animation: pulsation 2s infinite;
   overflow: hidden;
   position: relative;
-  z-index: 100;
+  z-index: 200;
   cursor: pointer;
   border-radius: 50%;
   background-color: #ff2e2f;
@@ -380,7 +387,7 @@ body header.container-fluid .headblock .button:hover svg {
 body section.first {
   background-image: url("../img/index/index-first-bg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
   background-position: bottom;
   position: relative;
   z-index: 101;
@@ -412,6 +419,12 @@ body section.first img.img-center {
   margin-left: -15px;
 }
 
+body section.first img.img-center_mob {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body section.first h2 {
   position: relative;
   font-family: 'MullerExtraBold';
@@ -439,7 +452,7 @@ body section.first p {
 
 body section.first p.p-head {
   position: relative;
-  max-width: 480px;
+  max-width: 89%;
   margin-top: 15px;
   margin-bottom: 20px;
   line-height: 1.25;
@@ -448,12 +461,15 @@ body section.first p.p-head {
   color: #000000;
 }
 
-body section.first p.p-head:before {
-  position: absolute;
-  content: url("../img/index/index-first-p-marks.jpg");
-  top: 0;
-  right: 100%;
+body section.first img.img-marks {
   margin-right: 20px;
+  margin-top: 20px;
+  margin-left: -45px;
+}
+
+body section.first p.p-head, body section.first img.img-marks {
+  display: inline-block;
+  vertical-align: top;
 }
 
 body section.first img.separ {
@@ -475,6 +491,14 @@ body section.first p.p-bold {
   font-family: 'MullerMedium';
   font-size: 20px;
   color: #000000;
+}
+
+body section.first p.p-bold.mob {
+  display: none;
+}
+
+body section.first p.tac {
+  text-align: center;
 }
 
 body section.first .steps {
@@ -523,6 +547,20 @@ body section.first .author span {
   font-family: 'MullerBold';
   font-size: 20px;
   color: #000000;
+}
+
+body section.first a.btn-more.mob {
+  display: none;
+  font-size: 18px;
+  font-family: 'MullerMedium';
+  color: #ff2e2f;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10px;
+}
+
+body section.first .hidden.collapse:not(.show) {
+  display: block;
 }
 
 body section.second {
@@ -744,12 +782,13 @@ body section.second .stages .stage:hover .pay-block a.btn-pay span {
 
 body section.third {
   position: relative;
-  z-index: 100;
+  z-index: 101;
   background-image: url("../img/index/index-third-bg.jpg");
-  background-size: cover;
+  background-size: auto;
+  background-position: center;
   background-repeat: no-repeat;
-  padding-top: 15%;
-  padding-bottom: 14%;
+  padding-top: 13%;
+  padding-bottom: 12%;
 }
 
 body section.third img.third-top-bg {
@@ -870,7 +909,7 @@ body section.fourth h2::before {
   position: absolute;
   z-index: -1;
   margin-top: -42px;
-  margin-right: -110px;
+  margin-right: -80px;
   top: 0;
   right: 100%;
   content: '04';
@@ -960,6 +999,7 @@ body section.fifth {
   padding-top: 12%;
   padding-bottom: 18%;
   background-color: #fff;
+  overflow: visible;
 }
 
 body section.fifth img.fifth-top-bg {
@@ -1077,4 +1117,558 @@ body section.fifth .csl .carousel-inner .carousel-item .textblock span.name span
 
 body section.contacts {
   z-index: 101;
+}
+
+@media only screen and (max-width: 1600px) {
+  body header.container-fluid nav .adress {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  body section.first img.img-sub {
+    display: none;
+  }
+  body section.first h2, body section.first .subhead, body section.second h2, body section.second .subhead, body section.third h2, body section.third .subhead {
+    margin-left: 13%;
+  }
+  body section.third p.desc {
+    margin-left: 13%;
+  }
+  body section.fourth h2 {
+    margin-left: 26%;
+  }
+  body section.fourth h2::before {
+    margin-right: -38%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  body header.container-fluid nav .menu span.button-desc {
+    margin-top: 55px;
+  }
+  body header.container-fluid .headblock .headtext p.desc:before {
+    width: 45px;
+    margin-right: 15px;
+  }
+  body section.first {
+    padding-top: 50px;
+  }
+  body section.first h2 {
+    font-size: 52px;
+  }
+  body section.first h2::before {
+    margin-top: -59px;
+    margin-right: -57px;
+    font-size: 155px;
+  }
+  body section.first p.p-head {
+    font-size: 22px;
+  }
+  body section.first p.p-text {
+    margin-right: 0;
+    font-size: 15px;
+  }
+  body section.first p.p-text.p-bold {
+    font-size: 18px;
+  }
+  body section.first .author span {
+    font-size: 18px;
+  }
+  body section.first .steps {
+    margin-right: 0;
+  }
+  body section.first .steps .step .name {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body header.container-fluid .headblock .headtext h1 {
+    font-size: 50px;
+  }
+  body header.container-fluid .headblock .headtext p.desc {
+    margin-top: 17px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  body section.second h2::before {
+    margin-top: -55px;
+    margin-right: -65px;
+    font-size: 155px;
+  }
+  body section.second img.second-img_center {
+    width: 635px;
+  }
+  body section.second .subhead {
+    margin-top: 25px;
+  }
+  body section.second .subhead p.desc {
+    font-size: 22px;
+  }
+  body section.second .stages .stage ul.list {
+    padding-left: 9px;
+    padding-bottom: 0;
+  }
+  body section.second .stages .stage .list-head {
+    margin-top: 10px;
+    padding-left: 5px;
+  }
+  body section.second .stages .stage .list-head span.head {
+    margin-left: 5px;
+  }
+  body section.third {
+    padding-bottom: 8%;
+  }
+  body section.third h2::before {
+    margin-top: -55px;
+    margin-right: -65px;
+    font-size: 155px;
+  }
+  body section.third p.desc {
+    font-size: 22px;
+  }
+  body section.third p.desc::before {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  body section.third h2, body section.second h2, body section.fourth h2 {
+    font-size: 52px;
+  }
+  body section.fourth h2::before {
+    font-size: 155px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body header.container-fluid .headblock {
+    padding-bottom: 235px;
+  }
+  body header.container-fluid .headblock .headtext h1 {
+    font-size: 63px;
+  }
+  body header.container-fluid .headblock .button {
+    margin-top: 15px;
+  }
+  body section.first {
+    background-image: url("../img/index/index-first-bg_mob.png");
+    background-size: contain;
+    padding-bottom: 125px;
+    overflow: visible;
+  }
+  body section.first h2::before {
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: -95px;
+    text-align: center;
+    font-size: 105px;
+  }
+  body section.first img.img-center_mob {
+    display: block;
+  }
+  body section.first .author.desk {
+    display: none;
+  }
+  body section.first p.p-text {
+    font-size: 17px;
+  }
+  body section.first .steps .step {
+    width: 27.5%;
+  }
+  body section.first .steps .step .name br {
+    display: none;
+  }
+  body section.first img.img-marks {
+    margin-left: 0;
+  }
+  body section.first a.btn-more.mob {
+    display: block;
+  }
+  body section.first .hidden.collapse:not(.show) {
+    display: none;
+  }
+  body section.second {
+    margin-top: -150px;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    background-color: #303537;
+  }
+  body section.second h2 {
+    color: #fff;
+  }
+  body section.second h2 br {
+    display: none;
+  }
+  body section.second h2::before {
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: -95px;
+    text-align: center;
+    font-size: 105px;
+    color: #c7c7c7;
+    opacity: 0.5;
+  }
+  body section.second .subhead p.desc {
+    color: #fff;
+    max-width: 100%;
+  }
+  body section.second img.second-img_center {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  body section.second .stages {
+    padding-top: 50px;
+  }
+  body section.second .stages .stage {
+    margin-bottom: 25px;
+  }
+  body section.second .stages .stage ul.list {
+    padding-left: 10%;
+  }
+  body section.second .stages .stage ul.list li {
+    font-size: 20px;
+  }
+  body section.second .stages .stage .list-head {
+    padding-left: 9.5%;
+  }
+  body section.second .stages .stage .list-head span.head {
+    font-size: 20px;
+  }
+  body section.third {
+    background-image: url("../img/index/index-third-bg_mob.png");
+    background-size: cover;
+    padding-top: 220px;
+    padding-bottom: 170px;
+    margin-top: -110px;
+  }
+  body section.third img.third-top-bg {
+    display: none;
+  }
+  body section.third h2 br {
+    display: none;
+  }
+  body section.third h2::before {
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: -95px;
+    text-align: center;
+    font-size: 113px;
+  }
+  body section.third p.desc {
+    margin-top: 25px;
+  }
+  body section.third p.desc::before {
+    position: relative;
+    right: 0;
+    margin: 0;
+    margin-bottom: 27.5px;
+    display: block;
+  }
+  body section.fourth {
+    margin-top: -15px;
+    padding-top: 80px;
+  }
+  body section.fourth h2::before {
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: -60px;
+    text-align: center;
+    font-size: 113px;
+  }
+  body section.fourth p.desc {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+  body section.fourth p.desc::before {
+    margin-bottom: 30px;
+  }
+  body section.fourth .trainers {
+    padding-top: 25px;
+  }
+  body section.fourth .trainers .trainer {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  body section.fourth .trainers .trainer .line {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  body section.first p.desc, body section.first h2, body section.first .subhead, body section.second p.desc, body section.second h2, body section.second .subhead, body section.third p.desc, body section.third h2, body section.third .subhead, body section.fourth p.desc, body section.fourth h2, body section.fourth .subhead {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body header.container-fluid .headblock .headtext h1 {
+    font-size: 50px;
+  }
+  body section.first h2 {
+    font-size: 45px;
+  }
+  body section.first p.p-head {
+    font-size: 20px;
+  }
+  body section.first p.p-bold.mob {
+    display: block;
+  }
+  body section.first p.p-text {
+    margin-top: 15px;
+  }
+  body section.first .steps {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  body section.first .steps .step .number {
+    margin-top: 5px;
+  }
+  body section.first .steps .step .name {
+    margin-top: 0;
+  }
+  body section.second .subhead p.desc {
+    font-size: 20px;
+  }
+  body section.second img.second-img_center {
+    margin-top: 35px;
+  }
+  body section.third {
+    padding-bottom: 100px;
+  }
+  body section.third p.desc {
+    font-size: 22px;
+  }
+  body section.second h2, body section.third h2, body section.fourth h2 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body header.container-fluid .headblock {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  body header.container-fluid .headblock .headtext p.desc:before {
+    position: relative;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin-right: 0;
+    width: 66px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body section.elems .scroll {
+    display: none;
+  }
+  body header.container-fluid .headblock .headtext h1 {
+    font-size: 40px;
+  }
+  body header.container-fluid .headblock .headtext p.desc {
+    font-size: 20px;
+  }
+  body section.first h2::before {
+    margin-top: -75px;
+  }
+  body section.first img.img-marks {
+    margin-right: 10px;
+  }
+  body section.second h2::before {
+    margin-top: -85px;
+  }
+  body section.second .subhead {
+    margin-top: 10px;
+  }
+  body section.second .subhead p.desc {
+    margin-top: 15px;
+  }
+  body section.second .stages .stage ul.list, body section.second .stages .stage .list-head {
+    padding-left: 25px;
+  }
+  body section.second .stages .stage ul.list li {
+    font-size: 18px;
+  }
+  body section.second .stages .stage .list-head span.head {
+    font-size: 18px;
+  }
+  body section.second img.second-img_center {
+    width: 130%;
+    margin: 0 -14%;
+    margin-top: 25px;
+  }
+  body section.third {
+    padding-top: 170px;
+    padding-bottom: 75px;
+    background-position-x: 60%;
+  }
+  body section.third h2 br {
+    display: block;
+  }
+  body section.third h2::before {
+    margin-top: -75px;
+  }
+  body section.third .buttons {
+    margin-top: 45px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section.third .buttons a.btn {
+    margin-bottom: 15px;
+  }
+  body section.fourth h2::before {
+    margin-top: -75px;
+  }
+  body section.fourth a.btn-link-trainers {
+    width: 250px;
+    height: 70px;
+    border-radius: 35px;
+  }
+  body section.fourth a.btn-link-trainers span {
+    font-size: 20px;
+  }
+  body section.first h2, body section.second h2, body section.third h2, body section.fourth h2 {
+    font-size: 35px;
+  }
+  body section.first h2::before, body section.second h2::before {
+    font-size: 85px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body header.container-fluid nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  body header.container-fluid nav .menu span.button-desc {
+    display: none;
+  }
+  body header.container-fluid .headblock {
+    padding-top: 50px;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+  body header.container-fluid .headblock .button {
+    margin-top: 60px;
+    margin-bottom: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+  }
+  body header.container-fluid .headblock .headtext h1 {
+    font-size: 34px;
+  }
+  body section.first h2 span.red {
+    display: block;
+  }
+  body section.first h2::before {
+    margin-top: -37px;
+    margin-left: -20px;
+    font-size: 113px;
+  }
+  body section.first .steps .step {
+    width: 30%;
+  }
+  body section.first .steps .step .name {
+    font-size: 13px;
+  }
+  body section.first .steps .step .number {
+    font-size: 18px;
+  }
+  body section.first p.p-head {
+    max-width: 85%;
+    margin-top: 25px;
+  }
+  body section.first img.img-marks {
+    margin-top: 40px;
+  }
+  body section.second {
+    padding-top: 175px;
+    padding-bottom: 100px;
+  }
+  body section.second h2 {
+    font-size: 30px;
+  }
+  body section.second h2 br {
+    display: block;
+  }
+  body section.second h2::before {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  body section.second .subhead {
+    margin-top: 35px;
+  }
+  body section.second .subhead p.desc {
+    margin-top: 30px;
+  }
+  body section.second .stages {
+    padding-top: 25px;
+  }
+  body section.second .stages .stage .list-head {
+    margin-top: 20px;
+  }
+  body section.second .stages .stage .list-head span.head {
+    max-width: 75%;
+    line-height: 1.2;
+  }
+  body section.second .stages .stage .list-head span.head, body section.second .stages .stage .list-head img {
+    vertical-align: top;
+  }
+  body section.second .stages .stage ul.list, body section.second .stages .stage .list-head {
+    padding-left: 15px;
+  }
+  body section.second .stages .stage ul.list {
+    margin-bottom: 25px;
+  }
+  body section.second .stages .stage ul.list li {
+    padding-left: 28px;
+  }
+  body section.second .stages .stage ul.list li::before {
+    position: absolute;
+    left: 35px;
+  }
+  body section.second .stages .stage .pay-block span.text a.more {
+    display: inline-block;
+    max-width: 40%;
+    text-align: left;
+    line-height: 1.1;
+    margin-left: 10px;
+  }
+  body section.second .stages .stage .pay-block span.text span.price, body section.second .stages .stage .pay-block span.text a.more {
+    vertical-align: middle;
+  }
+  body section.third {
+    padding-top: 125px;
+  }
+  body section.third h2::before {
+    margin-top: -33px;
+    margin-left: -38px;
+  }
+  body section.third .buttons {
+    margin-top: 35px;
+  }
+  body section.fourth {
+    padding-top: 25px;
+  }
+  body section.fourth h2::before {
+    margin-top: -15px;
+    margin-left: -30px;
+  }
+  body section.fourth .trainers .trainer img.img-trainer {
+    width: 100%;
+  }
 }

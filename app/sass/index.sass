@@ -3,6 +3,8 @@
 
 body
 	background-color: #ffffff
+	section
+		overflow: hidden
 	// .consult
 	// 	transition: 1s
 	// 	cursor: pointer
@@ -104,21 +106,22 @@ body
 					z-index: 1000
 					position: absolute
 					top: 100%
-					left: 0
+					left: -16px
 					width: 100px
 					transform: rotate(-90deg)
 					margin-top: 75px
-					margin-left: 32px
 					font-family: 'MullerMedium'
 					font-size: 11px
 					color: #ffffff
 					text-transform: uppercase
+				span.button-desc.hidden
+					opacity: 0
 					
 			.logo, .adress, .socials, .phoneCont
 				position: relative
 				z-index: 20
 			.adress
-				padding-left: 140px
+				padding-left: 7.5%
 				.circleAdress
 					background-color: #fff
 					border: 1px solid rgba(32, 32, 32, 0.1)
@@ -173,7 +176,7 @@ body
 				animation: pulsation 2s infinite
 				overflow: hidden
 				position: relative
-				z-index: 100
+				z-index: 200
 				cursor: pointer
 				border-radius: 50%
 				background-color: rgb(255, 46, 47)
@@ -208,7 +211,7 @@ body
 	section.first
 		background-image: url('../img/index/index-first-bg.png')
 		background-repeat: no-repeat
-		background-size: contain
+		background-size: auto
 		background-position: bottom
 		position: relative
 		z-index: 101
@@ -232,6 +235,10 @@ body
 			bottom: 0
 			left: 0
 			margin-left: -15px
+		img.img-center_mob
+			display: none
+			margin-left: auto
+			margin-right: auto
 		h2
 			position: relative
 			font-family: 'MullerExtraBold'
@@ -253,19 +260,20 @@ body
 			margin: 0
 		p.p-head
 			position: relative
-			max-width: 480px
+			max-width: 89%
 			margin-top: 15px
 			margin-bottom: 20px
 			line-height: 1.25
 			font-family: 'MullerMedium'
 			font-size: 26px
 			color: #000000
-		p.p-head:before
-			position: absolute
-			content: url('../img/index/index-first-p-marks.jpg')
-			top: 0
-			right: 100%
+		img.img-marks
 			margin-right: 20px
+			margin-top: 20px
+			margin-left: -45px
+		p.p-head, img.img-marks
+			display: inline-block
+			vertical-align: top
 		img.separ
 			display: block
 			width: 100%
@@ -281,6 +289,10 @@ body
 			font-family: 'MullerMedium'
 			font-size: 20px
 			color: #000000
+		p.p-bold.mob
+			display: none
+		p.tac
+			text-align: center
 		.steps
 			padding-top: 40px
 			padding-bottom: 35px
@@ -314,6 +326,16 @@ body
 				font-family: 'MullerBold'
 				font-size: 20px
 				color: #000000
+		a.btn-more.mob
+			display: none
+			font-size: 18px
+			font-family: 'MullerMedium'
+			color: #ff2e2f
+			text-decoration: underline
+			text-align: center
+			margin-top: 10px
+		.hidden.collapse:not(.show)
+			display: block
 	section.second
 		position: relative
 		z-index: 100
@@ -461,12 +483,14 @@ body
 							color: #000
 	section.third
 		position: relative
-		z-index: 100
+		z-index: 101
 		background-image: url("../img/index/index-third-bg.jpg")
-		background-size: cover
+		background-size: auto
+		background-position: center
 		background-repeat: no-repeat
-		padding-top: 15%
-		padding-bottom: 14%
+		padding-top: 13%
+		padding-bottom: 12%
+
 		img.third-top-bg
 			position: absolute
 			z-index: 3
@@ -552,7 +576,7 @@ body
 			position: absolute
 			z-index: -1
 			margin-top: -42px
-			margin-right: -110px
+			margin-right: -80px
 			top: 0
 			right: 100%
 			content: '04'
@@ -617,6 +641,7 @@ body
 		padding-top: 12%
 		padding-bottom: 18%
 		background-color: #fff
+		overflow: visible
 		img.fifth-top-bg
 			position: absolute
 			pointer-events: none
@@ -698,4 +723,471 @@ body
 	section.contacts
 		z-index: 101
 
+@media only screen and(max-width: 1600px)
+	body
+		header.container-fluid
+			nav
+				.adress
+					padding-left: 15px
+@media only screen and(max-width: 1400px)
+	body
+		section.first
+			img.img-sub
+				display: none
+		section.first, section.second, section.third
+			h2, .subhead
+				margin-left: 13%
+		section.third
+			p.desc
+				margin-left: 13%
+		section.fourth
+			h2
+				margin-left: 26%
+			h2::before
+				margin-right: -38%
+
+@media only screen and(max-width: 1300px)
+	body
+		header.container-fluid
+			nav
+				.menu 
+					span.button-desc
+						margin-top: 55px
+			.headblock
+				.headtext
+					p.desc:before
+						width: 45px
+						margin-right: 15px
+		section.first
+			padding-top: 50px
+			h2
+				font-size: 52px
+			h2::before
+				margin-top: -59px
+				margin-right: -57px
+				font-size: 155px
+			p.p-head
+				font-size: 22px
+			p.p-text
+				margin-right: 0
+				font-size: 15px
+			p.p-text.p-bold
+				font-size: 18px
+			.author 
+				span
+					font-size: 18px
+			.steps
+				margin-right: 0
+				.step
+					.name
+						font-size: 15px
+@media only screen and(max-width: 1200px)
+	body
+		header.container-fluid
+			.headblock
+				.headtext
+					h1
+						font-size: 50px
+					p.desc
+						margin-top: 17px
+@media only screen and(max-width: 1199px)
+	body
+		section.second
+			h2::before
+				margin-top: -55px
+				margin-right: -65px
+				font-size: 155px
+			img.second-img_center
+				width: 635px
+			.subhead
+				margin-top: 25px
+				p.desc
+					font-size: 22px
+			.stages
+				.stage
+					ul.list
+						padding-left: 9px
+						padding-bottom: 0
+					.list-head
+						margin-top: 10px
+						padding-left: 5px
+						span.head
+							margin-left: 5px
+		section.third
+			padding-bottom: 8%
+			h2::before
+				margin-top: -55px
+				margin-right: -65px
+				font-size: 155px
+			p.desc 
+				font-size: 22px
+			p.desc::before
+				margin-top: 10px
+				margin-right: 20px
+		section.third, section.second, section.fourth
+			h2
+				font-size: 52px
+		section.fourth
+			h2::before
+				font-size: 155px
+
+
+@media only screen and(max-width: 991px)
+	body
+		header.container-fluid
+			.headblock
+				padding-bottom: 235px
+				.headtext
+					h1
+						font-size: 63px
+				.button
+					margin-top: 15px
+		section.first
+			background-image: url('../img/index/index-first-bg_mob.png')
+			background-size: contain
+			padding-bottom: 125px
+			overflow: visible
+			h2::before
+				margin: auto
+				left: 0
+				right: 0
+				margin-top: -95px
+				text-align: center
+				font-size: 105px
+			img.img-center_mob
+				display: block
+			.author.desk
+				display: none
+			p.p-text
+				font-size: 17px
+			.steps
+				.step
+					width: 27.5%
+					.name
+						br
+							display: none
+			img.img-marks
+				margin-left: 0
+			a.btn-more.mob
+				display: block
+			.hidden.collapse:not(.show)
+				display: none
+		section.second
+			margin-top: -150px
+			padding-top: 250px
+			padding-bottom: 100px
+			background-color: #303537
+			h2
+				color: #fff
+				br
+					display: none
+			h2::before
+				margin: auto
+				left: 0
+				right: 0
+				margin-top: -95px
+				text-align: center
+				font-size: 105px
+				color: #c7c7c7
+				opacity: 0.5
+			.subhead
+				p.desc
+					color: #fff
+					max-width: 100%
+			img.second-img_center
+				position: relative
+				width: 100%
+				margin: 0
+			.stages
+				padding-top: 50px
+				.stage
+					margin-bottom: 25px
+					ul.list
+						padding-left: 10%
+						li
+							font-size: 20px
+					.list-head
+						padding-left: 9.5%
+						span.head
+							font-size: 20px
+		section.third
+			background-image: url('../img/index/index-third-bg_mob.png')
+			background-size: cover
+			padding-top: 220px
+			padding-bottom: 170px
+			margin-top: -110px
+			img.third-top-bg
+				display: none
+			h2
+				br
+					display: none
+			h2::before
+				margin: auto
+				left: 0
+				right: 0
+				margin-top: -95px
+				text-align: center
+				font-size: 113px
+			p.desc
+				margin-top: 25px
+			p.desc::before
+				position: relative
+				right: 0
+				margin: 0
+				margin-bottom: 27.5px
+				display: block
+		section.fourth
+			margin-top: -15px
+			padding-top: 80px
+			h2::before
+				margin: auto
+				left: 0
+				right: 0
+				margin-top: -60px
+				text-align: center
+				font-size: 113px
+			p.desc
+				margin-top: 30px
+				margin-bottom: 0
+				font-size: 22px
+			p.desc::before
+				margin-bottom: 30px
+			.trainers
+				padding-top: 25px
+				.trainer
+					text-align: center
+					margin-bottom: 40px
+					.line
+						margin-left: auto
+						margin-right: auto
+						margin-top: 20px
+		section.first, section.second, section.third, section.fourth
+			p.desc, h2, .subhead
+				margin-left: 0
+
+@media only screen and(max-width: 767px)
+	body
+		header.container-fluid
+			.headblock
+				.headtext
+					h1
+						font-size: 50px
+		section.first
+			h2
+				font-size: 45px
+			p.p-head
+				font-size: 20px
+			p.p-bold.mob
+				display: block
+			p.p-text
+				margin-top: 15px
+			.steps
+				padding-top: 25px
+				padding-bottom: 20px
+				.step
+					.number
+						margin-top: 5px
+					.name
+						margin-top: 0
+		section.second
+			.subhead
+				p.desc
+					font-size: 20px
+			img.second-img_center
+				margin-top: 35px
+		section.third
+			padding-bottom: 100px
+			p.desc
+				font-size: 22px
+
+		section.second, section.third, section.fourth
+			h2
+				font-size: 45px
+@media only screen and(max-width: 600px)
+	body
+		header.container-fluid
+			.headblock
+				padding-top: 100px
+				padding-bottom: 150px
+				.headtext
+					p.desc:before
+						position: relative
+						right: 0
+						top: 0
+						left: 0
+						margin-right: 0
+						width: 66px
+						display: block
+						margin-top: 0
+						margin-bottom: 15px
+@media only screen and(max-width: 500px)
+	body
+		section.elems
+			.scroll
+				display: none
+		header.container-fluid
+			.headblock
+				.headtext
+					h1
+						font-size: 40px
+					p.desc
+						font-size: 20px
+		section.first
+			h2::before
+				margin-top: -75px
+			img.img-marks
+				margin-right: 10px
+		section.second
+			h2::before
+				margin-top: -85px
+			.subhead
+				margin-top: 10px
+				p.desc
+					margin-top: 15px
+			.stages
+				.stage
+					ul.list, .list-head
+						padding-left: 25px
+					ul.list
+						li
+							font-size: 18px
+					.list-head
+						span.head
+							font-size: 18px
+			img.second-img_center
+				width: 130%
+				margin: 0 -14%
+				margin-top: 25px
+		section.third
+			padding-top: 170px
+			padding-bottom: 75px
+			background-position-x: 60%
+			h2
+				br
+					display: block
+			h2::before
+				margin-top: -75px
+			.buttons
+				margin-top: 45px
+				flex-direction: column
+				a.btn
+					margin-bottom: 15px
+		section.fourth
+			h2::before
+				margin-top: -75px
+			a.btn-link-trainers
+				width: 250px
+				height: 70px
+				border-radius: 35px
+				span
+					font-size: 20px
+		section.first, section.second, section.third, section.fourth
+			h2
+				font-size: 35px
+		section.first, section.second
+			h2::before
+				font-size: 85px
+
+@media only screen and(max-width: 400px)
+	body
+		header.container-fluid
+			nav
+				padding-top: 5px
+				padding-bottom: 5px
+				.menu
+					span.button-desc
+						display: none
+			.headblock
+				padding-top: 50px
+				padding-bottom: 0
+				padding-left: 0
+				.button
+					margin-top: 60px
+					margin-bottom: -25px
+					margin-left: auto
+					margin-right: auto
+					width: 150px
+					height: 150px
+				.headtext
+					h1
+						font-size: 34px
+		section.first
+			h2
+				span.red
+					display: block
+			h2::before
+				margin-top: -37px
+				margin-left: -20px
+				font-size: 113px
+			.steps
+				.step
+					width: 30%
+					.name
+						font-size: 13px
+					.number
+						font-size: 18px
+			p.p-head
+				max-width: 85%
+				margin-top: 25px
+			img.img-marks
+				margin-top: 40px
+		section.second
+			padding-top: 175px
+			padding-bottom: 100px
+			h2
+				font-size: 30px
+				br
+					display: block
+			h2::before
+				margin-top: -30px
+				margin-left: -30px
+			.subhead
+				margin-top: 35px
+				p.desc 
+					margin-top: 30px
+			.stages
+				padding-top: 25px
+				.stage
+					.list-head
+						margin-top: 20px
+						span.head
+							max-width: 75%
+							line-height: 1.2
+						span.head, img
+							vertical-align: top
+					ul.list, .list-head
+						padding-left: 15px
+					ul.list
+						margin-bottom: 25px
+						li
+							padding-left: 28px
+						li::before
+							position: absolute
+							left: 35px
+					.pay-block
+						span.text
+							a.more
+								display: inline-block
+								max-width: 40%
+								text-align: left
+								line-height: 1.1
+								margin-left: 10px
+							span.price, a.more
+								vertical-align: middle
+		section.third
+			padding-top: 125px
+			h2::before
+				margin-top: -33px
+				margin-left: -38px
+			.buttons
+				margin-top: 35px
+		section.fourth
+			padding-top: 25px
+			h2::before
+				margin-top: -15px
+				margin-left: -30px
+			.trainers
+				.trainer
+					img.img-trainer
+						width: 100%
 
