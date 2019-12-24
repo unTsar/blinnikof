@@ -122,6 +122,7 @@ main section.desc {
 
 main section.desc img.img-school {
   margin-left: 4%;
+  height: auto;
 }
 
 main section.desc .textblock, main section.desc img.img-school {
