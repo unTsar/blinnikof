@@ -1,12 +1,30 @@
 ymaps.ready(init);   
 
 function init(){
+    if(document.getElementById('mapy').offsetWidth <= 767){
+        var MapZoomVal = 11;
+        var MapCenterVal = [55.754567, 37.614910];
+    }
+    if(document.getElementById('mapy').offsetWidth >= 768){
+        var MapZoomVal = 13;
+        var MapCenterVal = [55.7574454, 37.5471324];
+    }
     var myMap = new ymaps.Map("mapy", {
-        center: [55.7574454, 37.5471324],
-        zoom: 13,
+        center: MapCenterVal,
+        zoom: MapZoomVal,
         controls: ['typeSelector', 'trafficControl', 'fullscreenControl']
 
     }); 
+    myMap.events.add('sizechange', function(e){ 
+        if(document.getElementById('mapy').offsetWidth <= 767){
+            myMap.setZoom(11);
+            myMap.setCenter([55.754567, 37.614910], 11);
+        }
+        if(document.getElementById('mapy').offsetWidth >= 768){
+            myMap.setZoom(13);
+            myMap.setCenter([55.7574454, 37.5471324], 13);
+        }
+    });
     var zoomControl = new ymaps.control.ZoomControl({  
         options: {            
             position: {
