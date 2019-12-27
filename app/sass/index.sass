@@ -638,8 +638,8 @@ body
 	section.fifth
 		position: relative
 		z-index: 100
-		padding-top: 12%
-		padding-bottom: 18%
+		padding-top: 170px
+		padding-bottom: 340px
 		background-color: #fff
 		overflow: visible
 		img.fifth-top-bg
@@ -656,6 +656,8 @@ body
 			font-family: 'MullerExtraBold'
 			font-size: 60px
 			color: #fff
+			span.red.mob
+				color: #fff
 		h2::before
 			position: absolute
 			z-index: -1
@@ -699,10 +701,17 @@ body
 				.carousel-item
 					position: relative
 					z-index: -1
+					overflow: hidden
+					img
+						height: 940px
+						width: auto !important
+						max-width: none
 					.textblock
 						position: absolute
-						bottom: 20%
-						left: 21%
+						bottom: 28%
+						margin: 0 auto
+						left: 0
+						right: 0
 						span.number
 							font-family: 'MullerExtraBold'
 							font-size: 48px
@@ -734,9 +743,6 @@ body
 		section.first
 			img.img-sub
 				display: none
-		section.first, section.second, section.third
-			h2, .subhead
-				margin-left: 13%
 		section.third
 			p.desc
 				margin-left: 13%
@@ -745,6 +751,9 @@ body
 				margin-left: 26%
 			h2::before
 				margin-right: -38%
+		section.first, section.second, section.third, section.fifth
+			h2, .subhead
+				margin-left: 13%
 
 @media only screen and(max-width: 1300px)
 	body
@@ -781,6 +790,9 @@ body
 				.step
 					.name
 						font-size: 15px
+		section.fifth
+			.buttons
+				right: 8%
 @media only screen and(max-width: 1200px)
 	body
 		header.container-fluid
@@ -824,10 +836,10 @@ body
 			p.desc::before
 				margin-top: 10px
 				margin-right: 20px
-		section.third, section.second, section.fourth
+		section.third, section.second, section.fourth, section.fifth
 			h2
 				font-size: 52px
-		section.fourth
+		section.fourth, section.fifth
 			h2::before
 				font-size: 155px
 
@@ -961,10 +973,61 @@ body
 						margin-left: auto
 						margin-right: auto
 						margin-top: 20px
+		section.fifth
+			padding-bottom: 200px
+			.csl
+				.carousel-inner
+					.carousel-item
+						img
+							height: 675px
+						.textblock
+							bottom: 25%
 		section.first, section.second, section.third, section.fourth
 			p.desc, h2, .subhead
 				margin-left: 0
-
+@media only screen and(max-width: 768px)
+	body
+		section.fifth
+			padding-bottom: 90px
+			h2
+				font-size: 45px
+				color: #000
+				margin-left: 0
+				br
+					display: none
+				span.red.mob
+					color: #ff2e2f
+			h2::before
+				margin: auto
+				left: 0
+				right: 0
+				margin-top: -95px
+				text-align: center
+				font-size: 113px
+				color: #e7e7e7
+			.csl
+				position: relative
+				.carousel-inner
+					.carousel-item
+						.textblock
+							padding-bottom: 15px
+							position: relative
+							span.number
+								font-size: 33px
+							span.name
+								font-size: 22px
+								span.tahoma
+									font-size: 23px
+									line-height: 0
+							span.number, span.name
+								color: #000
+			.buttons
+				.btn
+					width: 50px
+					height: 50px
+					background-color: #373737
+					svg, path
+						fill: #ffffff
 @media only screen and(max-width: 767px)
 	body
 		header.container-fluid
@@ -999,7 +1062,6 @@ body
 			padding-bottom: 100px
 			p.desc
 				font-size: 22px
-
 		section.second, section.third, section.fourth
 			h2
 				font-size: 45px
@@ -1020,6 +1082,13 @@ body
 						display: block
 						margin-top: 0
 						margin-bottom: 15px
+		section.fifth
+			padding-bottom: 70px
+			.csl
+				.carousel-inner
+					.carousel-item
+						img
+							height: 400px
 @media only screen and(max-width: 500px)
 	body
 		section.elems
@@ -1081,12 +1150,22 @@ body
 				border-radius: 35px
 				span
 					font-size: 20px
-		section.first, section.second, section.third, section.fourth
-			h2
-				font-size: 35px
+		section.fifth
+			padding-top: 125px
+			.csl
+				.carousel-inner
+					.carousel-item
+						.textblock
+							.line
+								margin-bottom: 10px
+							img
+								height: 325px
 		section.first, section.second
 			h2::before
 				font-size: 85px
+		section.first, section.second, section.third, section.fourth, section.fifth
+			h2
+				font-size: 35px
 
 @media only screen and(max-width: 400px)
 	body
@@ -1190,4 +1269,15 @@ body
 				.trainer
 					img.img-trainer
 						width: 100%
+		section.fifth
+			padding-top: 65px
+			h2::before
+				margin-top: -40px
+				margin-left: -40px
+			.csl
+				.carousel-inner
+					.carousel-item
+						img
+							height: 240px
+
 

@@ -1,8 +1,9 @@
-ymaps.ready(init);    
-function init(){ 
+ymaps.ready(init);   
+
+function init(){
     var myMap = new ymaps.Map("mapy", {
-        center: [55.76201170, 37.55397527],
-        zoom: 16,
+        center: [55.7574454, 37.5471324],
+        zoom: 13,
         controls: ['typeSelector', 'trafficControl', 'fullscreenControl']
 
     }); 
@@ -16,7 +17,13 @@ function init(){
     });
     myMap.controls.add(zoomControl);
 
-    var myPlacemark = new ymaps.Placemark([55.76224157, 37.55588500], {}, {
+    var myPlacemark1 = new ymaps.Placemark([55.740249, 37.528370], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/point.png',
+        iconImageSize: [96, 96],
+        iconImageOffset: [-3, -90]
+    });
+    var myPlacemark2 = new ymaps.Placemark([55.768522, 37.680490], {}, {
         iconLayout: 'default#image',
         iconImageHref: 'img/point.png',
         iconImageSize: [96, 96],
@@ -26,5 +33,7 @@ function init(){
     myMap.behaviors.disable('scrollZoom');
     myMap.behaviors.disable('multiTouch');
     myMap.container.fitToViewport();
-    myMap.geoObjects.add(myPlacemark);
+    myMap.geoObjects.add(myPlacemark1);
+    myMap.geoObjects.add(myPlacemark2);
+
 }

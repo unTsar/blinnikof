@@ -996,8 +996,8 @@ body section.fourth a.btn-link-trainers:hover {
 body section.fifth {
   position: relative;
   z-index: 100;
-  padding-top: 12%;
-  padding-bottom: 18%;
+  padding-top: 170px;
+  padding-bottom: 340px;
   background-color: #fff;
   overflow: visible;
 }
@@ -1017,6 +1017,10 @@ body section.fifth h2 {
   pointer-events: none;
   font-family: 'MullerExtraBold';
   font-size: 60px;
+  color: #fff;
+}
+
+body section.fifth h2 span.red.mob {
   color: #fff;
 }
 
@@ -1082,12 +1086,21 @@ body section.fifth .csl {
 body section.fifth .csl .carousel-inner .carousel-item {
   position: relative;
   z-index: -1;
+  overflow: hidden;
+}
+
+body section.fifth .csl .carousel-inner .carousel-item img {
+  height: 940px;
+  width: auto !important;
+  max-width: none;
 }
 
 body section.fifth .csl .carousel-inner .carousel-item .textblock {
   position: absolute;
-  bottom: 20%;
-  left: 21%;
+  bottom: 28%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 body section.fifth .csl .carousel-inner .carousel-item .textblock span.number {
@@ -1129,9 +1142,6 @@ body section.contacts {
   body section.first img.img-sub {
     display: none;
   }
-  body section.first h2, body section.first .subhead, body section.second h2, body section.second .subhead, body section.third h2, body section.third .subhead {
-    margin-left: 13%;
-  }
   body section.third p.desc {
     margin-left: 13%;
   }
@@ -1140,6 +1150,9 @@ body section.contacts {
   }
   body section.fourth h2::before {
     margin-right: -38%;
+  }
+  body section.first h2, body section.first .subhead, body section.second h2, body section.second .subhead, body section.third h2, body section.third .subhead, body section.fifth h2, body section.fifth .subhead {
+    margin-left: 13%;
   }
 }
 
@@ -1180,6 +1193,9 @@ body section.contacts {
   }
   body section.first .steps .step .name {
     font-size: 15px;
+  }
+  body section.fifth .buttons {
+    right: 8%;
   }
 }
 
@@ -1233,10 +1249,10 @@ body section.contacts {
     margin-top: 10px;
     margin-right: 20px;
   }
-  body section.third h2, body section.second h2, body section.fourth h2 {
+  body section.third h2, body section.second h2, body section.fourth h2, body section.fifth h2 {
     font-size: 52px;
   }
-  body section.fourth h2::before {
+  body section.fourth h2::before, body section.fifth h2::before {
     font-size: 155px;
   }
 }
@@ -1401,8 +1417,71 @@ body section.contacts {
     margin-right: auto;
     margin-top: 20px;
   }
+  body section.fifth {
+    padding-bottom: 200px;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item img {
+    height: 675px;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item .textblock {
+    bottom: 25%;
+  }
   body section.first p.desc, body section.first h2, body section.first .subhead, body section.second p.desc, body section.second h2, body section.second .subhead, body section.third p.desc, body section.third h2, body section.third .subhead, body section.fourth p.desc, body section.fourth h2, body section.fourth .subhead {
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body section.fifth {
+    padding-bottom: 90px;
+  }
+  body section.fifth h2 {
+    font-size: 45px;
+    color: #000;
+    margin-left: 0;
+  }
+  body section.fifth h2 br {
+    display: none;
+  }
+  body section.fifth h2 span.red.mob {
+    color: #ff2e2f;
+  }
+  body section.fifth h2::before {
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: -95px;
+    text-align: center;
+    font-size: 113px;
+    color: #e7e7e7;
+  }
+  body section.fifth .csl {
+    position: relative;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item .textblock {
+    padding-bottom: 15px;
+    position: relative;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item .textblock span.number {
+    font-size: 33px;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item .textblock span.name {
+    font-size: 22px;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item .textblock span.name span.tahoma {
+    font-size: 23px;
+    line-height: 0;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item .textblock span.number, body section.fifth .csl .carousel-inner .carousel-item .textblock span.name {
+    color: #000;
+  }
+  body section.fifth .buttons .btn {
+    width: 50px;
+    height: 50px;
+    background-color: #373737;
+  }
+  body section.fifth .buttons .btn svg, body section.fifth .buttons .btn path {
+    fill: #ffffff;
   }
 }
 
@@ -1464,6 +1543,12 @@ body section.contacts {
     display: block;
     margin-top: 0;
     margin-bottom: 15px;
+  }
+  body section.fifth {
+    padding-bottom: 70px;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item img {
+    height: 400px;
   }
 }
 
@@ -1539,11 +1624,20 @@ body section.contacts {
   body section.fourth a.btn-link-trainers span {
     font-size: 20px;
   }
-  body section.first h2, body section.second h2, body section.third h2, body section.fourth h2 {
-    font-size: 35px;
+  body section.fifth {
+    padding-top: 125px;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item .textblock .line {
+    margin-bottom: 10px;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item .textblock img {
+    height: 325px;
   }
   body section.first h2::before, body section.second h2::before {
     font-size: 85px;
+  }
+  body section.first h2, body section.second h2, body section.third h2, body section.fourth h2, body section.fifth h2 {
+    font-size: 35px;
   }
 }
 
@@ -1670,5 +1764,15 @@ body section.contacts {
   }
   body section.fourth .trainers .trainer img.img-trainer {
     width: 100%;
+  }
+  body section.fifth {
+    padding-top: 65px;
+  }
+  body section.fifth h2::before {
+    margin-top: -40px;
+    margin-left: -40px;
+  }
+  body section.fifth .csl .carousel-inner .carousel-item img {
+    height: 240px;
   }
 }
