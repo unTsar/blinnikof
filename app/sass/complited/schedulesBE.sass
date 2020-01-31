@@ -1,0 +1,325 @@
+@import "vars"
+@import "fonts"
+
+
+main
+	.head
+		line-height: 1.2
+		font-family: 'MullerExtraBold'
+		font-size: 50px
+		color: #262626
+		.red
+			color: #e83333
+	.red
+		color: #e83333
+	section.header-breadcrumbs
+		padding-top: 65px
+	section.dates
+		margin-bottom: 65px
+		.header
+			margin-top: 50px
+			margin-bottom: 50px
+			.line
+				width: 67px
+				height: 3px
+				background-color: #FF2E2E
+				margin-top: 20px
+				margin-bottom: 30px
+			p.text
+				font-family: 'MullerMedium'
+				font-size: 22px
+				color: #000
+				line-height: 1.3
+				margin-top: 10px
+			.button
+				margin-left: 25px
+				width: 193px
+				height: 58px
+				border-radius: 29px
+				background-color: #ff3232
+				color: #fff
+				font-size: 18px
+				font-family: 'MullerMedium'
+				cursor: pointer
+		.list
+			position: relative
+			background-color: #fff
+			width: 100%
+			padding: 65px 0 65px 65px
+			box-shadow: 0px 0px 32px 0px rgba(70, 71, 72, 0.07)
+			border-radius: 15px
+			font-family: 'MullerMedium'
+			font-size: 20px
+			.wrap
+				display: grid
+				grid-template-columns: 1fr 1fr 1fr
+				.elem
+					margin-top: 5px
+					margin-bottom: 5px
+					.circle
+						width: 30px
+						height: 30px
+						border-radius: 50%
+						background-color: #ff3232
+						span.number
+							color: #fff
+							font-family: 'MullerBold'
+							font-size: 14px
+					span.date
+						margin-top: 3px
+						margin-left: 5px
+						transition: 0.3s
+						cursor: pointer
+						color: #000
+						line-height: 1.8
+					span.date:hover
+						color: #ff3232
+		.list:after
+			content: ''
+			position: absolute
+			top: -7px
+			right: 150px
+			width: 20px
+			height: 20px
+			background-color: #fff
+			transform: rotate(-45deg)
+	section.lessons
+		.head
+			margin-top: 30px
+			margin-bottom: 30px
+		.item
+			margin-top: 30px
+			margin-bottom: 30px
+			background-color: #fff
+			border-radius: 15px
+			box-shadow: 0px 0px 11px 0px rgba(70, 71, 72, 0.07)
+			padding-bottom: 30px
+			.topDate
+				border-bottom: 1px solid #EDEDED
+				font-family: 'MullerBold'
+				font-size: 19px
+				color: #000
+				height: 60px
+			.content
+				padding-left: 30px	
+				.name
+					font-family: 'MullerBold'
+					font-size: 20px
+					color: #000
+					line-height: 1.2
+					margin-top: 20px
+					margin-bottom: 20px
+				.places
+
+					margin-top: 17.5px
+					margin-bottom: 17.5px
+					.text
+						font-family: 'MullerLight'
+						font-size: 18px
+						color: #000
+						margin-left: 10px
+						margin-top: 2.5px
+					.circle
+						width: 30px
+						height: 30px
+						border-radius: 50%
+						color: #fff
+					.circle.red
+						background-color: rgb(255, 50, 50)
+					.circle.green
+						background-color: rgb(145, 184, 83)
+						span
+							font-family: 'MullerBold'
+							font-size: 16px
+				.times
+					padding-right: 25px
+					margin-bottom: 30px
+					.line
+						span.day
+							font-family: 'MullerLight'
+							font-size: 18px
+							color: #000
+						span.time
+							font-family: 'MullerMedium'
+							font-size: 18px
+							color: #323232
+			.button
+				margin-left: 30px	
+				width: 200px
+				height: 55px
+				background-color: transparent
+				border-radius: 30px
+				border: 2px solid #ff3232
+				transition: 0.3s
+				cursor: pointer
+				span
+					transition: 0.3s
+					font-family: 'MullerMedium'
+					font-size: 18px
+					color: #e22020
+			.button:hover
+				background-color: #ff3232
+			.button:hover span
+				color: #fff
+	section.form
+		.head
+			margin-top: 30px
+		.line
+			width: 67px
+			height: 3px
+			background-color: #FF2E2E
+			margin-top: 30px
+			margin-bottom: 30px
+		.desc
+			font-family: 'MullerMedium'
+			font-size: 22px
+			color: #000
+		form
+			padding-top: 50px
+			padding-bottom: 50px
+			input
+				padding-left: 30px
+				width: 100%
+				border-radius: 30px
+				height: 60px
+				border: 1px solid #E4E7EB
+				background-color: #fff
+				margin-bottom: 20px
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #5f5f5f    
+			input::-webkit-input-placeholder,
+			input::-moz-placeholder,        
+			input:-moz-placeholder,          
+			input:-ms-input-placeholder 
+				font-family: 'MullerLight'
+				font-size: 16px
+				color: #5f5f5f   
+			input.submit
+				padding: 0
+				text-align: center
+				width: 270px
+				height: 75px
+				border-radius: 35px
+				background-color: transparent
+				border: 2px solid #ff3232
+				color: #ff3232
+				transition: 0.3s
+				cursor: pointer
+				font-family: 'MullerMedium'
+				font-size: 20px
+			input.submit:hover
+				color: #fff
+				background-color: #ff3232
+
+@media only screen and (max-width: 1200px)
+	body
+		main
+			section.dates
+				.list::after	
+					right: 80px
+@media only screen and (max-width: 992px)
+	body
+		main 
+			.head
+				font-size: 40px
+			section.form
+				.desc
+					font-size: 20px
+				form
+					input.submit
+						width: 250px
+						height: 60px
+			section.dates
+				.header
+					p.text
+						font-size: 20px
+				.list::after	
+					right: 115px
+				.list
+					padding: 40px 0
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					justify-content: center
+					.wrap
+						grid-template-columns: 1fr 1fr
+						span
+							line-height: 2
+							margin-left: 25px
+							margin-right: 25px
+@media only screen and (max-width: 768px)
+	body
+		main
+			.head
+				font-size: 30px
+			section.dates
+				.list
+					justify-content: center
+					.wrap
+						grid-template-columns: 1fr
+						span.date
+							font-size: 17px
+				.list::after	
+					right: 65px
+				.header
+					p.text
+						font-size: 17px
+			section.lessons
+				.item
+					width: 70%
+					margin-left: auto
+					margin-right: auto
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					flex-direction: column
+					.content
+						padding-left: 15px
+					.button
+						align-self: center
+						margin: 0
+			section.form
+				.desc
+					font-size: 17px
+				form
+					padding-top: 15px
+					padding-bottom: 15px
+@media only screen and (max-width: 576px)
+	body
+		main
+			section.dates
+				.list::after	
+					right: 0
+					left: 0
+					margin: auto
+				.header
+					.wrap
+						flex-direction: column
+
+						.button
+							align-self: center
+							margin-left: 0
+			section.lessons
+				.item
+					width: 75%
+@media only screen and (max-width: 400px)
+	body
+		main
+			section.lessons
+				.item
+					width: 85%
+@media only screen and (max-width: 375px)
+	body
+		main
+			.head
+				font-size: 25px
+
+	
+
+
+				

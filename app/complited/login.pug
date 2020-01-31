@@ -1,0 +1,52 @@
+extends _layouts/home
+
+block styles
+	link(rel="stylesheet", href="css/login.css")
+	link(rel="stylesheet", href="css/contacts.css")
+
+block content
+	
+	include _partials/header.pug
+
+	main 
+		.container
+			section.header-breadcrumbs
+				.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="login.html") Авторизация]
+			section.content
+				.row
+					.col-12.col-md-5.col-lg-5.col-xl-5
+						h2 Авторизация
+						.logWith
+							span.subhead Войти с помощью:
+							.socials
+								a(href="#")
+									img.social(src="img/login/social-login-icon1.jpg", alt="social-login-icon1.jpg")
+								a(href="#")
+									img.social(src="img/login/social-login-icon2.jpg", alt="social-login-icon2.jpg")
+								a(href="#")
+									img.social(src="img/login/social-login-icon3.jpg", alt="social-login-icon3.jpg")
+					.col-12.col-md-7.col-lg-5.col-xl-4
+						.headtext
+							.line
+							.subhead Введите ваши данные для входа в личный кабинет:
+						.form
+							form(action="#")
+								input.input-form(type="email" placeholder="Ваш e-mail")
+								input.input-form(type="password" placeholder="Ваш пароль")
+								.checkform
+									input.checkbox-form#check1(type="checkbox")
+									label.check-label(for="check1") Запомнить
+						.buttons.d-flex.align-items-center.justify-content-between
+							a(href="#").button.buttonLogin.d-flex.align-items-center.justify-content-center
+								span Войти
+							a(href="resetPass.html").button.buttonReset.d-flex.align-items-center.justify-content-center
+								span Восстановить пароль
+					.col-lg-2.col-xl-3
+
+		include _partials/contacts.pug
+	include _partials/footer.pug
+
+
+block scripts
+
+	script(src="js/map.js")

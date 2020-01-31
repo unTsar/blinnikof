@@ -1200,6 +1200,9 @@ body section.contacts {
 }
 
 @media only screen and (max-width: 1200px) {
+  body header.container-fluid .headblock .headtext {
+    padding: 0 17px;
+  }
   body header.container-fluid .headblock .headtext h1 {
     font-size: 50px;
   }
@@ -1561,6 +1564,7 @@ body section.contacts {
   }
   body header.container-fluid .headblock .headtext p.desc {
     font-size: 20px;
+    line-height: 1.1;
   }
   body section.first h2::before {
     margin-top: -75px;
@@ -1650,7 +1654,7 @@ body section.contacts {
     display: none;
   }
   body header.container-fluid .headblock {
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 0;
     padding-left: 0;
   }
@@ -1659,11 +1663,23 @@ body section.contacts {
     margin-bottom: -25px;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
-    height: 150px;
+    width: 137px;
+    height: 137px;
+  }
+  body header.container-fluid .headblock .button span {
+    font-size: 11px;
+  }
+  body header.container-fluid .headblock .button svg {
+    width: 40px;
   }
   body header.container-fluid .headblock .headtext h1 {
     font-size: 34px;
+  }
+  body header.container-fluid .headblock .headtext h1 br {
+    display: none;
+  }
+  body header.container-fluid .headblock .headtext p.desc {
+    margin-top: 40px;
   }
   body section.first h2 span.red {
     display: block;
@@ -1733,7 +1749,8 @@ body section.contacts {
   }
   body section.second .stages .stage ul.list li::before {
     position: absolute;
-    left: 35px;
+    left: 0;
+    margin-left: 35px;
   }
   body section.second .stages .stage .pay-block span.text a.more {
     display: inline-block;

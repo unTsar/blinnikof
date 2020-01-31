@@ -1,15 +1,239 @@
 @import "vars"
 @import "fonts"
 
-.popup
-	transform: translate(-50%, -50%)
-	display: none
-	width: 25%
-	height: auto
-	img
-		width: 100%
-		height: auto
+body + div
+	display: none !important
 main
+	.video-section
+		display: none
+		.steps-navigation
+			padding: 50px 0 70px 0
+			a.step-link
+				font-family: 'MullerRegular'
+				font-size: 24px
+				color: #373737
+				margin-right: 45px
+				transition: 0.3s
+			a.step-link:hover
+				color: #ff2e2f
+		.course-step
+			padding-top: 30px
+			h2
+				font-family: 'MullerRegular'
+				font-size: 36px
+				color: #373737
+				margin: 0
+				margin-bottom: 50px
+
+		.lecture
+			margin-bottom: 90px
+			h3
+				font-family: 'MullerExtraBold'
+				font-size: 30px
+				color: #373737
+				margin: 0
+			.subhead
+				border-left: 4px solid #ff2e2f
+				font-family: 'MullerRegular'
+				font-size: 18px
+				color: #373737
+				padding-left: 30px
+				padding-top: 4px
+				line-height: 1.3
+				margin-top: 24px
+				margin-bottom: 40px
+			.separ-line
+				width: 50px
+				height: 4px
+				margin-top: 20px
+				margin-bottom: 40px
+				background-color: #ff2e2f
+			.slick-dots
+				bottom: 20px
+				li
+					button:before
+						font-size: 10px
+			.slick-next
+				right: -70px
+			.slick-prev
+				left: -60px
+			.slick-prev, .slick-next
+				z-index: 22
+				width: 54px
+				height: 54px
+			.slick-prev.slick-disabled, .slick-next.slick-disabled
+				display: none !important
+			.slick-prev::before, .slick-next::before
+				font-size: 0
+				content: ''
+				width: 54px
+				height: 54px
+				display: block
+				opacity: 1
+				background-repeat: no-repeat
+				background-position: center
+			.slick-prev::before
+				background-image: url('../img/profile/video-slider-arrow-left.png')
+			.slick-next::before
+				background-image: url('../img/profile/video-slider-arrow-right.png')
+			.slick-list
+				overflow: visible
+				margin: -50px -15px
+				padding: 50px 0px
+				.slick-slide
+					margin: 0 15px
+					opacity: 0
+					outline: none
+					transition: 0.3s
+				.slick-slide.slick-active
+					opacity: 1
+			.height-fluid
+				margin-left: -15px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				.video-item
+					margin: 0 15px
+			.video-slider.height-fluid
+				margin: 0
+				display: block
+				.video-item
+					margin: 0
+					height: 450px
+			.video-item
+				background-color: #ffffff
+				border-radius: 25px
+				display: inline-block
+				vertical-align: top
+				outline: none
+				padding: 25px
+				position: relative
+				transition: 0.3s
+				.video-index
+					position: absolute
+					z-index: 22
+					top: 0
+					left: 0
+					width: 50px
+					height: 50px
+					line-height: 39px
+					text-align: center
+					border: 6px solid #f8f8f8
+					border-radius: 50%
+					background-color: #ff2e2f
+					span
+						font-family: 'MullerBold'
+						font-size: 14px
+						color: #ffffff
+				.video-index.done
+					background-image: url('../img/profile/video-index-checkmark.png')
+					background-repeat: no-repeat
+					background-position: center
+					span
+						opacity: 0
+				ul.topics
+					padding-left: 25px
+					margin-top: 30px
+					margin-right: -15px
+					max-width: 300px
+					li
+						font-family: 'MullerLight'
+						font-size: 18px
+						color: #333333
+						margin-bottom: 7px
+						line-height: 1.2
+						letter-spacing: -0.5px
+						.li-dop
+							font-size: 16px
+							margin-top: 15px
+
+			.video-item:hover
+				box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3)
+			.video-item.disabled
+				position: relative
+				.video-container
+					opacity: 0.502
+				.video-index
+					background-color: #FF9697
+			.video-item.disabled::before
+				content: ''
+				position: absolute
+				z-index: 900
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+
+			.useful-links
+				padding-top: 10px
+				img, .textblock
+					display: inline-block
+					vertical-align: top
+				.textblock
+					padding-top: 15px
+					padding-left: 32px
+					h4
+						font-family: 'MullerBold'
+						font-size: 24px
+						color: #373737
+					ul
+						list-style-type: decimal
+						list-style-position: inside
+						padding-left: 5px
+						li
+							font-family: 'MullerLightItalic'
+							font-size: 18px
+							a
+								color: #ff2e2f
+								opacity: 0.8
+								transition: 0.3s
+							a:hover
+								opacity: 1
+								text-decoration: underline
+								font-weight: bold
+		.question-form
+			padding-top: 30px
+			h2, .subhead
+				color: #333333
+			h2
+				font-family: 'MullerExtraBold'
+				font-size: 36px
+				margin: 0
+			.subhead
+				font-family: 'MullerRegular'
+				font-size: 24px
+			form
+				padding-top: 40px
+				textarea
+					width: 100%
+					border-radius: 10px
+					height: 215px
+					background-color: #ffffff
+					border: 1px solid #d2d2d2
+					resize: none
+					padding-top: 15px
+					padding-left: 25px
+				textarea::-webkit-input-placeholder,
+				textarea::-moz-placeholder,
+				textarea:-moz-placeholder,
+				textarea:-ms-input-placeholder
+					font-family: 'MullerThin'
+					font-size: 16px
+					color: #777777
+				input.submit
+					background-color: rgb(55, 55, 55)
+					width: 192px
+					height: 54px
+					line-height: 50px
+					text-align: center
+					border-radius: 27px
+					margin-top: 25px
+					font-family: 'MullerBold'
+					font-size: 16px
+					color: #ffffff
+
 	section.header
 		.container
 			padding-top: 65px

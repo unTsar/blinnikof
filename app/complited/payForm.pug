@@ -1,0 +1,104 @@
+extends _layouts/home
+
+block styles
+	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/select2.min.css")
+	link(rel="stylesheet", href="css/payForm.css")
+
+
+block content
+	include _partials/header.pug
+	main
+		.container
+			.header-breadcrumbs
+				.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="payForm.html") Оплата]
+			.head
+				.row
+					.col-12.col-md-8.col-lg-6
+						h1 Bodyevolution 1-я ступень за 13 900 руб.
+					.col-12.col-md-4.col-lg-3
+						.line
+						.desc Заполните форму, чтобы приступить к оплате
+			form.form(action="#")
+				.formPunct.n1
+					.formHead
+						span.number.red 01
+						span.name|Придерживаетесь ли вы 
+							br
+							|вегетарианства?
+					.row
+						.col-12.col-md-6.col-lg-5
+							.select
+								select#selectForm.js-states.form-control(name="state")
+									option(value="No" selected) Нет
+									option(value="Yes") Да
+				//- .formPunct.n2
+				//- 	.formHead
+				//- 		span.number.red 02
+				//- 		span.name Выберите адрес школы:
+				//- 	.row
+				//- 		.col-12.col-lg-5
+				//- 			input.adressInput(type="text" value="Звенигородское шоссе, 3" placeholder="Название улицы, номер дома")
+				//- 			.radio
+				//- 				input.radioInput#radio1(type="radio", name="radio", value="v1")
+				//- 				label(for="radio1")
+				//- 		.col-12.col-lg-5
+				//- 			input.adressInput(type="text" placeholder="Название улицы, номер дома")
+				//- 			.radio
+				//- 				input.radioInput#radio2(type="radio", name="radio", value="v2")
+				//- 				label(for="radio2")
+				.formPunct.n2
+					.formHead
+						span.number.red 02
+						span.name Заполните эти данные о себе
+					.row
+						.col-12.col-md-6.col-lg-5
+							input(type="text" placeholder="Фамилия*")
+						.col-12.col-md-6.col-lg-5.order3
+							input(type="email" placeholder="E-mail*")
+					.row
+						.col-12.col-md-6.col-lg-5
+							input(type="text" placeholder="Имя*")
+							input(type="tel" placeholder="Телефон*")
+						.col-12.col-md-6.col-lg-5
+							textarea(placeholder="Ваши комментарии / пожелания")
+
+			.buttons.d-flex.align-items-center
+				a(href="prePay.html").buttonPay.d-flex.align-items-center.justify-content-center
+					span Перейти к оплате
+				span.separ или
+				a(href="preOrder.html").buttonPreOrder.d-flex.align-items-center.justify-content-center
+					span Оставить предварительную заявку
+					.badgeOuter.d-flex.align-items-center.justify-content-center
+						.badge#badge(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="Предварительная заявка не гарантирует вам запись в группу, но гарантирует, что мы узнаем о вас, свяжемся с вами и ответим на все ваши вопросы. Напоминаем, запись в группу осуществляется только после оплаты." data-container=".badge")
+							.inner
+
+
+
+		include _partials/contacts.pug
+	include _partials/footer.pug
+
+
+block scripts
+	script(src="js/map.js")
+	script(src="js/jquery.maskedinput.min.js")
+	script(src="js/select2.min.js")
+	script(src="js/tether.min.js")
+	script.
+		$(function(){
+			$.mask.definitions['n'] = '[0-9]';
+			$('input[type="tel"]').mask("+7 (nnn) nnn-nn-nn");
+		});
+
+		$(document).ready(function(){
+			$('#selectForm').select2({
+				minimumResultsForSearch: Infinity
+			});
+		})
+		// Tooltip
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+		$('#badge').click(function(e){
+			return false;
+		})

@@ -1,0 +1,90 @@
+@import "vars"
+@import "fonts"
+
+body
+	section.header-breadcrumbs
+		padding-top: 65px
+	section.content
+		padding-top: 50px
+		h2
+			font-family: 'MullerExtraBold'
+			font-size: 50px
+			color: #000
+			margin: 0
+		.headtext
+			padding-top: 12.5px
+			.line
+				background-color: #ff2e2f
+				height: 4px
+				width: 67px
+			.subhead
+				margin-top: 30px
+				font-family: 'MullerLight'
+				font-size: 20px
+				color: #000
+				line-height: 1.4
+		.form
+			padding-top: 30px
+			.errMsg
+				margin-bottom: 25px
+				img
+					margin-bottom: 3px
+				span
+					color: #ff2e2f
+					font-family: 'MullerLight'
+					font-size: 18px
+					margin-left: 17.5px
+					line-height: 1.2
+			.input-form
+				padding-left: 30px
+				width: 100%
+				height: 58px
+				border-radius: 30px
+				border: 1px solid #C7C7C8
+				margin-bottom: 20px
+				color: #000
+			.input-form::-webkit-input-placeholder,
+			.input-form::-moz-placeholder,
+			.input-form:-moz-placeholder,
+			.input-form:-ms-input-placeholder
+				color: #5f5f5f
+				font-family: 'MullerLight'
+				font-size: 16px
+			.input-form_red
+				border-color: #ff2e2f
+			
+
+		.buttonSubmit
+			background-color: #ff2e2f
+			width: 263px
+			height: 60px
+			border-radius: 30px
+			font-family: 'MullerMedium'
+			font-size: 16px
+			color: #fff
+
+@media only screen and (max-width: 991px)
+	body
+		main
+			.container
+				section.content
+					.form
+						.errMsg
+							span
+								font-size: 17px
+					h2
+						font-size: 32px
+
+@media only screen and (max-width: 767px)
+	body
+		main
+			.container
+				section.content
+					padding-bottom: 50px
+					.headtext
+						.subhead
+							margin-top: 20px
+					.form
+						padding-top: 20px
+						.errMsg
+							margin-bottom: 20px

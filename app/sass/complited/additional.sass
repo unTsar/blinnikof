@@ -1,0 +1,304 @@
+@import "vars"
+@import "fonts"
+
+.popup
+	transform: translate(-50%, -50%)
+	width: 50%
+	height: auto
+	padding: 25px
+	background-color: #F8F8F8
+	box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33)
+	font-family: 'MullerLight'
+	font-size: 16px
+	color: #313131
+	display: none
+main
+	section.list
+		.container
+			padding-top: 65px
+			.header-breadcrumbs
+			.head
+				margin-top: 50px
+				margin-bottom: 110px
+				span.head
+					line-height: 1.2
+					font-family: 'MullerExtraBold'
+					font-size: 50px
+					color: #262626
+					span.red
+						color: #e83333
+				.line
+					width: 67px
+					height: 3px
+					background-color: #FF2E2E
+					margin-top: 20px
+					margin-bottom: 30px
+				p.text
+					font-family: 'MullerLight'
+					font-size: 20px
+					color: #000
+					line-height: 1.3
+			.item:hover img.fotof
+				opacity: 1
+			.item:hover
+				box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33)
+			.item
+				transition: 0.3s
+				background-color: #fff
+				margin-bottom: 90px
+				position: relative
+				.foto-mobile
+					display: none
+					
+				.c7
+					padding-top: 50px
+					.name.d-flex, .desc, .separ, .list, .buttons
+						position: relative
+						z-index: 10
+						padding-left: 83px
+					.name
+						font-family: 'MullerExtraBold'
+						font-size: 32px
+						color: #000
+						.line
+							margin-left: 25px
+							margin-right: 25px
+							width: 1px
+							height: 30px
+							transform: rotate(20deg)
+							background-color: #E8E8E8
+						span.red
+							font-family: 'MullerBold'
+							color: $accent
+							font-size: 24px
+							line-height: 1.2
+					.desc
+						width: 90%
+						margin-top: 30px
+						font-family: 'MullerLight'
+						font-size: 16px
+						color: #313131
+						position: relative
+						.red
+							color: $accent
+							font-family: 'MullerMedium'
+							font-size: 15px
+							cursor: pointer
+							display: inline-block
+							text-decoration: underline
+					.desc::before
+						content: ''
+						position: absolute
+						top: 11px
+						left: 50px
+						width: 17.5px
+						height: 2px
+						background-color: #FF2F2F
+					.separ
+						width: 90%
+						height: 1px
+						background-color: #EBEBEC
+						margin-top: 20px
+						margin-bottom: 20px
+					.list
+						margin-top: 10px
+						margin-bottom: 10px
+						span.name
+							font-family: 'MullerMedium'
+							font-size: 18px
+							color: #313131
+							line-height: 1
+							align-self: center
+						.flexCol
+							margin-left: 55px
+							.elem
+								line-height: 1.2
+								font-family: 'MullerLight'
+								font-size: 16px
+								color: #313131
+								position: relative
+							.elem::before
+								content: ''
+								position: absolute
+								top: 7.5px
+								left: -20px
+								height: 2px
+								width: 12.5px
+								background-color: #FF2F2F
+					.buttons
+						cursor: pointer
+						margin-top: 45px
+						margin-bottom: 45px
+						.button1
+							width: 210px
+							height: 57.5px
+							background-color: #FF2F2F
+							span
+								font-family: 'MullerMedium'
+								font-size: 16px
+								color: #fff
+						.button2
+							margin-left: 20px
+							width: 250px
+							height: 57.5px
+							background-color: #343A42
+							span
+								font-family: 'MullerMedium'
+								font-size: 16px
+								color: #fff
+				img.foto, img.fotof
+					position: absolute
+					right: 0
+					top: 0
+					bottom: 0
+					height: 100%
+					z-index: 1
+				img.fotof
+					z-index: 3
+					opacity: 0
+					transition: 0.5s
+				img.number
+					position: absolute
+					top: -70px
+					left: -60px
+					z-index: -1
+			.advert
+				margin-bottom: 55px
+				padding-top: 10px
+				font-family: 'MullerExtraBold'
+				font-size: 40px
+				color: #000
+				line-height: 1.2
+				span.red
+					color: #e83333
+				.button
+					cursor: pointer
+					margin-left: 50px
+					background-color: $accent
+					width: 320px
+					height: 64px
+					font-family: 'MullerMedium'
+					font-size: 18px
+					color: #fff
+@media only screen and(max-width: 1199px)
+	body
+		main
+			section.list
+				.container
+					.head
+						.row
+							span.head
+								font-size: 44px
+					.item.row
+						.c7
+							padding-top: 25px
+							.name.d-flex, .desc, .separ, .list, .buttons
+								padding-left: 50px
+							.buttons
+								margin-top: 25px
+								margin-bottom: 25px
+							.desc
+								margin-top: 15px
+							.desc::before
+								left: 20px
+							.list
+								.flexCol
+									margin-left: 35px
+@media only screen and(max-width: 992px)
+	body
+		main
+			section.list
+				.container
+					.item:hover .foto-mobile img.red
+						opacity: 1
+					.item
+						.foto-mobile
+							position: relative
+							display: block
+							margin-left: auto
+							margin-right: auto
+							z-index: 1
+							img
+								position: relative
+								z-index: 1
+							img.red
+								position: absolute
+								top: 0
+								left: 0
+								right: 0
+								margin: auto
+								z-index: 3
+								opacity: 0
+								transition: 0.5s
+						.c5
+							display: none
+							img.foto, img.fotof
+								display: none
+						img.number
+							width: 80px
+							top: -55px
+							left: -45px
+					.advert
+						flex-direction: column
+						justify-content: center
+						font-size: 30px
+						.button
+							margin-left: 0
+							margin-top: 15px
+@media only screen and (max-width: 767px)
+	body
+		.popup
+			width: 75%	
+		main
+			section.list
+				.container
+					.item
+						.foto-mobile
+							width: 100%
+							height: auto
+							img
+								width: 100%
+@media only screen and(max-width: 600px)
+	body
+		main
+			section.list
+				.container
+					.head
+						.row
+							span.head
+								font-size: 30px
+					.item.row
+						img.number
+							display: none
+						.c7
+							padding-top: 10px
+							.name.d-flex, .desc, .separ, .list, .buttons
+								padding-left: 40px
+							.name.d-flex
+								flex-direction: column
+								font-size: 25px
+								line-height: 1.2
+								padding-left: 0
+							.desc::before
+								left: 10px
+							.list.d-flex
+								flex-direction: column
+								align-items: flex-start
+								span.name
+									align-self: flex-start
+									margin-bottom: 10px
+							.buttons
+								flex-direction: column
+								margin-top: 10px
+								margin-bottom: 10px
+								.button1, .button2
+									margin-top: 10px
+									margin-bottom: 10px
+								.button2
+									margin-left: 0
+@media only screen and(max-width: 450px)
+	body
+		.popup
+			width: 90%
+
+

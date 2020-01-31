@@ -1,0 +1,148 @@
+extends _layouts/home
+
+block styles
+	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/sTicket-pay.css")
+
+
+block content
+
+	include _partials/header.pug
+	.popupError#popupError
+		img(src="img/warning.jpg", alt="warning.jpg")
+		p Чтобы перейти к оплате, необходимо отметить согласие с договором-офертой и правилами школы v_concept
+		.buttonOk.d-flex.align-items-center.justify-content-center.b-close
+			span Ok
+	main
+		.container-fluid
+			.container
+				section.header-breadcrumbs
+					.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.home(href="#") Расписание] #[span.slash /] #[a.active(href="sTicket-pay.html") Оплата]
+				section.header
+					.row
+						.col-12.col-lg-6
+							h1 #[span.red Ваш абонемент] на 4 занятия за 3000 руб. 
+						.col-lg-6
+							.header-desc
+								.line
+								p.text
+									|Заполните форму, 
+									br
+									|чтобы приступить к оплате
+				.row
+					section.schedules
+						.schedules-list
+							.topline
+								.sList-col.sList-col1
+									span.m #
+								.sList-col.sList-col2
+									span занятие
+								.sList-col.sList-col3
+									span инструктор
+								.sList-col.sList-col4
+									span дата / время
+							.line.gray
+								.sList-col.sList-col1
+									span 1.
+								.sList-col.sList-col2
+									span Ягодицы+Ноги+Пресс
+								.sList-col.sList-col3
+									span Даша Голошумова
+								.sList-col.sList-col4
+									.subcol.subcol1
+										span.date 18.09, СР
+									.subcol
+										span.time 20:00
+							.line
+								.sList-col.sList-col1
+									span 2.
+								.sList-col.sList-col2
+									span LadyFit
+								.sList-col.sList-col3
+									span Таня Крекшина
+								.sList-col.sList-col4
+									.subcol.subcol1
+										span.date 19.09, ЧТ
+									.subcol
+										span.time 20:00
+							.line.gray
+								.sList-col.sList-col1
+									span 3.
+								.sList-col.sList-col2
+									span Ягодицы+Ноги+Пресс
+								.sList-col.sList-col3
+									span.li замена 
+									span Таня Крекшина
+								.sList-col.sList-col4
+									.subcol.subcol1
+										span.date 20.09, ПТ
+									.subcol
+										span.time 20:00
+							.line
+								.sList-col.sList-col1
+									span 4.
+								.sList-col.sList-col2
+									span LadyFit
+								.sList-col.sList-col3
+									span Валя Селиванова
+								.sList-col.sList-col4
+									.subcol.subcol1
+										span.date 21.09, СБ
+									.subcol
+										span.time 11:00
+				section.ticketForm
+					.formHead
+						span.name Заполните эти данные о себе
+					.row
+						.col-12.col-md-6
+							input(type="text" placeholder="Фамилия*")
+						.col-12.col-md-6.order3
+							input(type="email" placeholder="E-mail*")
+					.row
+						.col-12.col-md-6
+							input(type="text" placeholder="Имя*")
+							input(type="tel" placeholder="Телефон*")
+						.col-12.col-md-6
+							textarea(placeholder="Ваши комментарии / пожелания")
+
+				section.important-table
+					.icon-block
+						span.icon-subhead Важно:
+						br
+						img(src="img/warning2.png", alt="warning2.png")
+					.list-block
+						ul
+							li Оплаченные занятия вы можете переносить самостоятельно в своем личном кабинете на другие дни по расписанию, при условии свободных мест. 
+							li Занятия переносятся не позже, чем за день до тренировки, то есть день в день занятия не переносятся и автоматически сгорают. 
+							li Перед первой тренировкой вам необходимо получить свой оплаченный абонемент на ресепшн, в последующем перед каждой тренировкой вы должны получать обязательную отметку на ресепшн в своем абонементе. 
+				section.formals
+					.row
+						.col-12.col-lg-6
+							.acceptBlock.d-flex
+								input#checkboxAccept(type="checkbox", name="a")
+								label(for="checkboxAccept")
+								.text Я ознакомился и принимаю #[a.red(href="#") условия договора-оферты] и #[a.red(href="#") правила школы v_concept]
+						.col-12.col-lg-6
+							a(href="#").buttonNext#buttonNext.d-flex.align-items-center.justify-content-center
+								span Перейти к оплате
+		include _partials/contacts.pug
+
+	include _partials/footer.pug
+
+block scripts
+	script(src="js/map.js")
+	script(src="js/bpopup.js")
+
+	script.
+		$(document).ready(function() {
+			$("#buttonNext").click(function() {
+				if ($('#checkboxAccept').prop('checked') == false) {
+					$('#popupError').bPopup({
+						position: ['50%', '50%'],
+						positionStyle: 'fixed',
+						escClose: false,
+						modalClose: false
+					});
+				}
+			})
+		})

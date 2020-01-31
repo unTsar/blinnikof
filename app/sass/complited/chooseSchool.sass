@@ -1,0 +1,254 @@
+@import "vars"
+@import "fonts"
+
+main
+	section.header-breadcrumbs
+		padding-top: 65px
+	section.header
+		padding-top: 90px
+		h1
+			color: #333333
+			font-size: 60px
+			font-family: 'MullerExtraBold'
+			margin: 0
+		.subhead
+			.line
+				margin-top: 13.5px
+				width: 80px
+				height: 4px
+				background-color: #ff2e2f
+			p.text
+				font-family: 'MullerLight'
+				font-size: 20px
+				color: #333333
+				margin-top: 20px
+				margin-bottom: 0
+	section.list
+		padding-top: 90px
+		.item
+			margin-bottom: 90px
+			h2
+				font-family: 'MullerExtraBold'
+				font-size: 45px
+				color: #333333
+				margin: 0
+			span.tahoma
+				font-family: 'Tahoma', San Francisco, Helvetica, Arial
+				font-size: 40px
+				font-weight: bold
+			.inf
+				margin-top: 45px
+				.line
+					background-color: #ff2e2f
+					width: 4px
+					height: 78px
+				.textBlock
+					padding-left: 22px
+					padding-top: 5px
+					line-height: 1
+					.text
+						font-family: 'MullerRegular'
+						font-size: 24px
+						color: #333333
+						line-height: 1
+					.text.adress
+						margin-top: 22px
+					.text.b
+						font-family: 'MullerBold'
+			.btnChoose.mob
+				display: none
+			.btnChoose
+				display: flex
+				cursor: pointer
+				border-radius: 27px
+				margin-top: 55px
+				width: 178px
+				height: 54px
+				background-color: #ffffff
+				border: 2px solid #333333
+				transition: 0.3s
+				input
+					display: none
+					pointer-events: none
+				label
+					cursor: pointer
+					display: inline-block
+					position: relative
+					margin-bottom: 13px
+				label::before
+					content: ''
+					display: inline-block
+					position: absolute
+					left: 0
+					width: 11px
+					height: 11px
+					pointer-events: none
+					background-color: #ffffff
+					border: 1px solid #b6b6b6
+				label::after
+					content: ''
+					display: inline-block
+					position: absolute
+					display: none
+					left: 0px
+					top: -1px
+					width: 12px
+					height: 12px
+					background-repeat: no-repeat
+					background-size: cover
+					background-image: url('../img/checkbox-icon_black.png')
+				input:checked + label::after
+					display: block
+				span
+					text-transform: uppercase
+					color: #333333
+					font-family: 'MullerBold'
+					font-size: 16px
+					letter-spacing: 1px
+					margin-left: 17px
+					user-select: none
+			.btnChoose.checked
+				background-color: #333333
+				span
+					color: #ffffff
+			img
+				user-select: none
+				width: 419px
+				box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.2)
+	.btnOrder
+		width: 248px
+		height: 60px
+		border-radius: 27px
+		background-color: #ff2e2f
+		margin-left: auto
+		margin-right: auto
+		span
+			font-family: 'MullerBold'
+			font-size: 16px
+			color: #ffffff
+
+@media only screen and(max-width: 1200px)
+	body
+		main
+			section.header
+				h1
+					font-size: 50px
+			section.list
+				.item
+					.inf
+						.textBlock
+							.text.adress
+								margin-top: 5px
+								font-size: 22px
+@media only screen and(max-width: 991px)
+	body
+		main
+			section.header
+				padding-top: 55px
+				.subhead
+					.line 
+						margin-top: 27.5px
+					p.text
+						font-size: 17px
+				h1
+					font-size: 45px
+			section.list
+				padding-top: 65px
+				.item
+					margin-bottom: 65px
+					h2
+						font-size: 30px
+						span.tahoma
+							font-size: 28px
+					.inf
+						margin-top: 40px
+						.textBlock
+							.text.adress
+								margin-top: 7.5px
+								font-size: 20px
+					.btnChoose
+						width: 121px
+						height: 45px
+						margin-top: 35px
+						span
+							font-family: 'MullerMedium'
+							font-size: 12px
+					img
+						width: 100%
+@media only screen and(max-width: 767px)
+	body
+		main
+			section.header-breadcrumbs
+				padding-top: 35px
+			section.header
+				padding-top: 35px
+				h1
+					font-size: 40px
+				.subhead
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					flex-direction: column
+					.line
+						order: 1
+						margin-top: 5px
+			section.list
+				padding-top: 45px
+				.item
+					margin-bottom: 45px
+					img
+						margin-top: 30px
+						width: 75%
+						margin-left: auto
+						margin-right: auto
+						display: block
+					.btnChoose.desk
+						display: none
+					.btnChoose.mob
+						display: flex
+						margin-left: auto
+						margin-right: auto
+						width: 125px
+						height: 37px
+						label::before
+							border-color: #333333
+					.inf
+						margin-top: 25px
+						.textBlock
+							.text.adress
+								margin-top: 21.5px
+			.btnOrder
+				width: 220px
+				height: 54px
+@media only screen and(max-width: 500px)
+	body
+		main
+			section.header
+				h1
+					font-size: 30px
+				.subhead
+					p.text
+						font-size: 16px
+						br
+							display: none
+			section.list
+				.item
+					h2
+						font-size: 24px
+						span.tahoma
+							font-size: 22px
+					.inf
+						.textBlock
+							padding-top: 2.5px
+							padding-left: 10px
+							.text, .text.adress
+								font-size: 18px
+					img 
+						width: 100%
+					.btnChoose
+						margin-top: 30px
+			a.btnOrder
+				span
+					font-size: 14px

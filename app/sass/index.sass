@@ -798,6 +798,7 @@ body
 		header.container-fluid
 			.headblock
 				.headtext
+					padding: 0 17px
 					h1
 						font-size: 50px
 					p.desc
@@ -1101,6 +1102,7 @@ body
 						font-size: 40px
 					p.desc
 						font-size: 20px
+						line-height: 1.1
 		section.first
 			h2::before
 				margin-top: -75px
@@ -1177,7 +1179,7 @@ body
 					span.button-desc
 						display: none
 			.headblock
-				padding-top: 50px
+				padding-top: 25px
 				padding-bottom: 0
 				padding-left: 0
 				.button
@@ -1185,11 +1187,19 @@ body
 					margin-bottom: -25px
 					margin-left: auto
 					margin-right: auto
-					width: 150px
-					height: 150px
+					width: 137px
+					height: 137px
+					span
+						font-size: 11px
+					svg
+						width: 40px
 				.headtext
 					h1
 						font-size: 34px
+						br
+							display: none
+					p.desc
+						margin-top: 40px
 		section.first
 			h2
 				span.red
@@ -1242,7 +1252,8 @@ body
 							padding-left: 28px
 						li::before
 							position: absolute
-							left: 35px
+							left: 0
+							margin-left: 35px
 					.pay-block
 						span.text
 							a.more

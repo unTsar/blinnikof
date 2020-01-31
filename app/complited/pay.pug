@@ -1,0 +1,117 @@
+extends _layouts/home
+
+block styles
+
+	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/pay.css")
+
+
+block content
+
+	include _partials/header.pug
+	main
+		.popupPay#popupPay
+			img(src="img/pay/card-warning.jpg", alt="card-warning.jpg")
+			p Сейчас с вашей привязанной карты Bank card ****2426 будет списана сумма в размере 12 900 руб., вы уверены?
+			.buttons.d-flex.justify-content-center
+				.buttonCancel.d-flex.align-items-center.justify-content-center.b-close
+					span Отмена
+				.buttonPay.d-flex.align-items-center.justify-content-center.b-close
+					span Оплатить
+		.popupError#popupError
+			img(src="img/warning.jpg", alt="warning.jpg")
+			p Чтобы перейти к оплате, необходимо заполнить данные карты
+			.buttonOk.d-flex.align-items-center.justify-content-center.b-close
+				span Ok
+		.container
+			.header-breadcrumbs
+				.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="pay.html") Оплата]
+			h1 #[span.red Оплата] банковской картой
+			.cardBlock.d-flex
+				.listCards
+					span.listCards-name Ваши карты
+					.items
+						.item.listCards-item.d-flex.align-items-center.exCard
+							img.icon(src="img/pay/credit-card.svg", alt="credit-card.svg")
+							span.exCard ****  2426
+						.item.listCards-item.d-flex.align-items-center#newCard-button
+							img.icon(src="img/pay/credit-card.svg", alt="credit-card.svg")
+							span.newCard Новая карта
+					.blockPay.desk
+						.remember
+							input#pay-checkbox(type="checkbox")
+							label(for="pay-checkbox")
+							span Запомнить
+							.badge.badge1(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="При последующих платежах через личный кабинет реквизиты вашей карты будут запомнены, что избавит от внесения реквизитов карты повторно. Удалить сохранённые карты можно в личном кабинете." data-container=".badge1")
+						.buttonPay#buttonPay.d-flex.align-items-center.justify-content-center
+							span Оплатить
+				.line
+				.cardFormOuter
+					.card-bottom
+						img.card-bottom-bg(src="img/pay/card-bottom-bg.png", alt="card-bottom-bg.png")
+						.cardLine-bg
+						input.cvc#card-bottom-cvc(type="text" placeholder="CVC/CVV")
+						.text|три цифры
+							br
+							|на обороте
+							br
+							|карты
+					form.cardForm(action="")
+						img.masterCard(src="img/pay/mastercard.svg", alt="mastercard.svg")
+						.cardNumber
+							span.inputHead Номер карты
+							input#cardNumber(type="text" placeholder="**** **** **** ****")
+						.expDate
+							span.inputHead Срок действия
+							.inputOuter
+								input.expDate-input#expDate-m(type="text" placeholder="ММ")
+								.line
+								input.expDate-input#expDate-y(type="text" placeholder="ГГ")
+						.nameInput
+							span.inputHead Фамилия и имя
+							input.nameInput#nameInput(type="text" onkeyup="limitInput('en', this);" placeholder="IVAN IVANOV")
+				.blockPay.mob
+					.remember
+						input#pay-checkbox-mob(type="checkbox")
+						label(for="pay-checkbox-mob")
+						span Запомнить
+						.badge.badge2(data-toggle="tooltip" data-placement="top" data-html="true" data-original-title="При последующих платежах через личный кабинет реквизиты вашей карты будут запомнены, что избавит от внесения реквизитов карты повторно. Удалить сохранённые карты можно в личном кабинете." data-container=".badge2")
+					.buttonPay#buttonPay-mob.d-flex.align-items-center.justify-content-center
+						span Оплатить
+
+
+
+		include _partials/contacts.pug
+	include _partials/footer.pug
+
+block scripts
+	script(src="js/map.js")
+	script(src="js/tether.min.js")
+	script(src="js/popper.min.js")
+	script(src="js/jquery.maskedinput.min.js")
+	script(src="js/bpopup.js")
+	script(src="js/pay.js")
+	script.
+		function limitInput( k, obj ) {
+			switch( k ){
+				case 'ru':
+					if(obj.value.match(/[^а-яА-ЯёЁ0-9 -]/ig)){
+						obj.value = obj.value.replace(/[^а-яА-ЯёЁ0-9 -]/ig, '')
+						setTimeout(function(){obj.focus();}, 1)
+					}
+					break;
+				case 'en' :
+					if(obj.value.match(/[^a-zA-Z0-9 -]/ig)){
+						obj.value = obj.value.replace(/[^a-zA-Z0-9 -]/ig, '')
+						setTimeout(function(){obj.focus();}, 1)
+					} 
+					break;
+				case 'num':
+					if(obj.value.match(/[^0-9 -]/ig)){
+						obj.value = obj.value.replace(/[^0-9 -]/ig, '')
+						setTimeout(function(){obj.focus();}, 1)
+					}
+					break;
+			}
+		}
+

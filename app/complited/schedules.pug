@@ -1,0 +1,1329 @@
+extends _layouts/home
+
+block styles
+	link(rel="stylesheet", href="css/owl.carousel.min.css")
+	link(rel="stylesheet", href="css/owl.theme.default.min.css")
+	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/schedules.css")
+
+
+block content
+
+	include _partials/header.pug
+
+	main
+		.popupError#popupError
+			img(src="img/warning.jpg", alt="warning.jpg")
+			p 
+				|Количество выбранных 
+				br
+				|тренировок должно быть равным 
+				br
+				|одному из доступных абонементов: 
+				br
+				|1, 4, 8 или 12 занятий 
+			.buttonOk.d-flex.align-items-center.justify-content-center.b-close
+				span Ok
+		.container
+			section.header-breadcrumbs
+				.breadcrumbs #[a.home(href="#") Главная] #[span.slash /] #[a.active(href="schedules.html") Расписание]
+			section.header
+				.row
+					.col-12.col-xl-4
+						h1 Расписание
+					.col-12.col-xl-8
+						.header-desc
+							.line
+							p.text Отметьте тренировки из расписания, на которые вы хотите записаться и нажмите "Записаться на занятия". Количество тренировок должно подходить под один из доступных абонементов:
+							.variations.d-flex
+								.varCol
+									span на 1 занятие - 900 р.
+									span на 4 занятия - 3 000 р.
+								.varCol
+									span на 8 занятий - 5 200 р.
+									span на 12 занятий - 6 800 р.
+			section.calendar
+				.owl-carousel.carousel#schedulesCsl
+					.slide
+						.topLine
+							.buttonPrev.d-flex.align-items-center.justify-content-center
+								img(src="img/arrow-right_black.png", alt="arrow-right_black.png")
+							.buttonNext.d-flex.align-items-center.justify-content-center
+								img(src="img/arrow-right_black.png", alt="arrow-right_black.png")
+							span 24 июня-30 июня
+						.tableWeek
+							table.days
+								tr
+									th.date(colspan="1")
+										span 24 июня, ПН
+									th.date.gray(colspan="1")
+										span 25 июня, ВТ
+									th.date(colspan="1")
+										span 26 июня, СР
+									th.date.gray(colspan="1")
+										span 27 июня, ЧТ
+									th.date(colspan="1")
+										span 28 июня, ПТ
+									th.date.gray(colspan="1")
+										span 29 июня, СБ
+									th.date(colspan="1")
+										span 30 июня, ВС
+								tr
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox1(type="checkbox", name="checkbox1")
+												label(for="checkbox1")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Бёдра+Руки#[wbr]+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														
+														span.b Наташа#[br] Поплевская
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox2(type="checkbox", name="checkbox1")
+												label(for="checkbox2")
+												span Выбрать
+									td
+										.class.rep.disabled
+											.class-head.d-flex.align-items-center
+												.text ФитБокс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 0
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.rep замена
+														span.b Аня#[br] Скородумова
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox3(type="checkbox", name="checkbox1")
+												label(for="checkbox3")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Руки+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox4(type="checkbox", name="checkbox1")
+												label(for="checkbox4")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox5(type="checkbox", name="checkbox1")
+												label(for="checkbox5")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Street Workout#[wbr] в парке
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b ОТМЕНА#[br] ЗАНЯТИЯ
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox6(type="checkbox", name="checkbox1")
+												label(for="checkbox6")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Smart#[wbr]LadyFit
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox7(type="checkbox", name="checkbox1")
+												label(for="checkbox7")
+												span Выбрать
+									td.empty.mob
+								tr
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox8(type="checkbox", name="checkbox1")
+												label(for="checkbox8")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox9(type="checkbox", name="checkbox1")
+												label(for="checkbox9")
+												span Выбрать
+									td
+										.class.rep
+											.class-head.d-flex.align-items-center
+												.text ФитБокс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.rep замена
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox10(type="checkbox", name="checkbox1")
+												label(for="checkbox10")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox11(type="checkbox", name="checkbox1")
+												label(for="checkbox11")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox12(type="checkbox", name="checkbox1")
+												label(for="checkbox12")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox13(type="checkbox", name="checkbox1")
+												label(for="checkbox13")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox14(type="checkbox", name="checkbox1")
+												label(for="checkbox14")
+												span Выбрать
+								tr
+									td.empty
+									td.empty
+									td.empty
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox15(type="checkbox", name="checkbox1")
+												label(for="checkbox15")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox16(type="checkbox", name="checkbox1")
+												label(for="checkbox16")
+												span Выбрать
+									td.empty
+									td.empty
+					.slide
+						.topLine
+							.buttonPrev.d-flex.align-items-center.justify-content-center
+								img(src="img/arrow-right_black.png", alt="arrow-right_black.png")
+							.buttonNext.d-flex.align-items-center.justify-content-center
+								img(src="img/arrow-right_black.png", alt="arrow-right_black.png")
+							span 1 июля-7 июля
+						.tableWeek
+							table.days
+								tr
+									th.date(colspan="1")
+										span 1 июля, ПН
+									th.date.gray(colspan="1")
+										span 2 июля, ВТ
+									th.date(colspan="1")
+										span 3 июля, СР
+									th.date.gray(colspan="1")
+										span 4 июля, ЧТ
+									th.date(colspan="1")
+										span 5 июля, ПТ
+									th.date.gray(colspan="1")
+										span 6 июля, СБ
+									th.date(colspan="1")
+										span 7 июля, ВС
+								tr
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox1(type="checkbox", name="checkbox1")
+												label(for="checkbox1")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Бёдра+Руки#[wbr]+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														
+														span.b Наташа#[br] Поплевская
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox2(type="checkbox", name="checkbox1")
+												label(for="checkbox2")
+												span Выбрать
+									td
+										.class.rep.disabled
+											.class-head.d-flex.align-items-center
+												.text ФитБокс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 0
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.rep замена
+														span.b Аня#[br] Скородумова
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox3(type="checkbox", name="checkbox1")
+												label(for="checkbox3")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Руки+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox4(type="checkbox", name="checkbox1")
+												label(for="checkbox4")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox5(type="checkbox", name="checkbox1")
+												label(for="checkbox5")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Street Workout#[wbr] в парке
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b ОТМЕНА#[br] ЗАНЯТИЯ
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox6(type="checkbox", name="checkbox1")
+												label(for="checkbox6")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Smart#[wbr]LadyFit
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox7(type="checkbox", name="checkbox1")
+												label(for="checkbox7")
+												span Выбрать
+								tr
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox8(type="checkbox", name="checkbox1")
+												label(for="checkbox8")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox9(type="checkbox", name="checkbox1")
+												label(for="checkbox9")
+												span Выбрать
+									td
+										.class.rep
+											.class-head.d-flex.align-items-center
+												.text ФитБокс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.rep замена
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox10(type="checkbox", name="checkbox1")
+												label(for="checkbox10")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox11(type="checkbox", name="checkbox1")
+												label(for="checkbox11")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox12(type="checkbox", name="checkbox1")
+												label(for="checkbox12")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox13(type="checkbox", name="checkbox1")
+												label(for="checkbox13")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox14(type="checkbox", name="checkbox1")
+												label(for="checkbox14")
+												span Выбрать
+								tr
+									td.empty
+									td.empty
+									td.empty
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox15(type="checkbox", name="checkbox1")
+												label(for="checkbox15")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox16(type="checkbox", name="checkbox1")
+												label(for="checkbox16")
+												span Выбрать
+									td.empty
+									td.empty
+					.slide
+						.topLine
+							.buttonPrev.d-flex.align-items-center.justify-content-center
+								img(src="img/arrow-right_black.png", alt="arrow-right_black.png")
+							.buttonNext.d-flex.align-items-center.justify-content-center
+								img(src="img/arrow-right_black.png", alt="arrow-right_black.png")
+							span 8 июля-14 июля
+						.tableWeek
+							table.days
+								tr
+									th.date(colspan="1")
+										span 8 июля, ПН
+									th.date.gray(colspan="1")
+										span 9 июля, ВТ
+									th.date(colspan="1")
+										span 10 июля, СР
+									th.date.gray(colspan="1")
+										span 11 июля, ЧТ
+									th.date(colspan="1")
+										span 12 июля, ПТ
+									th.date.gray(colspan="1")
+										span 13 июля, СБ
+									th.date(colspan="1")
+										span 14 июля, ВС
+								tr
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox1(type="checkbox", name="checkbox1")
+												label(for="checkbox1")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Бёдра+Руки#[wbr]+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														
+														span.b Наташа#[br] Поплевская
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox2(type="checkbox", name="checkbox1")
+												label(for="checkbox2")
+												span Выбрать
+									td
+										.class.rep.disabled
+											.class-head.d-flex.align-items-center
+												.text ФитБокс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 0
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.rep замена
+														span.b Аня#[br] Скородумова
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox3(type="checkbox", name="checkbox1")
+												label(for="checkbox3")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Руки+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox4(type="checkbox", name="checkbox1")
+												label(for="checkbox4")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox5(type="checkbox", name="checkbox1")
+												label(for="checkbox5")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Street Workout#[wbr] в парке
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b ОТМЕНА#[br] ЗАНЯТИЯ
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox6(type="checkbox", name="checkbox1")
+												label(for="checkbox6")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Smart#[wbr]LadyFit
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox7(type="checkbox", name="checkbox1")
+												label(for="checkbox7")
+												span Выбрать
+								tr
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox8(type="checkbox", name="checkbox1")
+												label(for="checkbox8")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox9(type="checkbox", name="checkbox1")
+												label(for="checkbox9")
+												span Выбрать
+									td
+										.class.rep
+											.class-head.d-flex.align-items-center
+												.text ФитБокс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.rep замена
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox10(type="checkbox", name="checkbox1")
+												label(for="checkbox10")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox11(type="checkbox", name="checkbox1")
+												label(for="checkbox11")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox12(type="checkbox", name="checkbox1")
+												label(for="checkbox12")
+												span Выбрать
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox13(type="checkbox", name="checkbox1")
+												label(for="checkbox13")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox14(type="checkbox", name="checkbox1")
+												label(for="checkbox14")
+												span Выбрать
+								tr
+									td.empty
+									td.empty
+									td.empty
+									td
+										.class.gray
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox15(type="checkbox", name="checkbox1")
+												label(for="checkbox15")
+												span Выбрать
+									td
+										.class
+											.class-head.d-flex.align-items-center
+												.text Ягодицы+#[wbr]Ноги+Пресс
+											.separLine
+											.elems
+												.elem.d-flex
+													img.icon(src="img/schedules/clock.png", alt="clock.png")
+													span.b 20:00
+												.elem.d-flex
+													.circle_green
+														.number 12
+													span Свободных#[br] мест
+												.elem.d-flex
+													img.icon(src="img/schedules/teacher.png", alt="teacher.png")
+													.text
+														span.b Малам#[br] Лопес
+												.elem.d-flex
+													img.icon(src="img/schedules/gym.png", alt="gym.png")
+													span Зал 15
+											.buttonChoose.d-flex.align-items-center.justify-content-center
+												input#checkbox16(type="checkbox", name="checkbox1")
+												label(for="checkbox16")
+												span Выбрать
+									td.empty
+									td.empty
+			a(href="#")#buttonReg.buttonReg.d-flex.align-items-center.justify-content-center
+				span Записаться на занятие
+
+
+		include _partials/contacts.pug
+	include _partials/footer.pug
+
+block scripts
+	script(src="js/map.js")
+	script(src="js/owl.carousel.min.js")
+	script(src="js/bpopup.js")
+	script(src="js/schedules.js")
+
+	script.
+		$(document).ready(function() {
+			$("#buttonReg").click(function() {
+				$('#popupError').bPopup({
+					position: ['50%', '50%'],
+					positionStyle: 'fixed',
+					escClose: false,
+					modalClose: false
+				});
+			})
+		})
+

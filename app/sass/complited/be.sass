@@ -1,0 +1,2572 @@
+body
+	position: relative
+	.scroll
+		transition: 1s
+		cursor: pointer
+		position: fixed
+		z-index: 200
+		bottom: 45px
+		left: 50px
+		.text
+			text-transform: uppercase
+			color: #fff
+			font-family: 'MullerMedium'
+			font-size: 11px
+			text-shadow: 0 0 15px #000
+			transform: rotate(-90deg) translate(45px, -17px)
+		.circle
+			border-width: 1px
+			border-color: rgba(32, 32, 32, 0.2)
+			border-style: solid
+			border-radius: 50%
+			width: 60px
+			height: 60px
+			margin-top: 15px
+			.mouse
+				position: relative
+				border-width: 2px
+				border-color: #ff2e2f
+				border-style: solid
+				background-color: transparent
+				width: 21.5px
+				height: 27.5px
+				border-radius: 10px
+				.weel
+					position: absolute
+					bottom: 5px
+					left: 0
+					right: 0
+					margin: auto
+					background-color: #ff2e2f
+					width: 5px
+					height: 5px
+					border-radius: 50%
+					animation-name: scroll
+					animation-duration: 1.5s
+					animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500)
+					animation-iteration-count: infinite
+				@keyframes scroll 
+					0%, 20% 
+						transform: translateY(0) scaleY(1)
+					10% 
+						opacity: 1
+					100% 
+						transform: translateY(20px) scaleY(2)
+						opacity: 0.01
+					
+
+	.head
+		line-height: 1.2
+		font-family: 'MullerExtraBold'
+		font-size: 42px
+		color: #262626
+		.red
+			color: #e83333
+	.red
+		color: #e83333
+	footer
+		.socials
+			a.social
+				svg, path
+					transition: 0.5s
+			a.social:hover
+				svg, path
+					fill: #fff
+	header.container-fluid
+		position: relative
+		background-image: url("../img/be/be-header-bg.jpg")
+		background-size: cover
+		background-position: top center
+		background-repeat: no-repeat
+		nav
+			width: 100%
+			padding-left: 10px
+			padding-right: 10px
+			background-color: transparent
+			.logo, .adress, .socials, .phoneCont
+				position: relative
+				z-index: 20
+			.logo
+				.textLogo
+					span.name, span.desc
+						color: #000
+			.adress
+				span.desc
+					color: #000
+				.circleAdress
+					background-color: #fff
+					border: 1px solid rgba(32, 32, 32, 0.1)
+					svg, path
+						fill: #FF2A2B
+			.socials
+				a.social.Vk,
+				a.social.Fb,
+				a.social.Inst
+					border: 1px solid rgba(255, 255, 255, 0.2)
+					svg, path
+						transition: 0.5s
+				a.social:hover
+					background-color: #fff
+					border-color: #fff
+					svg, path
+						fill: #FF2A2B
+		img.imgC
+			position: absolute
+			top: 0
+			bottom: 0
+			left: -15px
+			right: 0
+			z-index: 100
+			margin: auto
+			pointer-events: none
+		.content
+			padding-top: 195px
+			padding-bottom: 195px
+			.textMobile
+				display: none
+			p.desc
+				position: relative
+				z-index: 1
+				font-family: 'MullerMedium'
+				font-size: 24px
+				color: #000
+				line-height: 1.3
+			p.desc::before
+				content: ''
+				background-color: rgb(255, 46, 47)
+				position: absolute
+				width: 66px
+				height: 4px
+				top: 10px
+				left: -95px
+			.bottom
+				padding-top: 185px
+				.wrap
+					position: relative
+					.circleSm
+						position: absolute
+						top: -70px
+						left: -70px
+						width: 310px
+						height: 310px
+						border: 1px solid #ECECEC
+						background-color: transparent
+						border-radius: 50%
+					.circleMd
+						position: absolute
+						top: -150px
+						left: -150px
+						width: 470px
+						height: 470px
+						border: 1px solid #ECECEC
+						background-color: transparent
+						border-radius: 50%
+					.circleLg
+						position: absolute
+						top: -250px
+						left: -250px
+						width: 670px
+						height: 670px
+						border: 1px solid #ECECEC
+						background-color: transparent
+						border-radius: 50%
+					img.iconBg
+						position: absolute
+						top: -95px
+						right: -60px
+					.button
+						transition: 0.5s
+						animation: pulsation 2s infinite
+						overflow: hidden
+						position: relative
+						z-index: 100
+						cursor: pointer
+						border-radius: 50%
+						background-color: rgb(255, 46, 47)
+						box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31)
+						width: 170px
+						height: 170px
+						span
+							font-family: 'MullerExtraBold'
+							font-size: 18px
+							color: #fff
+							text-transform: uppercase
+						.mobile
+							display: none
+							font-family: 'MullerBold'
+							font-size: 17px
+						svg
+							transition: 0.5s
+							position: absolute
+							bottom: -15px
+							right: 0
+							left: 25px
+							margin: auto
+					@keyframes pulsation
+						0%
+							box-shadow: 0 0 200px rgba(255, 44, 45, 0.9)
+						70%
+							box-shadow: 0 0 0 200px rgba(255, 44, 45, 0)
+						100% 
+							box-shadow: 0 0 0 0 rgba(255, 44, 46, 0)
+					.button:hover
+						animation: none
+						box-shadow: 0 0 200px rgba(255, 44, 45, 0.9)
+						svg
+							opacity: 0
+				.circle
+					border-radius: 50%
+					background-color: rgb(255, 46, 47)
+					width: 122px
+					height: 122px
+					position: relative
+					// .fantom
+					// 	position: absolute
+					// 	border-radius: 50%
+					// 	background-color: rgba(255, 46, 46, 0.071)
+					// 	width: 170px
+					// 	height: 170px
+					// 	pointer-events: none
+					span
+						font-family: 'MullerExtraBold'
+						font-size: 60px
+						color: #fff
+				.text
+					margin-left: 10px
+					.subText
+						background-color: #fff
+						border-radius: 13.5px
+						font-family: 'MullerExtraBold'
+						font-size: 14px
+						color: #000
+						text-transform: uppercase
+						display: inline-block
+						padding-top: 3px
+						padding-bottom: 3px
+						padding-left: 15px
+						padding-right: 15px
+					span.month
+						font-family: 'MullerExtraBold'
+						font-size: 32px
+						color: #fff
+						text-transform: uppercase
+	main
+		section.purpose
+			position: relative
+			z-index: 30
+			padding-top: 130px
+			padding-bottom: 130px
+			background-image: url('../img/be/be-purpose-bg.jpg')
+			background-size: cover
+			background-repeat: no-repeat
+			.row_custom
+				margin-right: 0px
+				margin-left: 0px
+			.desktopBlock
+				margin-top: 50px
+			.headblock		
+				position: relative
+				span.head
+					font-family: 'MullerExtraBold'
+					font-size: 40px
+					color: #fff
+					position: relative
+				span.head::before
+					content: ''
+					position: absolute
+					z-index: 11
+					top: 12.5px
+					left: -90px
+					background-color: rgb(255, 46, 47)
+					width: 60px
+					height: 4px
+				p.desc
+					margin-top: 30px
+					color: #fff
+					font-family: 'MullerLight'
+					font-size: 17px
+			img.fotoBg
+				margin-left: 50px
+				margin-top: -55px
+			.wrap
+				position: relative
+				width: 100%
+				.rightB
+					position: absolute
+					top: 160px
+					right: -150px
+					line-height: 1.3
+					.text
+						font-family: 'MullerMedium'
+						font-size: 18px
+						color: #fff
+						margin-bottom: 40px
+					.line
+						position: absolute
+						bottom: 40px
+						left: -35px
+						width: 2px
+						height: 50px
+						background-color: #6dcef5
+			.cslMobile-control
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				padding-top: 35px
+				padding-bottom: 35px
+				.arrows
+					.arrow
+						cursor: pointer
+						transition: 0.3s
+						background-color: #fff
+						border-radius: 50%
+						width: 50px
+						height: 50px
+						margin-right: 7.5px
+						margin-left: 7.5px
+						svg, path
+							fill: #000
+							transition: 0.15s
+					.arrow:hover
+						background-color: #ff2e2f
+						border-color: #ff2e2f
+						svg, path
+							fill: #fff
+				.desc
+					text-align: center
+					img.icon
+						margin-top: 15px
+						margin-bottom: 15px
+					p
+						font-family: 'MullerLight'
+						font-size: 16px
+						color: #fff
+						max-width: 279px
+			.cslMobile, .cslMobile-control
+				display: none
+			.wrap, .cslMobile
+				.step
+					text-align: center
+					.circle
+						.block, .skyBg
+							line-height: 1.2
+							span
+								line-height: 1.2
+								text-transform: uppercase
+							span.thin
+								font-family: 'MullerRegular'
+								font-size: 10px
+								color: #fff
+							span.mid
+								font-family: 'MullerBold'
+								font-size: 10px
+								color: #fff
+							span.fat
+								font-family: 'MullerBold'
+								font-size: 15px
+								color: #fff
+					.number
+						text-align: center
+						color: #fff
+						font-family: 'MullerMedium'
+						font-size: 17px
+					.separ
+						margin-top: 15px
+						margin-bottom: 35px
+						border-width: 1px
+						border-color: rgba(255, 255, 255, 0.302)
+						border-style: dashed
+						background-color: transparent
+						height: 0
+						position: relative
+					.separ::after, .separ::before
+						content: ''
+						border-radius: 50%
+						width: 10px
+						height: 10px
+						background-color: #fff
+						position: absolute
+						top: 0
+						bottom: 0
+						margin: auto
+
+					.separ::before
+						left: 0
+					.separ::after
+						right: 0
+					span.name
+						line-height: 1.3
+						color: #fff
+						font-family: 'MullerBold'
+						font-size: 20px
+					p.desc
+						letter-spacing: 1.7px
+						margin-top: 10px
+						margin-bottom: 20px
+						font-size: 13px
+						font-family: "MullerMedium"
+						color: rgba(255, 255, 255, 0.4)
+						text-transform: uppercase
+						text-align: center
+					.text	
+						text-align: left
+						span.name
+							line-height: 1.4
+							font-family: 'MullerBold'
+							font-size: 22px
+							color: #fff
+							text-align: left
+						p.desc
+							font-family: 'MullerLight'
+							font-size: 16px
+							color: #fff
+							margin-top: 15px
+							line-height: 1.3
+							text-align: left
+							text-transform: none
+							span.PurposeBtn
+								text-decoration: underline
+								cursor: pointer
+					.button
+						cursor: pointer
+						background-color: transparent
+						border-width: 2px
+						border-color: #ff2e2f
+						border-style: solid
+						width: 194px
+						height: 56px
+						border-radius: 30px
+						transition: 0.3s
+						span
+							color: #fff
+							font-family: 'MullerMedium'
+							font-size: 16px
+					.button:hover
+						background-color: #ff2e2f
+						border-color: #ff2e2f
+
+
+				.step1
+					margin-top: 160px
+					.circle
+						overflow: hidden
+						position: relative
+						z-index: 1
+						flex-direction: column
+						border-radius: 50%
+						background-color: rgb(255, 46, 47)
+						width: 148px
+						height: 148px
+						.skyBg
+							position: absolute
+							z-index: -1
+							bottom: -60px
+							width: 100%
+							height: 50%
+							background-color: #00CFF7
+					.separ
+						max-width: 148px
+						position: relative
+						span.month
+							position: absolute
+							left: -90px
+							top: -7px
+							font-size: 12px
+							font-family: "MullerMedium"
+							color: rgba(255, 255, 255, 0.4)
+							text-transform: uppercase
+
+					.text
+						p.desc
+							max-width: 229px
+					.number
+						margin-top: 35px
+						max-width: 148px
+					.headblock
+						max-width: 148px
+					.button
+						width: 100%
+				.step2
+					margin-top: 120px
+					.circle
+						overflow: hidden
+						position: relative
+						z-index: 1
+						flex-direction: column
+						border-radius: 50%
+						background-color: rgb(255, 46, 47)
+						width: 188px
+						height: 188px
+						.block
+							margin-bottom: 30px
+						.skyBg
+							position: absolute
+							z-index: -1
+							bottom: -55px
+							width: 100%
+							height: 50%
+							background-color: #00CFF7
+					.number
+						margin-top: 35px
+						max-width: 188px
+					.separ
+						max-width: 188px
+					.headblock
+						max-width: 188px
+					.text
+						p.desc
+							max-width: 263px
+					.button
+						width: 100%
+				.step3
+					margin-top: 50px
+					.circle
+						overflow: hidden
+						position: relative
+						z-index: 1
+						flex-direction: column
+						border-radius: 50%
+						background-color: rgb(255, 46, 47)
+						width: 229px
+						height: 229px
+						.block
+							margin-bottom: 30px
+						.skyBg
+							position: absolute
+							z-index: -1
+							bottom: -55px
+							padding-top: 7.5px
+							width: 100%
+							height: 50%
+							background-color: #00CFF7
+					.number
+						margin-top: 35px
+						max-width: 229px
+					.separ
+						max-width: 229px
+					.headblock
+						max-width: 229px
+					.text
+						p.desc
+							max-width: 292px
+				.step4
+					.circle
+						overflow: hidden
+						position: relative
+						z-index: 1
+						flex-direction: column
+						border-radius: 50%
+						background-color: rgb(255, 46, 47)
+						width: 279px
+						height: 279px
+						.block
+							margin-bottom: 65px
+						.skyBg
+							position: absolute
+							z-index: -1
+							bottom: -55px
+							padding-top: 20px
+							width: 100%
+							height: 50%
+							background-color: #00CFF7
+					.number
+						margin-top: 15px
+						max-width: 279px
+					.separ
+						max-width: 279px
+					.headblock
+						max-width: 279px
+					.text
+						p.desc
+							max-width: 284px
+			.cslMobile
+				width: 100%
+				position: relative
+				.arrowPrev, .arrowNext
+					z-index: 100
+					cursor: pointer
+					width: 50px
+					position: absolute
+					top: 230px
+					svg
+						fill: #fff
+				.arrowPrev
+					left: 10px
+				.arrowNext
+					right: 10px
+				.step4
+					margin-top: 0
+				.step3
+					margin-top: 15px
+				.step2
+					margin-top: 40px
+				.step1
+					margin-top: 40px
+				.step
+					padding-top: 15px
+					.headblock, .number
+						max-width: none !important
+					.circle
+						height: 279px 
+						width: 279px 
+						.block
+							margin-bottom: 60px
+						.skyBg
+							padding-top: 20px
+					.separ
+						max-width: 279px
+					.circle, .separ
+						margin-left: auto
+						margin-right: auto
+						span.month
+							display: none
+					.text
+						max-width: 279px
+						margin-left: auto
+						margin-right: auto
+						line-height: 1.3
+						text-align: center !important
+						span.name
+							margin-left: auto
+							margin-right: auto
+							text-align: center
+							font-family: 'MullerBold'
+							color: #fff
+							font-size: 24px
+							text-transform: uppercase
+							line-height: 1.2
+						.subname
+							font-family: 'MullerBold'
+							color: #fff
+							font-size: 24px
+							margin: 2.5px 0
+							line-height: 1.2
+							.red
+								color: rgb(255, 46, 47)
+						p.desc
+							margin-left: auto
+							margin-right: auto
+							max-width: 279px !important
+							text-align: center !important
+							font-size: 14px
+							color: #fff
+						.resultsName
+							margin-top: 50px
+							margin-left: auto
+							margin-right: auto
+							text-align: center
+							font-family: "MullerBold"
+							font-size: 14px
+							color: #fff
+							max-width: 240px
+						p.results
+							margin-left: auto
+							margin-right: auto
+							text-align: center
+							max-width: 240px
+							font-size: 14px
+							color: #fff
+							font-family: 'MullerLight'
+					.button
+						width: 279px !important
+						margin-left: auto
+						margin-right: auto
+		section.first
+			position: relative
+			.numbers
+				background-image: url('../img/be/be-first-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				padding-bottom: 75px
+				.question
+					position: absolute
+					top: -115px
+					left: 0
+					right: 0
+					margin: auto
+					border-radius: 50%
+					background-color: rgb(255, 46, 47)
+					box-shadow: 0 22.8px 68.4px 0 #FF2727
+					width: 230px
+					height: 230px
+					z-index: 40
+					text-align: center
+					span
+						line-height: 1.4
+						font-family: 'MullerBold'
+						font-size: 22.8px
+						color: #fff
+				img.questionBg
+					position: absolute
+					top: -215px
+					left: -15px
+					right: 0
+					z-index: 30
+					margin: auto
+					pointer-events: none
+
+				.aboutNumbers
+					padding-top: 190px
+					.headblock
+						position: relative
+						span.head
+							position: relative
+						span.head::before
+							content: ''
+							position: absolute
+							top: 12.5px
+							left: -135px
+							background-color: rgb(255, 46, 47)
+							width: 69px
+							height: 6px
+						span.number
+							position: absolute
+							top: -32.5px
+							left: -90px
+							font-size: 70px
+							font-family: 'MullerBold'
+							color: rgba(0, 0, 0, 0.102)
+				.points
+					padding-top: 75px
+					.point
+						line-height: 1.2
+						span.big
+							font-family: 'MullerBold'
+							font-size: 84px
+							color: #ff2e2f
+						span.desc
+							font-family: 'MullerRegular'
+							font-size: 20px
+							color: #313131
+					.slashLine
+						background-color: rgb(0, 0, 0)
+						opacity: 0.102
+						width: 1px
+						height: 150px
+						transform: rotate(20deg)
+			.points
+				position: relative
+				overflow: hidden
+				.circleBg
+					position: absolute
+					right: -425px
+					bottom: -357.5px
+					z-index: 9999
+					border-width: 1px
+					border-color: rgba(255, 255, 255, 0.302)
+					border-style: solid
+					border-radius: 50%
+					width: 892px
+					height: 892px
+					pointer-events: none
+				img.mask 
+					position: absolute
+					top: 0
+					bottom: 0
+					width: 100%
+					left: 0
+					z-index: 30
+					pointer-events: none
+				.content
+					padding-top: 120px
+					span.head, ul, .arrows
+						z-index: 30
+						position: relative
+					ul
+						padding-top: 50px
+						padding-left: 0
+						margin-left: -15px
+						margin-bottom: 135px
+						list-style: none
+						li
+							img.icon
+								width: 55px
+								height: auto
+							p.desc
+								margin-left: 25px
+								font-family: 'MullerRegular'
+								font-size: 17px
+								color: #313131
+								max-width: 85%
+					.arrows
+						padding-bottom: 15px
+						margin-bottom: 50px
+						.arrow
+							cursor: pointer
+							transition: 0.3s
+							border-width: 2px
+							border-color: rgb(53, 56, 59)
+							border-style: solid
+							border-radius: 50%
+							width: 50px
+							height: 50px
+							margin-right: 15px
+							svg, path
+								transition: 0.15s
+						.arrow:hover
+							background-color: #ff2e2f
+							border-color: #ff2e2f
+							svg, path
+								fill: #fff
+						p.desc
+							user-select: none
+							pointer-events: none
+							font-family: 'MullerRegular'
+							font-size: 15px
+							color: #919191
+							margin-bottom: 0
+							margin-left: 15px
+							line-height: 1.3
+				.headblock-mobile
+					display: none
+					span.head
+						z-index: 30
+						position: relative
+				.csl
+					overflow-y: hidden
+					position: absolute
+					top: 0
+					right: 0
+					width: 100%
+					z-index: 10
+					.carousel-inner
+						width: 75%
+						margin-left: auto
+						img
+							position: relative
+							z-index: 10
+							margin: 0
+							padding: 0
+							width: 100%
+							margin-left: auto
+							outline: none
+							cursor: default
+							pointer-events: none
+							filter: brightness(65%)
+				.cslMobile-control
+					padding-top: 15px
+					padding-bottom: 15px
+					display: none
+					.cslCounter
+						margin-left: 15px
+						span.single
+							font-family: 'MullerBold'
+							font-size: 28px
+							color: #000
+							margin-bottom: 5px
+						span.all
+							font-family: 'MullerMedium'
+							font-size: 15px
+							margin-top: 10px
+							margin-left: 10px
+							color: #000
+						.line
+							background-color: #ff2e2f
+							width: 2px
+							height: 20px
+							margin-left: 10px
+							transform: rotate(20deg)
+					.arrows
+						.arrow
+							cursor: pointer
+							transition: 0.3s
+							border-width: 2px
+							border-color: rgb(53, 56, 59)
+							border-style: solid
+							border-radius: 50%
+							width: 50px
+							height: 50px
+							margin-right: 15px
+							svg, path
+								transition: 0.15s
+						.arrow:hover
+							background-color: #ff2e2f
+							border-color: #ff2e2f
+							svg, path
+								fill: #fff
+				.counter
+					position: absolute
+					bottom: 80px
+					right: 130px
+					z-index: 30
+					background-image: url('../img/be/be-first-carousel-counter.png')
+					background-size: cover
+					background-repeat: no-repeat
+					width: 160px
+					height: 160px
+					span.single
+						font-family: 'MullerBold'
+						font-size: 28px
+						color: #000
+						margin-bottom: 25px
+					span.all
+						font-family: 'MullerMedium'
+						font-size: 15px
+						margin-top: 20px
+						margin-left: 10px
+						color: #000
+					.line
+						background-color: #ff2e2f
+						width: 2px
+						height: 20px
+						margin-left: 10px
+						transform: rotate(20deg)
+		section.second
+			overflow: hidden
+			.header
+				padding-left: 15px
+				padding-right: 15px
+				position: relative
+				z-index: 40
+				background-image: url('../img/be/be-second-header-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				padding-top: 125px
+				img.imgPosM
+					display: none
+					position: absolute
+					z-index: 100
+				.container
+					position: relative
+					img.imgPos
+						transition: 0.3s
+						position: absolute
+						bottom: -225px
+						right: 100px
+						z-index: 100
+					.headblock
+						position: relative
+						span.head
+							position: relative
+							color: #fff
+							span.red
+								color: #ff2e2f
+						span.head::before
+							content: ''
+							position: absolute
+							top: 12.5px
+							left: -160px
+							background-color: #ff2e2f
+							width: 69px
+							height: 6px
+						span.number
+							position: absolute
+							top: -32.5px
+							left: -115px
+							font-size: 70px
+							font-family: 'MullerBold'
+							color: rgba(255, 255, 255, 0.051)
+					.fact
+						padding-top: 35px
+						padding-bottom: 35px
+						.procent
+							display: inline-flex
+							font-family: 'MullerBold'
+							font-size: 84px
+							color: #fff
+							.red
+								color: #ff2e2f
+						p.desc
+							font-family: 'MullerRegular'
+							font-size: 22px
+							color: #fff
+							margin-left: 40px
+			.content
+				position: relative
+				background-color: #fff
+				padding-top: 130px
+				.cslMobile-control
+					padding-top: 15px
+					padding-bottom: 15px
+					display: none
+					.counter
+						margin-left: 15px
+						span.single
+							font-family: 'MullerBold'
+							font-size: 28px
+							color: #000
+							margin-bottom: 5px
+						span.all
+							font-family: 'MullerMedium'
+							font-size: 15px
+							margin-top: 10px
+							margin-left: 10px
+							color: #000
+						.line
+							background-color: #ff2e2f
+							width: 2px
+							height: 20px
+							margin-left: 10px
+							transform: rotate(20deg)
+					.arrows
+						.arrow
+							cursor: pointer
+							transition: 0.3s
+							border-width: 2px
+							border-color: rgb(53, 56, 59)
+							border-style: solid
+							border-radius: 50%
+							width: 50px
+							height: 50px
+							margin-right: 15px
+							svg, path
+								transition: 0.15s
+						.arrow:hover
+							background-color: #ff2e2f
+							border-color: #ff2e2f
+							svg, path
+								fill: #fff
+				.cslMobile
+					display: none
+					.carousel-item
+						.head:hover
+							.circle
+								border-color: #ff3334
+								background-color: #ff3334
+								img 
+									filter: none
+								p.text
+									font-family: 'MullerBold'
+									text-decoration: none
+						.head
+							margin-bottom: 15px
+							cursor: pointer
+							p.text
+								font-family: 'MullerRegular'
+								font-size: 18px
+								color: #313131
+								margin-left: 15px
+								margin-bottom: 0
+								transition: 0.3s
+							.circle
+								box-shadow: 0 0 5px #fff
+								border-width: 1px
+								border-color: #EAEAEA
+								border-style: solid
+								border-radius: 50%
+								background-color: rgb(255, 255, 255)
+								width: 113px
+								height: 113px
+								transition: 0.3s
+								img
+									width: 66%
+									transition: 0.3s
+									filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4)
+				img.bg
+					position: absolute
+					right: 0
+					top: 0
+					width: 100%
+					opacity: 0
+					transition: 0.5s
+				img.bg#content-bg1
+					opacity: 1
+				span.head
+					font-size: 37.5px
+					color: #313131
+				p.desc
+					font-family: 'MullerLight'
+					font-size: 17px
+					color: #313131
+					margin-top: 30px
+				ul
+					list-style: none
+					padding-left: 0
+					padding-top: 30px
+					padding-bottom: 100px
+					li 
+						margin-bottom: 15px
+						cursor: pointer
+						p.text
+							font-family: 'MullerRegular'
+							font-size: 18px
+							color: #313131
+							text-decoration: underline
+							margin-left: 15px
+							margin-bottom: 0
+							transition: 0.3s
+						.circle
+							border-width: 1px
+							border-color: #EAEAEA
+							border-style: solid
+							border-radius: 50%
+							background-color: rgb(255, 255, 255)
+							width: 113px
+							height: 113px
+							transition: 0.3s
+							img
+								transition: 0.3s
+								filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4)
+					li:hover
+						.circle
+							border-color: #ff3334
+							background-color: #ff3334
+							img 
+								filter: none
+						p.text
+							font-family: 'MullerBold'
+							text-decoration: none
+		section.third
+			.header
+				padding-left: 15px
+				padding-right: 15px
+				padding-top: 120px
+				padding-bottom: 120px
+				background-image: url('../img/be/be-third-header-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				.container
+					.headblock
+						position: relative
+						span.head
+							position: relative
+							color: #fff
+							span.red
+								color: #ff3334
+						span.head::before
+							content: ''
+							position: absolute
+							top: 12.5px
+							left: -160px
+							background-color: rgb(255, 51, 52)
+							width: 69px
+							height: 6px
+						span.number
+							position: absolute
+							top: -32.5px
+							left: -115px
+							font-size: 70px
+							font-family: 'MullerBold'
+							color: rgba(255, 255, 255, 0.102)
+			.content
+				position: relative
+				z-index: 10
+				padding-bottom: 0
+				padding-top: 100px
+				background-color: #fff
+				overflow: hidden
+				.headMobile
+					display: none
+					margin: 25px
+				img.imgBg-mobile
+					display: none
+					width: 100%
+				img.imgBg
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					z-index: -1
+					width: 100%
+					pointer-events: none
+				.container
+					ul
+						margin-top: 55px
+						list-style: none
+						padding-left: 0
+						li
+							margin-bottom: 40px
+							p.desc
+								font-family: 'MullerLight'
+								line-height: 1.3
+								font-size: 17px
+								color: #313131
+								margin-left: 30px
+								margin-bottom: 0
+							img
+								width: 45px
+		section.fourth
+			.header
+				padding-left: 15px
+				padding-right: 15px
+				position: relative
+				z-index: 20
+				padding-top: 120px
+				padding-bottom: 45px
+				background-image: url('../img/be/be-fourth-header-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				.container
+					.headblock
+						position: relative
+						span.head
+							position: relative
+							color: #fff
+							span.red
+								color: #ff2e2f
+						span.head::before
+							content: ''
+							position: absolute
+							top: 12.5px
+							left: -160px
+							background-color: #ff2e2f
+							width: 69px
+							height: 6px
+
+						span.number
+							position: absolute
+							top: -32.5px
+							left: -115px
+							font-size: 70px
+							font-family: 'MullerBold'
+							color: rgba(255, 255, 255, 0.102)
+					.slash
+						background-color: rgb(255, 255, 255)
+						opacity: 0.2
+						height: 120px
+						width: 1px
+						transform: rotate(15deg)
+					.infblock
+						line-height: 1.2
+						padding-right: 50px
+						span.name
+							font-size: 80px
+							color: #fff
+							font-family: 'MullerBold'
+							span.red
+								color: #ff2e2f
+						p.desc
+							font-family: 'MullerRegular'
+							font-size: 18px
+							color: #fff
+			.content
+				overflow: hidden
+				position: relative
+				z-index: 1
+				background-color: #F3F4F5
+				padding-top: 170px
+				padding-bottom: 75px
+				.circleBgT, .circleBgB
+					position: absolute
+					border-width: 1px
+					border-color: rgba(0, 0, 5, 0.102)
+					border-style: solid
+					border-radius: 50%
+					z-index: -1
+					pointer-events: none
+				.circleBgT
+					top: -465px
+					left: -200px
+					width: 1001px
+					height: 1001px
+				.circleBgB
+					bottom: -365px
+					right: -475px
+					width: 923px
+					height: 923px
+					border-color: rgba(134, 134, 134, 0.2)
+				.wrap
+					position: relative
+					.step3
+						img.posImg
+							position: absolute
+							bottom: -100px
+							right: -150px
+							z-index: -1
+						.numberBg
+							bottom: -120px
+							left: -135px
+						.bg
+							mask-image: url('../img/be/be-fourth-content-step-mask3.png')
+					.step2
+						img.posImg
+							position: absolute
+							top: -160px
+							left: -180px
+							z-index: -1
+						.numberBg
+							right: -165px
+							bottom: -120px
+						.bg
+							mask-image: url('../img/be/be-fourth-content-step-mask2.png')
+					.step1
+						.numberBg
+							top: -120px
+							left: -135px
+						.bg
+							mask-image: url('../img/be/be-fourth-content-step-mask1.png')
+					.step:hover
+						box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33)
+						.bg
+							.fillred
+								opacity: 0.5
+					.step
+						transition: 0.5s
+						position: relative
+						padding-left: 80px
+						padding-top: 50px
+						padding-bottom: 70px
+						background-color: #fff
+						width: 100%
+						margin-bottom: 110px
+						.numberBg
+							font-size: 200px
+							font-family: "MullerBold"
+							color: rgba(0, 0, 0, 0.071)
+							position: absolute
+							z-index: -1
+							transform: rotate(-90deg)
+						.bg
+							pointer-events: none
+							position: absolute
+							top: 0
+							bottom: 0
+							right: 0
+							height: 100%
+							width: 100%
+							z-index: 20
+							mask-size: cover
+							mask-position: right 
+							img
+								position: absolute
+								top: 0
+								bottom: 0
+								right: 0
+								height: 100%
+							.fillred
+								pointer-events: none
+								transition: 0.5s
+								position: absolute
+								top: 0
+								bottom: 0
+								right: 0
+								height: 100%
+								width: 100%
+								opacity: 0
+								background-color: #ff2e2f
+						.headblock
+							span.head
+								font-size: 32px
+								font-family: 'MullerExtraBold'
+								color: #000
+							span.number
+								font-family: 'MullerBold'
+								font-size: 24px
+								color: #ff2e2f
+							.slash
+								background-color: rgb(56, 59, 62)
+								opacity: 0.2
+								transform: rotate(20deg)
+								width: 1px
+								height: 25px
+								margin-left: 20px
+								margin-right: 20px	
+						ul
+							margin-top: 35px
+							margin-bottom: 35px
+							padding-left: 0
+							list-style: none
+							li
+								margin-bottom: 15px
+								.line
+									background-color: #ff2e2f
+									width: 17px
+									height: 2px
+									margin-top: 12px
+									margin-right: 10px
+								p.desc
+									font-family: 'MullerLight'
+									font-size: 16px
+									color: #313131
+									margin-bottom: 0
+						.buttons
+							position: relative
+							z-index: 20
+							.btnR
+								background-color: #ff2e2f
+								width: 210px
+								height: 58px
+								border-radius: 30px
+								cursor: pointer
+								span
+									font-family: 'MullerMedium'
+									font-size: 15px
+									color: #fff
+							.btnW
+								margin-left: 20px
+								border-width: 1px
+								border-color: rgba(0, 0, 0, 0.102)
+								border-style: solid
+								border-radius: 30px
+								width: 248px
+								height: 56px
+								cursor: pointer
+								span
+									font-family: 'MullerMedium'
+									font-size: 15px
+									color: #000
+		section.result
+			.header
+				padding-left: 15px
+				padding-right: 15px
+				background-image: url('../img/be/be-result-header-bg.jpg')
+				background-size: cover
+				background-repeat: no-repeat
+				padding-top: 105px
+				padding-bottom: 105px
+				span.head
+					color: #fff
+				span.head::after
+					display: none
+				.numbers
+					span.number
+						font-family: 'MullerExtraBold'
+						font-size: 54px
+						color: #fff
+						letter-spacing: 1px
+						span.red
+							color: #ff2e2f
+							font-size: 84px
+					.slash
+						background-color: rgb(255, 255, 255)
+						opacity: 0.2
+						transform: rotate(12.5deg)
+						height: 120px
+						width: 1px
+						margin-left: 140px
+						margin-right: 100px
+			.content
+				padding-top: 155px
+				padding-bottom: 140px
+				overflow: hidden
+				.container
+					position: relative
+					.arrowPrev, .arrowNext
+						cursor: pointer
+						position: absolute
+						z-index: 30
+						border-radius: 50%
+						background-color: rgb(255, 44, 45)
+						width: 50px
+						height: 50px
+					.arrowPrev
+						left: 0
+						top: 0
+						bottom: 0
+						margin: auto
+					.arrowNext
+						right: 0
+						top: 0
+						bottom: 0
+						margin: auto
+					.csl	
+						margin-top: 100px
+						padding-left: 0
+						padding-right: 0
+						margin-left: auto
+						margin-right: auto
+						position: relative
+						img.fantom1, img.fantom2
+							position: absolute
+							pointer-events: none
+						img.fantom1
+							bottom: -175px
+							left: -235px
+						img.fantom2
+							top: -230px
+							right: -230px
+						ol.carousel-indicators
+							margin-bottom: 0
+							bottom: -50px
+							display: inline-block
+							text-align: center
+							li, li:hover
+								border-radius: 50%
+								background-color: rgb(0, 0, 0)
+								width: 5px
+								height: 5px
+								opacity: 1
+								margin-left: 5px
+								margin-right: 5px
+								cursor: pointer
+								transition: 0.3s
+								display: inline-block
+								vertical-align: middle
+							li.active
+								opacity: 1
+								background-color: rgb(255, 44, 45)
+								width: 10px
+								height: 10px
+
+						.carousel-inner
+							.carousel-item
+								background-color: #fff
+								padding-top: 35px
+								padding-bottom: 35px
+								padding-left: 30px
+								padding-right: 30px
+								.picture
+									.pre, .post
+										.headText
+											color: #333333
+											font-family: 'MullerExtraBold'
+											font-size: 14px
+											text-transform: uppercase
+											margin-bottom: 10px
+									.post
+										margin-left: 30px
+								.textBlock
+									padding-top: 25px
+									padding-left: 90px
+									width: 100%
+									.topLine
+										border-bottom-color: rgb(230, 230, 230)
+										border-bottom-width: 1px
+										border-bottom-style: solid
+										justify-content: space-between
+										line-height: 1.2
+										span.name
+											font-size: 16px
+											font-family: 'MullerRegular'
+											color: #333333
+											line-height: 1.5
+										.counter
+											align-items: baseline
+											span.single
+												font-family: 'MullerExtraBold'
+												font-size: 20px
+												color: #ff2e2f
+												margin-right: 7.5px
+											.slash
+												background-color: #ff2e2f
+												height: 15px
+												width: 1px
+												transform: rotate(15deg)
+												margin-right: 7.5px
+											span.all
+												color: #333333
+												font-family: 'MullerMedium'
+												font-size: 12px
+									.text
+										margin-top: 40px
+										.headText
+											font-family: 'MullerExtraBold'
+											color: #333333
+											font-size: 28px
+										p.desc
+											color: #333333
+											font-size: 16px
+											font-family: 'MullerLight'
+									.results
+										.line
+											max-width: 170px
+											justify-content: space-between
+											span
+												font-size: 16px
+												font-family: 'MullerLight'
+												color: #333333
+												.red
+													color: #ff2e2f
+
+		section.howSignUp
+			background-image: url('../img/be/be-howSignUp-bg.jpg')
+			background-size: cover
+			background-repeat: no-repeat
+			padding-top: 100px
+			padding-bottom: 70px
+			padding-left: 15px
+			padding-right: 15px
+			span.head
+				color: #fff
+				font-family: 'MullerExtraBold'
+				font-size: 44px
+			.point
+				position: relative
+				display: grid
+				grid-template-columns: 75px auto
+				align-items: start
+				justify-items: start
+				margin-top: 100px
+				img
+					width: 75px
+					height: auto
+				p.desc
+					margin-bottom: 0
+					margin-left: 15px
+					font-family: 'MullerRegular'
+					font-size: 16px
+					color: #fff
+				.number
+					position: absolute
+					top: -35px
+					left: 0
+					font-size: 12px
+					font-family: "MullerMedium"
+					color: rgba(255, 255, 255, 0.302)
+			.button
+				cursor: pointer
+				margin-top: 30px
+				background-color: rgb(255, 255, 255)
+				width: 220px
+				height: 54px
+				border-radius: 27px
+				span 
+					color: #000
+					font-family: 'MullerMedium'
+					font-size: 15px
+			.signUp
+				margin-top: 40px
+				margin-left: auto
+				margin-right: auto
+				transition: 0.5s
+				animation: pulsation 2s infinite
+				overflow: hidden
+				position: relative
+				cursor: pointer
+				border-radius: 50%
+				background-color: rgb(255, 46, 47)
+				box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31)
+				width: 170px
+				height: 170px
+				span
+					font-family: 'MullerExtraBold'
+					font-size: 18px
+					color: #fff
+					text-transform: uppercase
+				svg
+					transition: 0.5s
+					position: absolute
+					bottom: -15px
+					right: 0
+					left: 25px
+					margin: auto
+			.signUp:hover
+				animation: none
+				box-shadow: 0 0 200px rgba(255, 44, 45, 0.9)
+				svg
+					opacity: 0
+			@keyframes pulsation
+				0%
+					box-shadow: 0 0 200px rgba(255, 44, 45, 0.9)
+				70%
+					box-shadow: 0 0 0 200px rgba(255, 44, 45, 0)
+				100% 
+					box-shadow: 0 0 0 0 rgba(255, 44, 46, 0)
+@media only screen and(max-width: 1800px)
+	body
+		main 
+			section.first
+				.points
+					.content
+						ul
+							margin-bottom: 100px
+@media only screen and(max-width: 1700px)
+	body
+		main
+			section.first
+				.points
+					.circleBg
+						right: -315px
+						bottom: -380px
+						width: 800px
+						height: 800px
+					.content
+						padding-top: 50px
+						ul
+							margin-bottom: 50px
+			section.third
+				.content
+					padding-top: 25px
+@media only screen and(max-width: 1600px)
+	body
+		main 
+			section.second
+				.content
+					padding-top: 60px
+@media only screen and(max-width: 1500px)
+	body
+		main
+			section.second, section.third, section.fourth
+				.header
+					.container
+						.headblock
+							margin-left: 100px
+			section.third
+				.content
+					.container
+						ul
+							margin-top: 25px
+							li
+								margin-bottom: 20px
+			section.purpose
+				.wrap
+					.rightB
+						display: none
+@media only screen and(max-width: 1400px)
+	body
+		header.container-fluid
+			.content
+				p.desc::before
+					width: 55px
+					left: -75px
+		main
+			section.purpose
+				.wrap
+					.step
+						.separ
+							span.month
+								display: none
+			section.first
+				.points
+					.content
+						span.head
+							br
+								display: none
+							span.red
+								margin-left: 5px
+						ul
+							li
+								p.desc
+									font-size: 15px
+								img.icon
+									width: 40px
+					.counter
+						bottom: 140px
+			section.second
+				.content
+					padding-top: 15px
+					span.head
+						font-size: 35.5px
+					p.desc
+						margin-top: 15px
+					ul
+						padding-top: 0
+						padding-bottom: 15px
+						li
+							.circle
+								img
+									width: 60%
+			section.result
+@media only screen and(max-width: 1300px)
+	body 
+		header.container-fluid
+			.content
+				p.desc
+					margin-left: 75px
+			img.imgC
+				width: 75%
+				left: -50px
+		main
+			section.third
+				.content
+					.container
+						span.head
+							br
+								display: none
+						ul
+							margin-top: 15px
+							li
+								margin-bottom: 15px
+								p.desc
+									margin-left: 15px
+			section.fourth
+				.content
+					.wrap
+						.step
+							.numberBg
+								font-size: 160px
+						.step1
+							.numberBg
+								top: -160px
+								left: -110px
+						.step2
+							.numberBg
+								right: -125px
+								bottom: -95px
+						.step3
+							.numberBg
+								bottom: -160px
+								left: -110px
+
+@media only screen and(max-width: 1199px)
+	body
+		header.container-fluid
+			nav
+				.socials
+					display: flex !important
+					justify-content: flex-end !important
+				.adress
+					display: none !important
+		main
+			section.purpose
+				.desktopBlock
+					display: none
+				.cslMobile
+					display: block
+					.step
+						.text
+							p.desc
+								letter-spacing: normal
+							.resultsName
+								margin-top: 25px
+				.cslMobile-control
+					display: flex
+			section.first
+				.points
+					.circleBg
+						right: -250px
+						bottom: -250px
+						width: 600px
+						height: 600px
+					.counter
+						width: 150px
+						height: 150px
+						bottom: 75px
+						right: 75px
+
+					.content
+						ul
+							padding-top: 15px
+							margin-bottom: 15px
+						.arrows
+							.arrow
+								width: 45px
+								height: 45px
+			section.second
+				.header
+					img.imgPosM
+						display: block
+						right: 0
+						bottom: 0
+					.container
+						img.imgPos
+							display: none
+						.fact
+							.procent
+								.red
+									color: #fff
+
+				.content
+					img.bg
+						display: none
+					ul
+						display: none
+					.cslMobile
+						display: block
+						img
+							width: 100%
+					.cslMobile-control
+						display: flex
+			section.third
+				.content
+					padding-top: 15px
+			section.fourth
+				.header
+					.container
+						.infblock
+							span.name
+								font-size: 65px
+				.content
+					.wrap
+						.step	
+							padding-top: 20px
+							padding-bottom: 20px
+							padding-left: 35px
+			section.result
+				.header
+					.container
+						.numbers
+							margin-top: 15px
+							span.number
+								line-height: 1.2
+				.content
+					.container
+						.csl
+							.carousel
+								.carousel-inner
+									.carousel-item
+										.picture
+											.pre, .post
+												img 
+													width: 175px
+										.textBlock
+											.text
+												margin-top: 15px
+@media only screen and(max-width: 1100px)
+	body
+		main
+			section.first
+				.points
+					.counter
+						width: 125px
+						height: 125px
+						bottom: 115px
+						right: 75px
+					.content
+						padding-top: 5px
+						.arrows
+							padding-bottom: 0
+							margin-bottom: 35px
+			section.third
+				.content
+					padding-top: 0
+					.headMobile
+						display: block
+					img.imgBg
+						display: none
+					img.imgBg-mobile
+						display: block
+					.container
+						padding-top: 25px
+						span.head
+							display: none
+						ul
+							li
+								p.desc
+									margin-left: 30px
+@media only screen and(max-width: 1023px)
+	body
+		main
+			section.purpose
+				.headerBlock
+					margin-left: 100px
+			section.first
+				.points.container-fluid
+					img.mask
+						display: none
+					.csl
+						position: relative
+						.carousel-inner
+							width: 100%
+
+							img
+								width: 100%
+					.circleBg
+						display: none 
+					.counter
+						display: none !important
+					.headblock-mobile
+						display: block
+						margin-bottom: 25px
+					.cslMobile-control
+						display: flex
+					.content
+						padding-top: 25px
+						ul
+							li
+								p.desc
+									font-size: 17px
+									font-family: 'MullerLight'
+						span.head
+							display: none
+						.arrows
+							display: none !important
+@media only screen and(max-width: 992px)
+	body
+		header.container-fluid
+			background-image: url('../img/be/be-header-mobileBg.png')
+			background-size: cover
+			background-repeat: no-repeat
+
+			nav
+				.logo
+					.textLogo
+						span.desc, span.name
+							color: #fff
+				.socials
+					display: none !important
+			img.imgC
+				display: none
+			.content
+				padding-top: 180px
+				padding-bottom: 100px
+				.textMobile
+					display: block
+					text-transform: uppercase
+					color: #fff
+					font-size: 70px
+					font-family: 'MullerExtraBold'
+				p.desc
+					color: #fff
+				.bottom
+					padding-top: 0
+					.wrap
+						.button
+							width: 150px
+							height: 150px
+						.circleSm, .circleMd, .circleLg, .circleXl, img.iconBg
+							display: none
+		main
+			section.purpose
+				img.fotoBg
+					margin-left: 0
+					margin-top: 0
+			section.first
+				.numbers
+					.question
+						width: 228px
+						height: 228px
+					img.questionBg
+						width: 330px
+					.points
+						.slashLine
+							margin: 0 40px
+			section.second
+				.header
+					.container
+						.fact
+							p.desc
+								font-size: 18px
+							.procent
+								font-size: 65px
+@media only screen and(max-width: 991px)
+	body
+		main 
+			section.fourth
+				.header
+					padding-top: 60px
+					.container
+						.infblock
+							margin-top: 15px
+							padding-right: 0
+						.slash	
+							display: none
+				.content
+					.container
+						.wrap
+							.step
+								padding-top: 0
+								padding-left: 0
+								text-align: center
+								.bg
+									position: relative
+									height: auto
+									mask: none
+									img 
+										position: relative
+										width: 100%
+								.headblock, ul, .buttons
+									text-align: left
+									padding-left: 50px
+								.headblock	
+									margin-top: 25px
+			section.result
+				.content
+					.container
+						.csl
+							.carousel
+								.carousel-inner
+									.carousel-item
+										.wrap
+											flex-direction: column
+										.picture
+											justify-content: space-between
+											.pre, .post
+												img
+													width: 100%
+										.textBlock
+											padding-left: 15px
+											padding-right: 15px
+
+@media only screen and(max-width: 800px)
+	body
+		main
+			section.first
+				.points
+					.circleBg
+						width: 500px
+						height: 500px
+					.counter
+						width: 110px
+						height: 110px
+						bottom: 35px
+						right: 35px
+						span.single
+							font-size: 20px
+						span.all
+							font-size: 12.5px
+			section.result
+				.header
+					padding-top: 35px
+					padding-bottom: 35px
+					.container
+						span.head
+							font-size: 35px
+						.numbers
+							.slash
+								height: 90px
+							span.number
+								font-size: 35px
+							span.number
+								span.red
+									font-size: 60px
+
+@media only screen and(max-width: 767px)
+	body
+		header.container-fluid
+			.content
+				.btnLink
+					order: 2
+					justify-content: flex-end !important
+				.dateStart
+					justify-content: flex-start !important
+				.textMobile
+					font-size: 50px
+				.bottom
+					padding-top: 20px
+					.circle
+						background-color: #fff
+						span
+							color: #ff2e2f
+					.text
+						.subText
+							background-color: #ff2e2f
+							color: #fff
+
+		main
+			section.purpose
+				background-image: url('../img/be/be-purpose-mobile-bg.jpg')
+				background-size: contain
+				background-repeat: repeat
+				.cslMobile
+					.step
+						.circle
+							width: 229px
+							height: 229px
+							.block	
+								margin-bottom: 30px
+							.skyBg
+								padding-top: 10px
+			section.first
+				.numbers
+					background-size: contain
+					background-repeat: repeat
+					.points
+						flex-direction: column
+						.slashLine
+							display: none
+							align-items: center
+						.point
+							text-align: center
+							span.big
+								font-size: 63px
+							span.desc
+								font-family: 'MullerLight'
+								font-size: 15px
+								br
+									display: none
+			section.result
+				.header
+					.container
+						.numbers
+							flex-direction: column
+							align-items: start !important
+							.slash
+								display: none
+				.content
+					padding-top: 50px
+					padding-bottom: 100px
+					.container
+						.csl
+							margin-top: 35px
+			section.howSignUp
+				background-image: url('../img/be/be-result-header-bg.jpg')
+				background-repeat: repeat
+				background-size: contain
+				.button
+					background-color: #ff2e2f
+					span
+						color: #fff
+
+@media only screen and(max-width: 600px)
+	body
+		main
+			section.purpose
+				.headerBlock
+					span.head
+						font-size: 35px
+					p.desc
+						font-size: 17px
+			section.first
+				.points
+					.headblock-mobile
+						span.head
+							font-size: 35px
+							br
+								display: block
+
+				.numbers
+					.aboutNumbers
+						.headblock
+							span.head
+								font-size: 35px
+							span.head::before
+								top: 9.5px
+								left: -115px
+								width: 45px
+							span.number
+								font-size: 60px
+			section.second
+				.header
+					.container
+						.headblock
+							span.head
+								font-size: 35px
+							span.head::before
+								top: 5.5px
+								left: -135px
+								width: 45px
+							span.number
+								font-size: 60px
+			section.result
+				.content
+					.container
+						.arrowNext
+							width: 40px
+							height: 40px
+							margin-right: 10px
+						.arrowPrev
+							width: 40px
+							height: 40px
+							margin-left: 10px
+						.csl
+							.carousel
+								.carousel-inner
+									.carousel-item
+										.textBlock
+											.topLine
+												span.name
+													font-size: 14px
+
+
+@media only screen and(max-width: 550px)
+	body
+		header.container-fluid
+			background-image: url('../img/be/be-header-mobileBg.png')
+			.content
+				padding-bottom: 25px
+				padding-top: 100px
+				p.desc
+					font-size: 17px
+					margin-left: 0
+					margin-top: 25px
+				p.desc::before
+					left: 0
+					top: -15px
+				.bottom
+					.circle
+						width: 70px
+						height: 70px
+						span
+							font-size: 40px
+					.text
+						span.month
+							font-size: 24px
+					.wrap
+						.button
+							width: 135px
+							height: 135px
+							margin-top: 20px
+							span
+								display: none
+							.mobile
+								display: block
+								font-size: 12px
+								letter-spacing: 1px
+							svg
+								width: 37.5px
+								height: auto
+								bottom: 0px
+								right: 0
+								left: 0
+				.textMobile
+					font-size: 35px
+					line-height: 1.1
+				.btnLink
+					margin-top: 0
+					justify-content: center !important
+				.dateStart
+					justify-content: center !important
+		main
+			section.purpose
+				padding-top: 25px
+				img.fotoBg
+					width: 75%
+				.headerBlock	
+					margin-left: 0
+					span.head::before
+						left: 0
+						top: -30px
+			section.first
+				.numbers
+					.aboutNumbers
+						padding-left: 15px
+						.headblock
+							span.number
+								top: -75px
+								left: 15px
+							span.head::before
+								top: -37.5px
+								left: 0
+								width: 35px
+			section.second
+				.header
+					background-size: contain
+					background-repeat: repeat
+					.container
+						.headblock
+							margin-left: 0px
+							padding-right: 15px
+							span.number
+								top: -82.5px
+								left: 15px
+							span.head::before
+								top: -44.5px
+								left: 0
+								width: 35px
+						.fact	
+							flex-direction: column
+							align-items: start !important
+							p.desc
+								margin-left: 0
+								max-width: 175px
+			section.third
+				.header
+					padding-bottom: 60px
+					background-size: contain
+					background-repeat: repeat
+					img.imgPosM
+						right: -5%
+						top: -5%
+					.container
+						.headblock
+							padding-top: 25px
+							margin-left: 0
+							span.number
+								top: -82.5px
+								left: 15px
+							span.head::before
+								top: -62.5px
+								left: 0
+								width: 35px
+						.fact	
+							flex-direction: column
+							align-items: start !important
+							p.desc
+								margin-left: 0
+			section.fourth
+				.header
+					background-size: contain
+					background-repeat: repeat
+					padding-top: 75px
+					img.imgPosM
+						right: -5%
+						top: -5%
+					.container
+						.headblock
+							margin-left: 0px
+							span.number
+								top: -82.5px
+								left: 15px
+							span.head::before
+								top: -36.5px
+								left: 0
+								width: 35px
+						.fact	
+							flex-direction: column
+							align-items: start !important
+							p.desc
+								margin-left: 0
+			section.howSignUp
+				padding-top: 50px
+				span.head
+					font-size: 34.8px
+				.signUp
+					width: 135px
+					height: 135px
+					span
+						font-size: 12px
+						letter-spacing: 1px
+					svg
+						width: 37.5px
+						height: auto
+						bottom: 0px
+						right: 0
+						left: 0
+@media only screen and(max-width: 500px)
+	body
+		.scroll
+			display: none
+		main
+			section.purpose
+				.cslMobile
+					.arrowPrev
+						left: 0px
+					.arrowNext
+						right: 0px
+			section.first
+				.points
+					padding-left: 0
+					padding-right: 0
+					.content, .headblock-mobile
+						padding-left: 30px
+						padding-right: 30px
+			section.second
+				.header
+					.container
+						.headblock
+							span.head
+								font-size: 35px
+			section.third
+				.header
+					.container
+						.headblock
+							span.head
+								font-size: 35px
+				.content
+					.cslMobile
+						.carousel-item
+							.head
+								.circle
+									width: 90px
+									height: 90px
+			section.third
+				.content
+					.container
+						span.head
+							font-size: 35px
+						ul
+							li
+								flex-direction: column
+								align-items: start !important
+								justify-content: center !important
+								padding-left: 12.5px
+								p.desc
+									margin-left: 0
+									text-align: left
+									margin-top: 10px
+									br
+										display: none
+			section.fourth
+				.header
+					.container
+						.headblock
+							margin-left: 0
+							span.head
+								font-size: 35px
+						.infblock
+							margin-top: 25px
+							span.name
+								font-size: 40px
+				.content
+					.container
+						.wrap
+							.step
+								ul, .buttons
+									padding-left: 15px
+								.headblock
+									padding-left: 10px	
+									span.head
+										font-size: 30px
+									span.number
+										font-size: 22px
+								.buttons
+									.btnR
+										width: 150px
+									.btnW
+										width: 200px
+			section.result
+				.header
+					.container
+						span.head
+							font-size: 25px
+						.numbers
+							span.number
+								font-size: 25px
+								span.red
+									font-size: 45px
+				.content
+					.container
+						span.head
+							font-size: 35px
+@media only screen and(max-width: 400px)
+	body
+		.scroll
+			left: 15px
+		main
+			section.purpose
+				img.fotoBg
+					width: 100%
+			section.second
+				.header
+					img.imgPosM
+						width: 130px
+					.container
+						.fact
+							.procent
+								font-size: 60px
+							p.desc
+								font-size: 16px
+				.content
+					.cslMobile
+						.carousel-item
+							.head
+								padding-left: 15px
+								padding-right: 15px
+								flex-direction: column
+								align-items: start !important
+								.circle
+									width: 103px
+									height: 103px
+									img
+										width: 73%
+								p.text
+									margin-left: 0
+									margin-top: 15px
+									margin-bottom: 15px
+			section.first
+				.points
+					.content
+						span.head
+							font-size: 35px
+						ul
+							li
+								flex-direction: column
+								img.icon
+									width: 55px
+								p.desc
+									font-size: 13px
+									margin-left: 0
+									margin-top: 20px
+									margin-bottom: 20px
+						.arrows
+							.arrow
+								width: 35px
+								height: 35px
+								margin-right: 10px
+							p.desc
+								font-size: 11px
+			section.third
+				.content
+					.headMobile
+						font-size: 32px
+			section.fourth
+				.content
+					.container
+						.wrap
+							.step
+								.headblock	
+									span.head
+										font-size: 25px
+									span.number
+										font-size: 17px
+								ul
+									li
+										p.desc
+											font-size: 14px
+								.buttons
+									flex-direction: column
+									.btnW
+										margin-left: 0
+										margin-top: 15px
+			section.result
+				.content
+					.container
+						.csl
+							.carousel
+								.carousel-inner
+									.carousel-item
+										padding-left: 15px
+										padding-right: 15px

@@ -55,17 +55,51 @@ $(document).ready(function(){
 		$('.schedule-Unpaid').hide();
 	})
 
-	// popup
-	$('#popup1-btn').click(function() {
-		$('#popup1').bPopup({
-			position: ['50%', '50%'],
-			positionStyle: 'fixed'
+	// Fancybox
+	$('[data-fancybox="gallery"]').fancybox();
+
+	$('#profile-video-section-btn').click(function(){
+		$('#profile-main-section').fadeOut(250);
+		$('#profile-video-section').fadeIn(250);
+		$(this).addClass('active')
+		$('#profile-main-btns .button').not(this).click(function(){
+			$('#profile-video-section').fadeOut(250);
+			$('#profile-video-section-btn').removeClass('active')
 		});
-	})
-	$('#popup2-btn').click(function() {
-		$('#popup2').bPopup({
-			position: ['50%', '50%'],
-			positionStyle: 'fixed'
+	});
+
+	// Video
+	$(document).ready(function(){
+		for(let i = 1; i < 16; i++){
+			player = videojs('video-player' + i, {
+				controls: true,
+				autoplay: false,
+				preload: 'none',
+				width: '310',
+				playbackRates: [2, 1.75, 1.5, 1.25, 1, 0.75, 0.5],
+			});
+			$('#video-player' + i).prepend('<span class="vjs-video-name">Ролик ' + i + '</span>');
+		}
+		$('.video-js').addClass('vjs-big-play-centered');
+		$('.vjs-menu span.vjs-menu-item-text:contains("1x")').text("Обычная");
+		$('.vjs-playback-rate .vjs-menu ul.vjs-menu-content').prepend('<div class="vjs-separ-line"></div>');
+		$('.vjs-playback-rate .vjs-menu ul.vjs-menu-content').prepend('<span class="vjs-subhead">Скорость</span>');
+		$('.vjs-playback-rate.vjs-menu-button').click(function(){
+			$(this).children('.vjs-playback-rate .vjs-menu').toggleClass('open');
 		});
-	})
+		$('.video-slider').slick({
+			slidesToShow: 3,
+			dots: true,
+			arrows: true,
+			infinite: false,
+		});
+		
+	});
+	$(document).click(function(e){
+		if (!$('.vjs-playback-rate.vjs-menu-button').is(e.target) && $('.vjs-playback-rate.vjs-menu-button').has(e.target).length === 0) {
+			$('.vjs-playback-rate .vjs-menu').removeClass('open');
+		}
+	});
+
+
 });
