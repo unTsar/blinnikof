@@ -1,10 +1,9 @@
 extends _layouts/home
 
 block styles
-
+	link(rel="stylesheet", href="css/profile.css")
 	link(rel="stylesheet", href="css/jquery.fancybox.css")
 	link(rel="stylesheet", href="css/contacts.css")
-	link(rel="stylesheet", href="css/profile.css")
 	link(rel="stylesheet", href="css/video-js.css")
 	link(rel="stylesheet", href="css/slick.css")
 	link(rel="stylesheet", href="css/slick-theme.css")
@@ -636,38 +635,36 @@ block content
 			.video-section#profile-video-section
 				.container
 					.steps-navigation
-						a.step-link(href="#") Вводная
-						a.step-link(href="#") 1-ая ступень
-						a.step-link(href="#") 2-ая ступень
-						a.step-link(href="#") 3-ая ступень
-					.lecture
-						h3
-							|#[span.red Вводная] лекция о курсе #BodyEvolution от автора курса - 
-							br
-							|Виктории Блинниковой
-						.subhead
-							|(для тех, кто пропустил очную встречу 
-							br
-							|в первое воскресенье курса)
-						.video-item
-							.video-index
-								span В
-							.video-container
-								video#video-player1.video-js
-									source(src="img/video-example.mp4" type='video/mp4')
-									p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-									
-
-
-					.course-step
+						a.step-link.active.video-step-link#video-step-link0(href="#") Вводная
+						a.step-link.video-step-link#video-step-link1(href="#") 1-ая ступень
+						a.step-link.video-step-link#video-step-link2(href="#") 2-ая ступень
+						a.step-link.video-step-link#video-step-link3(href="#") 3-ая ступень
+					.course-step.active.video-course-step#video-course-step0
+						.lecture
+							h3
+								|#[span.red Вводная] лекция о курсе #BodyEvolution от автора курса - 
+								br
+								|Виктории Блинниковой
+							.subhead
+								|(для тех, кто пропустил очную встречу 
+								br
+								|в первое воскресенье курса)
+							.video-item
+								.video-index
+									span В
+								.video-container
+									video#video-player1.video-js
+										source(src="img/video-example.mp4" type='video/mp4')
+										p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+					.course-step.video-course-step#video-course-step1
 						h2 1-ая ступень курса #BodyEvolution
 						.lecture
-							h3 #[span.red Первая] видео-лекция о правильном питании (4 ролика)
+							h3 #[span.red Первая] видео-лекция о правильном питании #[.br-mob](4 ролика)
 							.subhead
 								|Изучить до первой тренировки тем, кто пропустил 
 								br
 								|встречу с диетологом в день старта
-							.video-slider.height-fluid
+							.video-slick-slider.video-slider.height-fluid
 								.slick-slide
 									.video-item
 										.video-index.done
@@ -731,37 +728,40 @@ block content
 										li
 											a(href="#") link.doc
 						.lecture
-							h3 #[span.red Вторая] видео-лекция о правильном питании (3 ролика)
+							h3 #[span.red Вторая] видео-лекция о правильном питании #[.br-mob](3 ролика)
 							.separ-line
-							.height-fluid
-								.video-item
-									.video-index
-										span 05
-									.video-container
-										video#video-player6.video-js(width="310")
-											source(src="img/video-example.mp4" type='video/mp4')
-											p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-									ul.topics
-										li Как создать привычку правильно питаться
-										li Группы продуктов по назначению
-								.video-item
-									.video-index
-										span 06
-									.video-container
-										video#video-player7.video-js(width="310")
-											source(src="img/video-example.mp4" type='video/mp4')
-											p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-									ul.topics
-										li Продукты (1 часть)
-								.video-item
-									.video-index
-										span 07
-									.video-container
-										video#video-player8.video-js(width="310")
-											source(src="img/video-example.mp4" type='video/mp4')
-											p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-									ul.topics
-										li Продукты (2 часть)
+							.height-fluid.video-slider-tablet
+								.slick-slide-tablet
+									.video-item
+										.video-index
+											span 05
+										.video-container
+											video#video-player6.video-js(width="310")
+												source(src="img/video-example.mp4" type='video/mp4')
+												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+										ul.topics
+											li Как создать привычку правильно питаться
+											li Группы продуктов по назначению
+								.slick-slide-tablet
+									.video-item
+										.video-index
+											span 06
+										.video-container
+											video#video-player7.video-js(width="310")
+												source(src="img/video-example.mp4" type='video/mp4')
+												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+										ul.topics
+											li Продукты (1 часть)
+								.slick-slide-tablet
+									.video-item
+										.video-index
+											span 07
+										.video-container
+											video#video-player8.video-js(width="310")
+												source(src="img/video-example.mp4" type='video/mp4')
+												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+										ul.topics
+											li Продукты (2 часть)
 							.useful-links
 								img(src="img/profile/useful-links-preview.png", alt="useful-links-preview.png")
 								.textblock
@@ -772,27 +772,29 @@ block content
 										li
 											a(href="#") link.ru
 						.lecture
-							h3 #[span.red Третья] видео-лекция о правильном питании (2 ролика)
+							h3 #[span.red Третья] видео-лекция о правильном питании #[.br-mob](2 ролика)
 							.separ-line
-							.height-fluid
-								.video-item
-									.video-index
-										span 08
-									.video-container
-										video#video-player9.video-js(width="310")
-											source(src="img/video-example.mp4" type='video/mp4')
-											p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-									ul.topics
-										li Продукты (3 часть)
-								.video-item
-									.video-index
-										span 09
-									.video-container
-										video#video-player10.video-js(width="310")
-											source(src="img/video-example.mp4" type='video/mp4')
-											p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-									ul.topics
-										li Продукты (4 часть)
+							.height-fluid.video-slider-mob1
+								.slick-slide-mob
+									.video-item
+										.video-index
+											span 08
+										.video-container
+											video#video-player9.video-js(width="310")
+												source(src="img/video-example.mp4" type='video/mp4')
+												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+										ul.topics
+											li Продукты (3 часть)
+								.slick-slide-mob
+									.video-item
+										.video-index
+											span 09
+										.video-container
+											video#video-player10.video-js(width="310")
+												source(src="img/video-example.mp4" type='video/mp4')
+												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+										ul.topics
+											li Продукты (4 часть)
 							.useful-links
 								img(src="img/profile/useful-links-preview.png", alt="useful-links-preview.png")
 								.textblock
@@ -802,30 +804,32 @@ block content
 											a(href="#") link.ru
 										li
 											a(href="#") link.ru
-					.course-step
+					.course-step.video-course-step#video-course-step2
 						h2 2-ая ступень курса #BodyEvolution
 						.lecture
-							h3 #[span.red Четвёртая] видео-лекция о правильном питании (2 ролика)
+							h3 #[span.red Четвёртая] видео-лекция о правильном питании #[.br-mob](2 ролика)
 							.separ-line
-							.height-fluid
-								.video-item.disabled
-									.video-index
-										span 10
-									.video-container
-										video#video-player11.video-js(width="310")
-											source(src="img/video-example.mp4" type='video/mp4')
-											p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-									ul.topics
-										li Белки
-								.video-item.disabled
-									.video-index
-										span 11
-									.video-container
-										video#video-player12.video-js(width="310")
-											source(src="img/video-example.mp4" type='video/mp4')
-											p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-									ul.topics
-										li Жиры
+							.height-fluid.video-slider-mob2
+								.slick-slide-mob
+									.video-item.disabled
+										.video-index
+											span 10
+										.video-container
+											video#video-player11.video-js(width="310")
+												source(src="img/video-example.mp4" type='video/mp4')
+												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+										ul.topics
+											li Белки
+								.slick-slide-mob
+									.video-item.disabled
+										.video-index
+											span 11
+										.video-container
+											video#video-player12.video-js(width="310")
+												source(src="img/video-example.mp4" type='video/mp4')
+												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+										ul.topics
+											li Жиры
 							.useful-links
 								img(src="img/profile/useful-links-preview.png", alt="useful-links-preview.png")
 								.textblock
@@ -836,27 +840,29 @@ block content
 										li
 											a(href="#") link.ru
 						.lecture
-							h3 #[span.red Пятая] видео-лекция о правильном питании (2 ролика)
+							h3 #[span.red Пятая] видео-лекция о правильном питании #[.br-mob](2 ролика)
 							.separ-line
-							.height-fluid
-								.video-item.disabled
-									.video-index
-										span 12
-									.video-container
-										video#video-player13.video-js(width="310")
-											source(src="img/video-example.mp4" type='video/mp4')
-											p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-									ul.topics
-										li Углеводы (1 часть)
-								.video-item.disabled
-									.video-index
-										span 13
-									.video-container
-										video#video-player14.video-js(width="310")
-											source(src="img/video-example.mp4" type='video/mp4')
-											p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-									ul.topics
-										li Углеводы (2 часть)
+							.height-fluid.video-slider-mob2
+								.slick-slide-mob
+									.video-item.disabled
+										.video-index
+											span 12
+										.video-container
+											video#video-player13.video-js(width="310")
+												source(src="img/video-example.mp4" type='video/mp4')
+												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+										ul.topics
+											li Углеводы (1 часть)
+								.slick-slide-mob
+									.video-item.disabled
+										.video-index
+											span 13
+										.video-container
+											video#video-player14.video-js(width="310")
+												source(src="img/video-example.mp4" type='video/mp4')
+												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+										ul.topics
+											li Углеводы (2 часть)
 							.useful-links
 								img(src="img/profile/useful-links-preview.png", alt="useful-links-preview.png")
 								.textblock
@@ -866,10 +872,10 @@ block content
 											a(href="#") link.ru
 										li
 											a(href="#") link.ru
-					.course-step
+					.course-step.video-course-step#video-course-step3
 						h2 3-я ступень курса #BodyEvolution
 						.lecture
-							h3 #[span.red Шестая] видео-лекция о правильном питании (1 ролик)
+							h3 #[span.red Шестая] видео-лекция о правильном питании #[.br-mob](1 ролик)
 							.separ-line
 							.video-item.disabled
 								.video-index
@@ -893,7 +899,7 @@ block content
 						h2 Остались вопросы по видео-лекциям?
 						.subhead Вы можете задать их Диетологу прямо здесь:
 						.row
-							.col-10
+							.col-sm-10
 								form(action="#")
 									textarea(name="qform1" placeholder="Ваше сообщение")
 									input.submit(type="submit" value="Отправить")
@@ -902,8 +908,8 @@ block content
 	include _partials/footer.pug
 
 block scripts
-	script(src="js/video.min.js")
 	script(src="js/slick.min.js")
+	script(src="js/video.min.js")
 	script(src="js/map.js")
 	script(src="js/tether.min.js")
 	script(src='js/jquery.scrollTo.min.js')

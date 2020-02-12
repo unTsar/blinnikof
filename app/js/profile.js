@@ -69,37 +69,118 @@ $(document).ready(function(){
 	});
 
 	// Video
-	$(document).ready(function(){
-		for(let i = 1; i < 16; i++){
-			player = videojs('video-player' + i, {
-				controls: true,
-				autoplay: false,
-				preload: 'none',
-				width: '310',
-				playbackRates: [2, 1.75, 1.5, 1.25, 1, 0.75, 0.5],
-			});
-			$('#video-player' + i).prepend('<span class="vjs-video-name">Ролик ' + i + '</span>');
-		}
-		$('.video-js').addClass('vjs-big-play-centered');
-		$('.vjs-menu span.vjs-menu-item-text:contains("1x")').text("Обычная");
-		$('.vjs-playback-rate .vjs-menu ul.vjs-menu-content').prepend('<div class="vjs-separ-line"></div>');
-		$('.vjs-playback-rate .vjs-menu ul.vjs-menu-content').prepend('<span class="vjs-subhead">Скорость</span>');
-		$('.vjs-playback-rate.vjs-menu-button').click(function(){
-			$(this).children('.vjs-playback-rate .vjs-menu').toggleClass('open');
+
+	// $.expr[":"].exact = $.expr.createPseudo(function(arg) {
+
+	// 	return function(element) {
+
+	// 		return $(element).text() === arg.trim();
+
+	// 	};
+
+	// });
+
+	for(let i = 1; i < 16; i++){
+		player = videojs('video-player' + i, {
+			controls: true,
+			autoplay: false,
+			muted: true,
+			preload: 'none',
+			width: '310',
+			playbackRates: [2, 1.75, 1.5, 1.25, 1, 0.75, 0.5],
 		});
-		$('.video-slider').slick({
-			slidesToShow: 3,
-			dots: true,
-			arrows: true,
-			infinite: false,
-		});
-		
+		$('#video-player' + i).prepend('<span class="vjs-video-name">Ролик ' + (i - 1) + '</span>');
+		$('span.vjs-video-name:contains("Ролик 0")').text("Вводная");
+	}
+	$('.video-js').addClass('vjs-big-play-centered');
+	$('.vjs-menu span.vjs-menu-item-text:contains("1x")').text("Обычная");
+	$('.vjs-playback-rate .vjs-menu ul.vjs-menu-content').prepend('<div class="vjs-separ-line"></div>');
+	$('.vjs-playback-rate .vjs-menu ul.vjs-menu-content').prepend('<span class="vjs-subhead">Скорость</span>');
+	$('.vjs-playback-rate.vjs-menu-button').click(function(){
+		$(this).children('.vjs-playback-rate .vjs-menu').toggleClass('open');
 	});
+
 	$(document).click(function(e){
 		if (!$('.vjs-playback-rate.vjs-menu-button').is(e.target) && $('.vjs-playback-rate.vjs-menu-button').has(e.target).length === 0) {
 			$('.vjs-playback-rate .vjs-menu').removeClass('open');
 		}
 	});
+
+	for(let y = 0; y < 5; y++){
+		$('#video-step-link' + y).click(function(){
+			$('.video-step-link').removeClass('active');
+			$(this).addClass('active');
+
+			$('.video-course-step').fadeOut(250);
+			$('#video-course-step' + y).fadeIn(250);
+		});
+	}
+
+	var slickF;
+
+	$('#video-step-link1').click(slickF1 = function(){
+		$(this).unbind('click', slickF1);
+		$('.video-slick-slider').slick({
+			slidesToShow: 3,
+			dots: true,
+			arrows: true,
+			infinite: false,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+		if($(window).width() < 992){
+			$('.video-slider-tablet').addClass('video-slider');
+			$('.video-slider-tablet').slick({
+				slidesToShow: 2,
+				dots: true,
+				arrows: true,
+				infinite: false,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+		}
+		if($(window).width() < 768){
+			$('.video-slider-mob1').addClass('video-slider');
+			$('.video-slider-mob1').slick({
+				slidesToShow: 1,
+				dots: true,
+				arrows: true,
+				infinite: false,
+			});
+		}
+	});
+	$('#video-step-link2').click(slickF2 = function(){
+		$(this).unbind('click', slickF2);
+		if($(window).width() < 768){
+			$('.video-slider-mob2').addClass('video-slider');
+			$('.video-slider-mob2').slick({
+				slidesToShow: 1,
+				dots: true,
+				arrows: true,
+				infinite: false,
+			});
+		}
+	});
+
+
 
 
 });

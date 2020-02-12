@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=898ba7e1-09fd-4997-8dc5-402d4333d428&amp;lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/contacts.css">
-    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/video-js.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
@@ -498,26 +498,30 @@
         </div>
         <div class="video-section" id="profile-video-section">
           <div class="container">
-            <div class="steps-navigation"><a class="step-link" href="#">Вводная</a><a class="step-link" href="#">1-ая ступень</a><a class="step-link" href="#">2-ая ступень</a><a class="step-link" href="#">3-ая ступень</a></div>
-            <div class="lecture">
-              <h3><span class="red">Вводная</span> лекция о курсе #BodyEvolution от автора курса - <br>Виктории Блинниковой</h3>
-              <div class="subhead">(для тех, кто пропустил очную встречу <br>в первое воскресенье курса)</div>
-              <div class="video-item">
-                <div class="video-index"><span>В</span></div>
-                <div class="video-container">
-                  <video class="video-js" id="video-player1">
-                    <source src="img/video-example.mp4" type="video/mp4">
-                    <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
-                  </video>
+            <div class="steps-navigation"><a class="step-link active video-step-link" id="video-step-link0" href="#">Вводная</a><a class="step-link video-step-link" id="video-step-link1" href="#">1-ая ступень</a><a class="step-link video-step-link" id="video-step-link2" href="#">2-ая ступень</a><a class="step-link video-step-link" id="video-step-link3" href="#">3-ая ступень</a></div>
+            <div class="course-step active video-course-step" id="video-course-step0">
+              <div class="lecture">
+                <h3><span class="red">Вводная</span> лекция о курсе #BodyEvolution от автора курса - <br>Виктории Блинниковой</h3>
+                <div class="subhead">(для тех, кто пропустил очную встречу <br>в первое воскресенье курса)</div>
+                <div class="video-item">
+                  <div class="video-index"><span>В</span></div>
+                  <div class="video-container">
+                    <video class="video-js" id="video-player1">
+                      <source src="img/video-example.mp4" type="video/mp4">
+                      <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
+                    </video>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="course-step">
+            <div class="course-step video-course-step" id="video-course-step1">
               <h2>1-ая ступень курса #BodyEvolution</h2>
               <div class="lecture">
-                <h3><span class="red">Первая</span> видео-лекция о правильном питании (4 ролика)</h3>
+                <h3><span class="red">Первая</span> видео-лекция о правильном питании 
+                  <div class="br-mob"></div>(4 ролика)
+                </h3>
                 <div class="subhead">Изучить до первой тренировки тем, кто пропустил <br>встречу с диетологом в день старта</div>
-                <div class="video-slider height-fluid">
+                <div class="video-slick-slider video-slider height-fluid">
                   <div class="slick-slide">
                     <div class="video-item">
                       <div class="video-index done"><span>01</span></div>
@@ -593,45 +597,53 @@
                 </div>
               </div>
               <div class="lecture">
-                <h3><span class="red">Вторая</span> видео-лекция о правильном питании (3 ролика)</h3>
+                <h3><span class="red">Вторая</span> видео-лекция о правильном питании 
+                  <div class="br-mob"></div>(3 ролика)
+                </h3>
                 <div class="separ-line"></div>
-                <div class="height-fluid">
-                  <div class="video-item">
-                    <div class="video-index"><span>05</span></div>
-                    <div class="video-container">
-                      <video class="video-js" id="video-player6" width="310">
-                        <source src="img/video-example.mp4" type="video/mp4">
-                        <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
-                      </video>
+                <div class="height-fluid video-slider-tablet">
+                  <div class="slick-slide-tablet">
+                    <div class="video-item">
+                      <div class="video-index"><span>05</span></div>
+                      <div class="video-container">
+                        <video class="video-js" id="video-player6" width="310">
+                          <source src="img/video-example.mp4" type="video/mp4">
+                          <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
+                        </video>
+                      </div>
+                      <ul class="topics">
+                        <li>Как создать привычку правильно питаться</li>
+                        <li>Группы продуктов по назначению</li>
+                      </ul>
                     </div>
-                    <ul class="topics">
-                      <li>Как создать привычку правильно питаться</li>
-                      <li>Группы продуктов по назначению</li>
-                    </ul>
                   </div>
-                  <div class="video-item">
-                    <div class="video-index"><span>06</span></div>
-                    <div class="video-container">
-                      <video class="video-js" id="video-player7" width="310">
-                        <source src="img/video-example.mp4" type="video/mp4">
-                        <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
-                      </video>
+                  <div class="slick-slide-tablet">
+                    <div class="video-item">
+                      <div class="video-index"><span>06</span></div>
+                      <div class="video-container">
+                        <video class="video-js" id="video-player7" width="310">
+                          <source src="img/video-example.mp4" type="video/mp4">
+                          <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
+                        </video>
+                      </div>
+                      <ul class="topics">
+                        <li>Продукты (1 часть)</li>
+                      </ul>
                     </div>
-                    <ul class="topics">
-                      <li>Продукты (1 часть)</li>
-                    </ul>
                   </div>
-                  <div class="video-item">
-                    <div class="video-index"><span>07</span></div>
-                    <div class="video-container">
-                      <video class="video-js" id="video-player8" width="310">
-                        <source src="img/video-example.mp4" type="video/mp4">
-                        <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
-                      </video>
+                  <div class="slick-slide-tablet">
+                    <div class="video-item">
+                      <div class="video-index"><span>07</span></div>
+                      <div class="video-container">
+                        <video class="video-js" id="video-player8" width="310">
+                          <source src="img/video-example.mp4" type="video/mp4">
+                          <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
+                        </video>
+                      </div>
+                      <ul class="topics">
+                        <li>Продукты (2 часть)</li>
+                      </ul>
                     </div>
-                    <ul class="topics">
-                      <li>Продукты (2 часть)</li>
-                    </ul>
                   </div>
                 </div>
                 <div class="useful-links"><img src="img/profile/useful-links-preview.png" alt="useful-links-preview.png">
@@ -645,32 +657,38 @@
                 </div>
               </div>
               <div class="lecture">
-                <h3><span class="red">Третья</span> видео-лекция о правильном питании (2 ролика)</h3>
+                <h3><span class="red">Третья</span> видео-лекция о правильном питании 
+                  <div class="br-mob"></div>(2 ролика)
+                </h3>
                 <div class="separ-line"></div>
-                <div class="height-fluid">
-                  <div class="video-item">
-                    <div class="video-index"><span>08</span></div>
-                    <div class="video-container">
-                      <video class="video-js" id="video-player9" width="310">
-                        <source src="img/video-example.mp4" type="video/mp4">
-                        <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
-                      </video>
+                <div class="height-fluid video-slider-mob1">
+                  <div class="slick-slide-mob">
+                    <div class="video-item">
+                      <div class="video-index"><span>08</span></div>
+                      <div class="video-container">
+                        <video class="video-js" id="video-player9" width="310">
+                          <source src="img/video-example.mp4" type="video/mp4">
+                          <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
+                        </video>
+                      </div>
+                      <ul class="topics">
+                        <li>Продукты (3 часть)</li>
+                      </ul>
                     </div>
-                    <ul class="topics">
-                      <li>Продукты (3 часть)</li>
-                    </ul>
                   </div>
-                  <div class="video-item">
-                    <div class="video-index"><span>09</span></div>
-                    <div class="video-container">
-                      <video class="video-js" id="video-player10" width="310">
-                        <source src="img/video-example.mp4" type="video/mp4">
-                        <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
-                      </video>
+                  <div class="slick-slide-mob">
+                    <div class="video-item">
+                      <div class="video-index"><span>09</span></div>
+                      <div class="video-container">
+                        <video class="video-js" id="video-player10" width="310">
+                          <source src="img/video-example.mp4" type="video/mp4">
+                          <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
+                        </video>
+                      </div>
+                      <ul class="topics">
+                        <li>Продукты (4 часть)</li>
+                      </ul>
                     </div>
-                    <ul class="topics">
-                      <li>Продукты (4 часть)</li>
-                    </ul>
                   </div>
                 </div>
                 <div class="useful-links"><img src="img/profile/useful-links-preview.png" alt="useful-links-preview.png">
@@ -684,35 +702,41 @@
                 </div>
               </div>
             </div>
-            <div class="course-step">
+            <div class="course-step video-course-step" id="video-course-step2">
               <h2>2-ая ступень курса #BodyEvolution</h2>
               <div class="lecture">
-                <h3><span class="red">Четвёртая</span> видео-лекция о правильном питании (2 ролика)</h3>
+                <h3><span class="red">Четвёртая</span> видео-лекция о правильном питании 
+                  <div class="br-mob"></div>(2 ролика)
+                </h3>
                 <div class="separ-line"></div>
-                <div class="height-fluid">
-                  <div class="video-item disabled">
-                    <div class="video-index"><span>10</span></div>
-                    <div class="video-container">
-                      <video class="video-js" id="video-player11" width="310">
-                        <source src="img/video-example.mp4" type="video/mp4">
-                        <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
-                      </video>
+                <div class="height-fluid video-slider-mob2">
+                  <div class="slick-slide-mob">
+                    <div class="video-item disabled">
+                      <div class="video-index"><span>10</span></div>
+                      <div class="video-container">
+                        <video class="video-js" id="video-player11" width="310">
+                          <source src="img/video-example.mp4" type="video/mp4">
+                          <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
+                        </video>
+                      </div>
+                      <ul class="topics">
+                        <li>Белки</li>
+                      </ul>
                     </div>
-                    <ul class="topics">
-                      <li>Белки</li>
-                    </ul>
                   </div>
-                  <div class="video-item disabled">
-                    <div class="video-index"><span>11</span></div>
-                    <div class="video-container">
-                      <video class="video-js" id="video-player12" width="310">
-                        <source src="img/video-example.mp4" type="video/mp4">
-                        <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
-                      </video>
+                  <div class="slick-slide-mob">
+                    <div class="video-item disabled">
+                      <div class="video-index"><span>11</span></div>
+                      <div class="video-container">
+                        <video class="video-js" id="video-player12" width="310">
+                          <source src="img/video-example.mp4" type="video/mp4">
+                          <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
+                        </video>
+                      </div>
+                      <ul class="topics">
+                        <li>Жиры</li>
+                      </ul>
                     </div>
-                    <ul class="topics">
-                      <li>Жиры</li>
-                    </ul>
                   </div>
                 </div>
                 <div class="useful-links"><img src="img/profile/useful-links-preview.png" alt="useful-links-preview.png">
@@ -726,32 +750,38 @@
                 </div>
               </div>
               <div class="lecture">
-                <h3><span class="red">Пятая</span> видео-лекция о правильном питании (2 ролика)</h3>
+                <h3><span class="red">Пятая</span> видео-лекция о правильном питании 
+                  <div class="br-mob"></div>(2 ролика)
+                </h3>
                 <div class="separ-line"></div>
-                <div class="height-fluid">
-                  <div class="video-item disabled">
-                    <div class="video-index"><span>12</span></div>
-                    <div class="video-container">
-                      <video class="video-js" id="video-player13" width="310">
-                        <source src="img/video-example.mp4" type="video/mp4">
-                        <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
-                      </video>
+                <div class="height-fluid video-slider-mob2">
+                  <div class="slick-slide-mob">
+                    <div class="video-item disabled">
+                      <div class="video-index"><span>12</span></div>
+                      <div class="video-container">
+                        <video class="video-js" id="video-player13" width="310">
+                          <source src="img/video-example.mp4" type="video/mp4">
+                          <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
+                        </video>
+                      </div>
+                      <ul class="topics">
+                        <li>Углеводы (1 часть)</li>
+                      </ul>
                     </div>
-                    <ul class="topics">
-                      <li>Углеводы (1 часть)</li>
-                    </ul>
                   </div>
-                  <div class="video-item disabled">
-                    <div class="video-index"><span>13</span></div>
-                    <div class="video-container">
-                      <video class="video-js" id="video-player14" width="310">
-                        <source src="img/video-example.mp4" type="video/mp4">
-                        <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
-                      </video>
+                  <div class="slick-slide-mob">
+                    <div class="video-item disabled">
+                      <div class="video-index"><span>13</span></div>
+                      <div class="video-container">
+                        <video class="video-js" id="video-player14" width="310">
+                          <source src="img/video-example.mp4" type="video/mp4">
+                          <p>Ваш браузер не поддерживает html5 video. Обновите ваш браузер. </p>
+                        </video>
+                      </div>
+                      <ul class="topics">
+                        <li>Углеводы (2 часть)</li>
+                      </ul>
                     </div>
-                    <ul class="topics">
-                      <li>Углеводы (2 часть)</li>
-                    </ul>
                   </div>
                 </div>
                 <div class="useful-links"><img src="img/profile/useful-links-preview.png" alt="useful-links-preview.png">
@@ -765,10 +795,12 @@
                 </div>
               </div>
             </div>
-            <div class="course-step">
+            <div class="course-step video-course-step" id="video-course-step3">
               <h2>3-я ступень курса #BodyEvolution</h2>
               <div class="lecture">
-                <h3><span class="red">Шестая</span> видео-лекция о правильном питании (1 ролик)</h3>
+                <h3><span class="red">Шестая</span> видео-лекция о правильном питании 
+                  <div class="br-mob"></div>(1 ролик)
+                </h3>
                 <div class="separ-line"></div>
                 <div class="video-item disabled">
                   <div class="video-index"><span>14</span></div>
@@ -797,7 +829,7 @@
               <h2>Остались вопросы по видео-лекциям?</h2>
               <div class="subhead">Вы можете задать их Диетологу прямо здесь:</div>
               <div class="row">
-                <div class="col-10">
+                <div class="col-sm-10">
                   <form action="#">
                     <textarea name="qform1" placeholder="Ваше сообщение"></textarea>
                     <input class="submit" type="submit" value="Отправить">
@@ -845,8 +877,8 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/common.js"></script>
-  <script src="js/video.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/video.min.js"></script>
   <script src="js/map.js"></script>
   <script src="js/tether.min.js"></script>
   <script src="js/jquery.scrollTo.min.js"></script>

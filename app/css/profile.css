@@ -78,356 +78,6 @@
   src: url("../fonts/MullerBlack/MullerBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBlack/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype");
 }
 
-body + div {
-  display: none !important;
-}
-
-main .video-section {
-  display: none;
-}
-
-main .video-section .steps-navigation {
-  padding: 50px 0 70px 0;
-}
-
-main .video-section .steps-navigation a.step-link {
-  font-family: 'MullerRegular';
-  font-size: 24px;
-  color: #373737;
-  margin-right: 45px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-main .video-section .steps-navigation a.step-link:hover {
-  color: #ff2e2f;
-}
-
-main .video-section .course-step {
-  padding-top: 30px;
-}
-
-main .video-section .course-step h2 {
-  font-family: 'MullerRegular';
-  font-size: 36px;
-  color: #373737;
-  margin: 0;
-  margin-bottom: 50px;
-}
-
-main .video-section .lecture {
-  margin-bottom: 90px;
-}
-
-main .video-section .lecture h3 {
-  font-family: 'MullerExtraBold';
-  font-size: 30px;
-  color: #373737;
-  margin: 0;
-}
-
-main .video-section .lecture .subhead {
-  border-left: 4px solid #ff2e2f;
-  font-family: 'MullerRegular';
-  font-size: 18px;
-  color: #373737;
-  padding-left: 30px;
-  padding-top: 4px;
-  line-height: 1.3;
-  margin-top: 24px;
-  margin-bottom: 40px;
-}
-
-main .video-section .lecture .separ-line {
-  width: 50px;
-  height: 4px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  background-color: #ff2e2f;
-}
-
-main .video-section .lecture .slick-dots {
-  bottom: 20px;
-}
-
-main .video-section .lecture .slick-dots li button:before {
-  font-size: 10px;
-}
-
-main .video-section .lecture .slick-next {
-  right: -70px;
-}
-
-main .video-section .lecture .slick-prev {
-  left: -60px;
-}
-
-main .video-section .lecture .slick-prev, main .video-section .lecture .slick-next {
-  z-index: 22;
-  width: 54px;
-  height: 54px;
-}
-
-main .video-section .lecture .slick-prev.slick-disabled, main .video-section .lecture .slick-next.slick-disabled {
-  display: none !important;
-}
-
-main .video-section .lecture .slick-prev::before, main .video-section .lecture .slick-next::before {
-  font-size: 0;
-  content: '';
-  width: 54px;
-  height: 54px;
-  display: block;
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-main .video-section .lecture .slick-prev::before {
-  background-image: url("../img/profile/video-slider-arrow-left.png");
-}
-
-main .video-section .lecture .slick-next::before {
-  background-image: url("../img/profile/video-slider-arrow-right.png");
-}
-
-main .video-section .lecture .slick-list {
-  overflow: visible;
-  margin: -50px -15px;
-  padding: 50px 0px;
-}
-
-main .video-section .lecture .slick-list .slick-slide {
-  margin: 0 15px;
-  opacity: 0;
-  outline: none;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-main .video-section .lecture .slick-list .slick-slide.slick-active {
-  opacity: 1;
-}
-
-main .video-section .lecture .height-fluid {
-  margin-left: -15px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main .video-section .lecture .height-fluid .video-item {
-  margin: 0 15px;
-}
-
-main .video-section .lecture .video-slider.height-fluid {
-  margin: 0;
-  display: block;
-}
-
-main .video-section .lecture .video-slider.height-fluid .video-item {
-  margin: 0;
-  height: 450px;
-}
-
-main .video-section .lecture .video-item {
-  background-color: #ffffff;
-  border-radius: 25px;
-  display: inline-block;
-  vertical-align: top;
-  outline: none;
-  padding: 25px;
-  position: relative;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-main .video-section .lecture .video-item .video-index {
-  position: absolute;
-  z-index: 22;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  line-height: 39px;
-  text-align: center;
-  border: 6px solid #f8f8f8;
-  border-radius: 50%;
-  background-color: #ff2e2f;
-}
-
-main .video-section .lecture .video-item .video-index span {
-  font-family: 'MullerBold';
-  font-size: 14px;
-  color: #ffffff;
-}
-
-main .video-section .lecture .video-item .video-index.done {
-  background-image: url("../img/profile/video-index-checkmark.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-main .video-section .lecture .video-item .video-index.done span {
-  opacity: 0;
-}
-
-main .video-section .lecture .video-item ul.topics {
-  padding-left: 25px;
-  margin-top: 30px;
-  margin-right: -15px;
-  max-width: 300px;
-}
-
-main .video-section .lecture .video-item ul.topics li {
-  font-family: 'MullerLight';
-  font-size: 18px;
-  color: #333333;
-  margin-bottom: 7px;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
-}
-
-main .video-section .lecture .video-item ul.topics li .li-dop {
-  font-size: 16px;
-  margin-top: 15px;
-}
-
-main .video-section .lecture .video-item:hover {
-  -webkit-box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3);
-}
-
-main .video-section .lecture .video-item.disabled {
-  position: relative;
-}
-
-main .video-section .lecture .video-item.disabled .video-container {
-  opacity: 0.502;
-}
-
-main .video-section .lecture .video-item.disabled .video-index {
-  background-color: #FF9697;
-}
-
-main .video-section .lecture .video-item.disabled::before {
-  content: '';
-  position: absolute;
-  z-index: 900;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-main .video-section .lecture .useful-links {
-  padding-top: 10px;
-}
-
-main .video-section .lecture .useful-links img, main .video-section .lecture .useful-links .textblock {
-  display: inline-block;
-  vertical-align: top;
-}
-
-main .video-section .lecture .useful-links .textblock {
-  padding-top: 15px;
-  padding-left: 32px;
-}
-
-main .video-section .lecture .useful-links .textblock h4 {
-  font-family: 'MullerBold';
-  font-size: 24px;
-  color: #373737;
-}
-
-main .video-section .lecture .useful-links .textblock ul {
-  list-style-type: decimal;
-  list-style-position: inside;
-  padding-left: 5px;
-}
-
-main .video-section .lecture .useful-links .textblock ul li {
-  font-family: 'MullerLightItalic';
-  font-size: 18px;
-}
-
-main .video-section .lecture .useful-links .textblock ul li a {
-  color: #ff2e2f;
-  opacity: 0.8;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-main .video-section .lecture .useful-links .textblock ul li a:hover {
-  opacity: 1;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-main .video-section .question-form {
-  padding-top: 30px;
-}
-
-main .video-section .question-form h2, main .video-section .question-form .subhead {
-  color: #333333;
-}
-
-main .video-section .question-form h2 {
-  font-family: 'MullerExtraBold';
-  font-size: 36px;
-  margin: 0;
-}
-
-main .video-section .question-form .subhead {
-  font-family: 'MullerRegular';
-  font-size: 24px;
-}
-
-main .video-section .question-form form {
-  padding-top: 40px;
-}
-
-main .video-section .question-form form textarea {
-  width: 100%;
-  border-radius: 10px;
-  height: 215px;
-  background-color: #ffffff;
-  border: 1px solid #d2d2d2;
-  resize: none;
-  padding-top: 15px;
-  padding-left: 25px;
-}
-
-main .video-section .question-form form textarea::-webkit-input-placeholder,
-main .video-section .question-form form textarea::-moz-placeholder,
-main .video-section .question-form form textarea:-moz-placeholder,
-main .video-section .question-form form textarea:-ms-input-placeholder {
-  font-family: 'MullerThin';
-  font-size: 16px;
-  color: #777777;
-}
-
-main .video-section .question-form form input.submit {
-  background-color: #373737;
-  width: 192px;
-  height: 54px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 27px;
-  margin-top: 25px;
-  font-family: 'MullerBold';
-  font-size: 16px;
-  color: #ffffff;
-}
-
 main section.header .container {
   padding-top: 65px;
 }
@@ -1105,9 +755,383 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   display: none;
 }
 
+main .video-section {
+  display: none;
+  overflow: hidden;
+}
+
+main .video-section .steps-navigation {
+  padding: 50px 0 70px 0;
+}
+
+main .video-section .steps-navigation a.step-link {
+  font-family: 'MullerRegular';
+  font-size: 24px;
+  color: #373737;
+  margin-right: 45px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .video-section .steps-navigation a.step-link.active {
+  color: #ff2e2f;
+}
+
+main .video-section .steps-navigation a.step-link:hover {
+  color: #ff2e2f;
+}
+
+main .video-section .course-step.active {
+  display: block;
+}
+
+main .video-section .course-step {
+  display: none;
+}
+
+main .video-section .course-step h2 {
+  font-family: 'MullerRegular';
+  font-size: 36px;
+  color: #373737;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+main .video-section .lecture {
+  margin-bottom: 90px;
+}
+
+main .video-section .lecture h3 {
+  font-family: 'MullerExtraBold';
+  font-size: 30px;
+  color: #373737;
+  margin: 0;
+}
+
+main .video-section .lecture h3 .br-mob {
+  display: none;
+}
+
+main .video-section .lecture .subhead {
+  border-left: 4px solid #ff2e2f;
+  font-family: 'MullerRegular';
+  font-size: 18px;
+  color: #373737;
+  padding-left: 30px;
+  padding-top: 4px;
+  line-height: 1.3;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+main .video-section .lecture .separ-line {
+  width: 50px;
+  height: 4px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #ff2e2f;
+}
+
+main .video-section .lecture .height-fluid {
+  margin-left: -15px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .video-section .lecture .height-fluid .video-item {
+  margin: 0 15px;
+}
+
+main .video-section .lecture .video-slider.height-fluid {
+  margin: 0;
+  display: block;
+}
+
+main .video-section .lecture .video-slider.height-fluid .video-item {
+  margin: 0;
+  height: 450px;
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-dots {
+  bottom: 20px;
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-dots li button:before {
+  font-size: 10px;
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-next {
+  right: -70px;
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-prev {
+  left: -60px;
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-prev, main .video-section .lecture .video-slider.height-fluid .slick-next {
+  z-index: 22;
+  width: 54px;
+  height: 54px;
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-prev.slick-disabled, main .video-section .lecture .video-slider.height-fluid .slick-next.slick-disabled {
+  display: none !important;
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-prev::before, main .video-section .lecture .video-slider.height-fluid .slick-next::before {
+  font-size: 0;
+  content: '';
+  width: 54px;
+  height: 54px;
+  display: block;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-prev::before {
+  background-image: url("../img/profile/video-slider-arrow-left.png");
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-next::before {
+  background-image: url("../img/profile/video-slider-arrow-right.png");
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-list {
+  overflow: visible;
+  margin: -50px -15px;
+  padding: 50px 0px;
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-list .slick-slide {
+  margin: 0 15px;
+  opacity: 0;
+  outline: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .video-section .lecture .video-slider.height-fluid .slick-list .slick-slide.slick-active {
+  opacity: 1;
+}
+
+main .video-section .lecture .video-item {
+  background-color: #ffffff;
+  border-radius: 25px;
+  display: inline-block;
+  outline: none;
+  padding: 25px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .video-section .lecture .video-item .video-index {
+  position: absolute;
+  z-index: 22;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 39px;
+  text-align: center;
+  border: 6px solid #f8f8f8;
+  border-radius: 50%;
+  background-color: #ff2e2f;
+}
+
+main .video-section .lecture .video-item .video-index span {
+  font-family: 'MullerBold';
+  font-size: 14px;
+  color: #ffffff;
+}
+
+main .video-section .lecture .video-item .video-index.done {
+  background-image: url("../img/profile/video-index-checkmark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .video-section .lecture .video-item .video-index.done span {
+  opacity: 0;
+}
+
+main .video-section .lecture .video-item ul.topics {
+  padding-left: 25px;
+  margin-top: 30px;
+  margin-right: -15px;
+  max-width: 300px;
+}
+
+main .video-section .lecture .video-item ul.topics li {
+  font-family: 'MullerLight';
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 7px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+main .video-section .lecture .video-item ul.topics li .li-dop {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+main .video-section .lecture .video-item:hover {
+  -webkit-box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3);
+}
+
+main .video-section .lecture .video-item.disabled {
+  position: relative;
+}
+
+main .video-section .lecture .video-item.disabled .video-container {
+  opacity: 0.502;
+}
+
+main .video-section .lecture .video-item.disabled .video-index {
+  background-color: #FF9697;
+}
+
+main .video-section .lecture .video-item.disabled::before {
+  content: '';
+  position: absolute;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+main .video-section .lecture .useful-links {
+  padding-top: 10px;
+}
+
+main .video-section .lecture .useful-links img, main .video-section .lecture .useful-links .textblock {
+  display: inline-block;
+  vertical-align: top;
+}
+
+main .video-section .lecture .useful-links .textblock {
+  padding-top: 15px;
+  padding-left: 32px;
+}
+
+main .video-section .lecture .useful-links .textblock h4 {
+  font-family: 'MullerBold';
+  font-size: 24px;
+  color: #373737;
+}
+
+main .video-section .lecture .useful-links .textblock ul {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-left: 5px;
+}
+
+main .video-section .lecture .useful-links .textblock ul li {
+  font-family: 'MullerLightItalic';
+  font-size: 18px;
+}
+
+main .video-section .lecture .useful-links .textblock ul li a {
+  color: #ff2e2f;
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .video-section .lecture .useful-links .textblock ul li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+main .video-section .question-form {
+  padding-top: 30px;
+}
+
+main .video-section .question-form h2, main .video-section .question-form .subhead {
+  color: #333333;
+}
+
+main .video-section .question-form h2 {
+  font-family: 'MullerExtraBold';
+  font-size: 36px;
+  margin: 0;
+}
+
+main .video-section .question-form .subhead {
+  font-family: 'MullerRegular';
+  font-size: 24px;
+}
+
+main .video-section .question-form form {
+  padding-top: 40px;
+}
+
+main .video-section .question-form form textarea {
+  width: 100%;
+  border-radius: 10px;
+  height: 215px;
+  background-color: #ffffff;
+  border: 1px solid #d2d2d2;
+  resize: none;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+
+main .video-section .question-form form textarea::-webkit-input-placeholder,
+main .video-section .question-form form textarea::-moz-placeholder,
+main .video-section .question-form form textarea:-moz-placeholder,
+main .video-section .question-form form textarea:-ms-input-placeholder {
+  font-family: 'MullerThin';
+  font-size: 16px;
+  color: #777777;
+}
+
+main .video-section .question-form form input.submit {
+  background-color: #373737;
+  width: 192px;
+  height: 54px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 27px;
+  margin-top: 25px;
+  font-family: 'MullerBold';
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1400px) {
   body .popup {
     width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  body main .video-section .lecture .video-slider.height-fluid {
+    margin-top: 100px;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .slick-next, body main .video-section .lecture .video-slider.height-fluid .slick-prev {
+    top: 0;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .slick-next {
+    right: 0;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .slick-prev {
+    left: 0;
   }
 }
 
@@ -1121,6 +1145,9 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.header .container .buttons .button span {
     font-size: 14px;
     text-align: center;
+  }
+  body main .video-section .lecture .video-item .video-container .video-js {
+    width: 250px;
   }
 }
 
@@ -1145,10 +1172,14 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-top: 15px;
   }
   body main section.header .container .buttons .button {
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  body main section.header .container .buttons .button span {
+    font-size: 16px;
   }
   body main section.personInf {
     margin-top: 40px;
@@ -1224,28 +1255,26 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.appForm .hidden .list .line .buttonPay span, body main section.appForm .hidden .list .topLine .buttonPay span, body main section.appForm .content .list .line .buttonPay span, body main section.appForm .content .list .topLine .buttonPay span, body main section.promo .hidden .list .line .buttonPay span, body main section.promo .hidden .list .topLine .buttonPay span, body main section.promo .content .list .line .buttonPay span, body main section.promo .content .list .topLine .buttonPay span, body main section.socials .hidden .list .line .buttonPay span, body main section.socials .hidden .list .topLine .buttonPay span, body main section.socials .content .list .line .buttonPay span, body main section.socials .content .list .topLine .buttonPay span, body main section.orders .hidden .list .line .buttonPay span, body main section.orders .hidden .list .topLine .buttonPay span, body main section.orders .content .list .line .buttonPay span, body main section.orders .content .list .topLine .buttonPay span, body main section.sTicketInf .hidden .list .line .buttonPay span, body main section.sTicketInf .hidden .list .topLine .buttonPay span, body main section.sTicketInf .content .list .line .buttonPay span, body main section.sTicketInf .content .list .topLine .buttonPay span, body main section.schedule .hidden .list .line .buttonPay span, body main section.schedule .hidden .list .topLine .buttonPay span, body main section.schedule .content .list .line .buttonPay span, body main section.schedule .content .list .topLine .buttonPay span, body main section.appointDiet .hidden .list .line .buttonPay span, body main section.appointDiet .hidden .list .topLine .buttonPay span, body main section.appointDiet .content .list .line .buttonPay span, body main section.appointDiet .content .list .topLine .buttonPay span, body main section.progressInf .hidden .list .line .buttonPay span, body main section.progressInf .hidden .list .topLine .buttonPay span, body main section.progressInf .content .list .line .buttonPay span, body main section.progressInf .content .list .topLine .buttonPay span {
     font-size: 10px;
   }
+  body main .video-section .lecture h3 br {
+    display: none;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .video-item {
+    height: 434px;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .video-item .video-container .video-js {
+    width: 284px;
+  }
+  body main .video-section .lecture .video-item .video-container .video-js {
+    width: 284px;
+  }
+  body main .video-section .lecture .useful-links {
+    padding-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   body .popup {
     width: 50%;
-  }
-  body main section.header .container .Outer {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  body main section.header .container .Outer .head {
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
   }
   body main section.header .container .head {
     margin-top: 35px;
@@ -1434,6 +1463,31 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
     padding-right: 0px;
     padding-left: 0;
   }
+  body main .video-section .lecture h3 {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body main section.header .container .buttons .button {
+    margin-right: 10px;
+  }
+  body main section.header .container .buttons .button span {
+    font-size: 14px;
+  }
+  body main .video-section .steps-navigation {
+    text-align: center;
+    padding: 40px 0;
+  }
+  body main .video-section .steps-navigation a.step-link {
+    display: inline-block;
+    margin: 0 25px;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .video-item {
+    display: block;
+    margin: 0 auto;
+    width: 334px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1601,11 +1655,40 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.appForm .container.contentBlock .head .profile-buttonOpen, body main section.appForm .container.contentBlock .head .profile-buttonClose, body main section.promo .container.contentBlock .head .profile-buttonOpen, body main section.promo .container.contentBlock .head .profile-buttonClose, body main section.socials .container.contentBlock .head .profile-buttonOpen, body main section.socials .container.contentBlock .head .profile-buttonClose, body main section.orders .container.contentBlock .head .profile-buttonOpen, body main section.orders .container.contentBlock .head .profile-buttonClose, body main section.sTicketInf .container.contentBlock .head .profile-buttonOpen, body main section.sTicketInf .container.contentBlock .head .profile-buttonClose, body main section.schedule .container.contentBlock .head .profile-buttonOpen, body main section.schedule .container.contentBlock .head .profile-buttonClose, body main section.appointDiet .container.contentBlock .head .profile-buttonOpen, body main section.appointDiet .container.contentBlock .head .profile-buttonClose, body main section.progressInf .container.contentBlock .head .profile-buttonOpen, body main section.progressInf .container.contentBlock .head .profile-buttonClose {
     justify-self: right;
   }
+  body main .video-section .lecture .useful-links .textblock {
+    padding-left: 15px;
+  }
+  body main .video-section .lecture .useful-links img {
+    width: 60px;
+    margin-top: 15px;
+  }
+  body main .video-section .steps-navigation a.step-link {
+    font-size: 18px;
+  }
+  body main .video-section .question-form {
+    padding-top: 0;
+  }
+  body main .video-section .question-form h2 {
+    font-size: 28px;
+  }
+  body main .video-section .question-form .subhead {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  body main .video-section .question-form form {
+    padding-top: 25px;
+  }
+  body main .video-section .question-form form input.submit {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   body .popup {
     width: 80%;
+  }
+  body main section.header .container .buttons .button {
+    margin-top: 20px;
   }
   body main section.appForm .head span.name, body main section.promo .head span.name, body main section.socials .head span.name, body main section.orders .head span.name, body main section.sTicketInf .head span.name, body main section.schedule .head span.name, body main section.appointDiet .head span.name, body main section.progressInf .head span.name {
     font-size: 18px;
@@ -1619,16 +1702,16 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.appForm .hidden .list .line span.gr, body main section.appForm .hidden .list .topLine span.gr, body main section.appForm .content .list .line span.gr, body main section.appForm .content .list .topLine span.gr, body main section.promo .hidden .list .line span.gr, body main section.promo .hidden .list .topLine span.gr, body main section.promo .content .list .line span.gr, body main section.promo .content .list .topLine span.gr, body main section.socials .hidden .list .line span.gr, body main section.socials .hidden .list .topLine span.gr, body main section.socials .content .list .line span.gr, body main section.socials .content .list .topLine span.gr, body main section.orders .hidden .list .line span.gr, body main section.orders .hidden .list .topLine span.gr, body main section.orders .content .list .line span.gr, body main section.orders .content .list .topLine span.gr, body main section.sTicketInf .hidden .list .line span.gr, body main section.sTicketInf .hidden .list .topLine span.gr, body main section.sTicketInf .content .list .line span.gr, body main section.sTicketInf .content .list .topLine span.gr, body main section.schedule .hidden .list .line span.gr, body main section.schedule .hidden .list .topLine span.gr, body main section.schedule .content .list .line span.gr, body main section.schedule .content .list .topLine span.gr, body main section.appointDiet .hidden .list .line span.gr, body main section.appointDiet .hidden .list .topLine span.gr, body main section.appointDiet .content .list .line span.gr, body main section.appointDiet .content .list .topLine span.gr, body main section.progressInf .hidden .list .line span.gr, body main section.progressInf .hidden .list .topLine span.gr, body main section.progressInf .content .list .line span.gr, body main section.progressInf .content .list .topLine span.gr {
     margin-right: 7.5px;
   }
+  body main section.header .container {
+    padding-top: 40px;
+  }
   body main section.header .container .buttons {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-left: -15px;
     margin-right: -15px;
   }
   body main section.header .container .buttons .button {
-    height: 35px;
+    height: 28px;
+    margin-right: 5px;
   }
   body main section.header .container .buttons .button span {
     font-size: 10px;
@@ -1683,10 +1766,87 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine {
     padding-right: 15px;
   }
-}
-
-@media only screen and (max-width: 350px) {
-  body main section.header .container .buttons .button {
-    height: 25px;
+  body main .video-section {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  body main .video-section .steps-navigation {
+    padding: 25px 0;
+  }
+  body main .video-section .steps-navigation a.step-link {
+    font-size: 14px;
+    margin: 0 7%;
+  }
+  body main .video-section .lecture .separ-line {
+    margin-bottom: 30px;
+  }
+  body main .video-section .lecture .useful-links img {
+    width: 54px;
+    margin-top: 10px;
+  }
+  body main .video-section .lecture .useful-links .textblock {
+    padding-left: 20px;
+  }
+  body main .video-section .lecture .useful-links .textblock h4 {
+    font-size: 18px;
+  }
+  body main .video-section .lecture .useful-links .textblock ul li {
+    font-size: 14px;
+  }
+  body main .video-section .lecture h3 {
+    font-size: 22px;
+    margin-right: 0;
+  }
+  body main .video-section .lecture h3 .br-mob {
+    display: block;
+  }
+  body main .video-section .lecture .subhead {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+  }
+  body main .video-section .lecture .video-item {
+    padding: 20px;
+  }
+  body main .video-section .lecture .video-item .video-index {
+    width: 40px;
+    height: 40px;
+    line-height: 29px;
+  }
+  body main .video-section .lecture .video-item .video-container .video-js {
+    width: 250px;
+    height: 143px;
+  }
+  body main .video-section .lecture .video-item .video-container .video-js .vjs-video-name {
+    font-size: 11px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  body main .video-section .lecture .video-item ul.topics li {
+    font-size: 14px;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .video-item {
+    width: 290px;
+    height: 375px;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .video-item .video-container .video-js {
+    width: 250px;
+  }
+  body main .video-section .question-form .subhead {
+    font-size: 16px;
+  }
+  body main .video-section .question-form form textarea {
+    font-size: 12px;
+  }
+  body main .video-section .question-form form input.submit {
+    width: 125px;
+    height: 37px;
+    line-height: 27px;
+    font-size: 14px;
+  }
+  body main .video-section .course-step h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
   }
 }
