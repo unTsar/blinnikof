@@ -725,6 +725,12 @@ b, strong {
   body header.container-fluid .adress {
     display: none !important;
   }
+  body footer.container-fluid {
+    padding: 45px 0;
+  }
+  body footer.container-fluid .adress, body footer.container-fluid .phoneCont {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {

@@ -1167,6 +1167,15 @@ main .video-section .question-form form input.submit {
   body .popup {
     width: 40%;
   }
+  body footer.container-fluid .adress, body footer.container-fluid .phoneCont {
+    display: -webkit-flex !important;
+    display: -moz-flex !important;
+    display: -ms-flex !important;
+    display: -o-flex !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
   body main section.header .container .buttons {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -1487,6 +1496,12 @@ main .video-section .question-form form input.submit {
     display: block;
     margin: 0 auto;
     width: 334px;
+  }
+  body main section.contacts {
+    display: none;
+  }
+  body footer.container-fluid {
+    margin-top: 30px;
   }
 }
 

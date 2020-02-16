@@ -763,6 +763,13 @@ main
 	body
 		.popup
 			width: 40%
+		footer.container-fluid
+			.adress, .phoneCont
+				display: -webkit-flex !important
+				display: -moz-flex !important
+				display: -ms-flex !important
+				display: -o-flex !important 
+				display: flex !important
 		main 
 			section.header
 				.container
@@ -869,6 +876,7 @@ main
 								width: 284px
 					.useful-links
 						padding-top: 40px
+
 
 
 @media only screen and(max-width: 768px)
@@ -1069,6 +1077,10 @@ main
 							display: block
 							margin: 0 auto
 							width: 334px
+			section.contacts
+				display: none
+		footer.container-fluid
+			margin-top: 30px
 @media only screen and(max-width: 600px)
 	body
 		.popup

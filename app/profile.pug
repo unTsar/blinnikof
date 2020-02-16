@@ -1,9 +1,9 @@
 extends _layouts/home
 
 block styles
-	link(rel="stylesheet", href="css/profile.css")
 	link(rel="stylesheet", href="css/jquery.fancybox.css")
 	link(rel="stylesheet", href="css/contacts.css")
+	link(rel="stylesheet", href="css/profile.css")
 	link(rel="stylesheet", href="css/video-js.css")
 	link(rel="stylesheet", href="css/slick.css")
 	link(rel="stylesheet", href="css/slick-theme.css")
@@ -33,10 +33,10 @@ block content
 								span Абонементы
 							.header-scrollTo-btn(onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.progressInf', 500);").button.d-flex.align-items-center.justify-content-center
 								span Твой прогресс
-							a(href="#").button.d-flex.align-items-center.justify-content-center#profile-video-section-btn
-								span Видеолекции
 							.header-scrollTo-btn(onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.appointDiet', 500);").button.d-flex.align-items-center.justify-content-center
 								span Запись к диетологу
+							a(href="#").button.d-flex.align-items-center.justify-content-center#profile-video-section-btn
+								span Видеолекции
 			.main-section#profile-main-section
 				section.personInf
 					.container
@@ -638,7 +638,7 @@ block content
 						a.step-link.active.video-step-link#video-step-link0(href="#") Вводная
 						a.step-link.video-step-link#video-step-link1(href="#") 1-ая ступень
 						a.step-link.video-step-link#video-step-link2(href="#") 2-ая ступень
-						a.step-link.video-step-link#video-step-link3(href="#") 3-ая ступень
+						a.step-link.video-step-link#video-step-link3(href="#") 3-я ступень
 					.course-step.active.video-course-step#video-course-step0
 						.lecture
 							h3
