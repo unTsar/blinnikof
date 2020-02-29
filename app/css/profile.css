@@ -516,6 +516,10 @@ main section.progressInf .stats .hidden .list .topLine .circle-progress.r, main 
   background-color: #ff2e2f;
 }
 
+main section.progressInf .stats .hidden .list .collages-item-icon {
+  cursor: pointer;
+}
+
 main section.progressInf .stats .hidden .list.mob {
   display: none;
 }
