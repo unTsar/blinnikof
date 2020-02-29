@@ -57,6 +57,12 @@ $(document).ready(function(){
 
 	// Fancybox
 	$('[data-fancybox="gallery"]').fancybox();
+	$('.collages-item1-icon').click(function(){
+		$('.collages-item1').trigger('click');
+	});
+	$('.collages-item2-icon').click(function(){
+		$('.collages-item2').trigger('click');
+	});
 
 	$('#profile-video-section-btn').click(function(){
 		$('#profile-main-section').fadeOut(250);

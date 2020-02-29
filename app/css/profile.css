@@ -512,6 +512,10 @@ main section.progressInf .stats .hidden .list .topLine .circle-progress, main se
   margin-left: 7.5px;
 }
 
+main section.progressInf .stats .hidden .list .topLine .circle-progress.r, main section.progressInf .stats .hidden .list .line .circle-progress.r {
+  background-color: #ff2e2f;
+}
+
 main section.progressInf .stats .hidden .list.mob {
   display: none;
 }
