@@ -1157,11 +1157,11 @@ main .video-section .question-form form textarea:-ms-input-placeholder {
   color: #777777;
 }
 
-main .video-section .question-form form input.submit {
+main .video-section .question-form form .submit {
   background-color: #373737;
   width: 192px;
   height: 54px;
-  line-height: 50px;
+  line-height: 54px;
   text-align: center;
   border-radius: 27px;
   margin-top: 25px;
@@ -1746,7 +1746,7 @@ main .video-section .question-form form input.submit {
   body main .video-section .question-form form {
     padding-top: 25px;
   }
-  body main .video-section .question-form form input.submit {
+  body main .video-section .question-form form .submit {
     margin-top: 10px;
   }
 }
@@ -1907,10 +1907,10 @@ main .video-section .question-form form input.submit {
   body main .video-section .question-form form textarea {
     font-size: 12px;
   }
-  body main .video-section .question-form form input.submit {
+  body main .video-section .question-form form .submit {
     width: 125px;
     height: 37px;
-    line-height: 27px;
+    line-height: 37px;
     font-size: 14px;
   }
   body main .video-section .course-step h2 {
