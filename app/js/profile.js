@@ -90,7 +90,7 @@ $(document).ready(function(){
 		player = videojs('video-player' + i, {
 			controls: true,
 			autoplay: false,
-			muted: true,
+			// muted: true,
 			preload: 'none',
 			width: '310',
 			playbackRates: [2, 1.75, 1.5, 1.25, 1, 0.75, 0.5],
@@ -185,6 +185,20 @@ $(document).ready(function(){
 			});
 		}
 	});
+
+
+	$('#profile-popupDone-btn').click(function(){
+		$(".profile-modal-pagedim").fadeIn(250);
+		$("#popupDone").fadeIn(250);
+	});
+
+	$('#popupDone').click(function(e){
+		if (!$('.popupDone-container').is(e.target) && $('.popupDone-container').has(e.target).length === 0) {
+			$(this).fadeOut(250);
+			$(".profile-modal-pagedim").fadeOut(250);
+		}
+	});
+
 
 
 

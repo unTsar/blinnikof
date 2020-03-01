@@ -12,6 +12,10 @@ block styles
 block content
 
 	include _partials/header.pug
+	.profile-modal-pagedim
+	.popupDone#popupDone
+		.popupDone-container
+			span Письмо отправлено. Ответ диетолога придет на вашу электронную почту
 	main
 		.container-fluid
 			section.header
@@ -916,7 +920,7 @@ block content
 							.col-sm-10
 								form(action="#")
 									textarea(name="qform1" placeholder="Ваше сообщение")
-									input.submit(type="submit" value="Отправить")
+									input.submit#profile-popupDone-btn(type="submit" value="Отправить")
 
 		include _partials/contacts.pug
 	include _partials/footer.pug

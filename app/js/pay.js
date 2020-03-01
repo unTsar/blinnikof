@@ -81,14 +81,12 @@ $(document).ready(function() {
 	$('.buttonPay').click(function() {
 		if($('.exCard').hasClass('active')){
 			$('#popupPay').bPopup({
-				position: ['50%', '50%'],
 				positionStyle: 'fixed',
 				escClose: false,
 				modalClose: false
 			});
 		}else if ($('#cardNumber').val() == '' || $('#expDate-m').val() == '' || $('#expDate-y').val() == '' || $('#nameInput').val() == '' || $('#card-bottom-cvc').val() == '') {
 			$('#popupError').bPopup({
-				position: ['50%', '50%'],
 				positionStyle: 'fixed',
 				escClose: false,
 				modalClose: false

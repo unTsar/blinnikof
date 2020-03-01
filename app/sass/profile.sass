@@ -1,6 +1,45 @@
 @import "vars"
 @import "fonts"
 
+.popupDone::before
+	content: ''
+	display: inline-block
+	vertical-align: middle
+	width: 0
+	height: 100%
+.popupDone
+	display: none
+	width: 100%
+	height: 100%
+	position: fixed
+	z-index: 9992
+	top: 0
+	left: 0
+	text-align: center
+	white-space: nowrap
+	.popupDone-container
+		white-space: normal
+		display: inline-block
+		vertical-align: middle
+		width: 32%
+		height: auto
+		text-align: center
+		padding: 67px 15px
+		border-radius: 27px
+		background-color: #ffffff
+		span
+			font-size: 24px
+			font-family: 'MullerRegular'
+.profile-modal-pagedim
+	position: absolute
+	z-index: 9991
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: none
+	background-color: rgb(0, 0, 0)
+	opacity: 0.7
 main
 	section.header
 		.container
@@ -708,8 +747,9 @@ main
 
 @media only screen and(max-width: 1400px)
 	body
-		.popup
-			width: 30%
+		.popupDone
+			.popupDone-container
+				width: 50%
 @media only screen and(max-width: 1300px)
 	body
 		main
@@ -725,8 +765,6 @@ main
 							left: 0
 @media only screen and(max-width: 1200px)
 	body
-		.popup
-			width: 35%
 		main
 			section.header
 				.container
@@ -765,8 +803,9 @@ main
 									grid-template-columns: 33% 17% 22% 12% 16%
 @media only screen and(max-width: 991px)
 	body
-		.popup
-			width: 40%
+		.popupDone
+			.popupDone-container
+				width: 65%
 		footer.container-fluid
 			.adress, .phoneCont
 				display: -webkit-flex !important
@@ -885,8 +924,6 @@ main
 
 @media only screen and(max-width: 768px)
 	body
-		.popup
-			width: 50%
 		main 
 			section.header
 				.container
@@ -1060,6 +1097,11 @@ main
 						margin-right: 30px
 @media only screen and(max-width: 767px)
 	body
+		.popupDone
+			.popupDone-container
+				width: 75%
+				padding-top: 40px
+				padding-bottom: 40px
 		main
 			section.header
 				.container
@@ -1087,8 +1129,9 @@ main
 			margin-top: 30px
 @media only screen and(max-width: 600px)
 	body
-		.popup
-			width: 60%
+		.popupDone
+			.popupDone-container
+				width: 90%
 		main
 			section.header
 				.container
@@ -1114,8 +1157,6 @@ main
 											width: 170px
 @media only screen and(max-width: 500px)
 	body
-		.popup
-			width: 70%
 		main
 			section.header
 				.container
@@ -1269,8 +1310,10 @@ main
 
 @media only screen and(max-width: 400px)
 	body
-		.popup
-			width: 80%
+		.popupDone
+			.popupDone-container
+				span
+					font-size: 20px
 		main
 			section.header
 				.container
