@@ -172,7 +172,11 @@ main section.header .container .buttons {
           justify-content: space-between;
 }
 
-main section.header .container .buttons .button:hover, main section.header .container .buttons .button.active {
+main section.header .container .buttons .button.green {
+  background-color: #50e850;
+}
+
+main section.header .container .buttons .button:hover, main section.header .container .buttons .button.green:hover, main section.header .container .buttons .button.active {
   background-color: #ff2e2f;
 }
 
@@ -857,6 +861,7 @@ main .video-section .course-step h2 {
 
 main .video-section .lecture {
   margin-bottom: 90px;
+  margin-right: -45px;
 }
 
 main .video-section .lecture h3 {
@@ -890,21 +895,6 @@ main .video-section .lecture .separ-line {
   background-color: #ff2e2f;
 }
 
-main .video-section .lecture .height-fluid {
-  margin-left: -15px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-main .video-section .lecture .height-fluid .video-item {
-  margin: 0 15px;
-}
-
 main .video-section .lecture .video-slider.height-fluid {
   margin: 0;
   display: block;
@@ -915,68 +905,51 @@ main .video-section .lecture .video-slider.height-fluid .video-item {
   height: 450px;
 }
 
-main .video-section .lecture .video-slider.height-fluid .slick-dots {
-  bottom: 20px;
-}
-
-main .video-section .lecture .video-slider.height-fluid .slick-dots li button:before {
-  font-size: 10px;
-}
-
-main .video-section .lecture .video-slider.height-fluid .slick-next {
-  right: -70px;
-}
-
-main .video-section .lecture .video-slider.height-fluid .slick-prev {
-  left: -60px;
-}
-
-main .video-section .lecture .video-slider.height-fluid .slick-prev, main .video-section .lecture .video-slider.height-fluid .slick-next {
-  z-index: 22;
-  width: 54px;
-  height: 54px;
-}
-
-main .video-section .lecture .video-slider.height-fluid .slick-prev.slick-disabled, main .video-section .lecture .video-slider.height-fluid .slick-next.slick-disabled {
-  display: none !important;
-}
-
-main .video-section .lecture .video-slider.height-fluid .slick-prev::before, main .video-section .lecture .video-slider.height-fluid .slick-next::before {
-  font-size: 0;
-  content: '';
-  width: 54px;
-  height: 54px;
-  display: block;
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-main .video-section .lecture .video-slider.height-fluid .slick-prev::before {
-  background-image: url("../img/profile/video-slider-arrow-left.png");
-}
-
-main .video-section .lecture .video-slider.height-fluid .slick-next::before {
-  background-image: url("../img/profile/video-slider-arrow-right.png");
-}
-
-main .video-section .lecture .video-slider.height-fluid .slick-list {
-  overflow: visible;
-  margin: -50px -15px;
-  padding: 50px 0px;
-}
-
-main .video-section .lecture .video-slider.height-fluid .slick-list .slick-slide {
-  margin: 0 15px;
-  opacity: 0;
+main .video-section .lecture .owl-theme .owl-dots button.owl-dot {
   outline: none;
+}
+
+main .video-section .lecture .owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+
+main .video-section .lecture .owl-carousel.owl-drag .owl-item {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  opacity: 0;
 }
 
-main .video-section .lecture .video-slider.height-fluid .slick-list .slick-slide.slick-active {
+main .video-section .lecture .owl-carousel.owl-drag .owl-item.active {
   opacity: 1;
+}
+
+main .video-section .lecture .owl-carousel .owl-nav .owl-next, main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  padding: 0;
+  width: 55px;
+  height: 54px;
+}
+
+main .video-section .lecture .owl-carousel .owl-nav .owl-next {
+  right: -55px;
+  background-image: url("../img/profile/video-slider-arrow-right.png");
+}
+
+main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
+  left: -60px;
+  background-image: url("../img/profile/video-slider-arrow-left.png");
+}
+
+main .video-section .lecture .owl-carousel .owl-nav .disabled {
+  opacity: 0;
 }
 
 main .video-section .lecture .video-item {
@@ -1175,20 +1148,27 @@ main .video-section .question-form form .submit {
   body .popupDone .popupDone-container {
     width: 50%;
   }
+  body main .video-section .lecture {
+    margin-right: 0;
+  }
+  body main .video-section .lecture .video-slider.height-fluid {
+    margin-top: 85px;
+  }
+  body main .video-section .lecture .owl-carousel .owl-nav .owl-prev, body main .video-section .lecture .owl-carousel .owl-nav .owl-next {
+    top: -70px;
+    bottom: auto;
+  }
+  body main .video-section .lecture .owl-carousel .owl-nav .owl-next {
+    right: 0;
+  }
+  body main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
+    left: 0;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
   body main .video-section .lecture .video-slider.height-fluid {
     margin-top: 100px;
-  }
-  body main .video-section .lecture .video-slider.height-fluid .slick-next, body main .video-section .lecture .video-slider.height-fluid .slick-prev {
-    top: 0;
-  }
-  body main .video-section .lecture .video-slider.height-fluid .slick-next {
-    right: 0;
-  }
-  body main .video-section .lecture .video-slider.height-fluid .slick-prev {
-    left: 0;
   }
 }
 
@@ -1199,9 +1179,6 @@ main .video-section .question-form form .submit {
   body main section.header .container .buttons .button span {
     font-size: 14px;
     text-align: center;
-  }
-  body main .video-section .lecture .video-item .video-container .video-js {
-    width: 250px;
   }
 }
 
@@ -1214,6 +1191,9 @@ main .video-section .question-form form .submit {
   }
   body main section.sTicketInf .container.contentBlock .schedule .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .schedule .hidden .list .line, body main section.sTicketInf .container.contentBlock .schedule .content .list .topLine, body main section.sTicketInf .container.contentBlock .schedule .content .list .line {
     grid-template-columns: 33% 17% 22% 12% 16%;
+  }
+  body main .video-section .lecture .video-item .video-container iframe.vimeo-video-player {
+    width: 250px;
   }
 }
 
@@ -1324,10 +1304,7 @@ main .video-section .question-form form .submit {
   body main .video-section .lecture .video-slider.height-fluid .video-item {
     height: 434px;
   }
-  body main .video-section .lecture .video-slider.height-fluid .video-item .video-container .video-js {
-    width: 284px;
-  }
-  body main .video-section .lecture .video-item .video-container .video-js {
+  body main .video-section .lecture .video-item .video-container iframe.vimeo-video-player {
     width: 284px;
   }
   body main .video-section .lecture .useful-links {
@@ -1548,13 +1525,14 @@ main .video-section .question-form form .submit {
     display: inline-block;
     margin: 0 25px;
   }
-  body main .video-section .lecture .video-slider.height-fluid .video-item {
-    display: block;
-    margin: 0 auto;
-    width: 334px;
-  }
   body main section.contacts {
     display: none;
+  }
+  body main .video-section .lecture .video-slider.height-fluid {
+    text-align: center;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .video-item {
+    text-align: left;
   }
   body footer.container-fluid {
     margin-top: 30px;
@@ -1874,6 +1852,10 @@ main .video-section .question-form form .submit {
     margin-bottom: 25px;
     padding-left: 15px;
   }
+  body main .video-section .lecture .video-slider.height-fluid .video-item {
+    height: 350px;
+    width: 290px;
+  }
   body main .video-section .lecture .video-item {
     padding: 20px;
   }
@@ -1882,24 +1864,12 @@ main .video-section .question-form form .submit {
     height: 40px;
     line-height: 29px;
   }
-  body main .video-section .lecture .video-item .video-container .video-js {
+  body main .video-section .lecture .video-item .video-container iframe.vimeo-video-player {
     width: 250px;
     height: 143px;
   }
-  body main .video-section .lecture .video-item .video-container .video-js .vjs-video-name {
-    font-size: 11px;
-    margin-top: 15px;
-    margin-right: 15px;
-  }
   body main .video-section .lecture .video-item ul.topics li {
     font-size: 14px;
-  }
-  body main .video-section .lecture .video-slider.height-fluid .video-item {
-    width: 290px;
-    height: 375px;
-  }
-  body main .video-section .lecture .video-slider.height-fluid .video-item .video-container .video-js {
-    width: 250px;
   }
   body main .video-section .question-form .subhead {
     font-size: 16px;

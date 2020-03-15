@@ -1,12 +1,11 @@
 extends _layouts/home
 
 block styles
+	link(rel="stylesheet", href="css/owl.carousel.min.css")
+	link(rel="stylesheet", href="css/owl.theme.default.min.css")
 	link(rel="stylesheet", href="css/jquery.fancybox.css")
 	link(rel="stylesheet", href="css/contacts.css")
 	link(rel="stylesheet", href="css/profile.css")
-	link(rel="stylesheet", href="css/video-js.css")
-	link(rel="stylesheet", href="css/slick.css")
-	link(rel="stylesheet", href="css/slick-theme.css")
 
 
 block content
@@ -28,18 +27,18 @@ block content
 								.col-12
 									span.head Личный кабинет
 						.buttons#profile-main-btns
-							.header-scrollTo-btn(onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.personInf', 500);").button.active.d-flex.align-items-center.justify-content-center
+							a.header-scrollTo-btn(href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.personInf', 500);").button.active.d-flex.align-items-center.justify-content-center
 								span Общая информация
-							.header-scrollTo-btn(onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.orders', 500);").button.d-flex.align-items-center.justify-content-center
+							a.header-scrollTo-btn(href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.orders', 500);").button.d-flex.align-items-center.justify-content-center
 								span.desk Заказы BodyEvolution
 								span.mob BodyEvolution
-							.header-scrollTo-btn(onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.sTicketInf', 500);").button.d-flex.align-items-center.justify-content-center
+							a.header-scrollTo-btn(href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.sTicketInf', 500);").button.d-flex.align-items-center.justify-content-center
 								span Абонементы
-							.header-scrollTo-btn(onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.progressInf', 500);").button.d-flex.align-items-center.justify-content-center
+							a.header-scrollTo-btn(href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.progressInf', 500);").button.d-flex.align-items-center.justify-content-center
 								span Твой прогресс
-							.header-scrollTo-btn(onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.appointDiet', 500);").button.d-flex.align-items-center.justify-content-center
+							a.header-scrollTo-btn(href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.appointDiet', 500);").button.d-flex.align-items-center.justify-content-center
 								span Запись к диетологу
-							a(href="#").button.d-flex.align-items-center.justify-content-center#profile-video-section-btn
+							a(href="#videolections").button.d-flex.align-items-center.justify-content-center#profile-video-section-btn.green
 								span Видеолекции
 			.main-section#profile-main-section
 				section.personInf
@@ -671,9 +670,7 @@ block content
 								.video-index
 									span В
 								.video-container
-									video#video-player1.video-js
-										source(src="img/video-example.mp4" type='video/mp4')
-										p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+									<iframe class="vimeo-video-player" id="video-player1" src="https://player.vimeo.com/video/395792779" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					.course-step.video-course-step#video-course-step1
 						h2 1-ая ступень курса #BodyEvolution
 						.lecture
@@ -682,60 +679,48 @@ block content
 								|Изучить до первой тренировки тем, кто пропустил 
 								br
 								|встречу с диетологом в день старта
-							.video-slick-slider.video-slider.height-fluid
-								.slick-slide
-									.video-item
-										.video-index.done
-											span 01
-										.video-container
-											video#video-player2.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Задачи системы питания BodyEvolution
-											li Разбираем файл с питанием и рекомендации
-								.slick-slide
-									.video-item
-										.video-index
-											span 02
-										.video-container
-											video#video-player3.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Разбираем один день (Завтрак, Обед, Ужин, Перекусы) 
-											li Способы приготовления
-											li Соль и специи
-											li Какие продукты запрещены
-											li Какие продукты ограничиваем
-								.slick-slide
-									.video-item
-										.video-index
-											span 03
-										.video-container
-											video#video-player4.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li
-												|Логистика питания 
-												br
-												|#[.li-dop (как организовать процесс подготовки и соблюдения рациона)]
-								.slick-slide
-									.video-item
-										.video-index
-											span 04
-										.video-container
-											video#video-player5.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li
-												|Принципы правильного питания: 
-												br
-												|Временной режим, Питьевой режим, 
-												br
-												|Режим сна
+							.video-owl-slider.owl-carousel.owl-theme.video-slider.height-fluid
+								.video-item
+									.video-index
+										span 01
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player2" src="https://player.vimeo.com/video/395756611" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li Задачи системы питания BodyEvolution
+										li Разбираем файл с питанием и рекомендации
+								.video-item
+									.video-index
+										span 02
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player3" src="https://player.vimeo.com/video/395764286" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li Разбираем один день (Завтрак, Обед, Ужин, Перекусы) 
+										li Способы приготовления
+										li Соль и специи
+										li Какие продукты запрещены
+										li Какие продукты ограничиваем
+								.video-item
+									.video-index
+										span 03
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player4" src="https://player.vimeo.com/video/397149741" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li
+											|Логистика питания 
+											br
+											|#[.li-dop (как организовать процесс подготовки и соблюдения рациона)]
+								.video-item
+									.video-index
+										span 04
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player5" src="https://player.vimeo.com/video/395771124" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li
+											|Принципы правильного питания: 
+											br
+											|Временной режим, Питьевой режим, 
+											br
+											|Режим сна
 							.useful-links
 								img(src="img/profile/useful-links-preview.png", alt="useful-links-preview.png")
 								.textblock
@@ -748,38 +733,29 @@ block content
 						.lecture
 							h3 #[span.red Вторая] видеолекция о правильном питании #[.br-mob](3 ролика)
 							.separ-line
-							.height-fluid.video-slider-tablet
-								.slick-slide-tablet
-									.video-item
-										.video-index
-											span 05
-										.video-container
-											video#video-player6.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Как создать привычку правильно питаться
-											li Группы продуктов по назначению
-								.slick-slide-tablet
-									.video-item
-										.video-index
-											span 06
-										.video-container
-											video#video-player7.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Продукты (1 часть)
-								.slick-slide-tablet
-									.video-item
-										.video-index
-											span 07
-										.video-container
-											video#video-player8.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Продукты (2 часть)
+							.video-owl-slider.owl-carousel.owl-theme.video-slider.height-fluid
+								.video-item
+									.video-index
+										span 05
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player6" src="https://player.vimeo.com/video/397151332" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li Как создать привычку правильно питаться
+										li Группы продуктов по назначению
+								.video-item
+									.video-index
+										span 06
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player7" src="https://player.vimeo.com/video/396641667" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li Продукты (1 часть)
+								.video-item
+									.video-index
+										span 07
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player8" src="https://player.vimeo.com/video/396644612" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li Продукты (2 часть)
 							.useful-links
 								img(src="img/profile/useful-links-preview.png", alt="useful-links-preview.png")
 								.textblock
@@ -792,27 +768,22 @@ block content
 						.lecture
 							h3 #[span.red Третья] видеолекция о правильном питании #[.br-mob](2 ролика)
 							.separ-line
-							.height-fluid.video-slider-mob1
-								.slick-slide-mob
-									.video-item
-										.video-index
-											span 08
-										.video-container
-											video#video-player9.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Продукты (3 часть)
-								.slick-slide-mob
-									.video-item
-										.video-index
-											span 09
-										.video-container
-											video#video-player10.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Продукты (4 часть)
+							.video-owl-slider.owl-carousel.owl-theme.video-slider.height-fluid
+								.video-item
+									.video-index
+										span 08
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player9" src="https://player.vimeo.com/video/396649793" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+									ul.topics
+										li Продукты (3 часть)
+								.video-item
+									.video-index
+										span 09
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player10" src="https://player.vimeo.com/video/396652855" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li Продукты (4 часть)
 							.useful-links
 								img(src="img/profile/useful-links-preview.png", alt="useful-links-preview.png")
 								.textblock
@@ -827,27 +798,21 @@ block content
 						.lecture
 							h3 #[span.red Четвёртая] видеолекция о правильном питании #[.br-mob](2 ролика)
 							.separ-line
-							.height-fluid.video-slider-mob2
-								.slick-slide-mob
-									.video-item.disabled
-										.video-index
-											span 10
-										.video-container
-											video#video-player11.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Белки
-								.slick-slide-mob
-									.video-item.disabled
-										.video-index
-											span 11
-										.video-container
-											video#video-player12.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Жиры
+							.video-owl-slider.owl-carousel.owl-theme.video-slider.height-fluid
+								.video-item.disabled
+									.video-index
+										span 10
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player11" src="https://player.vimeo.com/video/396652855" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li Белки
+								.video-item.disabled
+									.video-index
+										span 11
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player12" src="https://player.vimeo.com/video/396652855" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li Жиры
 							.useful-links
 								img(src="img/profile/useful-links-preview.png", alt="useful-links-preview.png")
 								.textblock
@@ -860,27 +825,21 @@ block content
 						.lecture
 							h3 #[span.red Пятая] видеолекция о правильном питании #[.br-mob](2 ролика)
 							.separ-line
-							.height-fluid.video-slider-mob2
-								.slick-slide-mob
-									.video-item.disabled
-										.video-index
-											span 12
-										.video-container
-											video#video-player13.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Углеводы (1 часть)
-								.slick-slide-mob
-									.video-item.disabled
-										.video-index
-											span 13
-										.video-container
-											video#video-player14.video-js(width="310")
-												source(src="img/video-example.mp4" type='video/mp4')
-												p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
-										ul.topics
-											li Углеводы (2 часть)
+							.video-owl-slider.owl-carousel.owl-theme.video-slider.height-fluid
+								.video-item.disabled
+									.video-index
+										span 12
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player13" src="https://player.vimeo.com/video/396652855" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li Углеводы (1 часть)
+								.video-item.disabled
+									.video-index
+										span 13
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player14" src="https://player.vimeo.com/video/396652855" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									ul.topics
+										li Углеводы (2 часть)
 							.useful-links
 								img(src="img/profile/useful-links-preview.png", alt="useful-links-preview.png")
 								.textblock
@@ -899,9 +858,7 @@ block content
 								.video-index
 									span 14
 								.video-container
-									video#video-player15.video-js(width="310")
-										source(src="img/video-example.mp4" type='video/mp4')
-										p Ваш браузер не поддерживает html5 video. Обновите ваш браузер. 
+									<iframe class="vimeo-video-player" id="video-player15" src="https://player.vimeo.com/video/396652855" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 								ul.topics
 									li Сам себе диетолог
 							.useful-links
@@ -925,12 +882,12 @@ block content
 	include _partials/footer.pug
 
 block scripts
-	script(src="js/slick.min.js")
-	script(src="js/video.min.js")
+	script(src="https://player.vimeo.com/api/player.js")
 	script(src="js/map.js")
 	script(src="js/tether.min.js")
 	script(src='js/jquery.scrollTo.min.js')
 	script(src="js/jquery.fancybox.min.js")
+	script(src="js/owl.carousel.min.js")
 	script(src="js/profile.js")
 
 

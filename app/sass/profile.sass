@@ -67,7 +67,9 @@ main
 				display: flex
 				flex-wrap: wrap
 				justify-content: space-between
-				.button:hover, .button.active
+				.button.green
+					background-color: #50e850
+				.button:hover, .button.green:hover, .button.active
 					background-color: #ff2e2f
 				.button
 					padding-left: 15px
@@ -536,6 +538,7 @@ main
 
 		.lecture
 			margin-bottom: 90px
+			margin-right: -45px
 			h3
 				font-family: 'MullerExtraBold'
 				font-size: 30px
@@ -559,60 +562,47 @@ main
 				margin-top: 20px
 				margin-bottom: 40px
 				background-color: #ff2e2f
-			.height-fluid
-				margin-left: -15px
-				display: -webkit-flex
-				display: -moz-flex
-				display: -ms-flex
-				display: -o-flex
-				display: flex
-				.video-item
-					margin: 0 15px
 			.video-slider.height-fluid
 				margin: 0
 				display: block
 				.video-item
 					margin: 0
 					height: 450px
-				.slick-dots
-					bottom: 20px
-					li
-						button:before
-							font-size: 10px
-				.slick-next
-					right: -70px
-				.slick-prev
-					left: -60px
-				.slick-prev, .slick-next
-					z-index: 22
-					width: 54px
-					height: 54px
-				.slick-prev.slick-disabled, .slick-next.slick-disabled
-					display: none !important
-				.slick-prev::before, .slick-next::before
-					font-size: 0
-					content: ''
-					width: 54px
-					height: 54px
-					display: block
-					opacity: 1
-					background-repeat: no-repeat
-					background-position: center
-				.slick-prev::before
-					background-image: url('../img/profile/video-slider-arrow-left.png')
-				.slick-next::before
-					background-image: url('../img/profile/video-slider-arrow-right.png')
-				.slick-list
-					overflow: visible
-					margin: -50px -15px
-					padding: 50px 0px
-					.slick-slide
-						margin: 0 15px
-						opacity: 0
+			.owl-theme
+				.owl-dots 
+					button.owl-dot
 						outline: none
-						transition: 0.3s
-					.slick-slide.slick-active
-						opacity: 1
+			.owl-carousel
+				.owl-stage-outer
+					overflow: visible !important
+			.owl-carousel.owl-drag
+				.owl-item
+					transition: 0.3s
+					opacity: 0
+				.owl-item.active
+					opacity: 1
+			.owl-carousel 
+				.owl-nav 
+					.owl-next, .owl-prev
+						position: absolute
+						top: 0
+						bottom: 0
+						margin: auto
+						background-repeat: no-repeat
+						background-size: cover
+						background-position: center
+						background-color: transparent
+						padding: 0
+						width: 55px
+						height: 54px
+					.owl-next
+						right: -55px
+						background-image: url('../img/profile/video-slider-arrow-right.png')
+					.owl-prev
+						left: -60px
+						background-image: url('../img/profile/video-slider-arrow-left.png')
+					.disabled
+						opacity: 0
 			.video-item
 				background-color: #ffffff
 				border-radius: 25px
@@ -750,6 +740,21 @@ main
 		.popupDone
 			.popupDone-container
 				width: 50%
+		main
+			.video-section
+				.lecture
+					margin-right: 0
+					.video-slider.height-fluid
+						margin-top: 85px
+					.owl-carousel
+						.owl-nav
+							.owl-prev, .owl-next
+								top: -70px
+								bottom: auto
+							.owl-next
+								right: 0
+							.owl-prev
+								left: 0
 @media only screen and(max-width: 1300px)
 	body
 		main
@@ -757,12 +762,6 @@ main
 				.lecture
 					.video-slider.height-fluid
 						margin-top: 100px
-						.slick-next, .slick-prev
-							top: 0
-						.slick-next
-							right: 0
-						.slick-prev
-							left: 0
 @media only screen and(max-width: 1200px)
 	body
 		main
@@ -774,12 +773,6 @@ main
 							span
 								font-size: 14px
 								text-align: center
-			.video-section
-				.lecture
-					.video-item
-						.video-container	
-							.video-js
-								width: 250px
 @media only screen and(max-width: 1199px)
 	body
 		main
@@ -801,6 +794,12 @@ main
 							.list
 								.topLine, .line
 									grid-template-columns: 33% 17% 22% 12% 16%
+			.video-section
+				.lecture
+					.video-item
+						.video-container
+							iframe.vimeo-video-player
+								width: 250px
 @media only screen and(max-width: 991px)
 	body
 		.popupDone
@@ -910,12 +909,9 @@ main
 					.video-slider.height-fluid
 						.video-item
 							height: 434px
-							.video-container	
-								.video-js
-									width: 284px
 					.video-item
-						.video-container	
-							.video-js
+						.video-container
+							iframe.vimeo-video-player
 								width: 284px
 					.useful-links
 						padding-top: 40px
@@ -1117,14 +1113,14 @@ main
 					a.step-link
 						display: inline-block
 						margin: 0 25px
-				.lecture
-					.video-slider.height-fluid
-						.video-item
-							display: block
-							margin: 0 auto
-							width: 334px
 			section.contacts
 				display: none
+			.video-section
+				.lecture
+					.video-slider.height-fluid
+						text-align: center
+						.video-item
+							text-align: left
 		footer.container-fluid
 			margin-top: 30px
 @media only screen and(max-width: 600px)
@@ -1442,6 +1438,10 @@ main
 						margin-top: 20px
 						margin-bottom: 25px
 						padding-left: 15px
+					.video-slider.height-fluid
+						.video-item
+							height: 350px
+							width: 290px
 					.video-item
 						padding: 20px
 						.video-index
@@ -1449,23 +1449,12 @@ main
 							height: 40px
 							line-height: 29px
 						.video-container
-							.video-js
+							iframe.vimeo-video-player
 								width: 250px
 								height: 143px
-								.vjs-video-name
-									font-size: 11px
-									margin-top: 15px
-									margin-right: 15px
 						ul.topics
 							li
 								font-size: 14px
-					.video-slider.height-fluid 
-						.video-item
-							width: 290px
-							height: 375px
-							.video-container
-								.video-js
-									width: 250px
 				.question-form
 					.subhead
 						font-size: 16px
