@@ -68,13 +68,18 @@ main
 				flex-wrap: wrap
 				justify-content: space-between
 				.button.green
-					background-color: #50e850
+					// background-color: #58E658
+					background-color: #25CC25
+				.button.blue
+					// background-color: #4FCCCC
+					background-color: #1C9999
 				.button:hover, .button.green:hover, .button.active
 					background-color: #ff2e2f
 				.button
 					padding-left: 15px
 					padding-right: 15px
 					border-radius: 25px
+					margin-bottom: 15px
 					height: 50px
 					background-color: #373737
 					transition: 0.3s
@@ -734,6 +739,14 @@ main
 					font-size: 16px
 					color: #ffffff
 					cursor: pointer
+	.video-section.videotraining
+		.course-step
+			h2
+				margin-top: 25px
+			.lecture
+				.video-slider.height-fluid
+					.video-item
+						height: auto
 
 @media only screen and(max-width: 1400px)
 	body
@@ -821,6 +834,7 @@ main
 						.button
 							margin-top: 20px
 							margin-right: 20px
+							margin-bottom: 0
 							span
 								font-size: 16px
 			section.personInf
@@ -1107,6 +1121,8 @@ main
 							span
 								font-size: 14px
 			.video-section
+				.lecture
+					margin-bottom: 30px
 				.steps-navigation
 					text-align: center
 					padding: 40px 0

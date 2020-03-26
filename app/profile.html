@@ -74,7 +74,7 @@
                   <div class="col-12"><span class="head">Личный кабинет</span></div>
                 </div>
               </div>
-              <div class="buttons" id="profile-main-btns"><a class="header-scrollTo-btn button active d-flex align-items-center justify-content-center" href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.personInf', 500);"><span>Общая информация</span></a><a class="header-scrollTo-btn button d-flex align-items-center justify-content-center" href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.orders', 500);"><span class="desk">Заказы BodyEvolution</span><span class="mob">BodyEvolution</span></a><a class="header-scrollTo-btn button d-flex align-items-center justify-content-center" href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.sTicketInf', 500);"><span>Абонементы</span></a><a class="header-scrollTo-btn button d-flex align-items-center justify-content-center" href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.progressInf', 500);"><span>Твой прогресс</span></a><a class="header-scrollTo-btn button d-flex align-items-center justify-content-center" href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.appointDiet', 500);"><span>Запись к диетологу</span></a><a class="button d-flex align-items-center justify-content-center green" href="#videolections" id="profile-video-section-btn"><span>Видеолекции</span></a></div>
+              <div class="buttons" id="profile-main-btns"><a class="header-scrollTo-btn button active d-flex align-items-center justify-content-center" href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.personInf', 500);"><span>Общая информация</span></a><a class="header-scrollTo-btn button d-flex align-items-center justify-content-center" href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.orders', 500);"><span class="desk">Заказы BodyEvolution</span><span class="mob">BodyEvolution</span></a><a class="header-scrollTo-btn button d-flex align-items-center justify-content-center" href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.sTicketInf', 500);"><span>Абонементы</span></a><a class="header-scrollTo-btn button d-flex align-items-center justify-content-center" href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.progressInf', 500);"><span>Твой прогресс</span></a><a class="header-scrollTo-btn button d-flex align-items-center justify-content-center" href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.appointDiet', 500);"><span>Запись к диетологу</span></a><a class="button d-flex align-items-center justify-content-center green" href="#videolections" id="profile-videolections-section-btn"><span>Видеолекции</span></a><a class="button d-flex align-items-center justify-content-center blue" href="#videotraining" id="profile-videotraining-section-btn"><span>Видеотренировки</span></a></div>
             </div>
           </div>
         </section>
@@ -513,10 +513,10 @@
             </div>
           </section>
         </div>
-        <div class="video-section" id="profile-video-section">
+        <div class="video-section videolections" id="profile-videolections-section">
           <div class="container">
-            <div class="steps-navigation"><a class="step-link active video-step-link" id="video-step-link0" href="#">Вводная</a><a class="step-link video-step-link" id="video-step-link1" href="#">1-ая ступень</a><a class="step-link video-step-link" id="video-step-link2" href="#">2-ая ступень</a><a class="step-link video-step-link" id="video-step-link3" href="#">3-я ступень</a></div>
-            <div class="course-step active video-course-step" id="video-course-step0">
+            <div class="steps-navigation"><a class="step-link active video-step-link" id="vl-video-step-link0" href="#">Вводная</a><a class="step-link video-step-link" id="vl-video-step-link1" href="#">1-ая ступень</a><a class="step-link video-step-link" id="vl-video-step-link2" href="#">2-ая ступень</a><a class="step-link video-step-link" id="vl-video-step-link3" href="#">3-я ступень</a></div>
+            <div class="course-step active video-course-step" id="vl-video-course-step0">
               <div class="lecture">
                 <h3><span class="red">Вводная</span> лекция о курсе #BodyEvolution от автора курса - <br>Виктории Блинниковой</h3>
                 <div class="subhead">(для тех, кто пропустил очную встречу <br>в первое воскресенье курса)</div>
@@ -526,7 +526,7 @@
                 </div>
               </div>
             </div>
-            <div class="course-step video-course-step" id="video-course-step1">
+            <div class="course-step video-course-step" id="vl-video-course-step1">
               <h2>1-ая ступень курса #BodyEvolution</h2>
               <div class="lecture">
                 <h3><span class="red">Первая</span> видеолекция о правильном питании 
@@ -651,7 +651,7 @@
                 </div>
               </div>
             </div>
-            <div class="course-step video-course-step" id="video-course-step2">
+            <div class="course-step video-course-step" id="vl-video-course-step2">
               <h2>2-ая ступень курса #BodyEvolution</h2>
               <div class="lecture">
                 <h3><span class="red">Четвёртая</span> видеолекция о правильном питании 
@@ -716,7 +716,7 @@
                 </div>
               </div>
             </div>
-            <div class="course-step video-course-step" id="video-course-step3">
+            <div class="course-step video-course-step" id="vl-video-course-step3">
               <h2>3-я ступень курса #BodyEvolution</h2>
               <div class="lecture">
                 <h3><span class="red">Шестая</span> видеолекция о правильном питании 
@@ -748,8 +748,67 @@
                 <div class="col-sm-10">
                   <form>
                     <textarea name="qform1" placeholder="Ваше сообщение"></textarea>
-                    <div class="submit" id="profile-popupDone-btn">Отправить</div>
+                    <div class="submit profile-popupDone-btn">Отправить</div>
                   </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-section videotraining" id="profile-videotraining-section">
+          <div class="container">
+            <div class="course-step active">
+              <h2>1-ая тренировка</h2>
+              <div class="lecture">
+                <h3><span class="red">Разминка</span> 
+                  <div class="br-mob"></div>(1 ролик)
+                </h3>
+                <div class="separ-line"></div>
+                <div class="video-item">
+                  <div class="video-index"><span>Р</span></div>
+                  <div class="video-container"><iframe class="vimeo-video-player" id="video-player16" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="lecture">
+                <h3>Основная часть 
+                  <div class="br-mob"></div>(6 роликов)
+                </h3>
+                <div class="separ-line"></div>
+                <div class="video-owl-slider owl-carousel owl-theme video-slider height-fluid">
+                  <div class="video-item">
+                    <div class="video-index"><span>01</span></div>
+                    <div class="video-container"><iframe class="vimeo-video-player" id="video-player17" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-index"><span>02</span></div>
+                    <div class="video-container"><iframe class="vimeo-video-player" id="video-player18" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-index"><span>03</span></div>
+                    <div class="video-container"><iframe class="vimeo-video-player" id="video-player19" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-index"><span>04</span></div>
+                    <div class="video-container"><iframe class="vimeo-video-player" id="video-player20" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-index"><span>05</span></div>
+                    <div class="video-container"><iframe class="vimeo-video-player" id="video-player21" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-index"><span>06</span></div>
+                    <div class="video-container"><iframe class="vimeo-video-player" id="video-player22" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                  </div>
+                </div>
+              </div>
+              <div class="lecture">
+                <h3><span class="red">Заминка</span> 
+                  <div class="br-mob"></div>(1 ролик)
+                </h3>
+                <div class="separ-line"></div>
+                <div class="video-item">
+                  <div class="video-index"><span>З</span></div>
+                  <div class="video-container"><iframe class="vimeo-video-player" id="video-player23" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 </div>
               </div>
             </div>
@@ -773,7 +832,7 @@
         </div><img class="bg" src="img/additional/bg6.png" alt="bg6.png">
       </section>
     </main>
-    <footer class="container-fluid d-flex">
+    <footer class="main-footer container-fluid d-flex">
       <div class="col-12 col-lg-2 logoFooter d-flex align-items-center">
         <div class="imgLogo"><svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="31px" height="31px"><path fill-rule="evenodd"  fill="rgb(233, 51, 51)"d="M18.743,30.282 L30.755,-0.001 L23.627,-0.001 L15.355,22.668 L7.127,-0.001 L-0.001,-0.001 L11.967,30.282 L18.743,30.282 Z"/></svg></div>
         <div class="textLogo"><span class="name">Concept</span><br><span class="desc">Школа фитнеса и питания <br/>2018. Все права защищены</span></div>

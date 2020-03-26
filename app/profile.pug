@@ -38,8 +38,10 @@ block content
 								span Твой прогресс
 							a.header-scrollTo-btn(href="#" onclick="$('#profile-main-section').fadeIn(250);$.scrollTo('.appointDiet', 500);").button.d-flex.align-items-center.justify-content-center
 								span Запись к диетологу
-							a(href="#videolections").button.d-flex.align-items-center.justify-content-center#profile-video-section-btn.green
+							a(href="#videolections").button.d-flex.align-items-center.justify-content-center#profile-videolections-section-btn.green
 								span Видеолекции
+							a(href="#videotraining").button.d-flex.align-items-center.justify-content-center#profile-videotraining-section-btn.blue
+								span Видеотренировки
 			.main-section#profile-main-section
 				section.personInf
 					.container
@@ -649,14 +651,14 @@ block content
 											a.collages-item2(href="img/profile/collages-item2.png", alt="collages-item2.png" data-fancybox="gallery")
 												img(src="img/profile/collages-item2.png", alt="collages-item2.png")
 										span.name #Группа 01_Июнь
-			.video-section#profile-video-section
+			.video-section.videolections#profile-videolections-section
 				.container
 					.steps-navigation
-						a.step-link.active.video-step-link#video-step-link0(href="#") Вводная
-						a.step-link.video-step-link#video-step-link1(href="#") 1-ая ступень
-						a.step-link.video-step-link#video-step-link2(href="#") 2-ая ступень
-						a.step-link.video-step-link#video-step-link3(href="#") 3-я ступень
-					.course-step.active.video-course-step#video-course-step0
+						a.step-link.active.video-step-link#vl-video-step-link0(href="#") Вводная
+						a.step-link.video-step-link#vl-video-step-link1(href="#") 1-ая ступень
+						a.step-link.video-step-link#vl-video-step-link2(href="#") 2-ая ступень
+						a.step-link.video-step-link#vl-video-step-link3(href="#") 3-я ступень
+					.course-step.active.video-course-step#vl-video-course-step0
 						.lecture
 							h3
 								|#[span.red Вводная] лекция о курсе #BodyEvolution от автора курса - 
@@ -671,7 +673,7 @@ block content
 									span В
 								.video-container
 									<iframe class="vimeo-video-player" id="video-player1" src="https://player.vimeo.com/video/395792779" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					.course-step.video-course-step#video-course-step1
+					.course-step.video-course-step#vl-video-course-step1
 						h2 1-ая ступень курса #BodyEvolution
 						.lecture
 							h3 #[span.red Первая] видеолекция о правильном питании #[.br-mob](4 ролика)
@@ -793,7 +795,7 @@ block content
 											a(href="#") link.ru
 										li
 											a(href="#") link.ru
-					.course-step.video-course-step#video-course-step2
+					.course-step.video-course-step#vl-video-course-step2
 						h2 2-ая ступень курса #BodyEvolution
 						.lecture
 							h3 #[span.red Четвёртая] видеолекция о правильном питании #[.br-mob](2 ролика)
@@ -849,7 +851,7 @@ block content
 											a(href="#") link.ru
 										li
 											a(href="#") link.ru
-					.course-step.video-course-step#video-course-step3
+					.course-step.video-course-step#vl-video-course-step3
 						h2 3-я ступень курса #BodyEvolution
 						.lecture
 							h3 #[span.red Шестая] видеолекция о правильном питании #[.br-mob](1 ролик)
@@ -877,7 +879,61 @@ block content
 							.col-sm-10
 								form
 									textarea(name="qform1" placeholder="Ваше сообщение")
-									.submit#profile-popupDone-btn Отправить
+									.submit.profile-popupDone-btn Отправить
+			.video-section.videotraining#profile-videotraining-section
+				.container
+					.course-step.active
+						h2 1-ая тренировка
+						.lecture
+							h3 #[span.red Разминка] #[.br-mob](1 ролик)
+							.separ-line
+							.video-item
+								.video-index
+									span Р
+								.video-container
+									<iframe class="vimeo-video-player" id="video-player16" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						.lecture
+							h3 Основная часть #[.br-mob](6 роликов)
+							.separ-line
+							.video-owl-slider.owl-carousel.owl-theme.video-slider.height-fluid
+								.video-item
+									.video-index
+										span 01
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player17" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								.video-item
+									.video-index
+										span 02
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player18" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								.video-item
+									.video-index
+										span 03
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player19" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								.video-item
+									.video-index
+										span 04
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player20" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								.video-item
+									.video-index
+										span 05
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player21" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								.video-item
+									.video-index
+										span 06
+									.video-container
+										<iframe class="vimeo-video-player" id="video-player22" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						.lecture
+							h3 #[span.red Заминка] #[.br-mob](1 ролик)
+							.separ-line
+							.video-item
+								.video-index
+									span З
+								.video-container
+									<iframe class="vimeo-video-player" id="video-player23" src="https://player.vimeo.com/video/400890620" width="310" height="175" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		include _partials/contacts.pug
 	include _partials/footer.pug
 

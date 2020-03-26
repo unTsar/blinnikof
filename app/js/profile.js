@@ -64,53 +64,31 @@ $(document).ready(function(){
 		$('.collages-item2').trigger('click');
 	});
 
-	$('#profile-video-section-btn').click(function(){
+	$('#profile-videolections-section-btn').click(function(){
 		$('#profile-main-section').fadeOut(250);
-		$('#profile-video-section').fadeIn(250);
+		$('#profile-videolections-section').fadeIn(250);
 		$(this).addClass('active')
 		$('#profile-main-btns .button').not(this).click(function(){
-			$('#profile-video-section').fadeOut(250);
-			$('#profile-video-section-btn').removeClass('active')
+			$('#profile-videolections-section').fadeOut(250);
+			$('#profile-videolections-section-btn').removeClass('active')
+		});
+	});
+	$('#profile-videotraining-section-btn').click(function(){
+		if($(window).width() <= 767){
+			$('.main-footer').removeClass('d-flex');
+			$('.main-footer').hide();
+		}
+		$('#profile-main-section').fadeOut(250);
+		$('#profile-videotraining-section').fadeIn(250);
+		$(this).addClass('active')
+		$('#profile-main-btns .button').not(this).click(function(){
+			$('#profile-videotraining-section').fadeOut(250);
+			$('#profile-videotraining-section-btn').removeClass('active')
+			$('.main-footer').addClass('d-flex');
+			$('.main-footer').show();
 		});
 	});
 
-	// Video
-
-	// $.expr[":"].exact = $.expr.createPseudo(function(arg) {
-
-	// 	return function(element) {
-
-	// 		return $(element).text() === arg.trim();
-
-	// 	};
-
-	// });
-
-	// for(let i = 1; i < 16; i++){
-	// 	player = videojs('video-player' + i, {
-	// 		controls: true,
-	// 		autoplay: false,
-	// 		// muted: true,
-	// 		preload: 'none',
-	// 		width: '310',
-	// 		playbackRates: [2, 1.75, 1.5, 1.25, 1, 0.75, 0.5],
-	// 	});
-	// 	$('#video-player' + i).prepend('<span class="vjs-video-name">Ролик ' + (i - 1) + '</span>');
-	// 	$('span.vjs-video-name:contains("Ролик 0")').text("Вводная");
-	// }
-	// $('.video-js').addClass('vjs-big-play-centered');
-	// $('.vjs-menu span.vjs-menu-item-text:contains("1x")').text("Обычная");
-	// $('.vjs-playback-rate .vjs-menu ul.vjs-menu-content').prepend('<div class="vjs-separ-line"></div>');
-	// $('.vjs-playback-rate .vjs-menu ul.vjs-menu-content').prepend('<span class="vjs-subhead">Скорость</span>');
-	// $('.vjs-playback-rate.vjs-menu-button').click(function(){
-	// 	$(this).children('.vjs-playback-rate .vjs-menu').toggleClass('open');
-	// });
-
-	// $(document).click(function(e){
-	// 	if (!$('.vjs-playback-rate.vjs-menu-button').is(e.target) && $('.vjs-playback-rate.vjs-menu-button').has(e.target).length === 0) {
-	// 		$('.vjs-playback-rate .vjs-menu').removeClass('open');
-	// 	}
-	// });
 	if(readCookie('vimeovideo1') == 'played'){
 		$('#video-player1').parents('.video-container').siblings('.video-index').addClass('done');
 	}else{
@@ -187,6 +165,53 @@ $(document).ready(function(){
 		$('#video-player15').parents('.video-container').siblings('.video-index').removeClass('done');
 	}
 
+
+
+	if(readCookie('vimeovideo16') == 'played'){
+		$('#video-player16').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player16').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo17') == 'played'){
+		$('#video-player17').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player17').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo18') == 'played'){
+		$('#video-player18').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player18').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo19') == 'played'){
+		$('#video-player19').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player19').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo20') == 'played'){
+		$('#video-player20').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player20').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo21') == 'played'){
+		$('#video-player21').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player21').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo22') == 'played'){
+		$('#video-player22').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player22').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo23') == 'played'){
+		$('#video-player23').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player23').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+
+
+
+
+
 	var videocontainer1 = new Vimeo.Player("video-player1");
 	var videocontainer2 = new Vimeo.Player("video-player2");
 	var videocontainer3 = new Vimeo.Player("video-player3");
@@ -202,6 +227,16 @@ $(document).ready(function(){
 	var videocontainer13 = new Vimeo.Player("video-player13");
 	var videocontainer14 = new Vimeo.Player("video-player14");
 	var videocontainer15 = new Vimeo.Player("video-player15");
+
+	var videocontainer16 = new Vimeo.Player("video-player16");
+	var videocontainer17 = new Vimeo.Player("video-player17");
+	var videocontainer18 = new Vimeo.Player("video-player18");
+	var videocontainer19 = new Vimeo.Player("video-player19");
+	var videocontainer20 = new Vimeo.Player("video-player20");
+	var videocontainer21 = new Vimeo.Player("video-player21");
+	var videocontainer22 = new Vimeo.Player("video-player22");
+	var videocontainer23 = new Vimeo.Player("video-player23");
+
 
 	videocontainer1.on('play', function() {
 		console.log('Played the video 1');
@@ -265,6 +300,41 @@ $(document).ready(function(){
 	});
 
 
+
+	videocontainer16.on('play', function() {
+		console.log('Played the video 16');
+		createCookie('vimeovideo16', 'played', '30');
+	});
+	videocontainer17.on('play', function() {
+		console.log('Played the video 17');
+		createCookie('vimeovideo17', 'played', '30');
+	});
+	videocontainer18.on('play', function() {
+		console.log('Played the video 18');
+		createCookie('vimeovideo18', 'played', '30');
+	});
+	videocontainer19.on('play', function() {
+		console.log('Played the video 19');
+		createCookie('vimeovideo19', 'played', '30');
+	});
+	videocontainer20.on('play', function() {
+		console.log('Played the video 20');
+		createCookie('vimeovideo20', 'played', '30');
+	});
+	videocontainer21.on('play', function() {
+		console.log('Played the video 21');
+		createCookie('vimeovideo21', 'played', '30');
+	});
+	videocontainer22.on('play', function() {
+		console.log('Played the video 22');
+		createCookie('vimeovideo22', 'played', '30');
+	});
+	videocontainer23.on('play', function() {
+		console.log('Played the video 23');
+		createCookie('vimeovideo23', 'played', '30');
+	});
+
+
 	function createCookie(name,value,days) {
 		if (days) {
 			var date = new Date();
@@ -293,12 +363,12 @@ $(document).ready(function(){
 
 
 	for(let y = 0; y < 5; y++){
-		$('#video-step-link' + y).click(function(){
+		$('#vl-video-step-link' + y).click(function(){
 			$('.video-step-link').removeClass('active');
 			$(this).addClass('active');
 
 			$('.video-course-step').fadeOut(250);
-			$('#video-course-step' + y).fadeIn(250);
+			$('#vl-video-course-step' + y).fadeIn(250);
 		});
 	}
 
@@ -321,7 +391,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('#profile-popupDone-btn').click(function(){
+	$('.profile-popupDone-btn').click(function(){
 		$(".profile-modal-pagedim").fadeIn(250);
 		$("#popupDone").fadeIn(250);
 	});
@@ -337,6 +407,11 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	if($(location).attr('href').indexOf('videolections') != '-1'){
-		$('#profile-video-section-btn').trigger('click');
+		$('#profile-videolections-section-btn').trigger('click');
+	}
+});
+$(document).ready(function(){
+	if($(location).attr('href').indexOf('videotraining') != '-1'){
+		$('#profile-videotraining-section-btn').trigger('click');
 	}
 });
