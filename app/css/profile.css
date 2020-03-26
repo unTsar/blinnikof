@@ -1841,13 +1841,8 @@ main .video-section.videotraining .course-step .lecture .video-slider.height-flu
     margin: 0 7%;
   }
   body main .video-section .lecture {
-    text-align: center;
     margin-left: -10px;
     margin-right: -10px;
-  }
-  body main .video-section .lecture h3, body main .video-section .lecture .separ-line {
-    margin-left: 10px;
-    text-align: left;
   }
   body main .video-section .lecture .separ-line {
     margin-bottom: 30px;
