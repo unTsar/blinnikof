@@ -950,7 +950,10 @@ main .video-section .lecture .owl-carousel .owl-nav .owl-next {
 
 main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
   left: -60px;
-  background-image: url("../img/profile/video-slider-arrow-left.svg");
+  background-image: url("../img/profile/video-slider-arrow-right.svg");
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 main .video-section .lecture .owl-carousel .owl-nav .disabled {
