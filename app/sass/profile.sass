@@ -67,13 +67,11 @@ main
 				display: flex
 				flex-wrap: wrap
 				justify-content: space-between
-				.button.green
-					// background-color: #58E658
+				.button.green, .button.active.green, .button.active.green:hover
 					background-color: #25CC25
-				.button.blue
-					// background-color: #4FCCCC
-					background-color: #1C9999
-				.button:hover, .button.green:hover, .button.active
+				.button.blue, .button.active.blue, .button.active.blue:hover
+					background-color: #00ADEF
+				.button:hover, .button.active
 					background-color: #ff2e2f
 				.button
 					padding-left: 15px
@@ -1454,20 +1452,12 @@ main
 						margin-top: 20px
 						margin-bottom: 25px
 						padding-left: 15px
-					.video-slider.height-fluid
-						.video-item
-							height: 350px
-							width: 290px
 					.video-item
-						padding: 20px
+						padding: 20px 0
 						.video-index
 							width: 40px
 							height: 40px
 							line-height: 29px
-						.video-container
-							iframe.vimeo-video-player
-								width: 250px
-								height: 143px
 						ul.topics
 							li
 								font-size: 14px

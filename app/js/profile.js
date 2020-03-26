@@ -237,7 +237,6 @@ $(document).ready(function(){
 	var videocontainer22 = new Vimeo.Player("video-player22");
 	var videocontainer23 = new Vimeo.Player("video-player23");
 
-
 	videocontainer1.on('play', function() {
 		console.log('Played the video 1');
 		createCookie('vimeovideo1', 'played', '30');
@@ -390,6 +389,10 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+	$('.video-item').click(function(){
+		$('button.fullscreen').trigger('click');
+	})
 
 	$('.profile-popupDone-btn').click(function(){
 		$(".profile-modal-pagedim").fadeIn(250);
