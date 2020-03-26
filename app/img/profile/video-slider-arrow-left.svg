@@ -1,0 +1,22 @@
+<svg id="Arrow_left" data-name="Arrow left" xmlns="http://www.w3.org/2000/svg" width="56.031" height="56" viewBox="0 0 56.031 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #303538;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: #292d30;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <ellipse id="Эллипс_11_копия_2" data-name="Эллипс 11 копия 2" class="cls-1" cx="28.016" cy="28" rx="27.016" ry="27"/>
+  <path id="arrow_left-2" data-name="arrow_left" class="cls-2" d="M360.49,1520.73a1.148,1.148,0,0,0,1.531,0,0.9,0.9,0,0,0,0-1.36l-3.3-3.39h13.242a0.975,0.975,0,1,0,0-1.94H358.717l3.3-3.38a0.92,0.92,0,0,0,0-1.38,1.171,1.171,0,0,0-1.531,0l-5.143,5.05a0.879,0.879,0,0,0,0,1.36Z" transform="translate(-335.969 -1487)"/>
+</svg>

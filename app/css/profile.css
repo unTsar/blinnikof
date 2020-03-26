@@ -939,18 +939,18 @@ main .video-section .lecture .owl-carousel .owl-nav .owl-next, main .video-secti
   background-position: center;
   background-color: transparent;
   padding: 0;
-  width: 55px;
+  width: 54px;
   height: 54px;
 }
 
 main .video-section .lecture .owl-carousel .owl-nav .owl-next {
   right: -55px;
-  background-image: url("../img/profile/video-slider-arrow-right.png");
+  background-image: url("../img/profile/video-slider-arrow-right.svg");
 }
 
 main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
   left: -60px;
-  background-image: url("../img/profile/video-slider-arrow-left.png");
+  background-image: url("../img/profile/video-slider-arrow-left.svg");
 }
 
 main .video-section .lecture .owl-carousel .owl-nav .disabled {
@@ -1843,6 +1843,12 @@ main .video-section.videotraining .course-step .lecture .video-slider.height-flu
   body main .video-section .lecture {
     margin-left: -10px;
     margin-right: -10px;
+  }
+  body main .video-section .lecture .owl-carousel .owl-nav .owl-next {
+    margin-right: 100px;
+  }
+  body main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
+    margin-left: 100px;
   }
   body main .video-section .lecture .separ-line {
     margin-bottom: 30px;
