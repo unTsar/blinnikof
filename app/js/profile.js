@@ -592,7 +592,6 @@ $(document).ready(function(){
 	for(let y = 2; y < 5; y++){
 
 		$('#vt-video-course-step' + y).find('.video-item').addClass('disabled')
-		alert('done' + y)
 	}
 
 
