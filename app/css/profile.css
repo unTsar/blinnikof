@@ -1152,10 +1152,6 @@ main .video-section .question-form form .submit {
   cursor: pointer;
 }
 
-main .video-section.videotraining .course-step h2 {
-  margin-top: 25px;
-}
-
 main .video-section.videotraining .course-step .lecture .video-slider.height-fluid .video-item {
   height: auto;
 }

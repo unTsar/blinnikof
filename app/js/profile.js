@@ -207,6 +207,122 @@ $(document).ready(function(){
 	}else{
 		$('#video-player23').parents('.video-container').siblings('.video-index').removeClass('done');
 	}
+	if(readCookie('vimeovideo24') == 'played'){
+		$('#video-player24').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player24').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo25') == 'played'){
+		$('#video-player25').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player25').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo26') == 'played'){
+		$('#video-player26').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player26').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo27') == 'played'){
+		$('#video-player27').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player27').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo28') == 'played'){
+		$('#video-player28').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player28').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo29') == 'played'){
+		$('#video-player29').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player29').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo30') == 'played'){
+		$('#video-player30').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player30').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo31') == 'played'){
+		$('#video-player31').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player31').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo32') == 'played'){
+		$('#video-player32').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player32').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo33') == 'played'){
+		$('#video-player33').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player33').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo34') == 'played'){
+		$('#video-player34').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player34').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo35') == 'played'){
+		$('#video-player35').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player35').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo36') == 'played'){
+		$('#video-player36').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player36').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo37') == 'played'){
+		$('#video-player37').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player37').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo38') == 'played'){
+		$('#video-player38').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player38').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo39') == 'played'){
+		$('#video-player39').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player39').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo40') == 'played'){
+		$('#video-player40').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player40').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo41') == 'played'){
+		$('#video-player41').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player41').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo42') == 'played'){
+		$('#video-player42').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player42').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo43') == 'played'){
+		$('#video-player43').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player43').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo44') == 'played'){
+		$('#video-player44').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player44').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo45') == 'played'){
+		$('#video-player45').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player45').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+	if(readCookie('vimeovideo46') == 'played'){
+		$('#video-player46').parents('.video-container').siblings('.video-index').addClass('done');
+	}else{
+		$('#video-player46').parents('.video-container').siblings('.video-index').removeClass('done');
+	}
+
 
 
 
@@ -236,6 +352,29 @@ $(document).ready(function(){
 	var videocontainer21 = new Vimeo.Player("video-player21");
 	var videocontainer22 = new Vimeo.Player("video-player22");
 	var videocontainer23 = new Vimeo.Player("video-player23");
+	var videocontainer24 = new Vimeo.Player("video-player24");
+	var videocontainer25 = new Vimeo.Player("video-player25");
+	var videocontainer26 = new Vimeo.Player("video-player26");
+	var videocontainer27 = new Vimeo.Player("video-player27");
+	var videocontainer28 = new Vimeo.Player("video-player28");
+	var videocontainer29 = new Vimeo.Player("video-player29");
+	var videocontainer30 = new Vimeo.Player("video-player30");
+	var videocontainer31 = new Vimeo.Player("video-player31");
+	var videocontainer32 = new Vimeo.Player("video-player32");
+	var videocontainer33 = new Vimeo.Player("video-player33");
+	var videocontainer34 = new Vimeo.Player("video-player34");
+	var videocontainer35 = new Vimeo.Player("video-player35");
+	var videocontainer36 = new Vimeo.Player("video-player36");
+	var videocontainer37 = new Vimeo.Player("video-player37");
+	var videocontainer38 = new Vimeo.Player("video-player38");
+	var videocontainer39 = new Vimeo.Player("video-player39");
+	var videocontainer40 = new Vimeo.Player("video-player40");
+	var videocontainer41 = new Vimeo.Player("video-player41");
+	var videocontainer42 = new Vimeo.Player("video-player42");
+	var videocontainer43 = new Vimeo.Player("video-player43");
+	var videocontainer44 = new Vimeo.Player("video-player44");
+	var videocontainer45 = new Vimeo.Player("video-player45");
+	var videocontainer46 = new Vimeo.Player("video-player46");
 
 	videocontainer1.on('play', function() {
 		console.log('Played the video 1');
@@ -332,6 +471,98 @@ $(document).ready(function(){
 		console.log('Played the video 23');
 		createCookie('vimeovideo23', 'played', '30');
 	});
+	videocontainer24.on('play', function() {
+		console.log('Played the video 24');
+		createCookie('vimeovideo24', 'played', '30');
+	});
+	videocontainer25.on('play', function() {
+		console.log('Played the video 25');
+		createCookie('vimeovideo25', 'played', '30');
+	});
+	videocontainer26.on('play', function() {
+		console.log('Played the video 26');
+		createCookie('vimeovideo26', 'played', '30');
+	});
+	videocontainer27.on('play', function() {
+		console.log('Played the video 27');
+		createCookie('vimeovideo27', 'played', '30');
+	});
+	videocontainer28.on('play', function() {
+		console.log('Played the video 28');
+		createCookie('vimeovideo28', 'played', '30');
+	});
+	videocontainer29.on('play', function() {
+		console.log('Played the video 29');
+		createCookie('vimeovideo29', 'played', '30');
+	});
+	videocontainer30.on('play', function() {
+		console.log('Played the video 30');
+		createCookie('vimeovideo30', 'played', '30');
+	});
+	videocontainer31.on('play', function() {
+		console.log('Played the video 31');
+		createCookie('vimeovideo31', 'played', '30');
+	});
+	videocontainer32.on('play', function() {
+		console.log('Played the video 32');
+		createCookie('vimeovideo32', 'played', '30');
+	});
+	videocontainer33.on('play', function() {
+		console.log('Played the video 33');
+		createCookie('vimeovideo33', 'played', '30');
+	});
+	videocontainer34.on('play', function() {
+		console.log('Played the video 34');
+		createCookie('vimeovideo34', 'played', '30');
+	});
+	videocontainer35.on('play', function() {
+		console.log('Played the video 35');
+		createCookie('vimeovideo35', 'played', '30');
+	});
+	videocontainer36.on('play', function() {
+		console.log('Played the video 36');
+		createCookie('vimeovideo36', 'played', '30');
+	});
+	videocontainer37.on('play', function() {
+		console.log('Played the video 37');
+		createCookie('vimeovideo37', 'played', '30');
+	});
+	videocontainer38.on('play', function() {
+		console.log('Played the video 38');
+		createCookie('vimeovideo38', 'played', '30');
+	});
+	videocontainer39.on('play', function() {
+		console.log('Played the video 39');
+		createCookie('vimeovideo39', 'played', '30');
+	});
+	videocontainer40.on('play', function() {
+		console.log('Played the video 40');
+		createCookie('vimeovideo40', 'played', '30');
+	});
+	videocontainer41.on('play', function() {
+		console.log('Played the video 41');
+		createCookie('vimeovideo41', 'played', '30');
+	});
+	videocontainer42.on('play', function() {
+		console.log('Played the video 42');
+		createCookie('vimeovideo42', 'played', '30');
+	});
+	videocontainer43.on('play', function() {
+		console.log('Played the video 43');
+		createCookie('vimeovideo43', 'played', '30');
+	});
+	videocontainer44.on('play', function() {
+		console.log('Played the video 44');
+		createCookie('vimeovideo44', 'played', '30');
+	});
+	videocontainer45.on('play', function() {
+		console.log('Played the video 45');
+		createCookie('vimeovideo45', 'played', '30');
+	});
+	videocontainer46.on('play', function() {
+		console.log('Played the video 46');
+		createCookie('vimeovideo46', 'played', '30');
+	});
 
 
 	function createCookie(name,value,days) {
@@ -358,7 +589,11 @@ $(document).ready(function(){
 		createCookie(name,"",-1);
 	}
 
+	for(let y = 2; y < 5; y++){
 
+		$('#vt-video-course-step' + y).find('.video-item').addClass('disabled')
+		alert('done' + y)
+	}
 
 
 	for(let y = 0; y < 5; y++){
@@ -368,6 +603,13 @@ $(document).ready(function(){
 
 			$('.video-course-step').fadeOut(250);
 			$('#vl-video-course-step' + y).fadeIn(250);
+		});
+		$('#vt-video-step-link' + y).click(function(){
+			$('.video-step-link').removeClass('active');
+			$(this).addClass('active');
+
+			$('.video-course-step').fadeOut(250);
+			$('#vt-video-course-step' + y).fadeIn(250);
 		});
 	}
 
