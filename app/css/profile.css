@@ -78,53 +78,27 @@
   src: url("../fonts/MullerBlack/MullerBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBlack/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype");
 }
 
-.popupDone::before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 0;
-  height: 100%;
+.popupDone::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 .popupDone {
   display: none;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 9992;
-  top: 0;
-  left: 0;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.popupDone .popupDone-container {
-  white-space: normal;
-  display: inline-block;
-  vertical-align: middle;
   width: 32%;
-  height: auto;
   text-align: center;
   padding: 67px 15px;
   border-radius: 27px;
   background-color: #ffffff;
+  max-height: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.popupDone .popupDone-container span {
+.popupDone span {
   font-size: 24px;
   font-family: 'MullerRegular';
-}
-
-.profile-modal-pagedim {
-  position: absolute;
-  z-index: 9991;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  background-color: black;
-  opacity: 0.7;
 }
 
 main section.header .container {
@@ -844,6 +818,10 @@ main .video-section .steps-navigation a.step-link.active {
   color: #ff2e2f;
 }
 
+main .video-section .steps-navigation a.step-link.passed {
+  opacity: 0.5;
+}
+
 main .video-section .steps-navigation a.step-link:hover {
   color: #ff2e2f;
 }
@@ -1157,7 +1135,7 @@ main .video-section.videotraining .course-step .lecture .video-slider.height-flu
 }
 
 @media only screen and (max-width: 1400px) {
-  body .popupDone .popupDone-container {
+  body .popupDone {
     width: 50%;
   }
   body main .video-section .lecture {
@@ -1210,7 +1188,7 @@ main .video-section.videotraining .course-step .lecture .video-slider.height-flu
 }
 
 @media only screen and (max-width: 991px) {
-  body .popupDone .popupDone-container {
+  body .popupDone {
     width: 65%;
   }
   body footer.container-fluid .adress, body footer.container-fluid .phoneCont {
@@ -1519,7 +1497,7 @@ main .video-section.videotraining .course-step .lecture .video-slider.height-flu
 }
 
 @media only screen and (max-width: 767px) {
-  body .popupDone .popupDone-container {
+  body .popupDone {
     width: 75%;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1556,7 +1534,7 @@ main .video-section.videotraining .course-step .lecture .video-slider.height-flu
 }
 
 @media only screen and (max-width: 600px) {
-  body .popupDone .popupDone-container {
+  body .popupDone {
     width: 90%;
   }
   body main section.header .container .buttons .button {
@@ -1746,7 +1724,7 @@ main .video-section.videotraining .course-step .lecture .video-slider.height-flu
 }
 
 @media only screen and (max-width: 400px) {
-  body .popupDone .popupDone-container span {
+  body .popupDone span {
     font-size: 20px;
   }
   body main section.header .container .buttons .button {
@@ -1844,10 +1822,10 @@ main .video-section.videotraining .course-step .lecture .video-slider.height-flu
     margin-right: -10px;
   }
   body main .video-section .lecture .owl-carousel .owl-nav .owl-next {
-    margin-right: 100px;
+    margin-right: 27%;
   }
   body main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
-    margin-left: 100px;
+    margin-left: 27%;
   }
   body main .video-section .lecture .separ-line {
     margin-bottom: 30px;

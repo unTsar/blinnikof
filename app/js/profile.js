@@ -282,46 +282,6 @@ $(document).ready(function(){
 	}else{
 		$('#video-player38').parents('.video-container').siblings('.video-index').removeClass('done');
 	}
-	if(readCookie('vimeovideo39') == 'played'){
-		$('#video-player39').parents('.video-container').siblings('.video-index').addClass('done');
-	}else{
-		$('#video-player39').parents('.video-container').siblings('.video-index').removeClass('done');
-	}
-	if(readCookie('vimeovideo40') == 'played'){
-		$('#video-player40').parents('.video-container').siblings('.video-index').addClass('done');
-	}else{
-		$('#video-player40').parents('.video-container').siblings('.video-index').removeClass('done');
-	}
-	if(readCookie('vimeovideo41') == 'played'){
-		$('#video-player41').parents('.video-container').siblings('.video-index').addClass('done');
-	}else{
-		$('#video-player41').parents('.video-container').siblings('.video-index').removeClass('done');
-	}
-	if(readCookie('vimeovideo42') == 'played'){
-		$('#video-player42').parents('.video-container').siblings('.video-index').addClass('done');
-	}else{
-		$('#video-player42').parents('.video-container').siblings('.video-index').removeClass('done');
-	}
-	if(readCookie('vimeovideo43') == 'played'){
-		$('#video-player43').parents('.video-container').siblings('.video-index').addClass('done');
-	}else{
-		$('#video-player43').parents('.video-container').siblings('.video-index').removeClass('done');
-	}
-	if(readCookie('vimeovideo44') == 'played'){
-		$('#video-player44').parents('.video-container').siblings('.video-index').addClass('done');
-	}else{
-		$('#video-player44').parents('.video-container').siblings('.video-index').removeClass('done');
-	}
-	if(readCookie('vimeovideo45') == 'played'){
-		$('#video-player45').parents('.video-container').siblings('.video-index').addClass('done');
-	}else{
-		$('#video-player45').parents('.video-container').siblings('.video-index').removeClass('done');
-	}
-	if(readCookie('vimeovideo46') == 'played'){
-		$('#video-player46').parents('.video-container').siblings('.video-index').addClass('done');
-	}else{
-		$('#video-player46').parents('.video-container').siblings('.video-index').removeClass('done');
-	}
 
 
 
@@ -367,14 +327,6 @@ $(document).ready(function(){
 	var videocontainer36 = new Vimeo.Player("video-player36");
 	var videocontainer37 = new Vimeo.Player("video-player37");
 	var videocontainer38 = new Vimeo.Player("video-player38");
-	var videocontainer39 = new Vimeo.Player("video-player39");
-	var videocontainer40 = new Vimeo.Player("video-player40");
-	var videocontainer41 = new Vimeo.Player("video-player41");
-	var videocontainer42 = new Vimeo.Player("video-player42");
-	var videocontainer43 = new Vimeo.Player("video-player43");
-	var videocontainer44 = new Vimeo.Player("video-player44");
-	var videocontainer45 = new Vimeo.Player("video-player45");
-	var videocontainer46 = new Vimeo.Player("video-player46");
 
 	videocontainer1.on('play', function() {
 		console.log('Played the video 1');
@@ -531,38 +483,6 @@ $(document).ready(function(){
 		console.log('Played the video 38');
 		createCookie('vimeovideo38', 'played', '30');
 	});
-	videocontainer39.on('play', function() {
-		console.log('Played the video 39');
-		createCookie('vimeovideo39', 'played', '30');
-	});
-	videocontainer40.on('play', function() {
-		console.log('Played the video 40');
-		createCookie('vimeovideo40', 'played', '30');
-	});
-	videocontainer41.on('play', function() {
-		console.log('Played the video 41');
-		createCookie('vimeovideo41', 'played', '30');
-	});
-	videocontainer42.on('play', function() {
-		console.log('Played the video 42');
-		createCookie('vimeovideo42', 'played', '30');
-	});
-	videocontainer43.on('play', function() {
-		console.log('Played the video 43');
-		createCookie('vimeovideo43', 'played', '30');
-	});
-	videocontainer44.on('play', function() {
-		console.log('Played the video 44');
-		createCookie('vimeovideo44', 'played', '30');
-	});
-	videocontainer45.on('play', function() {
-		console.log('Played the video 45');
-		createCookie('vimeovideo45', 'played', '30');
-	});
-	videocontainer46.on('play', function() {
-		console.log('Played the video 46');
-		createCookie('vimeovideo46', 'played', '30');
-	});
 
 
 	function createCookie(name,value,days) {
@@ -589,25 +509,19 @@ $(document).ready(function(){
 		createCookie(name,"",-1);
 	}
 
-	for(let y = 2; y < 5; y++){
-
-		$('#vt-video-course-step' + y).find('.video-item').addClass('disabled')
-	}
-
-
 	for(let y = 0; y < 5; y++){
 		$('#vl-video-step-link' + y).click(function(){
-			$('.video-step-link').removeClass('active');
+			$('.vl-video-step-link').removeClass('active');
 			$(this).addClass('active');
 
-			$('.video-course-step').fadeOut(250);
+			$('.vl-video-course-step').fadeOut(250);
 			$('#vl-video-course-step' + y).fadeIn(250);
 		});
 		$('#vt-video-step-link' + y).click(function(){
-			$('.video-step-link').removeClass('active');
+			$('.vt-video-step-link').removeClass('active');
 			$(this).addClass('active');
 
-			$('.video-course-step').fadeOut(250);
+			$('.vt-video-course-step').fadeOut(250);
 			$('#vt-video-course-step' + y).fadeIn(250);
 		});
 	}
@@ -636,16 +550,11 @@ $(document).ready(function(){
 	})
 
 	$('.profile-popupDone-btn').click(function(){
-		$(".profile-modal-pagedim").fadeIn(250);
-		$("#popupDone").fadeIn(250);
+		$("#popupDone").bPopup({
+            positionStyle: 'fixed'
+        });
 	});
 
-	$('#popupDone').click(function(e){
-		if (!$('.popupDone-container').is(e.target) && $('.popupDone-container').has(e.target).length === 0) {
-			$(this).fadeOut(250);
-			$(".profile-modal-pagedim").fadeOut(250);
-		}
-	});
 
 });
 
@@ -657,5 +566,15 @@ $(document).ready(function(){
 $(document).ready(function(){
 	if($(location).attr('href').indexOf('videotraining') != '-1'){
 		$('#profile-videotraining-section-btn').trigger('click');
+	}
+});
+
+$(window).resize(function(){
+	if($(window).width() <= 767 && $('#profile-videotraining-section-btn').hasClass('active')){
+		$('.main-footer').removeClass('d-flex');
+		$('.main-footer').hide();
+	}else if($('#profile-videotraining-section-btn').hasClass('active')) {
+		$('.main-footer').addClass('d-flex');
+		$('.main-footer').show();
 	}
 });

@@ -78,12 +78,13 @@
   src: url("../fonts/MullerBlack/MullerBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBlack/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype");
 }
 
+.popup::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 .popup {
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 50%;
-  height: auto;
   padding: 25px;
   background-color: #F8F8F8;
   -webkit-box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
@@ -92,6 +93,10 @@
   font-size: 16px;
   color: #313131;
   display: none;
+  max-height: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 main section.list .container {
