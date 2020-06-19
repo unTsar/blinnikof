@@ -1,0 +1,844 @@
+@import "vars"
+@import "fonts"
+
+html, body
+	margin: 0
+	padding: 0
+	width: 100%
+	min-width: 1140px
+.fixed
+	position: fixed
+	width: 100%
+*
+	box-sizing: border-box
+	outline: none
+body
+	background-color: #000
+	width: 100%
+	font-size: 16px
+	position: relative
+	overflow-x: hidden
+	line-height: 1.65
+	a, a:active, a:focus, a:link, a:visited
+		outline: none
+		text-decoration: none
+	#menu-pagedim
+		background-color: #000000
+		opacity: 0
+		transition: 0.3s
+		position: absolute
+		display: none
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 4500
+	#menu-pagedim.turned
+		display: block
+	#menu-pagedim.turnedOpacity
+		opacity: 0.3
+	nav.menu.hidden
+		left: -500px
+	nav.menu
+		position: fixed
+		left: 0px
+		top: 0
+		z-index: 5000
+		height: 100%
+		min-width: 500px
+		transition: 0.5s
+		padding-top: 215px
+		background-color: #303030
+		ul 
+			padding: 0
+			list-style-type: none
+			.separLine
+				background-color: #eeeeee
+				width: 100%
+				height: 1px
+				margin-top: 20px
+				margin-bottom: 20px
+			li.item 
+				padding-left: 65px
+				padding-right: 65px
+				padding-top: 10px
+				padding-bottom: 10px
+				a
+					transition: 0.3s
+					text-decoration: none
+					outline: none
+					color: #ffffff
+					font-family: 'MullerLight'
+					font-size: 24px
+				a:hover
+					color: #ff2e2f
+	.container
+		max-width: 1200px
+		width: 100%
+		margin: auto
+		padding-left: 20px
+		padding-right: 20px
+	.d-flex
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	.align-items-center
+		align-items: center
+	.justify-content-center
+		justify-content: center
+	.justify-content-between
+		justify-content: space-between
+	.ovh
+		overflow: hidden
+	.scrollText-block
+		width: 100%
+		height: 117px
+		background-image: url('../img/be-box/scrollText-be-box.svg')
+		background-repeat: repeat
+		background-size: contain
+		animation: 10s linear scrollText infinite
+	@keyframes scrollText
+		0%
+			background-position-x: 0
+		100%
+			background-position-x: 1112px
+	section
+		h2
+			text-align: center
+			color: #fff
+			text-transform: uppercase
+			margin: 0
+			span.sm-text
+				font-family: 'Aeroport-Bold'
+				font-size: 30px
+			span.b-text
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 72px
+			span.underline-text
+				position: relative
+			span.underline-text::after
+				content: ''
+				position: absolute
+				background-color: #FF0006
+				width: 105%
+				height: 4px
+				bottom: 0
+				left: -2.5%
+				margin-bottom: -5px
+	header
+		padding-bottom: 50px
+		background-image: url('../img/be-box/header-bg.jpg')
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center -15px
+		.logo
+			.textLogo
+				line-height: 1.2
+				margin-left: 10px
+				span
+					color: #fff
+				span.name
+					letter-spacing: 3px
+					font-family: 'MullerExtraBold'
+					text-transform: uppercase
+					font-size: 26.53px
+				span.desc
+					font-family: 'MullerRegular'
+					font-size: 15px
+		nav
+			padding: 37px 0
+			.menu
+				padding: 0
+				.circle
+					border-radius: 50%
+					position: relative
+					z-index: 5000
+					cursor: pointer
+					background-color: #ff1c1c
+					width: 66px
+					height: 66px
+					outline: none
+				.hamburger
+					outline: none
+					.hamburger-box
+						width: 35px
+						.hamburger-inner, 
+						.hamburger-inner::after,
+						.hamburger-inner::before
+							background-color: #fff
+							width: 35px
+							transition-duration: 0.5s
+				.hamburger:hover, .hamburger.is-active:hover
+					opacity: 1
+			.logo
+				margin-left: 45px
+			.contacts
+				margin-left: auto
+				span
+					font-family: "Aeroport"
+					font-size: 18px
+					color: #fff
+					margin-left: 30px
+		.maintext
+			margin-top: 156px
+			span.tag
+				font-family: 'Aeroport-Bold'
+				font-size: 30px
+				color: #FF0006
+			h1
+				position: relative
+				max-width: 944px
+				text-transform: uppercase
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 96px
+				color: #fff
+				margin: 0
+				margin-top: 30px
+				line-height: 0.9
+			h1::before
+				content: ''
+				background-color: #FF0006
+				width: 141px
+				height: 6px
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				margin-top: 34px
+				margin-left: -176px
+			a.btn-submit
+				display: inline-block
+				margin-top: 15px
+				text-align: center
+				background-color: #FF0006
+				width: 300px
+				height: 65px
+				line-height: 64px
+				font-family: 'Aeroport-Bold'
+				color: #fff
+				font-size: 16px
+				text-transform: uppercase
+		.scrollDown
+			text-align: center
+			margin-top: 73px
+			p.text
+				color: #fff
+				font-family: 'Aeroport-Bold'
+				font-size: 14px
+				max-width: 180px
+				margin: 0 auto
+				text-transform: uppercase
+				line-height: 1.2
+				margin-bottom: 10px
+			img
+				width: 38px
+				position: relative
+				animation: 1s ease-in-out moveDown infinite
+			@keyframes moveDown
+				0%
+					top: 0
+				100%
+					top: 35px
+	section.wantsTo
+		padding-bottom: 225px
+		h2
+			margin-top: 180px
+		.video
+			width: 462px
+			height: 292px
+			position: relative
+			margin-left: auto
+			margin-top: -102px
+			margin-right: 67px
+			.preview
+				position: absolute
+				z-index: 1
+				width: 100%
+				height: 100%
+				transition: 1s
+				img.poster
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					z-index: -1
+				.title
+					color: #fff
+					font-size: 16px
+					font-family: 'Aeroport-Bold'
+					padding-left: 47px
+					padding-top: 27px
+					text-transform: uppercase
+				img.img-btn
+					position: absolute
+					margin: auto
+					top: 0
+					bottom: 0
+					left: 0
+					right: 0
+					cursor: pointer
+					z-index: 1
+			iframe#vimeo-video1
+				width: 462px
+				height: 292px
+				position: relative
+				z-index: 2
+		ul.desires
+			padding: 0
+			margin: 0
+			margin-right: 60px
+			margin-top: 160px
+			li
+				position: relative
+				color: #fff
+				font-family: 'Aeroport'
+				font-size: 24px
+				margin-top: 65px
+				margin-left: auto
+				list-style: none
+				line-height: 1.2
+				max-width: 310px
+			li::before
+				content: ''
+				width: 80px
+				height: 4px
+				position: absolute
+				left: 0
+				top: 0
+				margin-top: 12px
+				margin-left: -110px
+				background-color: #FF0006
+		.circle-text-outer
+			width: 196px
+			margin: auto
+			margin-top: 10px
+			position: relative
+			img.zipper
+				position: absolute
+				margin: auto
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+			img.circle-text
+				animation: 10s fullRotate infinite
+				animation-timing-function: linear
+				transition: 0s
+			@keyframes fullRotate
+				0%
+					transform: rotate(0deg)
+				100%
+					transform: rotate(-360deg)
+		.circle-text-outer::before
+			content: url('../img/be-box/wantsTo-bg1.jpg')
+			position: absolute
+			bottom: 0
+			right: 0
+			margin-bottom: 10px
+			margin-right: -55px
+			z-index: -3
+		.circle-text-outer::after
+			content: url('../img/be-box/wantsTo-bg2.jpg')
+			position: absolute
+			top: 0
+			left: 0
+			margin-top: 95px
+			margin-left: -55px
+			z-index: -2
+		.figure-block
+			margin-top: 280px
+			img
+				width: 230px
+			p
+				margin-top: 40px
+				margin-bottom: 0
+				font-family: 'Aeroport'
+				font-size: 30px
+				color: #fff
+				line-height: 1.2
+	section.whatGet
+		padding-top: 375px
+		margin-bottom: 200px
+		background-image: url('../img/be-box/whatGet-bg.jpg')
+		background-size: auto
+		background-repeat: no-repeat
+		background-position: center 0
+		h2
+			span.sm-text
+				line-height: 2.2
+		.advantages
+			margin-top: 280px
+			padding-top: 90px
+			padding-bottom: 70px
+			background-color: #FF0006
+			.table
+				flex-wrap: wrap
+				margin-left: -40px
+				.item
+					display: flex
+					align-items: center
+					max-width: 400px
+					width: 100%
+					margin-left: 140px
+					margin-bottom: 60px
+					p
+						font-size: 20px
+						font-family: 'Aeroport'
+						color: #fff
+						line-height: 1.2
+						margin-bottom: 0
+						margin-top: 0
+						margin-left: 20px
+			a.btn-subscribe
+				margin: auto
+				background-color: #000
+				color: #fff
+				width: 340px
+				height: 65px
+				text-align: center
+				text-transform: uppercase
+				font-family: 'Aeroport-Bold'
+				font-size: 18px
+	section.antidepr
+		margin-top: 200px
+		margin-bottom: 250px
+		height: 800px
+		position: relative
+		background-image: url('../img/be-box/antidepr-bg.jpg')
+		background-repeat: no-repeat
+		background-position: center 0
+		position: relative
+		.cross-block
+			max-width: 1425px
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+		img.cross
+			position: absolute
+			z-index: 1
+		img.cross1
+			top: 75px
+			left: 144px
+			width: 61px
+			height: 61px
+		img.cross2
+			top: 280px
+			right: 120px
+			width: 125px
+			height: 125px
+		img.cross3
+			bottom: -42px
+			right: 625px
+			width: 90px
+			height: 90px
+		.text-block
+			color: #fff
+			max-width: 465px
+			width: 100%
+			margin-left: auto
+			padding-top: 500px
+			h3
+				span.b-text
+					font-family: 'HeadingSmallcasePro-Bold'
+					font-size: 48px
+					text-transform: uppercase
+				span.sm-text
+					font-family: 'Aeroport-Bold'
+					font-size: 24px
+					text-transform: uppercase
+			p.desc
+				font-family: 'Aeroport'
+				font-size: 20px
+				margin-bottom: 0
+				line-height: 1.2
+	section.reasons
+		background-color: #FF0006
+		padding-top: 100px
+		padding-bottom: 40px
+		span.underline-text::after
+			background-color: #000
+		.table
+			flex-wrap: wrap
+			margin: 0 -20px
+			margin-top: 90px
+			.item
+				margin: 0 20px
+				margin-bottom: 65px
+				width: calc((100% / 4) - 40px)
+				.number
+					font-family: 'HeadingSmallcasePro-Regular'
+					font-size: 72px
+					line-height: 1.3
+				p
+					margin: 0
+					margin-top: 12px
+					color: #fff
+					font-size: 18px
+					font-family: 'Aeroport'
+					line-height: 1.2
+			.heart-boxing
+				margin: 0 20px
+				width: 225px
+				height: 207px
+				line-height: 195px
+				background-image: url('../img/be-box/heart-outline.svg')
+				background-repeat: no-repeat
+				text-align: center
+				animation: 1s heartPulse infinite
+				span
+					text-transform: uppercase
+					color: #000
+					font-size: 48px
+					font-family: 'HeadingSmallcasePro-Regular'
+			@keyframes heartPulse
+				0%
+					transform: scale(1)
+				20%
+					transform: scale(1.06)
+				40%
+					transform: scale(1.12)
+	section.finishing
+		height: 927px
+		background-image: url('../img/be-box/finishing-bg.jpg')
+		background-position: center 0
+		background-repeat: no-repeat
+		padding-top: 628px
+	section.videos
+		margin: 250px 0
+		padding: 0 40px
+		.container
+			padding: 95px 0
+			border: 4px solid #fff
+		h2
+			line-height: 1.2
+			margin-bottom: 95px
+		.table
+			margin: 0 -60px
+			.video-item
+				width: calc((100% / 2) - 40px)
+				height: auto
+				margin: 0 20px
+				p.desc
+					text-align: center
+					margin: 0
+					margin-top: 20px
+					color: #fff
+					font-size: 20px
+					font-family: 'Aeroport'
+				.video
+					width: 100%
+					height: auto
+					position: relative
+					.preview
+						position: relative
+						top: 0
+						left: 0
+						z-index: 1
+						width: 100%
+						height: 100%
+						transition: 1s
+						img.poster
+							vertical-align: bottom
+							width: 100%
+							z-index: -1
+						img.img-btn
+							position: absolute
+							margin: auto
+							top: 0
+							bottom: 0
+							left: 0
+							right: 0
+							cursor: pointer
+							z-index: 1
+					iframe
+						width: 100%
+						height: 100%
+						position: absolute
+						z-index: 2
+						top: 0
+						left: 0
+	section.trainer
+		height: 939px
+		background-image: url('../img/be-box/trainer-bg.jpg')
+		background-position: center 0
+		background-repeat: no-repeat
+		.container
+			position: relative
+			height: 100%
+			img.aim
+				position: absolute
+			img.aim1
+				top: 0
+				right: 0
+				width: 112px
+				height: 112px
+				margin-top: -56px
+				margin-right: 35%
+			img.aim2
+				left: 0
+				bottom: 0
+				margin-bottom: 117px
+				margin-left: 3.3%
+				width: 60px
+				height: 60px
+		.text-block
+			padding-top: 200px
+			padding-left: 17.5%
+			h2
+				display: inline-block
+				line-height: 1.2
+				span.b-text
+					font-size: 48px
+				span.sm-text
+					font-size: 24px
+			.desc
+				margin-top: 350px
+				font-size: 18px
+				color: #fff
+				p.subhead
+					font-family: 'Aeroport-Bold'
+					line-height: 1.2
+					margin: 0
+				p.text
+					font-family: 'Aeroport'
+					margin: 0
+					margin-top: 10px
+					line-height: 1.2
+		.trainer-img
+			width: 42%
+			position: absolute
+			z-index: 2
+			right: 0
+			bottom: 0
+			margin-right: 5px
+			margin-bottom: 5px
+			margin-bottom: 80px
+			img
+				width: 100%
+				position: relative
+				z-index: 2
+				vertical-align: bottom
+		.trainer-img::before
+			content: ''
+			position: absolute
+			right: 0
+			bottom: 0
+			width: 92%
+			height: 92%
+			z-index: 1
+			background-color: #FF0006
+			margin-right: -5px
+			margin-bottom: -5px
+	section.gym
+		padding: 250px 0
+		h2
+			line-height: 1.3
+			margin-bottom: 95px
+		.gym-carousel
+			.owl-nav
+				button.owl-next, button.owl-prev, button:hover, button:focus
+					position: absolute
+					background-color: #FF0006
+					border-radius: 50%
+					width: 40px
+					height: 40px
+					top: 0
+					bottom: 0
+					margin: auto
+					background-repeat: no-repeat
+					span
+						display: none
+				button.owl-next
+					background-position: 15px center
+					margin-right: 8%
+					right: 0
+					background-image: url('../img/be-box/owl-next.svg')
+				button.owl-prev
+					background-position: 13px center
+					margin-left: 8%
+					left: 0
+					background-image: url('../img/be-box/owl-prev.svg')
+	section.buyCourse
+		padding-bottom: 365px
+		h2
+			line-height: 1.2
+			margin-bottom: 240px
+		.course-card
+			width: 100%
+			background-color: #FF0006
+			padding-top: 100px
+			.text-block, .btns-block
+				width: 50%
+			.text-block
+				text-align: right
+				ul
+					display: inline-block
+					text-align: left
+					list-style: none
+					margin: 0
+					padding: 0
+					li
+						position: relative
+						font-family: 'Aeroport'
+						font-size: 20px
+						color: #fff
+						margin-bottom: 12px
+					li::before
+						content: ''
+						width: 51px
+						height: 3px
+						background-color: #000
+						position: absolute
+						right: 100%
+						top: 4px
+						bottom: 0
+						margin: auto
+						margin-right: 20px
+				.video
+					width: 462px
+					height: 292px
+					position: relative
+					margin-left: auto
+					margin-bottom: -125px
+					margin-top: 55px
+					.preview
+						position: absolute
+						z-index: 1
+						width: 100%
+						height: 100%
+						transition: 1s
+						img.poster
+							position: absolute
+							top: 0
+							left: 0
+							width: 100%
+							z-index: -1
+						.title
+							text-align: left
+							color: #fff
+							font-size: 16px
+							font-family: 'Aeroport-Bold'
+							padding-left: 47px
+							padding-top: 27px
+							text-transform: uppercase
+						img.img-btn
+							position: absolute
+							margin: auto
+							top: 0
+							bottom: 0
+							left: 0
+							right: 0
+							cursor: pointer
+							z-index: 1
+					iframe#vimeo-video4
+						width: 462px
+						height: 292px
+						position: relative
+						z-index: 2
+			.btns-block
+				text-align: center
+				span.price, a.btn
+					margin-right: -20px
+					display: inline-block
+				span.price
+					color: #000
+					line-height: 1
+					span.number
+						font-size: 118px
+						font-family: 'HeadingSmallcasePro-Regular'
+					span.text
+						font-family: 'Aeroport'
+						font-size: 36px
+						margin-left: 5px
+				a.btn
+					height: 65px
+					line-height: 65px
+					width: 340px
+					text-align: center
+					color: #fff
+					font-family: 'Aeroport-Bold'
+					font-size: 18px
+					text-transform: uppercase
+					margin-top: 18px
+				a.btn-submit
+					background-color: #000
+				a.btn-buyNow
+					background-color: transparent
+					border: 3px solid #fff
+	footer
+		padding: 150px 0
+		.logo
+			.textLogo
+				line-height: 1.2
+				margin-left: 10px
+				span
+					color: #fff
+				span.name
+					letter-spacing: 3px
+					font-family: 'MullerExtraBold'
+					text-transform: uppercase
+					font-size: 26.53px
+				span.desc
+					font-family: 'MullerRegular'
+					font-size: 15px
+		span.phone
+			color: #fff
+			font-family: 'Aeroport'
+			font-size: 24px
+		a.btn-submit
+			display: inline-block
+			text-align: center
+			background-color: #FF0006
+			width: 300px
+			height: 65px
+			line-height: 64px
+			font-family: 'Aeroport-Bold'
+			color: #fff
+			font-size: 16px
+			text-transform: uppercase
+
+
+@media only screen and(max-height: 830px)
+	body
+		nav.menu
+			overflow-y: scroll
+@media only screen and(max-width: 1499px)
+	body
+		nav.menu
+			min-width: 450px
+		nav.menu.hidden
+			left: -450px
+@media only screen and(max-width: 991px)
+	body
+		nav.menu
+			min-width: 400px
+		nav.menu.hidden
+			left: -400px
+@media only screen and (max-width: 767px)
+	body
+		nav.menu
+			min-width: 390px
+		nav.menu.hidden
+			left: -390px
+@media only screen and(max-width: 600px)
+	body
+		nav.menu
+			padding-top: 125px
+@media only screen and(max-width: 500px)
+	body
+		nav.menu
+			width: 100%
+			min-width: 320px
+			ul
+				li.item
+					a
+						font-size: 20px
+		nav.menu.hidden
+			left: -100%

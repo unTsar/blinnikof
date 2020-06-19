@@ -16,7 +16,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-rsync": "0.0.8",
+    "gulp-rsync": "0.0.9",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8"
@@ -25,7 +25,7 @@
     "@vimeo/player": "^2.10.0",
     "express": "^4.17.1",
     "gulp-imagemin": "^5.0.3",
-    "gulp-pngquant": "^1.0.12",
+    "gulp-pngquant": "^1.0.13",
     "gulp-pug": "^4.0.1",
     "imagemin-jpegoptim": "^6.0.0"
   },
