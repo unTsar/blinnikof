@@ -218,18 +218,25 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-width: 1140px;
-}
-
-.fixed {
-  position: fixed;
-  width: 100%;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.body-fix {
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.fixed {
+  position: fixed;
 }
 
 body {
@@ -361,8 +368,44 @@ body .justify-content-between {
           justify-content: space-between;
 }
 
-body .ovh {
-  overflow: hidden;
+body .vimeo-video-popup {
+  display: none;
+  position: fixed;
+  z-index: 9000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body .vimeo-video-popup #vimeo-video-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+body .vimeo-video-popup #vimeo-video-container iframe {
+  width: 1077px;
+  height: 600px;
 }
 
 body .scrollText-block {
@@ -370,9 +413,8 @@ body .scrollText-block {
   height: 117px;
   background-image: url("../img/be-box/scrollText-be-box.svg");
   background-repeat: repeat;
-  background-size: contain;
-  -webkit-animation: 10s linear scrollText infinite;
-          animation: 10s linear scrollText infinite;
+  -webkit-animation: 9s linear scrollText infinite;
+          animation: 9s linear scrollText infinite;
 }
 
 @-webkit-keyframes scrollText {
@@ -380,7 +422,7 @@ body .scrollText-block {
     background-position-x: 0;
   }
   100% {
-    background-position-x: 1112px;
+    background-position-x: 1117px;
   }
 }
 
@@ -389,7 +431,7 @@ body .scrollText-block {
     background-position-x: 0;
   }
   100% {
-    background-position-x: 1112px;
+    background-position-x: 1117px;
   }
 }
 
@@ -610,32 +652,20 @@ body section.wantsTo h2 {
 
 body section.wantsTo .video {
   width: 462px;
-  height: 292px;
   position: relative;
   margin-left: auto;
   margin-top: -102px;
   margin-right: 67px;
 }
 
-body section.wantsTo .video .preview {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-}
-
 body section.wantsTo .video .preview img.poster {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: -1;
+  vertical-align: bottom;
 }
 
 body section.wantsTo .video .preview .title {
+  position: absolute;
+  top: 0;
   color: #fff;
   font-size: 16px;
   font-family: 'Aeroport-Bold';
@@ -717,6 +747,7 @@ body section.wantsTo .circle-text-outer img.circle-text {
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
+  width: 100%;
 }
 
 @-webkit-keyframes fullRotate {
@@ -742,23 +773,31 @@ body section.wantsTo .circle-text-outer img.circle-text {
 }
 
 body section.wantsTo .circle-text-outer::before {
-  content: url("../img/be-box/wantsTo-bg1.jpg");
+  content: '';
+  background-image: url("../img/be-box/wantsTo-bg1.jpg");
+  background-repeat: no-repeat;
   position: absolute;
   bottom: 0;
   right: 0;
   margin-bottom: 10px;
   margin-right: -55px;
   z-index: -3;
+  width: 800px;
+  height: 534px;
 }
 
 body section.wantsTo .circle-text-outer::after {
-  content: url("../img/be-box/wantsTo-bg2.jpg");
+  content: '';
+  background-image: url("../img/be-box/wantsTo-bg2.jpg");
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
   margin-top: 95px;
   margin-left: -55px;
   z-index: -2;
+  width: 800px;
+  height: 534px;
 }
 
 body section.wantsTo .figure-block {
@@ -815,8 +854,9 @@ body section.whatGet .advantages .table .item {
       -ms-flex-align: center;
           align-items: center;
   max-width: 400px;
-  width: 100%;
-  margin-left: 140px;
+  width: -webkit-calc(100% / 3);
+  width: calc(100% / 3);
+  margin-left: 11.7%;
   margin-bottom: 60px;
 }
 
@@ -854,6 +894,7 @@ body section.antidepr {
 }
 
 body section.antidepr .cross-block {
+  pointer-events: none;
   max-width: 1425px;
   width: 100%;
   height: 100%;
@@ -1256,6 +1297,7 @@ body section.buyCourse .course-card .text-block, body section.buyCourse .course-
 
 body section.buyCourse .course-card .text-block {
   text-align: right;
+  padding-left: 50px;
 }
 
 body section.buyCourse .course-card .text-block ul {
@@ -1447,6 +1489,27 @@ body footer a.btn-submit {
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  body .vimeo-video-popup #vimeo-video-container iframe {
+    width: 900px;
+    height: 517px;
+  }
+  body header nav .contacts span {
+    font-size: 16px;
+    margin-left: 17px;
+  }
+  body header .scrollDown {
+    margin-top: 25px;
+    margin-bottom: 90px;
+  }
+  body section.reasons .table .heart-boxing {
+    width: 199px;
+    background-size: contain;
+    height: 182px;
+    line-height: 165px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   body nav.menu {
     min-width: 400px;
@@ -1456,12 +1519,636 @@ body footer a.btn-submit {
   }
 }
 
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 10px;
+  }
+  body {
+    font-size: 10px;
+  }
+  body .container {
+    padding: 0 3em;
+  }
+  body .vimeo-video-popup #vimeo-video-container iframe {
+    width: 72rem;
+    height: 41.5rem;
+  }
+  body section h2 {
+    font-size: 1em;
+  }
+  body section h2 span.b-text {
+    font-size: 9.16em;
+    line-height: 1.2;
+  }
+  body section h2 span.sm-text {
+    font-size: 3.75em;
+  }
+  body header {
+    background-image: url("../img/be-box/header-mob-bg.jpg");
+    background-size: contain;
+    padding-bottom: 10em;
+  }
+  body header nav {
+    padding: 3em 0;
+  }
+  body header nav .contacts {
+    display: none;
+  }
+  body header nav .logo {
+    margin-left: auto;
+  }
+  body header nav .logo .imgLogo svg {
+    width: 6.6em;
+    height: 7.5em;
+  }
+  body header nav .logo .textLogo {
+    margin-left: 5px;
+    margin-top: -5px;
+  }
+  body header nav .logo .textLogo span.name {
+    font-size: 4.2em;
+  }
+  body header nav .logo .textLogo span.desc {
+    font-size: 1.9em;
+  }
+  body header nav .menu button.circle {
+    width: 75px;
+    height: 75px;
+  }
+  body header nav .menu .hamburger .hamburger-box {
+    width: 40px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner, body header nav .menu .hamburger .hamburger-box .hamburger-inner::after, body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
+    width: 40px;
+  }
+  body header .maintext {
+    margin-top: 33em;
+  }
+  body header .maintext span.tag {
+    font-size: 3.75em;
+  }
+  body header .maintext h1 {
+    font-size: 10.8em;
+    max-width: 56rem;
+  }
+  body header .maintext a.btn-submit {
+    width: 14.25em;
+    height: 3.35em;
+    font-size: 3.3em;
+    line-height: 3.3em;
+    margin-top: 3rem;
+  }
+  body header .scrollDown {
+    margin: 0;
+  }
+  body header .scrollDown p.text {
+    font-size: 2.9em;
+    max-width: none;
+    margin-top: 3.4em;
+    margin-bottom: 1.1em;
+  }
+  body section.wantsTo {
+    padding-bottom: 29em;
+  }
+  body section.wantsTo .video {
+    width: 100%;
+    margin: 0;
+    padding: 0 6em;
+  }
+  body section.wantsTo .video .preview img.img-btn {
+    width: 8.2em;
+  }
+  body section.wantsTo .video .preview .title {
+    font-size: 2.9em;
+    padding-top: 0;
+    padding-left: 3em;
+    bottom: 0;
+    margin-bottom: 2rem;
+    top: auto;
+    line-height: 1.2;
+    max-width: 55rem;
+  }
+  body section.wantsTo h2 {
+    margin-top: 28em;
+    max-width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body section.wantsTo ul.desires {
+    margin-top: 28em;
+    padding-left: 15em;
+    margin-left: 2em;
+    margin-right: 6em;
+  }
+  body section.wantsTo ul.desires li {
+    margin-top: 5rem;
+    margin-left: 0;
+    font-size: 3.75em;
+    max-width: none;
+  }
+  body section.wantsTo ul.desires li::before {
+    margin-left: -15rem;
+    margin-top: 2.2rem;
+    width: 8rem;
+  }
+  body section.wantsTo .circle-text-outer {
+    width: 35em;
+    margin-top: 45em;
+  }
+  body section.wantsTo .circle-text-outer img.circle-text {
+    width: 100%;
+  }
+  body section.wantsTo .circle-text-outer img.zipper {
+    width: 10.5em;
+  }
+  body section.wantsTo .circle-text-outer::after, body section.wantsTo .circle-text-outer::before {
+    width: 80em;
+    height: 53.4em;
+    background-size: contain;
+  }
+  body section.wantsTo .circle-text-outer::before {
+    bottom: 12.5em;
+    left: 0;
+    margin-left: -14em;
+  }
+  body section.wantsTo .circle-text-outer::after {
+    top: 16.5em;
+    left: auto;
+    right: 0;
+    margin: 0;
+    margin-right: -14em;
+  }
+  body section.wantsTo .figure-block {
+    margin-top: 49em;
+    text-align: center;
+  }
+  body section.wantsTo .figure-block img {
+    width: 34em;
+  }
+  body section.wantsTo .figure-block p {
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 20px;
+    font-size: 4.58em;
+    max-width: 60rem;
+  }
+  body section.wantsTo .figure-block p br {
+    display: none;
+  }
+  body section.whatGet {
+    margin-bottom: 30em;
+    padding-top: 37.5em;
+    background-size: 205%;
+  }
+  body section.whatGet h2 {
+    max-width: 63.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body section.whatGet h2 span.sm-text {
+    line-height: 1.2;
+  }
+  body section.whatGet .advantages {
+    margin-top: 28em;
+    padding-top: 15em;
+    padding-bottom: 15em;
+  }
+  body section.whatGet .advantages .table {
+    margin: 0;
+  }
+  body section.whatGet .advantages .table .item {
+    width: 100%;
+    max-width: 54em;
+    margin-bottom: 7em;
+  }
+  body section.whatGet .advantages .table .item p {
+    font-size: 3.3em;
+    margin-left: 3.5rem;
+  }
+  body section.whatGet .advantages .table .item p br {
+    display: none;
+  }
+  body section.whatGet .advantages .table .item img {
+    width: 7.6em;
+  }
+  body section.whatGet .advantages a.btn-subscribe {
+    width: 14.25em;
+    height: 3.35em;
+    font-size: 3.3em;
+    line-height: 3.3em;
+  }
+  body section.antidepr {
+    height: auto;
+    background-size: cover;
+    margin-top: 30em;
+    margin-bottom: 30em;
+    background-position: 40% 0;
+  }
+  body section.antidepr .text-block {
+    padding-top: 38em;
+    margin-right: 10em;
+    padding-bottom: 1em;
+  }
+  body section.antidepr .text-block h3 {
+    line-height: 1.2;
+  }
+  body section.antidepr .text-block h3 span.sm-text {
+    font-size: 3.3em;
+  }
+  body section.antidepr .text-block h3 span.b-text {
+    font-size: 6.66em;
+    line-height: 1;
+  }
+  body section.antidepr .text-block p.desc {
+    font-size: 3.3em;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    max-width: 14em;
+  }
+  body section.antidepr img.cross1 {
+    width: 6.1em;
+    height: 6.1em;
+    top: 7em;
+    left: 2em;
+  }
+  body section.antidepr img.cross2 {
+    width: 12.5em;
+    height: 12.5em;
+    top: 29em;
+    right: 5em;
+  }
+  body section.antidepr img.cross3 {
+    left: auto;
+    right: 14em;
+    width: 9em;
+    height: 9em;
+    bottom: -4.2em;
+  }
+  body section.reasons {
+    padding-top: 14em;
+    padding-bottom: 14em;
+  }
+  body section.reasons .table {
+    margin: 0;
+    margin-top: 10em;
+    display: block;
+    padding: 0 3em;
+  }
+  body section.reasons .table .item {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10em;
+  }
+  body section.reasons .table .item .number {
+    font-size: 10em;
+  }
+  body section.reasons .table .item p {
+    margin-top: 1em;
+    font-size: 3.3em;
+  }
+  body section.reasons .table .heart-boxing {
+    width: 43.6em;
+    height: 40.1em;
+    margin: 0 auto;
+    margin-top: 2em;
+    line-height: 37em;
+  }
+  body section.reasons .table .heart-boxing span {
+    font-size: 9.4em;
+  }
+  body section.videos {
+    margin: 29em 0;
+    padding: 0 3em;
+  }
+  body section.videos .container {
+    padding: 14em 0 5em 0;
+  }
+  body section.videos .container h2 {
+    margin-bottom: 9em;
+  }
+  body section.videos .container h2 span.sm-text {
+    display: inline-block;
+    max-width: 13.33em;
+  }
+  body section.videos .container h2 span.sm-text span.tag {
+    display: block;
+  }
+  body section.videos .container .table {
+    display: block;
+    margin: 0;
+    padding: 0 3em;
+  }
+  body section.videos .container .table .video-item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 9em;
+  }
+  body section.videos .container .table .video-item .video .preview img.img-btn {
+    width: 8.7em;
+  }
+  body section.videos .container .table .video-item p.desc {
+    font-size: 3.3em;
+    margin-top: 1em;
+  }
+  body section.trainer {
+    height: auto;
+    background-image: url("../img/be-box/trainer-bg-mob.jpg");
+    background-size: contain;
+  }
+  body section.trainer .container img.aim2 {
+    width: 6em;
+    height: 6em;
+    margin-left: 2em;
+    margin-top: 64.2em;
+    margin-bottom: auto;
+    top: 0;
+    bottom: auto;
+  }
+  body section.trainer .container img.aim1 {
+    width: 11.2em;
+    height: 11.2em;
+    margin-top: -5.6em;
+    margin-right: 13.6em;
+  }
+  body section.trainer .text-block {
+    padding-top: 4.5em;
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+  body section.trainer .text-block h2 {
+    line-height: 1.2;
+  }
+  body section.trainer .text-block h2 span.b-text {
+    font-size: 6.66em;
+  }
+  body section.trainer .text-block h2 span.sm-text {
+    font-size: 3.33em;
+    line-height: 0.4;
+  }
+  body section.trainer .text-block .trainer-img {
+    position: relative;
+    width: 95%;
+    margin-left: auto;
+    margin-top: 35em;
+  }
+  body section.trainer .text-block .desc {
+    margin-top: 1em;
+    font-size: 3.3em;
+  }
+  body section.trainer .text-block .desc p.text {
+    margin-top: 0;
+  }
+  body section.gym {
+    padding: 29em 0;
+  }
+  body section.gym h2 {
+    margin-bottom: 9.5em;
+  }
+  body section.buyCourse {
+    padding-bottom: 45.5em;
+  }
+  body section.buyCourse h2 {
+    margin-bottom: 29em;
+  }
+  body section.buyCourse .container {
+    padding: 0;
+  }
+  body section.buyCourse .container .course-card {
+    position: relative;
+    display: block;
+    padding-top: 15em;
+    padding-bottom: 39em;
+  }
+  body section.buyCourse .container .course-card .text-block, body section.buyCourse .container .course-card .btns-block {
+    width: 100%;
+  }
+  body section.buyCourse .container .course-card .text-block {
+    text-align: left;
+    padding-left: 11em;
+    padding-right: 9em;
+  }
+  body section.buyCourse .container .course-card .text-block ul li::before {
+    width: 11em;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+  body section.buyCourse .container .course-card .text-block ul li {
+    font-size: 3.33em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }
+  body section.buyCourse .container .course-card .text-block .video {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 6em;
+    left: 0;
+    margin-bottom: -12.5em;
+    margin-top: 5.5em;
+  }
+  body section.buyCourse .container .course-card .text-block .video .preview {
+    position: relative;
+    height: auto;
+  }
+  body section.buyCourse .container .course-card .text-block .video .preview img.img-btn {
+    width: 8.7em;
+  }
+  body section.buyCourse .container .course-card .text-block .video img.poster {
+    position: relative;
+    vertical-align: bottom;
+  }
+  body section.buyCourse .container .course-card .text-block .video .title {
+    position: absolute;
+    top: 0;
+    padding-left: 4.7rem;
+    padding-top: 2.7rem;
+    font-size: 1.6em;
+  }
+  body section.buyCourse .container .course-card .btns-block span.price {
+    display: block;
+    text-align: center;
+  }
+  body section.buyCourse .container .course-card .btns-block span.price span.number {
+    font-size: 16.53em;
+  }
+  body section.buyCourse .container .course-card .btns-block span.price span.text {
+    font-size: 5.06em;
+  }
+  body section.buyCourse .container .course-card .btns-block span.price, body section.buyCourse .container .course-card .btns-block a.btn {
+    margin: 0;
+  }
+  body section.buyCourse .container .course-card .btns-block a.btn {
+    width: 53.3rem;
+    height: 11rem;
+    font-size: 3.3em;
+    line-height: 3.3em;
+    margin-top: 2rem;
+  }
+  body section.buyCourse .container .course-card .btns-block a.btn-buyNow {
+    font-size: 2.7em;
+    line-height: 3.8em;
+  }
+  body section.finishing {
+    height: 57em;
+    background-size: cover;
+    padding-top: 36em;
+  }
+  body footer {
+    padding: 29em 0;
+  }
+  body footer .footer-d-flex {
+    display: block;
+    text-align: center;
+  }
+  body footer .footer-d-flex .logo {
+    text-align: left;
+  }
+  body footer .footer-d-flex .logo .imgLogo svg {
+    width: 66px;
+    height: 75px;
+  }
+  body footer .footer-d-flex .logo .textLogo {
+    margin-left: 5px;
+    margin-top: -5px;
+  }
+  body footer .footer-d-flex .logo .textLogo span.name {
+    font-size: 42px;
+  }
+  body footer .footer-d-flex .logo .textLogo span.desc {
+    font-size: 19px;
+  }
+  body footer .footer-d-flex span.phone {
+    display: block;
+    font-size: 5em;
+    margin: 3em 0;
+  }
+  body footer .footer-d-flex a.btn-submit {
+    width: 14.25em;
+    height: 3.35em;
+    font-size: 3.3em;
+    line-height: 3.3em;
+    margin-top: 30px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   body nav.menu {
     min-width: 390px;
   }
   body nav.menu.hidden {
     left: -390px;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  body, html {
+    font-size: 6.66px;
+  }
+  body .scrollText-block {
+    height: 60px;
+    background-size: 574px;
+  }
+  @-webkit-keyframes scrollText {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 574px;
+    }
+  }
+  @keyframes scrollText {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 574px;
+    }
+  }
+  body header nav .menu button.circle {
+    width: 66px;
+    height: 66px;
+  }
+  body header nav .menu .hamburger .hamburger-box {
+    width: 35px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner, body header nav .menu .hamburger .hamburger-box .hamburger-inner::after, body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
+    width: 35px;
+  }
+  body header .maintext {
+    margin-top: 29em;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  body, html {
+    font-size: 5px;
+  }
+  body header nav .menu button.circle {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+  body header nav .menu .hamburger .hamburger-box {
+    width: 25px;
+    height: 19px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner, body header nav .menu .hamburger .hamburger-box .hamburger-inner::after, body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
+    width: 25px;
+    height: 3px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner {
+    top: 1px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
+    top: 9px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner::after {
+    top: 18px;
+  }
+  body header nav .menu .hamburger--slider.is-active .hamburger-inner::after {
+    -webkit-transform: translate3d(0, -18px, 0) rotate(-90deg);
+            transform: translate3d(0, -18px, 0) rotate(-90deg);
+  }
+  body header nav .menu .hamburger--slider.is-active .hamburger-inner {
+    -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
+            transform: translate3d(0, 8px, 0) rotate(45deg);
+  }
+  body header .maintext {
+    margin-top: 23em;
+  }
+  body section.buyCourse .course-card .text-block ul li::before {
+    top: 1px;
+  }
+  body footer .footer-d-flex .logo .imgLogo svg {
+    width: 6.6em;
+    height: 7.5em;
+  }
+  body footer .footer-d-flex .logo .textLogo {
+    margin-left: 5px;
+    margin-top: -5px;
+  }
+  body footer .footer-d-flex .logo .textLogo span.name {
+    font-size: 4.2em;
+  }
+  body footer .footer-d-flex .logo .textLogo span.desc {
+    font-size: 1.9em;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  body section.wantsTo .video .preview .title {
+    font-size: 2.2em;
+  }
+  body section h2 span.b-text {
+    font-size: 8em;
+  }
+  body section.whatGet .advantages .table .item {
+    margin-left: 2em;
+  }
+  body section.trainer .text-block .desc {
+    font-size: 3.2em;
   }
 }
 
@@ -1481,5 +2168,11 @@ body footer a.btn-submit {
   }
   body nav.menu.hidden {
     left: -100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body section.buyCourse .course-card .text-block .video {
+    margin-bottom: -30px;
   }
 }

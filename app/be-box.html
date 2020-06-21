@@ -21,6 +21,9 @@
     <link rel="icon" type="image/x-icon" href="img/favicon/48favicon.ico">
   </head>
   <body>
+    <div class="vimeo-video-popup">
+      <div id="vimeo-video-container"></div>
+    </div>
     <div id="menu-pagedim"></div>
     <nav class="menu hidden" id="menu">
       <ul>
@@ -37,225 +40,241 @@
         <li class="item"><a href="login.html">Авторизация</a></li>
       </ul>
     </nav>
-  </body>
-  <header>
-    <div class="container">
-      <nav class="d-flex">
-        <div class="menu d-flex">
-          <button class="circle d-flex justify-content-center align-items-center hamburger hamburger--slider" id="my-button" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
-        </div>
-        <div class="logo d-flex align-items-center justify-content-center">
-          <div class="imgLogo"><svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="43px" height="42px" viewBox="0 0 43 42"><path fill-rule="evenodd"  fill="rgb(233, 51, 51)"d="M25.833,41.999 L42.388,-0.001 L32.564,-0.001 L21.163,31.439 L9.823,-0.001 L-0.001,-0.001 L16.494,41.999 L25.833,41.999 Z"/></svg></div>
-          <div class="textLogo"><span class="name">Concept</span><br><span class="desc">Школа фитнеса и питания</span></div>
-        </div>
-        <div class="contacts d-flex align-items-center"><span>8 (495) 125–22–25</span><span>info@v-concept.ru</span><span>Кутузовский проспект, 35 стр.5</span></div>
-      </nav>
-      <div class="maintext"><span class="tag">#BODY EVOLUTION BOX</span>
-        <h1>Интенсивный фитнес курс по женскому боксу</h1><a class="btn-submit" href="#">Оставить заявку</a>
-      </div>
-      <div class="scrollDown">
-        <p class="text">когда хотела врезать, но держалась...</p><img src="img/be-box/scrollDown-arrow.svg" alt="scrollDown-arrow.svg">
-      </div>
-    </div>
-  </header>
-  <section class="wantsTo">
-    <div class="video" id="video1-container">
-      <div class="preview"><img class="poster" src="img/be-box/video1-poster.jpg" alt="video1-poster.jpg">
-        <div class="title">О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД</div><img class="img-btn" id="load-video1" src="img/be-box/btn-play.svg" alt="btn-play.svg">
-      </div>
-    </div>
-    <div class="ovh">
+    <header>
       <div class="container">
-        <h2><span class="sm-text">КУРС #BODY EVOLUTION BOX</span><br><span class="b-text"><span class="underline-text">для женщин,</span> кто хочет:</span></h2>
-        <ul class="desires">
-          <li>Прийти в форму <br>за короткий срок </li>
-          <li>Получить <br>гарантированный рельеф </li>
-          <li>
-             Получить мощную <br>эмоциональную <br>и психологическую <br>разгрузку </li>
-          <li>
-             Испытать новые крутые <br>эмоции от самого <br>динамичного и драйвого <br>тренинга в вашей жизни </li>
-        </ul>
-        <div class="circle-text-outer"><img class="circle-text" src="img/be-box/circle-text.png" alt="circle-text.png"><img class="zipper" src="img/be-box/zipper.svg" alt="zipper.svg"></div>
-        <div class="figure-block"><img src="img/be-box/800.svg" alt="800.svg">
-          <p>
-             800 килокаллорий за тренировку, <br>это круче чем тренажёрка, бег и даже секс </p>
+        <nav class="d-flex">
+          <div class="menu d-flex">
+            <button class="circle d-flex justify-content-center align-items-center hamburger hamburger--slider" id="my-button" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          </div>
+          <div class="logo d-flex align-items-center justify-content-center">
+            <div class="imgLogo"><svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="43px" height="42px" viewBox="0 0 43 42"><path fill-rule="evenodd"  fill="rgb(233, 51, 51)"d="M25.833,41.999 L42.388,-0.001 L32.564,-0.001 L21.163,31.439 L9.823,-0.001 L-0.001,-0.001 L16.494,41.999 L25.833,41.999 Z"/></svg></div>
+            <div class="textLogo"><span class="name">Concept</span><br><span class="desc">Школа фитнеса и питания</span></div>
+          </div>
+          <div class="contacts d-flex align-items-center"><span>8 (495) 125–22–25</span><span>info@v-concept.ru</span><span>Кутузовский проспект, 35 стр.5</span></div>
+        </nav>
+        <div class="maintext"><span class="tag">#BODY EVOLUTION BOX</span>
+          <h1>Интенсивный фитнес курс по женскому боксу</h1><a class="btn-submit" href="#">Оставить заявку</a>
+        </div>
+        <div class="scrollDown">
+          <p class="text">когда хотела врезать, но держалась...</p><img src="img/be-box/scrollDown-arrow.svg" alt="scrollDown-arrow.svg">
         </div>
       </div>
-    </div>
-  </section>
-  <section class="whatGet">
-    <div class="container">
-      <h2> <span class="b-text">ЧТО ВЫ <span class="underline-text">ПОЛУЧАЕТЕ</span></span><br><span class="sm-text">ПРИНЯВ УЧАСТИЕ В КУРСЕ #BODY EVOLUTION BOX</span></h2>
-      <div class="advantages ovh">
-        <div class="table d-flex">
-          <div class="item"><img src="img/be-box/advantages-icon1.jpg" alt="advantages-icon1.jpg">
-            <p>
-               4 недели курса в группе смелых <br>девушек под руководством <br>настоящего тренера по боксу</p>
-          </div>
-          <div class="item"><img src="img/be-box/advantages-icon2.jpg" alt="advantages-icon2.jpg">
-            <p>Силовые и кардио <br>тренировки с элементами <br>бокса</p>
-          </div>
-          <div class="item"><img src="img/be-box/advantages-icon3.jpg" alt="advantages-icon3.jpg">
-            <p>12 уникальных супер <br>тренировок по 3 раза в неделю <br>до последней капли пота</p>
-          </div>
-          <div class="item"><img src="img/be-box/advantages-icon4.jpg" alt="advantages-icon4.jpg">
-            <p>Постановка боксерской <br>техники</p>
-          </div>
-          <div class="item"><img src="img/be-box/advantages-icon5.jpg" alt="advantages-icon5.jpg">
-            <p>Персональный план питания <br>на 30 дней</p>
-          </div>
-          <div class="item"><img src="img/be-box/advantages-icon6.jpg" alt="advantages-icon6.jpg">
-            <p>Постановка удара</p>
-          </div>
-        </div><a class="btn-subscribe d-flex align-items-center justify-content-center" href="#">записаться на курс</a>
-      </div>
-    </div>
-  </section>
-  <div class="scrollText-block"></div>
-  <section class="antidepr">
-    <div class="cross-block"><img class="cross cross1" src="img/be-box/redCross2.svg" alt="redCross2.svg"><img class="cross cross2" src="img/be-box/redCross2.svg" alt="redCross2.svg"><img class="cross cross3" src="img/be-box/redCross2.svg" alt="redCross2.svg"></div>
-    <div class="container">
-      <div class="text-block">
-        <h3><span class="b-text">Лучший антидепрессант </span><br><span class="sm-text">для женщин…</span></h3>
-        <p class="desc">Мегаполис, стресс на работе, пмс и вот ты уже готова кого-нибудь убить...</p>
-      </div>
-    </div>
-  </section>
-  <section class="reasons">
-    <div class="container">
-      <h2><span class="b-text"><span class="underline-text">7 ПРИЧИН</span></span><br><span class="sm-text">влюбиться в бокс</span></h2>
-      <div class="table d-flex">
-        <div class="item">
-          <div class="number">1</div>
-          <p>Бокс является полноценной заменой фитнеса: в боксе работают абсолютно все мышцы тела, оно становится упругим и подтянутым</p>
-        </div>
-        <div class="item">
-          <div class="number">2</div>
-          <p>Постановка боксёрской техника придаст вам новый уровень координации тела</p>
-        </div>
-        <div class="item">
-          <div class="number">3</div>
-          <p>Бокс - это супер интенсивный тренинг, что придаст вам выносливости в разы, а ягодичные и пресс будут гореть.</p>
-        </div>
-        <div class="item">
-          <div class="number">4</div>
-          <p>Бокс - это пожиратель коллорий, за одну тренировки можно сжечь до 800 каллорий</p>
-        </div>
-        <div class="item">
-          <div class="number">5</div>
-          <p>Бокс - это новый опыт в вашей спортивной жизни, который так требуется для поддержания мотивации</p>
-        </div>
-        <div class="item">
-          <div class="number">6</div>
-          <p>Бокс + фитнес дает бесконечное разнообразие упражнений, поэтому вам всегда будет нескучно тренироваться, поддерживая себя в тонусе </p>
-        </div>
-        <div class="item">
-          <div class="number">7</div>
-          <p>Вы будете бежать на каждую тренировку, чтобы получить этот заряд энергии и кайфа</p>
-        </div>
-        <div class="heart-boxing"><span>BOXING</span></div>
-      </div>
-    </div>
-  </section>
-  <section class="videos ovh">
-    <div class="container">
-      <h2><span class="b-text">Пара видео</span><br><span class="sm-text">С НАШИХ РЕАЛЬНЫХ ТРЕНИРОВОК #BODY EVOLUTION BOX</span></h2>
-      <div class="table d-flex">
-        <div class="video-item">
-          <div class="video" id="video2-container">
-            <div class="preview"><img class="poster" src="img/be-box/videos1.jpg" alt="videos1.jpg"><img class="img-btn" id="load-video2" src="img/be-box/btn-play.svg" alt="btn-play.svg"></div>
-          </div>
-          <p class="desc">Видео с тренировок по боксу</p>
-        </div>
-        <div class="video-item">
-          <div class="video" id="video3-container">
-            <div class="preview"><img class="poster" src="img/be-box/videos2.jpg" alt="videos2.jpg"><img class="img-btn" id="load-video3" src="img/be-box/btn-play.svg" alt="btn-play.svg"></div>
-          </div>
-          <p class="desc">Видео с тренировок по фитнесу</p>
+    </header>
+    <section class="wantsTo">
+      <div class="video" id="video1-container">
+        <div class="preview"><img class="poster" src="img/be-box/video1-poster.jpg" alt="video1-poster.jpg">
+          <div class="title">О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД</div><img class="img-btn load-vimeo-video" id="load-video1" src="img/be-box/btn-play.svg" alt="btn-play.svg">
         </div>
       </div>
-    </div>
-  </section>
-  <section class="trainer">
-    <div class="container"><img class="aim aim1" src="img/be-box/aim.png" alt="aim.png"><img class="aim aim2" src="img/be-box/aim.png" alt="aim.png">
-      <div class="text-block">
-        <h2><span class="b-text">Главный тренер</span><br><span class="sm-text">#BODY EVOLUTION BOX</span></h2>
-        <div class="desc">
-          <p class="subhead">САМЫЙ РУССКИЙ <br>СРЕДИ ВСЕХ КУБИНЦЕВ</p>
-          <p class="text">Единственный и неповторимый <br>тренер по женскому боксу, <br>которого любят все </p>
-        </div>
-      </div>
-      <div class="trainer-img"><img src="img/be-box/trainer-img.jpg" alt="trainer-img.jpg"></div>
-    </div>
-  </section>
-  <section class="gym">
-    <h2><span class="b-text"><span class="underline-text">ЗАЛЫ</span></span><br><span class="sm-text">#body evolution box</span></h2>
-    <div class="gym-carousel owl-carousel owl-theme" id="gym-carousel"><img src="img/be-box/csl-slide.jpg" alt="csl-slide.jpg"><img src="img/be-box/csl-slide.jpg" alt="csl-slide.jpg"><img src="img/be-box/csl-slide.jpg" alt="csl-slide.jpg"><img src="img/be-box/csl-slide.jpg" alt="csl-slide.jpg"></div>
-  </section>
-  <section class="buyCourse">
-    <h2> <span class="b-text">ваше время <span class="underline-text">пришло</span> </span><br><span class="sm-text">#body evolution box</span></h2>
-    <div class="container">
-      <div class="course-card d-flex">
-        <div class="text-block">
-          <ul>
-            <li>4 недели курса в группе 12-15 человек</li>
-            <li>3 тренировки в неделю</li>
-            <li>Персональный план питания на 30 дней</li>
-            <li>Под руководством настоящего тренера по боксу</li>
+      <div class="ovh">
+        <div class="container">
+          <h2><span class="sm-text">КУРС #BODY EVOLUTION BOX</span><br><span class="b-text"><span class="underline-text">для женщин,</span> кто хочет:</span></h2>
+          <ul class="desires">
+            <li>Прийти в форму <br>за короткий срок </li>
+            <li>Получить <br>гарантированный рельеф </li>
+            <li>
+               Получить мощную <br>эмоциональную <br>и психологическую <br>разгрузку </li>
+            <li>
+               Испытать новые крутые <br>эмоции от самого <br>динамичного и драйвого <br>тренинга в вашей жизни </li>
           </ul>
-          <div class="video" id="video4-container">
-            <div class="preview"><img class="poster" src="img/be-box/video1-poster.jpg" alt="video1-poster.jpg">
-              <div class="title">О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД</div><img class="img-btn" id="load-video4" src="img/be-box/btn-play.svg" alt="btn-play.svg">
+          <div class="circle-text-outer"><img class="circle-text" src="img/be-box/circle-text.png" alt="circle-text.png"><img class="zipper" src="img/be-box/zipper.svg" alt="zipper.svg"></div>
+          <div class="figure-block"><img src="img/be-box/800.svg" alt="800.svg">
+            <p>
+               800 килокаллорий за тренировку, <br>это круче чем тренажёрка, бег и даже секс </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="whatGet">
+      <div class="container">
+        <h2> <span class="b-text">ЧТО ВЫ <span class="underline-text">ПОЛУЧАЕТЕ</span></span><br><span class="sm-text">ПРИНЯВ УЧАСТИЕ В КУРСЕ #BODY EVOLUTION BOX</span></h2>
+        <div class="advantages ovh">
+          <div class="table d-flex">
+            <div class="item"><img src="img/be-box/advantages-icon1.jpg" alt="advantages-icon1.jpg">
+              <p>
+                 4 недели курса в группе смелых <br>девушек под руководством <br>настоящего тренера по боксу</p>
+            </div>
+            <div class="item"><img src="img/be-box/advantages-icon2.jpg" alt="advantages-icon2.jpg">
+              <p>Силовые и кардио <br>тренировки с элементами <br>бокса</p>
+            </div>
+            <div class="item"><img src="img/be-box/advantages-icon3.jpg" alt="advantages-icon3.jpg">
+              <p>12 уникальных супер <br>тренировок по 3 раза в неделю <br>до последней капли пота</p>
+            </div>
+            <div class="item"><img src="img/be-box/advantages-icon4.jpg" alt="advantages-icon4.jpg">
+              <p>Постановка боксерской <br>техники</p>
+            </div>
+            <div class="item"><img src="img/be-box/advantages-icon5.jpg" alt="advantages-icon5.jpg">
+              <p>Персональный план питания <br>на 30 дней</p>
+            </div>
+            <div class="item"><img src="img/be-box/advantages-icon6.jpg" alt="advantages-icon6.jpg">
+              <p>Постановка удара</p>
+            </div>
+          </div><a class="btn-subscribe d-flex align-items-center justify-content-center" href="#">записаться на курс</a>
+        </div>
+      </div>
+    </section>
+    <div class="scrollText-block"></div>
+    <section class="antidepr">
+      <div class="cross-block"><img class="cross cross1" src="img/be-box/redCross2.svg" alt="redCross2.svg"><img class="cross cross2" src="img/be-box/redCross2.svg" alt="redCross2.svg"><img class="cross cross3" src="img/be-box/redCross2.svg" alt="redCross2.svg"></div>
+      <div class="container">
+        <div class="text-block">
+          <h3><span class="b-text">Лучший антидепрессант </span><br><span class="sm-text">для женщин…</span></h3>
+          <p class="desc">Мегаполис, стресс на работе, пмс и вот ты уже готова кого-нибудь убить...</p>
+        </div>
+      </div>
+    </section>
+    <section class="reasons">
+      <div class="container">
+        <h2><span class="b-text"><span class="underline-text">7 ПРИЧИН</span></span><br><span class="sm-text">влюбиться в бокс</span></h2>
+        <div class="table d-flex">
+          <div class="item">
+            <div class="number">1</div>
+            <p>Бокс является полноценной заменой фитнеса: в боксе работают абсолютно все мышцы тела, оно становится упругим и подтянутым</p>
+          </div>
+          <div class="item">
+            <div class="number">2</div>
+            <p>Постановка боксёрской техника придаст вам новый уровень координации тела</p>
+          </div>
+          <div class="item">
+            <div class="number">3</div>
+            <p>Бокс - это супер интенсивный тренинг, что придаст вам выносливости в разы, а ягодичные и пресс будут гореть.</p>
+          </div>
+          <div class="item">
+            <div class="number">4</div>
+            <p>Бокс - это пожиратель коллорий, за одну тренировки можно сжечь до 800 каллорий</p>
+          </div>
+          <div class="item">
+            <div class="number">5</div>
+            <p>Бокс - это новый опыт в вашей спортивной жизни, который так требуется для поддержания мотивации</p>
+          </div>
+          <div class="item">
+            <div class="number">6</div>
+            <p>Бокс + фитнес дает бесконечное разнообразие упражнений, поэтому вам всегда будет нескучно тренироваться, поддерживая себя в тонусе </p>
+          </div>
+          <div class="item">
+            <div class="number">7</div>
+            <p>Вы будете бежать на каждую тренировку, чтобы получить этот заряд энергии и кайфа</p>
+          </div>
+          <div class="heart-boxing"><span>BOXING</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="videos ovh">
+      <div class="container">
+        <h2><span class="b-text">Пара видео</span><br><span class="sm-text">С НАШИХ РЕАЛЬНЫХ ТРЕНИРОВОК <span class="tag">#BODY EVOLUTION BOX</span></span></h2>
+        <div class="table d-flex">
+          <div class="video-item">
+            <div class="video" id="video2-container">
+              <div class="preview"><img class="poster" src="img/be-box/videos1.jpg" alt="videos1.jpg"><img class="img-btn load-vimeo-video" id="load-video2" src="img/be-box/btn-play.svg" alt="btn-play.svg"></div>
+            </div>
+            <p class="desc">Видео с тренировок по боксу</p>
+          </div>
+          <div class="video-item">
+            <div class="video" id="video3-container">
+              <div class="preview"><img class="poster" src="img/be-box/videos2.jpg" alt="videos2.jpg"><img class="img-btn load-vimeo-video" id="load-video3" src="img/be-box/btn-play.svg" alt="btn-play.svg"></div>
+            </div>
+            <p class="desc">Видео с тренировок по фитнесу</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="trainer">
+      <div class="container"><img class="aim aim1" src="img/be-box/aim.png" alt="aim.png"><img class="aim aim2" src="img/be-box/aim.png" alt="aim.png">
+        <div class="text-block">
+          <h2><span class="b-text">Главный тренер</span><br><span class="sm-text">#BODY EVOLUTION BOX</span></h2>
+          <div class="trainer-img"><img src="img/be-box/trainer-img.jpg" alt="trainer-img.jpg"></div>
+          <div class="desc">
+            <p class="subhead">САМЫЙ РУССКИЙ <br>СРЕДИ ВСЕХ КУБИНЦЕВ</p>
+            <p class="text">Единственный и неповторимый <br>тренер по женскому боксу, <br>которого любят все </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gym">
+      <h2><span class="b-text"><span class="underline-text">ЗАЛЫ</span></span><br><span class="sm-text">#body evolution box</span></h2>
+      <div class="gym-carousel owl-carousel owl-theme" id="gym-carousel"><img src="img/be-box/csl-slide.jpg" alt="csl-slide.jpg"><img src="img/be-box/csl-slide.jpg" alt="csl-slide.jpg"><img src="img/be-box/csl-slide.jpg" alt="csl-slide.jpg"><img src="img/be-box/csl-slide.jpg" alt="csl-slide.jpg"></div>
+    </section>
+    <section class="buyCourse">
+      <h2> <span class="b-text">ваше время <span class="underline-text">пришло</span> </span><br><span class="sm-text">#body evolution box</span></h2>
+      <div class="container">
+        <div class="course-card d-flex">
+          <div class="text-block">
+            <ul>
+              <li>4 недели курса в группе 12-15 человек</li>
+              <li>3 тренировки в неделю</li>
+              <li>Персональный план питания на 30 дней</li>
+              <li>Под руководством настоящего тренера по боксу</li>
+            </ul>
+            <div class="video" id="video4-container">
+              <div class="preview"><img class="poster" src="img/be-box/video1-poster.jpg" alt="video1-poster.jpg">
+                <div class="title">О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД</div><img class="img-btn load-vimeo-video" id="load-video4" src="img/be-box/btn-play.svg" alt="btn-play.svg">
+              </div>
             </div>
           </div>
+          <div class="btns-block"><span class="price"><span class="number">12 900</span><span class="text">руб.</span></span><a class="btn btn-submit" href="#">оставить заявку</a><a class="btn btn-buyNow" href="#">оплатить сейчас со скидкой</a></div>
         </div>
-        <div class="btns-block"><span class="price"><span class="number">12 900</span><span class="text">руб.</span></span><a class="btn btn-submit" href="#">оставить заявку</a><a class="btn btn-buyNow" href="#">оплатить сейчас со скидкой</a></div>
       </div>
-    </div>
-  </section>
-  <section class="finishing">
-    <div class="scrollText-block"></div>
-  </section>
-  <footer>
-    <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
-        <div class="logo d-flex align-items-center justify-content-center">
-          <div class="imgLogo"><svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="43px" height="42px" viewBox="0 0 43 42"><path fill-rule="evenodd"  fill="rgb(233, 51, 51)"d="M25.833,41.999 L42.388,-0.001 L32.564,-0.001 L21.163,31.439 L9.823,-0.001 L-0.001,-0.001 L16.494,41.999 L25.833,41.999 Z"/></svg></div>
-          <div class="textLogo"><span class="name">Concept</span><br><span class="desc">Школа фитнеса и питания</span></div>
-        </div><span class="phone">8 (495) 125–22–25</span><a class="btn-submit" href="#">Оставить заявку</a>
+    </section>
+    <section class="finishing">
+      <div class="scrollText-block"></div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between footer-d-flex">
+          <div class="logo d-flex align-items-center justify-content-center">
+            <div class="imgLogo"><svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="43px" height="42px" viewBox="0 0 43 42"><path fill-rule="evenodd"  fill="rgb(233, 51, 51)"d="M25.833,41.999 L42.388,-0.001 L32.564,-0.001 L21.163,31.439 L9.823,-0.001 L-0.001,-0.001 L16.494,41.999 L25.833,41.999 Z"/></svg></div>
+            <div class="textLogo"><span class="name">Concept</span><br><span class="desc">Школа фитнеса и питания</span></div>
+          </div><span class="phone">8 (495) 125–22–25</span><a class="btn-submit" href="#">Оставить заявку</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </body>
   <script src="js/jquery.min.js"></script>
   <script src="js/common.js"></script>
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script>
-    $('#load-video1').one('click', function(){
-    	$('#video1-container').append('<iframe id="vimeo-video1" src="https://player.vimeo.com/video/430331368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
-    	$('#video1-container > .preview').css('opacity', '0')
-    	var vimeo1 = new Vimeo.Player('vimeo-video1');
-    	vimeo1.play()
+    $('#load-video1').click(function(){
+    	$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/430331368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
     })
-    $('#load-video2').one('click', function(){
-    	$('#video2-container').append('<iframe id="vimeo-video2" src="https://player.vimeo.com/video/424833760" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
-    	$('#video2-container > .preview').css('opacity', '0')
-    	var vimeo2 = new Vimeo.Player('vimeo-video2');
-    	vimeo2.play()
+    $('#load-video2').click(function(){
+    	$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/424833760" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
     })
-    $('#load-video3').one('click', function(){
-    	$('#video3-container').append('<iframe id="vimeo-video3" src="https://player.vimeo.com/video/427520618" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
-    	$('#video3-container > .preview').css('opacity', '0')
-    	var vimeo3 = new Vimeo.Player('vimeo-video3');
-    	vimeo3.play()
+    $('#load-video3').click(function(){
+    	$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/427520618" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
     })
-    $('#load-video4').one('click', function(){
-    	$('#video4-container').append('<iframe id="vimeo-video4" src="https://player.vimeo.com/video/430331368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
-    	$('#video4-container > .preview').css('opacity', '0')
-    	var vimeo4 = new Vimeo.Player('vimeo-video4');
-    	vimeo4.play()
+    $('#load-video4').click(function(){
+    	$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/430331368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
     })
     
+    function existVerticalScroll() {
+    	return $('body').outerHeight() > $(window).innerHeight()
+    }
+    
+    
+    $('.load-vimeo-video').click(function(){
+    	if(existVerticalScroll()) { 
+    		wScrollTop = $(document).scrollTop()
+    		$('body').css('top', '-' + wScrollTop + 'px' )
+    		$('body').addClass('body-fix')
+    	}
+    
+    	$('.vimeo-video-popup').fadeIn(250)
+    	var vimeo = new Vimeo.Player('vimeo-video');
+    	vimeo.play()
+    
+    })
+    
+    $('#vimeo-video-container').click(function(e){
+    	if (!$('iframe').is(e.target) && $('iframe').has(e.target).length === 0) {
+    		$('.vimeo-video-popup').fadeOut(250)
+    		$(this).children('iframe').remove()
+    		$('body').removeClass('body-fix')
+    		$('body').css('top', '0')
+    		$(document).scrollTop(wScrollTop)
+    		//- alert(wScrollTop)
+    	}
+    })
     //- Owl carousel
     
     $('#gym-carousel').owlCarousel({
