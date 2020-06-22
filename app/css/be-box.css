@@ -2101,7 +2101,7 @@ body footer a.btn-submit {
     height: 3px;
   }
   body header nav .menu .hamburger .hamburger-box .hamburger-inner {
-    top: 1px;
+    top: 2px;
   }
   body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
     top: 8px;
