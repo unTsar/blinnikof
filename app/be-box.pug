@@ -64,7 +64,7 @@ html(lang="ru")
 						span 8 (495) 125–22–25
 						span info@v-concept.ru
 						span Кутузовский проспект, 35 стр.5
-				.maintext
+				.maintext.parallax-elem-rel-8
 					span.tag #BODY EVOLUTION BOX
 					h1 Интенсивный фитнес курс по женскому боксу
 					a(href="#").btn-submit Оставить заявку
@@ -79,11 +79,11 @@ html(lang="ru")
 					img.img-btn#load-video1.load-vimeo-video(src="img/be-box/btn-play.svg", alt="btn-play.svg")
 			.ovh
 				.container
-					h2
+					h2.parallax-elem-rel-25.rel
 						|#[span.sm-text КУРС #BODY EVOLUTION BOX]
 						br
 						|#[span.b-text #[span.underline-text для женщин,] кто хочет:]
-					ul.desires
+					ul.desires.parallax-elem-rel-25.rel
 						li
 							|Прийти в форму 
 							br
@@ -122,7 +122,7 @@ html(lang="ru")
 							|это круче чем тренажёрка, бег и даже секс 
 		section.whatGet
 			.container
-				h2 
+				h2
 					span.b-text ЧТО ВЫ #[span.underline-text ПОЛУЧАЕТЕ]
 					br
 					span.sm-text ПРИНЯВ УЧАСТИЕ В КУРСЕ #BODY EVOLUTION BOX
@@ -308,6 +308,10 @@ html(lang="ru")
 	script(src="https://player.vimeo.com/api/player.js")
 
 	script(src="js/owl.carousel.min.js")
+
+
+	script(src='js/jquery.event.frame.js')
+	script(src='js/jquery.parallax.min.js')
 	script.
 
 		$('#load-video1').click(function(){
@@ -369,3 +373,16 @@ html(lang="ru")
 			margin: 20,
 			autoplay: 2000,
 		})
+
+		$(document).ready(function(){
+
+			$(window).scroll(function(e){
+				parallaxScroll();
+			});
+
+			function parallaxScroll(){
+				var scrolled = $(window).scrollTop();
+				$('.parallax-elem-rel-8').css('top',(0-(scrolled*.8))+'px');
+				$('.parallax-elem-rel-25').css('top',(0-(scrolled*.25))+'px');
+			}
+		});

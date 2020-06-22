@@ -239,6 +239,10 @@ html, body {
   position: fixed;
 }
 
+.rel {
+  position: relative;
+}
+
 body {
   background-color: #000;
   width: 100%;
@@ -555,6 +559,7 @@ body header nav .contacts span {
 
 body header .maintext {
   margin-top: 156px;
+  display: inline-block;
 }
 
 body header .maintext span.tag {
