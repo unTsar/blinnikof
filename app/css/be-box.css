@@ -1964,6 +1964,7 @@ body footer a.btn-submit {
     position: absolute;
     top: 0;
     padding-left: 4.7rem;
+    padding-right: 1em;
     padding-top: 2.7rem;
     font-size: 2.6em;
     line-height: 1;
