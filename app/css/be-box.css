@@ -406,6 +406,7 @@ body .vimeo-video-popup #vimeo-video-container {
 body .vimeo-video-popup #vimeo-video-container iframe {
   width: 1077px;
   height: 600px;
+  max-height: 100%;
 }
 
 body .scrollText-block {
@@ -2102,14 +2103,14 @@ body footer a.btn-submit {
     top: 1px;
   }
   body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
-    top: 9px;
+    top: 8px;
   }
   body header nav .menu .hamburger .hamburger-box .hamburger-inner::after {
-    top: 18px;
+    top: 16px;
   }
   body header nav .menu .hamburger--slider.is-active .hamburger-inner::after {
-    -webkit-transform: translate3d(0, -18px, 0) rotate(-90deg);
-            transform: translate3d(0, -18px, 0) rotate(-90deg);
+    -webkit-transform: translate3d(0, -16px, 0) rotate(-90deg);
+            transform: translate3d(0, -16px, 0) rotate(-90deg);
   }
   body header nav .menu .hamburger--slider.is-active .hamburger-inner {
     -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);

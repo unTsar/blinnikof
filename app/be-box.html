@@ -266,7 +266,7 @@
     })
     
     $('#vimeo-video-container').click(function(e){
-    	if (!$('iframe').is(e.target) && $('iframe').has(e.target).length === 0) {
+    	if (!$('#player').is(e.target) && $('#player').has(e.target).length === 0) {
     		$('.vimeo-video-popup').fadeOut(250)
     		$(this).children('iframe').remove()
     		$('body').removeClass('body-fix')
