@@ -16,6 +16,8 @@ html, body
 	position: fixed
 .rel
 	position: relative
+h1, h2, h3, span, p
+	font-weight: normal
 body
 	background-color: #000
 	width: 100%
@@ -51,7 +53,7 @@ body
 		height: 100%
 		min-width: 500px
 		transition: 0.5s
-		padding-top: 215px
+		padding-top: 100px
 		background-color: #303030
 		ul 
 			padding: 0
@@ -94,6 +96,16 @@ body
 		justify-content: center
 	.justify-content-between
 		justify-content: space-between
+	.video
+		.preview
+			img.img-btn
+				transition: 0.5s
+	.video:hover
+		.preview
+			img.img-btn
+				transform: scale(1.25)
+	a.btn
+		transition: 0.5s
 	.vimeo-video-popup
 		display: none
 		position: fixed
@@ -112,9 +124,21 @@ body
 			display: flex
 			align-items: center
 			justify-content: center
-			background-color: rgba(0, 0, 0, 0.3)
+			background-color: rgba(0, 0, 0, 0.5)
 			transition: 0.5s
 			cursor: pointer
+			position: relative
+			img.btn-close
+				position: absolute
+				top: 0
+				right: 0
+				margin-top: 32px
+				margin-right: 31px
+				cursor: pointer
+				opacity: 0.5
+				transition: 0.3s
+			img.btn-close:hover
+				opacity: 1
 			iframe
 				width: 1077px
 				height: 600px
@@ -124,12 +148,12 @@ body
 		height: 117px
 		background-image: url('../img/be-box/scrollText-be-box.svg')
 		background-repeat: repeat
-		animation: 9s linear scrollText infinite
+		animation: 4.5s linear scrollText infinite
 	@keyframes scrollText
 		0%
 			background-position-x: 0
 		100%
-			background-position-x: 1117px
+			background-position-x: -1117px
 	section
 		h2
 			text-align: center
@@ -152,14 +176,22 @@ body
 				height: 4px
 				bottom: 0
 				left: -2.5%
-				margin-bottom: -5px
+	header.active
+		background-color: rgba(0, 0, 0, 0)
 	header
+		min-height: 100vh
 		padding-bottom: 50px
 		background-image: url('../img/be-box/header-bg.jpg')
 		background-size: cover
 		background-repeat: no-repeat
-		background-position: center -15px
+		background-position: center 0
+		background-color: rgba(0, 0, 0, 1)
+		background-blend-mode: color
+		transition: 1s
 		.logo
+			img.imgLogo
+				width: 42px
+				height: auto
 			.textLogo
 				line-height: 1.2
 				margin-left: 10px
@@ -207,7 +239,12 @@ body
 					font-size: 18px
 					color: #fff
 					margin-left: 30px
+		.maintext.animate__animated
+			opacity: 1
 		.maintext
+			pointer-events: all
+			position: relative
+			opacity: 0
 			margin-top: 156px
 			display: inline-block
 			span.tag
@@ -247,6 +284,8 @@ body
 				color: #fff
 				font-size: 16px
 				text-transform: uppercase
+			a.btn:hover
+				font-size: 20px
 		.scrollDown
 			text-align: center
 			margin-top: 73px
@@ -262,21 +301,35 @@ body
 			img
 				width: 38px
 				position: relative
-				animation: 1s ease-in-out moveDown infinite
+				opacity: 0
+				animation: 1s linear moveDown infinite
 			@keyframes moveDown
 				0%
+					opacity: 0
 					top: 0
+				20%
+					opacity: 1
+					top: 7px
+				80%
+					top: 28px
+					opacity: 1
 				100%
+					opacity: 0
 					top: 35px
 	section.wantsTo
 		padding-bottom: 225px
 		h2
 			margin-top: 180px
+			line-height: 1.4
+		.video.active
+			margin-top: -102px
 		.video
+			transition: 1s
+			cursor: pointer
 			width: 462px
 			position: relative
 			margin-left: auto
-			margin-top: -102px
+			margin-top: 0
 			margin-right: 67px
 			.preview
 				img.poster
@@ -354,7 +407,7 @@ body
 				0%
 					transform: rotate(0deg)
 				100%
-					transform: rotate(-360deg)
+					transform: rotate(360deg)
 		.circle-text-outer::before
 			content: ''
 			background-image: url('../img/be-box/wantsTo-bg1.jpg')
@@ -387,7 +440,7 @@ body
 				background-repeat: no-repeat
 				background-image: url('../img/be-box/800.svg')
 				background-size: 230px
-				transition: 3s
+				transition: 1s
 			.fb-img.active
 				width: 230px
 			p
@@ -405,6 +458,8 @@ body
 		background-repeat: no-repeat
 		background-position: center 0
 		h2
+			opacity: 0
+			line-height: normal
 			span.sm-text
 				line-height: 2.2
 		.advantages
@@ -442,6 +497,17 @@ body
 				text-transform: uppercase
 				font-family: 'Aeroport-Bold'
 				font-size: 18px
+			a.btn:hover
+				font-size: 20px
+	@keyframes kick
+		0%
+			transform: scale(1)
+		10%
+			transform: scale(1.5)
+		20%
+			transform: scale(1.4)
+		100%
+			transform: scale(1)
 	section.antidepr
 		margin-top: 200px
 		margin-bottom: 250px
@@ -450,7 +516,8 @@ body
 		position: relative
 		background-image: url('../img/be-box/antidepr-bg.jpg')
 		background-repeat: no-repeat
-		background-position: center 0
+		background-position: center
+		background-size: cover
 		position: relative
 		.cross-block
 			pointer-events: none
@@ -463,6 +530,9 @@ body
 			left: 0
 			right: 0
 			margin: auto
+
+		img.cross.active
+			animation: 1s kick
 		img.cross
 			position: absolute
 			z-index: 1
@@ -485,6 +555,8 @@ body
 			width: 90px
 			height: 90px
 		.text-block
+			position: relative
+			z-index: 1
 			color: #fff
 			max-width: 465px
 			width: 100%
@@ -531,19 +603,27 @@ body
 					font-family: 'Aeroport'
 					line-height: 1.2
 			.heart-boxing
+				position: relative
 				margin: 0 20px
 				width: 225px
 				height: 207px
 				line-height: 195px
-				background-image: url('../img/be-box/heart-outline.svg')
-				background-repeat: no-repeat
 				text-align: center
-				animation: 1s heartPulse infinite
 				span
 					text-transform: uppercase
 					color: #000
 					font-size: 48px
 					font-family: 'HeadingSmallcasePro-Regular'
+			.heart-boxing::before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				background-image: url('../img/be-box/heart-outline.svg')
+				background-repeat: no-repeat
+				animation: 1s heartPulse infinite
 			@keyframes heartPulse
 				0%
 					transform: scale(1)
@@ -552,10 +632,12 @@ body
 				40%
 					transform: scale(1.12)
 	section.finishing
+		opacity: 0
 		height: 927px
 		background-image: url('../img/be-box/finishing-bg.jpg')
-		background-position: center 0
+		background-position: center
 		background-repeat: no-repeat
+		background-size: cover
 		padding-top: 628px
 	section.videos
 		margin: 250px 0
@@ -586,6 +668,7 @@ body
 				.video.animate__animated
 					opacity: 1
 				.video
+					cursor: pointer
 					opacity: 0
 					width: 100%
 					height: auto
@@ -621,8 +704,9 @@ body
 	section.trainer
 		height: 939px
 		background-image: url('../img/be-box/trainer-bg.jpg')
-		background-position: center 0
+		background-position: center
 		background-repeat: no-repeat
+		background-size: cover
 		.container
 			position: relative
 			height: 100%
@@ -731,11 +815,13 @@ body
 	section.buyCourse
 		padding-bottom: 365px
 		h2
-			line-height: 1.2
+			line-height: 1.4
 			margin-bottom: 240px
 			opacity: 0
-		h2.animate__animated
+			transition: 0.3s
+		h2.active
 			opacity: 1
+			animation: 1s kick
 		.course-card
 			width: 100%
 			background-color: #FF0006
@@ -770,6 +856,7 @@ body
 						margin: auto
 						margin-right: 20px
 				.video
+					cursor: pointer
 					opacity: 0
 					width: 462px
 					height: 292px
@@ -836,14 +923,22 @@ body
 					font-size: 18px
 					text-transform: uppercase
 					margin-top: 18px
+				a.btn:hover
+					font-size: 22.5px
+				a.btn-buyNow:hover
+					font-size: 19px
 				a.btn-submit
 					background-color: #000
 				a.btn-buyNow
+					line-height: 60px
 					background-color: transparent
 					border: 3px solid #fff
 	footer
 		padding: 150px 0
 		.logo
+			img.imgLogo
+				width: 42px
+				height: auto
 			.textLogo
 				line-height: 1.2
 				margin-left: 10px
@@ -872,6 +967,8 @@ body
 			color: #fff
 			font-size: 16px
 			text-transform: uppercase
+		a.btn:hover
+			font-size: 20px
 
 
 @media only screen and(max-height: 830px)
@@ -904,9 +1001,10 @@ body
 			.table
 				.heart-boxing
 					width: 199px
-					background-size: contain
 					height: 182px
 					line-height: 165px
+				.heart-boxing::before
+					background-size: contain
 
 @media only screen and(max-width: 991px)
 	body
@@ -946,13 +1044,10 @@ body
 					display: none
 				.logo
 					margin-left: auto
-					.imgLogo
-						svg
-							width: 6.6em
-							height: 7.5em
+					img.imgLogo
+						width: 6.3em
 					.textLogo
-						margin-left: 5px
-						margin-top: -5px
+						margin-left: 1.5em
 						span.name
 							font-size: 4.2em
 						span.desc
@@ -974,11 +1069,13 @@ body
 					font-size: 10.8em
 					max-width: 56rem
 				a.btn-submit
-					width: 14.25em
-					height: 3.35em
+					width: 47rem
+					height: 11rem
 					font-size: 3.3em
-					line-height: 3.3em
+					line-height: 11rem
 					margin-top: 3rem
+				a.btn:hover
+					font-size: 4.125em
 			.scrollDown
 				margin: 0
 				p.text
@@ -1092,10 +1189,13 @@ body
 						img
 							width: 7.6em
 				a.btn-subscribe
-					width: 14.25em
-					height: 3.35em
+					width: 47rem
+					height: 11rem
 					font-size: 3.3em
-					line-height: 3.3em
+					line-height: 11rem
+					margin-top: 3rem
+				a.btn:hover
+					font-size: 3.9em
 		section.antidepr
 			height: auto
 			background-size: cover
@@ -1227,6 +1327,7 @@ body
 						margin-top: 0
 		section.gym
 			padding: 29em 0
+			background-position: center
 			h2
 				margin-bottom: 9.5em
 		section.buyCourse
@@ -1296,13 +1397,15 @@ body
 							width: 53.3rem
 							height: 11rem
 							font-size: 3.3em
-							line-height: 3.3em
+							line-height: 11rem
 							margin-top: 2rem
+						a.btn:hover
+							font-size: 4.125em
+						a.btn-buyNow:hover
+							font-size: 3em
 						a.btn-buyNow
 							font-size: 2.7em
-							line-height: 3.8em
-
-
+							line-height: 9.9rem
 		section.finishing
 			height: 57em
 			background-size: cover
@@ -1314,29 +1417,27 @@ body
 				text-align: center
 				.logo
 					text-align: left
-					.imgLogo
-						svg
-							width: 66px
-							height: 75px
+					img.imgLogo
+						width: 6.3em
 					.textLogo
-						margin-left: 5px
-						margin-top: -5px
+						margin-left: 1.5em
 						span.name
-							font-size: 42px
+							font-size: 4.2em
 						span.desc
-							font-size: 19px
+							font-size: 1.9em
 
 				span.phone
 					display: block
 					font-size: 5em
 					margin: 3em 0
 				a.btn-submit
-					width: 14.25em
-					height: 3.35em
+					width: 47rem
+					height: 11rem
 					font-size: 3.3em
-					line-height: 3.3em
-					margin-top: 30px
-
+					line-height: 11rem
+					margin-top: 3rem
+				a.btn:hover
+					font-size: 4.125em
 
 @media only screen and (max-width: 767px)
 	body
@@ -1412,13 +1513,7 @@ body
 		footer
 			.footer-d-flex
 				.logo
-					.imgLogo
-						svg
-							width: 6.6em
-							height: 7.5em
 					.textLogo
-						margin-left: 5px
-						margin-top: -5px
 						span.name
 							font-size: 4.2em
 						span.desc

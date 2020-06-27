@@ -44,6 +44,7 @@ html(lang="ru")
 
 		.vimeo-video-popup
 			#vimeo-video-container
+				img.btn-close(src="img/be-box/cross_white.svg", alt="cross_white.svg")
 
 		#menu-pagedim
 		include _partials/menu.pug
@@ -56,8 +57,7 @@ html(lang="ru")
 							span.hamburger-box
 								span.hamburger-inner
 					.logo.d-flex.align-items-center.justify-content-center
-						.imgLogo
-							<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="43px" height="42px" viewBox="0 0 43 42"><path fill-rule="evenodd"  fill="rgb(233, 51, 51)"d="M25.833,41.999 L42.388,-0.001 L32.564,-0.001 L21.163,31.439 L9.823,-0.001 L-0.001,-0.001 L16.494,41.999 L25.833,41.999 Z"/></svg>
+						img(src="img/favicon/apple-touch-icon.png").imgLogo
 						.textLogo
 							span.name Concept
 							br
@@ -66,22 +66,23 @@ html(lang="ru")
 						span 8 (495) 125–22–25
 						span info@v-concept.ru
 						span Кутузовский проспект, 35 стр.5
-				.maintext.parallax-elem.parallax-elem-1.rel
-					span.tag #BODY EVOLUTION BOX
-					h1 Интенсивный фитнес курс по женскому боксу
-					a(href="#").btn-submit Оставить заявку
+				#plx-scene(style='pointer-events: ')
+					.maintext.rel(data-depth="0.2")
+						span.tag #BODY EVOLUTION BOX
+						h1 Интенсивный фитнес курс по женскому боксу
+						a(href="#").btn.btn-submit Оставить заявку
 				.scrollDown
 					p.text когда хотела врезать, но держалась...
 					img(src="img/be-box/scrollDown-arrow.svg", alt="scrollDown-arrow.svg")
 		section.wantsTo#wantsTo
-			.video#video1-container
+			.video#video1-container.load-vimeo-video.parallax-elem-1
 				.preview
 					img.poster(src="img/be-box/video1-poster.jpg", alt="video1-poster.jpg")
 					.title О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД
-					img.img-btn#load-video1.load-vimeo-video(src="img/be-box/btn-play.svg", alt="btn-play.svg")
+					img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
 			.ovh
 				.container
-					h2.parallax-elem-2.rel
+					h2.parallax-elem-2
 						|#[span.sm-text КУРС #BODY EVOLUTION BOX]
 						br
 						|#[span.b-text #[span.underline-text для женщин,] кто хочет:]
@@ -122,13 +123,13 @@ html(lang="ru")
 							|800 килокаллорий за тренировку, 
 							br
 							|это круче чем тренажёрка, бег и даже секс 
-		section.whatGet
+		section.whatGet#whatGet
 			.container
-				h2
+				h2.parallax-elem-3.rel
 					span.b-text ЧТО ВЫ #[span.underline-text ПОЛУЧАЕТЕ]
 					br
 					span.sm-text ПРИНЯВ УЧАСТИЕ В КУРСЕ #BODY EVOLUTION BOX
-				.advantages.ovh#whatGet-advantages
+				.advantages.ovh#whatGet-advantages.parallax-elem-3.rel
 					.table.d-flex
 						.item.whatGet-item
 							img(src="img/be-box/advantages-icon1.jpg", alt="advantages-icon1.jpg")
@@ -169,7 +170,7 @@ html(lang="ru")
 						.item.whatGet-item
 							img(src="img/be-box/advantages-icon6.jpg", alt="advantages-icon6.jpg")
 							p Постановка удара
-					a(href="#").btn-subscribe.d-flex.align-items-center.justify-content-center записаться на курс
+					a(href="#").btn.btn-subscribe.d-flex.align-items-center.justify-content-center записаться на курс
 		.scrollText-block
 		section.antidepr#antidepr
 			.cross-block
@@ -177,7 +178,7 @@ html(lang="ru")
 				img.cross.cross2(src="img/be-box/redCross2.svg", alt="redCross2.svg")
 				img.cross.cross3(src="img/be-box/redCross2.svg", alt="redCross2.svg")
 			.container
-				.text-block
+				.text-block.parallax-elem-4
 					h3
 						span.b-text Лучший антидепрессант 
 						br
@@ -216,21 +217,21 @@ html(lang="ru")
 		section.videos.ovh#videos
 			.container
 				h2
-					span.b-text Пара видео
+					span.b-text Пара #[span.underline-text видео]
 					br
 					span.sm-text С НАШИХ РЕАЛЬНЫХ ТРЕНИРОВОК #[span.tag #BODY EVOLUTION BOX]
 				.table.d-flex
-					.video-item
-						.video#video2-container
+					.video-item.parallax-elem-5
+						.video#video2-container.load-vimeo-video
 							.preview
 								img.poster(src="img/be-box/videos1.jpg", alt="videos1.jpg")
-								img.img-btn#load-video2.load-vimeo-video(src="img/be-box/btn-play.svg", alt="btn-play.svg")
+								img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
 						p.desc Видео с тренировок по боксу
-					.video-item
-						.video#video3-container
+					.video-item.parallax-elem-5
+						.video#video3-container.load-vimeo-video
 							.preview
 								img.poster(src="img/be-box/videos2.jpg", alt="videos2.jpg")
-								img.img-btn#load-video3.load-vimeo-video(src="img/be-box/btn-play.svg", alt="btn-play.svg")
+								img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
 						p.desc Видео с тренировок по фитнесу
 		section.trainer#trainer
 			.container
@@ -241,9 +242,9 @@ html(lang="ru")
 						span.b-text Главный тренер
 						br
 						span.sm-text #BODY EVOLUTION BOX
-					.trainer-img
+					.trainer-img.parallax-elem-6
 						img(src="img/be-box/trainer-img.jpg", alt="trainer-img.jpg")
-					.desc
+					.desc.parallax-elem-6
 						p.subhead
 							|САМЫЙ РУССКИЙ 
 							br
@@ -277,32 +278,32 @@ html(lang="ru")
 							li 3 тренировки в неделю
 							li Персональный план питания на 30 дней
 							li Под руководством настоящего тренера по боксу
-						.video#video4-container
+						.video#video4-container.load-vimeo-video
 							.preview
 								img.poster(src="img/be-box/video1-poster.jpg", alt="video1-poster.jpg")
 								.title О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД
-								img.img-btn#load-video4.load-vimeo-video(src="img/be-box/btn-play.svg", alt="btn-play.svg")
+								img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
 					.btns-block
 						span.price
 							span.number 12 900
 							span.text руб.
 						a(href="#").btn.btn-submit оставить заявку
 						a(href="#").btn.btn-buyNow оплатить сейчас со скидкой
-		section.finishing
+		section.finishing#finishing
 			.scrollText-block
 		footer
 			.container
 				.d-flex.align-items-center.justify-content-between.footer-d-flex
 					.logo.d-flex.align-items-center.justify-content-center
-						.imgLogo
-							<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="43px" height="42px" viewBox="0 0 43 42"><path fill-rule="evenodd"  fill="rgb(233, 51, 51)"d="M25.833,41.999 L42.388,-0.001 L32.564,-0.001 L21.163,31.439 L9.823,-0.001 L-0.001,-0.001 L16.494,41.999 L25.833,41.999 Z"/></svg>
+						img(src="img/favicon/apple-touch-icon.png", alt="apple-touch-icon.png").imgLogo
 						.textLogo
 							span.name Concept
 							br
 							span.desc Школа фитнеса и питания
 					span.phone 8 (495) 125–22–25
-					a(href="#").btn-submit Оставить заявку
+					a(href="#").btn.btn-submit Оставить заявку
 			
+
 
 	script(src="js/jquery.min.js")
 	script(src="js/common.js")
@@ -313,82 +314,116 @@ html(lang="ru")
 
 	script(src="js/jquery.waypoints.min.js")
 
+	script(src="js/parallax.min.js")
+
 	script.
-
-		$('#load-video1').click(function(){
-			$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/430331368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
-		})
-		$('#load-video2').click(function(){
-			$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/424833760" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
-		})
-		$('#load-video3').click(function(){
-			$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/427520618" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
-		})
-		$('#load-video4').click(function(){
-			$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/430331368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
-		})
-
-		function existVerticalScroll() {
-			return $('body').outerHeight() > $(window).innerHeight()
-		}
-
-
-		$('.load-vimeo-video').click(function(){
-			if(existVerticalScroll()) { 
-				wScrollTop = $(document).scrollTop()
-				$('body').css('top', '-' + wScrollTop + 'px' )
-				$('body').addClass('body-fix')
-			}
-
-			$('.vimeo-video-popup').fadeIn(250)
-			var vimeo = new Vimeo.Player('vimeo-video');
-			vimeo.play()
-
-		})
-
-		$('#vimeo-video-container').click(function(e){
-			if (!$('iframe').is(e.target) && $('iframe').has(e.target).length === 0) {
-				$('.vimeo-video-popup').fadeOut(250)
-				$(this).children('iframe').remove()
-				$('body').removeClass('body-fix')
-				$('body').css('top', '0')
-				$(document).scrollTop(wScrollTop)
-				//- alert(wScrollTop)
-			}
-		})
-		//- Owl carousel
-
-		$('#gym-carousel').owlCarousel({
-			items: 1,
-			loop: true,
-			dots: false,
-			nav: true,
-			responsive: {
-				960: {
-					stagePadding: 100,
-				},
-				1367: {
-					stagePadding: 244,
-				}
-			},
-			margin: 20,
-			autoplay: 2000,
-		})
 
 		$(document).ready(function(){
 
+			$('#video1-container').click(function(){
+				$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/430331368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
+			})
+			$('#video2-container').click(function(){
+				$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/424833760" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
+			})
+			$('#video3-container').click(function(){
+				$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/427520618" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
+			})
+			$('#video4-container').click(function(){
+				$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/430331368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
+			})
+
+			function existVerticalScroll() {
+				return $('body').outerHeight() > $(window).innerHeight()
+			}
+
+
+			$('.load-vimeo-video').click(function(){
+				if(existVerticalScroll()) { 
+					wScrollTop = $(document).scrollTop()
+					$('body').css('top', '-' + wScrollTop + 'px' )
+					$('body').addClass('body-fix')
+				}
+
+				$('.vimeo-video-popup').fadeIn(250)
+				var vimeo = new Vimeo.Player('vimeo-video');
+				vimeo.play()
+
+			})
+
+			$('#vimeo-video-container').click(function(e){
+				if (!$('iframe').is(e.target) && $('iframe').has(e.target).length === 0) {
+					$('.vimeo-video-popup').fadeOut(250)
+					$(this).children('iframe').remove()
+					$('body').removeClass('body-fix')
+					$('body').css('top', '0')
+					$(document).scrollTop(wScrollTop)
+					//- alert(wScrollTop)
+				}
+			})
+			//- Owl carousel
+
+			$('#gym-carousel').owlCarousel({
+				items: 1,
+				loop: true,
+				dots: false,
+				nav: true,
+
+				responsive: {
+					960: {
+						stagePadding: 100,
+					},
+					1367: {
+						stagePadding: 244,
+					}
+				},
+				margin: 20,
+				autoplay: 2000,
+			})
+			
+			$(window).on('load', function(e){
+				$('header').addClass('active')
+				$('header .maintext').addClass('animate__animated animate__fadeInUp')
+				$('section.wantsTo .video').addClass('active')
+				setTimeout(function(){
+					$('section.wantsTo .video').css('transition', 'none')
+					$('header .maintext').removeClass('animate__animated animate__fadeInUp')
+					$('header .maintext').css('opacity', '1')
+				}, 1000)
+
+				//- $("header, section.wantsTo").mousemove(function(e) {
+				//- 	var xCenter = $(window).width() / 2
+				//- 	var yCenter = $(window).height() / 2
+				//- 	var x = (e.pageX - xCenter) * -1 / 30, y = (e.pageY - yCenter) * -1 / 30
+				//- 	$('header .maintext').css('transform', 'translate3d(' + x + 'px, ' + y + 'px, 0px)');
+				//- });
+
+				var scene = document.getElementById('plx-scene');
+				var parallaxInstance = new Parallax(scene, {
+					relativeInput: true,
+					pointerEvents: true
+				});
+
+			})
 
 			$(window).scroll(function(){
 				parallaxScroll()
 			});
 
 			function parallaxScroll(){
-				var scrolled1 = $(window).scrollTop() - $('.parallax-elem-1').offset().top + 300
+				var scrolled1 = $(window).scrollTop() - $('.parallax-elem-1').offset().top + 800
 				var scrolled2 = $(window).scrollTop() - $('.parallax-elem-2').offset().top + 300
-				//- alert(scrolled)
-				//- $('.parallax-elem-rel-8').css('top',(0-(scrolled*.8))+'px');
-				$('.parallax-elem-1').css('top',(0-(scrolled1*0.25))+'px');
-				$('.parallax-elem-2').css('top',(0-(scrolled2*0.25))+'px');
+				var scrolled3 = $(window).scrollTop() - $('.parallax-elem-3').offset().top + 300
+				var scrolled4 = $(window).scrollTop() - $('.parallax-elem-4').offset().top + 300
+				var scrolled5 = $(window).scrollTop() - $('.parallax-elem-5').offset().top + 300
+				var scrolled6 = $(window).scrollTop() - $('.parallax-elem-6').offset().top + 300
+				$('.parallax-elem-1').css('transform', 'translate3d( 0px,' + (0-(scrolled1*0.25)) + 'px, 0px');
+				$('.parallax-elem-2').css('transform', 'translate3d( 0px,' + (0-(scrolled2*0.25)) + 'px, 0px');
+				$('.parallax-elem-3').css('top', (0-(scrolled3*0.25)) + 'px' );
+				$('.parallax-elem-4').css('transform', 'translate3d( 0px,' + (0-(scrolled4*0.25)) + 'px, 0px');
+				$('.parallax-elem-5').css('transform', 'translate3d( 0px,' + (0-(scrolled5*0.25)) + 'px, 0px');
+				$('.parallax-elem-6').css('transform', 'translate3d( 0px,' + (0-(scrolled6*0.25)) + 'px, 0px');
+
 			}
 
 			var waypWantsTo = new Waypoint({
@@ -397,7 +432,7 @@ html(lang="ru")
 					$.each($('.wT-li'), function(i, el) {
 						setTimeout(function() {
 							$(el).addClass("active");
-						}, 0 + (i * 500));
+						}, 0 + (i * 200));
 					});
 				}
 			})
@@ -408,31 +443,41 @@ html(lang="ru")
 				},
 				offset: 500
 			})
+			var waypWhatGet = new Waypoint({
+				element: $('#whatGet'),
+				handler: function() {
+					$('section.whatGet h2').addClass("animate__animated animate__fadeInUp")
+					setTimeout(function(){
+						$('section.whatGet h2').css({"animation": "none", "opacity": "1"})
+					}, 500)
+				},
+				offset: 500
+			})
 			var waypWhatGetAdvantages = new Waypoint({
 				element: $('#whatGet-advantages'),
 				handler: function() {
 					$.each($('.whatGet-item').children('img'), function(i, el) {
 						setTimeout(function() {
 							$(el).addClass("animate__animated animate__fadeIn animate__slow");
-						}, 0 + (i * 500));
+						}, 0 + (i * 150));
 					});
 					$.each($('.whatGet-item').children('p'), function(i, el) {
 						setTimeout(function() {
 							$(el).addClass("animate__animated animate__fadeInLeft");
-						}, 0 + (i * 500));
+						}, 0 + (i * 150));
 					});
 				},
-				offset: 500
+				offset: 800
 			})
 			var waypAntidepr = new Waypoint({
 				element: $('#antidepr'),
 				handler: function() {
-					$('#antidepr').addClass('animate__animated animate__slow animate__fadeIn')
+					$('#antidepr').addClass('animate__animated animate__fadeIn animate__fast')
 
 					$.each($('#antidepr').find('img.cross'), function(i, el) {
 						setTimeout(function() {
-							$(el).addClass("db animate__animated animate__faster animate__bounceIn");
-						}, 1000 + (i * 500));
+							$(el).addClass("db active");
+						}, 1000 + (i * 350));
 					});
 				},
 				offset: 500
@@ -443,10 +488,10 @@ html(lang="ru")
 					$.each($('#reasons').find('.reasons-item'), function(i, el) {
 						setTimeout(function() {
 							$(el).addClass("animate__animated animate__fast animate__fadeInUp");
-						}, 0 + (i * 250));
+						}, 0 + (i * 150));
 					});
 				},
-				offset: 100
+				offset: 300
 			})
 			var waypVideos = new Waypoint({
 				element: $('#videos'),
@@ -454,8 +499,8 @@ html(lang="ru")
 					$('#videos').find('.container').addClass('active')
 					$.each($('#videos').find('.video'), function(i, el) {
 						setTimeout(function() {
-							$(el).addClass("animate__animated animate__zoomIn");
-						}, 500 + (i * 250));
+							$(el).addClass("animate__animated animate__zoomIn .animate__faster");
+						}, 100 + (i * 350));
 					});
 				},
 				offset: 500
@@ -469,7 +514,7 @@ html(lang="ru")
 						}, 500 + (i * 500));
 					});
 					setTimeout(function() {
-						$('#trainer').find('.trainer-img').addClass('animate__animated animate__zoomIn')
+						$('#trainer').find('.trainer-img').addClass('animate__animated animate__zoomIn animate__faster')
 					}, 750)
 				},
 				offset: 500
@@ -477,20 +522,28 @@ html(lang="ru")
 			var waypGym = new Waypoint({
 				element: $('#gym'),
 				handler: function() {
-					$('#gym').find('h2').addClass('animate__animated animate__flipInY')
+					$('#gym').find('h2').addClass('animate__animated animate__fadeInUp')
 				},
 				offset: 200
 			})
 			var waypCourse = new Waypoint({
 				element: $('#buyCourse'),
 				handler: function() {
-					$('#buyCourse').find('h2').addClass('animate__animated animate__slideInLeft')
+					$('#buyCourse').find('h2').addClass('active')
 					setTimeout(function() {
 						$('#buyCourse').find('ul, .video').addClass('animate__animated animate__fadeInUp')
 					}, 750)
 				},
 				offset: 500
 			})
+			var waypFinishing = new Waypoint({
+				element: $('#finishing'),
+				handler: function() {
+					$('#finishing').addClass('animate__animated animate__fadeIn animate__fast')
+				},
+				offset: 500
+			})
+
 
 
 

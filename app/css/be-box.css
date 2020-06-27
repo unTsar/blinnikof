@@ -243,6 +243,10 @@ html, body {
   position: relative;
 }
 
+h1, h2, h3, span, p {
+  font-weight: normal;
+}
+
 body {
   background-color: #000;
   width: 100%;
@@ -294,7 +298,7 @@ body nav.menu {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  padding-top: 215px;
+  padding-top: 100px;
   background-color: #303030;
 }
 
@@ -372,6 +376,24 @@ body .justify-content-between {
           justify-content: space-between;
 }
 
+body .video .preview img.img-btn {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .video:hover .preview img.img-btn {
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+body a.btn {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
 body .vimeo-video-popup {
   display: none;
   position: fixed;
@@ -400,11 +422,29 @@ body .vimeo-video-popup #vimeo-video-container {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  position: relative;
+}
+
+body .vimeo-video-popup #vimeo-video-container img.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 32px;
+  margin-right: 31px;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .vimeo-video-popup #vimeo-video-container img.btn-close:hover {
+  opacity: 1;
 }
 
 body .vimeo-video-popup #vimeo-video-container iframe {
@@ -418,8 +458,8 @@ body .scrollText-block {
   height: 117px;
   background-image: url("../img/be-box/scrollText-be-box.svg");
   background-repeat: repeat;
-  -webkit-animation: 9s linear scrollText infinite;
-          animation: 9s linear scrollText infinite;
+  -webkit-animation: 4.5s linear scrollText infinite;
+          animation: 4.5s linear scrollText infinite;
 }
 
 @-webkit-keyframes scrollText {
@@ -427,7 +467,7 @@ body .scrollText-block {
     background-position-x: 0;
   }
   100% {
-    background-position-x: 1117px;
+    background-position-x: -1117px;
   }
 }
 
@@ -436,7 +476,7 @@ body .scrollText-block {
     background-position-x: 0;
   }
   100% {
-    background-position-x: 1117px;
+    background-position-x: -1117px;
   }
 }
 
@@ -469,15 +509,29 @@ body section h2 span.underline-text::after {
   height: 4px;
   bottom: 0;
   left: -2.5%;
-  margin-bottom: -5px;
+}
+
+body header.active {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 body header {
+  min-height: 100vh;
   padding-bottom: 50px;
   background-image: url("../img/be-box/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -15px;
+  background-position: center 0;
+  background-color: black;
+  background-blend-mode: color;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+body header .logo img.imgLogo {
+  width: 42px;
+  height: auto;
 }
 
 body header .logo .textLogo {
@@ -557,7 +611,14 @@ body header nav .contacts span {
   margin-left: 30px;
 }
 
+body header .maintext.animate__animated {
+  opacity: 1;
+}
+
 body header .maintext {
+  pointer-events: all;
+  position: relative;
+  opacity: 0;
   margin-top: 156px;
   display: inline-block;
 }
@@ -607,6 +668,10 @@ body header .maintext a.btn-submit {
   text-transform: uppercase;
 }
 
+body header .maintext a.btn:hover {
+  font-size: 20px;
+}
+
 body header .scrollDown {
   text-align: center;
   margin-top: 73px;
@@ -626,24 +691,45 @@ body header .scrollDown p.text {
 body header .scrollDown img {
   width: 38px;
   position: relative;
-  -webkit-animation: 1s ease-in-out moveDown infinite;
-          animation: 1s ease-in-out moveDown infinite;
+  opacity: 0;
+  -webkit-animation: 1s linear moveDown infinite;
+          animation: 1s linear moveDown infinite;
 }
 
 @-webkit-keyframes moveDown {
   0% {
+    opacity: 0;
     top: 0;
   }
+  20% {
+    opacity: 1;
+    top: 7px;
+  }
+  80% {
+    top: 28px;
+    opacity: 1;
+  }
   100% {
+    opacity: 0;
     top: 35px;
   }
 }
 
 @keyframes moveDown {
   0% {
+    opacity: 0;
     top: 0;
   }
+  20% {
+    opacity: 1;
+    top: 7px;
+  }
+  80% {
+    top: 28px;
+    opacity: 1;
+  }
   100% {
+    opacity: 0;
     top: 35px;
   }
 }
@@ -654,13 +740,22 @@ body section.wantsTo {
 
 body section.wantsTo h2 {
   margin-top: 180px;
+  line-height: 1.4;
+}
+
+body section.wantsTo .video.active {
+  margin-top: -102px;
 }
 
 body section.wantsTo .video {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
   width: 462px;
   position: relative;
   margin-left: auto;
-  margin-top: -102px;
+  margin-top: 0;
   margin-right: 67px;
 }
 
@@ -769,8 +864,8 @@ body section.wantsTo .circle-text-outer img.circle-text {
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -780,8 +875,8 @@ body section.wantsTo .circle-text-outer img.circle-text {
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -823,9 +918,9 @@ body section.wantsTo .figure-block .fb-img {
   background-repeat: no-repeat;
   background-image: url("../img/be-box/800.svg");
   background-size: 230px;
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 body section.wantsTo .figure-block .fb-img.active {
@@ -848,6 +943,11 @@ body section.whatGet {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center 0;
+}
+
+body section.whatGet h2 {
+  opacity: 0;
+  line-height: normal;
 }
 
 body section.whatGet h2 span.sm-text {
@@ -910,6 +1010,48 @@ body section.whatGet .advantages a.btn-subscribe {
   font-size: 18px;
 }
 
+body section.whatGet .advantages a.btn:hover {
+  font-size: 20px;
+}
+
+@-webkit-keyframes kick {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  20% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes kick {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  10% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  20% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 body section.antidepr {
   margin-top: 200px;
   margin-bottom: 250px;
@@ -918,7 +1060,8 @@ body section.antidepr {
   position: relative;
   background-image: url("../img/be-box/antidepr-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: center;
+  background-size: cover;
   position: relative;
 }
 
@@ -933,6 +1076,11 @@ body section.antidepr .cross-block {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+body section.antidepr img.cross.active {
+  -webkit-animation: 1s kick;
+          animation: 1s kick;
 }
 
 body section.antidepr img.cross {
@@ -967,6 +1115,8 @@ body section.antidepr img.cross3 {
 }
 
 body section.antidepr .text-block {
+  position: relative;
+  z-index: 1;
   color: #fff;
   max-width: 465px;
   width: 100%;
@@ -1035,15 +1185,12 @@ body section.reasons .table .item p {
 }
 
 body section.reasons .table .heart-boxing {
+  position: relative;
   margin: 0 20px;
   width: 225px;
   height: 207px;
   line-height: 195px;
-  background-image: url("../img/be-box/heart-outline.svg");
-  background-repeat: no-repeat;
   text-align: center;
-  -webkit-animation: 1s heartPulse infinite;
-          animation: 1s heartPulse infinite;
 }
 
 body section.reasons .table .heart-boxing span {
@@ -1051,6 +1198,19 @@ body section.reasons .table .heart-boxing span {
   color: #000;
   font-size: 48px;
   font-family: 'HeadingSmallcasePro-Regular';
+}
+
+body section.reasons .table .heart-boxing::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../img/be-box/heart-outline.svg");
+  background-repeat: no-repeat;
+  -webkit-animation: 1s heartPulse infinite;
+          animation: 1s heartPulse infinite;
 }
 
 @-webkit-keyframes heartPulse {
@@ -1084,10 +1244,12 @@ body section.reasons .table .heart-boxing span {
 }
 
 body section.finishing {
+  opacity: 0;
   height: 927px;
   background-image: url("../img/be-box/finishing-bg.jpg");
-  background-position: center 0;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 628px;
 }
 
@@ -1139,6 +1301,7 @@ body section.videos .table .video-item .video.animate__animated {
 }
 
 body section.videos .table .video-item .video {
+  cursor: pointer;
   opacity: 0;
   width: 100%;
   height: auto;
@@ -1186,8 +1349,9 @@ body section.videos .table .video-item .video iframe {
 body section.trainer {
   height: 939px;
   background-image: url("../img/be-box/trainer-bg.jpg");
-  background-position: center 0;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body section.trainer .container {
@@ -1344,13 +1508,18 @@ body section.buyCourse {
 }
 
 body section.buyCourse h2 {
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 240px;
   opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
-body section.buyCourse h2.animate__animated {
+body section.buyCourse h2.active {
   opacity: 1;
+  -webkit-animation: 1s kick;
+          animation: 1s kick;
 }
 
 body section.buyCourse .course-card {
@@ -1399,6 +1568,7 @@ body section.buyCourse .course-card .text-block ul li::before {
 }
 
 body section.buyCourse .course-card .text-block .video {
+  cursor: pointer;
   opacity: 0;
   width: 462px;
   height: 292px;
@@ -1491,17 +1661,31 @@ body section.buyCourse .course-card .btns-block a.btn {
   margin-top: 18px;
 }
 
+body section.buyCourse .course-card .btns-block a.btn:hover {
+  font-size: 22.5px;
+}
+
+body section.buyCourse .course-card .btns-block a.btn-buyNow:hover {
+  font-size: 19px;
+}
+
 body section.buyCourse .course-card .btns-block a.btn-submit {
   background-color: #000;
 }
 
 body section.buyCourse .course-card .btns-block a.btn-buyNow {
+  line-height: 60px;
   background-color: transparent;
   border: 3px solid #fff;
 }
 
 body footer {
   padding: 150px 0;
+}
+
+body footer .logo img.imgLogo {
+  width: 42px;
+  height: auto;
 }
 
 body footer .logo .textLogo {
@@ -1544,6 +1728,10 @@ body footer a.btn-submit {
   text-transform: uppercase;
 }
 
+body footer a.btn:hover {
+  font-size: 20px;
+}
+
 @media only screen and (max-height: 830px) {
   body nav.menu {
     overflow-y: scroll;
@@ -1574,9 +1762,11 @@ body footer a.btn-submit {
   }
   body section.reasons .table .heart-boxing {
     width: 199px;
-    background-size: contain;
     height: 182px;
     line-height: 165px;
+  }
+  body section.reasons .table .heart-boxing::before {
+    background-size: contain;
   }
 }
 
@@ -1627,13 +1817,11 @@ body footer a.btn-submit {
   body header nav .logo {
     margin-left: auto;
   }
-  body header nav .logo .imgLogo svg {
-    width: 6.6em;
-    height: 7.5em;
+  body header nav .logo img.imgLogo {
+    width: 6.3em;
   }
   body header nav .logo .textLogo {
-    margin-left: 5px;
-    margin-top: -5px;
+    margin-left: 1.5em;
   }
   body header nav .logo .textLogo span.name {
     font-size: 4.2em;
@@ -1662,11 +1850,14 @@ body footer a.btn-submit {
     max-width: 56rem;
   }
   body header .maintext a.btn-submit {
-    width: 14.25em;
-    height: 3.35em;
+    width: 47rem;
+    height: 11rem;
     font-size: 3.3em;
-    line-height: 3.3em;
+    line-height: 11rem;
     margin-top: 3rem;
+  }
+  body header .maintext a.btn:hover {
+    font-size: 4.125em;
   }
   body header .scrollDown {
     margin: 0;
@@ -1811,10 +2002,14 @@ body footer a.btn-submit {
     width: 7.6em;
   }
   body section.whatGet .advantages a.btn-subscribe {
-    width: 14.25em;
-    height: 3.35em;
+    width: 47rem;
+    height: 11rem;
     font-size: 3.3em;
-    line-height: 3.3em;
+    line-height: 11rem;
+    margin-top: 3rem;
+  }
+  body section.whatGet .advantages a.btn:hover {
+    font-size: 3.9em;
   }
   body section.antidepr {
     height: auto;
@@ -1979,6 +2174,7 @@ body footer a.btn-submit {
   }
   body section.gym {
     padding: 29em 0;
+    background-position: center;
   }
   body section.gym h2 {
     margin-bottom: 9.5em;
@@ -2064,12 +2260,18 @@ body footer a.btn-submit {
     width: 53.3rem;
     height: 11rem;
     font-size: 3.3em;
-    line-height: 3.3em;
+    line-height: 11rem;
     margin-top: 2rem;
+  }
+  body section.buyCourse .container .course-card .btns-block a.btn:hover {
+    font-size: 4.125em;
+  }
+  body section.buyCourse .container .course-card .btns-block a.btn-buyNow:hover {
+    font-size: 3em;
   }
   body section.buyCourse .container .course-card .btns-block a.btn-buyNow {
     font-size: 2.7em;
-    line-height: 3.8em;
+    line-height: 9.9rem;
   }
   body section.finishing {
     height: 57em;
@@ -2086,19 +2288,17 @@ body footer a.btn-submit {
   body footer .footer-d-flex .logo {
     text-align: left;
   }
-  body footer .footer-d-flex .logo .imgLogo svg {
-    width: 66px;
-    height: 75px;
+  body footer .footer-d-flex .logo img.imgLogo {
+    width: 6.3em;
   }
   body footer .footer-d-flex .logo .textLogo {
-    margin-left: 5px;
-    margin-top: -5px;
+    margin-left: 1.5em;
   }
   body footer .footer-d-flex .logo .textLogo span.name {
-    font-size: 42px;
+    font-size: 4.2em;
   }
   body footer .footer-d-flex .logo .textLogo span.desc {
-    font-size: 19px;
+    font-size: 1.9em;
   }
   body footer .footer-d-flex span.phone {
     display: block;
@@ -2106,11 +2306,14 @@ body footer a.btn-submit {
     margin: 3em 0;
   }
   body footer .footer-d-flex a.btn-submit {
-    width: 14.25em;
-    height: 3.35em;
+    width: 47rem;
+    height: 11rem;
     font-size: 3.3em;
-    line-height: 3.3em;
-    margin-top: 30px;
+    line-height: 11rem;
+    margin-top: 3rem;
+  }
+  body footer .footer-d-flex a.btn:hover {
+    font-size: 4.125em;
   }
 }
 
@@ -2198,14 +2401,6 @@ body footer a.btn-submit {
   }
   body section.buyCourse .course-card .text-block ul li::before {
     top: 1px;
-  }
-  body footer .footer-d-flex .logo .imgLogo svg {
-    width: 6.6em;
-    height: 7.5em;
-  }
-  body footer .footer-d-flex .logo .textLogo {
-    margin-left: 5px;
-    margin-top: -5px;
   }
   body footer .footer-d-flex .logo .textLogo span.name {
     font-size: 4.2em;
