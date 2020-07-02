@@ -1161,13 +1161,13 @@ body section.antidepr .text-block h3 span.b-text {
 
 body section.antidepr .text-block h3 span.sm-text {
   font-family: 'Aeroport-Bold';
-  font-size: 24px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
 body section.antidepr .text-block p.desc {
   font-family: 'Aeroport';
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 0;
   line-height: 1.2;
 }
@@ -1435,7 +1435,7 @@ body section.trainer .text-block h2 span.sm-text {
 
 body section.trainer .text-block .desc {
   margin-top: 350px;
-  font-size: 18px;
+  font-size: 30px;
   color: #fff;
 }
 
@@ -1450,6 +1450,7 @@ body section.trainer .text-block .desc p.text {
   margin: 0;
   margin-top: 10px;
   line-height: 1.2;
+  font-size: 24px;
 }
 
 body section.trainer .trainer-img.animate__animated {
@@ -2079,17 +2080,17 @@ body footer a.btn:hover {
     line-height: 1.2;
   }
   body section.antidepr .text-block h3 span.sm-text {
-    font-size: 3.3em;
+    font-size: 3rem;
   }
   body section.antidepr .text-block h3 span.b-text {
     font-size: 6.66em;
     line-height: 1;
   }
   body section.antidepr .text-block p.desc {
-    font-size: 3.3em;
-    margin-top: 2.5em;
-    margin-bottom: 1em;
-    max-width: 14em;
+    font-size: 2.4rem;
+    margin-top: 8.2rem;
+    margin-bottom: 3.3rem;
+    max-width: 46.2rem;
   }
   body section.antidepr img.cross1 {
     width: 6.1em;
@@ -2219,10 +2220,13 @@ body footer a.btn:hover {
   }
   body section.trainer .text-block .desc {
     margin-top: 1em;
-    font-size: 3.3em;
   }
   body section.trainer .text-block .desc p.text {
     margin-top: 0;
+    font-size: 2.4rem;
+  }
+  body section.trainer .text-block .desc p.subhead {
+    font-size: 3rem;
   }
   body section.gym {
     padding: 29em 0;

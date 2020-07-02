@@ -322,12 +322,14 @@
     	var parallaxInstance = new Parallax(sceneBack, {
     		relativeInput: true,
     	});
-    	var sceneText = document.getElementById('plx-scene-text');
+    	if($(window).width() > 960){
+    		var sceneText = document.getElementById('plx-scene-text');
     
-    	var parallaxInstance = new Parallax(sceneText, {
-    		relativeInput: true,
-    		pointerEvents: true
-    	});
+    		var parallaxInstance = new Parallax(sceneText, {
+    			relativeInput: true,
+    			pointerEvents: true
+    		});
+    	}
     
     	$(window).scroll(function(){
     		parallaxScroll()
