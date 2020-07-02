@@ -516,17 +516,35 @@ body header.active {
 }
 
 body header {
+  position: relative;
   min-height: 100vh;
   padding-bottom: 50px;
+  background-color: black;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+body header .bg-outer {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body header .bg-outer .bg-inner {
+  width: 110%;
+  height: 110%;
+  margin-left: -2.5%;
+  margin-top: -2.5%;
   background-image: url("../img/be-box/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0;
-  background-color: black;
   background-blend-mode: color;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
 }
 
 body header .logo img.imgLogo {
@@ -611,25 +629,32 @@ body header nav .contacts span {
   margin-left: 30px;
 }
 
-body header .maintext.animate__animated {
+body header .maintext-outer {
+  position: absolute;
+  height: 30%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+body header .maintext-outer .maintext.animate__animated {
   opacity: 1;
 }
 
-body header .maintext {
+body header .maintext-outer .maintext {
   pointer-events: all;
   position: relative;
   opacity: 0;
-  margin-top: 156px;
   display: inline-block;
 }
 
-body header .maintext span.tag {
+body header .maintext-outer .maintext span.tag {
   font-family: 'Aeroport-Bold';
   font-size: 30px;
   color: #FF0006;
 }
 
-body header .maintext h1 {
+body header .maintext-outer .maintext h1 {
   position: relative;
   max-width: 944px;
   text-transform: uppercase;
@@ -641,7 +666,7 @@ body header .maintext h1 {
   line-height: 0.9;
 }
 
-body header .maintext h1::before {
+body header .maintext-outer .maintext h1::before {
   content: '';
   background-color: #FF0006;
   width: 141px;
@@ -654,7 +679,7 @@ body header .maintext h1::before {
   margin-left: -176px;
 }
 
-body header .maintext a.btn-submit {
+body header .maintext-outer .maintext a.btn-submit {
   display: inline-block;
   margin-top: 15px;
   text-align: center;
@@ -668,13 +693,18 @@ body header .maintext a.btn-submit {
   text-transform: uppercase;
 }
 
-body header .maintext a.btn:hover {
+body header .maintext-outer .maintext a.btn:hover {
   font-size: 20px;
 }
 
 body header .scrollDown {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   text-align: center;
   margin-top: 73px;
+  margin-bottom: 50px;
 }
 
 body header .scrollDown p.text {
@@ -938,7 +968,6 @@ body section.wantsTo .figure-block p {
 
 body section.whatGet {
   padding-top: 375px;
-  margin-bottom: 200px;
   background-image: url("../img/be-box/whatGet-bg.jpg");
   background-size: auto;
   background-repeat: no-repeat;
@@ -1473,6 +1502,17 @@ body section.gym h2.animate__animated {
   opacity: 1;
 }
 
+body section.gym .gym-carousel .owl-item {
+  opacity: 0.2;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+body section.gym .gym-carousel .owl-item.active {
+  opacity: 1;
+}
+
 body section.gym .gym-carousel .owl-nav button.owl-next, body section.gym .gym-carousel .owl-nav button.owl-prev, body section.gym .gym-carousel .owl-nav button:hover, body section.gym .gym-carousel .owl-nav button:focus {
   position: absolute;
   background-color: #FF0006;
@@ -1758,7 +1798,7 @@ body footer a.btn:hover {
   }
   body header .scrollDown {
     margin-top: 25px;
-    margin-bottom: 90px;
+    margin-bottom: 130px;
   }
   body section.reasons .table .heart-boxing {
     width: 199px;
@@ -1806,7 +1846,12 @@ body footer a.btn:hover {
   body header {
     background-image: url("../img/be-box/header-mob-bg.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
     padding-bottom: 10em;
+    min-height: auto;
+  }
+  body header .bg-outer {
+    display: none;
   }
   body header nav {
     padding: 3em 0;
@@ -1839,27 +1884,32 @@ body footer a.btn:hover {
   body header nav .menu .hamburger .hamburger-box .hamburger-inner, body header nav .menu .hamburger .hamburger-box .hamburger-inner::after, body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
     width: 40px;
   }
-  body header .maintext {
+  body header .maintext-outer {
+    margin: 0;
+    position: relative;
+  }
+  body header .maintext-outer .maintext {
     margin-top: 33em;
   }
-  body header .maintext span.tag {
+  body header .maintext-outer .maintext span.tag {
     font-size: 3.75em;
   }
-  body header .maintext h1 {
+  body header .maintext-outer .maintext h1 {
     font-size: 10.8em;
     max-width: 56rem;
   }
-  body header .maintext a.btn-submit {
+  body header .maintext-outer .maintext a.btn-submit {
     width: 47rem;
     height: 11rem;
     font-size: 3.3em;
     line-height: 11rem;
     margin-top: 3rem;
   }
-  body header .maintext a.btn:hover {
+  body header .maintext-outer .maintext a.btn:hover {
     font-size: 4.125em;
   }
   body header .scrollDown {
+    position: relative;
     margin: 0;
   }
   body header .scrollDown p.text {
@@ -1870,6 +1920,9 @@ body footer a.btn:hover {
   }
   body section.wantsTo {
     padding-bottom: 29em;
+  }
+  body section.wantsTo .video.active {
+    margin-top: 0;
   }
   body section.wantsTo .video {
     width: 100%;
@@ -1966,7 +2019,6 @@ body footer a.btn:hover {
     display: none;
   }
   body section.whatGet {
-    margin-bottom: 30em;
     padding-top: 37.5em;
     background-size: 205%;
   }

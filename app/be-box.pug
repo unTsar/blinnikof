@@ -50,6 +50,8 @@ html(lang="ru")
 		include _partials/menu.pug
 
 		header
+			.bg-outer#plx-scene-back
+				.bg-inner(data-depth="0.075")
 			.container
 				nav.d-flex
 					.menu.d-flex
@@ -66,11 +68,12 @@ html(lang="ru")
 						span 8 (495) 125–22–25
 						span info@v-concept.ru
 						span Кутузовский проспект, 35 стр.5
-				#plx-scene(style='pointer-events: ')
-					.maintext.rel(data-depth="0.2")
-						span.tag #BODY EVOLUTION BOX
-						h1 Интенсивный фитнес курс по женскому боксу
-						a(href="#").btn.btn-submit Оставить заявку
+				.maintext-outer
+					#plx-scene-text
+						.maintext.rel(data-depth="0.2")
+							span.tag #BODY EVOLUTION BOX
+							h1 Интенсивный фитнес курс по женскому боксу
+							a(href="#").btn.btn-submit Оставить заявку
 				.scrollDown
 					p.text когда хотела врезать, но держалась...
 					img(src="img/be-box/scrollDown-arrow.svg", alt="scrollDown-arrow.svg")
@@ -80,8 +83,8 @@ html(lang="ru")
 					img.poster(src="img/be-box/video1-poster.jpg", alt="video1-poster.jpg")
 					.title О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД
 					img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
-			.ovh
-				.container
+			.container
+				.ovh
 					h2.parallax-elem-2
 						|#[span.sm-text КУРС #BODY EVOLUTION BOX]
 						br
@@ -368,56 +371,56 @@ html(lang="ru")
 				loop: true,
 				dots: false,
 				nav: true,
-
 				responsive: {
 					960: {
 						stagePadding: 100,
 					},
 					1367: {
-						stagePadding: 244,
+						stagePadding: 344,
 					}
 				},
 				margin: 20,
-				autoplay: 2000,
 			})
 			
-			$(window).on('load', function(e){
-				$('header').addClass('active')
-				$('header .maintext').addClass('animate__animated animate__fadeInUp')
-				$('section.wantsTo .video').addClass('active')
-				setTimeout(function(){
-					$('section.wantsTo .video').css('transition', 'none')
-					$('header .maintext').removeClass('animate__animated animate__fadeInUp')
-					$('header .maintext').css('opacity', '1')
-				}, 1000)
+			$('header').addClass('active')
+			$('header .maintext').addClass('animate__animated animate__fadeInUp')
+			$('section.wantsTo .video').addClass('active')
+			setTimeout(function(){
+				$('section.wantsTo .video').css('transition', 'none')
+				$('header .maintext').removeClass('animate__animated animate__fadeInUp')
+				$('header .maintext').css('opacity', '1')
+			}, 1000)
 
-				//- $("header, section.wantsTo").mousemove(function(e) {
-				//- 	var xCenter = $(window).width() / 2
-				//- 	var yCenter = $(window).height() / 2
-				//- 	var x = (e.pageX - xCenter) * -1 / 30, y = (e.pageY - yCenter) * -1 / 30
-				//- 	$('header .maintext').css('transform', 'translate3d(' + x + 'px, ' + y + 'px, 0px)');
-				//- });
+			//- $("header, section.wantsTo").mousemove(function(e) {
+			//- 	var xCenter = $(window).width() / 2
+			//- 	var yCenter = $(window).height() / 2
+			//- 	var x = (e.pageX - xCenter) * -1 / 30, y = (e.pageY - yCenter) * -1 / 30
+			//- 	$('header .maintext').css('transform', 'translate3d(' + x + 'px, ' + y + 'px, 0px)');
+			//- });
 
-				var scene = document.getElementById('plx-scene');
-				var parallaxInstance = new Parallax(scene, {
-					relativeInput: true,
-					pointerEvents: true
-				});
+			var sceneBack = document.getElementById('plx-scene-back');
+			var parallaxInstance = new Parallax(sceneBack, {
+				relativeInput: true,
+			});
+			var sceneText = document.getElementById('plx-scene-text');
 
-			})
+			var parallaxInstance = new Parallax(sceneText, {
+				relativeInput: true,
+				pointerEvents: true
+			});
 
 			$(window).scroll(function(){
 				parallaxScroll()
 			});
 
 			function parallaxScroll(){
-				var scrolled1 = $(window).scrollTop() - $('.parallax-elem-1').offset().top + 800
-				var scrolled2 = $(window).scrollTop() - $('.parallax-elem-2').offset().top + 300
+				var scrolled1 = $(window).scrollTop() - $('.parallax-elem-1').offset().top + 752
+				var scrolled2 = $(window).scrollTop() - $('.parallax-elem-2').offset().top + 800
 				var scrolled3 = $(window).scrollTop() - $('.parallax-elem-3').offset().top + 300
 				var scrolled4 = $(window).scrollTop() - $('.parallax-elem-4').offset().top + 300
 				var scrolled5 = $(window).scrollTop() - $('.parallax-elem-5').offset().top + 300
 				var scrolled6 = $(window).scrollTop() - $('.parallax-elem-6').offset().top + 300
-				$('.parallax-elem-1').css('transform', 'translate3d( 0px,' + (0-(scrolled1*0.25)) + 'px, 0px');
+				$('.parallax-elem-1').css('transform', 'translate3d( 0px,' + (0-(scrolled1*0.15)) + 'px, 0px');
 				$('.parallax-elem-2').css('transform', 'translate3d( 0px,' + (0-(scrolled2*0.25)) + 'px, 0px');
 				$('.parallax-elem-3').css('top', (0-(scrolled3*0.25)) + 'px' );
 				$('.parallax-elem-4').css('transform', 'translate3d( 0px,' + (0-(scrolled4*0.25)) + 'px, 0px');
@@ -477,10 +480,10 @@ html(lang="ru")
 					$.each($('#antidepr').find('img.cross'), function(i, el) {
 						setTimeout(function() {
 							$(el).addClass("db active");
-						}, 1000 + (i * 350));
+						}, 500 + (i * 350));
 					});
 				},
-				offset: 500
+				offset: 800
 			})
 			var waypReasons = new Waypoint({
 				element: $('#reasons'),
@@ -491,7 +494,7 @@ html(lang="ru")
 						}, 0 + (i * 150));
 					});
 				},
-				offset: 300
+				offset: 500
 			})
 			var waypVideos = new Waypoint({
 				element: $('#videos'),
@@ -543,12 +546,5 @@ html(lang="ru")
 				},
 				offset: 500
 			})
-
-
-
-
-
-
-
 
 		});
