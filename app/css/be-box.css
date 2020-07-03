@@ -1045,16 +1045,16 @@ body section.whatGet .advantages a.btn:hover {
 
 @-webkit-keyframes kick {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
   }
-  10% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+  55% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
-  20% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);
@@ -1064,16 +1064,16 @@ body section.whatGet .advantages a.btn:hover {
 
 @keyframes kick {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
   }
-  10% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+  55% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
-  20% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);
@@ -1545,6 +1545,7 @@ body section.gym .gym-carousel .owl-nav button.owl-prev {
 }
 
 body section.buyCourse {
+  overflow: hidden;
   padding-bottom: 365px;
 }
 
@@ -1561,6 +1562,17 @@ body section.buyCourse h2.active {
   opacity: 1;
   -webkit-animation: 1s kick;
           animation: 1s kick;
+}
+
+body section.buyCourse h2.active span.underline-text::after {
+  width: 0;
+}
+
+body section.buyCourse h2.active span.underline-text.active::after {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  width: 105%;
 }
 
 body section.buyCourse .course-card {
