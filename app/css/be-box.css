@@ -910,10 +910,7 @@ body section.wantsTo .circle-text-outer img.circle-text {
   }
 }
 
-body section.wantsTo .circle-text-outer::before {
-  content: '';
-  background-image: url("../img/be-box/wantsTo-bg1.jpg");
-  background-repeat: no-repeat;
+body section.wantsTo .circle-text-outer .photo1 {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -924,10 +921,7 @@ body section.wantsTo .circle-text-outer::before {
   height: 534px;
 }
 
-body section.wantsTo .circle-text-outer::after {
-  content: '';
-  background-image: url("../img/be-box/wantsTo-bg2.jpg");
-  background-repeat: no-repeat;
+body section.wantsTo .circle-text-outer .photo2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -984,7 +978,7 @@ body section.whatGet h2 span.sm-text {
 }
 
 body section.whatGet .advantages {
-  margin-top: 280px;
+  margin-top: 125px;
   padding-top: 90px;
   padding-bottom: 70px;
   background-color: #FF0006;
@@ -1990,17 +1984,17 @@ body footer a.btn:hover {
   body section.wantsTo .circle-text-outer img.zipper {
     width: 10.5em;
   }
-  body section.wantsTo .circle-text-outer::after, body section.wantsTo .circle-text-outer::before {
+  body section.wantsTo .circle-text-outer .photo2, body section.wantsTo .circle-text-outer .photo1 {
     width: 80em;
     height: 53.4em;
     background-size: contain;
   }
-  body section.wantsTo .circle-text-outer::before {
+  body section.wantsTo .circle-text-outer .photo1 {
     bottom: 12.5em;
     left: 0;
     margin-left: -14em;
   }
-  body section.wantsTo .circle-text-outer::after {
+  body section.wantsTo .circle-text-outer .photo2 {
     top: 16.5em;
     left: auto;
     right: 0;
