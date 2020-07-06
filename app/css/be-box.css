@@ -248,9 +248,14 @@ h1, h2, h3, span, p {
 }
 
 .transform-disabled {
-  -webkit-transform: none !important;
-      -ms-transform: none !important;
-          transform: none !important;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+          transform: translate3d(0, 0, 0) !important;
+}
+
+.transition-disabled {
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
 
 body {
@@ -2052,7 +2057,7 @@ body footer a.btn:hover {
     line-height: 1.2;
   }
   body section.whatGet .advantages {
-    margin-top: 28em;
+    margin-top: 0;
     padding-top: 15em;
     padding-bottom: 15em;
   }
@@ -2474,6 +2479,13 @@ body footer a.btn:hover {
   body header nav .menu .hamburger--slider.is-active .hamburger-inner {
     -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
             transform: translate3d(0, 8px, 0) rotate(45deg);
+  }
+  body section.wantsTo .container {
+    padding-top: 30%;
+    margin-top: -30%;
+  }
+  body section.whatGet h2 {
+    margin-top: 20em;
   }
   body section.buyCourse .course-card .text-block ul li::before {
     top: 1px;

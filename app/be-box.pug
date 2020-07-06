@@ -224,7 +224,7 @@ html(lang="ru")
 					span.b-text Пара #[span.underline-text видео]
 					br
 					span.sm-text С НАШИХ РЕАЛЬНЫХ ТРЕНИРОВОК #[span.tag #BODY EVOLUTION BOX]
-				.table.d-flex
+				.table.d-flex.parallax-elem-3.parallax-elem
 					.video-item
 						.video#video2-container.load-vimeo-video
 							.preview
@@ -325,14 +325,14 @@ html(lang="ru")
 
 		$(document).ready(function(){
 
-			var rellax1 = new Rellax('.parallax-elem-1', {
+			rellax1 = new Rellax('.parallax-elem-1', {
 				speed: 2,
 			});
-			var rellax2 = new Rellax('.parallax-elem-2', {
+			rellax2 = new Rellax('.parallax-elem-2', {
 				speed: 3,
 				center: true,
 			});
-			var rellax3 = new Rellax('.plx-photo-2', {
+			rellax3 = new Rellax('.plx-photo-2', {
 				speed: 3,
 				center: true,
 				callback: function(positions) {
@@ -343,11 +343,14 @@ html(lang="ru")
 					}
 				}
 			})
-			var rellax4 = new Rellax('.plx-photo-1', {
+			rellax4 = new Rellax('.plx-photo-1', {
 				speed: -1,
 				center: true,
 			});
-
+			rellax5 = new Rellax('.parallax-elem-3', {
+				speed: 3,
+				center: true,
+			});
 
 			//- $(window).scroll(function(){
 			//- 	var photo2trY = $('.plx-photo-2').css('transform').match(/matrix\(\d+, ?\d+, ?\d+, ?\d+, ?\d+, ?(\d+)/)[1]
@@ -379,7 +382,6 @@ html(lang="ru")
 					wScrollTop = $(document).scrollTop()
 					$('body').css('top', '-' + wScrollTop + 'px' )
 					$('body').addClass('body-fix')
-					$('.parallax-elem').addClass('transform-disabled')
 				}
 
 				$('.vimeo-video-popup').fadeIn(250)
@@ -393,10 +395,10 @@ html(lang="ru")
 					$('.vimeo-video-popup').fadeOut(250)
 					$(this).children('iframe').remove()
 					$('body').removeClass('body-fix')
-					$('.parallax-elem').removeClass('transform-disabled')
 					$('body').css('top', '0')
 					$(document).scrollTop(wScrollTop)
 					//- alert(wScrollTop)
+					
 				}
 			})
 			//- Owl carousel
@@ -421,7 +423,7 @@ html(lang="ru")
 			$('header .maintext').addClass('animate__animated animate__fadeInUp')
 			$('section.wantsTo .video').addClass('active')
 			setTimeout(function(){
-				$('section.wantsTo .video').css('transition', 'none')
+				$('section.wantsTo .video').addClass('transition-disabled')
 				$('header .maintext').removeClass('animate__animated animate__fadeInUp')
 				$('header .maintext').css('opacity', '1')
 			}, 1000)
@@ -469,7 +471,7 @@ html(lang="ru")
 			var waypWhatGet = new Waypoint({
 				element: $('#whatGet'),
 				handler: function() {
-					$('section.whatGet h2').addClass("animate__animated animate__fadeInUp")
+					$('section.whatGet h2').addClass("animate__animated animate__fadeIn")
 					setTimeout(function(){
 						$('section.whatGet h2').css({"animation": "none", "opacity": "1"})
 						$.each($('.whatGet-item').children('img'), function(i, el) {
@@ -525,13 +527,7 @@ html(lang="ru")
 							$(el).addClass("animate__animated animate__zoomIn .animate__faster");
 						}, 100 + (i * 350));
 					});
-					setTimeout(function() {
-						$('#videos').find('.table').addClass('parallax-elem-3 parallax-elem')
-						var rellax3 = new Rellax('.parallax-elem-3', {
-							speed: 3,
-							center: true,
-						});
-					}, 1000);
+					rellax5.refresh();	
 				},
 				offset: 500
 			})

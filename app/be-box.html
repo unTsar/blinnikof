@@ -166,7 +166,7 @@
     <section class="videos ovh" id="videos">
       <div class="container">
         <h2><span class="b-text">Пара <span class="underline-text">видео</span></span><br><span class="sm-text">С НАШИХ РЕАЛЬНЫХ ТРЕНИРОВОК <span class="tag">#BODY EVOLUTION BOX</span></span></h2>
-        <div class="table d-flex">
+        <div class="table d-flex parallax-elem-3 parallax-elem">
           <div class="video-item">
             <div class="video load-vimeo-video" id="video2-container">
               <div class="preview"><img class="poster" src="img/be-box/videos1.jpg" alt="videos1.jpg"><img class="img-btn" src="img/be-box/btn-play.svg" alt="btn-play.svg"></div>
@@ -242,14 +242,14 @@
   <script>
     $(document).ready(function(){
     
-    	var rellax1 = new Rellax('.parallax-elem-1', {
+    	rellax1 = new Rellax('.parallax-elem-1', {
     		speed: 2,
     	});
-    	var rellax2 = new Rellax('.parallax-elem-2', {
+    	rellax2 = new Rellax('.parallax-elem-2', {
     		speed: 3,
     		center: true,
     	});
-    	var rellax3 = new Rellax('.plx-photo-2', {
+    	rellax3 = new Rellax('.plx-photo-2', {
     		speed: 3,
     		center: true,
     		callback: function(positions) {
@@ -260,11 +260,14 @@
     			}
     		}
     	})
-    	var rellax4 = new Rellax('.plx-photo-1', {
+    	rellax4 = new Rellax('.plx-photo-1', {
     		speed: -1,
     		center: true,
     	});
-    
+    	rellax5 = new Rellax('.parallax-elem-3', {
+    		speed: 3,
+    		center: true,
+    	});
     
     	//- $(window).scroll(function(){
     	//- 	var photo2trY = $('.plx-photo-2').css('transform').match(/matrix\(\d+, ?\d+, ?\d+, ?\d+, ?\d+, ?(\d+)/)[1]
@@ -296,7 +299,6 @@
     			wScrollTop = $(document).scrollTop()
     			$('body').css('top', '-' + wScrollTop + 'px' )
     			$('body').addClass('body-fix')
-    			$('.parallax-elem').addClass('transform-disabled')
     		}
     
     		$('.vimeo-video-popup').fadeIn(250)
@@ -310,10 +312,10 @@
     			$('.vimeo-video-popup').fadeOut(250)
     			$(this).children('iframe').remove()
     			$('body').removeClass('body-fix')
-    			$('.parallax-elem').removeClass('transform-disabled')
     			$('body').css('top', '0')
     			$(document).scrollTop(wScrollTop)
     			//- alert(wScrollTop)
+    			
     		}
     	})
     	//- Owl carousel
@@ -338,7 +340,7 @@
     	$('header .maintext').addClass('animate__animated animate__fadeInUp')
     	$('section.wantsTo .video').addClass('active')
     	setTimeout(function(){
-    		$('section.wantsTo .video').css('transition', 'none')
+    		$('section.wantsTo .video').addClass('transition-disabled')
     		$('header .maintext').removeClass('animate__animated animate__fadeInUp')
     		$('header .maintext').css('opacity', '1')
     	}, 1000)
@@ -386,7 +388,7 @@
     	var waypWhatGet = new Waypoint({
     		element: $('#whatGet'),
     		handler: function() {
-    			$('section.whatGet h2').addClass("animate__animated animate__fadeInUp")
+    			$('section.whatGet h2').addClass("animate__animated animate__fadeIn")
     			setTimeout(function(){
     				$('section.whatGet h2').css({"animation": "none", "opacity": "1"})
     				$.each($('.whatGet-item').children('img'), function(i, el) {
@@ -442,13 +444,7 @@
     					$(el).addClass("animate__animated animate__zoomIn .animate__faster");
     				}, 100 + (i * 350));
     			});
-    			setTimeout(function() {
-    				$('#videos').find('.table').addClass('parallax-elem-3 parallax-elem')
-    				var rellax3 = new Rellax('.parallax-elem-3', {
-    					speed: 3,
-    					center: true,
-    				});
-    			}, 1000);
+    			rellax5.refresh();	
     		},
     		offset: 500
     	})
