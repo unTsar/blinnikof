@@ -12,7 +12,7 @@ var gulp          = require('gulp'),
 	rsync         = require('gulp-rsync'),
 	imagemin 	  = require('gulp-imagemin'),
 	pngquant      = require('gulp-pngquant'),
-	jpegoptim     = require('imagemin-jpegoptim');
+	jpegoptim     = require('imagemin-jpegoptim'),
 
 gulp.task('browser-sync', function() {
 	browserSync({

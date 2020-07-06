@@ -247,6 +247,12 @@ h1, h2, h3, span, p {
   font-weight: normal;
 }
 
+.transform-disabled {
+  -webkit-transform: none !important;
+      -ms-transform: none !important;
+          transform: none !important;
+}
+
 body {
   background-color: #000;
   width: 100%;
@@ -622,7 +628,7 @@ body header nav .contacts {
   margin-left: auto;
 }
 
-body header nav .contacts span {
+body header nav .contacts a {
   font-family: "Aeroport";
   font-size: 18px;
   color: #fff;
@@ -766,6 +772,11 @@ body header .scrollDown img {
 
 body section.wantsTo {
   padding-bottom: 225px;
+}
+
+body section.wantsTo .container {
+  padding-top: 20%;
+  margin-top: -20%;
 }
 
 body section.wantsTo h2 {
@@ -1799,7 +1810,7 @@ body footer a.btn:hover {
     width: 900px;
     height: 517px;
   }
-  body header nav .contacts span {
+  body header nav .contacts a {
     font-size: 16px;
     margin-left: 17px;
   }
@@ -1929,7 +1940,7 @@ body footer a.btn:hover {
     padding-bottom: 29em;
   }
   body section.wantsTo .video.active {
-    margin-top: 0;
+    margin-top: 200px;
   }
   body section.wantsTo .video {
     width: 100%;
@@ -1974,9 +1985,12 @@ body footer a.btn:hover {
   body section.wantsTo ul.desires li.active::before {
     width: 8rem;
   }
+  body section.wantsTo .photo-outer {
+    padding-top: 0;
+  }
   body section.wantsTo .circle-text-outer {
     width: 35em;
-    margin-top: 45em;
+    margin-top: 0;
   }
   body section.wantsTo .circle-text-outer img.circle-text {
     width: 100%;
@@ -2086,14 +2100,14 @@ body footer a.btn:hover {
     line-height: 1.2;
   }
   body section.antidepr .text-block h3 span.sm-text {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
   body section.antidepr .text-block h3 span.b-text {
     font-size: 6.66em;
     line-height: 1;
   }
   body section.antidepr .text-block p.desc {
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     margin-top: 8.2rem;
     margin-bottom: 3.3rem;
     max-width: 46.2rem;
@@ -2225,14 +2239,14 @@ body footer a.btn:hover {
     margin-top: 35em;
   }
   body section.trainer .text-block .desc {
-    margin-top: 1em;
+    margin-top: 0;
   }
   body section.trainer .text-block .desc p.text {
     margin-top: 0;
-    font-size: 2.4rem;
+    font-size: 3.4rem;
   }
   body section.trainer .text-block .desc p.subhead {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   body section.gym {
     padding: 29em 0;
