@@ -230,11 +230,6 @@ html, body {
   overflow: hidden;
 }
 
-.body-fix {
-  position: fixed;
-  overflow-y: scroll;
-}
-
 .fixed {
   position: fixed;
 }
@@ -409,6 +404,7 @@ body .vimeo-video-popup {
   display: none;
   position: fixed;
   z-index: 9000;
+  margin-right: auto;
   top: 0;
   left: 0;
   right: 0;
@@ -2420,7 +2416,7 @@ body footer a.btn:hover {
       background-position-x: 0;
     }
     100% {
-      background-position-x: 574px;
+      background-position-x: -574px;
     }
   }
   @keyframes scrollText {
@@ -2428,7 +2424,7 @@ body footer a.btn:hover {
       background-position-x: 0;
     }
     100% {
-      background-position-x: 574px;
+      background-position-x: -574px;
     }
   }
   body header nav .menu button.circle {
@@ -2480,12 +2476,45 @@ body footer a.btn:hover {
     -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
             transform: translate3d(0, 8px, 0) rotate(45deg);
   }
+  body header .maintext-outer .maintext {
+    margin-top: 15em;
+  }
   body section.wantsTo .container {
     padding-top: 30%;
     margin-top: -30%;
   }
+  body section.wantsTo .container ul.desires {
+    margin-top: 7.5em;
+  }
   body section.whatGet h2 {
     margin-top: 20em;
+  }
+  body section.trainer {
+    background-position-y: top;
+  }
+  body section.trainer .text-block .trainer-img {
+    margin-bottom: 0;
+  }
+  body section.videos .container .table {
+    margin-bottom: -15%;
+  }
+  body section.gym .gym-carousel .owl-nav button.owl-next, body section.gym .gym-carousel .owl-nav button.owl-prev, body section.gym .gym-carousel .owl-nav button:hover, body section.gym .gym-carousel .owl-nav button:focus {
+    width: 30px;
+    height: 30px;
+  }
+  body section.gym .gym-carousel .owl-nav button.owl-next {
+    background-size: 11px;
+    background-position: 9px center;
+    margin-right: 2%;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background-image: url("../img/be-box/owl-prev.svg");
+  }
+  body section.gym .gym-carousel .owl-nav button.owl-prev {
+    background-size: 11px;
+    background-position: 9px center;
+    margin-left: 2%;
   }
   body section.buyCourse .course-card .text-block ul li::before {
     top: 1px;

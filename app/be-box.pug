@@ -49,264 +49,266 @@ html(lang="ru")
 		#menu-pagedim
 		include _partials/menu.pug
 
-		header
-			.bg-outer#plx-scene-back
-				.bg-inner(data-depth="0.075")
-			.container
-				nav.d-flex
-					.menu.d-flex
-						button.circle.d-flex.justify-content-center.align-items-center.hamburger.hamburger--slider#my-button(type="button")
-							span.hamburger-box
-								span.hamburger-inner
-					.logo.d-flex.align-items-center.justify-content-center
-						img(src="img/favicon/apple-touch-icon.png").imgLogo
-						.textLogo
-							span.name Concept
-							br
-							span.desc Школа фитнеса и питания
-					.contacts.d-flex.align-items-center
-						a(href="tel: 8 (495) 125–22–25") 8 (495) 125–22–25
-						a(href="mailto: info@v-concept.ru") info@v-concept.ru
-						a(href="https://yandex.ru/maps/-/CCQh7FfILB" target="_blank") Кутузовский проспект, 36 стр.5
-				.maintext-outer
-					#plx-scene-text
-						.maintext.rel(data-depth="0.4")
-							span.tag #BODY EVOLUTION BOX
-							h1 Интенсивный фитнес курс по женскому боксу
-							a(href="#").btn.btn-submit Оставить заявку
-				.scrollDown
-					p.text когда хотела врезать, но держалась...
-					img(src="img/be-box/scrollDown-arrow.svg", alt="scrollDown-arrow.svg")
-		section.wantsTo#wantsTo
-			.video#video1-container.load-vimeo-video.parallax-elem-1.parallax-elem
-				.preview
-					img.poster(src="img/be-box/video1-poster.jpg", alt="video1-poster.jpg")
-					.title О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД
-					img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
-			.container.ovh
-				h2.parallax-elem-1.parallax-elem
-					|#[span.sm-text КУРС #BODY EVOLUTION BOX]
-					br
-					|#[span.b-text #[span.underline-text для женщин,] кто хочет:]
-				ul.desires.parallax-elem-1.rel.parallax-elem
-					li.wT-li
-						|Прийти в форму 
-						br
-						|за короткий срок 
-					li.wT-li
-						
-						|Получить 
-						br
-						|гарантированный рельеф 
-					li.wT-li
-						
-						|Получить мощную 
-						br
-						|эмоциональную 
-						br
-						|и психологическую 
-						br
-						|разгрузку 
-					li.wT-li
+		.scroll-fix
 
-						|Испытать новые крутые 
+			header
+				.bg-outer#plx-scene-back
+					.bg-inner(data-depth="0.075")
+				.container
+					nav.d-flex
+						.menu.d-flex
+							button.circle.d-flex.justify-content-center.align-items-center.hamburger.hamburger--slider#my-button(type="button")
+								span.hamburger-box
+									span.hamburger-inner
+						.logo.d-flex.align-items-center.justify-content-center
+							img(src="img/favicon/apple-touch-icon.png").imgLogo
+							.textLogo
+								span.name Concept
+								br
+								span.desc Школа фитнеса и питания
+						.contacts.d-flex.align-items-center
+							a(href="tel: 8 (495) 125–22–25") 8 (495) 125–22–25
+							a(href="mailto: info@v-concept.ru") info@v-concept.ru
+							a(href="https://yandex.ru/maps/-/CCQh7FfILB" target="_blank") Кутузовский проспект, 36 стр.5
+					.maintext-outer
+						#plx-scene-text
+							.maintext.rel(data-depth="0.4")
+								span.tag #BODY EVOLUTION BOX
+								h1 Интенсивный фитнес курс по женскому боксу
+								a(href="#").btn.btn-submit Оставить заявку
+					.scrollDown
+						p.text когда хотела врезать, но держалась...
+						img(src="img/be-box/scrollDown-arrow.svg", alt="scrollDown-arrow.svg")
+			section.wantsTo#wantsTo
+				.video#video1-container.load-vimeo-video.parallax-elem-1.parallax-elem
+					.preview
+						img.poster(src="img/be-box/video1-poster.jpg", alt="video1-poster.jpg")
+						.title О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД
+						img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
+				.container.ovh
+					h2.parallax-elem-1.parallax-elem
+						|#[span.sm-text КУРС #BODY EVOLUTION BOX]
 						br
-						|эмоции от самого 
-						br
-						|динамичного и драйвого 
-						br
-						|тренинга в вашей жизни 
-				.circle-text-outer
-					img.photo1.plx-photo-1(src="img/be-box/wantsTo-bg1.jpg", alt="wantsTo-bg1.jpg")
-					img.photo2.plx-photo-2(src="img/be-box/wantsTo-bg2.jpg", alt="wantsTo-bg2.jpg")
-					img.circle-text(src="img/be-box/circle-text.png", alt="circle-text.png")
-					img.zipper(src="img/be-box/zipper.svg", alt="zipper.svg")
-				.figure-block#wantsTo-fb
-					.fb-img
-					p 
-						|800 килокаллорий за тренировку, 
-						br
-						|это круче чем тренажёрка, бег и даже секс 
-		section.whatGet#whatGet
-			.container
-				h2.parallax-elem-2.rel.parallax-elem
-					span.b-text ЧТО ВЫ #[span.underline-text ПОЛУЧАЕТЕ]
-					br
-					span.sm-text ПРИНЯВ УЧАСТИЕ В КУРСЕ #BODY EVOLUTION BOX
-				.advantages.ovh#whatGet-advantages.parallax-elem-2.rel.parallax-elem
-					.table.d-flex
-						.item.whatGet-item
-							img(src="img/be-box/advantages-icon1.jpg", alt="advantages-icon1.jpg")
-							p 
-								|4 недели курса в группе смелых 
-								br
-								|девушек под руководством 
-								br
-								|настоящего тренера по боксу
-						.item.whatGet-item
-							img(src="img/be-box/advantages-icon2.jpg", alt="advantages-icon2.jpg")
-							p
-								|Силовые и кардио 
-								br
-								|тренировки с элементами 
-								br
-								|бокса
-						.item.whatGet-item
-							img(src="img/be-box/advantages-icon3.jpg", alt="advantages-icon3.jpg")
-							p
-								|12 уникальных супер 
-								br
-								|тренировок по 3 раза в неделю 
-								br
-								|до последней капли пота
-						.item.whatGet-item
-							img(src="img/be-box/advantages-icon4.jpg", alt="advantages-icon4.jpg")
-							p
-								|Постановка боксерской 
-								br
-								|техники
-						.item.whatGet-item
-							img(src="img/be-box/advantages-icon5.jpg", alt="advantages-icon5.jpg")
-							p
-								|Персональный план питания 
-								br
-								|на 30 дней
-						.item.whatGet-item
-							img(src="img/be-box/advantages-icon6.jpg", alt="advantages-icon6.jpg")
-							p Постановка удара
-					a(href="#").btn.btn-subscribe.d-flex.align-items-center.justify-content-center записаться на курс
-		.scrollText-block
-		section.antidepr#antidepr
-			.cross-block
-				img.cross.cross1(src="img/be-box/redCross2.svg", alt="redCross2.svg")
-				img.cross.cross2(src="img/be-box/redCross2.svg", alt="redCross2.svg")
-				img.cross.cross3(src="img/be-box/redCross2.svg", alt="redCross2.svg")
-			.container
-				.text-block.parallax-elem-2.parallax-elem
-					h3
-						span.b-text Лучший антидепрессант 
-						br
-						span.sm-text для женщин…
-					p.desc Мегаполис, стресс на работе, пмс и вот ты уже готова кого-нибудь убить...
-		section.reasons#reasons
-			.container
-				h2
-					span.b-text #[span.underline-text 7 ПРИЧИН]
-					br
-					span.sm-text влюбиться в бокс
-				.table.d-flex
-					.item.reasons-item
-						.number 1
-						p Бокс является полноценной заменой фитнеса: в боксе работают абсолютно все мышцы тела, оно становится упругим и подтянутым
-					.item.reasons-item
-						.number 2
-						p Постановка боксёрской техника придаст вам новый уровень координации тела
-					.item.reasons-item
-						.number 3
-						p Бокс - это супер интенсивный тренинг, что придаст вам выносливости в разы, а ягодичные и пресс будут гореть.
-					.item.reasons-item
-						.number 4
-						p Бокс - это пожиратель коллорий, за одну тренировки можно сжечь до 800 каллорий
-					.item.reasons-item
-						.number 5
-						p Бокс - это новый опыт в вашей спортивной жизни, который так требуется для поддержания мотивации
-					.item.reasons-item
-						.number 6
-						p Бокс + фитнес дает бесконечное разнообразие упражнений, поэтому вам всегда будет нескучно тренироваться, поддерживая себя в тонусе 
-					.item.reasons-item
-						.number 7
-						p Вы будете бежать на каждую тренировку, чтобы получить этот заряд энергии и кайфа
-					.heart-boxing
-						span BOXING
-		section.videos.ovh#videos
-			.container
-				h2
-					span.b-text Пара #[span.underline-text видео]
-					br
-					span.sm-text С НАШИХ РЕАЛЬНЫХ ТРЕНИРОВОК #[span.tag #BODY EVOLUTION BOX]
-				.table.d-flex.parallax-elem-3.parallax-elem
-					.video-item
-						.video#video2-container.load-vimeo-video
-							.preview
-								img.poster(src="img/be-box/videos1.jpg", alt="videos1.jpg")
-								img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
-						p.desc Видео с тренировок по боксу
-					.video-item
-						.video#video3-container.load-vimeo-video
-							.preview
-								img.poster(src="img/be-box/videos2.jpg", alt="videos2.jpg")
-								img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
-						p.desc Видео с тренировок по фитнесу
-		section.trainer#trainer
-			.container
-				img.aim.aim1(src="img/be-box/aim.png", alt="aim.png")
-				img.aim.aim2(src="img/be-box/aim.png", alt="aim.png")
-				.text-block
-					h2
-						span.b-text Главный тренер
-						br
-						span.sm-text #BODY EVOLUTION BOX
-					.trainer-img.parallax-elem-2.parallax-elem
-						img(src="img/be-box/trainer-img.jpg", alt="trainer-img.jpg")
-					.desc.parallax-elem-2.parallax-elem
-						p.subhead
-							|САМЫЙ РУССКИЙ 
+						|#[span.b-text #[span.underline-text для женщин,] кто хочет:]
+					ul.desires.parallax-elem-1.rel.parallax-elem
+						li.wT-li
+							|Прийти в форму 
 							br
-							|СРЕДИ ВСЕХ КУБИНЦЕВ
-						p.text
-							|Единственный и неповторимый 
+							|за короткий срок 
+						li.wT-li
+							
+							|Получить 
 							br
-							|тренер по женскому боксу, 
+							|гарантированный рельеф 
+						li.wT-li
+							
+							|Получить мощную 
 							br
-							|которого любят все 
-		section.gym#gym
-			h2
-				span.b-text #[span.underline-text ЗАЛЫ]
-				br
-				span.sm-text #body evolution box
-			.gym-carousel#gym-carousel.owl-carousel.owl-theme
-				img(src="img/be-box/csl-slide.jpg", alt="csl-slide.jpg")
-				img(src="img/be-box/csl-slide.jpg", alt="csl-slide.jpg")
-				img(src="img/be-box/csl-slide.jpg", alt="csl-slide.jpg")
-				img(src="img/be-box/csl-slide.jpg", alt="csl-slide.jpg")
-		section.buyCourse#buyCourse
-			h2 
-				span.b-text ваше время #[span.underline-text пришло] 
-				br
-				span.sm-text #body evolution box
-			.container
-				.course-card.d-flex
-					.text-block
-						ul
-							li 4 недели курса в группе 12-15 человек
-							li 3 тренировки в неделю
-							li Персональный план питания на 30 дней
-							li Под руководством настоящего тренера по боксу
-						.video#video4-container.load-vimeo-video
-							.preview
-								img.poster(src="img/be-box/video1-poster.jpg", alt="video1-poster.jpg")
-								.title О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД
-								img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
-					.btns-block
-						span.price
-							span.number 12 900
-							span.text руб.
-						a(href="#").btn.btn-submit оставить заявку
-						a(href="#").btn.btn-buyNow оплатить сейчас со скидкой
-		section.finishing#finishing
+							|эмоциональную 
+							br
+							|и психологическую 
+							br
+							|разгрузку 
+						li.wT-li
+
+							|Испытать новые крутые 
+							br
+							|эмоции от самого 
+							br
+							|динамичного и драйвого 
+							br
+							|тренинга в вашей жизни 
+					.circle-text-outer
+						img.photo1.plx-photo-1(src="img/be-box/wantsTo-bg1.jpg", alt="wantsTo-bg1.jpg")
+						img.photo2.plx-photo-2(src="img/be-box/wantsTo-bg2.jpg", alt="wantsTo-bg2.jpg")
+						img.circle-text(src="img/be-box/circle-text.png", alt="circle-text.png")
+						img.zipper(src="img/be-box/zipper.svg", alt="zipper.svg")
+					.figure-block#wantsTo-fb
+						.fb-img
+						p 
+							|800 килокаллорий за тренировку, 
+							br
+							|это круче чем тренажёрка, бег и даже секс 
+			section.whatGet#whatGet
+				.container
+					h2.parallax-elem-2.rel.parallax-elem
+						span.b-text ЧТО ВЫ #[span.underline-text ПОЛУЧАЕТЕ]
+						br
+						span.sm-text ПРИНЯВ УЧАСТИЕ В КУРСЕ #BODY EVOLUTION BOX
+					.advantages.ovh#whatGet-advantages.parallax-elem-2.rel.parallax-elem
+						.table.d-flex
+							.item.whatGet-item
+								img(src="img/be-box/advantages-icon1.jpg", alt="advantages-icon1.jpg")
+								p 
+									|4 недели курса в группе смелых 
+									br
+									|девушек под руководством 
+									br
+									|настоящего тренера по боксу
+							.item.whatGet-item
+								img(src="img/be-box/advantages-icon2.jpg", alt="advantages-icon2.jpg")
+								p
+									|Силовые и кардио 
+									br
+									|тренировки с элементами 
+									br
+									|бокса
+							.item.whatGet-item
+								img(src="img/be-box/advantages-icon3.jpg", alt="advantages-icon3.jpg")
+								p
+									|12 уникальных супер 
+									br
+									|тренировок по 3 раза в неделю 
+									br
+									|до последней капли пота
+							.item.whatGet-item
+								img(src="img/be-box/advantages-icon4.jpg", alt="advantages-icon4.jpg")
+								p
+									|Постановка боксерской 
+									br
+									|техники
+							.item.whatGet-item
+								img(src="img/be-box/advantages-icon5.jpg", alt="advantages-icon5.jpg")
+								p
+									|Персональный план питания 
+									br
+									|на 30 дней
+							.item.whatGet-item
+								img(src="img/be-box/advantages-icon6.jpg", alt="advantages-icon6.jpg")
+								p Постановка удара
+						a(href="#").btn.btn-subscribe.d-flex.align-items-center.justify-content-center записаться на курс
 			.scrollText-block
-		footer
-			.container
-				.d-flex.align-items-center.justify-content-between.footer-d-flex
-					.logo.d-flex.align-items-center.justify-content-center
-						img(src="img/favicon/apple-touch-icon.png", alt="apple-touch-icon.png").imgLogo
-						.textLogo
-							span.name Concept
+			section.antidepr#antidepr
+				.cross-block
+					img.cross.cross1(src="img/be-box/redCross2.svg", alt="redCross2.svg")
+					img.cross.cross2(src="img/be-box/redCross2.svg", alt="redCross2.svg")
+					img.cross.cross3(src="img/be-box/redCross2.svg", alt="redCross2.svg")
+				.container
+					.text-block.parallax-elem-2.parallax-elem
+						h3
+							span.b-text Лучший антидепрессант 
 							br
-							span.desc Школа фитнеса и питания
-					span.phone 8 (495) 125–22–25
-					a(href="#").btn.btn-submit Оставить заявку
-			
+							span.sm-text для женщин…
+						p.desc Мегаполис, стресс на работе, пмс и вот ты уже готова кого-нибудь убить...
+			section.reasons#reasons
+				.container
+					h2
+						span.b-text #[span.underline-text 7 ПРИЧИН]
+						br
+						span.sm-text влюбиться в бокс
+					.table.d-flex
+						.item.reasons-item
+							.number 1
+							p Бокс является полноценной заменой фитнеса: в боксе работают абсолютно все мышцы тела, оно становится упругим и подтянутым
+						.item.reasons-item
+							.number 2
+							p Постановка боксёрской техника придаст вам новый уровень координации тела
+						.item.reasons-item
+							.number 3
+							p Бокс - это супер интенсивный тренинг, что придаст вам выносливости в разы, а ягодичные и пресс будут гореть.
+						.item.reasons-item
+							.number 4
+							p Бокс - это пожиратель коллорий, за одну тренировки можно сжечь до 800 каллорий
+						.item.reasons-item
+							.number 5
+							p Бокс - это новый опыт в вашей спортивной жизни, который так требуется для поддержания мотивации
+						.item.reasons-item
+							.number 6
+							p Бокс + фитнес дает бесконечное разнообразие упражнений, поэтому вам всегда будет нескучно тренироваться, поддерживая себя в тонусе 
+						.item.reasons-item
+							.number 7
+							p Вы будете бежать на каждую тренировку, чтобы получить этот заряд энергии и кайфа
+						.heart-boxing
+							span BOXING
+			section.videos.ovh#videos
+				.container
+					h2
+						span.b-text Пара #[span.underline-text видео]
+						br
+						span.sm-text С НАШИХ РЕАЛЬНЫХ ТРЕНИРОВОК #[span.tag #BODY EVOLUTION BOX]
+					.table.d-flex.parallax-elem-3.parallax-elem(data-rellax-mobile-speed="2")
+						.video-item
+							.video#video2-container.load-vimeo-video
+								.preview
+									img.poster(src="img/be-box/videos1.jpg", alt="videos1.jpg")
+									img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
+							p.desc Видео с тренировок по боксу
+						.video-item
+							.video#video3-container.load-vimeo-video
+								.preview
+									img.poster(src="img/be-box/videos2.jpg", alt="videos2.jpg")
+									img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
+							p.desc Видео с тренировок по фитнесу
+			section.trainer#trainer
+				.container
+					img.aim.aim1(src="img/be-box/aim.png", alt="aim.png")
+					img.aim.aim2(src="img/be-box/aim.png", alt="aim.png")
+					.text-block
+						h2
+							span.b-text Главный тренер
+							br
+							span.sm-text #BODY EVOLUTION BOX
+						.trainer-img.parallax-elem-2.parallax-elem(data-rellax-mobile-speed="2")
+							img(src="img/be-box/trainer-img.jpg", alt="trainer-img.jpg")
+						.desc.parallax-elem-2.parallax-elem(data-rellax-mobile-speed="2")
+							p.subhead
+								|САМЫЙ РУССКИЙ 
+								br
+								|СРЕДИ ВСЕХ КУБИНЦЕВ
+							p.text
+								|Единственный и неповторимый 
+								br
+								|тренер по женскому боксу, 
+								br
+								|которого любят все 
+			section.gym#gym
+				h2
+					span.b-text #[span.underline-text ЗАЛЫ]
+					br
+					span.sm-text #body evolution box
+				.gym-carousel#gym-carousel.owl-carousel.owl-theme
+					img(src="img/be-box/csl-slide.jpg", alt="csl-slide.jpg")
+					img(src="img/be-box/csl-slide.jpg", alt="csl-slide.jpg")
+					img(src="img/be-box/csl-slide.jpg", alt="csl-slide.jpg")
+					img(src="img/be-box/csl-slide.jpg", alt="csl-slide.jpg")
+			section.buyCourse#buyCourse
+				h2 
+					span.b-text ваше время #[span.underline-text пришло] 
+					br
+					span.sm-text #body evolution box
+				.container
+					.course-card.d-flex
+						.text-block
+							ul
+								li 4 недели курса в группе 12-15 человек
+								li 3 тренировки в неделю
+								li Персональный план питания на 30 дней
+								li Под руководством настоящего тренера по боксу
+							.video#video4-container.load-vimeo-video
+								.preview
+									img.poster(src="img/be-box/video1-poster.jpg", alt="video1-poster.jpg")
+									.title О КУРСЕ #BODYEVOLUTIONBOX ЗА 50 СЕКУНД
+									img.img-btn(src="img/be-box/btn-play.svg", alt="btn-play.svg")
+						.btns-block
+							span.price
+								span.number 12 900
+								span.text руб.
+							a(href="#").btn.btn-submit оставить заявку
+							a(href="#").btn.btn-buyNow оплатить сейчас со скидкой
+			section.finishing#finishing
+				.scrollText-block
+			footer
+				.container
+					.d-flex.align-items-center.justify-content-between.footer-d-flex
+						.logo.d-flex.align-items-center.justify-content-center
+							img(src="img/favicon/apple-touch-icon.png", alt="apple-touch-icon.png").imgLogo
+							.textLogo
+								span.name Concept
+								br
+								span.desc Школа фитнеса и питания
+						span.phone 8 (495) 125–22–25
+						a(href="#").btn.btn-submit Оставить заявку
+				
 
 
 	script(src="js/jquery.min.js")
@@ -325,12 +327,18 @@ html(lang="ru")
 
 		$(document).ready(function(){
 
+			$(window).on('load resize', function(){
+				winWidth = $(window).width()
+				$('.scroll-fix').css('width', winWidth + 'px')
+			});
+
 			rellax1 = new Rellax('.parallax-elem-1', {
 				speed: 2,
 			});
 			rellax2 = new Rellax('.parallax-elem-2', {
 				speed: 3,
 				center: true,
+				breakpoints: [0, 499, 960]
 			});
 			rellax3 = new Rellax('.plx-photo-2', {
 				speed: 3,
@@ -350,6 +358,7 @@ html(lang="ru")
 			rellax5 = new Rellax('.parallax-elem-3', {
 				speed: 3,
 				center: true,
+				breakpoints: [0, 499, 960]
 			});
 
 			//- $(window).scroll(function(){
@@ -372,33 +381,20 @@ html(lang="ru")
 				$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/430331368" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
 			})
 
-			function existVerticalScroll() {
-				return $('body').outerHeight() > $(window).innerHeight()
-			}
-
-
 			$('.load-vimeo-video').click(function(){
-				if(existVerticalScroll()) { 
-					wScrollTop = $(document).scrollTop()
-					$('body').css('top', '-' + wScrollTop + 'px' )
-					$('body').addClass('body-fix')
-				}
-
+				//- wScrollTop = $(document).scrollTop()
+				//- $('body').css('top', '-' + wScrollTop + 'px' )
+				$('body').addClass('ovh')
 				$('.vimeo-video-popup').fadeIn(250)
 				var vimeo = new Vimeo.Player('vimeo-video');
 				vimeo.play()
-
 			})
 
 			$('#vimeo-video-container').click(function(e){
 				if (!$('iframe').is(e.target) && $('iframe').has(e.target).length === 0) {
 					$('.vimeo-video-popup').fadeOut(250)
 					$(this).children('iframe').remove()
-					$('body').removeClass('body-fix')
-					$('body').css('top', '0')
-					$(document).scrollTop(wScrollTop)
-					//- alert(wScrollTop)
-					
+					$('body').removeClass('ovh')
 				}
 			})
 			//- Owl carousel
@@ -457,7 +453,7 @@ html(lang="ru")
 					$.each($('.wT-li'), function(i, el) {
 						setTimeout(function() {
 							$(el).addClass("active");
-						}, 0 + (i * 200));
+						}, 200 + (i * 200));
 					});
 				}
 			})
@@ -466,7 +462,7 @@ html(lang="ru")
 				handler: function() {
 					$('.fb-img').addClass('active')
 				},
-				offset: 500
+				offset: '65%'
 			})
 			var waypWhatGet = new Waypoint({
 				element: $('#whatGet'),
@@ -486,13 +482,13 @@ html(lang="ru")
 						});
 					}, 250)
 				},
-				offset: 500
+				offset: '25%'
 			})
 			var waypWhatGetAdvantages = new Waypoint({
 				element: $('#whatGet-advantages'),
 				handler: function() {
 				},
-				offset: 800
+				offset: '25%'
 			})
 			var waypAntidepr = new Waypoint({
 				element: $('#antidepr'),
@@ -505,7 +501,7 @@ html(lang="ru")
 						}, 500 + (i * 350));
 					});
 				},
-				offset: 800
+				offset: '50%'
 			})
 			var waypReasons = new Waypoint({
 				element: $('#reasons'),
@@ -516,7 +512,7 @@ html(lang="ru")
 						}, 0 + (i * 150));
 					});
 				},
-				offset: 500
+				offset: '35%'
 			})
 			var waypVideos = new Waypoint({
 				element: $('#videos'),
@@ -525,11 +521,11 @@ html(lang="ru")
 					$.each($('#videos').find('.video'), function(i, el) {
 						setTimeout(function() {
 							$(el).addClass("animate__animated animate__zoomIn .animate__faster");
-						}, 100 + (i * 350));
+						}, 150 + (i * 350));
 					});
 					rellax5.refresh();	
 				},
-				offset: 500
+				offset: '50%'
 			})
 			var waypTrainer = new Waypoint({
 				element: $('#trainer'),
@@ -541,16 +537,16 @@ html(lang="ru")
 					});
 					setTimeout(function() {
 						$('#trainer').find('.trainer-img').addClass('animate__animated animate__zoomIn animate__faster')
-					}, 750)
+					}, 250)
 				},
-				offset: 800
+				offset: '35%'
 			})
 			var waypGym = new Waypoint({
 				element: $('#gym'),
 				handler: function() {
 					$('#gym').find('h2').addClass('animate__animated animate__fadeInUp')
 				},
-				offset: 200
+				offset: '25%'
 			})
 			var waypCourse = new Waypoint({
 				element: $('#buyCourse'),
@@ -561,14 +557,14 @@ html(lang="ru")
 						$('#buyCourse').find('span.underline-text').addClass('active')
 					}, 1000)
 				},
-				offset: 500
+				offset: '25%'
 			})
 			var waypFinishing = new Waypoint({
 				element: $('#finishing'),
 				handler: function() {
 					$('#finishing').addClass('animate__animated animate__fadeIn animate__fast')
 				},
-				offset: 500
+				offset: '35%'
 			})
 
 		});
