@@ -1768,7 +1768,7 @@ body footer .logo .textLogo span.desc {
   font-size: 15px;
 }
 
-body footer span.phone {
+body footer a.phone {
   color: #fff;
   font-family: 'Aeroport';
   font-size: 24px;
@@ -2377,7 +2377,7 @@ body footer a.btn:hover {
   body footer .footer-d-flex .logo .textLogo span.desc {
     font-size: 1.9em;
   }
-  body footer .footer-d-flex span.phone {
+  body footer .footer-d-flex a.phone {
     display: block;
     font-size: 5em;
     margin: 3em 0;
