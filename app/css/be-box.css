@@ -2493,7 +2493,8 @@ body footer a.btn:hover {
     background-position-y: top;
   }
   body section.trainer .text-block .trainer-img {
-    margin-bottom: 0;
+    margin-bottom: 5em;
+    margin-top: 40em;
   }
   body section.videos .container .table {
     margin-bottom: -15%;

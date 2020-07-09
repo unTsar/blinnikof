@@ -1,0 +1,66 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+
+		title Онлайн Фитнес-Марафон
+		meta(name="description" content="Front-end by Vladimir Vostrikov")
+		meta(name="keywords" content="")
+		meta(name="author" content="Vladimir Vostrikov")
+		meta(name="robots" content ="index, follow")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		//- Chrome, Firefox OS and Opera
+		meta(name="theme-color" content="#000")
+		//- Windows Phone
+		meta(name="msapplication-navbutton-color" content="#000")
+		//- iOS Safari
+		meta(name="apple-mobile-web-app-status-bar-style" content="#000")
+		//- Favicons
+		link(rel="icon", sizes="180x180", type="image/png", href="img/favicon/apple-touch-icon.png")
+		link(rel="icon", sizes="32x32", type="image/png", href="img/favicon/favicon-32x32.png")
+		link(rel="icon", sizes="16x16", type="image/png", href="img/favicon/favicon-16x16.png")
+		link(rel="icon", type="image/x-icon", href="img/favicon/48favicon.ico")
+
+		//- Styles
+		link(rel="stylesheet", href="css/hamburgers.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="css/owl.theme.default.min.css")
+		link(rel="stylesheet", href="css/animate.min.css")
+		link(rel="stylesheet", href="css/marathon.css")
+
+	body
+
+		#menu-pagedim
+		include _partials/menu.pug
+
+		.scroll-fix
+
+			header
+				.container
+					nav.d-flex
+						.menu.d-flex
+							button.circle.d-flex.justify-content-center.align-items-center.hamburger.hamburger--slider#my-button(type="button")
+								span.hamburger-box
+									span.hamburger-inner
+						.logo.d-flex.align-items-center.justify-content-center
+							img(src="img/marathon/logoi1.png" alt="logoi1.png").imgLogo
+						.contacts.d-flex.align-items-center
+							a(href="mailto: info@v-concept.ru") info@v-concept.ru
+							a(href="tel: 8 (495) 125–22–25") +7 (495) 125-32-25
+						.socials.d-flex
+							a(href="https://www.facebook.com" target="__blank")
+								img(src="img/marathon/header-socials-img1.png", alt="header-socials-img1.png")
+							a(href="https://www.instagram.com/" target="__blank")
+								img(src="img/marathon/header-socials-img2.png", alt="header-socials-img2.png")
+			main
+			footer
+
+	script(src="js/jquery.min.js")
+	script(src="js/owl.carousel.min.js")
+
+	script(src="js/common.js")
+
+	script.
+		$(document).ready(function(){
+			
+		});

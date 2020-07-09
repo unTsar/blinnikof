@@ -1,0 +1,178 @@
+@import "_mixins/font-face"
+
++font-face("MullerLight", "../fonts/MullerLight/MullerLight")
+
+// Aeroport
++font-face("Aeroport", "../fonts/Aeroport/Aeroport")
++font-face("Aeroport-Bold", "../fonts/Aeroport-Bold/Aeroport-Bold")
++font-face("Aeroport-BoldItalic", "../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic")
++font-face("Aeroport-Italic", "../fonts/Aeroport-Italic/Aeroport-Italic")
++font-face("Aeroport-Light", "../fonts/Aeroport-Light/Aeroport-Light")
++font-face("Aeroport-LightItalic", "../fonts/Aeroport-LightItalic/Aeroport-LightItalic")
++font-face("Aeroport-Medium", "../fonts/Aeroport-Medium/Aeroport-Medium")
++font-face("Aeroport-MediumItalic", "../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic")
++font-face("AeroportMono", "../fonts/AeroportMono/AeroportMono")
+
+// HeadingSmallcasePro
++font-face("HeadingSmallcasePro-Bold", "../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold")
++font-face("HeadingSmallcasePro-Book", "../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book")
++font-face("HeadingSmallcasePro-ExtLt", "../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt")
++font-face("HeadingSmallcasePro-ExtraBold", "../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold")
++font-face("HeadingSmallcasePro-Heavy", "../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy")
++font-face("HeadingSmallcasePro-Light", "../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light")
++font-face("HeadingSmallcasePro-Regular", "../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular")
++font-face("HeadingSmallcasePro-Thin", "../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin")
+
+html, body
+	margin: 0
+	padding: 0
+	width: 100%
+*
+	box-sizing: border-box
+	outline: none
+.ovh
+	overflow: hidden
+h1, h2, h3, span, p
+	font-weight: normal
+body
+	background-color: #fff
+	width: 100%
+	font-size: 10px
+	position: relative
+	overflow-x: hidden
+	line-height: 1.65
+	a, a:active, a:focus, a:link, a:visited
+		outline: none
+		text-decoration: none
+	#menu-pagedim
+		background-color: #000000
+		opacity: 0
+		transition: 0.3s
+		position: absolute
+		display: none
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 4500
+	#menu-pagedim.turned
+		display: block
+	#menu-pagedim.turnedOpacity
+		opacity: 0.3
+	nav.menu.hidden
+		left: -500px
+	nav.menu
+		position: fixed
+		left: 0px
+		top: 0
+		z-index: 5000
+		height: 100%
+		min-width: 500px
+		transition: 0.5s
+		padding-top: 100px
+		background-color: #303030
+		ul 
+			padding: 0
+			list-style-type: none
+			.separLine
+				background-color: #eeeeee
+				width: 100%
+				height: 1px
+				margin-top: 20px
+				margin-bottom: 20px
+			li.item 
+				padding-left: 65px
+				padding-right: 65px
+				padding-top: 10px
+				padding-bottom: 10px
+				a
+					transition: 0.3s
+					text-decoration: none
+					outline: none
+					color: #ffffff
+					font-family: 'MullerLight'
+					font-size: 24px
+				a:hover
+					color: #ff2e2f
+	.container
+		max-width: 1200px
+		width: 100%
+		margin: auto
+		padding-left: 20px
+		padding-right: 20px
+	.d-flex
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	.align-items-center
+		align-items: center
+	.justify-content-center
+		justify-content: center
+	.justify-content-between
+		justify-content: space-between
+	header
+		min-height: 100vh
+		nav
+			padding: 95px 0
+			.menu
+				padding: 0
+				margin-right: 30px
+				.circle
+					border-radius: 50%
+					position: relative
+					z-index: 5000
+					cursor: pointer
+					background-color: #ff1c1c
+					width: 52px
+					height: 52px
+					outline: none
+				.hamburger
+					outline: none
+					padding: 13px
+					.hamburger-box
+						width: 27px
+						height: 15px
+						.hamburger-inner, 
+						.hamburger-inner::after,
+						.hamburger-inner::before
+							background-color: #fff
+							width: 27px
+							height: 3px
+							transition-duration: 0.5s
+							border-radius: 0
+						.hamburger-inner
+							top: 1px
+						.hamburger-inner::before
+							top: 6px
+						.hamburger-inner::after
+							top: 12px
+				.hamburger--slider.is-active 
+					.hamburger-inner::after
+						transform: translate3d(0, -12px, 0) rotate(-90deg)
+					.hamburger-inner
+						transform: translate3d(0, 6px, 0) rotate(45deg)
+				.hamburger:hover, .hamburger.is-active:hover
+					opacity: 1
+			.logo
+				img
+					width: 163px
+					height: 37px
+			.contacts
+				margin: 0 0 0 57px
+				a
+					font-family: "Aeroport"
+					font-size: 18px
+					color: #18151e
+					margin: 0 0 0 30px
+			.socials
+				margin: 0 156px 0 auto
+				padding: 0 0 5px 0
+				align-items: flex-end
+				a
+					margin: 0 0 0 10px
+					img
+						width: 28px
+						height: 28px
+						vertical-align: bottom
