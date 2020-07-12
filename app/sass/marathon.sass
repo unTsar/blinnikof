@@ -3,25 +3,38 @@
 +font-face("MullerLight", "../fonts/MullerLight/MullerLight")
 
 // Aeroport
+// +
 +font-face("Aeroport", "../fonts/Aeroport/Aeroport")
 +font-face("Aeroport-Bold", "../fonts/Aeroport-Bold/Aeroport-Bold")
 +font-face("Aeroport-BoldItalic", "../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic")
 +font-face("Aeroport-Italic", "../fonts/Aeroport-Italic/Aeroport-Italic")
+// +
 +font-face("Aeroport-Light", "../fonts/Aeroport-Light/Aeroport-Light")
 +font-face("Aeroport-LightItalic", "../fonts/Aeroport-LightItalic/Aeroport-LightItalic")
+// +
 +font-face("Aeroport-Medium", "../fonts/Aeroport-Medium/Aeroport-Medium")
 +font-face("Aeroport-MediumItalic", "../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic")
 +font-face("AeroportMono", "../fonts/AeroportMono/AeroportMono")
 
 // HeadingSmallcasePro
+// +
 +font-face("HeadingSmallcasePro-Bold", "../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold")
 +font-face("HeadingSmallcasePro-Book", "../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book")
 +font-face("HeadingSmallcasePro-ExtLt", "../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt")
 +font-face("HeadingSmallcasePro-ExtraBold", "../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold")
 +font-face("HeadingSmallcasePro-Heavy", "../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy")
+// +
 +font-face("HeadingSmallcasePro-Light", "../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light")
+// +
 +font-face("HeadingSmallcasePro-Regular", "../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular")
 +font-face("HeadingSmallcasePro-Thin", "../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin")
+
+$white: #ffffff
+$black: #000000
+$accent: #FF3536
+$blackP: #120E18
+$gray: #E7E7E7
+
 
 html, body
 	margin: 0
@@ -29,23 +42,67 @@ html, body
 	width: 100%
 *
 	box-sizing: border-box
-	outline: none
 .ovh
 	overflow: hidden
+.fixed
+	position: fixed
 h1, h2, h3, span, p
 	font-weight: normal
+img, a.btn
+	user-select: none
+*::selection
+	background: $accent
 body
-	background-color: #fff
-	width: 100%
-	font-size: 10px
 	position: relative
 	overflow-x: hidden
-	line-height: 1.65
+	width: 100%
+	background-color: $white
+	font-size: 10px
+	line-height: normal
 	a, a:active, a:focus, a:link, a:visited
 		outline: none
 		text-decoration: none
+		color: inherit
+	.vimeo-video-popup
+		display: none
+		position: fixed
+		z-index: 9000
+		margin-right: auto
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		#vimeo-video-container
+			width: 100%
+			height: 100%
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			background-color: rgba(0, 0, 0, 0.5)
+			transition: 0.5s
+			cursor: pointer
+			position: relative
+			img.btn-close
+				position: absolute
+				top: 0
+				right: 0
+				margin-top: 32px
+				margin-right: 31px
+				cursor: pointer
+				opacity: 0.5
+				transition: 0.3s
+			img.btn-close:hover
+				opacity: 1
+			iframe
+				width: 1077px
+				height: 600px
+				max-height: 100%
 	#menu-pagedim
-		background-color: #000000
+		background-color: $black
 		opacity: 0
 		transition: 0.3s
 		position: absolute
@@ -69,11 +126,12 @@ body
 		height: 100%
 		min-width: 500px
 		transition: 0.5s
-		padding-top: 100px
+		padding-top: 150px
 		background-color: #303030
 		ul 
 			padding: 0
 			list-style-type: none
+			line-height: 1.6
 			.separLine
 				background-color: #eeeeee
 				width: 100%
@@ -89,11 +147,11 @@ body
 					transition: 0.3s
 					text-decoration: none
 					outline: none
-					color: #ffffff
+					color: $white
 					font-family: 'MullerLight'
 					font-size: 24px
 				a:hover
-					color: #ff2e2f
+					color: $accent
 	.container
 		max-width: 1200px
 		width: 100%
@@ -112,19 +170,54 @@ body
 		justify-content: center
 	.justify-content-between
 		justify-content: space-between
+	@keyframes blink
+		0%
+			opacity: 0
+		50%
+			opacity: 1
+		100%
+			opacity: 0
 	header
 		min-height: 100vh
+		position: relative
+		.background
+			position: absolute
+			z-index: -1
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: flex-start
+			padding-right: 7.2%
+			padding-left: 32%
+			overflow: hidden
+			.photo1, .photo2
+				background-color: #F1E9E8
+			.photo1
+				margin-left: auto
+				img
+					width: 605px
+					height: auto
+			.photo2
+				margin-top: 250px
+				img
+					width: 405px
+					height: auto
 		nav
-			padding: 95px 0
+			padding-top: 95px
+			padding-right: 156px
 			.menu
-				padding: 0
-				margin-right: 30px
 				.circle
 					border-radius: 50%
 					position: relative
 					z-index: 5000
 					cursor: pointer
-					background-color: #ff1c1c
+					background-color: $accent
 					width: 52px
 					height: 52px
 					outline: none
@@ -137,7 +230,7 @@ body
 						.hamburger-inner, 
 						.hamburger-inner::after,
 						.hamburger-inner::before
-							background-color: #fff
+							background-color: $white
 							width: 27px
 							height: 3px
 							transition-duration: 0.5s
@@ -156,23 +249,886 @@ body
 				.hamburger:hover, .hamburger.is-active:hover
 					opacity: 1
 			.logo
+				margin-left: 30px
+				margin-right: 57px
 				img
 					width: 163px
 					height: 37px
+					vertical-align: bottom
 			.contacts
-				margin: 0 0 0 57px
+				margin-right: auto
 				a
 					font-family: "Aeroport"
 					font-size: 18px
-					color: #18151e
-					margin: 0 0 0 30px
+					color: $blackP
+				a:not(:last-child)
+					margin-right: 30px
 			.socials
-				margin: 0 156px 0 auto
-				padding: 0 0 5px 0
+				padding-bottom: 5px
 				align-items: flex-end
 				a
-					margin: 0 0 0 10px
 					img
 						width: 28px
 						height: 28px
 						vertical-align: bottom
+				a:not(:last-child)
+					margin-right: 10px
+		section.first
+			padding-top: 135px
+			padding-bottom: 150px
+			h1
+				margin-top: 0
+				margin-bottom: 30px
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 95px
+				color: $black
+				text-transform: uppercase
+				letter-spacing: -3px
+				line-height: 78px
+				.online
+					position: relative
+					.dot
+						position: absolute
+						top: -16px
+						right: -23px
+						background-color: $accent
+						width: 17px
+						height: 17px
+						border-radius: 50%
+						animation: 1.5s blink infinite
+			p.desc
+				margin-top: 0
+				margin-bottom: 45px
+				font-family: 'Aeroport-Medium'
+				font-size: 20px
+				color: $black
+				letter-spacing: 1px
+			.btn-outer, .offer
+				display: inline-block
+				vertical-align: top
+				text-align: center
+			.btn-outer
+				margin-right: 47px
+				.number
+					font-family: 'HeadingSmallcasePro-Light'
+					font-size: 219px
+					color: $gray
+					margin-bottom: -23px
+				a.btn
+					background-color: $black
+					display: inline-block
+					width: 176px
+					height: 57px
+					line-height: 60px
+					span
+						transition: 0.3s
+						font-family: 'HeadingSmallcasePro-Regular'
+						font-size: 18px
+						color: $white
+						text-transform: uppercase
+						display: block
+				a.btn:hover
+					span
+						transform: scale(1.2)
+			.offer
+				background-color: $accent
+				color: $white
+				padding: 45px 63px 135px 78px
+				.headtext
+					margin-bottom: 40px
+					span
+						position: relative
+						font-family: 'HeadingSmallcasePro-Regular'
+						font-size: 36px
+						text-transform: uppercase
+					span::after
+						content: ''
+						position: absolute
+						left: 0
+						bottom: -5px
+						width: 100%
+						height: 3px
+						background-color: $white
+				p.text
+					margin-top: 0
+					margin-bottom: 37px
+					font-size: 24px
+					font-family: 'Aeroport'
+					line-height: 1
+				a.btn
+					margin-bottom: 45px
+					display: inline-block
+					width: 174px
+					height: 57px
+					line-height: 55px
+					border: 3px solid $white
+					span
+						transition: 0.3s
+						font-size: 18px
+						font-family: 'HeadingSmallcasePro-Bold'
+						text-transform: uppercase
+						display: block
+				a.btn:hover
+					span
+						transform: scale(1.2)
+				.arrow
+					position: relative
+					animation: 1s linear moveDown infinite
+				@keyframes moveDown
+					0%
+						opacity: 0
+						top: 0
+					20%
+						opacity: 1
+						top: 7px
+					80%
+						top: 28px
+						opacity: 1
+					100%
+						opacity: 0
+						top: 35px
+	main
+		section.types
+			position: relative
+			padding-top: 95px
+			padding-bottom: 205px
+			background-color: $black
+			iframe
+				user-select: none
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				z-index: 0
+			.container
+				position: relative
+				z-index: 1
+			h2
+				margin-top: 0
+				margin-bottom: 75px
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 72px
+				color: $white
+				text-transform: uppercase
+			ol
+				counter-reset: myCounter1
+				margin-top: 0
+				margin-bottom: 0
+				margin-left: auto
+				padding: 0
+				max-width: 302px
+				li:not(:last-child)
+					margin-bottom: 17px
+				li
+					position: relative
+					list-style: none
+					font-family: 'Aeroport-Light'
+					font-size: 24px
+					color: $white
+					line-height: 1
+					.sm
+						font-size: 16px
+				li::before
+					content: counter(myCounter1, decimal-leading-zero)
+					counter-increment: myCounter1
+					margin-right: 35px
+					position: absolute
+					right: 100%
+					top: 1px
+					color: $accent
+		section.wantsTo
+			position: relative
+			padding-top: 170px
+			padding-bottom: 210px
+			.background
+				position: absolute
+				z-index: -1
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				overflow: hidden
+				padding-top: 140px
+				text-align: center
+				.photo1
+					display: inline-block
+					background-color: #F1E9E8
+					margin-left: -15%
+					img
+						width: 608px
+						height: auto
+				.info-board::before
+					content: ''
+					position: absolute
+					left: 0
+					top: -225px
+					width: 19px
+					height: 19px
+					border-radius: 50%
+					animation: 1.5s blink infinite
+					background-color: $accent
+				.info-board
+					position: absolute
+					left: 55.5%
+					bottom: 155px
+					background-color: $accent
+					padding-top: 70px
+					padding-bottom: 58px
+					padding-left: 120px
+					padding-right: 100px
+					width: 685px
+					text-align: left
+					h3
+						margin-top: 0
+						margin-bottom: 50px
+						font-family: 'HeadingSmallcasePro-Regular'
+						font-size: 72px
+						color: $white
+						text-transform: uppercase
+					p.desc
+						margin-top: 0
+						margin-bottom: 65px
+						font-family: 'Aeroport-Light'
+						font-size: 24px
+						line-height: 1.3
+						color: $white
+					.plus
+						svg
+							width: 140px
+							height: 140px
+
+			h2
+				margin-top: 0
+				margin-bottom: 50px
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 72px
+				color: $black
+				text-transform: uppercase
+				line-height: 66px
+			ul
+				margin-top: 0
+				margin-bottom: 50px
+				padding-left: 64px
+				list-style: none
+				max-width: 340px
+				li:not(:last-child)
+					margin-bottom: 20px
+				li
+					position: relative
+					font-family: 'Aeroport'
+					font-size: 20px
+					color: $blackP
+				li::before
+					content: ''
+					position: absolute
+					top: 13px
+					right: 100%
+					margin-right: 20px
+					width: 44px
+					height: 2px
+					background-color: $accent
+			.check
+				svg
+					width: 163px
+					height: 122px
+		section.howGoing
+			position: relative
+			padding-top: 95px
+			margin-bottom: 120px
+			background-color: #f2f2f2
+			.laptop-video
+				position: absolute
+				bottom: -120px
+				right: 53%
+				user-select: none
+				.video-layer
+					position: absolute
+					top: 14px
+					left: 105px
+					width: 691px
+					overflow: hidden
+					background-color: $black
+					iframe
+						width: 753px
+						height: 432px
+						margin-left: -49px
+						background-color: $black
+			h2
+				margin-top: 0
+				margin-bottom: 90px
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 72px
+				color: $black
+				text-align: center
+				text-transform: uppercase
+			.text-block
+				margin-left: auto
+				max-width: 590px
+				padding-right: 60px
+				p.desc
+					margin-top: 0
+					margin-bottom: 55px
+					font-family: 'Aeroport'
+					font-size: 20px
+					color: $blackP
+					line-height: 1.2
+					span.accent
+						color: $accent
+				ul
+					margin-top: 0
+					margin-bottom: 30px
+					padding-left: 64px
+					list-style: none
+					li:not(:last-child)
+						margin-bottom: 12px
+					li
+						position: relative
+						font-family: 'Aeroport'
+						font-size: 20px
+						color: $black
+					li::before
+						content: ''
+						position: absolute
+						top: 14px
+						right: 100%
+						margin-right: 20px
+						width: 44px
+						height: 2px
+						background-color: $accent
+				a.btn
+					position: relative
+					bottom: -30px
+					display: inline-block
+					width: 212px
+					height: 58px
+					line-height: 61px
+					text-align: center
+					background-color: $accent
+					span
+						font-family: 'HeadingSmallcasePro-Regular'
+						font-size: 18px
+						color: $white
+						text-transform: uppercase
+						transition: 0.3s
+						display: block
+				a.btn:hover
+					span
+						transform: scale(1.2)
+		section.equipment
+			padding-top: 130px
+			padding-bottom: 160px
+			overflow: hidden
+			h2
+				margin-top: 0
+				margin-bottom: 210px
+				font-family: 'HeadingSmallcasePro-Light'
+				font-size: 115px
+				color: $black
+				text-transform: uppercase
+				text-align: center
+				letter-spacing: -2px
+				span.accent
+					color: $accent
+			h3
+				margin-top: 0
+				margin-bottom: 70px
+				padding-left: 300px
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 72px
+				color: $white
+				text-transform: uppercase
+			.black-board
+				position: relative
+				background-color: $black
+				padding-top: 165px
+				padding-left: 60px
+				padding-right: 55px
+				padding-bottom: 170px
+				display: inline-block
+				.back-photo
+					position: absolute
+					z-index: -1
+					left: 130px
+					bottom: 47px
+					background-color: #F1E9E8
+					img
+						width: 1177px
+						height: 657px
+						vertical-align: bottom
+				ul
+					list-style: none
+					padding-left: 75px
+					margin: 0
+					li:not(:last-child)
+						margin-bottom: 19px
+					li
+						position: relative
+						font-family: 'Aeroport-Light'
+						font-size: 20px
+						color: $white
+					li::before
+						content: ''
+						position: absolute
+						top: 14px
+						right: 100%
+						margin-right: 30px
+						width: 44px
+						height: 2px
+						background-color: $accent
+		section.fitnessProgram
+			position: relative
+			padding-top: 170px
+			padding-bottom: 140px
+			.background
+				position: absolute
+				z-index: -1
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				text-align: center
+				overflow: hidden
+				.photo
+					margin-right: -10px
+					display: inline-block
+					background-color: #F1E9E8
+					img
+						width: 1404px
+						height: auto
+						vertical-align: bottom
+			h2
+				margin-top: 0
+				margin-bottom: 340px
+				padding-right: 100px
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 72px
+				color: $black
+				text-align: right
+				text-transform: uppercase
+			.text-block
+				padding-left: 300px
+				max-width: 705px
+				p.text
+					margin-top: 0
+					margin-bottom: 0
+					font-family: 'Aeroport'
+					font-size: 20px
+					color: $black
+				p.text:not(:last-child)
+					margin-bottom: 30px
+				.number, .subhead
+					font-family: 'Aeroport-Medium'
+					color: $accent
+				.number 
+					font-size: 112px
+					line-height: 0.9
+				.subhead
+					font-size: 24px
+					text-transform: uppercase
+		section.nutritionProgram
+			position: relative
+			padding-bottom: 150px
+			.background
+				position: absolute
+				z-index: -1
+				top: -95px
+				left: 0
+				width: 100%
+				height: 100%
+				padding-left: 53%
+				overflow: hidden
+				.photo
+					background-color: #F1E9E8
+					display: inline-block
+					img
+						width: 705px
+						height: auto
+						vertical-align: bottom
+			h2
+				margin-top: 0
+				margin-bottom: 95px
+				padding-left: 300px
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 72px
+				color: $black
+				text-transform: uppercase
+			.phone-block
+				position: relative
+				display: inline-block
+				margin-right: 115px
+				margin-left: -70px
+				img.phone
+					position: relative
+					z-index: 2
+					width: 439px
+					height: auto
+					vertical-align: bottom
+					line-height: normal
+				img.view
+					margin: auto
+					position: absolute
+					z-index: 1
+					top: 17px
+					left: 0
+					right: 0
+					width: 389px
+					height: auto
+					display: none
+				img.view.active
+					display: block
+			.phone-block::before
+				content: ''
+				position: absolute
+				z-index: 0
+				top: 17px
+				left: 0
+				right: 0
+				margin: auto
+				width: 389px
+				height: 828px
+				background-color: $black
+			.text-block
+				display: inline-block
+				max-width: 410px
+				.number, .subhead
+					font-family: 'Aeroport-Medium'
+					color: $accent
+				.number
+					font-size: 112px
+					line-height: 0.9
+				.subhead
+					font-size: 24px
+					text-decoration: underline
+					text-transform: uppercase
+					cursor: pointer
+					line-height: 1.2
+				p.text
+					margin-top: 3px
+					margin-bottom: 0
+					line-height: 1.2
+					font-family: 'Aeroport'
+					font-size: 20px
+					color: $black 
+				p.text:not(:last-child)
+					margin-bottom: 40px
+				a.btn
+					display: inline-block
+					width: 190px
+					height: 58px
+					line-height: 60px
+					text-align: center
+					background-color: $accent
+					span
+						font-family: 'HeadingSmallcasePro-Regular'
+						font-size: 18px
+						color: $white
+						text-transform: uppercase
+						transition: 0.3s
+						display: block
+				a.btn:hover
+					span
+						transform: scale(1.2)
+		section.trialClass
+			position: relative
+			padding-top: 80px
+			padding-bottom: 110px
+			margin-bottom: 145px
+			.background
+				position: absolute
+				z-index: -1
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				overflow: hidden
+				.layer
+					height: 100%
+					width: 1400px
+					margin: auto
+					background-color: #f2f2f2
+			h2, p.desc
+				text-align: center
+				margin-top: 0
+			h2
+				margin-bottom: 30px
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 72px
+				color: $black
+				text-transform: uppercase
+			p.desc
+				margin-bottom: 35px
+				font-family: 'Aeroport-Medium'
+				font-size: 24px
+				color: $black
+				text-transform: uppercase
+			.videos
+				margin-bottom: 50px
+				user-select: none
+				.video:not(:last-child)
+					margin-right: 40px
+				.video:hover
+					.big-btn
+						transform: scale(1.2)
+				.video
+					cursor: pointer
+					width: calc((100% / 2) - 22px)
+					display: inline-block
+					vertical-align: top
+					position: relative
+					img
+						width: 100%
+						height: auto
+						vertical-align: bottom
+					.big-btn
+						transition: 0.3s
+						position: absolute
+						top: 0
+						bottom: 0
+						left: 0
+						right: 0
+						margin: auto
+						border-width: 1.5px
+						border-color: $white
+						border-style: solid
+						border-radius: 44px
+						width: 109px
+						height: 86px
+						cursor: pointer
+						svg
+							position: absolute
+							top: 0
+							bottom: 0
+							left: 0
+							right: -7px
+							margin: auto
+			.text-block
+				margin-top: 0
+				text-align: center
+				span.b, p.text
+					vertical-align: middle
+					line-height: 20px
+				p.text
+					margin-bottom: 0
+					margin-top: -8px
+					margin-right: 30px
+					display: inline-block
+					font-family: 'Aeroport-Medium'
+					font-size: 20px
+					color: $black
+				span.b
+					font-family: 'HeadingSmallcasePro-Regular'
+					font-size: 60px
+					margin-right: 15px
+					text-transform: uppercase
+				a.btn
+					display: inline-block
+					width: 261px
+					height: 58px
+					line-height: 61px
+					text-align: center
+					background-color: $black
+					span
+						font-family: 'HeadingSmallcasePro-Regular'
+						font-size: 18px
+						color: $white
+						text-transform: uppercase
+						transition: 0.3s
+						display: block
+				a.btn:hover
+					span
+						transform: scale(1.2)
+		section.price
+			position: relative
+			padding: 185px 0
+			margin-bottom: 150px
+			.background
+				position: absolute
+				z-index: -1
+				overflow: hidden
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				.photo
+					width: 1544px
+					position: absolute
+					left: 0
+					right: 0
+					margin: auto
+					background-color: $accent
+					img
+						height: auto
+						width: 100%
+						vertical-align: bottom
+			.text-block
+				padding-left: 160px
+				h2
+					margin-top: 0
+					margin-bottom: 0
+					font-family: 'HeadingSmallcasePro-Regular'
+					font-size: 72px
+					color: $white
+					text-transform: uppercase
+				p.price
+					margin-top: 0
+					margin-bottom: 0
+					font-family: 'Aeroport-Medium'
+					font-size: 96px
+					color: $black
+				a.btn
+					display: inline-block
+					width: 194px
+					height: 58px
+					line-height: 61px
+					text-align: center
+					background-color: $black
+					span
+						display: block
+						transition: 0.3s
+						font-family: 'HeadingSmallcasePro-Regular'
+						font-size: 18px
+						color: $white
+						text-transform: uppercase
+				a.btn:hover
+					span
+						transform: scale(1.2)
+		section.viktoria
+			padding-top: 100px
+			padding-bottom: 265px
+			.container
+				position: relative
+			.photo
+				background-color: #F1E9E8
+				position: absolute
+				z-index: -1
+				top: -100px
+				left: 0
+				img
+					width: 533px
+					height: auto
+			.text-block
+				margin-left: auto
+				max-width: 680px
+				h2
+					margin-top: 0
+					margin-bottom: 45px
+					font-family: 'HeadingSmallcasePro-Regular'
+					font-size: 72px
+					color: $black
+					text-transform: uppercase
+				.black-board
+					position: relative
+					padding-left: 70px
+					padding-right: 115px
+					padding-top: 65px
+					padding-bottom: 55px
+					background-color: $black
+					.back
+						display: none
+						position: absolute
+						z-index: 1
+						width: 100%
+						height: 100%
+						top: 0
+						left: 0
+						background-color: $accent
+					.name
+						font-family: 'Aeroport'
+						font-size: 24px
+						color: $white
+						margin-bottom: 25px
+					ul
+						list-style: none
+						padding: 0
+						margin-top: 0
+						margin-bottom: 40px
+						li:not(:last-child)
+							margin-bottom: 5px
+						li
+							position: relative
+							font-family: 'Aeroport-Light'
+							font-size: 20px
+							color: $white
+							line-height: 1.3
+							.sub
+								font-family: 'Aeroport-Medium'
+								margin-bottom: 5px
+								margin-top: 5px
+						li::before
+							content: ''
+							position: absolute
+							top: 14px
+							right: 100%
+							margin-right: 10px
+							width: 34px
+							height: 2px
+							background-color: $accent
+					.subhead
+						font-family: 'Aeroport-Light'
+						font-size: 18px
+						color: $white
+						margin-bottom: 40px
+					.hidden
+						display: none
+					a.site
+						font-family: 'Aeroport-Light'
+						font-size: 20px
+						color: $accent
+						text-decoration: underline
+						margin-bottom: 25px
+					.more
+						display: inline-block
+						cursor: pointer
+						font-family: 'Aeroport-Light'
+						font-size: 20px
+						color: $white
+						border-bottom: 1px dashed $white
+		section.feedback
+			h2
+				margin-top: 0
+				margin-bottom: 80px
+				font-family: 'HeadingSmallcasePro-Regular'
+				font-size: 72px
+				color: $blackP
+				text-transform: uppercase
+				text-align: center
+	footer
+		padding-top: 160px
+		padding-bottom: 160px
+		nav
+			.logo
+				margin-right: auto
+				img
+					width: 163px
+					height: 37px
+					vertical-align: bottom
+			.contacts
+				padding-right: 35px
+				padding-bottom: 4px
+				a
+					font-family: "Aeroport"
+					font-size: 20px
+					color: $blackP
+				a:not(:last-child)
+					margin-right: 30px
+			.socials
+				padding-bottom: 3px
+				a
+					img
+						width: 28px
+						height: 28px
+						vertical-align: bottom
+				a:not(:last-child)
+					margin-right: 10px
+
+@media only screen and(max-height: 830px)
+	body
+		nav.menu
+			overflow-y: scroll
+@media only screen and(max-width: 1499px)
+	body
+		nav.menu
+			min-width: 450px
+		nav.menu.hidden
+			left: -450px

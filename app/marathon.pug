@@ -29,6 +29,9 @@ html(lang="ru")
 		link(rel="stylesheet", href="css/marathon.css")
 
 	body
+		.vimeo-video-popup
+			#vimeo-video-container
+				img.btn-close(src="img/be-box/cross_white.svg", alt="cross_white.svg")
 
 		#menu-pagedim
 		include _partials/menu.pug
@@ -37,13 +40,19 @@ html(lang="ru")
 
 			header
 				.container
+					.background
+						.photo1
+							img(src="img/marathon/header-photo1.jpg", alt="header-photo1.jpg")
+						.photo2
+							img(src="img/marathon/header-photo2.jpg", alt="header-photo2.jpg")
 					nav.d-flex
 						.menu.d-flex
 							button.circle.d-flex.justify-content-center.align-items-center.hamburger.hamburger--slider#my-button(type="button")
 								span.hamburger-box
 									span.hamburger-inner
 						.logo.d-flex.align-items-center.justify-content-center
-							img(src="img/marathon/logoi1.png" alt="logoi1.png").imgLogo
+							a(href="https://www.v-concept.ru/")
+								img(src="img/marathon/logoi1.png" alt="logoi1.png").imgLogo
 						.contacts.d-flex.align-items-center
 							a(href="mailto: info@v-concept.ru") info@v-concept.ru
 							a(href="tel: 8 (495) 125–22–25") +7 (495) 125-32-25
@@ -52,15 +61,327 @@ html(lang="ru")
 								img(src="img/marathon/header-socials-img1.png", alt="header-socials-img1.png")
 							a(href="https://www.instagram.com/" target="__blank")
 								img(src="img/marathon/header-socials-img2.png", alt="header-socials-img2.png")
+					section.first
+						h1 #[span.online Онлайн #[.dot] ] #[br] Фитнес-Марафон
+						p.desc c Викторией Блинниковой и командой V–Concept
+						.btn-outer
+							.number #1
+							a(href="#").btn.hover-scale-text
+								span Попробовать
+						.offer
+							.headtext 
+								span старт 15 июня
+							p.text Когда выбираешь #[br] во всём профессионалов
+							a(href="#").btn
+								span Купить
+							.arrow
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51px" height="32px"><path fill-rule="evenodd"  stroke="rgb(255,255,255)" stroke-width="4px" stroke-linecap="round" stroke-linejoin="miter" fill="none" d="M44.278,4.499 L24.500,24.278 L4.722,4.499 "/></svg>
 			main
+				section.types
+					//-iframe#vimeo1(src="https://player.vimeo.com/video/409527023?color=ff3536&amp;autoplay=true&amp;muted=true&amp;controls=false&amp;loop=true&amp;autopause=0&amp;" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
+					.container
+						h2 Виды тренировок в марафоне
+						ol
+							li силовые
+							li кардио
+							li интервальные тренировки
+							li проработка мышц ног
+							li бёдер
+							li ягодиц
+							li пресса
+							li спины
+							li груди
+							li мышцы рук #[.sm / бицепс трицепс плечи /]
+				section.wantsTo
+					.background
+						.photo1
+							img(src="img/marathon/wantsTo-photo1.jpg", alt="wantsTo-photo1.jpg")
+						.info-board
+							h3
+								|Наш марафон
+								br
+								|подходит
+							p.desc Для женщин разной подготовки: новички и продвинутые в фитнесе
+							.plus
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="140px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M140.000,76.000 L76.000,76.000 L76.000,140.000 L64.000,140.000 L64.000,76.000 L0.000,76.000 L0.000,64.000 L64.000,64.000 L64.000,0.000 L76.000,0.000 L76.000,64.000 L140.000,64.000 L140.000,76.000 Z"/></svg>
+					.container
+						h2
+							|Марафон 
+							br
+							|для тех, 
+							br
+							|кто хочет
+						ul
+							li Прийти в форму 
+
+							li Сбросить лишний вес
+
+							li Подкорректировать фигуру
+
+							li Убрать лишние сантиметры с талии, живота и бедер
+
+							li Убрать все неровности кожи с задней поверхности бедер 
+
+							li Изменить качество кожи 
+
+							li Придать тонус и рельеф телу
+						.check
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="163px" height="122px"><path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="12px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M15.166,52.154 L55.539,92.543 L142.050,5.994 "/></svg>
+				section.howGoing
+					.laptop-video
+						img(src="img/marathon/howGoing-Camera.png", alt="howGoing-Camera.png")
+						.video-layer
+							iframe#vimeo2(src="https://player.vimeo.com/video/409527023?color=ff3536&amp;autoplay=true&amp;muted=true&amp;controls=false&amp;loop=true&amp;audio=false&amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
+					.container
+						h2 Как проходит марафон
+						.text-block
+							p.desc Все уроки #[span.accent мы записали заранее, занимайтесь в любое удобное время, нет привязки к расписанию.] #[br]Кроме фитнесса мы займёмся правильным питанием!
+							ul
+								li Смотрите уроки на телефоне, ноутбуке или телевизоре
+								li Выполняйте упраженения
+								li Танцуйте
+								li Питайтесь по нашей программе
+							a.btn(href="#")
+								span Получить результат
+				section.equipment
+					.container
+						h2 Фитнес #[span.accent +] Питание #[span.accent =] Результат
+						h3 Инвентарь
+						.black-board
+							.back-photo
+								img(src="img/marathon/equipment-photo1.jpg", alt="equipment-photo1.jpg")
+							ul
+								li Коврик для фитнеса (или покрывало, одеяло)
+								li Гантели по 1.5-2 кг (или бутылки воды по 0.5л)
+								li Фитнес-резина (можно делать упражнение без нее)
+								li Стул на твердой опоре
+				section.fitnessProgram
+					.background
+						.photo
+							img(src="img/marathon/fitnessProgram-photo1.jpg", alt="fitnessProgram-photo1.jpg")
+					.container
+						h2 Что входит в марафон
+						.text-block
+							.number 4 
+							.subhead Недели
+							p.text Длится наш онлайн-марафон
+							.number 12
+							.subhead Тренировок в записи
+							p.text По 3 три тренировки в неделю (понедельник, среда, пятница).
+							.number 60
+							.subhead Минут
+							p.text Каждая тренировка включает полноценную разминку, основную часть , заминку (растяжку)
+				section.nutritionProgram
+					.background
+						.photo
+							img(src="img/marathon/nutritionProgram-photo1.jpg", alt="nutritionProgram-photo1.jpg")
+					.container
+						h2 Программа питания
+						.phone-block
+							img.phone(src="img/marathon/nutritionProgram-iphone.png", alt="nutritionProgram-iphone.png")
+							img.active.view.view1.nutrition-phone-view#nutrition-phone-view1(src="img/marathon/iphone-view1.jpg", alt="iphone-view1.jpg")
+							img.view.view2.nutrition-phone-view#nutrition-phone-view2(src="img/marathon/iphone-view2.jpg", alt="iphone-view2.jpg")
+							img.view.view3.nutrition-phone-view#nutrition-phone-view3(src="img/marathon/iphone-view3.jpg", alt="iphone-view3.jpg")
+						.text-block
+							.number 1
+							.subhead.nutrition-view-link МЕНЮ НА КАЖДУЮ НЕДЕЛЮ
+							p.text Cеми дневное меню с описанием каждого дня (завтрак, обед, ужин, два перекуса) с включением рецептов на каждый прием пищи, составленный диетологом школы
+							.number 2
+							.subhead.nutrition-view-link ПРОДУКТОВАЯ КОРЗИНА НА КАЖДУЮ НЕДЕЛЮ
+							p.text Список продуктов на неделю, чтобы вам было удобно заранее закупить продукты на неделю под наше меню
+							.number 3
+							.subhead.nutrition-view-link РЕКОМЕНДАЦИИ ПО ПИТАНИЮ ОТ НАШЕГО ДИЕТОЛОГА
+							p.text Понятные и конкретные базисные принципы правильного питания от диетолога школы, чтобы вы были более осознанные в соблюдении правильного питания
+							a(href="#").btn
+								span Пройти марафон
+				section.trialClass
+					.background
+						.layer
+					.container
+						h2 Пробный урок
+						p.desc Посмотрите как выглядят наши упражения
+						.videos
+							.video#vimeo3-load.popup-open
+								img.preview(src="img/marathon/trialClass-video-preview1.jpg", alt="trialClass-video-preview1.jpg")
+								.big-btn
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.25px" height="34.25px"><path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1.5px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"d="M28.453,16.511 L1.500,32.072 L1.500,0.949 L28.453,16.511 Z"/></svg>
+							.video#vimeo4-load.popup-open
+								img.preview(src="img/marathon/trialClass-video-preview2.jpg", alt="trialClass-video-preview2.jpg")
+								.big-btn
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.25px" height="34.25px"><path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1.5px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"d="M28.453,16.511 L1.500,32.072 L1.500,0.949 L28.453,16.511 Z"/></svg>
+						.text-block 
+							span.b Free!
+							p.text Зарегистрируйтесь и получите доступ к бесплатному уроку
+							a.btn(href="#")
+								span Получить бесплатный урок
+				section.price
+					.background
+						.photo
+							img(src="img/marathon/price-background.jpg", alt="price-background.jpg")
+					.container
+						.text-block
+							h2 стоимость марафона #[br] #V-CONCEPT ONLINE
+							p.price 2 500 &#8381;
+							a.btn(href="#")
+								span Купить
+				section.viktoria
+					.container
+						.photo
+							img(src="img/marathon/viktoria-photo1.jpg", alt="viktoria-photo1.jpg")
+						.text-block
+							h2 кто ведёт марафон
+							.black-board
+								.back
+								.name Виктория Блинникова
+								ul
+									li Основатель в России студийных фитнес-форматов.
+									li Основатель Школы Фитнеса и Питания V-CONCEPT #[.sub (школу уже закончили  более 15 000 человек)]
+										a.site(href="https://www.v-concept.ru/") www.v-concept.ru 
+								.hidden#viktoria-hidden
+									ul
+										li Основатель Уникального Авторского Фитнес Курса по снижению/коррекции веса и построению тела " BodyEvolution "
+										li Основатель курсов PRO ЯГОДИЦЫ
+										li Основатель курса для людей 2,3 степень ожирения от 100кг., BodyEvolution SIZE+
+										li Лектор-преподаватель "Академии Фитнеса", проводит сертифицированное обучение студентов по всей России по методике преподавания специалистов в области Фитнес индустрии
+										li Сертифицированный нутрициолог, консультант по Питанию 
+										li Фитнес эксперт, тренер с 20-ти летним стажем, международный презентер
+										li Профессиональная спортсменка, Мастер Спорта по Художественной гимнастике
+										li Фитнес-культуризм 
+										li Дважды Чемпионка Москвы 
+										li Дважды Вице-Чемпионка
+										li Финалистка Чемпионата Мира по Фитнесу и Культуризму, в категории Фитнес юниоры
+										li В 2011году  Виктория, вошла в пятерку лучших тренеров команды The BestTeam by Madonna, стала сертифицированным специалистом фитнес и танцевальных программ Мадонны в России. (HardCandyFitness by Madonna- это сеть фитнес клубов, которые были открыты Мадонной по всему миру)
+										li Опыт в Фитнес индустрии 17 лет
+									.subhead Образование:
+									ul
+										li Колледж Профессионального Образования и Спорта (красный диплом)
+										li МПГУ ( Педагог-специалист, Анатомия, Физиология, Биомеханика) (красный диплом)
+										li МГУ ( Психология, Психология Бизнеса и Организационное  Управление Персоналом) (красный диплом)
+										li Сертифицированный нутрициолог (консультант  по питанию)
+								br
+								.more#viktoria-link-more Узнать больше
+				section.feedback
+					.container
+						h2 Отзывы участников
+
 			footer
+				.container
+					nav.d-flex
+						.logo.d-flex.align-items-center.justify-content-center
+							a(href="https://www.v-concept.ru/")
+								img(src="img/marathon/logoi1.png" alt="logoi1.png").imgLogo
+						.contacts.d-flex.align-items-center
+								a(href="mailto: info@v-concept.ru") info@v-concept.ru
+								a(href="tel: 8 (495) 125–22–25") +7 (495) 125-32-25
+						.socials.d-flex.align-items-center
+							a(href="https://www.facebook.com" target="__blank")
+								img(src="img/marathon/header-socials-img1.png", alt="header-socials-img1.png")
+							a(href="https://www.instagram.com/" target="__blank")
+								img(src="img/marathon/header-socials-img2.png", alt="header-socials-img2.png")
+
+
 
 	script(src="js/jquery.min.js")
 	script(src="js/owl.carousel.min.js")
-
+	script(src="js/player.min.js")
 	script(src="js/common.js")
+
 
 	script.
 		$(document).ready(function(){
-			
+			$(window).on('load resize', function(){
+				winWidth = $(window).width()
+				$('.scroll-fix').css('width', winWidth + 'px')
+			});
+			$('#vimeo3-load').click(function(){
+				$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/406914959?color=ff3536&amp;autoplay=true&amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
+			})
+			$('#vimeo4-load').click(function(){
+				$('#vimeo-video-container').append('<iframe id="vimeo-video" src="https://player.vimeo.com/video/414558168?color=ff3536&amp;autoplay=true&amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>')
+			})
+
+			$('.popup-open').click(function(){
+				$('body').addClass('ovh');
+				$('.vimeo-video-popup').fadeIn(250);
+				var vimeo = new Vimeo.Player('vimeo-video');
+				vimeo.play();
+			});
+			$('#vimeo-video-container').click(function(e){
+				if (!$('iframe').is(e.target) && $('iframe').has(e.target).length === 0) {
+					$('.vimeo-video-popup').fadeOut(250);
+					$(this).children('iframe').remove();
+					$('body').removeClass('ovh');
+				}
+				player2.setMuted(true);
+				player2.play();
+			});
+
+			//-var player1 = new Vimeo.Player('vimeo1');
+			var player2 = new Vimeo.Player('vimeo2');
+
+			//- player1.on('play', function() {
+			//- 	console.log('Played the video1');
+			//- });
+			player2.on('play', function() {
+				console.log('Played the video2');
+			});
+
+			nutritionInterval = setInterval(nutritionChange, 4500);
+
+			let nutritionChangeRun = true;
+			function nutritionChange(){
+				$('.nutrition-phone-view').each(function(i){
+					setTimeout(function(){
+						if(!nutritionChangeRun) return false;
+						$('.nutrition-phone-view').fadeOut(350);
+						$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
+					}, 1500 + i * 1500)
+				});
+			}
+			$('.nutrition-view-link').each(function(i){
+				let nutritionScroll;
+				$(this).mouseenter(function(){
+					clearTimeout(nutritionScroll);
+					nutritionChangeRun = false;
+					nutritionTimeout1 = setTimeout(function(){
+						$('.nutrition-phone-view').fadeOut(350);
+						$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
+					}, 10);
+					$(this).click(function(){
+						clearTimeout(nutritionTimeout1);
+					});
+				});
+				$(this).mouseleave(function(){
+					nutritionLeave = setTimeout(function(){
+						nutritionChangeRun = true;
+					}, 1000)
+					$(this).mouseenter(function(){
+						clearTimeout(nutritionLeave);
+					});	
+				});
+				$(this).click(function(){
+					clearTimeout(nutritionScroll);
+					nutritionChangeRun = false;
+					$('.nutrition-phone-view').fadeOut(350);
+					$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
+					$(window).scroll(function(){
+						nutritionScroll = setTimeout(function(){
+							nutritionChangeRun = true;
+						}, 1000)
+					});
+				});
+			});	
+
+			$('#viktoria-link-more').click(function(){
+				const viktoriaLinkText1 = 'Узнать больше';
+				const viktoriaLinkText2 = 'Скрыть информацию';
+				$('#viktoria-hidden').slideToggle(250);
+				if($('#viktoria-hidden').hasClass('active')){
+					$('#viktoria-hidden').removeClass('active');
+					$(this).text(viktoriaLinkText1);
+				}else{
+					$('#viktoria-hidden').addClass('active');
+					$(this).text(viktoriaLinkText2);
+				}
+			});
 		});
