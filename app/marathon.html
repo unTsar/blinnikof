@@ -321,18 +321,25 @@
     		console.log('Played the video2');
     	});
     
-    	nutritionInterval = setInterval(nutritionChange, 4500);
+    	nutritionInterval = setInterval(nutritionChange, 5000);
     
     	let nutritionChangeRun = true;
     	function nutritionChange(){
     		$('.nutrition-phone-view').each(function(i){
     			setTimeout(function(){
     				if(!nutritionChangeRun) return false;
+    				console.log(i)
     				$('.nutrition-phone-view').fadeOut(350);
     				$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
     			}, 1500 + i * 1500)
     		});
     	}
+    	$(window).blur(function(){
+    		nutritionChangeRun = false;
+    	});
+    	$(window).focus(function(){
+    		nutritionChangeRun = true;
+    	});
     	$('.nutrition-view-link').each(function(i){
     		let nutritionScroll;
     		$(this).mouseenter(function(){
@@ -345,14 +352,14 @@
     			$(this).click(function(){
     				clearTimeout(nutritionTimeout1);
     			});
-    		});
-    		$(this).mouseleave(function(){
-    			nutritionLeave = setTimeout(function(){
-    				nutritionChangeRun = true;
-    			}, 1000)
-    			$(this).mouseenter(function(){
-    				clearTimeout(nutritionLeave);
-    			});	
+    			$(this).mouseleave(function(){
+    				nutritionLeave = setTimeout(function(){
+    					nutritionChangeRun = true;
+    				}, 1000)
+    				$(this).mouseenter(function(){
+    					clearTimeout(nutritionLeave);
+    				});	
+    			});
     		});
     		$(this).click(function(){
     			clearTimeout(nutritionScroll);
