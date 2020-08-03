@@ -326,6 +326,7 @@
     	let nutritionChangeRun = true;
     	function nutritionChange(){
     		$('.nutrition-phone-view').each(function(i){
+    			if(!nutritionChangeRun) return false;
     			setTimeout(function(){
     				if(!nutritionChangeRun) return false;
     				console.log(i)
@@ -342,34 +343,39 @@
     	});
     	$('.nutrition-view-link').each(function(i){
     		let nutritionScroll;
+    		let nutritionLeave;
+    		let nutritionTimeout1;
     		$(this).mouseenter(function(){
-    			clearTimeout(nutritionScroll);
     			nutritionChangeRun = false;
+    			clearInterval(nutritionInterval);
+    			console.log('enter')
+    			clearTimeout(nutritionLeave);
+    			clearTimeout(nutritionScroll);
     			nutritionTimeout1 = setTimeout(function(){
     				$('.nutrition-phone-view').fadeOut(350);
     				$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
-    			}, 10);
-    			$(this).click(function(){
-    				clearTimeout(nutritionTimeout1);
-    			});
-    			$(this).mouseleave(function(){
-    				nutritionLeave = setTimeout(function(){
-    					nutritionChangeRun = true;
-    				}, 1000)
-    				$(this).mouseenter(function(){
-    					clearTimeout(nutritionLeave);
-    				});	
-    			});
+    			}, 100);
+    		});
+    		$(this).mouseleave(function(){
+    			clearTimeout(nutritionTimeout1);
+    			nutritionLeave = setTimeout(function(){
+    				nutritionChangeRun = true;
+    				nutritionInterval = setInterval(nutritionChange, 5000);
+    			}, 10)
+    			console.log('leave');
     		});
     		$(this).click(function(){
-    			clearTimeout(nutritionScroll);
     			nutritionChangeRun = false;
+    			clearInterval(nutritionInterval);
+    			clearTimeout(nutritionTimeout1);
+    			clearTimeout(nutritionScroll);
     			$('.nutrition-phone-view').fadeOut(350);
     			$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
     			$(window).scroll(function(){
     				nutritionScroll = setTimeout(function(){
     					nutritionChangeRun = true;
-    				}, 1000)
+    					nutritionInterval = setInterval(nutritionChange, 5000);
+    				}, 10)
     			});
     		});
     	});	
