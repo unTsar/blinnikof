@@ -263,8 +263,81 @@ html(lang="ru")
 				section.feedback
 					.container
 						h2 Отзывы участников
-					
-
+						.owl-carousel.owl-theme.carousel#feedback-carousel
+							img(src="img/marathon/feedback-user1.png", alt="feedback-user1.png")
+							img(src="img/marathon/feedback-user2.png", alt="feedback-user2.png")
+							img(src="img/marathon/feedback-user1.png", alt="feedback-user1.png")
+							img(src="img/marathon/feedback-user2.png", alt="feedback-user2.png")
+							img(src="img/marathon/feedback-user1.png", alt="feedback-user1.png")
+							img(src="img/marathon/feedback-user2.png", alt="feedback-user2.png")
+							img(src="img/marathon/feedback-user1.png", alt="feedback-user1.png")
+						a.btn(href="#")
+							span Стать участником марафона
+				section.compare
+					.container
+						h2 До и после
+						.owl-carousel.owl-theme.carousel#compare-carousel
+							img(src="img/marathon/compare-slide1.jpg", alt="compare-slide1.jpg")
+							img(src="img/marathon/compare-slide2.jpg", alt="compare-slide2.jpg")
+							img(src="img/marathon/compare-slide3.jpg", alt="compare-slide3.jpg")
+							img(src="img/marathon/compare-slide1.jpg", alt="compare-slide1.jpg")
+							img(src="img/marathon/compare-slide2.jpg", alt="compare-slide2.jpg")
+							img(src="img/marathon/compare-slide3.jpg", alt="compare-slide3.jpg")
+							img(src="img/marathon/compare-slide1.jpg", alt="compare-slide1.jpg")
+				section.faq
+					.container
+						h2 Остались вопросы?
+						.questions
+							.separ
+							p.head.faq-qBtn.active Как быстро я получу результат?
+							p.hidden(style="display: block") Всё зависит от точности выполнения, интенсивности и вашего желания. Если вы всё делаете правильно, то результат уже будет виден через 5 дней. Но возможно он появится и позже. Организм каждого человека индивидуален.
+							.separ
+							p.head.faq-qBtn А что, если мне не понравится?
+							p.hidden Всё зависит от точности выполнения, интенсивности и вашего желания. Если вы всё делаете правильно, то результат уже будет виден через 5 дней. Но возможно он появится и позже. Организм каждого человека индивидуален.
+							.separ
+							p.head.faq-qBtn Я получу весь курс сразу или он будет приходить частями?
+							p.hidden Всё зависит от точности выполнения, интенсивности и вашего желания. Если вы всё делаете правильно, то результат уже будет виден через 5 дней. Но возможно он появится и позже. Организм каждого человека индивидуален.
+							.separ
+							p.head.faq-qBtn А что, если мне не понравится?
+							p.hidden Всё зависит от точности выполнения, интенсивности и вашего желания. Если вы всё делаете правильно, то результат уже будет виден через 5 дней. Но возможно он появится и позже. Организм каждого человека индивидуален.
+							.separ
+							p.head.faq-qBtn Я получу весь курс сразу или он будет приходить частями? 
+							p.hidden Всё зависит от точности выполнения, интенсивности и вашего желания. Если вы всё делаете правильно, то результат уже будет виден через 5 дней. Но возможно он появится и позже. Организм каждого человека индивидуален.
+				section.callMe
+					.background
+						.layer
+					.container
+						.text-block
+							h2 Звоните и пишите
+							p.subhead Будем рады ответить #[br]на все ваши вопросы!
+							a(href="https://yandex.ru/maps/-/CCQh7FfILB" target="__blank") Москва, Кутузовский проспект, дом 36 стр.5
+							br
+							a(href="tel: 8 (495) 125–22–25") +7(495)125-32-25
+							br
+							a.underline(href="mailto: info@v-concept.ru") info@v-concept.ru
+						form
+							p.form-head Задайте вопрос
+							input.text-field(type="text" placeholder="Имя")
+							input.text-field(type="email" placeholder="E-mail")
+							input.text-field(type="tel" placeholder="Телефон")
+							textarea.text-field(placeholder="Сообщение")
+							a.btn(href="#")
+								span Отправить
+				section.buyCourse
+					.container
+						.photo
+							img(src="img/marathon/buyCourse-photo.jpg", alt="buyCourse-photo.jpg")
+						.content
+							h2 #[span.online Онлайн #[.dot] ] #[br] Фитнес-Марафон 
+							p.subhead c Викторией Блинниковой и командой V–Concept
+							ul
+								li 12 тренировок в записи
+								li программа питания на каждую неделю
+								li продуктовая корзина
+							span.price 2 500 &#8381;
+							br
+							a.btn(href="#")
+								span Купить
 			footer
 				.container
 					nav.d-flex
@@ -327,36 +400,51 @@ html(lang="ru")
 				console.log('Played the video2');
 			});
 
-			nutritionInterval = setInterval(nutritionChange, 5000);
 
-			let nutritionChangeRun = true;
+
+
+
+			nutritionChangeRun = true;
+			let nutritionCounter = 0;
+
+			nutritionInterval = setInterval(nutritionChange, 2000);
 			function nutritionChange(){
-				$('.nutrition-phone-view').each(function(i){
-					if(!nutritionChangeRun) return false;
-					setTimeout(function(){
-						if(!nutritionChangeRun) return false;
-						console.log(i)
-						$('.nutrition-phone-view').fadeOut(350);
-						$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
-					}, 1500 + i * 1500)
-				});
+				if(!nutritionChangeRun){
+					nutritionCounter = 0;
+					return false;
+				}
+				if(nutritionCounter > 2){
+					nutritionCounter = 0;
+				}
+				nutritionCounter++;
+				console.log(nutritionCounter);
+
+				$('.nutrition-phone-view').fadeOut(350);
+				$('#nutrition-phone-view' + (nutritionCounter)).delay(350).fadeIn(350);
+
 			}
+
 			$(window).blur(function(){
 				nutritionChangeRun = false;
+				console.log('blur')
 			});
 			$(window).focus(function(){
 				nutritionChangeRun = true;
+				console.log('focus')
 			});
+
+
 			$('.nutrition-view-link').each(function(i){
 				let nutritionScroll;
 				let nutritionLeave;
 				let nutritionTimeout1;
 				$(this).mouseenter(function(){
 					nutritionChangeRun = false;
-					clearInterval(nutritionInterval);
 					console.log('enter')
+
 					clearTimeout(nutritionLeave);
 					clearTimeout(nutritionScroll);
+
 					nutritionTimeout1 = setTimeout(function(){
 						$('.nutrition-phone-view').fadeOut(350);
 						$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
@@ -364,24 +452,27 @@ html(lang="ru")
 				});
 				$(this).mouseleave(function(){
 					clearTimeout(nutritionTimeout1);
+					console.log('leave');
+
 					nutritionLeave = setTimeout(function(){
 						nutritionChangeRun = true;
-						nutritionInterval = setInterval(nutritionChange, 5000);
-					}, 10)
-					console.log('leave');
+					}, 100)
 				});
 				$(this).click(function(){
 					nutritionChangeRun = false;
-					clearInterval(nutritionInterval);
+					console.log('click');
+
 					clearTimeout(nutritionTimeout1);
 					clearTimeout(nutritionScroll);
+
 					$('.nutrition-phone-view').fadeOut(350);
 					$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
+
 					$(window).scroll(function(){
+						clearTimeout(nutritionLeave);
 						nutritionScroll = setTimeout(function(){
 							nutritionChangeRun = true;
-							nutritionInterval = setInterval(nutritionChange, 5000);
-						}, 10)
+						}, 100)
 					});
 				});
 			});	
@@ -398,4 +489,31 @@ html(lang="ru")
 					$(this).text(viktoriaLinkText2);
 				}
 			});
+
+
+			$('#feedback-carousel').owlCarousel({
+				items: 2,
+				loop: true,
+				dots: true,
+				dotsEach: true,
+				nav: true,
+				margin: 110
+			});
+			$('#compare-carousel').owlCarousel({
+				items: 3,
+				loop: true,
+				dots: true,
+				dotsEach: true,
+				nav: true,
+				margin: 95,
+				autoWidth: true
+			});
+
+			$('.faq-qBtn').click(function(){
+				$('.faq-qBtn').not(this).next('.hidden').slideUp(250);
+				$(this).next('.hidden').slideToggle(250);
+				$('.faq-qBtn').not(this).removeClass('active');
+				$(this).toggleClass('active');
+			});
+			
 		});

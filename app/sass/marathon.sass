@@ -1086,13 +1086,355 @@ body
 						border-bottom: 1px dashed $white
 		section.feedback
 			h2
+				margin-bottom: 30px
+			a.btn
+				display: block
+				margin: auto
+				width: 273px
+				height: 58px
+				line-height: 60px
+				text-align: center
+				background-color: $accent
+				span
+					display: block
+					text-transform: uppercase
+					transition: 0.3s
+					font-family: 'HeadingSmallcasePro-Regular'
+					font-size: 18px
+					color: $white
+			a.btn:hover
+				span
+					transform: scale(1.2)
+			.carousel
+				width: 85%
+				margin: auto
+				margin-bottom: 52px
+		section.compare
+			h2
+				margin-bottom: 70px
+			.carousel
+				width: 90%
+				margin-left: 8%
+				margin-right: auto
+			.owl-theme
+				.owl-nav
+					button.owl-next
+						right: -9%
+		section.feedback, section.compare
+			padding-bottom: 140px
+			.owl-theme
+				.owl-nav
+					margin-top: 0
+					.owl-prev:hover, .owl-next:hover, 
+						background-color: $accent
+					.owl-prev, .owl-next
+						transition: 0.3s
+						outline: none
+						position: absolute
+						top: 0
+						bottom: 0
+						margin: auto
+						width: 30px
+						height: 30px
+						border-radius: 50%
+						background-color: $black
+						background-repeat: no-repeat
+						background-size: 8px
+						span
+							display: none
+					.owl-prev
+						left: -17%
+						background-position: 11px center
+						background-image: url('../img/be-box/owl-prev.svg')
+					.owl-next
+						right: -17%
+						background-position: 12px center
+						background-image: url('../img/be-box/owl-next.svg')
+				.owl-dots
+					margin-top: 28px
+					.owl-dot
+						outline: none
+						span
+							width: 6px
+							height: 6px
+							background-color: #C0C0C0
+							margin: 0 10px
+							transition: 0.3s
+					.owl-dot:hover, .owl-dot.active
+						span
+							background-color: $accent
+		section.feedback, section.compare, section.faq
+			overflow: hidden
+			h2
 				margin-top: 0
-				margin-bottom: 80px
 				font-family: 'HeadingSmallcasePro-Regular'
 				font-size: 72px
 				color: $blackP
 				text-transform: uppercase
 				text-align: center
+		section.faq
+			padding-bottom: 150px
+			h2
+				margin-bottom: 90px
+			.questions
+				padding: 0 100px
+				.separ
+					height: 1px
+					width: 100%
+					background-color: #F0F0F0
+					display: block
+				p.head
+					font-family: 'Aeroport-Bold'
+					font-size: 24px
+					color: $blackP
+					margin: 0
+					cursor: pointer
+					padding: 24px 0
+					position: relative
+				p.head::after, p.head::before
+					content: ''
+					position: absolute
+					top: 0
+					bottom: 0
+					right: 0
+					margin: auto
+					width: 1px
+					height: 23px
+					background-color: $accent
+					transition: 0.3s
+				p.head.active::after
+					transform: rotate(45deg)
+				p.head.active::before
+					transform: rotate(-45deg)
+				p.head::before
+					transform: rotate(90deg)
+				p.hidden
+					font-family: 'Aeroport'
+					font-size: 18px
+					color: $black
+					display: none
+					margin: 0
+					max-width: 80%
+					line-height: 1.25
+					margin-bottom: 30px
+		section.callMe
+			position: relative
+			margin-bottom: 200px
+			.background
+				position: absolute
+				z-index: -1
+				overflow: hidden
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				.layer
+					width: 1445px
+					height: 492px
+					position: absolute
+					left: 0
+					right: 0
+					bottom: 0
+					margin: auto
+					background-color: #F8F8F8
+			.text-block, form
+				display: inline-block
+				vertical-align: bottom
+			.text-block
+				padding-left: 100px
+				padding-top: 280px
+				padding-bottom: 100px
+				h2
+					font-family: 'HeadingSmallcasePro-Regular'
+					font-size: 72px
+					color: $accent
+					text-transform: uppercase
+					margin-top: 0
+					margin-bottom: 35px
+				p.subhead
+					font-family: 'Aeroport-Medium'
+					font-size: 24px
+					color: $black
+					margin-top: 0
+					margin-bottom: 50px
+					line-height: 1.2
+				a
+					font-family: 'Aeroport'
+					font-size: 20px
+					color: #000
+					line-height: 1.5
+				a.underline
+					border-bottom: 2px solid #9E9E9E
+			form
+				width: 515px
+				margin-left: 115px
+				margin-right: -50px
+				padding: 130px 95px 60px 80px
+				background-image: url('../img/marathon/nutritionProgram-iphone.png')
+				background-repeat: no-repeat
+				background-size: cover
+				position: relative
+				p.form-head
+					text-transform: uppercase
+					font-family: 'HeadingSmallcasePro-Light'
+					font-size: 36px
+					color: $accent
+					margin-bottom: 65px
+				.text-field
+					width: 100%
+					border: none
+					border-bottom: 1px solid #3E3E3E
+					background-color: $black
+					font-family: 'Aeroport-Medium'
+					font-size: 16px
+					font-weight: normal
+					color: $white
+					outline: none
+					margin-bottom: 24px
+					height: 33px
+					padding-bottom: 12px
+				.text-field::placeholder
+					color: #808080
+				.text-field::-webkit-input-placeholder
+					color: #808080
+				.text-field::-moz-placeholder
+					color: #808080
+				.text-field:-moz-placeholder
+					color: #808080
+				.text-field:-ms-input-placeholder
+					color: #808080
+				textarea.text-field
+					resize: none
+					height: 87px
+					margin-bottom: 57px
+				a.btn
+					display: inline-block
+					width: 194px
+					height: 58px
+					line-height: 60px
+					text-align: center
+					background-color: $white
+					span
+						display: block
+						font-family: 'HeadingSmallcasePro-Regular'
+						font-size: 18px
+						color: $black
+						transition: 0.3s
+						text-transform: uppercase
+				a.btn:hover
+					span
+						transform: scale(1.2)
+			form::before
+				content: ''
+				position: absolute
+				z-index: -1
+				bottom: 0
+				left: 0
+				margin: auto
+				right: 0
+				width: 96%
+				height: 97%
+				border-top-left-radius: 6%
+				border-top-right-radius: 6%
+				background-color: $black
+		section.buyCourse
+			padding-bottom: 240px
+			.container
+				position: relative
+				.photo
+					position: absolute
+					z-index: -1
+					top: -90px
+					left: 29%
+					width: 723px
+					height: 964px
+					background-color: $gray
+					img
+						width: 100%
+						vertical-align: bottom
+			.content
+				padding-left: 100px
+				h2
+					position: relative
+					z-index: 2
+					margin-top: 0
+					margin-bottom: 20px
+					font-family: 'HeadingSmallcasePro-Regular'
+					font-size: 95px
+					color: $black
+					text-transform: uppercase
+					letter-spacing: -3px
+					line-height: 78px
+					.online
+						position: relative
+						.dot
+							position: absolute
+							top: -16px
+							right: -23px
+							background-color: $accent
+							width: 17px
+							height: 17px
+							border-radius: 50%
+							animation: 1.5s blink infinite	
+				h2::before
+					content: '#1'
+					position: absolute
+					z-index: 1
+					top: -80px
+					left: 350px
+					font-family: 'HeadingSmallcasePro-Light'
+					font-size: 231px
+					color: #E7E7E7
+				p.subhead
+					font-family: 'Aeroport'
+					font-size: 20px
+					color: $black
+					margin-bottom: 65px
+					margin-top: 0
+				ul
+					list-style: none
+					padding-left: 64px
+					margin-bottom: 10px
+					margin-top: 0
+					li
+						position: relative
+						font-family: 'Aeroport'
+						font-size: 24px
+						color: $black
+					li:not(:last-child)
+						margin-bottom: 17.5px
+					li::before
+						content: ''
+						position: absolute
+						left: -64px
+						top: 6px
+						bottom: 0
+						margin: auto
+						background-color: $accent
+						width: 44px
+						height: 2px
+				span.price
+					font-family: 'Aeroport'
+					font-size: 96px
+					color: $black
+				a.btn
+					display: inline-block
+					width: 194px
+					height: 58px
+					line-height: 60px
+					margin-top: 35px
+					text-align: center
+					background-color: $accent
+					span
+						display: block
+						font-family: 'HeadingSmallcasePro-Regular'
+						font-size: 18px
+						color: $white
+						text-transform: uppercase
+						transition: 0.3s
+				a.btn:hover
+					span
+						transform: scale(1.2)
 	footer
 		padding-top: 160px
 		padding-bottom: 160px

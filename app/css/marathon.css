@@ -1715,13 +1715,528 @@ body main section.viktoria .text-block .black-board .more {
 }
 
 body main section.feedback h2 {
+  margin-bottom: 30px;
+}
+
+body main section.feedback a.btn {
+  display: block;
+  margin: auto;
+  width: 273px;
+  height: 58px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #FF3536;
+}
+
+body main section.feedback a.btn span {
+  display: block;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-family: 'HeadingSmallcasePro-Regular';
+  font-size: 18px;
+  color: #ffffff;
+}
+
+body main section.feedback a.btn:hover span {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body main section.feedback .carousel {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 52px;
+}
+
+body main section.compare h2 {
+  margin-bottom: 70px;
+}
+
+body main section.compare .carousel {
+  width: 90%;
+  margin-left: 8%;
+  margin-right: auto;
+}
+
+body main section.compare .owl-theme .owl-nav button.owl-next {
+  right: -9%;
+}
+
+body main section.feedback, body main section.compare {
+  padding-bottom: 140px;
+}
+
+body main section.feedback .owl-theme .owl-nav, body main section.compare .owl-theme .owl-nav {
   margin-top: 0;
-  margin-bottom: 80px;
+}
+
+body main section.feedback .owl-theme .owl-nav .owl-prev:hover, body main section.feedback .owl-theme .owl-nav .owl-next:hover, body main section.compare .owl-theme .owl-nav .owl-prev:hover, body main section.compare .owl-theme .owl-nav .owl-next:hover {
+  background-color: #FF3536;
+}
+
+body main section.feedback .owl-theme .owl-nav .owl-prev, body main section.feedback .owl-theme .owl-nav .owl-next, body main section.compare .owl-theme .owl-nav .owl-prev, body main section.compare .owl-theme .owl-nav .owl-next {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: 8px;
+}
+
+body main section.feedback .owl-theme .owl-nav .owl-prev span, body main section.feedback .owl-theme .owl-nav .owl-next span, body main section.compare .owl-theme .owl-nav .owl-prev span, body main section.compare .owl-theme .owl-nav .owl-next span {
+  display: none;
+}
+
+body main section.feedback .owl-theme .owl-nav .owl-prev, body main section.compare .owl-theme .owl-nav .owl-prev {
+  left: -17%;
+  background-position: 11px center;
+  background-image: url("../img/be-box/owl-prev.svg");
+}
+
+body main section.feedback .owl-theme .owl-nav .owl-next, body main section.compare .owl-theme .owl-nav .owl-next {
+  right: -17%;
+  background-position: 12px center;
+  background-image: url("../img/be-box/owl-next.svg");
+}
+
+body main section.feedback .owl-theme .owl-dots, body main section.compare .owl-theme .owl-dots {
+  margin-top: 28px;
+}
+
+body main section.feedback .owl-theme .owl-dots .owl-dot, body main section.compare .owl-theme .owl-dots .owl-dot {
+  outline: none;
+}
+
+body main section.feedback .owl-theme .owl-dots .owl-dot span, body main section.compare .owl-theme .owl-dots .owl-dot span {
+  width: 6px;
+  height: 6px;
+  background-color: #C0C0C0;
+  margin: 0 10px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main section.feedback .owl-theme .owl-dots .owl-dot:hover span, body main section.feedback .owl-theme .owl-dots .owl-dot.active span, body main section.compare .owl-theme .owl-dots .owl-dot:hover span, body main section.compare .owl-theme .owl-dots .owl-dot.active span {
+  background-color: #FF3536;
+}
+
+body main section.feedback, body main section.compare, body main section.faq {
+  overflow: hidden;
+}
+
+body main section.feedback h2, body main section.compare h2, body main section.faq h2 {
+  margin-top: 0;
   font-family: 'HeadingSmallcasePro-Regular';
   font-size: 72px;
   color: #120E18;
   text-transform: uppercase;
   text-align: center;
+}
+
+body main section.faq {
+  padding-bottom: 150px;
+}
+
+body main section.faq h2 {
+  margin-bottom: 90px;
+}
+
+body main section.faq .questions {
+  padding: 0 100px;
+}
+
+body main section.faq .questions .separ {
+  height: 1px;
+  width: 100%;
+  background-color: #F0F0F0;
+  display: block;
+}
+
+body main section.faq .questions p.head {
+  font-family: 'Aeroport-Bold';
+  font-size: 24px;
+  color: #120E18;
+  margin: 0;
+  cursor: pointer;
+  padding: 24px 0;
+  position: relative;
+}
+
+body main section.faq .questions p.head::after, body main section.faq .questions p.head::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1px;
+  height: 23px;
+  background-color: #FF3536;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main section.faq .questions p.head.active::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body main section.faq .questions p.head.active::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body main section.faq .questions p.head::before {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+body main section.faq .questions p.hidden {
+  font-family: 'Aeroport';
+  font-size: 18px;
+  color: #000000;
+  display: none;
+  margin: 0;
+  max-width: 80%;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+body main section.callMe {
+  position: relative;
+  margin-bottom: 200px;
+}
+
+body main section.callMe .background {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+body main section.callMe .background .layer {
+  width: 1445px;
+  height: 492px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #F8F8F8;
+}
+
+body main section.callMe .text-block, body main section.callMe form {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+body main section.callMe .text-block {
+  padding-left: 100px;
+  padding-top: 280px;
+  padding-bottom: 100px;
+}
+
+body main section.callMe .text-block h2 {
+  font-family: 'HeadingSmallcasePro-Regular';
+  font-size: 72px;
+  color: #FF3536;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+body main section.callMe .text-block p.subhead {
+  font-family: 'Aeroport-Medium';
+  font-size: 24px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+body main section.callMe .text-block a {
+  font-family: 'Aeroport';
+  font-size: 20px;
+  color: #000;
+  line-height: 1.5;
+}
+
+body main section.callMe .text-block a.underline {
+  border-bottom: 2px solid #9E9E9E;
+}
+
+body main section.callMe form {
+  width: 515px;
+  margin-left: 115px;
+  margin-right: -50px;
+  padding: 130px 95px 60px 80px;
+  background-image: url("../img/marathon/nutritionProgram-iphone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+body main section.callMe form p.form-head {
+  text-transform: uppercase;
+  font-family: 'HeadingSmallcasePro-Light';
+  font-size: 36px;
+  color: #FF3536;
+  margin-bottom: 65px;
+}
+
+body main section.callMe form .text-field {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #3E3E3E;
+  background-color: #000000;
+  font-family: 'Aeroport-Medium';
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffffff;
+  outline: none;
+  margin-bottom: 24px;
+  height: 33px;
+  padding-bottom: 12px;
+}
+
+body main section.callMe form .text-field::-webkit-input-placeholder {
+  color: #808080;
+}
+
+body main section.callMe form .text-field::-moz-placeholder {
+  color: #808080;
+}
+
+body main section.callMe form .text-field:-ms-input-placeholder {
+  color: #808080;
+}
+
+body main section.callMe form .text-field::-ms-input-placeholder {
+  color: #808080;
+}
+
+body main section.callMe form .text-field::placeholder {
+  color: #808080;
+}
+
+body main section.callMe form .text-field::-webkit-input-placeholder {
+  color: #808080;
+}
+
+body main section.callMe form .text-field::-moz-placeholder {
+  color: #808080;
+}
+
+body main section.callMe form .text-field:-moz-placeholder {
+  color: #808080;
+}
+
+body main section.callMe form .text-field:-ms-input-placeholder {
+  color: #808080;
+}
+
+body main section.callMe form textarea.text-field {
+  resize: none;
+  height: 87px;
+  margin-bottom: 57px;
+}
+
+body main section.callMe form a.btn {
+  display: inline-block;
+  width: 194px;
+  height: 58px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+body main section.callMe form a.btn span {
+  display: block;
+  font-family: 'HeadingSmallcasePro-Regular';
+  font-size: 18px;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+body main section.callMe form a.btn:hover span {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body main section.callMe form::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  right: 0;
+  width: 96%;
+  height: 97%;
+  border-top-left-radius: 6%;
+  border-top-right-radius: 6%;
+  background-color: #000000;
+}
+
+body main section.buyCourse {
+  padding-bottom: 240px;
+}
+
+body main section.buyCourse .container {
+  position: relative;
+}
+
+body main section.buyCourse .container .photo {
+  position: absolute;
+  z-index: -1;
+  top: -90px;
+  left: 29%;
+  width: 723px;
+  height: 964px;
+  background-color: #E7E7E7;
+}
+
+body main section.buyCourse .container .photo img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+body main section.buyCourse .content {
+  padding-left: 100px;
+}
+
+body main section.buyCourse .content h2 {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: 'HeadingSmallcasePro-Regular';
+  font-size: 95px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  line-height: 78px;
+}
+
+body main section.buyCourse .content h2 .online {
+  position: relative;
+}
+
+body main section.buyCourse .content h2 .online .dot {
+  position: absolute;
+  top: -16px;
+  right: -23px;
+  background-color: #FF3536;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  -webkit-animation: 1.5s blink infinite;
+          animation: 1.5s blink infinite;
+}
+
+body main section.buyCourse .content h2::before {
+  content: '#1';
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 350px;
+  font-family: 'HeadingSmallcasePro-Light';
+  font-size: 231px;
+  color: #E7E7E7;
+}
+
+body main section.buyCourse .content p.subhead {
+  font-family: 'Aeroport';
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 65px;
+  margin-top: 0;
+}
+
+body main section.buyCourse .content ul {
+  list-style: none;
+  padding-left: 64px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+body main section.buyCourse .content ul li {
+  position: relative;
+  font-family: 'Aeroport';
+  font-size: 24px;
+  color: #000000;
+}
+
+body main section.buyCourse .content ul li:not(:last-child) {
+  margin-bottom: 17.5px;
+}
+
+body main section.buyCourse .content ul li::before {
+  content: '';
+  position: absolute;
+  left: -64px;
+  top: 6px;
+  bottom: 0;
+  margin: auto;
+  background-color: #FF3536;
+  width: 44px;
+  height: 2px;
+}
+
+body main section.buyCourse .content span.price {
+  font-family: 'Aeroport';
+  font-size: 96px;
+  color: #000000;
+}
+
+body main section.buyCourse .content a.btn {
+  display: inline-block;
+  width: 194px;
+  height: 58px;
+  line-height: 60px;
+  margin-top: 35px;
+  text-align: center;
+  background-color: #FF3536;
+}
+
+body main section.buyCourse .content a.btn span {
+  display: block;
+  font-family: 'HeadingSmallcasePro-Regular';
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main section.buyCourse .content a.btn:hover span {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 body footer {
