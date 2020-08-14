@@ -23,9 +23,9 @@ html(lang="ru")
 
 		//- Styles
 		link(rel="stylesheet", href="css/hamburgers.css")
+		link(rel="stylesheet", href="css/animate.min.css")
 		link(rel="stylesheet", href="css/owl.carousel.min.css")
 		link(rel="stylesheet", href="css/owl.theme.default.min.css")
-		link(rel="stylesheet", href="css/animate.min.css")
 		link(rel="stylesheet", href="css/marathon.css")
 
 	body
@@ -78,7 +78,7 @@ html(lang="ru")
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51px" height="32px"><path fill-rule="evenodd"  stroke="rgb(255,255,255)" stroke-width="4px" stroke-linecap="round" stroke-linejoin="miter" fill="none" d="M44.278,4.499 L24.500,24.278 L4.722,4.499 "/></svg>
 			main
 				section.types
-					//-iframe#vimeo1(src="https://player.vimeo.com/video/409527023?color=ff3536&amp;autoplay=true&amp;muted=true&amp;controls=false&amp;loop=true&amp;autopause=0&amp;" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
+					//- iframe#vimeo1(src="https://player.vimeo.com/video/409527023?color=ff3536&amp;autoplay=true&amp;muted=true&amp;controls=false&amp;loop=true&amp;autopause=0&amp;" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
 					.container
 						h2 Виды тренировок в марафоне
 						ol
@@ -96,14 +96,6 @@ html(lang="ru")
 					.background
 						.photo1
 							img(src="img/marathon/wantsTo-photo1.jpg", alt="wantsTo-photo1.jpg")
-						.info-board
-							h3
-								|Наш марафон
-								br
-								|подходит
-							p.desc Для женщин разной подготовки: новички и продвинутые в фитнесе
-							.plus
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="140px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M140.000,76.000 L76.000,76.000 L76.000,140.000 L64.000,140.000 L64.000,76.000 L0.000,76.000 L0.000,64.000 L64.000,64.000 L64.000,0.000 L76.000,0.000 L76.000,64.000 L140.000,64.000 L140.000,76.000 Z"/></svg>
 					.container
 						h2
 							|Марафон 
@@ -127,11 +119,17 @@ html(lang="ru")
 							li Придать тонус и рельеф телу
 						.check
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="163px" height="122px"><path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="12px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M15.166,52.154 L55.539,92.543 L142.050,5.994 "/></svg>
+					.info-board-outer
+						.info-board
+							h3
+								|Наш марафон
+								br
+								|подходит
+							p.desc Для женщин разной подготовки: новички и продвинутые в фитнесе
+							.plus
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="140px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M140.000,76.000 L76.000,76.000 L76.000,140.000 L64.000,140.000 L64.000,76.000 L0.000,76.000 L0.000,64.000 L64.000,64.000 L64.000,0.000 L76.000,0.000 L76.000,64.000 L140.000,64.000 L140.000,76.000 Z"/></svg>
 				section.howGoing
-					.laptop-video
-						img(src="img/marathon/howGoing-Camera.png", alt="howGoing-Camera.png")
-						.video-layer
-							iframe#vimeo2(src="https://player.vimeo.com/video/409527023?color=ff3536&amp;autoplay=true&amp;muted=true&amp;controls=false&amp;loop=true&amp;audio=false&amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
+					.background
 					.container
 						h2 Как проходит марафон
 						.text-block
@@ -143,6 +141,10 @@ html(lang="ru")
 								li Питайтесь по нашей программе
 							a.btn(href="#")
 								span Получить результат
+						.laptop-video
+							img(src="img/marathon/howGoing-Camera.png", alt="howGoing-Camera.png")
+							.video-layer
+								iframe#vimeo2(src="https://player.vimeo.com/video/409527023?color=ff3536&amp;autoplay=true&amp;muted=true&amp;controls=false&amp;loop=true&amp;audio=false&amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
 				section.equipment
 					.container
 						h2 Фитнес #[span.accent +] Питание #[span.accent =] Результат
@@ -179,10 +181,11 @@ html(lang="ru")
 						h2 Программа питания
 						.phone-block
 							img.phone(src="img/marathon/nutritionProgram-iphone.png", alt="nutritionProgram-iphone.png")
-							img.active.view.view1.nutrition-phone-view#nutrition-phone-view1(src="img/marathon/iphone-view1.jpg", alt="iphone-view1.jpg")
-							img.view.view2.nutrition-phone-view#nutrition-phone-view2(src="img/marathon/iphone-view2.jpg", alt="iphone-view2.jpg")
-							img.view.view3.nutrition-phone-view#nutrition-phone-view3(src="img/marathon/iphone-view3.jpg", alt="iphone-view3.jpg")
-						.text-block
+							.owl-carousel.owl-theme#nutritionSlider
+								img.active.view(src="img/marathon/iphone-view1.jpg", alt="iphone-view1.jpg")
+								img.view(src="img/marathon/iphone-view2.jpg", alt="iphone-view2.jpg")
+								img.view(src="img/marathon/iphone-view3.jpg", alt="iphone-view3.jpg")
+						.text-block.nutrition-dots-container.owl-dots
 							.number 1
 							.subhead.nutrition-view-link МЕНЮ НА КАЖДУЮ НЕДЕЛЮ
 							p.text Cеми дневное меню с описанием каждого дня (завтрак, обед, ужин, два перекуса) с включением рецептов на каждый прием пищи, составленный диетологом школы
@@ -402,80 +405,109 @@ html(lang="ru")
 
 
 
+			//- $(некоторая хрень).ready(function(){
+
+				//- nutritionChangeRun = true;
+				//- let nutritionCounter = 0;
+
+				//- nutritionInterval = setInterval(nutritionChange, 2000);
+				//- function nutritionChange(){
 
 
-			nutritionChangeRun = true;
-			let nutritionCounter = 0;
+				//- 	if(!nutritionChangeRun){
+				//- 		nutritionCounter = 0;
+				//- 		return false;
+				//- 	}
+				//- 	if(nutritionCounter > 2){
+				//- 		nutritionCounter = 0;
+				//- 	}
+				//- 	nutritionCounter++;
+				//- 	console.log(nutritionCounter);
 
-			nutritionInterval = setInterval(nutritionChange, 2000);
-			function nutritionChange(){
-				if(!nutritionChangeRun){
-					nutritionCounter = 0;
-					return false;
-				}
-				if(nutritionCounter > 2){
-					nutritionCounter = 0;
-				}
-				nutritionCounter++;
-				console.log(nutritionCounter);
+				//- 	$('.nutrition-phone-view').fadeOut(350);
+				//- 	$('#nutrition-phone-view' + (nutritionCounter)).delay(350).fadeIn(350);
 
-				$('.nutrition-phone-view').fadeOut(350);
-				$('#nutrition-phone-view' + (nutritionCounter)).delay(350).fadeIn(350);
+				//- }
 
-			}
+				//- $(window).blur(function(){
+				//- 	nutritionChangeRun = false;
+				//- 	console.log('blur')
+				//- });
+				//- $(window).focus(function(){
+				//- 	nutritionChangeRun = true;
+				//- 	console.log('focus')
+				//- });
 
-			$(window).blur(function(){
-				nutritionChangeRun = false;
-				console.log('blur')
+
+				//- $('.nutrition-view-link').each(function(i){
+				//- 	let nutritionLeave;
+				//- 	let nutritionTimeout1;
+				//- 	$(this).mouseenter(function(){
+				//- 		clearTimeout(nutritionLeave);
+
+				//- 		nutritionChangeRun = false;
+				//- 		console.log('enter')
+
+
+				//- 		nutritionTimeout1 = setTimeout(function(){
+				//- 			$('.nutrition-phone-view').fadeOut(350);
+				//- 			$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
+				//- 		}, 100);
+				//- 	});
+				//- 	$(this).mouseleave(function(){
+				//- 		clearTimeout(nutritionTimeout1);
+
+				//- 		console.log('leave');
+
+				//- 		nutritionLeave = setTimeout(function(){
+				//- 			nutritionChangeRun = true;
+				//- 		}, 100)
+				//- 	});
+				//- 	$(this).click(function(){
+				//- 		clearTimeout(nutritionTimeout1);
+
+				//- 		nutritionChangeRun = false;
+				//- 		console.log('click');
+
+				//- 		$('.nutrition-phone-view').fadeOut(350);
+				//- 		$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
+				//- 	});
+				//- });	
+			//- });
+
+			
+			$('#nutritionSlider').owlCarousel({
+				items: 1,
+				loop: true,
+				dots: true,
+				nav: true,
+				autoplay: true,
+				autoplayTimeout: 2000,
+				mouseDrag: false,
+				touchDrag: false,
+				pullDrag: false,
+				animateIn: 'fadeIn',
+				animateOut: 'fadeOut',
+				dotsContainer: 'nutrition-dots-container',
 			});
-			$(window).focus(function(){
-				nutritionChangeRun = true;
-				console.log('focus')
-			});
-
 
 			$('.nutrition-view-link').each(function(i){
-				let nutritionScroll;
-				let nutritionLeave;
-				let nutritionTimeout1;
 				$(this).mouseenter(function(){
-					nutritionChangeRun = false;
-					console.log('enter')
-
-					clearTimeout(nutritionLeave);
-					clearTimeout(nutritionScroll);
-
-					nutritionTimeout1 = setTimeout(function(){
-						$('.nutrition-phone-view').fadeOut(350);
-						$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
-					}, 100);
+					$('#nutritionSlider').trigger('stop.owl.autoplay');
+					$('#nutritionSlider').trigger('to.owl.carousel', i);
 				});
 				$(this).mouseleave(function(){
-					clearTimeout(nutritionTimeout1);
-					console.log('leave');
-
-					nutritionLeave = setTimeout(function(){
-						nutritionChangeRun = true;
-					}, 100)
+					$('#nutritionSlider').trigger('play.owl.autoplay');
 				});
 				$(this).click(function(){
-					nutritionChangeRun = false;
-					console.log('click');
-
-					clearTimeout(nutritionTimeout1);
-					clearTimeout(nutritionScroll);
-
-					$('.nutrition-phone-view').fadeOut(350);
-					$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
-
-					$(window).scroll(function(){
-						clearTimeout(nutritionLeave);
-						nutritionScroll = setTimeout(function(){
-							nutritionChangeRun = true;
-						}, 100)
-					});
+					$('#nutritionSlider').trigger('to.owl.carousel', i);
 				});
-			});	
+				$(document).on('touchstart', function(){
+					$('#nutritionSlider').trigger('play.owl.autoplay');
+				});
+			});
+
+
 
 			$('#viktoria-link-more').click(function(){
 				const viktoriaLinkText1 = 'Узнать больше';
@@ -505,8 +537,6 @@ html(lang="ru")
 				dots: true,
 				dotsEach: true,
 				nav: true,
-				margin: 95,
-				autoWidth: true
 			});
 
 			$('.faq-qBtn').click(function(){

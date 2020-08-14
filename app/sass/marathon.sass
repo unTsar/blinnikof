@@ -441,7 +441,7 @@ body
 			position: relative
 			padding-top: 170px
 			padding-bottom: 210px
-			.background
+			.background, .info-board-outer
 				position: absolute
 				z-index: -1
 				width: 100%
@@ -451,6 +451,7 @@ body
 				overflow: hidden
 				padding-top: 140px
 				text-align: center
+			.background
 				.photo1
 					display: inline-block
 					background-color: #F1E9E8
@@ -458,45 +459,45 @@ body
 					img
 						width: 608px
 						height: auto
-				.info-board::before
-					content: ''
-					position: absolute
-					left: 0
-					top: -225px
-					width: 19px
-					height: 19px
-					border-radius: 50%
-					animation: 1.5s blink infinite
-					background-color: $accent
-				.info-board
-					position: absolute
-					left: 55.5%
-					bottom: 155px
-					background-color: $accent
-					padding-top: 70px
-					padding-bottom: 58px
-					padding-left: 120px
-					padding-right: 100px
-					width: 685px
-					text-align: left
-					h3
-						margin-top: 0
-						margin-bottom: 50px
-						font-family: 'HeadingSmallcasePro-Regular'
-						font-size: 72px
-						color: $white
-						text-transform: uppercase
-					p.desc
-						margin-top: 0
-						margin-bottom: 65px
-						font-family: 'Aeroport-Light'
-						font-size: 24px
-						line-height: 1.3
-						color: $white
-					.plus
-						svg
-							width: 140px
-							height: 140px
+			.info-board::before
+				content: ''
+				position: absolute
+				left: 0
+				top: -225px
+				width: 19px
+				height: 19px
+				border-radius: 50%
+				animation: 1.5s blink infinite
+				background-color: $accent
+			.info-board
+				position: absolute
+				left: 55.5%
+				bottom: 155px
+				background-color: $accent
+				padding-top: 70px
+				padding-bottom: 58px
+				padding-left: 120px
+				padding-right: 100px
+				width: 685px
+				text-align: left
+				h3
+					margin-top: 0
+					margin-bottom: 50px
+					font-family: 'HeadingSmallcasePro-Regular'
+					font-size: 72px
+					color: $white
+					text-transform: uppercase
+				p.desc
+					margin-top: 0
+					margin-bottom: 65px
+					font-family: 'Aeroport-Light'
+					font-size: 24px
+					line-height: 1.3
+					color: $white
+				.plus
+					svg
+						width: 140px
+						height: 140px
 
 			h2
 				margin-top: 0
@@ -536,10 +537,18 @@ body
 			position: relative
 			padding-top: 95px
 			margin-bottom: 120px
-			background-color: #f2f2f2
+			.background
+				background-color: #f2f2f2
+				position: absolute
+				top: 0
+				right: 0
+				left: 0
+				z-index: -1
+				width: 100%
+				height: 100%
 			.laptop-video
 				position: absolute
-				bottom: -120px
+				bottom: -110px
 				right: 53%
 				user-select: none
 				.video-layer
@@ -598,7 +607,8 @@ body
 						background-color: $accent
 				a.btn
 					position: relative
-					bottom: -30px
+					margin-top: 30px
+					margin-bottom: -30px
 					display: inline-block
 					width: 212px
 					height: 58px
@@ -765,7 +775,20 @@ body
 					height: auto
 					vertical-align: bottom
 					line-height: normal
-				img.view
+					pointer-events: none
+				// img.view
+				// 	margin: auto
+				// 	position: absolute
+				// 	z-index: 1
+				// 	top: 17px
+				// 	left: 0
+				// 	right: 0
+				// 	width: 389px
+				// 	height: auto
+				// 	display: none
+				// img.view.active
+				// 	display: block
+				.owl-carousel
 					margin: auto
 					position: absolute
 					z-index: 1
@@ -773,10 +796,6 @@ body
 					left: 0
 					right: 0
 					width: 389px
-					height: auto
-					display: none
-				img.view.active
-					display: block
 			.phone-block::before
 				content: ''
 				position: absolute
@@ -1113,13 +1132,16 @@ body
 			h2
 				margin-bottom: 70px
 			.carousel
-				width: 90%
-				margin-left: 8%
-				margin-right: auto
+				width: 100%
 			.owl-theme
 				.owl-nav
+					button.owl-next, button.owl-prev
+						top: -45%
 					button.owl-next
-						right: -9%
+						right: -100px
+					button.owl-prev
+						left: -100px
+
 		section.feedback, section.compare
 			padding-bottom: 140px
 			.owl-theme
@@ -1474,3 +1496,109 @@ body
 			min-width: 450px
 		nav.menu.hidden
 			left: -450px
+@media only screen and(max-width: 1365px)
+	body
+		main
+			section.feedback, section.compare
+				.owl-theme
+					.owl-nav
+						.owl-prev
+							left: -10%
+						.owl-next
+							right: -10%
+			section.compare
+				.carousel
+					width: 80%
+					margin: 0 auto
+@media only screen and(max-width: 1200px)
+	body
+		header
+			nav
+				.socials
+					a
+						background-color: $white
+						border-radius: 50%
+		main
+			section.wantsTo
+				.info-board-outer
+					padding-top: 0
+					position: relative
+					width: auto
+					height: auto
+					.info-board
+						position: relative
+						left: 0
+						bottom: 0
+				.background
+					.photo1
+						margin-left: 45%
+			section.howGoing
+				margin-bottom: 0
+				.background
+					height: 80%
+				.laptop-video
+					position: relative
+					bottom: 0
+					right: 0
+					width: 900px
+					margin: 0 auto
+					margin-top: 50px
+				.text-block
+					max-width: none
+					padding-left: 60px
+					a.btn
+						margin-bottom: 0
+						margin-left: auto
+						margin-right: auto
+						display: block
+			section.equipment
+				padding-top: 100px
+				h2
+					font-size: 90px
+					margin-bottom: 165px
+			section.fitnessProgram
+				h2
+					padding-right: 0
+				.text-block
+					padding-left: 390px
+			section.trialClass
+				.text-block
+					a.btn
+						display: block
+						margin: 0 auto
+					span.b, p.text
+						line-height: normal
+			section.price
+				.background
+					.photo
+						img
+							margin-left: -20%
+			section.callMe
+				.background
+					.layer
+						width: 100%
+						height: 100%
+						top: 0
+					.text-block
+						padding-top: 100px
+@media only screen and(max-width: 1100px)
+	body
+		main
+			section.viktoria
+				.text-block
+					max-width: 550px
+			section.buyCourse
+				.container
+					.photo
+						left: auto
+						right: 0
+@media only screen and(max-width: 1000px)
+	body
+		main
+			section.nutritionProgram
+				.phone-block
+					margin-right: 55px
+					margin-left: -15px
+			section.faq
+				.questions
+					padding: 0 50px

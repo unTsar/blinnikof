@@ -16,9 +16,9 @@
     <link rel="icon" sizes="16x16" type="image/png" href="img/favicon/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="img/favicon/48favicon.ico">
     <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/marathon.css">
   </head>
   <body>
@@ -94,11 +94,6 @@
         <section class="wantsTo">
           <div class="background">
             <div class="photo1"><img src="img/marathon/wantsTo-photo1.jpg" alt="wantsTo-photo1.jpg"></div>
-            <div class="info-board">
-              <h3>Наш марафон<br>подходит</h3>
-              <p class="desc">Для женщин разной подготовки: новички и продвинутые в фитнесе</p>
-              <div class="plus"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="140px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M140.000,76.000 L76.000,76.000 L76.000,140.000 L64.000,140.000 L64.000,76.000 L0.000,76.000 L0.000,64.000 L64.000,64.000 L64.000,0.000 L76.000,0.000 L76.000,64.000 L140.000,64.000 L140.000,76.000 Z"/></svg></div>
-            </div>
           </div>
           <div class="container">
             <h2>Марафон <br>для тех, <br>кто хочет</h2>
@@ -113,13 +108,16 @@
             </ul>
             <div class="check"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="163px" height="122px"><path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="12px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M15.166,52.154 L55.539,92.543 L142.050,5.994 "/></svg></div>
           </div>
-        </section>
-        <section class="howGoing">
-          <div class="laptop-video"><img src="img/marathon/howGoing-Camera.png" alt="howGoing-Camera.png">
-            <div class="video-layer">
-              <iframe id="vimeo2" src="https://player.vimeo.com/video/409527023?color=ff3536&amp;amp;autoplay=true&amp;amp;muted=true&amp;amp;controls=false&amp;amp;loop=true&amp;amp;audio=false&amp;amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <div class="info-board-outer">
+            <div class="info-board">
+              <h3>Наш марафон<br>подходит</h3>
+              <p class="desc">Для женщин разной подготовки: новички и продвинутые в фитнесе</p>
+              <div class="plus"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="140px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M140.000,76.000 L76.000,76.000 L76.000,140.000 L64.000,140.000 L64.000,76.000 L0.000,76.000 L0.000,64.000 L64.000,64.000 L64.000,0.000 L76.000,0.000 L76.000,64.000 L140.000,64.000 L140.000,76.000 Z"/></svg></div>
             </div>
           </div>
+        </section>
+        <section class="howGoing">
+          <div class="background"></div>
           <div class="container">
             <h2>Как проходит марафон</h2>
             <div class="text-block">
@@ -130,6 +128,11 @@
                 <li>Танцуйте</li>
                 <li>Питайтесь по нашей программе</li>
               </ul><a class="btn" href="#"><span>Получить результат</span></a>
+            </div>
+            <div class="laptop-video"><img src="img/marathon/howGoing-Camera.png" alt="howGoing-Camera.png">
+              <div class="video-layer">
+                <iframe id="vimeo2" src="https://player.vimeo.com/video/409527023?color=ff3536&amp;amp;autoplay=true&amp;amp;muted=true&amp;amp;controls=false&amp;amp;loop=true&amp;amp;audio=false&amp;amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              </div>
             </div>
           </div>
         </section>
@@ -173,8 +176,10 @@
           </div>
           <div class="container">
             <h2>Программа питания</h2>
-            <div class="phone-block"><img class="phone" src="img/marathon/nutritionProgram-iphone.png" alt="nutritionProgram-iphone.png"><img class="active view view1 nutrition-phone-view" id="nutrition-phone-view1" src="img/marathon/iphone-view1.jpg" alt="iphone-view1.jpg"><img class="view view2 nutrition-phone-view" id="nutrition-phone-view2" src="img/marathon/iphone-view2.jpg" alt="iphone-view2.jpg"><img class="view view3 nutrition-phone-view" id="nutrition-phone-view3" src="img/marathon/iphone-view3.jpg" alt="iphone-view3.jpg"></div>
-            <div class="text-block">
+            <div class="phone-block"><img class="phone" src="img/marathon/nutritionProgram-iphone.png" alt="nutritionProgram-iphone.png">
+              <div class="owl-carousel owl-theme" id="nutritionSlider"><img class="active view" src="img/marathon/iphone-view1.jpg" alt="iphone-view1.jpg"><img class="view" src="img/marathon/iphone-view2.jpg" alt="iphone-view2.jpg"><img class="view" src="img/marathon/iphone-view3.jpg" alt="iphone-view3.jpg"></div>
+            </div>
+            <div class="text-block nutrition-dots-container owl-dots">
               <div class="number">1</div>
               <div class="subhead nutrition-view-link">МЕНЮ НА КАЖДУЮ НЕДЕЛЮ</div>
               <p class="text">Cеми дневное меню с описанием каждого дня (завтрак, обед, ужин, два перекуса) с включением рецептов на каждый прием пищи, составленный диетологом школы</p>
@@ -385,80 +390,109 @@
     
     
     
+    	//- $(некоторая хрень).ready(function(){
+    
+    		//- nutritionChangeRun = true;
+    		//- let nutritionCounter = 0;
+    
+    		//- nutritionInterval = setInterval(nutritionChange, 2000);
+    		//- function nutritionChange(){
     
     
-    	nutritionChangeRun = true;
-    	let nutritionCounter = 0;
+    		//- 	if(!nutritionChangeRun){
+    		//- 		nutritionCounter = 0;
+    		//- 		return false;
+    		//- 	}
+    		//- 	if(nutritionCounter > 2){
+    		//- 		nutritionCounter = 0;
+    		//- 	}
+    		//- 	nutritionCounter++;
+    		//- 	console.log(nutritionCounter);
     
-    	nutritionInterval = setInterval(nutritionChange, 2000);
-    	function nutritionChange(){
-    		if(!nutritionChangeRun){
-    			nutritionCounter = 0;
-    			return false;
-    		}
-    		if(nutritionCounter > 2){
-    			nutritionCounter = 0;
-    		}
-    		nutritionCounter++;
-    		console.log(nutritionCounter);
+    		//- 	$('.nutrition-phone-view').fadeOut(350);
+    		//- 	$('#nutrition-phone-view' + (nutritionCounter)).delay(350).fadeIn(350);
     
-    		$('.nutrition-phone-view').fadeOut(350);
-    		$('#nutrition-phone-view' + (nutritionCounter)).delay(350).fadeIn(350);
+    		//- }
     
-    	}
+    		//- $(window).blur(function(){
+    		//- 	nutritionChangeRun = false;
+    		//- 	console.log('blur')
+    		//- });
+    		//- $(window).focus(function(){
+    		//- 	nutritionChangeRun = true;
+    		//- 	console.log('focus')
+    		//- });
     
-    	$(window).blur(function(){
-    		nutritionChangeRun = false;
-    		console.log('blur')
+    
+    		//- $('.nutrition-view-link').each(function(i){
+    		//- 	let nutritionLeave;
+    		//- 	let nutritionTimeout1;
+    		//- 	$(this).mouseenter(function(){
+    		//- 		clearTimeout(nutritionLeave);
+    
+    		//- 		nutritionChangeRun = false;
+    		//- 		console.log('enter')
+    
+    
+    		//- 		nutritionTimeout1 = setTimeout(function(){
+    		//- 			$('.nutrition-phone-view').fadeOut(350);
+    		//- 			$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
+    		//- 		}, 100);
+    		//- 	});
+    		//- 	$(this).mouseleave(function(){
+    		//- 		clearTimeout(nutritionTimeout1);
+    
+    		//- 		console.log('leave');
+    
+    		//- 		nutritionLeave = setTimeout(function(){
+    		//- 			nutritionChangeRun = true;
+    		//- 		}, 100)
+    		//- 	});
+    		//- 	$(this).click(function(){
+    		//- 		clearTimeout(nutritionTimeout1);
+    
+    		//- 		nutritionChangeRun = false;
+    		//- 		console.log('click');
+    
+    		//- 		$('.nutrition-phone-view').fadeOut(350);
+    		//- 		$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
+    		//- 	});
+    		//- });	
+    	//- });
+    
+    	
+    	$('#nutritionSlider').owlCarousel({
+    		items: 1,
+    		loop: true,
+    		dots: true,
+    		nav: true,
+    		autoplay: true,
+    		autoplayTimeout: 2000,
+    		mouseDrag: false,
+    		touchDrag: false,
+    		pullDrag: false,
+    		animateIn: 'fadeIn',
+    		animateOut: 'fadeOut',
+    		dotsContainer: 'nutrition-dots-container',
     	});
-    	$(window).focus(function(){
-    		nutritionChangeRun = true;
-    		console.log('focus')
-    	});
-    
     
     	$('.nutrition-view-link').each(function(i){
-    		let nutritionScroll;
-    		let nutritionLeave;
-    		let nutritionTimeout1;
     		$(this).mouseenter(function(){
-    			nutritionChangeRun = false;
-    			console.log('enter')
-    
-    			clearTimeout(nutritionLeave);
-    			clearTimeout(nutritionScroll);
-    
-    			nutritionTimeout1 = setTimeout(function(){
-    				$('.nutrition-phone-view').fadeOut(350);
-    				$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
-    			}, 100);
+    			$('#nutritionSlider').trigger('stop.owl.autoplay');
+    			$('#nutritionSlider').trigger('to.owl.carousel', i);
     		});
     		$(this).mouseleave(function(){
-    			clearTimeout(nutritionTimeout1);
-    			console.log('leave');
-    
-    			nutritionLeave = setTimeout(function(){
-    				nutritionChangeRun = true;
-    			}, 100)
+    			$('#nutritionSlider').trigger('play.owl.autoplay');
     		});
     		$(this).click(function(){
-    			nutritionChangeRun = false;
-    			console.log('click');
-    
-    			clearTimeout(nutritionTimeout1);
-    			clearTimeout(nutritionScroll);
-    
-    			$('.nutrition-phone-view').fadeOut(350);
-    			$('#nutrition-phone-view' + (i + 1)).delay(350).fadeIn(350);
-    
-    			$(window).scroll(function(){
-    				clearTimeout(nutritionLeave);
-    				nutritionScroll = setTimeout(function(){
-    					nutritionChangeRun = true;
-    				}, 100)
-    			});
+    			$('#nutritionSlider').trigger('to.owl.carousel', i);
     		});
-    	});	
+    		$(document).on('touchstart', function(){
+    			$('#nutritionSlider').trigger('play.owl.autoplay');
+    		});
+    	});
+    
+    
     
     	$('#viktoria-link-more').click(function(){
     		const viktoriaLinkText1 = 'Узнать больше';
@@ -488,8 +522,6 @@
     		dots: true,
     		dotsEach: true,
     		nav: true,
-    		margin: 95,
-    		autoWidth: true
     	});
     
     	$('.faq-qBtn').click(function(){
