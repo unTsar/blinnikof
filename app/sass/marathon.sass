@@ -193,16 +193,20 @@ body
 			display: -o-flex
 			display: flex
 			align-items: flex-start
-			padding-right: 7.2%
-			padding-left: 32%
+			padding-right: 7.35%
+			padding-left: 31%
 			overflow: hidden
 			.photo1, .photo2
 				background-color: #F1E9E8
+				img.mob
+					display: none
 			.photo1
 				margin-left: auto
 				img
-					width: 605px
+					width: 605px	
 					height: auto
+				.white-board-mob
+					display: none
 			.photo2
 				margin-top: 250px
 				img
@@ -210,7 +214,7 @@ body
 					height: auto
 		nav
 			padding-top: 95px
-			padding-right: 156px
+			padding-right: 135px
 			.menu
 				.circle
 					border-radius: 50%
@@ -250,7 +254,7 @@ body
 					opacity: 1
 			.logo
 				margin-left: 30px
-				margin-right: 57px
+				margin-right: 55px
 				img
 					width: 163px
 					height: 37px
@@ -259,10 +263,10 @@ body
 				margin-right: auto
 				a
 					font-family: "Aeroport"
-					font-size: 18px
+					font-size: 16px
 					color: $blackP
 				a:not(:last-child)
-					margin-right: 30px
+					margin-right: 25px
 			.socials
 				padding-bottom: 5px
 				align-items: flex-end
@@ -283,10 +287,11 @@ body
 				font-size: 95px
 				color: $black
 				text-transform: uppercase
-				letter-spacing: -3px
-				line-height: 78px
+				letter-spacing: -3.9px
+				line-height: 86px
 				.online
 					position: relative
+					display: inline-block
 					.dot
 						position: absolute
 						top: -16px
@@ -303,37 +308,40 @@ body
 				font-size: 20px
 				color: $black
 				letter-spacing: 1px
+			.number
+				font-family: 'HeadingSmallcasePro-Light'
+				font-size: 219px
+				color: $gray
+				margin-bottom: -23px
+			.number.mob
+				display: none
 			.btn-outer, .offer
 				display: inline-block
 				vertical-align: top
 				text-align: center
 			.btn-outer
 				margin-right: 47px
-				.number
-					font-family: 'HeadingSmallcasePro-Light'
-					font-size: 219px
-					color: $gray
-					margin-bottom: -23px
-				a.btn
-					background-color: $black
-					display: inline-block
-					width: 176px
-					height: 57px
-					line-height: 60px
-					span
-						transition: 0.3s
-						font-family: 'HeadingSmallcasePro-Regular'
-						font-size: 18px
-						color: $white
-						text-transform: uppercase
-						display: block
-				a.btn:hover
-					span
-						transform: scale(1.2)
+			a.btn.try
+				background-color: $black
+				display: inline-block
+				width: 176px
+				height: 57px
+				line-height: 60px
+				text-align: center
+				span
+					transition: 0.3s
+					font-family: 'HeadingSmallcasePro-Regular'
+					font-size: 18px
+					color: $white
+					text-transform: uppercase
+					display: block
+			a.btn.try:hover
+				span
+					transform: scale(1.2)
 			.offer
 				background-color: $accent
 				color: $white
-				padding: 45px 63px 135px 78px
+				padding: 45px 60px 135px 73px
 				.headtext
 					margin-bottom: 40px
 					span
@@ -355,6 +363,7 @@ body
 					font-size: 24px
 					font-family: 'Aeroport'
 					line-height: 1
+					letter-spacing: -1px
 				a.btn
 					margin-bottom: 45px
 					display: inline-block
@@ -498,6 +507,8 @@ body
 					svg
 						width: 140px
 						height: 140px
+					img.mob
+						display: none
 
 			h2
 				margin-top: 0
@@ -533,6 +544,8 @@ body
 				svg
 					width: 163px
 					height: 122px
+				img.mob
+					display: none
 		section.howGoing
 			position: relative
 			padding-top: 95px
@@ -755,6 +768,8 @@ body
 						width: 705px
 						height: auto
 						vertical-align: bottom
+			.container
+				position: relative
 			h2
 				margin-top: 0
 				margin-bottom: 95px
@@ -764,10 +779,13 @@ body
 				color: $black
 				text-transform: uppercase
 			.phone-block
-				position: relative
+				position: absolute
+				top: 170px
+				left: -4%
+				pointer-events: none
 				display: inline-block
-				margin-right: 115px
-				margin-left: -70px
+				// margin-right: 115px
+				// margin-left: -70px
 				img.phone
 					position: relative
 					z-index: 2
@@ -810,6 +828,7 @@ body
 			.text-block
 				display: inline-block
 				max-width: 410px
+				margin-left: 500px
 				.number, .subhead
 					font-family: 'Aeroport-Medium'
 					color: $accent
@@ -1132,7 +1151,8 @@ body
 			h2
 				margin-bottom: 70px
 			.carousel
-				width: 100%
+				max-width: 1120px
+				margin: 0 auto
 			.owl-theme
 				.owl-nav
 					button.owl-next, button.owl-prev
@@ -1463,6 +1483,8 @@ body
 		nav
 			.logo
 				margin-right: auto
+				a
+					display: inline-block
 				img
 					width: 163px
 					height: 37px
@@ -1479,12 +1501,31 @@ body
 			.socials
 				padding-bottom: 3px
 				a
+					display: inline-block
 					img
 						width: 28px
 						height: 28px
 						vertical-align: bottom
 				a:not(:last-child)
 					margin-right: 10px
+			a.btn.request
+				display: none
+				width: 35.9rem
+				height: 10rem
+				line-height: 10.5rem
+				margin-top: 10.5rem
+				background-color: $accent
+				text-align: center
+				span
+					display: block
+					font-family: 'HeadingSmallcasePro-Regular'
+					font-size: 4.167rem
+					color: $white
+					text-transform: uppercase
+					transition: 0.3s
+			a.btn.request:hover
+				span
+					transform: scale(1.2)
 
 @media only screen and(max-height: 830px)
 	body
@@ -1595,10 +1636,462 @@ body
 @media only screen and(max-width: 1000px)
 	body
 		main
-			section.nutritionProgram
-				.phone-block
-					margin-right: 55px
-					margin-left: -15px
 			section.faq
 				.questions
 					padding: 0 50px
+
+@media only screen and(max-width: 960px)
+	html, body
+		font-size: 10px
+	body
+		.container
+			padding: 0 3rem
+		header
+			.background
+				padding: 0
+				display: block
+				text-align: right
+				.photo1, .photo2
+					display: block
+					margin-left: auto
+					img.desk
+						display: none
+					img.mob
+						display: block
+				.photo1
+					position: relative
+					width: 48.7rem
+					img.mob
+						width: 100%
+					.white-board-mob
+						display: block
+						position: absolute
+						z-index: 1
+						bottom: -7.1rem
+						left: -26.3rem
+						background-color: $white
+						width: 50.9rem
+						height: 34.3rem
+				.photo2
+					margin-top: 0
+					position: relative
+					width: 33.2rem
+					img.photo.mob
+						width: 100%
+					img.phone.mob
+						width: 25.3rem
+						position: absolute
+						z-index: 2
+						top: 2.3rem
+						left: 6.0rem
+				.photo2::before
+					content: ''
+					position: absolute
+					z-index: 1
+					top: 3.1rem
+					left: 7.6rem
+					width: 1.6rem
+					height: 4.2rem
+					background-color: #EEE4E3
+
+			nav
+				padding: 3em 0
+				.logo
+					margin-left: 6rem
+					margin-right: 0
+					img.imgLogo
+						width: 24rem
+						height: auto
+				.menu
+					button.circle
+						width: 75px
+						height: 75px
+					.hamburger
+						.hamburger-box
+							width: 40px
+							height: 21px
+							.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+								width: 40px
+								height: 4px
+							.hamburger-inner
+								top: 2px
+							.hamburger-inner::before
+								top: 8px
+							.hamburger-inner::after
+								top: 16px
+					.hamburger--slider.is-active 
+						.hamburger-inner::after
+							transform: translate3d(0, -16px, 0) rotate(-90deg)
+					.hamburger--slider.is-active .hamburger-inner
+						transform: translate3d(0, 8px, 0) rotate(45deg)
+				.contacts, .socials
+					display: none
+			section.first
+				padding-top: 4rem
+				padding-bottom: 10.9rem
+				h1
+					font-size: 11.667rem
+					line-height: 10.9rem
+					margin-bottom: 2rem
+					max-width: 55%
+				p.desc, .number.mob
+					display: inline-block
+					vertical-align: middle
+				p.desc
+					font-size: 2.917rem
+					line-height: 3.2rem
+					margin-top: 4rem
+					margin-bottom: 4.5rem
+					margin-right: 8.5rem
+					max-width: 20rem
+				.number
+					font-size: 20.148rem
+					margin-bottom: -3rem
+				.btn-outer
+					display: block
+					.number.desk
+						display: none
+				a.btn.try
+					display: block
+					width: 35.5rem
+					height: 10rem
+					line-height: 10.5rem
+					margin-bottom: 3rem
+					span
+						font-size: 4.167rem
+				.offer
+					padding: 4rem 3rem 15.6rem 3rem
+					margin-left: -3rem
+					.headtext
+						margin-bottom: 4rem
+						span
+							font-size: 6.25rem
+						span::after
+							height: 5px
+					p.text
+						margin-bottom: 4rem
+						line-height: 4rem
+						font-size: 3.333rem
+						text-transform: uppercase
+						font-family: 'HeadingSmallcasePro-Regular'
+					a.btn
+						width: 36.1rem
+						height: 10rem
+						line-height: 10rem
+						border-width: 4px
+						margin-bottom: 4.4rem
+						span
+							font-size: 4.167rem
+
+		main
+			section.types
+				padding: 14.5rem 0
+				h2
+					font-size: 9.167rem
+					max-width: 40rem
+					margin: 0 3rem 14.5rem 3rem
+				ol
+					margin-left: 16rem
+					max-width: none
+					li
+						font-size: 3.333rem
+						.sm
+							font-size: 2.5rem
+							margin-top: 1rem
+					li:not(:last-child)
+						margin-bottom: 1.75rem
+			section.wantsTo
+				padding: 15rem 0 
+				.background
+					padding-top: 26rem
+					.photo1
+						position: relative
+						margin-left: 26%
+						img
+							width: 79.9rem
+				h2
+					position: relative
+					font-size: 9.167rem
+					margin: 0 3rem	
+					line-height: normal
+					margin-bottom: 6.5rem
+					br
+						display: none
+				h2::before
+					content: ''
+					position: absolute
+					bottom: 1rem
+					right: -2rem
+					width: 2.2rem
+					height: 2.2rem
+					border-radius: 50%
+					animation: 1.5s blink infinite
+					background-color: $accent
+				ul
+					padding-left: 8rem
+					max-width: 42rem
+					margin-bottom: 1rem
+					li
+						font-size: 3.333rem
+						line-height: 1.08
+					li::before
+						width: 6rem
+						height: 0.4rem
+						top: 2.1rem
+						margin-right: 2rem
+					li:not(:last-child)
+						margin-bottom: 5rem
+				.check
+					margin-bottom: 8rem
+					img.mob
+					 	display: block
+					 	margin-left: 8rem
+					svg
+						display: none
+				.info-board-outer
+					.info-board
+						width: 64rem
+						padding: 9.4rem 7rem 9rem 10rem
+						h3
+							font-size: 9.167rem
+							letter-spacing: -2px
+							line-height: 0.88
+							margin-bottom: 5rem
+						p.desc
+							font-size: 4.167rem
+							line-height: 1.16
+							margin-bottom: 8rem
+							max-width: none
+							span.subtext
+								display: block
+						.plus
+							text-align: right
+							svg
+								display: none
+							img.mob
+								display: inline-block
+								vertical-align: bottom
+								width: 24rem
+								height: 24rem
+					.info-board::before
+						content: none
+			section.howGoing
+				padding-top: 14.5rem
+				.background
+					height: 87%
+				h2
+					font-size: 9.167rem
+					line-height: 8.5rem
+					margin-bottom: 8.5rem
+				.text-block
+					padding: 0 3rem
+					p.desc
+						font-size: 3.333rem
+						margin-bottom: 9rem
+					ul
+						margin-bottom: 8.5rem
+						padding-left: 8rem
+						li
+							font-size: 3.333rem
+							line-height: 4rem
+						li::before
+							width: 6rem
+							height: 0.4rem
+							top: 2rem
+							margin-right: 2rem
+						li:not(:last-child)
+							margin-bottom: 4rem
+					a.btn
+						width: 47rem
+						height: 10rem
+						line-height: 10.5rem
+						span
+							font-size: 4.167rem
+				.laptop-video
+					width: 75rem
+					margin: 10rem auto 0 auto
+					img
+						width: 77rem
+						margin-left: -2.4rem
+					.video-layer
+						width: auto
+						top: 1.2rem
+						left: 6.8rem
+						iframe
+							width: 61.1rem
+							height: 38.1rem
+							margin: 0
+			section.equipment
+				padding-top: 18.5rem
+				padding-bottom: 15rem
+				h2
+					font-size: 12.013rem
+					text-align: left
+					padding-left: 16rem
+					margin-bottom: 35rem
+				h3
+					font-size: 9.167rem
+					padding-left: 8rem
+					margin-bottom: 13.5rem
+				.black-board
+					margin-left: -3rem
+					padding: 10rem 5rem 10rem 13.5rem
+					max-width: 56rem
+					.back-photo
+						left: -30.2rem
+						bottom: auto
+						top: -37.2rem
+					ul
+						padding-left: 0
+						li
+							font-size: 3.333rem
+						li::before
+							width: 6rem
+							height: 0.4rem
+							margin-right: 2rem
+							top: 2.2rem
+						li:not(:last-child)
+							margin-bottom: 3.5rem
+			section.fitnessProgram
+				padding-top: 5rem
+				padding-bottom: 17rem
+				.background
+					.photo
+						margin: 0
+						img
+							width: 100%
+				h2
+					font-size: 9.167rem
+					margin-bottom: 15rem
+					text-align: left
+					letter-spacing: -3px
+					padding: 0 6rem 0 28rem
+				.text-block
+					padding-left: 17.5rem
+					max-width: 56.5rem
+					.number
+						font-size: 14.583rem
+						line-height: 0.8
+						margin-bottom: 2rem
+					.subhead
+						font-size: 4.167rem
+						line-height: 1
+						margin-bottom: 2.5rem
+					p.text
+						font-size: 3.333rem
+						line-height: 1.25
+					p.text:not(:last-child)
+						margin-bottom: 6rem
+			section.nutritionProgram
+				padding-top: 9rem
+				.background
+					top: 0
+					padding-left: 22%
+				h2
+					font-size: 9.167rem
+					padding: 0
+					margin-bottom: 14.5rem
+					text-align: center
+				.phone-block
+					position: relative
+					top: auto
+					left: auto
+					margin: 0 auto
+					display: block
+					width: 52.1rem
+					pointer-events: all
+					img.phone
+						width: 100%
+					.owl-carousel	
+						width: 88%
+						height: 100%
+					.owl-carousel 
+						.owl-nav 
+							margin-top: 0
+							.owl-prev:hover, .owl-next:hover, 
+								background-color: $accent
+							.owl-prev, .owl-next
+								transition: 0.3s
+								outline: none
+								position: absolute
+								top: 0
+								bottom: 0
+								margin: auto
+								width: 40px
+								height: 40px
+								border-radius: 50%
+								background-color: $black
+								background-repeat: no-repeat
+								span
+									display: none
+							.owl-prev
+								background-size: 10.5px
+								left: -25%
+								background-position: 14.5px center
+								background-image: url('../img/be-box/owl-prev.svg')
+							.owl-next
+								background-size: 12px
+								right: -25%
+								background-position: 16px center
+								background-image: url('../img/be-box/owl-next.svg')
+				.phone-block::before
+					width: 88%
+					height: 96%
+				.text-block
+					max-width: none
+					padding-left: 8rem
+					padding-right: 3rem
+					margin-left: 0
+					.number
+						font-size: 14.583rem
+						line-height: 0.8
+						margin-bottom: 1rem
+					.subhead
+						font-size: 4.167rem
+						line-height: 1.1
+						margin-bottom: 1.5rem
+					p.text
+						font-size: 3.333rem
+						margin-top: 0
+						margin-bottom: 5.5rem
+					a.btn
+						display: block
+						width: 47rem
+						height: 10rem
+						line-height: 10.5rem
+						margin: 10.5rem 7.8rem 10.5rem auto
+						span
+							font-size: 4.167rem
+
+
+		footer
+			padding: 17.5rem 0
+			.container
+				.d-flex
+					display: block
+				nav
+					text-align: center
+					.logo
+						img
+							width: 31.3rem
+							height: auto
+					.contacts 
+						padding: 8rem 0
+						a
+							display: block
+							margin: 0
+							font-size: 4.167rem
+						a:not(:last-child)
+							margin-bottom: 3rem
+					.socials
+						padding: 0
+						a
+							img
+								width: 6.5rem
+								height: auto
+						a:not(:last-child)
+							margin-right: 2rem
+					a.btn.request.mob
+						display: inline-block
+
+
