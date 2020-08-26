@@ -185,7 +185,7 @@ body
 			z-index: -1
 			width: 100%
 			height: 100%
-			top: 0
+			top: -62px
 			left: 0
 			display: -webkit-flex
 			display: -moz-flex
@@ -198,6 +198,8 @@ body
 			overflow: hidden
 			.photo1, .photo2
 				background-color: #F1E9E8
+				img
+					vertical-align: bottom
 				img.mob
 					display: none
 			.photo1
@@ -213,7 +215,7 @@ body
 					width: 405px
 					height: auto
 		nav
-			padding-top: 95px
+			padding-top: 35px
 			padding-right: 135px
 			.menu
 				.circle
@@ -265,6 +267,7 @@ body
 					font-family: "Aeroport"
 					font-size: 16px
 					color: $blackP
+					font-weight: 100
 				a:not(:last-child)
 					margin-right: 25px
 			.socials
@@ -278,7 +281,7 @@ body
 				a:not(:last-child)
 					margin-right: 10px
 		section.first
-			padding-top: 135px
+			padding-top: 100px
 			padding-bottom: 150px
 			h1
 				margin-top: 0
@@ -287,7 +290,7 @@ body
 				font-size: 95px
 				color: $black
 				text-transform: uppercase
-				letter-spacing: -3.9px
+				letter-spacing: -2px
 				line-height: 86px
 				.online
 					position: relative
@@ -363,7 +366,6 @@ body
 					font-size: 24px
 					font-family: 'Aeroport'
 					line-height: 1
-					letter-spacing: -1px
 				a.btn
 					margin-bottom: 45px
 					display: inline-block
@@ -702,7 +704,7 @@ body
 		section.fitnessProgram
 			position: relative
 			padding-top: 170px
-			padding-bottom: 140px
+			padding-bottom: 145px
 			.background
 				position: absolute
 				z-index: -1
@@ -752,10 +754,11 @@ body
 		section.nutritionProgram
 			position: relative
 			padding-bottom: 150px
+			padding-top: 100px
 			.background
 				position: absolute
 				z-index: -1
-				top: -95px
+				top: 0
 				left: 0
 				width: 100%
 				height: 100%
@@ -1011,7 +1014,7 @@ body
 				p.price
 					margin-top: 0
 					margin-bottom: 0
-					font-family: 'Aeroport-Medium'
+					font-family: 'Aeroport'
 					font-size: 96px
 					color: $black
 				a.btn
@@ -1045,6 +1048,7 @@ body
 				img
 					width: 533px
 					height: auto
+					vertical-align: bottom
 			.text-block
 				margin-left: auto
 				max-width: 680px
@@ -1186,12 +1190,13 @@ body
 							display: none
 					.owl-prev
 						left: -17%
-						background-position: 11px center
+						background-position: 11px 9px
 						background-image: url('../img/be-box/owl-prev.svg')
 					.owl-next
 						right: -17%
-						background-position: 12px center
-						background-image: url('../img/be-box/owl-next.svg')
+						background-position: 11px 9px
+						background-image: url('../img/be-box/owl-prev.svg')
+						transform: rotate(180deg)
 				.owl-dots
 					margin-top: 28px
 					.owl-dot
@@ -1647,7 +1652,9 @@ body
 		.container
 			padding: 0 3rem
 		header
+			min-height: auto
 			.background
+				top: 0
 				padding: 0
 				display: block
 				text-align: right
@@ -1734,6 +1741,12 @@ body
 					line-height: 10.9rem
 					margin-bottom: 2rem
 					max-width: 55%
+					.online
+						.dot
+							width: 22px
+							height: 22px
+							top: -26px
+							right: -32px
 				p.desc, .number.mob
 					display: inline-block
 					vertical-align: middle
@@ -1807,8 +1820,9 @@ body
 					.photo1
 						position: relative
 						margin-left: 26%
+						width: 79.9rem
 						img
-							width: 79.9rem
+							width: 100%
 				h2
 					position: relative
 					font-size: 9.167rem
@@ -1820,10 +1834,10 @@ body
 				h2::before
 					content: ''
 					position: absolute
-					bottom: 1rem
-					right: -2rem
-					width: 2.2rem
-					height: 2.2rem
+					bottom: 10px
+					right: -20px
+					width: 22px
+					height: 22px
 					border-radius: 50%
 					animation: 1.5s blink infinite
 					background-color: $accent
@@ -1837,7 +1851,7 @@ body
 					li::before
 						width: 6rem
 						height: 0.4rem
-						top: 2.1rem
+						top: 1.8rem
 						margin-right: 2rem
 					li:not(:last-child)
 						margin-bottom: 5rem
@@ -1846,6 +1860,8 @@ body
 					img.mob
 					 	display: block
 					 	margin-left: 8rem
+					 	width: 30.9rem
+					 	height: auto
 					svg
 						display: none
 				.info-board-outer
@@ -1929,6 +1945,7 @@ body
 					text-align: left
 					padding-left: 16rem
 					margin-bottom: 35rem
+					max-width: 59rem
 				h3
 					font-size: 9.167rem
 					padding-left: 8rem
@@ -1941,6 +1958,10 @@ body
 						left: -30.2rem
 						bottom: auto
 						top: -37.2rem
+						width: 117.7rem
+						img
+							width: 100%
+							height: auto
 					ul
 						padding-left: 0
 						li
@@ -1984,9 +2005,14 @@ body
 						margin-bottom: 6rem
 			section.nutritionProgram
 				padding-top: 9rem
+				padding-bottom: 14.5rem
 				.background
 					top: 0
 					padding-left: 22%
+					.photo
+						width: 70.5rem
+						img
+							width: 100%
 				h2
 					font-size: 9.167rem
 					padding: 0
@@ -2022,18 +2048,18 @@ body
 								border-radius: 50%
 								background-color: $black
 								background-repeat: no-repeat
+								background-size: 12px
 								span
 									display: none
 							.owl-prev
-								background-size: 10.5px
 								left: -25%
-								background-position: 14.5px center
+								background-position: 13.5px 11px
 								background-image: url('../img/be-box/owl-prev.svg')
 							.owl-next
-								background-size: 12px
 								right: -25%
-								background-position: 16px center
-								background-image: url('../img/be-box/owl-next.svg')
+								background-position: 13.5px 11px
+								background-image: url('../img/be-box/owl-prev.svg')
+								transform: rotate(180deg)
 				.phone-block::before
 					width: 88%
 					height: 96%
@@ -2062,7 +2088,302 @@ body
 						margin: 10.5rem 7.8rem 10.5rem auto
 						span
 							font-size: 4.167rem
+			section.trialClass
+				padding-top: 15rem
+				padding-bottom: 16rem
+				margin-bottom: 15rem
+				h2
+					font-size: 9.167rem
+					margin-bottom: 2.5rem
+				p.desc
+					font-size: 3.333rem
+					max-width: 75%
+					margin: 0 auto 3.5rem auto
+				.videos
+					margin-bottom: 4.8rem
+					.video
+						width: 100%
+						.big-btn
+							width: 100px
+							height: 80px
+							svg
+								width: 25px
+								height: 30px
+					.video:not(:last-child)
+						margin-right: 0
+						margin-bottom: 4.5rem
 
+				.text-block
+					span.b
+						font-size: 8.333rem
+						display: block
+						margin-right: 0
+						margin-bottom: 1.5rem
+					p.text
+						font-size: 3.333rem
+						display: block
+						margin-right: 0
+						margin-bottom: 3rem
+					a.btn
+						width: 52rem
+						height: 10rem
+						line-height: 10.5rem
+						span
+							font-size: 4.167rem
+			section.price
+				padding: 10rem 0
+				margin-bottom: 14.5rem
+				.background
+					.photo
+						left: -17rem
+						width: 154.4rem
+				.text-block
+					padding-left: 3rem
+					h2
+						font-size: 9.167rem
+						max-width: 40rem
+						span.mob-hidden
+							display: none
+					p.price
+						font-size: 9.167rem
+						margin-top: -1.5rem
+						margin-bottom: 1rem
+						font-weight: 100
+					a.btn
+						width: 26rem
+						height: 10rem
+						line-height: 10.5rem
+						span 
+							font-size: 4.167rem
+			section.viktoria
+				padding-top: 9rem
+				padding-bottom: 18.5rem
+				.photo
+					top: -9rem
+					width: 53.3rem
+					img
+						width: 100%
+				.text-block
+					max-width: none
+					h2
+						max-width: 33.5rem
+						font-size: 9.167rem
+						margin-left: auto
+						margin-bottom: 43.8rem
+					.black-board
+						margin-left: 3rem
+						margin-right: -3rem
+						padding-left: 12rem
+						padding-top: 6rem
+						padding-right: 6rem
+						padding-bottom: 6rem
+						.subhead
+							font-size: 3.333rem
+							margin-bottom: 4rem
+							font-weight: bold
+						.name
+							font-size: 4.167rem
+							margin-bottom: 2.5rem
+						ul
+							margin-bottom: 4rem
+							li
+								font-size: 3.333rem
+								line-height: 1.2
+								a.site
+									font-size: 3.333rem
+								.sub
+									margin: 0.5rem 0
+							li::before
+								width: 6rem
+								height: 0.4rem
+								top: 2.2rem
+								margin-right: 2.8rem
+							li:not(:last-child)
+								margin-bottom: 0.5rem
+
+						.more
+							font-size: 3.333rem
+			section.feedback, section.compare
+				h2	
+					font-size: 9.167rem
+					margin-bottom: 3rem
+				.owl-theme
+					.owl-nav
+						.owl-prev, .owl-next
+							width: 40px
+							height: 40px
+							background-size: 11px
+						.owl-prev
+							background-position: 14px 11px
+							left: -12%
+						.owl-next
+							background-position: 14px 11px
+							right: -12%
+					.owl-dots
+						.owl-dot
+							span
+								width: 10px
+								height: 10px
+								margin: 0 17px
+
+			section.feedback
+				.carousel
+					margin-bottom: 4.5rem
+				.owl-theme
+					.owl-nav
+						.owl-prev, .owl-next
+							top: -19%
+				a.btn
+					width: 56rem
+					height: 10rem
+					line-height: 10.5rem
+					span
+						font-size: 4.167rem
+			section.compare
+				padding-bottom: 13rem
+				.carousel
+					width: 70%
+				.owl-carousel.owl-theme
+					.owl-nav
+						button.owl-prev, button.owl-next
+							top: -10%
+						button.owl-prev
+							left: -24%
+						button.owl-next
+							right: -24%
+			section.faq
+				padding-bottom: 15rem
+				h2
+					font-size: 9.167rem
+					margin-bottom: 10rem
+				.questions
+					padding: 0 3rem
+					.separ
+						height: 3px
+					p.head
+						font-size: 3.75rem
+						padding: 3rem 0
+						padding-right: 22%
+						line-height: 1.2
+					p.head::before
+					p.head::after
+					p.head::before, p.head::after
+						width: 0.3rem
+						height: 5.2rem
+						right: 2.6rem
+					p.hidden
+						font-size: 2.917rem
+						max-width: none
+						margin-bottom: 5rem
+
+			section.callMe
+				margin-bottom: 27rem
+				.container
+					.text-block
+						display: block
+						margin: 0 auto
+						text-align: center
+						padding-top: 15rem
+						padding-left: 0
+						padding-right: 0
+						padding-bottom: 9rem
+						h2	
+							font-size: 9.167rem
+							margin-bottom: 8rem
+						p.subhead
+							display: none
+						a
+							font-size: 3.333rem
+							display: inline-block
+							max-width: 75%
+							line-height: 1.2
+						a.underline
+							border-color: $black
+					form
+						display: block
+						margin: 0 auto
+						width: 53.3rem
+						padding-left: 8rem
+						padding-top: 10rem
+						padding-right: 10rem
+						padding-bottom: 5rem
+						p.form-head
+							font-size: 5.833rem
+							margin-top: 0
+							margin-bottom: 4rem
+						input.text-field, textarea.text-field
+							font-size: 2.917rem
+							font-weight: 100
+							padding-bottom: 2rem
+						input.text-field
+							margin-bottom: 3rem
+							height: 4.5rem
+						textarea.text-field
+							margin-bottom: 5rem
+							height: 8.7rem
+						a.btn
+							width: 25.4rem
+							height: 10rem
+							line-height: 10.5rem
+							span
+								font-size: 4.167rem
+			section.buyCourse
+				padding-bottom: 55rem
+				.container
+					.photo
+						top: 49rem
+						left: 0
+						right: 0
+						margin: 0 auto
+						width: calc(100% - 6rem)
+						max-width: 69rem
+						height: auto
+					.content
+						padding-left: 8rem
+						h2
+							font-size: 10rem
+							line-height: 0.9
+							margin-bottom: 2.5rem
+							.online
+								.dot
+									width: 22px
+									height: 22px
+									top: -26px
+									right: -32px
+						h2::before
+							font-size: 23.104rem
+							top: -15rem
+							left: 37rem
+						p.subhead
+							font-size: 3.333rem
+							margin-bottom: 4.5rem
+						ul
+							padding-left: 8rem
+							max-width: 90%
+							margin-bottom: 2rem
+							li
+								font-size: 3.333rem
+								line-height: 1.2
+							li:not(:last-child)
+								margin-bottom: 4.5rem
+							li::before
+								width: 6rem
+								height: 0.4rem
+								margin-right: 2rem
+								margin-bottom: 0
+								margin-top: 0
+								left: -8rem
+								top: 2.1rem
+						span.price
+							font-size: 9.167rem
+							letter-spacing: -4px
+						a.btn
+							width: 26rem
+							height: 10rem
+							line-height: 10.5rem
+							margin-top: 3rem
+							span
+								font-size: 4.167rem
 
 		footer
 			padding: 17.5rem 0
@@ -2093,5 +2414,259 @@ body
 							margin-right: 2rem
 					a.btn.request.mob
 						display: inline-block
+
+@media only screen and(max-width: 749px)
+	html, body
+		font-size: 8px
+	body
+		header
+			nav
+				.menu
+					button.circle
+						width: 66px
+						height: 66px
+					.hamburger
+						.hamburger-box
+							width: 35px
+							.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+								width: 35px
+			section.first
+				h1	
+					line-height: 10.8rem
+				h1
+					.online
+						.dot
+							width: 19px
+							height: 19px
+							top: -22px
+							right: -24px
+		main
+			section.buyCourse
+				.container
+					.content
+						h2
+							.online
+								.dot
+									width: 19px
+									height: 19px
+									top: -22px
+									right: -24px
+			section.wantsTo
+				h2::before
+					bottom: 10px
+					right: -10px
+					width: 19px
+					height: 19px
+
+
+
+@media only screen and(max-width: 600px)
+	html, body
+		font-size: 6.66px
+	body
+		header
+			section.first
+				h1	
+					line-height: 10.3rem
+					margin-bottom: 1.9rem
+		main
+			section.nutritionProgram
+				.text-block
+					a.btn
+						line-height: 10.6rem
+				.phone-block::before
+					top: 15px
+				.phone-block
+					.owl-carousel
+						.owl-nav
+							.owl-prev, .owl-next
+								width: 30px
+								height: 30px
+								background-size: 9px
+							.owl-prev
+								background-position: 10px 8px
+							.owl-next
+								background-position: 10px 8px
+			section.howGoing
+				.text-block
+					a.btn
+						line-height: 10.6rem
+					ul
+						li::before
+							height: 0.45rem
+							top: 1.8rem
+			section.equipment
+				.black-board
+					ul
+						li::before
+							height: 0.47rem
+			section.viktoria
+				.text-block
+					h2
+						margin-bottom: 43.6rem
+					.black-board
+						ul
+							li::before
+								top: 1.9rem
+								height: 0.45rem
+			section.wantsTo
+				ul
+					li::before
+						height: 0.45rem
+						top: 1.45rem
+			section.callMe
+				.container
+					form
+						a.btn
+							line-height: 10.6rem
+			section.feedback
+				a.btn
+					line-height: 10.6rem
+			section.feedback, section.compare
+				.owl-theme
+					.owl-nav
+						.owl-prev, .owl-next
+							width: 30px
+							height: 30px
+							background-size: 9px
+						.owl-prev
+							background-position: 10px 8px
+						.owl-next
+							background-position: 10px 8px
+					.owl-dots
+						.owl-dot
+							span
+								width: 10px
+								height: 10px
+								margin: 0 12px
+			section.buyCourse
+				.container
+					.content
+						a.btn
+							line-height: 10.6rem
+						span.price
+							letter-spacing: 0
+		footer
+			nav
+				a.btn.request
+					line-height: 10.6rem
+
+
+@media only screen and(max-width: 499px)
+	html, body
+		font-size: 5px
+	body
+		header
+			nav
+				.menu
+					button.circle
+						width: 50px
+						height: 50px
+						padding: 0
+					.hamburger
+						.hamburger-box
+							width: 25px
+							height: 19px
+							.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+								width: 25px
+								height: 3px
+							.hamburger-inner
+								top: 3px
+							.hamburger-inner::before
+								top: 7px
+							.hamburger-inner::after
+								top: 14px
+					.hamburger--slider.is-active 
+						.hamburger-inner::after
+							transform: translate3d(0, -14px, 0) rotate(-90deg)
+					.hamburger--slider.is-active .hamburger-inner
+						transform: translate3d(0, 7px, 0) rotate(45deg)
+			section.first
+				h1
+					margin-bottom: 1.7rem
+					.online
+						.dot
+							width: 15px
+							height: 15px
+							top: -18px
+							right: -18px
+				p.desc
+					max-width: 21rem
+		main
+			section.fitnessProgram
+				h2
+					letter-spacing: -1px
+			section.nutritionProgram
+				.phone-block::before
+					top: 10px
+			section.faq
+				.questions
+					p.head::before, p.head::after
+						width: 0.35rem
+					.separ 
+						height: 2px
+			section.feedback, section.compare
+				.owl-theme
+					.owl-dots
+						.owl-dot
+							span
+								width: 8px
+								height: 8px
+								margin: 0 7px
+			section.wantsTo
+				h2::before
+					width: 15px
+					height: 15px
+			section.buyCourse
+				.container
+					.content
+						h2
+							.online
+								.dot
+									width: 15px
+									height: 15px
+									top: -18px
+									right: -18px
+
+
+@media only screen and(max-width: 400px)
+	body
+		header
+			section.first
+				.offer
+					a.btn
+						span
+							line-height: 45px
+					.headtext
+						span::after
+							height: 3px
+		main
+			section.trialClass
+				.videos
+					.video
+						.big-btn
+							width: 80px
+							height: 64px
+							svg
+								width: 20px
+								height: 24px
+@media only screen and(max-width: 374px)
+	html, body
+		font-size: 4.25px
+	body
+		header
+			section.first
+				padding-top: 3rem
+				.offer
+					a.btn
+						border-width: 3px
+						span
+							line-height: 39px
+		main
+			section.callMe
+				.text-block
+					a.underline
+						border-width: 1px
+
 
 
