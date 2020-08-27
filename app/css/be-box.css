@@ -1733,6 +1733,7 @@ body section.buyCourse .course-card .btns-block a.btn-submit {
 }
 
 body section.buyCourse .course-card .btns-block a.btn-buyNow {
+  display: none;
   line-height: 60px;
   background-color: transparent;
   border: 3px solid #fff;
