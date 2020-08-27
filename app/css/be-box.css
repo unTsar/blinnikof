@@ -1012,9 +1012,9 @@ body section.whatGet .advantages .table .item {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 400px;
-  width: -webkit-calc(100% / 3);
-  width: calc(100% / 3);
+  max-width: none;
+  width: -webkit-calc((100% / 2) - 11.7%);
+  width: calc((100% / 2) - 11.7%);
   margin-left: 11.7%;
   margin-bottom: 60px;
 }
