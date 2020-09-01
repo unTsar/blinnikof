@@ -401,16 +401,19 @@ body
 	main
 		section.types
 			position: relative
-			padding-top: 95px
-			padding-bottom: 205px
+			padding-top: 85px
+			padding-bottom: 185px
 			background-color: $black
+			overflow: hidden
 			iframe
 				user-select: none
 				position: absolute
-				width: 100%
+				width: 1469px
 				height: 100%
 				top: 0
 				left: 0
+				right: 0
+				margin: 0 auto
 				z-index: 0
 			.container
 				position: relative
@@ -1799,6 +1802,8 @@ body
 		main
 			section.types
 				padding: 14.5rem 0
+				iframe
+					width: 218rem
 				h2
 					font-size: 9.167rem
 					max-width: 40rem

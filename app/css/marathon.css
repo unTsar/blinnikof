@@ -760,9 +760,10 @@ body header section.first .offer .arrow {
 
 body main section.types {
   position: relative;
-  padding-top: 95px;
-  padding-bottom: 205px;
+  padding-top: 85px;
+  padding-bottom: 185px;
   background-color: #000000;
+  overflow: hidden;
 }
 
 body main section.types iframe {
@@ -771,10 +772,12 @@ body main section.types iframe {
       -ms-user-select: none;
           user-select: none;
   position: absolute;
-  width: 100%;
+  width: 1469px;
   height: 100%;
   top: 0;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 0;
 }
 
@@ -2680,6 +2683,9 @@ body footer nav a.btn.request:hover span {
   }
   body main section.types {
     padding: 14.5rem 0;
+  }
+  body main section.types iframe {
+    width: 218rem;
   }
   body main section.types h2 {
     font-size: 9.167rem;

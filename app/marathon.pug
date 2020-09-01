@@ -83,7 +83,7 @@ html(lang="ru")
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51px" height="32px"><path fill-rule="evenodd"  stroke="rgb(255,255,255)" stroke-width="4px" stroke-linecap="round" stroke-linejoin="miter" fill="none" d="M44.278,4.499 L24.500,24.278 L4.722,4.499 "/></svg>
 			main
 				section.types
-					//- iframe#vimeo1(src="https://player.vimeo.com/video/409527023?color=ff3536&amp;autoplay=true&amp;muted=true&amp;controls=false&amp;loop=true&amp;autopause=0&amp;" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
+					iframe#vimeo1(src="https://player.vimeo.com/video/430331368?color=ff3536&amp;autoplay=true&amp;controls=false&amp;muted=true&amp;loop=true&amp;autopause=0&amp;" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
 					.container
 						h2 Виды тренировок в марафоне
 						ol
@@ -151,7 +151,7 @@ html(lang="ru")
 					.laptop-video
 						img(src="img/marathon/howGoing-Camera.png", alt="howGoing-Camera.png")
 						.video-layer
-							iframe#vimeo2(src="https://player.vimeo.com/video/409527023?color=ff3536&amp;autoplay=true&amp;muted=true&amp;controls=false&amp;loop=true&amp;audio=false&amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
+							iframe#vimeo2(src="https://player.vimeo.com/video/409527023?color=ff3536&amp;autoplay=true&amp;muted=true&amp;controls=false&amp;loop=true&amp;audio=false&amp;autopause=0&amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
 				section.equipment
 					.container
 						h2 Фитнес #[span.accent +] Питание #[span.accent =] Результат
@@ -401,15 +401,18 @@ html(lang="ru")
 					$('body').removeClass('ovh');
 				}
 				player2.setMuted(true);
-				player2.play();
+				player1.setMuted(true);
 			});
 
-			//-var player1 = new Vimeo.Player('vimeo1');
+			var player1 = new Vimeo.Player('vimeo1');
 			var player2 = new Vimeo.Player('vimeo2');
 
-			//- player1.on('play', function() {
-			//- 	console.log('Played the video1');
-			//- });
+			player1.play()
+			player2.play()
+
+			player1.on('play', function() {
+			 	console.log('Played the video1');
+			});
 			player2.on('play', function() {
 				console.log('Played the video2');
 			});

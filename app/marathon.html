@@ -76,6 +76,7 @@
       </header>
       <main>
         <section class="types">
+          <iframe id="vimeo1" src="https://player.vimeo.com/video/430331368?color=ff3536&amp;amp;autoplay=true&amp;amp;controls=false&amp;amp;muted=true&amp;amp;loop=true&amp;amp;autopause=0&amp;amp;" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
           <div class="container">
             <h2>Виды тренировок в марафоне</h2>
             <ol>
@@ -135,7 +136,7 @@
           </div>
           <div class="laptop-video"><img src="img/marathon/howGoing-Camera.png" alt="howGoing-Camera.png">
             <div class="video-layer">
-              <iframe id="vimeo2" src="https://player.vimeo.com/video/409527023?color=ff3536&amp;amp;autoplay=true&amp;amp;muted=true&amp;amp;controls=false&amp;amp;loop=true&amp;amp;audio=false&amp;amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+              <iframe id="vimeo2" src="https://player.vimeo.com/video/409527023?color=ff3536&amp;amp;autoplay=true&amp;amp;muted=true&amp;amp;controls=false&amp;amp;loop=true&amp;amp;audio=false&amp;amp;autopause=0&amp;amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
           </div>
         </section>
@@ -378,15 +379,18 @@
     			$('body').removeClass('ovh');
     		}
     		player2.setMuted(true);
-    		player2.play();
+    		player1.setMuted(true);
     	});
     
-    	//-var player1 = new Vimeo.Player('vimeo1');
+    	var player1 = new Vimeo.Player('vimeo1');
     	var player2 = new Vimeo.Player('vimeo2');
     
-    	//- player1.on('play', function() {
-    	//- 	console.log('Played the video1');
-    	//- });
+    	player1.play()
+    	player2.play()
+    
+    	player1.on('play', function() {
+    	 	console.log('Played the video1');
+    	});
     	player2.on('play', function() {
     		console.log('Played the video2');
     	});
