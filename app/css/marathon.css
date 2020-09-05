@@ -603,6 +603,7 @@ body header section.first p.desc {
   margin-bottom: 45px;
   font-family: 'Aeroport-Medium';
   font-size: 20px;
+  font-weight: 100;
   color: #000000;
   letter-spacing: 1px;
 }
@@ -610,6 +611,7 @@ body header section.first p.desc {
 body header section.first .number {
   font-family: 'HeadingSmallcasePro-Light';
   font-size: 219px;
+  line-height: 227px;
   color: #E7E7E7;
   margin-bottom: -23px;
 }
@@ -773,7 +775,8 @@ body main section.types iframe {
           user-select: none;
   position: absolute;
   width: 1469px;
-  height: 100%;
+  height: 826px;
+  opacity: 0.5;
   top: 0;
   left: 0;
   right: 0;
@@ -891,6 +894,7 @@ body main section.wantsTo .info-board h3 {
   margin-bottom: 50px;
   font-family: 'HeadingSmallcasePro-Regular';
   font-size: 72px;
+  font-weight: 100;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -2633,6 +2637,7 @@ body footer nav a.btn.request:hover span {
   }
   body header section.first .number {
     font-size: 20.148rem;
+    line-height: normal;
     margin-bottom: -3rem;
   }
   body header section.first .btn-outer {
@@ -2674,7 +2679,7 @@ body footer nav a.btn.request:hover span {
   body header section.first .offer a.btn {
     width: 36.1rem;
     height: 10rem;
-    line-height: 10rem;
+    line-height: 9.5rem;
     border-width: 4px;
     margin-bottom: 4.4rem;
   }
@@ -2686,6 +2691,7 @@ body footer nav a.btn.request:hover span {
   }
   body main section.types iframe {
     width: 218rem;
+    height: 123rem;
   }
   body main section.types h2 {
     font-size: 9.167rem;
@@ -2778,7 +2784,6 @@ body footer nav a.btn.request:hover span {
   }
   body main section.wantsTo .info-board-outer .info-board h3 {
     font-size: 9.167rem;
-    letter-spacing: -2px;
     line-height: 0.88;
     margin-bottom: 5rem;
   }
@@ -2928,7 +2933,7 @@ body footer nav a.btn.request:hover span {
     margin-bottom: 15rem;
     text-align: left;
     letter-spacing: -3px;
-    padding: 0 6rem 0 28rem;
+    padding: 0 6rem 0 25rem;
   }
   body main section.fitnessProgram .text-block {
     padding-left: 17.5rem;
@@ -3621,7 +3626,8 @@ body footer nav a.btn.request:hover span {
     max-width: 21rem;
   }
   body main section.fitnessProgram h2 {
-    letter-spacing: -1px;
+    letter-spacing: 0;
+    font-weight: 100;
   }
   body main section.nutritionProgram .phone-block::before {
     top: 10px;
@@ -3650,8 +3656,23 @@ body footer nav a.btn.request:hover span {
 }
 
 @media only screen and (max-width: 400px) {
-  body header section.first .offer a.btn span {
-    line-height: 45px;
+  body header .background .photo1 {
+    width: 55.7rem;
+    margin-right: -4rem;
+  }
+  body header .background .photo1 .white-board-mob {
+    bottom: -7.3rem;
+    width: 53.9rem;
+  }
+  body header section.first {
+    padding-top: 8rem;
+  }
+  body header section.first h1 {
+    line-height: 10.7rem;
+    margin-bottom: 8.1rem;
+  }
+  body header section.first .offer a.btn {
+    border-width: 2px;
   }
   body header section.first .offer .headtext span::after {
     height: 3px;
@@ -3670,14 +3691,11 @@ body footer nav a.btn.request:hover span {
   html, body {
     font-size: 4.25px;
   }
+  body header .background .photo1 .white-board-mob {
+    bottom: -3.5rem;
+  }
   body header section.first {
     padding-top: 3rem;
-  }
-  body header section.first .offer a.btn {
-    border-width: 3px;
-  }
-  body header section.first .offer a.btn span {
-    line-height: 39px;
   }
   body main section.callMe .text-block a.underline {
     border-width: 1px;
