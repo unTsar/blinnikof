@@ -40,6 +40,8 @@ html, body
 	margin: 0
 	padding: 0
 	width: 100%
+body
+	-webkit-text-size-adjust: none
 *
 	box-sizing: border-box
 .ovh
@@ -312,12 +314,13 @@ body
 				font-weight: 100
 				color: $black
 				letter-spacing: 1px
+				line-height: normal
 			.number
 				font-family: 'HeadingSmallcasePro-Light'
 				font-size: 219px
-				line-height: 227px
+				line-height: 1
 				color: $gray
-				margin-bottom: -23px
+				margin-bottom: -13px
 			.number.mob
 				display: none
 			.btn-outer, .offer
@@ -404,7 +407,7 @@ body
 		section.types
 			position: relative
 			padding-top: 85px
-			padding-bottom: 185px
+			padding-bottom: 180px
 			background-color: $black
 			overflow: hidden
 			iframe
@@ -416,6 +419,7 @@ body
 				top: 0
 				left: 0
 				right: 0
+				bottom: 0
 				margin: 0 auto
 				z-index: 0
 			.container
@@ -1766,7 +1770,6 @@ body
 					max-width: 20rem
 				.number
 					font-size: 20.148rem
-					line-height: normal
 					margin-bottom: -3rem
 				.btn-outer
 					display: block
@@ -1806,7 +1809,7 @@ body
 
 		main
 			section.types
-				padding: 14.5rem 0
+				padding: 14rem 0
 				iframe
 					width: 218rem
 					height: 123rem
@@ -2044,8 +2047,6 @@ body
 					.owl-carousel 
 						.owl-nav 
 							margin-top: 0
-							.owl-prev:hover, .owl-next:hover, 
-								background-color: $accent
 							.owl-prev, .owl-next
 								transition: 0.3s
 								outline: none
@@ -2219,6 +2220,8 @@ body
 					margin-bottom: 3rem
 				.owl-theme
 					.owl-nav
+						button.owl-next:hover, button.owl-prev:hover
+							background-color: #000
 						.owl-prev, .owl-next
 							width: 40px
 							height: 40px
@@ -2235,7 +2238,6 @@ body
 								width: 10px
 								height: 10px
 								margin: 0 17px
-
 			section.feedback
 				.carousel
 					margin-bottom: 4.5rem

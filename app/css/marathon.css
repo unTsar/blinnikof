@@ -148,6 +148,10 @@ html, body {
   width: 100%;
 }
 
+body {
+  -webkit-text-size-adjust: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -606,14 +610,15 @@ body header section.first p.desc {
   font-weight: 100;
   color: #000000;
   letter-spacing: 1px;
+  line-height: normal;
 }
 
 body header section.first .number {
   font-family: 'HeadingSmallcasePro-Light';
   font-size: 219px;
-  line-height: 227px;
+  line-height: 1;
   color: #E7E7E7;
-  margin-bottom: -23px;
+  margin-bottom: -13px;
 }
 
 body header section.first .number.mob {
@@ -763,7 +768,7 @@ body header section.first .offer .arrow {
 body main section.types {
   position: relative;
   padding-top: 85px;
-  padding-bottom: 185px;
+  padding-bottom: 180px;
   background-color: #000000;
   overflow: hidden;
 }
@@ -780,6 +785,7 @@ body main section.types iframe {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   margin: 0 auto;
   z-index: 0;
 }
@@ -2637,7 +2643,6 @@ body footer nav a.btn.request:hover span {
   }
   body header section.first .number {
     font-size: 20.148rem;
-    line-height: normal;
     margin-bottom: -3rem;
   }
   body header section.first .btn-outer {
@@ -2687,7 +2692,7 @@ body footer nav a.btn.request:hover span {
     font-size: 4.167rem;
   }
   body main section.types {
-    padding: 14.5rem 0;
+    padding: 14rem 0;
   }
   body main section.types iframe {
     width: 218rem;
@@ -2995,9 +3000,6 @@ body footer nav a.btn.request:hover span {
   body main section.nutritionProgram .phone-block .owl-carousel .owl-nav {
     margin-top: 0;
   }
-  body main section.nutritionProgram .phone-block .owl-carousel .owl-nav .owl-prev:hover, body main section.nutritionProgram .phone-block .owl-carousel .owl-nav .owl-next:hover {
-    background-color: #FF3536;
-  }
   body main section.nutritionProgram .phone-block .owl-carousel .owl-nav .owl-prev, body main section.nutritionProgram .phone-block .owl-carousel .owl-nav .owl-next {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -3214,6 +3216,9 @@ body footer nav a.btn.request:hover span {
   body main section.feedback h2, body main section.compare h2 {
     font-size: 9.167rem;
     margin-bottom: 3rem;
+  }
+  body main section.feedback .owl-theme .owl-nav button.owl-next:hover, body main section.feedback .owl-theme .owl-nav button.owl-prev:hover, body main section.compare .owl-theme .owl-nav button.owl-next:hover, body main section.compare .owl-theme .owl-nav button.owl-prev:hover {
+    background-color: #000;
   }
   body main section.feedback .owl-theme .owl-nav .owl-prev, body main section.feedback .owl-theme .owl-nav .owl-next, body main section.compare .owl-theme .owl-nav .owl-prev, body main section.compare .owl-theme .owl-nav .owl-next {
     width: 40px;
