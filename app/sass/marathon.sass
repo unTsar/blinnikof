@@ -413,8 +413,8 @@ body
 			iframe
 				user-select: none
 				position: absolute
-				width: 1469px
-				height: 826px
+				width: 1920px
+				height: 1080px
 				opacity: 0.5
 				top: 0
 				left: 0
@@ -1542,7 +1542,13 @@ body
 			a.btn.request:hover
 				span
 					transform: scale(1.2)
-
+@media only screen and(max-width: 1650px)
+	body
+		main
+			section.types
+				iframe
+					width: 1650px
+					height: 930px
 @media only screen and(max-height: 830px)
 	body
 		nav.menu
@@ -1556,6 +1562,12 @@ body
 @media only screen and(max-width: 1365px)
 	body
 		main
+			section.types
+				padding-top: 70px
+				padding-bottom: 135px
+				iframe
+					width: 1365px
+					height: 765px
 			section.feedback, section.compare
 				.owl-theme
 					.owl-nav
