@@ -432,7 +432,6 @@ body header .background .photo1, body header .background .photo2 {
 }
 
 body header .background .photo1 img, body header .background .photo2 img {
-  display: none;
   vertical-align: bottom;
 }
 
@@ -664,7 +663,6 @@ body header section.first a.btn.try:hover span {
 
 body header section.first .offer {
   background-color: #FF3536;
-  background-color: transparent;
   color: #ffffff;
   padding: 45px 60px 135px 73px;
 }
