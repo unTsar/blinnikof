@@ -66,21 +66,22 @@ html(lang="ru")
 							a(href="https://www.instagram.com/" target="__blank")
 								img(src="img/marathon/header-socials-img2.png", alt="header-socials-img2.png")
 					section.first
-						h1 #[span.online Онлайн #[.dot] ] #[br] Фитнес-Марафон
-						p.desc.desk c Викторией Блинниковой и командой V–Concept
+						h1.animate__animated.animate__fadeInUp.animate__delay-1s #[span.online Онлайн #[.dot] ] #[br] Фитнес-Марафон
+						p.desc.desk.animate__animated.animate__fadeInUp.animate__delay-1s c Викторией Блинниковой и командой V–Concept
 						.number.mob #1
-						.btn-outer.desk
+						.btn-outer.desk.animate__animated.animate__fadeInUp.animate__delay-1s
 							.number.desk #1
 							a(href="#").btn.try
 								span Попробовать
 						.offer
-							.headtext 
-								span старт 15 июня
-							p.text Когда выбираешь #[br] во всём профессионалов
-							a(href="#").btn
-								span Купить
-							.arrow
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51px" height="32px"><path fill-rule="evenodd"  stroke="rgb(255,255,255)" stroke-width="4px" stroke-linecap="round" stroke-linejoin="miter" fill="none" d="M44.278,4.499 L24.500,24.278 L4.722,4.499 "/></svg>
+							.content.animate__animated.animate__fadeInUp.animate__delay-5s
+								.headtext
+									span старт 15 июня
+								p.text Когда выбираешь #[br] во всём профессионалов
+								a(href="#").btn
+									span Купить
+								.arrow
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51px" height="32px"><path fill-rule="evenodd"  stroke="rgb(255,255,255)" stroke-width="4px" stroke-linecap="round" stroke-linejoin="miter" fill="none" d="M44.278,4.499 L24.500,24.278 L4.722,4.499 "/></svg>
 			main
 				section.types
 					iframe#vimeo1(src="https://player.vimeo.com/video/430331368?color=ff3536&amp;autoplay=true&amp;controls=false&amp;muted=true&amp;loop=true&amp;autopause=0&amp;" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
@@ -374,6 +375,12 @@ html(lang="ru")
 	script(src="js/player.min.js")
 	script(src="js/common.js")
 
+	script.
+		$(document).ready(function(){
+			//- Animations
+
+
+		});
 
 	script.
 		$(document).ready(function(){

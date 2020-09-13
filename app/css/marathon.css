@@ -432,6 +432,7 @@ body header .background .photo1, body header .background .photo2 {
 }
 
 body header .background .photo1 img, body header .background .photo2 img {
+  display: none;
   vertical-align: bottom;
 }
 
@@ -663,6 +664,7 @@ body header section.first a.btn.try:hover span {
 
 body header section.first .offer {
   background-color: #FF3536;
+  background-color: transparent;
   color: #ffffff;
   padding: 45px 60px 135px 73px;
 }
@@ -861,7 +863,7 @@ body main section.wantsTo .background, body main section.wantsTo .info-board-out
 body main section.wantsTo .background .photo1 {
   display: inline-block;
   background-color: #F1E9E8;
-  margin-left: -15%;
+  margin-left: -10%;
 }
 
 body main section.wantsTo .background .photo1 img {
