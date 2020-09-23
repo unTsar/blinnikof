@@ -442,9 +442,6 @@ body header .background .photo1 img, body header .background .photo2 img {
   -webkit-transform: scale(2);
       -ms-transform: scale(2);
           transform: scale(2);
-  -webkit-transition: 0.75s;
-  -o-transition: 0.75s;
-  transition: 0.75s;
   vertical-align: bottom;
 }
 
@@ -457,6 +454,12 @@ body header .background .photo1.active1, body header .background .photo2.active1
   -webkit-transition: 1.5s;
   -o-transition: 1.5s;
   transition: 1.5s;
+}
+
+body header .background .photo1.active1 img, body header .background .photo2.active1 img {
+  -webkit-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
 }
 
 body header .background .photo1.img-anim img, body header .background .photo2.img-anim img {
