@@ -161,6 +161,10 @@ body {
   overflow: hidden;
 }
 
+.ovv {
+  overflow: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -428,10 +432,19 @@ body header .background {
 }
 
 body header .background .photo1, body header .background .photo2 {
-  background-color: #F1E9E8;
+  overflow: hidden;
+  position: relative;
 }
 
 body header .background .photo1 img, body header .background .photo2 img {
+  position: relative;
+  opacity: 0;
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
   vertical-align: bottom;
 }
 
@@ -439,7 +452,24 @@ body header .background .photo1 img.mob, body header .background .photo2 img.mob
   display: none;
 }
 
+body header .background .photo1.active1, body header .background .photo2.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+body header .background .photo1.img-anim img, body header .background .photo2.img-anim img {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+
 body header .background .photo1 {
+  background: -o-linear-gradient(10deg, #d9d9d9, #d9d9d9 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #d9d9d9, #d9d9d9 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
   margin-left: auto;
 }
 
@@ -453,6 +483,10 @@ body header .background .photo1 .white-board-mob {
 }
 
 body header .background .photo2 {
+  background: -o-linear-gradient(10deg, #FF3536, #FF3536 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #FF3536, #FF3536 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
   margin-top: 250px;
 }
 
@@ -661,8 +695,28 @@ body header section.first a.btn.try:hover span {
           transform: scale(1.2);
 }
 
+body header section.first .offer.trans-active {
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+  background: -o-linear-gradient(10deg, #FF3536, #FF3536 20%, #000 30%, #000 100%);
+  background: linear-gradient(80deg, #FF3536, #FF3536 20%, #000 30%, #000 100%);
+  background-size: 500% 500%;
+  background-position: top right;
+}
+
+body header section.first .offer.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
 body header section.first .offer {
-  background-color: #FF3536;
+  background: -o-linear-gradient(10deg, #000, #000 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #000, #000 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
   color: #ffffff;
   padding: 45px 60px 135px 73px;
 }
@@ -859,14 +913,35 @@ body main section.wantsTo .background, body main section.wantsTo .info-board-out
 }
 
 body main section.wantsTo .background .photo1 {
+  background: -o-linear-gradient(10deg, #d9d9d9, #d9d9d9 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #d9d9d9, #d9d9d9 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
   display: inline-block;
-  background-color: #F1E9E8;
   margin-left: -10%;
 }
 
 body main section.wantsTo .background .photo1 img {
   width: 608px;
   height: auto;
+  opacity: 0;
+  -webkit-transition-delay: 2s;
+       -o-transition-delay: 2s;
+          transition-delay: 2s;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+body main section.wantsTo .background .photo1.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+body main section.wantsTo .background .photo1.active1 img {
+  opacity: 1;
 }
 
 body main section.wantsTo .info-board::before {
@@ -882,11 +957,21 @@ body main section.wantsTo .info-board::before {
   background-color: #FF3536;
 }
 
+body main section.wantsTo .info-board.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
 body main section.wantsTo .info-board {
+  background: -o-linear-gradient(10deg, #FF3536, #FF3536 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #FF3536, #FF3536 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
   position: absolute;
   left: 55.5%;
   bottom: 155px;
-  background-color: #FF3536;
   padding-top: 70px;
   padding-bottom: 58px;
   padding-left: 120px;
@@ -896,6 +981,7 @@ body main section.wantsTo .info-board {
 }
 
 body main section.wantsTo .info-board h3 {
+  opacity: 0;
   margin-top: 0;
   margin-bottom: 50px;
   font-family: 'HeadingSmallcasePro-Regular';
@@ -914,6 +1000,10 @@ body main section.wantsTo .info-board p.desc {
   color: #ffffff;
 }
 
+body main section.wantsTo .info-board .plus {
+  opacity: 0;
+}
+
 body main section.wantsTo .info-board .plus svg {
   width: 140px;
   height: 140px;
@@ -921,6 +1011,10 @@ body main section.wantsTo .info-board .plus svg {
 
 body main section.wantsTo .info-board .plus img.mob {
   display: none;
+}
+
+body main section.wantsTo .info-board .plus.animate__animated {
+  opacity: 1;
 }
 
 body main section.wantsTo h2 {
@@ -963,6 +1057,10 @@ body main section.wantsTo ul li::before {
   background-color: #FF3536;
 }
 
+body main section.wantsTo .check {
+  opacity: 0;
+}
+
 body main section.wantsTo .check svg {
   width: 163px;
   height: 122px;
@@ -972,14 +1070,28 @@ body main section.wantsTo .check img.mob {
   display: none;
 }
 
+body main section.wantsTo .check.animate__animated {
+  opacity: 1;
+}
+
 body main section.howGoing {
   position: relative;
   padding-top: 95px;
   margin-bottom: 120px;
 }
 
+body main section.howGoing .background.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
 body main section.howGoing .background {
-  background-color: #f2f2f2;
+  background: -o-linear-gradient(10deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
   position: absolute;
   top: 0;
   right: 0;
@@ -2533,6 +2645,16 @@ body footer nav a.btn.request:hover span {
     display: block;
     text-align: right;
   }
+  body header .background .white-board-mob {
+    position: absolute;
+    left: 0;
+    top: 52.2rem;
+    z-index: 1;
+    display: block;
+    background-color: #ffffff;
+    width: 50.9rem;
+    height: 34.3rem;
+  }
   body header .background .photo1, body header .background .photo2 {
     display: block;
     margin-left: auto;
@@ -2549,16 +2671,6 @@ body footer nav a.btn.request:hover span {
   }
   body header .background .photo1 img.mob {
     width: 100%;
-  }
-  body header .background .photo1 .white-board-mob {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    bottom: -7.1rem;
-    left: -26.3rem;
-    background-color: #ffffff;
-    width: 50.9rem;
-    height: 34.3rem;
   }
   body header .background .photo2 {
     margin-top: 0;
@@ -2584,6 +2696,16 @@ body footer nav a.btn.request:hover span {
     width: 1.6rem;
     height: 4.2rem;
     background-color: #EEE4E3;
+    opacity: 0;
+    -webkit-transition-delay: 1s;
+         -o-transition-delay: 1s;
+            transition-delay: 1s;
+    -webkit-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  body header .background .photo2.img-anim::before {
+    opacity: 1;
   }
   body header nav {
     padding: 3em 0;
@@ -3676,13 +3798,12 @@ body footer nav a.btn.request:hover span {
 }
 
 @media only screen and (max-width: 400px) {
+  body header .background .white-board-mob {
+    top: 63.8rem;
+  }
   body header .background .photo1 {
     width: 55.7rem;
     margin-right: -4rem;
-  }
-  body header .background .photo1 .white-board-mob {
-    bottom: -7.3rem;
-    width: 53.9rem;
   }
   body header section.first {
     padding-top: 8rem;
@@ -3711,8 +3832,8 @@ body footer nav a.btn.request:hover span {
   html, body {
     font-size: 4.25px;
   }
-  body header .background .photo1 .white-board-mob {
-    bottom: -3.5rem;
+  body header .background .white-board-mob {
+    top: 60rem;
   }
   body header section.first {
     padding-top: 3rem;

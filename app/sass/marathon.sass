@@ -46,6 +46,8 @@ body
 	box-sizing: border-box
 .ovh
 	overflow: hidden
+.ovv
+	overflow: visible
 .fixed
 	position: fixed
 h1, h2, h3, span, p
@@ -199,12 +201,26 @@ body
 			padding-left: 31%
 			overflow: hidden
 			.photo1, .photo2
-				background-color: #F1E9E8
+				overflow: hidden
+				position: relative
 				img
+					position: relative
+					opacity: 0
+					transform: scale(2)
+					transition: 0.75s
 					vertical-align: bottom
 				img.mob
 					display: none
+			.photo1.active1, .photo2.active1
+				background-position: bottom left
+				transition: 1.5s
+			.photo1.img-anim, .photo2.img-anim
+				img
+					transform: none
 			.photo1
+				background: linear-gradient(80deg, #d9d9d9, #d9d9d9 20%, #fff 30%, #fff 100%)
+				background-size: 500% 500%
+				background-position: top right
 				margin-left: auto
 				img
 					width: 605px	
@@ -212,6 +228,9 @@ body
 				.white-board-mob
 					display: none
 			.photo2
+				background: linear-gradient(80deg, $accent, $accent 20%, #fff 30%, #fff 100%)
+				background-size: 500% 500%
+				background-position: top right
 				margin-top: 250px
 				img
 					width: 405px
@@ -346,9 +365,18 @@ body
 			a.btn.try:hover
 				span
 					transform: scale(1.2)
+			.offer.trans-active
+				transition: 0s
+				background: linear-gradient(80deg, $accent, $accent 20%, #000 30%, #000 100%)
+				background-size: 500% 500%
+				background-position: top right
+			.offer.active1
+				background-position: bottom left
+				transition: 1.5s
 			.offer
-				background-color: $accent
-				// background-color: transparent
+				background: linear-gradient(80deg, #000, #000 20%, #fff 30%, #fff 100%)
+				background-size: 500% 500%
+				background-position: top right
 				color: $white
 				padding: 45px 60px 135px 73px
 				.headtext
@@ -475,12 +503,22 @@ body
 				text-align: center
 			.background
 				.photo1
+					background: linear-gradient(80deg, #d9d9d9, #d9d9d9 20%, #fff 30%, #fff 100%)
+					background-size: 500% 500%
+					background-position: top right
 					display: inline-block
-					background-color: #F1E9E8
 					margin-left: -10%
 					img
 						width: 608px
 						height: auto
+						opacity: 0
+						transition-delay: 2s
+						transition-duration: 1s
+				.photo1.active1
+					background-position: bottom left
+					transition: 1.5s
+					img
+						opacity: 1
 			.info-board::before
 				content: ''
 				position: absolute
@@ -491,11 +529,16 @@ body
 				border-radius: 50%
 				animation: 1.5s blink infinite
 				background-color: $accent
+			.info-board.active1
+				background-position: bottom left
+				transition: 1.5s
 			.info-board
+				background: linear-gradient(80deg, $accent, $accent 20%, #fff 30%, #fff 100%)
+				background-size: 500% 500%
+				background-position: top right
 				position: absolute
 				left: 55.5%
 				bottom: 155px
-				background-color: $accent
 				padding-top: 70px
 				padding-bottom: 58px
 				padding-left: 120px
@@ -503,6 +546,7 @@ body
 				width: 685px
 				text-align: left
 				h3
+					opacity: 0
 					margin-top: 0
 					margin-bottom: 50px
 					font-family: 'HeadingSmallcasePro-Regular'
@@ -518,11 +562,14 @@ body
 					line-height: 1.3
 					color: $white
 				.plus
+					opacity: 0
 					svg
 						width: 140px
 						height: 140px
 					img.mob
 						display: none
+				.plus.animate__animated
+					opacity: 1
 
 			h2
 				margin-top: 0
@@ -555,17 +602,25 @@ body
 					height: 2px
 					background-color: $accent
 			.check
+				opacity: 0
 				svg
 					width: 163px
 					height: 122px
 				img.mob
 					display: none
+			.check.animate__animated
+				opacity: 1
 		section.howGoing
 			position: relative
 			padding-top: 95px
 			margin-bottom: 120px
+			.background.active1
+				background-position: bottom left
+				transition: 1.5s
 			.background
-				background-color: #f2f2f2
+				background: linear-gradient(80deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%)
+				background-size: 500% 500%
+				background-position: top right
 				position: absolute
 				top: 0
 				right: 0
@@ -1682,6 +1737,15 @@ body
 				padding: 0
 				display: block
 				text-align: right
+				.white-board-mob
+					position: absolute
+					left: 0
+					top: 52.2rem
+					z-index: 1
+					display: block
+					background-color: $white
+					width: 50.9rem
+					height: 34.3rem
 				.photo1, .photo2
 					display: block
 					margin-left: auto
@@ -1694,15 +1758,6 @@ body
 					width: 48.7rem
 					img.mob
 						width: 100%
-					.white-board-mob
-						display: block
-						position: absolute
-						z-index: 1
-						bottom: -7.1rem
-						left: -26.3rem
-						background-color: $white
-						width: 50.9rem
-						height: 34.3rem
 				.photo2
 					margin-top: 0
 					position: relative
@@ -1724,7 +1779,11 @@ body
 					width: 1.6rem
 					height: 4.2rem
 					background-color: #EEE4E3
-
+					opacity: 0
+					transition-delay: 1s
+					transition-duration: 1s
+				.photo2.img-anim::before
+					opacity: 1
 			nav
 				padding: 3em 0
 				.logo
@@ -2659,12 +2718,11 @@ body
 	body
 		header
 			.background
+				.white-board-mob
+					top: 63.8rem
 				.photo1
 					width: 55.7rem
 					margin-right: -4rem
-					.white-board-mob
-						bottom: -7.3rem
-						width: 53.9rem
 			section.first
 				padding-top: 8rem
 				h1
@@ -2694,9 +2752,9 @@ body
 	body
 		header
 			.background
+				.white-board-mob
+					top: 60rem
 				.photo1
-					.white-board-mob
-						bottom: -3.5rem
 			section.first
 				padding-top: 3rem
 		main

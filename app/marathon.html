@@ -45,9 +45,8 @@
       <header>
         <div class="container">
           <div class="background">
-            <div class="photo1"><img class="desk" src="img/marathon/header-photo1.jpg" alt="header-photo1.jpg"><img class="mob" src="img/marathon/header-photo1-mob.jpg" alt="header-photo1-mob.jpg">
-              <div class="white-board-mob"></div>
-            </div>
+            <div class="white-board-mob"></div>
+            <div class="photo1"><img class="desk" src="img/marathon/header-photo1.jpg" alt="header-photo1.jpg"><img class="mob" src="img/marathon/header-photo1-mob.jpg" alt="header-photo1-mob.jpg"></div>
             <div class="photo2"><img class="desk" src="img/marathon/header-photo2.jpg" alt="header-photo2.jpg"><img class="photo mob" src="img/marathon/header-photo2-mob.jpg" alt="header-photo2-mob.jpg"><img class="phone mob" src="img/marathon/nutritionProgram-iphone.png" alt="nutritionProgram-iphone.png"></div>
           </div>
           <nav class="d-flex">
@@ -62,12 +61,12 @@
             <h1 class="animate__animated animate__fadeInUp animate__delay-1s"><span class="online">Онлайн 
                 <div class="dot"></div> </span> <br> Фитнес-Марафон</h1>
             <p class="desc desk animate__animated animate__fadeInUp animate__delay-1s">c Викторией Блинниковой и командой V–Concept</p>
-            <div class="number mob">#1</div>
+            <div class="number mob animate__animated animate__fadeInUp animate__delay-1s">#1</div>
             <div class="btn-outer desk animate__animated animate__fadeInUp animate__delay-1s">
               <div class="number desk">#1</div><a class="btn try" href="#"><span>Попробовать</span></a>
             </div>
             <div class="offer">
-              <div class="content animate__animated animate__fadeInUp animate__delay-5s">
+              <div class="content animate__animated animate__fadeInUp animate__delay-3s">
                 <div class="headtext"><span>старт 15 июня</span></div>
                 <p class="text">Когда выбираешь <br> во всём профессионалов</p><a class="btn" href="#"><span>Купить</span></a>
                 <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51px" height="32px"><path fill-rule="evenodd"  stroke="rgb(255,255,255)" stroke-width="4px" stroke-linecap="round" stroke-linejoin="miter" fill="none" d="M44.278,4.499 L24.500,24.278 L4.722,4.499 "/></svg></div>
@@ -354,10 +353,85 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/player.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/common.js"></script>
   <script>
     $(document).ready(function(){
     	//- Animations
+    
+    	//- 1 блок
+    	//- 1-ая плашка
+    	setTimeout(function(){
+    		$('header section.first .offer').addClass('active1');
+    		setTimeout(function(){
+    			$('header section.first .offer').addClass('trans-active');
+    			$('header section.first .offer').removeClass('active1');
+    		}, 1100)
+    	}, 1000);
+    	setTimeout(function(){
+    		$('header section.first .offer').addClass('active1');
+    	}, 2200)
+    	//- 2-ая плашка
+    	setTimeout(function(){
+    		$('header .background .photo1').addClass('active1');
+    	}, 1400);
+    	//- 3-ая плашка
+    	setTimeout(function(){
+    		$('header .background .photo2').addClass('active1');
+    	}, 1800);
+    
+    	//- Фотографии
+    	setTimeout(function(){
+    		let photo2Height = -1.5 * $('header .background .photo2').outerHeight();
+    		let photo1Height = -1.5 * $('header .background .photo1').outerHeight();
+    
+    		$('header .background .photo1 img').css('bottom', photo1Height)
+    		$('header .background .photo2 img').css('bottom', photo2Height)
+    
+    		$('header .background .photo1 img').css('opacity', '1')
+    		$('header .background .photo2 img').css('opacity', '1')
+    	}, 2500);
+    	setTimeout(function(){
+    		setTimeout(function(){
+    			$('header .background .photo1').addClass('img-anim');
+    			$('header .background .photo2').addClass('img-anim');
+    		}, 350);
+    
+    		$('header .background .photo1 img').css('bottom', '0')
+    		$('header .background .photo2 img').css('bottom', '0')
+    
+    	}, 3000);
+    
+    	var waypWantsTo = new Waypoint({
+    		element: $('section.wantsTo'),
+    		handler: function() {
+    			$('section.wantsTo').find('.photo1').addClass('active1');
+    			$('section.wantsTo').find('.info-board').addClass('active1');
+    			setTimeout(function(){
+    				$('section.wantsTo').find('.info-board h3').addClass('animate__animated animate__fadeInUp');
+    				setTimeout(function(){
+    					$('section.wantsTo').find('.info-board .plus').addClass('animate__animated animate__bounceIn');
+    				}, 1000);
+    				setTimeout(function(){
+    					$('section.wantsTo').find('.check').addClass('animate__animated animate__bounceIn');
+    				}, 1500);
+    			}, 1500);
+    			$('section.wantsTo').find('.info-board p.desc').addClass('animate__animated animate__delay-2s animate__fadeInUp');
+    		},
+    		offset: '25%'
+    	})
+    	var waypHowGoing = new Waypoint({
+    		element: $('section.howGoing'),
+    		handler: function() {
+    			$('section.howGoing').find('.background').addClass('active1')
+    		},
+    		offset: '25%'
+    	})
+    
+    
+    
+    
+    
     
     
     });
