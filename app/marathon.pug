@@ -23,7 +23,7 @@ html(lang="ru")
 
 		//- Styles
 		link(rel="stylesheet", href="css/hamburgers.css")
-		link(rel="stylesheet", href="css/animate.min.css")
+		link(rel="stylesheet", href="css/animate.css")
 		link(rel="stylesheet", href="css/owl.carousel.min.css")
 		link(rel="stylesheet", href="css/owl.theme.default.min.css")
 		link(rel="stylesheet", href="css/marathon.css")
@@ -155,7 +155,7 @@ html(lang="ru")
 							iframe#vimeo2(src="https://player.vimeo.com/video/409527023?color=ff3536&amp;autoplay=true&amp;muted=true&amp;controls=false&amp;loop=true&amp;audio=false&amp;autopause=0&amp;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen)
 				section.equipment
 					.container
-						h2 Фитнес #[span.accent +] Питание #[span.accent =] Результат
+						h2 #[span.word Фитнес] #[span.accent +] #[span.word Питание] #[span.accent =] #[span.result Результат]
 						h3 Инвентарь
 						.black-board
 							.back-photo
@@ -171,16 +171,19 @@ html(lang="ru")
 							img(src="img/marathon/fitnessProgram-photo1.jpg", alt="fitnessProgram-photo1.jpg")
 					.container
 						h2 Что входит в марафон
-						.text-block
-							.number 4 
-							.subhead Недели
-							p.text Длится наш онлайн-марафон
-							.number 12
-							.subhead Тренировок в записи
-							p.text По 3 три тренировки в неделю (понедельник, среда, пятница).
-							.number 60
-							.subhead Минут
-							p.text Каждая тренировка включает полноценную разминку, основную часть , заминку (растяжку)
+						.text-block-outer
+							.text-block
+								.number 4 
+								.subhead Недели
+								p.text Длится наш онлайн-марафон
+							.text-block
+								.number 12
+								.subhead Тренировок в записи
+								p.text По 3 три тренировки в неделю (понедельник, среда, пятница).
+							.text-block
+								.number 60
+								.subhead Минут
+								p.text Каждая тренировка включает полноценную разминку, основную часть , заминку (растяжку)
 				section.nutritionProgram
 					.background
 						.photo
@@ -231,9 +234,9 @@ html(lang="ru")
 							img(src="img/marathon/price-background.jpg", alt="price-background.jpg")
 					.container
 						.text-block
-							h2 стоимость марафона #[br] #V-CONCEPT #[span.mob-hidden ONLINE]
-							p.price 2 500 &#8381;
-							a.btn(href="#")
+							h2.price-elem стоимость марафона #[br] #V-CONCEPT #[span.mob-hidden ONLINE]
+							p.price.price-elem 2 500 &#8381;
+							a.btn.price-elem(href="#")
 								span Купить
 				section.viktoria
 					.container
@@ -242,35 +245,36 @@ html(lang="ru")
 						.text-block
 							h2 кто ведёт марафон
 							.black-board
-								.back
-								.name Виктория Блинникова
-								ul
-									li Основатель в России студийных фитнес-форматов.
-									li Основатель Школы Фитнеса и Питания V-CONCEPT #[.sub (школу уже закончили  более 15 000 человек)]
-										a.site(href="https://www.v-concept.ru/") www.v-concept.ru 
-								.hidden#viktoria-hidden
+								.outer
+									.back
+									.name Виктория Блинникова
 									ul
-										li Основатель Уникального Авторского Фитнес Курса по снижению/коррекции веса и построению тела " BodyEvolution "
-										li Основатель курсов PRO ЯГОДИЦЫ
-										li Основатель курса для людей 2,3 степень ожирения от 100кг., BodyEvolution SIZE+
-										li Лектор-преподаватель "Академии Фитнеса", проводит сертифицированное обучение студентов по всей России по методике преподавания специалистов в области Фитнес индустрии
-										li Сертифицированный нутрициолог, консультант по Питанию 
-										li Фитнес эксперт, тренер с 20-ти летним стажем, международный презентер
-										li Профессиональная спортсменка, Мастер Спорта по Художественной гимнастике
-										li Фитнес-культуризм 
-										li Дважды Чемпионка Москвы 
-										li Дважды Вице-Чемпионка
-										li Финалистка Чемпионата Мира по Фитнесу и Культуризму, в категории Фитнес юниоры
-										li В 2011году  Виктория, вошла в пятерку лучших тренеров команды The BestTeam by Madonna, стала сертифицированным специалистом фитнес и танцевальных программ Мадонны в России. (HardCandyFitness by Madonna- это сеть фитнес клубов, которые были открыты Мадонной по всему миру)
-										li Опыт в Фитнес индустрии 17 лет
-									.subhead Образование:
-									ul
-										li Колледж Профессионального Образования и Спорта (красный диплом)
-										li МПГУ ( Педагог-специалист, Анатомия, Физиология, Биомеханика) (красный диплом)
-										li МГУ ( Психология, Психология Бизнеса и Организационное  Управление Персоналом) (красный диплом)
-										li Сертифицированный нутрициолог (консультант  по питанию)
-								br
-								.more#viktoria-link-more Узнать больше
+										li Основатель в России студийных фитнес-форматов.
+										li Основатель Школы Фитнеса и Питания V-CONCEPT #[.sub (школу уже закончили  более 15 000 человек)]
+											a.site(href="https://www.v-concept.ru/") www.v-concept.ru 
+									.hidden#viktoria-hidden
+										ul
+											li Основатель Уникального Авторского Фитнес Курса по снижению/коррекции веса и построению тела " BodyEvolution "
+											li Основатель курсов PRO ЯГОДИЦЫ
+											li Основатель курса для людей 2,3 степень ожирения от 100кг., BodyEvolution SIZE+
+											li Лектор-преподаватель "Академии Фитнеса", проводит сертифицированное обучение студентов по всей России по методике преподавания специалистов в области Фитнес индустрии
+											li Сертифицированный нутрициолог, консультант по Питанию 
+											li Фитнес эксперт, тренер с 20-ти летним стажем, международный презентер
+											li Профессиональная спортсменка, Мастер Спорта по Художественной гимнастике
+											li Фитнес-культуризм 
+											li Дважды Чемпионка Москвы 
+											li Дважды Вице-Чемпионка
+											li Финалистка Чемпионата Мира по Фитнесу и Культуризму, в категории Фитнес юниоры
+											li В 2011году  Виктория, вошла в пятерку лучших тренеров команды The BestTeam by Madonna, стала сертифицированным специалистом фитнес и танцевальных программ Мадонны в России. (HardCandyFitness by Madonna- это сеть фитнес клубов, которые были открыты Мадонной по всему миру)
+											li Опыт в Фитнес индустрии 17 лет
+										.subhead Образование:
+										ul
+											li Колледж Профессионального Образования и Спорта (красный диплом)
+											li МПГУ ( Педагог-специалист, Анатомия, Физиология, Биомеханика) (красный диплом)
+											li МГУ ( Психология, Психология Бизнеса и Организационное  Управление Персоналом) (красный диплом)
+											li Сертифицированный нутрициолог (консультант  по питанию)
+									br
+									.more#viktoria-link-more Узнать больше
 				section.feedback
 					.container
 						h2 Отзывы участников
@@ -328,28 +332,31 @@ html(lang="ru")
 							a(href="tel: 8 (495) 125–22–25") +7(495)125-32-25
 							br
 							a.underline(href="mailto: info@v-concept.ru") info@v-concept.ru
-						form
-							p.form-head Задайте вопрос
-							input.text-field(type="text" placeholder="Имя")
-							input.text-field(type="email" placeholder="E-mail")
-							input.text-field(type="tel" placeholder="Телефон")
-							textarea.text-field(placeholder="Сообщение")
-							a.btn(href="#")
-								span Отправить
+						.form-outer
+							.form-back
+							form
+								.form-content
+									p.form-head Задайте вопрос
+									input.text-field(type="text" placeholder="Имя")
+									input.text-field(type="email" placeholder="E-mail")
+									input.text-field(type="tel" placeholder="Телефон")
+									textarea.text-field(placeholder="Сообщение")
+									a.btn(href="#")
+										span Отправить
 				section.buyCourse
 					.container
 						.photo
 							img(src="img/marathon/buyCourse-photo.jpg", alt="buyCourse-photo.jpg")
 						.content
-							h2 #[span.online Онлайн #[.dot] ] #[br] Фитнес-Марафон 
-							p.subhead c Викторией Блинниковой и командой V–Concept
-							ul
+							h2.anim-elem #[span.online Онлайн #[.dot] ] #[br] Фитнес-Марафон 
+							p.subhead.anim-elem c Викторией Блинниковой и командой V–Concept
+							ul.anim-elem
 								li 12 тренировок в записи
 								li программа питания на каждую неделю
 								li продуктовая корзина
-							span.price 2 500 &#8381;
+							span.price.anim-elem 2 500 &#8381;
 							br
-							a.btn(href="#")
+							a.btn.anim-elem(href="#")
 								span Купить
 			footer
 				.container
@@ -440,16 +447,166 @@ html(lang="ru")
 					}, 1500);
 					$('section.wantsTo').find('.info-board p.desc').addClass('animate__animated animate__delay-2s animate__fadeInUp');
 				},
-				offset: '25%'
+				offset: '35%'
 			})
 			var waypHowGoing = new Waypoint({
 				element: $('section.howGoing'),
 				handler: function() {
-					$('section.howGoing').find('.background').addClass('active1')
+					$('section.howGoing').find('.background').addClass('active1');
 				},
-				offset: '25%'
+				offset: '35%'
 			})
 
+			var waypEquipment = new Waypoint({
+				element: $('section.equipment'),
+				handler: function() {
+					$('section.equipment').find('h2 span.word').each(function(i){
+						let itemSpan = $(this);
+						setTimeout(function(){
+
+							$(itemSpan).addClass('animate__animated animate__bounceIn');
+
+						}, 200 + 500 * i);
+					});
+					$('section.equipment').find('h2 span.accent').each(function(i){
+						let itemSpan = $(this);
+						setTimeout(function(){
+
+							$(itemSpan).addClass('animate__animated animate__bounceIn');
+
+						}, 400 + 500 * i);
+					});
+					setTimeout(function(){
+						$('section.equipment').find('h2 span.result').addClass('active');
+					}, 1500);
+
+					setTimeout(function(){
+						$('section.equipment').find('.black-board').addClass('active1');
+						$('section.equipment').find('.black-board .back-photo').addClass('active1');
+					}, 500);
+				},
+				offset: '35%'
+			})
+			var waypFitnessProgram = new Waypoint({
+				element: $('section.fitnessProgram'),
+				handler: function() {
+					$('section.fitnessProgram').find('.photo').addClass('active1');
+					$('section.fitnessProgram').find('.text-block').each(function(i){
+						let textBlock = $(this)
+						setTimeout(function(){
+							$(textBlock).addClass('animate__animated animate__fadeInUp');
+						}, 2000 + 250 * i);
+					});
+				},
+				offset: '45%'
+			})
+			var waypNutritionProgram = new Waypoint({
+				element: $('section.nutritionProgram'),
+				handler: function() {
+					$('section.nutritionProgram').find('.photo').addClass('active1');
+					setTimeout(function(){
+						$('section.nutritionProgram').find('.phone-block').addClass('animate__animated animate__fadeInUp');
+					}, 500);
+				},
+				offset: '35%'
+			})
+			var waypTrialClass = new Waypoint({
+				element: $('section.trialClass'),
+				handler: function() {
+					$('section.trialClass').find('.layer').addClass('active1');
+					
+					$('section.trialClass').find('.video').each(function(i){
+						let itemVideo = $(this);
+						setTimeout(function(){
+							$(itemVideo).addClass('animate__animated animate__fadeInUp');
+						}, 500 + 250 * i);
+					});
+				},
+				offset: '45%'
+			})
+			var waypPrice = new Waypoint({
+				element: $('section.price'),
+				handler: function() {
+					$('section.price').find('.photo').addClass('active1');
+					$('section.price').find('.price-elem').each(function(i){
+						let priceElem = $(this)
+						setTimeout(function(){
+							$(priceElem).addClass('animate__animated animate__fadeInUp');
+						}, 1500 + 250 * i);
+					});
+				},
+				offset: '45%'
+			})
+			var waypViktoria = new Waypoint({
+				element: $('section.viktoria'),
+				handler: function() {
+					$('section.viktoria').find('.photo').addClass('active1');
+					setTimeout(function(){
+						$('section.viktoria').find('.black-board').addClass('active1');
+					}, 250)
+					setTimeout(function(){
+						$('section.viktoria').find('.black-board').addClass('trans-active');
+						$('section.viktoria').find('.black-board').removeClass('active1');
+						setTimeout(function(){
+							$('section.viktoria').find('.black-board').addClass('active1');
+						}, 500)
+					}, 1600)
+				},
+				offset: '40%'
+			})
+
+			var waypFeedback = new Waypoint({
+				element: $('section.feedback'),
+				handler: function() {
+					$('#feedback-carousel').find('.owl-item.active img').each(function(i){
+						let thisItem = $(this)
+						setTimeout(function(){
+							$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
+						}, 150 * i);
+					});
+				},	
+				offset: '35%'
+			})
+			var waypCompare = new Waypoint({
+				element: $('section.compare'),
+				handler: function() {
+					$('#compare-carousel').find('.owl-item.active img').each(function(i){
+						let thisItem = $(this)
+						setTimeout(function(){
+							$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
+						}, 150 * i);
+					});
+				},	
+				offset: '35%'
+			})
+
+			var waypCallMe = new Waypoint({
+				element: $('section.callMe'),
+				handler: function() {
+					$('section.callMe').find('.background .layer').addClass('active1');
+					setTimeout(function(){
+						$('section.callMe').find('form').addClass('animate__animated animate__fadeInUp');
+						$('section.callMe').find('.form-back').addClass('animate__animated animate__fadeInUp');
+						
+					}, 500)
+				},
+				offset: '35%'
+			})
+			var waypBuyCourse = new Waypoint({
+				element: $('section.buyCourse'),
+				handler: function() {
+					$('section.buyCourse').find('.photo').addClass('active1');
+					setTimeout(function(){
+						$('section.buyCourse').find('.anim-elem').each(function(i){
+							let thisItem = $(this);
+							setTimeout(function(){
+								$(thisItem).addClass('animate__animated animate__fadeInUp');
+							}, 250 + 250 * i)
+						});
+					}, 500);
+				},
+				offset: '35%'
+			})
 
 
 
@@ -639,6 +796,10 @@ html(lang="ru")
 				dots: true,
 				dotsEach: true,
 				nav: true,
+				mouseDrag: false,
+				touchDrag: false,
+				smartSpeed: 100,
+				slideBy: 2,
 				margin: 110,
 				responsive: {
 					0: {
@@ -649,12 +810,27 @@ html(lang="ru")
 					},
 				}
 			});
+			$('#feedback-carousel').on('translate.owl.carousel', function(){
+				$('#feedback-carousel').find('.owl-item img').removeClass('animate__animated animate__fadeInUp animate__faster');
+			});
+			$('#feedback-carousel').on('translated.owl.carousel', function(){
+				$('#feedback-carousel').find('.owl-item.active img').each(function(i){
+					let thisItem = $(this)
+					setTimeout(function(){
+						$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
+					}, 150 * i);
+				});
+			});
 			$('#compare-carousel').owlCarousel({
 				loop: true,
 				dots: true,
+				mouseDrag: false,
+				touchDrag: false,
 				dotsEach: true,
 				nav: true,
 				center: true,
+				smartSpeed: 100,
+				slideBy: 3,
 				responsive: {
 					0: {
 						items: 1
@@ -664,6 +840,17 @@ html(lang="ru")
 						items: 3
 					},
 				}
+			});
+			$('#compare-carousel').on('translate.owl.carousel', function(){
+				$('#compare-carousel').find('.owl-item img').removeClass('animate__animated animate__fadeInUp animate__faster');
+			});
+			$('#compare-carousel').on('translated.owl.carousel', function(){
+				$('#compare-carousel').find('.owl-item.active img').each(function(i){
+					let thisItem = $(this)
+					setTimeout(function(){
+						$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
+					}, 150 * i);
+				});
 			});
 
 			$('.faq-qBtn').click(function(){

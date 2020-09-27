@@ -721,8 +721,33 @@ body
 				text-transform: uppercase
 				text-align: center
 				letter-spacing: -2px
+				span.result
+					opacity: 0
+					display: inline-block
+				span.result.active
+					opacity: 1
+					animation: kick 1s
+				@keyframes kick
+					0%
+						transform: scale(2)
+					55%
+						transform: scale(0.8)
+					80%
+						transform: scale(1.2)
+					100%
+						transform: scale(1)
+				span.word
+					opacity: 0
+					display: inline-block
 				span.accent
+					opacity: 0
+					display: inline-block
 					color: $accent
+				span.word.animate__animated
+					opacity: 1
+				span.accent.animate__animated
+					opacity: 1
+
 			h3
 				margin-top: 0
 				margin-bottom: 70px
@@ -731,21 +756,39 @@ body
 				font-size: 72px
 				color: $white
 				text-transform: uppercase
+			.black-board.active1
+				background-position: bottom left
+				transition: 1.5s
+				ul
+					li::before
+						opacity: 1
 			.black-board
+				background: linear-gradient(80deg, $black, $black 20%, #fff 30%, #fff 100%)
+				background-size: 500% 500%
+				background-position: top right
 				position: relative
-				background-color: $black
 				padding-top: 165px
 				padding-left: 60px
 				padding-right: 55px
 				padding-bottom: 170px
 				display: inline-block
+				.back-photo.active1
+					background-position: bottom left
+					transition: 1.5s
+					img
+						opacity: 1
+						transition-duration: 1s
+						transition-delay: 1.5s
 				.back-photo
 					position: absolute
 					z-index: -1
 					left: 130px
 					bottom: 47px
-					background-color: #F1E9E8
+					background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%)
+					background-size: 500% 500%
+					background-position: top right
 					img
+						opacity: 0
 						width: 1177px
 						height: 657px
 						vertical-align: bottom
@@ -768,6 +811,8 @@ body
 						margin-right: 30px
 						width: 44px
 						height: 2px
+						opacity: 0
+						transition: 0.5s 1.5s
 						background-color: $accent
 		section.fitnessProgram
 			position: relative
@@ -782,11 +827,20 @@ body
 				height: 100%
 				text-align: center
 				overflow: hidden
+				.photo.active1
+					background-position: bottom left
+					transition: 1.5s
+					img
+						opacity: 1
 				.photo
 					margin-right: -10px
 					display: inline-block
-					background-color: #F1E9E8
+					background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%)
+					background-size: 500% 500%
+					background-position: top right
 					img
+						opacity: 0
+						transition: 1s 1.5s
 						width: 1404px
 						height: auto
 						vertical-align: bottom
@@ -802,23 +856,25 @@ body
 			.text-block
 				padding-left: 300px
 				max-width: 705px
-				p.text
-					margin-top: 0
-					margin-bottom: 0
-					font-family: 'Aeroport'
-					font-size: 20px
-					color: $black
-				p.text:not(:last-child)
-					margin-bottom: 30px
-				.number, .subhead
-					font-family: 'Aeroport-Medium'
-					color: $accent
-				.number 
-					font-size: 112px
-					line-height: 0.9
-				.subhead
-					font-size: 24px
-					text-transform: uppercase
+			p.text
+				margin-top: 0
+				margin-bottom: 0
+				font-family: 'Aeroport'
+				font-size: 20px
+				color: $black
+			.text-block:not(:last-child)
+				margin-bottom: 30px
+			.text-block
+				opacity: 0
+			.number, .subhead
+				font-family: 'Aeroport-Medium'
+				color: $accent
+			.number 
+				font-size: 112px
+				line-height: 0.9
+			.subhead
+				font-size: 24px
+				text-transform: uppercase
 		section.nutritionProgram
 			position: relative
 			padding-bottom: 150px
@@ -832,10 +888,19 @@ body
 				height: 100%
 				padding-left: 53%
 				overflow: hidden
+				.photo.active1
+					background-position: bottom left
+					transition: 1.5s
+					img
+						opacity: 1
 				.photo
-					background-color: #F1E9E8
+					background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%)
+					background-size: 500% 500%
+					background-position: top right
 					display: inline-block
 					img
+						opacity: 0
+						transition: 1s 1.5s
 						width: 705px
 						height: auto
 						vertical-align: bottom
@@ -850,6 +915,7 @@ body
 				color: $black
 				text-transform: uppercase
 			.phone-block
+				opacity: 0
 				position: absolute
 				top: 170px
 				left: -4%
@@ -951,11 +1017,16 @@ body
 				width: 100%
 				height: 100%
 				overflow: hidden
+				.layer.active1
+					background-position: bottom left
+					transition: 1.5s
 				.layer
 					height: 100%
 					width: 1400px
 					margin: auto
-					background-color: #f2f2f2
+					background: linear-gradient(80deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%)
+					background-size: 500% 500%
+					background-position: top right
 			h2, p.desc
 				text-align: center
 				margin-top: 0
@@ -980,6 +1051,7 @@ body
 					.big-btn
 						transform: scale(1.2)
 				.video
+					opacity: 0
 					cursor: pointer
 					width: calc((100% / 2) - 22px)
 					display: inline-block
@@ -1059,19 +1131,30 @@ body
 				height: 100%
 				top: 0
 				left: 0
+				.photo.active1
+					background-position: bottom left
+					transition: 1.5s	
+					img
+						opacity: 1
 				.photo
 					width: 1544px
 					position: absolute
 					left: 0
 					right: 0
 					margin: auto
-					background-color: $accent
+					background: linear-gradient(80deg, $accent, $accent 20%, #fff 30%, #fff 100%)
+					background-size: 500% 500%
+					background-position: top right
 					img
+						opacity: 0
+						transition: 1s 1.5s
 						height: auto
 						width: 100%
 						vertical-align: bottom
 			.text-block
 				padding-left: 160px
+				.price-elem
+					opacity: 0
 				h2
 					margin-top: 0
 					margin-bottom: 0
@@ -1107,13 +1190,22 @@ body
 			padding-bottom: 265px
 			.container
 				position: relative
+			.photo.active1
+				background-position: bottom left
+				transition: 1.5s
+				img
+					opacity: 1
 			.photo
-				background-color: #F1E9E8
+				background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%)
+				background-size: 500% 500%
+				background-position: top right
 				position: absolute
 				z-index: -1
 				top: -100px
 				left: 0
 				img
+					opacity: 0
+					transition: 1s 1.5s
 					width: 533px
 					height: auto
 					vertical-align: bottom
@@ -1127,22 +1219,28 @@ body
 					font-size: 72px
 					color: $black
 					text-transform: uppercase
+				.black-board.trans-active
+					transition: 0s
+					background: linear-gradient(80deg, #000, #000 20%, $accent 30%, $accent 100%)
+					background-size: 500% 500%
+					background-position: top right
+					.outer
+						opacity: 1
+				.black-board.active1
+					background-position: bottom left
+					transition: 1.5s
 				.black-board
 					position: relative
 					padding-left: 70px
 					padding-right: 115px
 					padding-top: 65px
 					padding-bottom: 55px
-					background-color: $black
-					.back
-						display: none
-						position: absolute
-						z-index: 1
-						width: 100%
-						height: 100%
-						top: 0
-						left: 0
-						background-color: $accent
+					background: linear-gradient(80deg, $accent, $accent 20%, #fff 30%, #fff 100%)
+					background-size: 500% 500%
+					background-position: top right
+					.outer
+						opacity: 0
+						transition: 1s
 					.name
 						font-family: 'Aeroport'
 						font-size: 24px
@@ -1237,6 +1335,9 @@ body
 		section.feedback, section.compare
 			padding-bottom: 140px
 			.owl-theme
+				.owl-item
+					img
+						opacity: 0
 				.owl-nav
 					margin-top: 0
 					.owl-prev:hover, .owl-next:hover, 
@@ -1343,6 +1444,9 @@ body
 				height: 100%
 				top: 0
 				left: 0
+				.layer.active1
+					background-position: bottom left
+					transition: 1.5s
 				.layer
 					width: 1445px
 					height: 492px
@@ -1351,8 +1455,10 @@ body
 					right: 0
 					bottom: 0
 					margin: auto
-					background-color: #F8F8F8
-			.text-block, form
+					background: linear-gradient(80deg, #F8F8F8, #F8F8F8 20%, #fff 30%, #fff 100%)
+					background-size: 500% 500%
+					background-position: top right
+			.text-block, .form-outer
 				display: inline-block
 				vertical-align: bottom
 			.text-block
@@ -1380,15 +1486,20 @@ body
 					line-height: 1.5
 				a.underline
 					border-bottom: 2px solid #9E9E9E
+			form.animate__animated
+				.form-content
+					opacity: 1
 			form
 				width: 515px
-				margin-left: 115px
-				margin-right: -50px
 				padding: 130px 95px 60px 80px
 				background-image: url('../img/marathon/nutritionProgram-iphone.png')
 				background-repeat: no-repeat
 				background-size: cover
 				position: relative
+				opacity: 0
+				.form-content
+					opacity: 0
+					transition: 1s 1s
 				p.form-head
 					text-transform: uppercase
 					font-family: 'HeadingSmallcasePro-Light'
@@ -1439,23 +1550,32 @@ body
 				a.btn:hover
 					span
 						transform: scale(1.2)
-			form::before
-				content: ''
-				position: absolute
-				z-index: -1
-				bottom: 0
-				left: 0
-				margin: auto
-				right: 0
-				width: 96%
-				height: 97%
-				border-top-left-radius: 6%
-				border-top-right-radius: 6%
-				background-color: $black
+			.form-outer
+				position: relative
+				margin-left: 115px
+				margin-right: -50px
+				.form-back
+					opacity: 0
+					position: absolute
+					z-index: -1
+					bottom: 0
+					left: 0
+					margin: auto
+					right: 0
+					width: 96%
+					height: 97%
+					border-top-left-radius: 6%
+					border-top-right-radius: 6%
+					background-color: $black
 		section.buyCourse
 			padding-bottom: 240px
 			.container
 				position: relative
+				.photo.active1
+					background-position: bottom left
+					transition: 1.5s
+					img
+						opacity: 1
 				.photo
 					position: absolute
 					z-index: -1
@@ -1463,12 +1583,18 @@ body
 					left: 29%
 					width: 723px
 					height: 964px
-					background-color: $gray
+					background: linear-gradient(80deg, $gray, $gray 20%, #fff 30%, #fff 100%)
+					background-size: 500% 500%
+					background-position: top right
 					img
+						opacity: 0
+						transition: 1s 1.5s
 						width: 100%
 						vertical-align: bottom
 			.content
 				padding-left: 100px
+				h2, p.subhead, ul, span.price, a.btn
+					opacity: 0
 				h2
 					position: relative
 					z-index: 2
@@ -2087,7 +2213,7 @@ body
 					p.text
 						font-size: 3.333rem
 						line-height: 1.25
-					p.text:not(:last-child)
+					.text-block:not(:last-child)
 						margin-bottom: 6rem
 			section.nutritionProgram
 				padding-top: 9rem
@@ -2384,9 +2510,10 @@ body
 							line-height: 1.2
 						a.underline
 							border-color: $black
+					.form-outer
+						margin: 0 auto
 					form
 						display: block
-						margin: 0 auto
 						width: 53.3rem
 						padding-left: 8rem
 						padding-top: 10rem

@@ -1234,8 +1234,72 @@ body main section.equipment h2 {
   letter-spacing: -2px;
 }
 
+body main section.equipment h2 span.result {
+  opacity: 0;
+  display: inline-block;
+}
+
+body main section.equipment h2 span.result.active {
+  opacity: 1;
+  -webkit-animation: kick 1s;
+          animation: kick 1s;
+}
+
+@-webkit-keyframes kick {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  55% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes kick {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  55% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+body main section.equipment h2 span.word {
+  opacity: 0;
+  display: inline-block;
+}
+
 body main section.equipment h2 span.accent {
+  opacity: 0;
+  display: inline-block;
   color: #FF3536;
+}
+
+body main section.equipment h2 span.word.animate__animated {
+  opacity: 1;
+}
+
+body main section.equipment h2 span.accent.animate__animated {
+  opacity: 1;
 }
 
 body main section.equipment h3 {
@@ -1248,9 +1312,23 @@ body main section.equipment h3 {
   text-transform: uppercase;
 }
 
+body main section.equipment .black-board.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+body main section.equipment .black-board.active1 ul li::before {
+  opacity: 1;
+}
+
 body main section.equipment .black-board {
+  background: -o-linear-gradient(10deg, #000000, #000000 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #000000, #000000 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
   position: relative;
-  background-color: #000000;
   padding-top: 165px;
   padding-left: 60px;
   padding-right: 55px;
@@ -1258,15 +1336,36 @@ body main section.equipment .black-board {
   display: inline-block;
 }
 
+body main section.equipment .black-board .back-photo.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+body main section.equipment .black-board .back-photo.active1 img {
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 1.5s;
+       -o-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+}
+
 body main section.equipment .black-board .back-photo {
   position: absolute;
   z-index: -1;
   left: 130px;
   bottom: 47px;
-  background-color: #F1E9E8;
+  background: -o-linear-gradient(10deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
 }
 
 body main section.equipment .black-board .back-photo img {
+  opacity: 0;
   width: 1177px;
   height: 657px;
   vertical-align: bottom;
@@ -1297,6 +1396,10 @@ body main section.equipment .black-board ul li::before {
   margin-right: 30px;
   width: 44px;
   height: 2px;
+  opacity: 0;
+  -webkit-transition: 0.5s 1.5s;
+  -o-transition: 0.5s 1.5s;
+  transition: 0.5s 1.5s;
   background-color: #FF3536;
 }
 
@@ -1317,13 +1420,31 @@ body main section.fitnessProgram .background {
   overflow: hidden;
 }
 
+body main section.fitnessProgram .background .photo.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+body main section.fitnessProgram .background .photo.active1 img {
+  opacity: 1;
+}
+
 body main section.fitnessProgram .background .photo {
   margin-right: -10px;
   display: inline-block;
-  background-color: #F1E9E8;
+  background: -o-linear-gradient(10deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
 }
 
 body main section.fitnessProgram .background .photo img {
+  opacity: 0;
+  -webkit-transition: 1s 1.5s;
+  -o-transition: 1s 1.5s;
+  transition: 1s 1.5s;
   width: 1404px;
   height: auto;
   vertical-align: bottom;
@@ -1345,7 +1466,7 @@ body main section.fitnessProgram .text-block {
   max-width: 705px;
 }
 
-body main section.fitnessProgram .text-block p.text {
+body main section.fitnessProgram p.text {
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Aeroport';
@@ -1353,21 +1474,25 @@ body main section.fitnessProgram .text-block p.text {
   color: #000000;
 }
 
-body main section.fitnessProgram .text-block p.text:not(:last-child) {
+body main section.fitnessProgram .text-block:not(:last-child) {
   margin-bottom: 30px;
 }
 
-body main section.fitnessProgram .text-block .number, body main section.fitnessProgram .text-block .subhead {
+body main section.fitnessProgram .text-block {
+  opacity: 0;
+}
+
+body main section.fitnessProgram .number, body main section.fitnessProgram .subhead {
   font-family: 'Aeroport-Medium';
   color: #FF3536;
 }
 
-body main section.fitnessProgram .text-block .number {
+body main section.fitnessProgram .number {
   font-size: 112px;
   line-height: 0.9;
 }
 
-body main section.fitnessProgram .text-block .subhead {
+body main section.fitnessProgram .subhead {
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -1389,12 +1514,30 @@ body main section.nutritionProgram .background {
   overflow: hidden;
 }
 
+body main section.nutritionProgram .background .photo.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+body main section.nutritionProgram .background .photo.active1 img {
+  opacity: 1;
+}
+
 body main section.nutritionProgram .background .photo {
-  background-color: #F1E9E8;
+  background: -o-linear-gradient(10deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
   display: inline-block;
 }
 
 body main section.nutritionProgram .background .photo img {
+  opacity: 0;
+  -webkit-transition: 1s 1.5s;
+  -o-transition: 1s 1.5s;
+  transition: 1s 1.5s;
   width: 705px;
   height: auto;
   vertical-align: bottom;
@@ -1415,6 +1558,7 @@ body main section.nutritionProgram h2 {
 }
 
 body main section.nutritionProgram .phone-block {
+  opacity: 0;
   position: absolute;
   top: 170px;
   left: -4%;
@@ -1535,11 +1679,21 @@ body main section.trialClass .background {
   overflow: hidden;
 }
 
+body main section.trialClass .background .layer.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
 body main section.trialClass .background .layer {
   height: 100%;
   width: 1400px;
   margin: auto;
-  background-color: #f2f2f2;
+  background: -o-linear-gradient(10deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
 }
 
 body main section.trialClass h2, body main section.trialClass p.desc {
@@ -1582,6 +1736,7 @@ body main section.trialClass .videos .video:hover .big-btn {
 }
 
 body main section.trialClass .videos .video {
+  opacity: 0;
   cursor: pointer;
   width: -webkit-calc((100% / 2) - 22px);
   width: calc((100% / 2) - 22px);
@@ -1693,16 +1848,34 @@ body main section.price .background {
   left: 0;
 }
 
+body main section.price .background .photo.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+body main section.price .background .photo.active1 img {
+  opacity: 1;
+}
+
 body main section.price .background .photo {
   width: 1544px;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #FF3536;
+  background: -o-linear-gradient(10deg, #FF3536, #FF3536 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #FF3536, #FF3536 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
 }
 
 body main section.price .background .photo img {
+  opacity: 0;
+  -webkit-transition: 1s 1.5s;
+  -o-transition: 1s 1.5s;
+  transition: 1s 1.5s;
   height: auto;
   width: 100%;
   vertical-align: bottom;
@@ -1710,6 +1883,10 @@ body main section.price .background .photo img {
 
 body main section.price .text-block {
   padding-left: 160px;
+}
+
+body main section.price .text-block .price-elem {
+  opacity: 0;
 }
 
 body main section.price .text-block h2 {
@@ -1764,8 +1941,22 @@ body main section.viktoria .container {
   position: relative;
 }
 
+body main section.viktoria .photo.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+body main section.viktoria .photo.active1 img {
+  opacity: 1;
+}
+
 body main section.viktoria .photo {
-  background-color: #F1E9E8;
+  background: -o-linear-gradient(10deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
   position: absolute;
   z-index: -1;
   top: -100px;
@@ -1773,6 +1964,10 @@ body main section.viktoria .photo {
 }
 
 body main section.viktoria .photo img {
+  opacity: 0;
+  -webkit-transition: 1s 1.5s;
+  -o-transition: 1s 1.5s;
+  transition: 1s 1.5s;
   width: 533px;
   height: auto;
   vertical-align: bottom;
@@ -1792,24 +1987,44 @@ body main section.viktoria .text-block h2 {
   text-transform: uppercase;
 }
 
+body main section.viktoria .text-block .black-board.trans-active {
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+  background: -o-linear-gradient(10deg, #000, #000 20%, #FF3536 30%, #FF3536 100%);
+  background: linear-gradient(80deg, #000, #000 20%, #FF3536 30%, #FF3536 100%);
+  background-size: 500% 500%;
+  background-position: top right;
+}
+
+body main section.viktoria .text-block .black-board.trans-active .outer {
+  opacity: 1;
+}
+
+body main section.viktoria .text-block .black-board.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
 body main section.viktoria .text-block .black-board {
   position: relative;
   padding-left: 70px;
   padding-right: 115px;
   padding-top: 65px;
   padding-bottom: 55px;
-  background-color: #000000;
+  background: -o-linear-gradient(10deg, #FF3536, #FF3536 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #FF3536, #FF3536 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
 }
 
-body main section.viktoria .text-block .black-board .back {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #FF3536;
+body main section.viktoria .text-block .black-board .outer {
+  opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 body main section.viktoria .text-block .black-board .name {
@@ -1943,6 +2158,10 @@ body main section.compare .owl-theme .owl-nav button.owl-prev {
 
 body main section.feedback, body main section.compare {
   padding-bottom: 140px;
+}
+
+body main section.feedback .owl-theme .owl-item img, body main section.compare .owl-theme .owl-item img {
+  opacity: 0;
 }
 
 body main section.feedback .owl-theme .owl-nav, body main section.compare .owl-theme .owl-nav {
@@ -2112,6 +2331,13 @@ body main section.callMe .background {
   left: 0;
 }
 
+body main section.callMe .background .layer.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
 body main section.callMe .background .layer {
   width: 1445px;
   height: 492px;
@@ -2120,10 +2346,13 @@ body main section.callMe .background .layer {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-color: #F8F8F8;
+  background: -o-linear-gradient(10deg, #F8F8F8, #F8F8F8 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #F8F8F8, #F8F8F8 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
 }
 
-body main section.callMe .text-block, body main section.callMe form {
+body main section.callMe .text-block, body main section.callMe .form-outer {
   display: inline-block;
   vertical-align: bottom;
 }
@@ -2163,15 +2392,25 @@ body main section.callMe .text-block a.underline {
   border-bottom: 2px solid #9E9E9E;
 }
 
+body main section.callMe form.animate__animated .form-content {
+  opacity: 1;
+}
+
 body main section.callMe form {
   width: 515px;
-  margin-left: 115px;
-  margin-right: -50px;
   padding: 130px 95px 60px 80px;
   background-image: url("../img/marathon/nutritionProgram-iphone.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  opacity: 0;
+}
+
+body main section.callMe form .form-content {
+  opacity: 0;
+  -webkit-transition: 1s 1s;
+  -o-transition: 1s 1s;
+  transition: 1s 1s;
 }
 
 body main section.callMe form p.form-head {
@@ -2265,8 +2504,14 @@ body main section.callMe form a.btn:hover span {
           transform: scale(1.2);
 }
 
-body main section.callMe form::before {
-  content: '';
+body main section.callMe .form-outer {
+  position: relative;
+  margin-left: 115px;
+  margin-right: -50px;
+}
+
+body main section.callMe .form-outer .form-back {
+  opacity: 0;
   position: absolute;
   z-index: -1;
   bottom: 0;
@@ -2288,6 +2533,17 @@ body main section.buyCourse .container {
   position: relative;
 }
 
+body main section.buyCourse .container .photo.active1 {
+  background-position: bottom left;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+}
+
+body main section.buyCourse .container .photo.active1 img {
+  opacity: 1;
+}
+
 body main section.buyCourse .container .photo {
   position: absolute;
   z-index: -1;
@@ -2295,16 +2551,27 @@ body main section.buyCourse .container .photo {
   left: 29%;
   width: 723px;
   height: 964px;
-  background-color: #E7E7E7;
+  background: -o-linear-gradient(10deg, #E7E7E7, #E7E7E7 20%, #fff 30%, #fff 100%);
+  background: linear-gradient(80deg, #E7E7E7, #E7E7E7 20%, #fff 30%, #fff 100%);
+  background-size: 500% 500%;
+  background-position: top right;
 }
 
 body main section.buyCourse .container .photo img {
+  opacity: 0;
+  -webkit-transition: 1s 1.5s;
+  -o-transition: 1s 1.5s;
+  transition: 1s 1.5s;
   width: 100%;
   vertical-align: bottom;
 }
 
 body main section.buyCourse .content {
   padding-left: 100px;
+}
+
+body main section.buyCourse .content h2, body main section.buyCourse .content p.subhead, body main section.buyCourse .content ul, body main section.buyCourse .content span.price, body main section.buyCourse .content a.btn {
+  opacity: 0;
 }
 
 body main section.buyCourse .content h2 {
@@ -3098,7 +3365,7 @@ body footer nav a.btn.request:hover span {
     font-size: 3.333rem;
     line-height: 1.25;
   }
-  body main section.fitnessProgram .text-block p.text:not(:last-child) {
+  body main section.fitnessProgram .text-block .text-block:not(:last-child) {
     margin-bottom: 6rem;
   }
   body main section.nutritionProgram {
@@ -3464,9 +3731,11 @@ body footer nav a.btn.request:hover span {
   body main section.callMe .container .text-block a.underline {
     border-color: #000000;
   }
+  body main section.callMe .container .form-outer {
+    margin: 0 auto;
+  }
   body main section.callMe .container form {
     display: block;
-    margin: 0 auto;
     width: 53.3rem;
     padding-left: 8rem;
     padding-top: 10rem;
