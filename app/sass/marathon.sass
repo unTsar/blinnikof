@@ -206,7 +206,7 @@ body
 				img
 					position: relative
 					opacity: 0
-					transform: scale(2)
+					transform: scale(1.3)
 					vertical-align: bottom
 				img.mob
 					display: none
@@ -214,7 +214,7 @@ body
 				background-position: bottom left
 				transition: 1.5s
 				img
-					transition: 0.75s
+					transition: 0.5s
 			.photo1.img-anim, .photo2.img-anim
 				img
 					transform: none
@@ -373,7 +373,7 @@ body
 				background-position: top right
 			.offer.active1
 				background-position: bottom left
-				transition: 1.5s
+				transition: 1s
 			.offer
 				background: linear-gradient(80deg, #000, #000 20%, #fff 30%, #fff 100%)
 				background-size: 500% 500%
@@ -513,11 +513,11 @@ body
 						width: 608px
 						height: auto
 						opacity: 0
-						transition-delay: 2s
+						transition-delay: 1s
 						transition-duration: 1s
 				.photo1.active1
 					background-position: bottom left
-					transition: 1.5s
+					transition: 1s
 					img
 						opacity: 1
 			.info-board::before
@@ -615,13 +615,14 @@ body
 			position: relative
 			padding-top: 95px
 			margin-bottom: 120px
-			.background.active1
-				background-position: bottom left
-				transition: 1.5s
+			// .background.active1
+			// 	background-position: bottom left
+			// 	transition: 1.5s
 			.background
-				background: linear-gradient(80deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%)
-				background-size: 500% 500%
-				background-position: top right
+				// background: linear-gradient(80deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%)
+				// background-size: 500% 500%
+				// background-position: top right
+				background-color: #f2f2f2
 				position: absolute
 				top: 0
 				right: 0
@@ -827,20 +828,21 @@ body
 				height: 100%
 				text-align: center
 				overflow: hidden
-				.photo.active1
-					background-position: bottom left
-					transition: 1.5s
+				// .photo.active1
+				// 	background-position: bottom left
+				// 	transition: 1.5s
 					img
 						opacity: 1
 				.photo
 					margin-right: -10px
 					display: inline-block
-					background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%)
-					background-size: 500% 500%
-					background-position: top right
+					// background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%)
+					// background-size: 500% 500%
+					// background-position: top right
+					background-color: #F1E9E8
 					img
-						opacity: 0
-						transition: 1s 1.5s
+						// opacity: 0
+						// transition: 1s 1.5s
 						width: 1404px
 						height: auto
 						vertical-align: bottom
@@ -864,8 +866,8 @@ body
 				color: $black
 			.text-block:not(:last-child)
 				margin-bottom: 30px
-			.text-block
-				opacity: 0
+			// .text-block
+			// 	opacity: 0
 			.number, .subhead
 				font-family: 'Aeroport-Medium'
 				color: $accent
@@ -900,7 +902,7 @@ body
 					display: inline-block
 					img
 						opacity: 0
-						transition: 1s 1.5s
+						transition: 1s 1s
 						width: 705px
 						height: auto
 						vertical-align: bottom
@@ -1017,16 +1019,17 @@ body
 				width: 100%
 				height: 100%
 				overflow: hidden
-				.layer.active1
-					background-position: bottom left
-					transition: 1.5s
+				// .layer.active1
+				// 	background-position: bottom left
+				// 	transition: 1.5s
 				.layer
 					height: 100%
 					width: 1400px
 					margin: auto
-					background: linear-gradient(80deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%)
-					background-size: 500% 500%
-					background-position: top right
+					background-color: #f2f2f2
+					// background: linear-gradient(80deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%)
+					// background-size: 500% 500%
+					// background-position: top right
 			h2, p.desc
 				text-align: center
 				margin-top: 0
@@ -1051,7 +1054,7 @@ body
 					.big-btn
 						transform: scale(1.2)
 				.video
-					opacity: 0
+					// opacity: 0
 					cursor: pointer
 					width: calc((100% / 2) - 22px)
 					display: inline-block
@@ -1147,7 +1150,7 @@ body
 					background-position: top right
 					img
 						opacity: 0
-						transition: 1s 1.5s
+						transition: 1s 1s
 						height: auto
 						width: 100%
 						vertical-align: bottom
@@ -1205,7 +1208,7 @@ body
 				left: 0
 				img
 					opacity: 0
-					transition: 1s 1.5s
+					transition: 1s 1s
 					width: 533px
 					height: auto
 					vertical-align: bottom
@@ -1228,7 +1231,7 @@ body
 						opacity: 1
 				.black-board.active1
 					background-position: bottom left
-					transition: 1.5s
+					transition: 1s
 				.black-board
 					position: relative
 					padding-left: 70px
@@ -1335,9 +1338,9 @@ body
 		section.feedback, section.compare
 			padding-bottom: 140px
 			.owl-theme
-				.owl-item
-					img
-						opacity: 0
+				// .owl-item
+				// 	img
+				// 		opacity: 0
 				.owl-nav
 					margin-top: 0
 					.owl-prev:hover, .owl-next:hover, 
@@ -1571,11 +1574,11 @@ body
 			padding-bottom: 240px
 			.container
 				position: relative
-				.photo.active1
-					background-position: bottom left
-					transition: 1.5s
-					img
-						opacity: 1
+				// .photo.active1
+				// 	background-position: bottom left
+				// 	transition: 1.5s
+				// 	img
+				// 		opacity: 1
 				.photo
 					position: absolute
 					z-index: -1
@@ -1583,18 +1586,19 @@ body
 					left: 29%
 					width: 723px
 					height: 964px
-					background: linear-gradient(80deg, $gray, $gray 20%, #fff 30%, #fff 100%)
-					background-size: 500% 500%
-					background-position: top right
+					// background: linear-gradient(80deg, $gray, $gray 20%, #fff 30%, #fff 100%)
+					// background-size: 500% 500%
+					// background-position: top right
+					background-color: $gray
 					img
-						opacity: 0
-						transition: 1s 1.5s
+						// opacity: 0
+						// transition: 1s 1.5s
 						width: 100%
 						vertical-align: bottom
 			.content
 				padding-left: 100px
-				h2, p.subhead, ul, span.price, a.btn
-					opacity: 0
+				// h2, p.subhead, ul, span.price, a.btn
+				// 	opacity: 0
 				h2
 					position: relative
 					z-index: 2

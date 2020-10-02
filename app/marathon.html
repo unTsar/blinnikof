@@ -379,19 +379,19 @@
     		setTimeout(function(){
     			$('header section.first .offer').addClass('trans-active');
     			$('header section.first .offer').removeClass('active1');
-    		}, 1100)
+    		}, 750)
     	}, 1000);
     	setTimeout(function(){
     		$('header section.first .offer').addClass('active1');
-    	}, 2200)
+    	}, 1800)
     	//- 2-ая плашка
     	setTimeout(function(){
     		$('header .background .photo1').addClass('active1');
-    	}, 1400);
+    	}, 1175);
     	//- 3-ая плашка
     	setTimeout(function(){
     		$('header .background .photo2').addClass('active1');
-    	}, 1800);
+    	}, 1350);
     
     	//- Фотографии
     	setTimeout(function(){
@@ -403,7 +403,7 @@
     
     		$('header .background .photo1 img').css('opacity', '1')
     		$('header .background .photo2 img').css('opacity', '1')
-    	}, 2500);
+    	}, 2300);
     	setTimeout(function(){
     		setTimeout(function(){
     			$('header .background .photo1').addClass('img-anim');
@@ -413,7 +413,7 @@
     		$('header .background .photo1 img').css('bottom', '0')
     		$('header .background .photo2 img').css('bottom', '0')
     
-    	}, 3000);
+    	}, 2800);
     
     	var waypWantsTo = new Waypoint({
     		element: $('section.wantsTo'),
@@ -424,21 +424,14 @@
     				$('section.wantsTo').find('.info-board h3').addClass('animate__animated animate__fadeInUp');
     				setTimeout(function(){
     					$('section.wantsTo').find('.info-board .plus').addClass('animate__animated animate__bounceIn');
-    				}, 1000);
+    				}, 500);
     				setTimeout(function(){
     					$('section.wantsTo').find('.check').addClass('animate__animated animate__bounceIn');
-    				}, 1500);
-    			}, 1500);
-    			$('section.wantsTo').find('.info-board p.desc').addClass('animate__animated animate__delay-2s animate__fadeInUp');
+    				}, 750);
+    			}, 750);
+    			$('section.wantsTo').find('.info-board p.desc').addClass('animate__animated animate__delay-1s animate__fadeInUp');
     		},
     		offset: '35%'
-    	})
-    	var waypHowGoing = new Waypoint({
-    		element: $('section.howGoing'),
-    		handler: function() {
-    			$('section.howGoing').find('.background').addClass('active1');
-    		},
-    		offset: '45%'
     	})
     
     	var waypEquipment = new Waypoint({
@@ -471,19 +464,19 @@
     		},
     		offset: '35%'
     	})
-    	var waypFitnessProgram = new Waypoint({
-    		element: $('section.fitnessProgram'),
-    		handler: function() {
-    			$('section.fitnessProgram').find('.photo').addClass('active1');
-    			$('section.fitnessProgram').find('.text-block').each(function(i){
-    				let textBlock = $(this)
-    				setTimeout(function(){
-    					$(textBlock).addClass('animate__animated animate__fadeInUp');
-    				}, 2000 + 250 * i);
-    			});
-    		},
-    		offset: '45%'
-    	})
+    	//- var waypFitnessProgram = new Waypoint({
+    	//- 	element: $('section.fitnessProgram'),
+    	//- 	handler: function() {
+    	//- 		$('section.fitnessProgram').find('.photo').addClass('active1');
+    	//- 		$('section.fitnessProgram').find('.text-block').each(function(i){
+    	//- 			let textBlock = $(this)
+    	//- 			setTimeout(function(){
+    	//- 				$(textBlock).addClass('animate__animated animate__fadeInUp');
+    	//- 			}, 2000 + 250 * i);
+    	//- 		});
+    	//- 	},
+    	//- 	offset: '45%'
+    	//- })
     	var waypNutritionProgram = new Waypoint({
     		element: $('section.nutritionProgram'),
     		handler: function() {
@@ -494,20 +487,20 @@
     		},
     		offset: '35%'
     	})
-    	var waypTrialClass = new Waypoint({
-    		element: $('section.trialClass'),
-    		handler: function() {
-    			$('section.trialClass').find('.layer').addClass('active1');
+    	//- var waypTrialClass = new Waypoint({
+    	//- 	element: $('section.trialClass'),
+    	//- 	handler: function() {
+    	//- 		$('section.trialClass').find('.layer').addClass('active1');
     			
-    			$('section.trialClass').find('.video').each(function(i){
-    				let itemVideo = $(this);
-    				setTimeout(function(){
-    					$(itemVideo).addClass('animate__animated animate__fadeInUp');
-    				}, 500 + 250 * i);
-    			});
-    		},
-    		offset: '45%'
-    	})
+    	//- 		$('section.trialClass').find('.video').each(function(i){
+    	//- 			let itemVideo = $(this);
+    	//- 			setTimeout(function(){
+    	//- 				$(itemVideo).addClass('animate__animated animate__fadeInUp');
+    	//- 			}, 500 + 250 * i);
+    	//- 		});
+    	//- 	},
+    	//- 	offset: '45%'
+    	//- })
     	var waypPrice = new Waypoint({
     		element: $('section.price'),
     		handler: function() {
@@ -516,7 +509,7 @@
     				let priceElem = $(this)
     				setTimeout(function(){
     					$(priceElem).addClass('animate__animated animate__fadeInUp');
-    				}, 1500 + 250 * i);
+    				}, 1250 + 250 * i);
     			});
     		},
     		offset: '45%'
@@ -534,35 +527,35 @@
     				setTimeout(function(){
     					$('section.viktoria').find('.black-board').addClass('active1');
     				}, 500)
-    			}, 1600)
+    			}, 1000)
     		},
     		offset: '40%'
     	})
     
-    	var waypFeedback = new Waypoint({
-    		element: $('section.feedback'),
-    		handler: function() {
-    			$('#feedback-carousel').find('.owl-item.active img').each(function(i){
-    				let thisItem = $(this)
-    				setTimeout(function(){
-    					$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
-    				}, 150 * i);
-    			});
-    		},	
-    		offset: '35%'
-    	})
-    	var waypCompare = new Waypoint({
-    		element: $('section.compare'),
-    		handler: function() {
-    			$('#compare-carousel').find('.owl-item.active img').each(function(i){
-    				let thisItem = $(this)
-    				setTimeout(function(){
-    					$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
-    				}, 150 * i);
-    			});
-    		},	
-    		offset: '35%'
-    	})
+    	//- var waypFeedback = new Waypoint({
+    	//- 	element: $('section.feedback'),
+    	//- 	handler: function() {
+    	//- 		$('#feedback-carousel').find('.owl-item.active img').each(function(i){
+    	//- 			let thisItem = $(this)
+    	//- 			setTimeout(function(){
+    	//- 				$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
+    	//- 			}, 150 * i);
+    	//- 		});
+    	//- 	},	
+    	//- 	offset: '35%'
+    	//- })
+    	//- var waypCompare = new Waypoint({
+    	//- 	element: $('section.compare'),
+    	//- 	handler: function() {
+    	//- 		$('#compare-carousel').find('.owl-item.active img').each(function(i){
+    	//- 			let thisItem = $(this)
+    	//- 			setTimeout(function(){
+    	//- 				$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
+    	//- 			}, 150 * i);
+    	//- 		});
+    	//- 	},	
+    	//- 	offset: '35%'
+    	//- })
     
     	var waypCallMe = new Waypoint({
     		element: $('section.callMe'),
@@ -576,21 +569,21 @@
     		},
     		offset: '35%'
     	})
-    	var waypBuyCourse = new Waypoint({
-    		element: $('section.buyCourse'),
-    		handler: function() {
-    			$('section.buyCourse').find('.photo').addClass('active1');
-    			setTimeout(function(){
-    				$('section.buyCourse').find('.anim-elem').each(function(i){
-    					let thisItem = $(this);
-    					setTimeout(function(){
-    						$(thisItem).addClass('animate__animated animate__fadeInUp');
-    					}, 250 + 250 * i)
-    				});
-    			}, 500);
-    		},
-    		offset: '35%'
-    	})
+    	//- var waypBuyCourse = new Waypoint({
+    	//- 	element: $('section.buyCourse'),
+    	//- 	handler: function() {
+    	//- 		$('section.buyCourse').find('.photo').addClass('active1');
+    	//- 		setTimeout(function(){
+    	//- 			$('section.buyCourse').find('.anim-elem').each(function(i){
+    	//- 				let thisItem = $(this);
+    	//- 				setTimeout(function(){
+    	//- 					$(thisItem).addClass('animate__animated animate__fadeInUp');
+    	//- 				}, 250 + 250 * i)
+    	//- 			});
+    	//- 		}, 500);
+    	//- 	},
+    	//- 	offset: '35%'
+    	//- })
     
     
     
@@ -795,17 +788,17 @@
     			},
     		}
     	});
-    	$('#feedback-carousel').on('translate.owl.carousel', function(){
-    		$('#feedback-carousel').find('.owl-item img').removeClass('animate__animated animate__fadeInUp animate__faster');
-    	});
-    	$('#feedback-carousel').on('translated.owl.carousel', function(){
-    		$('#feedback-carousel').find('.owl-item.active img').each(function(i){
-    			let thisItem = $(this)
-    			setTimeout(function(){
-    				$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
-    			}, 150 * i);
-    		});
-    	});
+    	//- $('#feedback-carousel').on('translate.owl.carousel', function(){
+    	//- 	$('#feedback-carousel').find('.owl-item img').removeClass('animate__animated animate__fadeInUp animate__faster');
+    	//- });
+    	//- $('#feedback-carousel').on('translated.owl.carousel', function(){
+    	//- 	$('#feedback-carousel').find('.owl-item.active img').each(function(i){
+    	//- 		let thisItem = $(this)
+    	//- 		setTimeout(function(){
+    	//- 			$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
+    	//- 		}, 150 * i);
+    	//- 	});
+    	//- });
     	$('#compare-carousel').owlCarousel({
     		loop: true,
     		dots: true,
@@ -826,17 +819,17 @@
     			},
     		}
     	});
-    	$('#compare-carousel').on('translate.owl.carousel', function(){
-    		$('#compare-carousel').find('.owl-item img').removeClass('animate__animated animate__fadeInUp animate__faster');
-    	});
-    	$('#compare-carousel').on('translated.owl.carousel', function(){
-    		$('#compare-carousel').find('.owl-item.active img').each(function(i){
-    			let thisItem = $(this)
-    			setTimeout(function(){
-    				$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
-    			}, 150 * i);
-    		});
-    	});
+    	//- $('#compare-carousel').on('translate.owl.carousel', function(){
+    	//- 	$('#compare-carousel').find('.owl-item img').removeClass('animate__animated animate__fadeInUp animate__faster');
+    	//- });
+    	//- $('#compare-carousel').on('translated.owl.carousel', function(){
+    	//- 	$('#compare-carousel').find('.owl-item.active img').each(function(i){
+    	//- 		let thisItem = $(this)
+    	//- 		setTimeout(function(){
+    	//- 			$(thisItem).addClass('animate__animated animate__fadeInUp animate__faster');
+    	//- 		}, 150 * i);
+    	//- 	});
+    	//- });
     
     	$('.faq-qBtn').click(function(){
     		$('.faq-qBtn').not(this).next('.hidden').slideUp(250);

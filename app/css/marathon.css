@@ -439,9 +439,9 @@ body header .background .photo1, body header .background .photo2 {
 body header .background .photo1 img, body header .background .photo2 img {
   position: relative;
   opacity: 0;
-  -webkit-transform: scale(2);
-      -ms-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
   vertical-align: bottom;
 }
 
@@ -457,9 +457,9 @@ body header .background .photo1.active1, body header .background .photo2.active1
 }
 
 body header .background .photo1.active1 img, body header .background .photo2.active1 img {
-  -webkit-transition: 0.75s;
-  -o-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body header .background .photo1.img-anim img, body header .background .photo2.img-anim img {
@@ -710,9 +710,9 @@ body header section.first .offer.trans-active {
 
 body header section.first .offer.active1 {
   background-position: bottom left;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 body header section.first .offer {
@@ -928,9 +928,9 @@ body main section.wantsTo .background .photo1 img {
   width: 608px;
   height: auto;
   opacity: 0;
-  -webkit-transition-delay: 2s;
-       -o-transition-delay: 2s;
-          transition-delay: 2s;
+  -webkit-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s;
   -webkit-transition-duration: 1s;
        -o-transition-duration: 1s;
           transition-duration: 1s;
@@ -938,9 +938,9 @@ body main section.wantsTo .background .photo1 img {
 
 body main section.wantsTo .background .photo1.active1 {
   background-position: bottom left;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 body main section.wantsTo .background .photo1.active1 img {
@@ -1083,18 +1083,8 @@ body main section.howGoing {
   margin-bottom: 120px;
 }
 
-body main section.howGoing .background.active1 {
-  background-position: bottom left;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
-}
-
 body main section.howGoing .background {
-  background: -o-linear-gradient(10deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%);
-  background: linear-gradient(80deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%);
-  background-size: 500% 500%;
-  background-position: top right;
+  background-color: #f2f2f2;
   position: absolute;
   top: 0;
   right: 0;
@@ -1420,31 +1410,13 @@ body main section.fitnessProgram .background {
   overflow: hidden;
 }
 
-body main section.fitnessProgram .background .photo.active1 {
-  background-position: bottom left;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
-}
-
-body main section.fitnessProgram .background .photo.active1 img {
-  opacity: 1;
-}
-
 body main section.fitnessProgram .background .photo {
   margin-right: -10px;
   display: inline-block;
-  background: -o-linear-gradient(10deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%);
-  background: linear-gradient(80deg, #F1E9E8, #F1E9E8 20%, #fff 30%, #fff 100%);
-  background-size: 500% 500%;
-  background-position: top right;
+  background-color: #F1E9E8;
 }
 
 body main section.fitnessProgram .background .photo img {
-  opacity: 0;
-  -webkit-transition: 1s 1.5s;
-  -o-transition: 1s 1.5s;
-  transition: 1s 1.5s;
   width: 1404px;
   height: auto;
   vertical-align: bottom;
@@ -1476,10 +1448,6 @@ body main section.fitnessProgram p.text {
 
 body main section.fitnessProgram .text-block:not(:last-child) {
   margin-bottom: 30px;
-}
-
-body main section.fitnessProgram .text-block {
-  opacity: 0;
 }
 
 body main section.fitnessProgram .number, body main section.fitnessProgram .subhead {
@@ -1535,9 +1503,9 @@ body main section.nutritionProgram .background .photo {
 
 body main section.nutritionProgram .background .photo img {
   opacity: 0;
-  -webkit-transition: 1s 1.5s;
-  -o-transition: 1s 1.5s;
-  transition: 1s 1.5s;
+  -webkit-transition: 1s 1s;
+  -o-transition: 1s 1s;
+  transition: 1s 1s;
   width: 705px;
   height: auto;
   vertical-align: bottom;
@@ -1679,21 +1647,11 @@ body main section.trialClass .background {
   overflow: hidden;
 }
 
-body main section.trialClass .background .layer.active1 {
-  background-position: bottom left;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
-}
-
 body main section.trialClass .background .layer {
   height: 100%;
   width: 1400px;
   margin: auto;
-  background: -o-linear-gradient(10deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%);
-  background: linear-gradient(80deg, #f2f2f2, #f2f2f2 20%, #fff 30%, #fff 100%);
-  background-size: 500% 500%;
-  background-position: top right;
+  background-color: #f2f2f2;
 }
 
 body main section.trialClass h2, body main section.trialClass p.desc {
@@ -1736,7 +1694,6 @@ body main section.trialClass .videos .video:hover .big-btn {
 }
 
 body main section.trialClass .videos .video {
-  opacity: 0;
   cursor: pointer;
   width: -webkit-calc((100% / 2) - 22px);
   width: calc((100% / 2) - 22px);
@@ -1873,9 +1830,9 @@ body main section.price .background .photo {
 
 body main section.price .background .photo img {
   opacity: 0;
-  -webkit-transition: 1s 1.5s;
-  -o-transition: 1s 1.5s;
-  transition: 1s 1.5s;
+  -webkit-transition: 1s 1s;
+  -o-transition: 1s 1s;
+  transition: 1s 1s;
   height: auto;
   width: 100%;
   vertical-align: bottom;
@@ -1965,9 +1922,9 @@ body main section.viktoria .photo {
 
 body main section.viktoria .photo img {
   opacity: 0;
-  -webkit-transition: 1s 1.5s;
-  -o-transition: 1s 1.5s;
-  transition: 1s 1.5s;
+  -webkit-transition: 1s 1s;
+  -o-transition: 1s 1s;
+  transition: 1s 1s;
   width: 533px;
   height: auto;
   vertical-align: bottom;
@@ -2003,9 +1960,9 @@ body main section.viktoria .text-block .black-board.trans-active .outer {
 
 body main section.viktoria .text-block .black-board.active1 {
   background-position: bottom left;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 body main section.viktoria .text-block .black-board {
@@ -2158,10 +2115,6 @@ body main section.compare .owl-theme .owl-nav button.owl-prev {
 
 body main section.feedback, body main section.compare {
   padding-bottom: 140px;
-}
-
-body main section.feedback .owl-theme .owl-item img, body main section.compare .owl-theme .owl-item img {
-  opacity: 0;
 }
 
 body main section.feedback .owl-theme .owl-nav, body main section.compare .owl-theme .owl-nav {
@@ -2533,17 +2486,6 @@ body main section.buyCourse .container {
   position: relative;
 }
 
-body main section.buyCourse .container .photo.active1 {
-  background-position: bottom left;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
-}
-
-body main section.buyCourse .container .photo.active1 img {
-  opacity: 1;
-}
-
 body main section.buyCourse .container .photo {
   position: absolute;
   z-index: -1;
@@ -2551,27 +2493,16 @@ body main section.buyCourse .container .photo {
   left: 29%;
   width: 723px;
   height: 964px;
-  background: -o-linear-gradient(10deg, #E7E7E7, #E7E7E7 20%, #fff 30%, #fff 100%);
-  background: linear-gradient(80deg, #E7E7E7, #E7E7E7 20%, #fff 30%, #fff 100%);
-  background-size: 500% 500%;
-  background-position: top right;
+  background-color: #E7E7E7;
 }
 
 body main section.buyCourse .container .photo img {
-  opacity: 0;
-  -webkit-transition: 1s 1.5s;
-  -o-transition: 1s 1.5s;
-  transition: 1s 1.5s;
   width: 100%;
   vertical-align: bottom;
 }
 
 body main section.buyCourse .content {
   padding-left: 100px;
-}
-
-body main section.buyCourse .content h2, body main section.buyCourse .content p.subhead, body main section.buyCourse .content ul, body main section.buyCourse .content span.price, body main section.buyCourse .content a.btn {
-  opacity: 0;
 }
 
 body main section.buyCourse .content h2 {
