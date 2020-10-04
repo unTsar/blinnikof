@@ -74,7 +74,7 @@ html(lang="ru")
 							a(href="#").btn.try
 								span Попробовать
 						.offer
-							.content.animate__animated.animate__fadeInUp.animate__delay-3s
+							.content.animate__animated.animate__fadeInUp.animate__delay-2s
 								.headtext
 									span старт 15 июня
 								p.text Когда выбираешь #[br] во всём профессионалов
@@ -395,11 +395,11 @@ html(lang="ru")
 				setTimeout(function(){
 					$('header section.first .offer').addClass('trans-active');
 					$('header section.first .offer').removeClass('active1');
-				}, 750)
+				}, 500)
 			}, 1000);
 			setTimeout(function(){
 				$('header section.first .offer').addClass('active1');
-			}, 1800)
+			}, 1550)
 			//- 2-ая плашка
 			setTimeout(function(){
 				$('header .background .photo1').addClass('active1');
@@ -419,7 +419,7 @@ html(lang="ru")
 
 				$('header .background .photo1 img').css('opacity', '1')
 				$('header .background .photo2 img').css('opacity', '1')
-			}, 2300);
+			}, 2000);
 			setTimeout(function(){
 				setTimeout(function(){
 					$('header .background .photo1').addClass('img-anim');
@@ -429,7 +429,7 @@ html(lang="ru")
 				$('header .background .photo1 img').css('bottom', '0')
 				$('header .background .photo2 img').css('bottom', '0')
 
-			}, 2800);
+			}, 2500);
 
 			var waypWantsTo = new Waypoint({
 				element: $('section.wantsTo'),
@@ -440,11 +440,11 @@ html(lang="ru")
 						$('section.wantsTo').find('.info-board h3').addClass('animate__animated animate__fadeInUp');
 						setTimeout(function(){
 							$('section.wantsTo').find('.info-board .plus').addClass('animate__animated animate__bounceIn');
-						}, 500);
+						}, 350);
 						setTimeout(function(){
 							$('section.wantsTo').find('.check').addClass('animate__animated animate__bounceIn');
-						}, 750);
-					}, 750);
+						}, 550);
+					}, 500);
 					$('section.wantsTo').find('.info-board p.desc').addClass('animate__animated animate__delay-1s animate__fadeInUp');
 				},
 				offset: '35%'
@@ -473,10 +473,8 @@ html(lang="ru")
 						$('section.equipment').find('h2 span.result').addClass('active');
 					}, 1500);
 
-					setTimeout(function(){
-						$('section.equipment').find('.black-board').addClass('active1');
-						$('section.equipment').find('.black-board .back-photo').addClass('active1');
-					}, 500);
+					$('section.equipment').find('.black-board').addClass('active1');
+					$('section.equipment').find('.black-board .back-photo').addClass('active1');
 				},
 				offset: '35%'
 			})
@@ -501,7 +499,7 @@ html(lang="ru")
 						$('section.nutritionProgram').find('.phone-block').addClass('animate__animated animate__fadeInUp');
 					}, 500);
 				},
-				offset: '35%'
+				offset: '55%'
 			})
 			//- var waypTrialClass = new Waypoint({
 			//- 	element: $('section.trialClass'),
@@ -528,7 +526,7 @@ html(lang="ru")
 						}, 1250 + 250 * i);
 					});
 				},
-				offset: '45%'
+				offset: '90%'
 			})
 			var waypViktoria = new Waypoint({
 				element: $('section.viktoria'),
@@ -543,9 +541,9 @@ html(lang="ru")
 						setTimeout(function(){
 							$('section.viktoria').find('.black-board').addClass('active1');
 						}, 500)
-					}, 1000)
+					}, 750)
 				},
-				offset: '40%'
+				offset: '85%'
 			})
 
 			//- var waypFeedback = new Waypoint({
@@ -583,7 +581,7 @@ html(lang="ru")
 						
 					}, 500)
 				},
-				offset: '35%'
+				offset: '70%'
 			})
 			//- var waypBuyCourse = new Waypoint({
 			//- 	element: $('section.buyCourse'),

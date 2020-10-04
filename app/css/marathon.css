@@ -710,9 +710,9 @@ body header section.first .offer.trans-active {
 
 body header section.first .offer.active1 {
   background-position: bottom left;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body header section.first .offer {
@@ -931,9 +931,9 @@ body main section.wantsTo .background .photo1 img {
   -webkit-transition-delay: 1s;
        -o-transition-delay: 1s;
           transition-delay: 1s;
-  -webkit-transition-duration: 1s;
-       -o-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 body main section.wantsTo .background .photo1.active1 {
@@ -1338,9 +1338,9 @@ body main section.equipment .black-board .back-photo.active1 img {
   -webkit-transition-duration: 1s;
        -o-transition-duration: 1s;
           transition-duration: 1s;
-  -webkit-transition-delay: 1.5s;
-       -o-transition-delay: 1.5s;
-          transition-delay: 1.5s;
+  -webkit-transition-delay: 0.75s;
+       -o-transition-delay: 0.75s;
+          transition-delay: 0.75s;
 }
 
 body main section.equipment .black-board .back-photo {
@@ -1960,9 +1960,9 @@ body main section.viktoria .text-block .black-board.trans-active .outer {
 
 body main section.viktoria .text-block .black-board.active1 {
   background-position: bottom left;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
 }
 
 body main section.viktoria .text-block .black-board {
@@ -2270,6 +2270,7 @@ body main section.faq .questions p.hidden {
 }
 
 body main section.callMe {
+  overflow: hidden;
   position: relative;
   margin-bottom: 200px;
 }
