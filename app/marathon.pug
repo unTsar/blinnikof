@@ -43,10 +43,10 @@ html(lang="ru")
 					.background
 						.white-board-mob
 						.photo1
-							img.desk(src="img/marathon/header-photo1.jpg", alt="header-photo1.jpg")
-							img.mob(src="img/marathon/header-photo1-mob.jpg", alt="header-photo1-mob.jpg")
+							img.photo.desk(src="img/marathon/header-photo1.jpg", alt="header-photo1.jpg")
+							img.photo.mob(src="img/marathon/header-photo1-mob.jpg", alt="header-photo1-mob.jpg")
 						.photo2
-							img.desk(src="img/marathon/header-photo2.jpg", alt="header-photo2.jpg")
+							img.photo.desk(src="img/marathon/header-photo2.jpg", alt="header-photo2.jpg")
 							img.photo.mob(src="img/marathon/header-photo2-mob.jpg", alt="header-photo2-mob.jpg")
 							img.phone.mob(src="img/marathon/nutritionProgram-iphone.png", alt="nutritionProgram-iphone.png")
 					nav.d-flex
@@ -415,21 +415,25 @@ html(lang="ru")
 				let photo1Height = -1.5 * $('header .background .photo1').outerHeight();
 
 				$('header .background .photo1 img').css('bottom', photo1Height)
-				$('header .background .photo2 img').css('bottom', photo2Height)
-
-				$('header .background .photo1 img').css('opacity', '1')
-				$('header .background .photo2 img').css('opacity', '1')
-			}, 2000);
+				$('header .background .photo2 img.photo').css('bottom', photo2Height)
+				$('header .background .photo2 img.phone').fadeIn(550);
+			}, 1250);
 			setTimeout(function(){
-				setTimeout(function(){
-					$('header .background .photo1').addClass('img-anim');
-					$('header .background .photo2').addClass('img-anim');
-				}, 350);
-
 				$('header .background .photo1 img').css('bottom', '0')
-				$('header .background .photo2 img').css('bottom', '0')
+				setTimeout(function(){
+					$('header .background .photo2 img.photo').css('bottom', '0')
+				}, 150)
 
-			}, 2500);
+				setTimeout(function(){
+					$('header .background .photo1 img').css('opacity', '1')
+					$('header .background .photo1').addClass('img-anim');
+				}, 150);
+				setTimeout(function(){
+					$('header .background .photo2').addClass('img-anim');
+					$('header .background .photo2 img.photo').css('opacity', '1')
+				}, 250);
+
+			}, 1750);
 
 			var waypWantsTo = new Waypoint({
 				element: $('section.wantsTo'),
@@ -449,35 +453,58 @@ html(lang="ru")
 				},
 				offset: '35%'
 			})
+			let KProc, k
 
-			var waypEquipment = new Waypoint({
-				element: $('section.equipment'),
-				handler: function() {
-					$('section.equipment').find('h2 span.word').each(function(i){
-						let itemSpan = $(this);
+			$(window).on('load', function(){
+				if($(window).width() > 960){
+					k = 1
+				}else{
+					k = 2
+				}
+				KProc1 = 35 * k + '%'
+				KProc2 = 65 * ( k * 0.8 ) + '%'
+				console.log(KProc)
+				var waypEquipment = new Waypoint({
+					element: $('section.equipment'),
+					handler: function() {
+						$('section.equipment').find('h2 span.word').each(function(i){
+							let itemSpan = $(this);
+							setTimeout(function(){
+
+								$(itemSpan).addClass('animate__animated animate__bounceIn');
+
+							}, 100 + 350 * i);
+						});
+						$('section.equipment').find('h2 span.accent').each(function(i){
+							let itemSpan = $(this);
+							setTimeout(function(){
+
+								$(itemSpan).addClass('animate__animated animate__bounceIn');
+
+							}, 250 + 350 * i);
+						});
 						setTimeout(function(){
+							$('section.equipment').find('h2 span.result').addClass('active');
+						}, 1000);
 
-							$(itemSpan).addClass('animate__animated animate__bounceIn');
-
-						}, 200 + 500 * i);
-					});
-					$('section.equipment').find('h2 span.accent').each(function(i){
-						let itemSpan = $(this);
+						$('section.equipment').find('.black-board').addClass('active1');
+						$('section.equipment').find('.black-board .back-photo').addClass('active1');
+					},
+					offset: KProc1
+				})
+				var waypNutritionProgram = new Waypoint({
+					element: $('section.nutritionProgram'),
+					handler: function() {
+						$('section.nutritionProgram').find('.photo').addClass('active1');
 						setTimeout(function(){
+							$('section.nutritionProgram').find('.phone-block').addClass('animate__animated animate__fadeInUp');
+						}, 500);
+					},
+					offset: KProc2
+				})
+			});
 
-							$(itemSpan).addClass('animate__animated animate__bounceIn');
 
-						}, 400 + 500 * i);
-					});
-					setTimeout(function(){
-						$('section.equipment').find('h2 span.result').addClass('active');
-					}, 1500);
-
-					$('section.equipment').find('.black-board').addClass('active1');
-					$('section.equipment').find('.black-board .back-photo').addClass('active1');
-				},
-				offset: '35%'
-			})
 			//- var waypFitnessProgram = new Waypoint({
 			//- 	element: $('section.fitnessProgram'),
 			//- 	handler: function() {
@@ -491,16 +518,6 @@ html(lang="ru")
 			//- 	},
 			//- 	offset: '45%'
 			//- })
-			var waypNutritionProgram = new Waypoint({
-				element: $('section.nutritionProgram'),
-				handler: function() {
-					$('section.nutritionProgram').find('.photo').addClass('active1');
-					setTimeout(function(){
-						$('section.nutritionProgram').find('.phone-block').addClass('animate__animated animate__fadeInUp');
-					}, 500);
-				},
-				offset: '55%'
-			})
 			//- var waypTrialClass = new Waypoint({
 			//- 	element: $('section.trialClass'),
 			//- 	handler: function() {
@@ -576,8 +593,8 @@ html(lang="ru")
 				handler: function() {
 					$('section.callMe').find('.background .layer').addClass('active1');
 					setTimeout(function(){
-						$('section.callMe').find('form').addClass('animate__animated animate__fadeInUp');
-						$('section.callMe').find('.form-back').addClass('animate__animated animate__fadeInUp');
+						$('section.callMe').find('form').addClass('animate__animated animate__fadeInUp animate__fast');
+						$('section.callMe').find('.form-back').addClass('animate__animated animate__fadeInUp animate__fast');
 						
 					}, 500)
 				},

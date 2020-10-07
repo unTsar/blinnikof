@@ -203,20 +203,20 @@ body
 			.photo1, .photo2
 				overflow: hidden
 				position: relative
-				img
+				img.photo
 					position: relative
 					opacity: 0
 					transform: scale(1.3)
 					vertical-align: bottom
-				img.mob
+					transition: 0.5s 0.15s
+
+				img.photo.mob, img.phone.mob
 					display: none
 			.photo1.active1, .photo2.active1
 				background-position: bottom left
-				transition: 1.5s
-				img
-					transition: 0.5s
+				transition: 1s
 			.photo1.img-anim, .photo2.img-anim
-				img
+				img.photo
 					transform: none
 			.photo1
 				background: linear-gradient(80deg, #d9d9d9, #d9d9d9 20%, #fff 30%, #fff 100%)
@@ -1450,7 +1450,7 @@ body
 				left: 0
 				.layer.active1
 					background-position: bottom left
-					transition: 1.5s
+					transition: 1s
 				.layer
 					width: 1445px
 					height: 492px
@@ -1503,7 +1503,7 @@ body
 				opacity: 0
 				.form-content
 					opacity: 0
-					transition: 1s 1s
+					transition: 1s 0.7s
 				p.form-head
 					text-transform: uppercase
 					font-family: 'HeadingSmallcasePro-Light'
@@ -1881,9 +1881,9 @@ body
 				.photo1, .photo2
 					display: block
 					margin-left: auto
-					img.desk
+					img.photo.desk
 						display: none
-					img.mob
+					img.photo.mob
 						display: block
 				.photo1
 					position: relative
@@ -2016,7 +2016,7 @@ body
 				padding: 14rem 0
 				iframe
 					width: 218rem
-					height: 123rem
+					height: 124rem
 				h2
 					font-size: 9.167rem
 					max-width: 40rem
@@ -2419,6 +2419,7 @@ body
 						.more
 							font-size: 3.333rem
 			section.feedback, section.compare
+				padding-bottom: 14rem
 				h2	
 					font-size: 9.167rem
 					margin-bottom: 3rem
@@ -2808,7 +2809,9 @@ body
 							top: -18px
 							right: -18px
 				p.desc
-					max-width: 21rem
+					max-width: 22rem
+					font-size: 3.3rem
+					font-family: "Aeroport-Light"
 		main
 			section.fitnessProgram
 				h2

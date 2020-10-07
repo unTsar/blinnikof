@@ -436,33 +436,30 @@ body header .background .photo1, body header .background .photo2 {
   position: relative;
 }
 
-body header .background .photo1 img, body header .background .photo2 img {
+body header .background .photo1 img.photo, body header .background .photo2 img.photo {
   position: relative;
   opacity: 0;
   -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);
           transform: scale(1.3);
   vertical-align: bottom;
+  -webkit-transition: 0.5s 0.15s;
+  -o-transition: 0.5s 0.15s;
+  transition: 0.5s 0.15s;
 }
 
-body header .background .photo1 img.mob, body header .background .photo2 img.mob {
+body header .background .photo1 img.photo.mob, body header .background .photo1 img.phone.mob, body header .background .photo2 img.photo.mob, body header .background .photo2 img.phone.mob {
   display: none;
 }
 
 body header .background .photo1.active1, body header .background .photo2.active1 {
   background-position: bottom left;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
-body header .background .photo1.active1 img, body header .background .photo2.active1 img {
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-body header .background .photo1.img-anim img, body header .background .photo2.img-anim img {
+body header .background .photo1.img-anim img.photo, body header .background .photo2.img-anim img.photo {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
@@ -2287,9 +2284,9 @@ body main section.callMe .background {
 
 body main section.callMe .background .layer.active1 {
   background-position: bottom left;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 body main section.callMe .background .layer {
@@ -2362,9 +2359,9 @@ body main section.callMe form {
 
 body main section.callMe form .form-content {
   opacity: 0;
-  -webkit-transition: 1s 1s;
-  -o-transition: 1s 1s;
-  transition: 1s 1s;
+  -webkit-transition: 1s 0.7s;
+  -o-transition: 1s 0.7s;
+  transition: 1s 0.7s;
 }
 
 body main section.callMe form p.form-head {
@@ -2861,10 +2858,10 @@ body footer nav a.btn.request:hover span {
     display: block;
     margin-left: auto;
   }
-  body header .background .photo1 img.desk, body header .background .photo2 img.desk {
+  body header .background .photo1 img.photo.desk, body header .background .photo2 img.photo.desk {
     display: none;
   }
-  body header .background .photo1 img.mob, body header .background .photo2 img.mob {
+  body header .background .photo1 img.photo.mob, body header .background .photo2 img.photo.mob {
     display: block;
   }
   body header .background .photo1 {
@@ -3035,7 +3032,7 @@ body footer nav a.btn.request:hover span {
   }
   body main section.types iframe {
     width: 218rem;
-    height: 123rem;
+    height: 124rem;
   }
   body main section.types h2 {
     font-size: 9.167rem;
@@ -3552,6 +3549,9 @@ body footer nav a.btn.request:hover span {
   body main section.viktoria .text-block .black-board .more {
     font-size: 3.333rem;
   }
+  body main section.feedback, body main section.compare {
+    padding-bottom: 14rem;
+  }
   body main section.feedback h2, body main section.compare h2 {
     font-size: 9.167rem;
     margin-bottom: 3rem;
@@ -3969,7 +3969,9 @@ body footer nav a.btn.request:hover span {
     right: -18px;
   }
   body header section.first p.desc {
-    max-width: 21rem;
+    max-width: 22rem;
+    font-size: 3.3rem;
+    font-family: "Aeroport-Light";
   }
   body main section.fitnessProgram h2 {
     letter-spacing: 0;
