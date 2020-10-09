@@ -218,6 +218,7 @@ body
 				img.photo
 					transform: none
 			.photo1
+				min-width: 605px
 				background: linear-gradient(80deg, #d9d9d9, #d9d9d9 20%, #fff 30%, #fff 100%)
 				background-size: 500% 500%
 				background-position: top right
@@ -228,6 +229,7 @@ body
 				.white-board-mob
 					display: none
 			.photo2
+				min-width: 405px
 				background: linear-gradient(80deg, $accent, $accent 20%, #fff 30%, #fff 100%)
 				background-size: 500% 500%
 				background-position: top right
@@ -1753,6 +1755,11 @@ body
 			min-width: 450px
 		nav.menu.hidden
 			left: -450px
+@media only screen and(max-width: 1400px)
+	body
+		header
+			.background
+				padding-right: 0
 @media only screen and(max-width: 1365px)
 	body
 		main
@@ -1885,6 +1892,7 @@ body
 					width: 50.9rem
 					height: 34.3rem
 				.photo1, .photo2
+					min-width: 0
 					display: block
 					margin-left: auto
 					img.photo.desk
@@ -1907,7 +1915,7 @@ body
 						position: absolute
 						z-index: 2
 						top: 2.3rem
-						left: 6.0rem
+						left: 6.5rem
 				.photo2::before
 					content: ''
 					position: absolute
@@ -2021,11 +2029,15 @@ body
 			section.types
 				padding: 14rem 0
 				iframe
+					border: none
+					overflow: scroll !important
 					width: 218rem
-					height: 124rem
+					height: 122.5rem
+					margin: 0
 				h2
 					font-size: 9.167rem
 					max-width: 40rem
+					line-height: 8.8rem
 					margin: 0 3rem 14.5rem 3rem
 				ol
 					margin-left: 16rem
@@ -2051,7 +2063,7 @@ body
 					position: relative
 					font-size: 9.167rem
 					margin: 0 3rem	
-					line-height: normal
+					line-height: 8.4rem
 					margin-bottom: 6.5rem
 					br
 						display: none
@@ -2094,7 +2106,7 @@ body
 						padding: 9.4rem 7rem 9rem 10rem
 						h3
 							font-size: 9.167rem
-							line-height: 1
+							line-height: 8.8rem
 							margin-bottom: 5rem
 						p.desc
 							font-size: 4.167rem
@@ -2120,7 +2132,7 @@ body
 					height: 87%
 				h2
 					font-size: 9.167rem
-					line-height: 1
+					line-height: 8.4rem
 					margin-bottom: 8.5rem
 				.text-block
 					padding: 0 3rem
@@ -2206,7 +2218,7 @@ body
 							width: 100%
 				h2
 					font-size: 9.167rem
-					line-height: 1
+					line-height: 8.8rem
 					margin-bottom: 15rem
 					text-align: left
 					letter-spacing: -3px
@@ -2307,7 +2319,7 @@ body
 						width: 47rem
 						height: 10rem
 						line-height: 10.5rem
-						margin: 10.5rem 7.8rem 10.5rem auto
+						margin: 10.5rem 8.3rem 10.5rem auto
 						span
 							font-size: 4.167rem
 			section.trialClass
@@ -2364,7 +2376,7 @@ body
 					h2
 						font-size: 9.167rem
 						max-width: 40rem
-						line-height: 1
+						line-height: 8.8rem
 						span.mob-hidden
 							display: none
 					p.price
@@ -2391,7 +2403,7 @@ body
 					h2
 						max-width: 33.5rem
 						font-size: 9.167rem
-						line-height: 1
+						line-height: 8.8rem
 						margin-left: auto
 						margin-bottom: 43.8rem
 					.black-board
@@ -2572,7 +2584,7 @@ body
 						padding-left: 8rem
 						h2
 							font-size: 10rem
-							line-height: 1
+							line-height: 9rem
 							margin-bottom: 2.5rem
 							.online
 								.dot

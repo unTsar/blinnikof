@@ -399,7 +399,7 @@ html(lang="ru")
 			}, 1000);
 			setTimeout(function(){
 				$('header section.first .offer').addClass('active1');
-			}, 1550)
+			}, 1700)
 			//- 2-ая плашка
 			setTimeout(function(){
 				$('header .background .photo1').addClass('active1');
@@ -428,7 +428,9 @@ html(lang="ru")
 				}, 150)
 
 				setTimeout(function(){
-					$('header .background .photo1 img').css('opacity', '1')
+					setTimeout(function(){
+						$('header .background .photo1 img').css('opacity', '1')
+					}, 150);
 					$('header .background .photo1').addClass('img-anim');
 				}, 150);
 				//- setTimeout(function(){

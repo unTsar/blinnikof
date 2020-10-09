@@ -466,6 +466,7 @@ body header .background .photo1.img-anim img.photo, body header .background .pho
 }
 
 body header .background .photo1 {
+  min-width: 605px;
   background: -o-linear-gradient(10deg, #d9d9d9, #d9d9d9 20%, #fff 30%, #fff 100%);
   background: linear-gradient(80deg, #d9d9d9, #d9d9d9 20%, #fff 30%, #fff 100%);
   background-size: 500% 500%;
@@ -483,6 +484,7 @@ body header .background .photo1 .white-board-mob {
 }
 
 body header .background .photo2 {
+  min-width: 405px;
   background: -o-linear-gradient(10deg, #FF3536, #FF3536 20%, #fff 30%, #fff 100%);
   background: linear-gradient(80deg, #FF3536, #FF3536 20%, #fff 30%, #fff 100%);
   background-size: 500% 500%;
@@ -2726,6 +2728,12 @@ body footer nav a.btn.request:hover span {
   }
 }
 
+@media only screen and (max-width: 1400px) {
+  body header .background {
+    padding-right: 0;
+  }
+}
+
 @media only screen and (max-width: 1365px) {
   body main section.types {
     padding-top: 70px;
@@ -2866,6 +2874,7 @@ body footer nav a.btn.request:hover span {
     height: 34.3rem;
   }
   body header .background .photo1, body header .background .photo2 {
+    min-width: 0;
     display: block;
     margin-left: auto;
   }
@@ -2895,7 +2904,7 @@ body footer nav a.btn.request:hover span {
     position: absolute;
     z-index: 2;
     top: 2.3rem;
-    left: 6.0rem;
+    left: 6.5rem;
   }
   body header .background .photo2::before {
     content: '';
@@ -3042,12 +3051,16 @@ body footer nav a.btn.request:hover span {
     padding: 14rem 0;
   }
   body main section.types iframe {
+    border: none;
+    overflow: scroll !important;
     width: 218rem;
-    height: 124rem;
+    height: 122.5rem;
+    margin: 0;
   }
   body main section.types h2 {
     font-size: 9.167rem;
     max-width: 40rem;
+    line-height: 8.8rem;
     margin: 0 3rem 14.5rem 3rem;
   }
   body main section.types ol {
@@ -3082,7 +3095,7 @@ body footer nav a.btn.request:hover span {
     position: relative;
     font-size: 9.167rem;
     margin: 0 3rem;
-    line-height: normal;
+    line-height: 8.4rem;
     margin-bottom: 6.5rem;
   }
   body main section.wantsTo h2 br {
@@ -3136,7 +3149,7 @@ body footer nav a.btn.request:hover span {
   }
   body main section.wantsTo .info-board-outer .info-board h3 {
     font-size: 9.167rem;
-    line-height: 1;
+    line-height: 8.8rem;
     margin-bottom: 5rem;
   }
   body main section.wantsTo .info-board-outer .info-board p.desc {
@@ -3171,7 +3184,7 @@ body footer nav a.btn.request:hover span {
   }
   body main section.howGoing h2 {
     font-size: 9.167rem;
-    line-height: 1;
+    line-height: 8.4rem;
     margin-bottom: 8.5rem;
   }
   body main section.howGoing .text-block {
@@ -3282,7 +3295,7 @@ body footer nav a.btn.request:hover span {
   }
   body main section.fitnessProgram h2 {
     font-size: 9.167rem;
-    line-height: 1;
+    line-height: 8.8rem;
     margin-bottom: 15rem;
     text-align: left;
     letter-spacing: -3px;
@@ -3410,7 +3423,7 @@ body footer nav a.btn.request:hover span {
     width: 47rem;
     height: 10rem;
     line-height: 10.5rem;
-    margin: 10.5rem 7.8rem 10.5rem auto;
+    margin: 10.5rem 8.3rem 10.5rem auto;
   }
   body main section.nutritionProgram .text-block a.btn span {
     font-size: 4.167rem;
@@ -3481,7 +3494,7 @@ body footer nav a.btn.request:hover span {
   body main section.price .text-block h2 {
     font-size: 9.167rem;
     max-width: 40rem;
-    line-height: 1;
+    line-height: 8.8rem;
   }
   body main section.price .text-block h2 span.mob-hidden {
     display: none;
@@ -3517,7 +3530,7 @@ body footer nav a.btn.request:hover span {
   body main section.viktoria .text-block h2 {
     max-width: 33.5rem;
     font-size: 9.167rem;
-    line-height: 1;
+    line-height: 8.8rem;
     margin-left: auto;
     margin-bottom: 43.8rem;
   }
@@ -3735,7 +3748,7 @@ body footer nav a.btn.request:hover span {
   }
   body main section.buyCourse .container .content h2 {
     font-size: 10rem;
-    line-height: 1;
+    line-height: 9rem;
     margin-bottom: 2.5rem;
   }
   body main section.buyCourse .container .content h2 .online .dot {
