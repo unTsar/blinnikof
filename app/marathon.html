@@ -395,33 +395,15 @@
     
     	//- Фотографии
     	setTimeout(function(){
-    		let photo2Height = -1.5 * $('header .background .photo2').outerHeight();
-    		let photo1Height = -1.5 * $('header .background .photo1').outerHeight();
-    
-    		$('header .background .photo1 img').css('bottom', photo1Height)
-    		//- $('header .background .photo2 img.photo').css('bottom', photo2Height)
-    	}, 1250);
-    	setTimeout(function(){
-    		$('header .background .photo1 img').css('bottom', '0')
     		setTimeout(function(){
-    			//- $('header .background .photo2 img.photo').css('bottom', '0')
     			$('header .background .photo2 img.photo').css('opacity', '1');
     			if($(window).width() <= 960){
     				$('header .background .photo2 img.phone').css('opacity', '1');
     			}
-    		}, 150)
-    
-    		setTimeout(function(){
     			setTimeout(function(){
     				$('header .background .photo1 img').css('opacity', '1')
     			}, 150);
-    			$('header .background .photo1').addClass('img-anim');
-    		}, 150);
-    		//- setTimeout(function(){
-    		//- 	$('header .background .photo2').addClass('img-anim');
-    		//- 	$('header .background .photo2 img.photo').css('opacity', '1')
-    		//- }, 250);
-    
+    		}, 150)
     	}, 1750);
     
     	var waypWantsTo = new Waypoint({
@@ -540,14 +522,15 @@
     			$('section.viktoria').find('.photo').addClass('active1');
     			setTimeout(function(){
     				$('section.viktoria').find('.black-board').addClass('active1');
-    			}, 250)
-    			setTimeout(function(){
-    				$('section.viktoria').find('.black-board').addClass('trans-active');
-    				$('section.viktoria').find('.black-board').removeClass('active1');
     				setTimeout(function(){
-    					$('section.viktoria').find('.black-board').addClass('active1');
+    					$('section.viktoria').find('.black-board').addClass('trans-active');
+    					$('section.viktoria').find('.black-board').removeClass('active1');
+    					setTimeout(function(){
+    						$('section.viktoria').find('.black-board').addClass('active1');
+    					}, 500)
     				}, 500)
-    			}, 750)
+    			}, 250)
+    			this.destroy();
     		},
     		offset: '85%'
     	})

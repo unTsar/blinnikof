@@ -200,16 +200,15 @@ body
 			padding-right: 7.35%
 			padding-left: 31%
 			overflow: hidden
-			.photo1
+			.photo1, .photo2
 				overflow: hidden
 				position: relative
-				img.photo
+				img.photo, img.phone
 					position: relative
 					opacity: 0
-					transform: scale(1.3)
 					vertical-align: bottom
-					transition: 0.5s 0.15s
-				img.photo.mob
+					transition: 0.7s
+				img.photo.mob, img.phone.mob
 					display: none
 			.photo1.active1, .photo2.active1
 				background-position: bottom left
@@ -237,13 +236,8 @@ body
 				position: relative
 				img
 					position: relative
-					vertical-align: bottom
 					width: 405px
 					height: auto
-					opacity: 0
-					transition: 0.7s
-				img.photo.mob, img.phone.mob
-					display: none
 		nav
 			padding-top: 35px
 			padding-right: 135px
@@ -2542,9 +2536,11 @@ body
 							border-color: $black
 					.form-outer
 						margin: 0 auto
-					form
 						display: block
 						width: 53.3rem
+					form
+						display: block
+						width: 100%
 						padding-left: 8rem
 						padding-top: 10rem
 						padding-right: 10rem
