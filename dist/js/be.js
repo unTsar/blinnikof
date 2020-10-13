@@ -305,72 +305,29 @@ $(document).ready(function(){
     $('#toStep4').click(function(){
       $.scrollTo('#step3', 1000);
     });
-    $('#toStep1m').click(function(){
+    $('#toStep1mob').click(function(){
       $.scrollTo('#step1', 1000);
     });
-    $('#toStep2m').click(function(){
+    $('#toStep2mob').click(function(){
       $.scrollTo('#step2', 1000);
     });
-    $('#toStep3m').click(function(){
+    $('#toStep3mob').click(function(){
       $.scrollTo('#step3', 1000);
     });
-    $('#toStep4m').click(function(){
+    $('#toStep4mob').click(function(){
       $.scrollTo('#step3', 1000);
     });
 
 
     // Scroll 
+    var i = 1;
     $('#scroll').click(function() {
-      if ($('#scroll').hasClass('notScroll')) {
-        $.scrollTo('#section1', 1000);
-        $('#scroll').removeClass('notScroll');
-        $('#scroll').addClass('Scroll1');
-        return true;
+      if(i > 7){
+        i = 0;
       }
-      if ($('#scroll').hasClass('Scroll1')) {
-        $.scrollTo('#section2', 1000);
-        $('#scroll').removeClass('Scroll1');
-        $('#scroll').addClass('Scroll2');
-        return true;
-      }
-      if ($('#scroll').hasClass('Scroll2')) {
-        $.scrollTo('#section3', 1000);
-        $('#scroll').removeClass('Scroll2');
-        $('#scroll').addClass('Scroll3');
-        return true;
-      }
-      if ($('#scroll').hasClass('Scroll3')) {
-        $.scrollTo('#section4', 1000);
-        $('#scroll').removeClass('Scroll3');
-        $('#scroll').addClass('Scroll4');
-        return true;
-      }
-      if ($('#scroll').hasClass('Scroll4')) {
-        $.scrollTo('#section5', 1000);
-        $('#scroll').removeClass('Scroll4');
-        $('#scroll').addClass('Scroll5');
-        return true;
-      }
-      if ($('#scroll').hasClass('Scroll5')) {
-        $.scrollTo('#section6', 1000);
-        $('#scroll').removeClass('Scroll5');
-        $('#scroll').addClass('Scroll6');
-        return true;
-      }
-      if ($('#scroll').hasClass('Scroll6')) {
-        $.scrollTo('#section7', 1000);
-        $('#scroll').removeClass('Scroll6');
-        $('#scroll').addClass('Scroll7');
-        return true;
-      }
-      if ($('#scroll').hasClass('Scroll7')) {
-        $.scrollTo('#section0', 1000);
-        $('#scroll').removeClass('Scroll7');
-        $('#scroll').addClass('notScroll');
-        return true;
-      }
-
-    })
+      $.scrollTo('#section' + i, 1000);
+      i++;
+    });
 
     var target = $('#section7');
     var targetPos = target.offset().top;

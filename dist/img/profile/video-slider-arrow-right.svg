@@ -1,0 +1,22 @@
+<svg id="Arrow_right" data-name="Arrow right" xmlns="http://www.w3.org/2000/svg" width="56.03" height="56" viewBox="0 0 56.03 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #303538;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: #292d30;
+      }
+    </style>
+  </defs>
+  <path id="Эллипс_11_копия_2" data-name="Эллипс 11 копия 2" class="cls-1" d="M1567.98,1486a27,27,0,1,1-27.01,27A27.013,27.013,0,0,1,1567.98,1486Z" transform="translate(-1539.97 -1485)"/>
+  <path id="arrow_right-2" data-name="arrow_right" class="cls-2" d="M1571.54,1508.27a1.147,1.147,0,0,0-1.53,0,0.906,0.906,0,0,0,0,1.36l3.3,3.39h-13.24a0.975,0.975,0,1,0,0,1.94h13.24l-3.3,3.38a0.928,0.928,0,0,0,0,1.38,1.169,1.169,0,0,0,1.53,0l5.14-5.05a0.878,0.878,0,0,0,0-1.36Z" transform="translate(-1539.97 -1485)"/>
+</svg>

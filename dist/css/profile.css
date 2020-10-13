@@ -3,7 +3,7 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.otf") format("opentype");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-weight: bold;
   font-style: normal;
   src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.otf") format("opentype");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/MullerRegular/MullerRegular.eot");
-  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype"), url("../fonts/MullerRegular/MullerRegular.otf") format("opentype");
 }
 
 @font-face {
@@ -27,7 +27,15 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/MullerLight/MullerLight.eot");
-  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype"), url("../fonts/MullerLight/MullerLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MullerLightItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot");
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLightItalic/MullerLightItalic.woff") format("woff"), url("../fonts/MullerLightItalic/MullerLightItalic.ttf") format("truetype"), url("../fonts/MullerLightItalic/MullerLightItalic.otf") format("opentype");
 }
 
 @font-face {
@@ -35,7 +43,7 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/MullerThin/MullerThin.eot");
-  src: url("../fonts/MullerThin/MullerThin.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerThin/MullerThin.woff") format("woff"), url("../fonts/MullerThin/MullerThin.ttf") format("truetype");
+  src: url("../fonts/MullerThin/MullerThin.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerThin/MullerThin.woff") format("woff"), url("../fonts/MullerThin/MullerThin.ttf") format("truetype"), url("../fonts/MullerThin/MullerThin.otf") format("opentype");
 }
 
 @font-face {
@@ -43,7 +51,7 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/MullerMedium/MullerMedium.eot");
-  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype");
+  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype"), url("../fonts/MullerMedium/MullerMedium.otf") format("opentype");
 }
 
 @font-face {
@@ -51,7 +59,7 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/MullerBold/MullerBold.eot");
-  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype"), url("../fonts/MullerBold/MullerBold.otf") format("opentype");
 }
 
 @font-face {
@@ -59,7 +67,174 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
-  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype"), url("../fonts/MullerExtraBold/MullerExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MullerBlack";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBlack/MullerBlack.eot");
+  src: url("../fonts/MullerBlack/MullerBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBlack/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype"), url("../fonts/MullerBlack/MullerBlack.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport/Aeroport.eot");
+  src: url("../fonts/Aeroport/Aeroport.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport/Aeroport.woff") format("woff"), url("../fonts/Aeroport/Aeroport.ttf") format("truetype"), url("../fonts/Aeroport/Aeroport.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-Bold/Aeroport-Bold.eot");
+  src: url("../fonts/Aeroport-Bold/Aeroport-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-Bold/Aeroport-Bold.woff") format("woff"), url("../fonts/Aeroport-Bold/Aeroport-Bold.ttf") format("truetype"), url("../fonts/Aeroport-Bold/Aeroport-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-BoldItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic.eot");
+  src: url("../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic.woff") format("woff"), url("../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic.ttf") format("truetype"), url("../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-Italic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-Italic/Aeroport-Italic.eot");
+  src: url("../fonts/Aeroport-Italic/Aeroport-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-Italic/Aeroport-Italic.woff") format("woff"), url("../fonts/Aeroport-Italic/Aeroport-Italic.ttf") format("truetype"), url("../fonts/Aeroport-Italic/Aeroport-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-Light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-Light/Aeroport-Light.eot");
+  src: url("../fonts/Aeroport-Light/Aeroport-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-Light/Aeroport-Light.woff") format("woff"), url("../fonts/Aeroport-Light/Aeroport-Light.ttf") format("truetype"), url("../fonts/Aeroport-Light/Aeroport-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-LightItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-LightItalic/Aeroport-LightItalic.eot");
+  src: url("../fonts/Aeroport-LightItalic/Aeroport-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-LightItalic/Aeroport-LightItalic.woff") format("woff"), url("../fonts/Aeroport-LightItalic/Aeroport-LightItalic.ttf") format("truetype"), url("../fonts/Aeroport-LightItalic/Aeroport-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-Medium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-Medium/Aeroport-Medium.eot");
+  src: url("../fonts/Aeroport-Medium/Aeroport-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-Medium/Aeroport-Medium.woff") format("woff"), url("../fonts/Aeroport-Medium/Aeroport-Medium.ttf") format("truetype"), url("../fonts/Aeroport-Medium/Aeroport-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-MediumItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic.eot");
+  src: url("../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic.woff") format("woff"), url("../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic.ttf") format("truetype"), url("../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AeroportMono";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/AeroportMono/AeroportMono.eot");
+  src: url("../fonts/AeroportMono/AeroportMono.eot?#iefix") format("embedded-opentype"), url("../fonts/AeroportMono/AeroportMono.woff") format("woff"), url("../fonts/AeroportMono/AeroportMono.ttf") format("truetype"), url("../fonts/AeroportMono/AeroportMono.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold.eot");
+  src: url("../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Book";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book.eot");
+  src: url("../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-ExtLt";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt.eot");
+  src: url("../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt.woff") format("woff"), url("../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-ExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold.eot");
+  src: url("../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold.woff") format("woff"), url("../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Heavy";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy.eot");
+  src: url("../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light.eot");
+  src: url("../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular.eot");
+  src: url("../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Thin";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin.eot");
+  src: url("../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin.otf") format("opentype");
+}
+
+.popupDone::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.popupDone {
+  display: none;
+  width: 32%;
+  text-align: center;
+  padding: 67px 15px;
+  border-radius: 27px;
+  background-color: #ffffff;
+  max-height: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.popupDone span {
+  font-size: 24px;
+  font-family: 'MullerRegular';
 }
 
 main section.header .container {
@@ -99,12 +274,20 @@ main section.header .container .buttons {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.header .container .buttons .button.green, main section.header .container .buttons .button.active.green, main section.header .container .buttons .button.active.green:hover {
+  background-color: #25CC25;
+}
+
+main section.header .container .buttons .button.blue, main section.header .container .buttons .button.active.blue, main section.header .container .buttons .button.active.blue:hover {
+  background-color: #00ADEF;
 }
 
 main section.header .container .buttons .button:hover, main section.header .container .buttons .button.active {
@@ -114,8 +297,8 @@ main section.header .container .buttons .button:hover, main section.header .cont
 main section.header .container .buttons .button {
   padding-left: 15px;
   padding-right: 15px;
-  -webkit-border-radius: 25px;
   border-radius: 25px;
+  margin-bottom: 15px;
   height: 50px;
   background-color: #373737;
   -webkit-transition: 0.3s;
@@ -141,7 +324,6 @@ main section.personInf .container {
   background-color: #fff;
   padding-top: 40px;
   padding-bottom: 25px;
-  -webkit-border-radius: 25px;
   border-radius: 25px;
 }
 
@@ -150,7 +332,6 @@ main section.personInf .container .photo .button {
   width: 100%;
   height: 55px;
   cursor: pointer;
-  -webkit-border-radius: 25px;
   border-radius: 25px;
   margin-top: 10px;
   padding-left: 10px;
@@ -191,7 +372,6 @@ main section.personInf .container .text .line .item .buttonCancel {
   cursor: pointer;
   max-width: 67px;
   height: 22px;
-  -webkit-border-radius: 11px;
   border-radius: 11px;
   background-color: #8e8989;
   color: #ffffff;
@@ -201,12 +381,12 @@ main section.personInf .container .text .line .item .buttonCancel {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 15px;
   font-family: 'MullerMedium';
   font-size: 10px;
@@ -243,8 +423,7 @@ main section.promo .hidden .list .badge {
   height: 20px;
   margin-left: 15px;
   margin-bottom: 5.5px;
-  background-image: url("../img/profile/badge.png");
-  -webkit-background-size: cover;
+  background-image: url("../img/badge.png");
   background-size: cover;
 }
 
@@ -300,7 +479,6 @@ main section.appForm .hidden .button {
   margin-top: 50px;
   margin-left: 15px;
   width: 195px;
-  -webkit-border-radius: 25px;
   border-radius: 25px;
   height: 50px;
   background-color: #373737;
@@ -375,8 +553,8 @@ main section.appForm .hidden .list .fullAppForm .hidden .topLine, main section.a
 main section.appForm .hidden .list .fullAppForm .hidden .topLine span.jusR, main section.appForm .hidden .list .fullAppForm .hidden .line span.jusR {
   -webkit-box-pack: right;
   -webkit-justify-content: right;
-  -ms-flex-pack: right;
-  justify-content: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 main section.appForm .hidden .list .fullAppForm .hidden .topLine span.mob, main section.appForm .hidden .list .fullAppForm .hidden .topLine .mob, main section.appForm .hidden .list .fullAppForm .hidden .line span.mob, main section.appForm .hidden .list .fullAppForm .hidden .line .mob {
@@ -395,7 +573,6 @@ main section.orders .hidden .button, main section.appointDiet .hidden .button, m
   margin-top: 35px;
   margin-right: 15px;
   width: 195px;
-  -webkit-border-radius: 25px;
   border-radius: 25px;
   height: 50px;
   background-color: #373737;
@@ -433,7 +610,7 @@ main section.sTicketInf .sTicket .list .topLine, main section.sTicketInf .sTicke
 }
 
 main section.sTicketInf .schedule {
-  margin-top: 35px;
+  padding-top: 35px;
 }
 
 main section.sTicketInf .schedule .list .topLine, main section.sTicketInf .schedule .list .line {
@@ -493,7 +670,6 @@ main section.progressInf .stats .hidden .list .topLine img, main section.progres
 }
 
 main section.progressInf .stats .hidden .list .topLine .circle-progress, main section.progressInf .stats .hidden .list .line .circle-progress {
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #2FA318;
   width: 26px;
@@ -502,6 +678,14 @@ main section.progressInf .stats .hidden .list .topLine .circle-progress, main se
   font-family: 'MullerBold';
   font-size: 12px;
   margin-left: 7.5px;
+}
+
+main section.progressInf .stats .hidden .list .topLine .circle-progress.r, main section.progressInf .stats .hidden .list .line .circle-progress.r {
+  background-color: #ff2e2f;
+}
+
+main section.progressInf .stats .hidden .list .collages-item-icon {
+  cursor: pointer;
 }
 
 main section.progressInf .stats .hidden .list.mob {
@@ -514,9 +698,9 @@ main section.progressInf .collages .item {
 
 main section.progressInf .collages .item .borderOuter {
   border: 1px solid #ddd8d8;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
   padding: 7.5px;
+  cursor: pointer;
 }
 
 main section.progressInf .collages .item span.name {
@@ -532,7 +716,6 @@ main section.sTicketInf .list .line .buttonPay, main section.orders .list .line 
   -o-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
-  -webkit-border-radius: 11px;
   border-radius: 11px;
   background-color: #3B3B3B;
   color: #ffffff;
@@ -565,7 +748,6 @@ main section.appForm .container.contentBlock, main section.promo .container.cont
   padding-bottom: 40px;
   padding-top: 25px;
   background-color: #fff;
-  -webkit-border-radius: 25px;
   border-radius: 25px;
   margin-top: 25px;
   margin-bottom: 35px;
@@ -576,8 +758,8 @@ main section.appForm .container.contentBlock .head, main section.promo .containe
   grid-template-columns: auto 1fr auto;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 30px;
   margin-bottom: 5px;
 }
@@ -601,7 +783,6 @@ main section.appForm .container.contentBlock .head .profile-buttonOpen, main sec
   background-color: #ff2e2f;
   width: 50px;
   height: 50px;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
   display: -webkit-box;
@@ -625,7 +806,6 @@ main section.appForm .container.contentBlock .head .profile-buttonClose, main se
   background-color: #3b3b3b;
   width: 50px;
   height: 50px;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
   display: none;
@@ -674,9 +854,7 @@ main section.appForm .hidden .list .topLine, main section.appForm .content .list
   padding-right: 30px;
   background-color: #3b3b3b;
   width: 100%;
-  -webkit-border-top-left-radius: 15px;
   border-top-left-radius: 15px;
-  -webkit-border-top-right-radius: 15px;
   border-top-right-radius: 15px;
 }
 
@@ -753,6 +931,373 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   display: none;
 }
 
+main .video-section {
+  display: none;
+  overflow: hidden;
+}
+
+main .video-section .steps-navigation {
+  padding: 50px 0 70px 0;
+}
+
+main .video-section .steps-navigation a.step-link {
+  font-family: 'MullerRegular';
+  font-size: 24px;
+  color: #373737;
+  margin-right: 45px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .video-section .steps-navigation a.step-link.active {
+  color: #ff2e2f;
+}
+
+main .video-section .steps-navigation a.step-link.passed {
+  opacity: 0.5;
+}
+
+main .video-section .steps-navigation a.step-link:hover {
+  color: #ff2e2f;
+}
+
+main .video-section .course-step.active {
+  display: block;
+}
+
+main .video-section .course-step {
+  display: none;
+}
+
+main .video-section .course-step h2 {
+  font-family: 'MullerRegular';
+  font-size: 36px;
+  color: #373737;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+main .video-section .lecture {
+  margin-bottom: 90px;
+  margin-right: -45px;
+}
+
+main .video-section .lecture h3 {
+  font-family: 'MullerExtraBold';
+  font-size: 30px;
+  color: #373737;
+  margin: 0;
+}
+
+main .video-section .lecture h3 .br-mob {
+  display: none;
+}
+
+main .video-section .lecture .subhead {
+  border-left: 4px solid #ff2e2f;
+  font-family: 'MullerRegular';
+  font-size: 18px;
+  color: #373737;
+  padding-left: 30px;
+  padding-top: 4px;
+  line-height: 1.3;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+main .video-section .lecture .separ-line {
+  width: 50px;
+  height: 4px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #ff2e2f;
+}
+
+main .video-section .lecture .video-slider.height-fluid {
+  margin: 0;
+  display: block;
+}
+
+main .video-section .lecture .video-slider.height-fluid .video-item {
+  margin: 0;
+  height: 450px;
+}
+
+main .video-section .lecture .owl-theme .owl-dots button.owl-dot {
+  outline: none;
+}
+
+main .video-section .lecture .owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+
+main .video-section .lecture .owl-carousel.owl-drag .owl-item {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+main .video-section .lecture .owl-carousel.owl-drag .owl-item.active {
+  opacity: 1;
+}
+
+main .video-section .lecture .owl-carousel .owl-nav .owl-next, main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  padding: 0;
+  width: 54px;
+  height: 54px;
+}
+
+main .video-section .lecture .owl-carousel .owl-nav .owl-next {
+  right: -55px;
+  background-image: url("../img/profile/video-slider-arrow-right.svg");
+}
+
+main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
+  left: -60px;
+  background-image: url("../img/profile/video-slider-arrow-right.svg");
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+main .video-section .lecture .owl-carousel .owl-nav .disabled {
+  opacity: 0;
+}
+
+main .video-section .lecture .video-item {
+  background-color: #ffffff;
+  border-radius: 25px;
+  display: inline-block;
+  outline: none;
+  padding: 25px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .video-section .lecture .video-item .video-index {
+  position: absolute;
+  z-index: 22;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 39px;
+  text-align: center;
+  border: 6px solid #f8f8f8;
+  border-radius: 50%;
+  background-color: #ff2e2f;
+}
+
+main .video-section .lecture .video-item .video-index span {
+  font-family: 'MullerBold';
+  font-size: 14px;
+  color: #ffffff;
+}
+
+main .video-section .lecture .video-item .video-index.done {
+  background-image: url("../img/profile/video-index-checkmark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .video-section .lecture .video-item .video-index.done span {
+  opacity: 0;
+}
+
+main .video-section .lecture .video-item ul.topics {
+  padding-left: 25px;
+  margin-top: 30px;
+  margin-right: -15px;
+  max-width: 300px;
+}
+
+main .video-section .lecture .video-item ul.topics li {
+  font-family: 'MullerLight';
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 7px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+main .video-section .lecture .video-item ul.topics li .li-dop {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+main .video-section .lecture .video-item:hover {
+  -webkit-box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 19px 38px 0px rgba(0, 0, 0, 0.3);
+}
+
+main .video-section .lecture .video-item.disabled {
+  position: relative;
+}
+
+main .video-section .lecture .video-item.disabled .video-container {
+  opacity: 0.502;
+}
+
+main .video-section .lecture .video-item.disabled .video-index {
+  background-color: #FF9697;
+}
+
+main .video-section .lecture .video-item.disabled::before {
+  content: '';
+  position: absolute;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+main .video-section .lecture .useful-links {
+  padding-top: 10px;
+}
+
+main .video-section .lecture .useful-links img, main .video-section .lecture .useful-links .textblock {
+  display: inline-block;
+  vertical-align: top;
+}
+
+main .video-section .lecture .useful-links .textblock {
+  padding-top: 15px;
+  padding-left: 32px;
+}
+
+main .video-section .lecture .useful-links .textblock h4 {
+  font-family: 'MullerBold';
+  font-size: 24px;
+  color: #373737;
+}
+
+main .video-section .lecture .useful-links .textblock ul {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-left: 5px;
+}
+
+main .video-section .lecture .useful-links .textblock ul li {
+  font-family: 'MullerLightItalic';
+  font-size: 18px;
+}
+
+main .video-section .lecture .useful-links .textblock ul li a {
+  color: #ff2e2f;
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .video-section .lecture .useful-links .textblock ul li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+main .video-section .question-form {
+  padding-top: 30px;
+}
+
+main .video-section .question-form h2, main .video-section .question-form .subhead {
+  color: #333333;
+}
+
+main .video-section .question-form h2 {
+  font-family: 'MullerExtraBold';
+  font-size: 36px;
+  margin: 0;
+}
+
+main .video-section .question-form .subhead {
+  font-family: 'MullerRegular';
+  font-size: 24px;
+}
+
+main .video-section .question-form form {
+  padding-top: 40px;
+}
+
+main .video-section .question-form form textarea {
+  width: 100%;
+  border-radius: 10px;
+  height: 215px;
+  background-color: #ffffff;
+  border: 1px solid #d2d2d2;
+  resize: none;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+
+main .video-section .question-form form textarea::-webkit-input-placeholder,
+main .video-section .question-form form textarea::-moz-placeholder,
+main .video-section .question-form form textarea:-moz-placeholder,
+main .video-section .question-form form textarea:-ms-input-placeholder {
+  font-family: 'MullerThin';
+  font-size: 16px;
+  color: #777777;
+}
+
+main .video-section .question-form form .submit {
+  background-color: #373737;
+  width: 192px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  border-radius: 27px;
+  margin-top: 25px;
+  font-family: 'MullerBold';
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+main .video-section.videotraining .course-step .lecture .video-slider.height-fluid .video-item {
+  height: auto;
+}
+
+@media only screen and (max-width: 1400px) {
+  body .popupDone {
+    width: 50%;
+  }
+  body main .video-section .lecture {
+    margin-right: 0;
+  }
+  body main .video-section .lecture .video-slider.height-fluid {
+    margin-top: 85px;
+  }
+  body main .video-section .lecture .owl-carousel .owl-nav .owl-prev, body main .video-section .lecture .owl-carousel .owl-nav .owl-next {
+    top: -70px;
+    bottom: auto;
+  }
+  body main .video-section .lecture .owl-carousel .owl-nav .owl-next {
+    right: 0;
+  }
+  body main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  body main .video-section .lecture .video-slider.height-fluid {
+    margin-top: 100px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   body main section.header .container .buttons {
     grid-gap: 5px;
@@ -773,18 +1318,38 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.sTicketInf .container.contentBlock .schedule .hidden .list .topLine, body main section.sTicketInf .container.contentBlock .schedule .hidden .list .line, body main section.sTicketInf .container.contentBlock .schedule .content .list .topLine, body main section.sTicketInf .container.contentBlock .schedule .content .list .line {
     grid-template-columns: 33% 17% 22% 12% 16%;
   }
+  body main .video-section .lecture .video-item .video-container iframe.vimeo-video-player {
+    width: 250px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
+  body .popupDone {
+    width: 65%;
+  }
+  body footer.container-fluid .adress, body footer.container-fluid .phoneCont {
+    display: -webkit-flex !important;
+    display: -moz-flex !important;
+    display: -ms-flex !important;
+    display: -o-flex !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
   body main section.header .container .buttons {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 15px;
   }
   body main section.header .container .buttons .button {
-    margin-top: 5px;
-    margin-right: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  body main section.header .container .buttons .button span {
+    font-size: 16px;
   }
   body main section.personInf {
     margin-top: 40px;
@@ -860,26 +1425,21 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.appForm .hidden .list .line .buttonPay span, body main section.appForm .hidden .list .topLine .buttonPay span, body main section.appForm .content .list .line .buttonPay span, body main section.appForm .content .list .topLine .buttonPay span, body main section.promo .hidden .list .line .buttonPay span, body main section.promo .hidden .list .topLine .buttonPay span, body main section.promo .content .list .line .buttonPay span, body main section.promo .content .list .topLine .buttonPay span, body main section.socials .hidden .list .line .buttonPay span, body main section.socials .hidden .list .topLine .buttonPay span, body main section.socials .content .list .line .buttonPay span, body main section.socials .content .list .topLine .buttonPay span, body main section.orders .hidden .list .line .buttonPay span, body main section.orders .hidden .list .topLine .buttonPay span, body main section.orders .content .list .line .buttonPay span, body main section.orders .content .list .topLine .buttonPay span, body main section.sTicketInf .hidden .list .line .buttonPay span, body main section.sTicketInf .hidden .list .topLine .buttonPay span, body main section.sTicketInf .content .list .line .buttonPay span, body main section.sTicketInf .content .list .topLine .buttonPay span, body main section.schedule .hidden .list .line .buttonPay span, body main section.schedule .hidden .list .topLine .buttonPay span, body main section.schedule .content .list .line .buttonPay span, body main section.schedule .content .list .topLine .buttonPay span, body main section.appointDiet .hidden .list .line .buttonPay span, body main section.appointDiet .hidden .list .topLine .buttonPay span, body main section.appointDiet .content .list .line .buttonPay span, body main section.appointDiet .content .list .topLine .buttonPay span, body main section.progressInf .hidden .list .line .buttonPay span, body main section.progressInf .hidden .list .topLine .buttonPay span, body main section.progressInf .content .list .line .buttonPay span, body main section.progressInf .content .list .topLine .buttonPay span {
     font-size: 10px;
   }
+  body main .video-section .lecture h3 br {
+    display: none;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .video-item {
+    height: 434px;
+  }
+  body main .video-section .lecture .video-item .video-container iframe.vimeo-video-player {
+    width: 284px;
+  }
+  body main .video-section .lecture .useful-links {
+    padding-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  body main section.header .container .Outer {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  body main section.header .container .Outer .head {
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-    -ms-flex-order: 2;
-    order: 2;
-  }
   body main section.header .container .head {
     margin-top: 35px;
   }
@@ -892,8 +1452,8 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.header .container .buttons a.button {
     -webkit-box-ordinal-group: 7;
     -webkit-order: 6;
-    -ms-flex-order: 6;
-    order: 6;
+        -ms-flex-order: 6;
+            order: 6;
   }
   body main section.personInf .container .photo img.imgPerson {
     width: 70%;
@@ -990,8 +1550,8 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine {
     -webkit-box-align: center;
     -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     grid-template-columns: 40% 60%;
   }
   body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine span.gr, body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine span.time, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine span.gr, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine span.time {
@@ -1016,8 +1576,8 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
     padding-bottom: 9px;
     -webkit-box-align: center;
     -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-right: 30px;
     grid-template-columns: 56% 44%;
   }
@@ -1030,8 +1590,8 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   }
   body main section.progressInf .container.contentBlock .stats .hidden .list.mob img, body main section.progressInf .container.contentBlock .stats .content .list.mob img {
     -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
     width: 100%;
   }
   body main section.progressInf .container.contentBlock .collages .hidden .d-flex .item .borderOuter img {
@@ -1067,9 +1627,52 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
     padding-right: 0px;
     padding-left: 0;
   }
+  body main .video-section .lecture h3 {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body .popupDone {
+    width: 75%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  body main section.header .container .buttons .button {
+    margin-right: 10px;
+  }
+  body main section.header .container .buttons .button span {
+    font-size: 14px;
+  }
+  body main .video-section .lecture {
+    margin-bottom: 30px;
+  }
+  body main .video-section .steps-navigation {
+    text-align: center;
+    padding: 40px 0;
+  }
+  body main .video-section .steps-navigation a.step-link {
+    display: inline-block;
+    margin: 0 25px;
+  }
+  body main section.contacts {
+    display: none;
+  }
+  body main .video-section .lecture .video-slider.height-fluid {
+    text-align: center;
+  }
+  body main .video-section .lecture .video-slider.height-fluid .video-item {
+    text-align: left;
+  }
+  body footer.container-fluid {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  body .popupDone {
+    width: 90%;
+  }
   body main section.header .container .buttons .button {
     padding-left: 10px;
     padding-right: 10px;
@@ -1176,8 +1779,8 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.appForm .container.contentBlock .hidden .list .line, body main section.appForm .container.contentBlock .hidden .list .topLine, body main section.appForm .container.contentBlock .content .list .line, body main section.appForm .container.contentBlock .content .list .topLine {
     -webkit-box-align: center;
     -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body main section.appForm .container.contentBlock .hidden .list .line span.desk, body main section.appForm .container.contentBlock .hidden .list .topLine span.desk, body main section.appForm .container.contentBlock .content .list .line span.desk, body main section.appForm .container.contentBlock .content .list .topLine span.desk {
     display: none;
@@ -1228,9 +1831,41 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.appForm .container.contentBlock .head .profile-buttonOpen, body main section.appForm .container.contentBlock .head .profile-buttonClose, body main section.promo .container.contentBlock .head .profile-buttonOpen, body main section.promo .container.contentBlock .head .profile-buttonClose, body main section.socials .container.contentBlock .head .profile-buttonOpen, body main section.socials .container.contentBlock .head .profile-buttonClose, body main section.orders .container.contentBlock .head .profile-buttonOpen, body main section.orders .container.contentBlock .head .profile-buttonClose, body main section.sTicketInf .container.contentBlock .head .profile-buttonOpen, body main section.sTicketInf .container.contentBlock .head .profile-buttonClose, body main section.schedule .container.contentBlock .head .profile-buttonOpen, body main section.schedule .container.contentBlock .head .profile-buttonClose, body main section.appointDiet .container.contentBlock .head .profile-buttonOpen, body main section.appointDiet .container.contentBlock .head .profile-buttonClose, body main section.progressInf .container.contentBlock .head .profile-buttonOpen, body main section.progressInf .container.contentBlock .head .profile-buttonClose {
     justify-self: right;
   }
+  body main .video-section .lecture .useful-links .textblock {
+    padding-left: 15px;
+  }
+  body main .video-section .lecture .useful-links img {
+    width: 60px;
+    margin-top: 15px;
+  }
+  body main .video-section .steps-navigation a.step-link {
+    font-size: 18px;
+  }
+  body main .video-section .question-form {
+    padding-top: 0;
+  }
+  body main .video-section .question-form h2 {
+    font-size: 28px;
+  }
+  body main .video-section .question-form .subhead {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  body main .video-section .question-form form {
+    padding-top: 25px;
+  }
+  body main .video-section .question-form form .submit {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
+  body .popupDone span {
+    font-size: 20px;
+  }
+  body main section.header .container .buttons .button {
+    margin-top: 20px;
+  }
   body main section.appForm .head span.name, body main section.promo .head span.name, body main section.socials .head span.name, body main section.orders .head span.name, body main section.sTicketInf .head span.name, body main section.schedule .head span.name, body main section.appointDiet .head span.name, body main section.progressInf .head span.name {
     font-size: 18px;
   }
@@ -1243,16 +1878,16 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.appForm .hidden .list .line span.gr, body main section.appForm .hidden .list .topLine span.gr, body main section.appForm .content .list .line span.gr, body main section.appForm .content .list .topLine span.gr, body main section.promo .hidden .list .line span.gr, body main section.promo .hidden .list .topLine span.gr, body main section.promo .content .list .line span.gr, body main section.promo .content .list .topLine span.gr, body main section.socials .hidden .list .line span.gr, body main section.socials .hidden .list .topLine span.gr, body main section.socials .content .list .line span.gr, body main section.socials .content .list .topLine span.gr, body main section.orders .hidden .list .line span.gr, body main section.orders .hidden .list .topLine span.gr, body main section.orders .content .list .line span.gr, body main section.orders .content .list .topLine span.gr, body main section.sTicketInf .hidden .list .line span.gr, body main section.sTicketInf .hidden .list .topLine span.gr, body main section.sTicketInf .content .list .line span.gr, body main section.sTicketInf .content .list .topLine span.gr, body main section.schedule .hidden .list .line span.gr, body main section.schedule .hidden .list .topLine span.gr, body main section.schedule .content .list .line span.gr, body main section.schedule .content .list .topLine span.gr, body main section.appointDiet .hidden .list .line span.gr, body main section.appointDiet .hidden .list .topLine span.gr, body main section.appointDiet .content .list .line span.gr, body main section.appointDiet .content .list .topLine span.gr, body main section.progressInf .hidden .list .line span.gr, body main section.progressInf .hidden .list .topLine span.gr, body main section.progressInf .content .list .line span.gr, body main section.progressInf .content .list .topLine span.gr {
     margin-right: 7.5px;
   }
+  body main section.header .container {
+    padding-top: 40px;
+  }
   body main section.header .container .buttons {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     margin-left: -15px;
     margin-right: -15px;
   }
   body main section.header .container .buttons .button {
-    height: 35px;
+    height: 28px;
+    margin-right: 5px;
   }
   body main section.header .container .buttons .button span {
     font-size: 10px;
@@ -1280,8 +1915,8 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.orders .container.contentBlock .hidden .buttons, body main section.orders .container.contentBlock .content .buttons, body main section.sTicketInf .container.contentBlock .hidden .buttons, body main section.sTicketInf .container.contentBlock .content .buttons, body main section.appointDiet .container.contentBlock .hidden .buttons, body main section.appointDiet .container.contentBlock .content .buttons {
     margin-top: 15px;
     -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
   body main section.orders .container.contentBlock .hidden .buttons .button, body main section.orders .container.contentBlock .content .buttons .button, body main section.sTicketInf .container.contentBlock .hidden .buttons .button, body main section.sTicketInf .container.contentBlock .content .buttons .button, body main section.appointDiet .container.contentBlock .hidden .buttons .button, body main section.appointDiet .container.contentBlock .content .buttons .button {
     width: 120px;
@@ -1307,10 +1942,88 @@ main .container.contentBlock .hidden .list .line.mob span.mob, main .container.c
   body main section.progressInf .container.contentBlock .stats .hidden .list.mob .topLine, body main section.progressInf .container.contentBlock .stats .content .list.mob .topLine {
     padding-right: 15px;
   }
-}
-
-@media only screen and (max-width: 350px) {
-  body main section.header .container .buttons .button {
-    height: 25px;
+  body main .video-section {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  body main .video-section .steps-navigation {
+    padding: 25px 0;
+  }
+  body main .video-section .steps-navigation a.step-link {
+    font-size: 14px;
+    margin: 0 7%;
+  }
+  body main .video-section .lecture {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  body main .video-section .lecture .owl-carousel .owl-nav .owl-next {
+    margin-right: 27%;
+  }
+  body main .video-section .lecture .owl-carousel .owl-nav .owl-prev {
+    margin-left: 27%;
+  }
+  body main .video-section .lecture .separ-line {
+    margin-bottom: 30px;
+  }
+  body main .video-section .lecture .useful-links img {
+    width: 54px;
+    margin-top: 10px;
+  }
+  body main .video-section .lecture .useful-links .textblock {
+    padding-left: 20px;
+  }
+  body main .video-section .lecture .useful-links .textblock h4 {
+    font-size: 18px;
+  }
+  body main .video-section .lecture .useful-links .textblock ul li {
+    font-size: 14px;
+  }
+  body main .video-section .lecture h3 {
+    font-size: 22px;
+    margin-right: 0;
+  }
+  body main .video-section .lecture h3 .br-mob {
+    display: block;
+  }
+  body main .video-section .lecture .subhead {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+  }
+  body main .video-section .lecture .video-item {
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  body main .video-section .lecture .video-item .video-container iframe.vimeo-video-player {
+    width: 100%;
+    height: 220px;
+  }
+  body main .video-section .lecture .video-item .video-index {
+    width: 40px;
+    height: 40px;
+    line-height: 29px;
+  }
+  body main .video-section .lecture .video-item ul.topics li {
+    font-size: 14px;
+  }
+  body main .video-section .question-form .subhead {
+    font-size: 16px;
+  }
+  body main .video-section .question-form form textarea {
+    font-size: 12px;
+  }
+  body main .video-section .question-form form .submit {
+    width: 125px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 14px;
+  }
+  body main .video-section .course-step h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
   }
 }

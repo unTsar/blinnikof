@@ -20,15 +20,14 @@ body .scroll .text {
   font-size: 11px;
   text-shadow: 0 0 15px #000;
   -webkit-transform: rotate(-90deg) translate(45px, -17px);
-  -ms-transform: rotate(-90deg) translate(45px, -17px);
-  transform: rotate(-90deg) translate(45px, -17px);
+      -ms-transform: rotate(-90deg) translate(45px, -17px);
+          transform: rotate(-90deg) translate(45px, -17px);
 }
 
 body .scroll .circle {
   border-width: 1px;
   border-color: rgba(32, 32, 32, 0.2);
   border-style: solid;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -43,7 +42,6 @@ body .scroll .circle .mouse {
   background-color: transparent;
   width: 21.5px;
   height: 27.5px;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
@@ -56,29 +54,28 @@ body .scroll .circle .mouse .weel {
   background-color: #ff2e2f;
   width: 5px;
   height: 5px;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-animation-name: scroll;
-  animation-name: scroll;
+          animation-name: scroll;
   -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
-  animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+          animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes scroll {
   0%, 20% {
     -webkit-transform: translateY(0) scaleY(1);
-    transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
   }
   10% {
     opacity: 1;
   }
   100% {
     -webkit-transform: translateY(20px) scaleY(2);
-    transform: translateY(20px) scaleY(2);
+            transform: translateY(20px) scaleY(2);
     opacity: 0.01;
   }
 }
@@ -86,14 +83,14 @@ body .scroll .circle .mouse .weel {
 @keyframes scroll {
   0%, 20% {
     -webkit-transform: translateY(0) scaleY(1);
-    transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
   }
   10% {
     opacity: 1;
   }
   100% {
     -webkit-transform: translateY(20px) scaleY(2);
-    transform: translateY(20px) scaleY(2);
+            transform: translateY(20px) scaleY(2);
     opacity: 0.01;
   }
 }
@@ -126,7 +123,6 @@ body footer .socials a.social:hover svg, body footer .socials a.social:hover pat
 body header.container-fluid {
   position: relative;
   background-image: url("../img/be/be-header-bg.jpg");
-  -webkit-background-size: cover;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -241,7 +237,6 @@ body header.container-fluid .content .bottom .wrap .circleSm {
   height: 310px;
   border: 1px solid #ECECEC;
   background-color: transparent;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -253,7 +248,6 @@ body header.container-fluid .content .bottom .wrap .circleMd {
   height: 470px;
   border: 1px solid #ECECEC;
   background-color: transparent;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -265,7 +259,6 @@ body header.container-fluid .content .bottom .wrap .circleLg {
   height: 670px;
   border: 1px solid #ECECEC;
   background-color: transparent;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -280,16 +273,15 @@ body header.container-fluid .content .bottom .wrap .button {
   -o-transition: 0.5s;
   transition: 0.5s;
   -webkit-animation: pulsation 2s infinite;
-  animation: pulsation 2s infinite;
+          animation: pulsation 2s infinite;
   overflow: hidden;
   position: relative;
   z-index: 100;
   cursor: pointer;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #ff2e2f;
   -webkit-box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
-  box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
+          box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
   width: 170px;
   height: 170px;
 }
@@ -321,38 +313,38 @@ body header.container-fluid .content .bottom .wrap .button svg {
 @-webkit-keyframes pulsation {
   0% {
     -webkit-box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
-    box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+            box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
   }
   70% {
     -webkit-box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
-    box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
+            box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
   }
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
-    box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
+            box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
   }
 }
 
 @keyframes pulsation {
   0% {
     -webkit-box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
-    box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+            box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
   }
   70% {
     -webkit-box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
-    box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
+            box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
   }
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
-    box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
+            box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
   }
 }
 
 body header.container-fluid .content .bottom .wrap .button:hover {
   -webkit-animation: none;
-  animation: none;
+          animation: none;
   -webkit-box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
-  box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+          box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
 }
 
 body header.container-fluid .content .bottom .wrap .button:hover svg {
@@ -360,7 +352,6 @@ body header.container-fluid .content .bottom .wrap .button:hover svg {
 }
 
 body header.container-fluid .content .bottom .circle {
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #ff2e2f;
   width: 122px;
@@ -380,7 +371,6 @@ body header.container-fluid .content .bottom .text {
 
 body header.container-fluid .content .bottom .text .subText {
   background-color: #fff;
-  -webkit-border-radius: 13.5px;
   border-radius: 13.5px;
   font-family: 'MullerExtraBold';
   font-size: 14px;
@@ -406,7 +396,6 @@ body main section.purpose {
   padding-top: 130px;
   padding-bottom: 130px;
   background-image: url("../img/be/be-purpose-bg.jpg");
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -490,16 +479,16 @@ body main section.purpose .cslMobile-control {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 35px;
   padding-bottom: 35px;
 }
@@ -510,7 +499,6 @@ body main section.purpose .cslMobile-control .arrows .arrow {
   -o-transition: 0.3s;
   transition: 0.3s;
   background-color: #fff;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -605,7 +593,6 @@ body main section.purpose .wrap .step .separ, body main section.purpose .cslMobi
 
 body main section.purpose .wrap .step .separ::after, body main section.purpose .wrap .step .separ::before, body main section.purpose .cslMobile .step .separ::after, body main section.purpose .cslMobile .step .separ::before {
   content: '';
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -677,7 +664,6 @@ body main section.purpose .wrap .step .button, body main section.purpose .cslMob
   border-style: solid;
   width: 194px;
   height: 56px;
-  -webkit-border-radius: 30px;
   border-radius: 30px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -706,9 +692,8 @@ body main section.purpose .wrap .step1 .circle, body main section.purpose .cslMo
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-border-radius: 50%;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 50%;
   background-color: #ff2e2f;
   width: 148px;
@@ -767,9 +752,8 @@ body main section.purpose .wrap .step2 .circle, body main section.purpose .cslMo
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-border-radius: 50%;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 50%;
   background-color: #ff2e2f;
   width: 188px;
@@ -821,9 +805,8 @@ body main section.purpose .wrap .step3 .circle, body main section.purpose .cslMo
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-border-radius: 50%;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 50%;
   background-color: #ff2e2f;
   width: 229px;
@@ -868,9 +851,8 @@ body main section.purpose .wrap .step4 .circle, body main section.purpose .cslMo
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-border-radius: 50%;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 50%;
   background-color: #ff2e2f;
   width: 279px;
@@ -1056,7 +1038,6 @@ body main section.first {
 
 body main section.first .numbers {
   background-image: url("../img/be/be-first-bg.jpg");
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 75px;
@@ -1068,11 +1049,10 @@ body main section.first .numbers .question {
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #ff2e2f;
   -webkit-box-shadow: 0 22.8px 68.4px 0 #FF2727;
-  box-shadow: 0 22.8px 68.4px 0 #FF2727;
+          box-shadow: 0 22.8px 68.4px 0 #FF2727;
   width: 230px;
   height: 230px;
   z-index: 40;
@@ -1153,8 +1133,8 @@ body main section.first .numbers .points .slashLine {
   width: 1px;
   height: 150px;
   -webkit-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 body main section.first .points {
@@ -1170,7 +1150,6 @@ body main section.first .points .circleBg {
   border-width: 1px;
   border-color: rgba(255, 255, 255, 0.302);
   border-style: solid;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 892px;
   height: 892px;
@@ -1230,7 +1209,6 @@ body main section.first .points .content .arrows .arrow {
   border-width: 2px;
   border-color: #35383b;
   border-style: solid;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -1254,9 +1232,9 @@ body main section.first .points .content .arrows .arrow:hover svg, body main sec
 
 body main section.first .points .content .arrows p.desc {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   pointer-events: none;
   font-family: 'MullerRegular';
   font-size: 15px;
@@ -1300,7 +1278,7 @@ body main section.first .points .csl .carousel-inner img {
   cursor: default;
   pointer-events: none;
   -webkit-filter: brightness(65%);
-  filter: brightness(65%);
+          filter: brightness(65%);
 }
 
 body main section.first .points .cslMobile-control {
@@ -1334,8 +1312,8 @@ body main section.first .points .cslMobile-control .cslCounter .line {
   height: 20px;
   margin-left: 10px;
   -webkit-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 body main section.first .points .cslMobile-control .arrows .arrow {
@@ -1346,7 +1324,6 @@ body main section.first .points .cslMobile-control .arrows .arrow {
   border-width: 2px;
   border-color: #35383b;
   border-style: solid;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -1374,7 +1351,6 @@ body main section.first .points .counter {
   right: 130px;
   z-index: 30;
   background-image: url("../img/be/be-first-carousel-counter.png");
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   width: 160px;
@@ -1402,8 +1378,8 @@ body main section.first .points .counter .line {
   height: 20px;
   margin-left: 10px;
   -webkit-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 body main section.second {
@@ -1416,7 +1392,6 @@ body main section.second .header {
   position: relative;
   z-index: 40;
   background-image: url("../img/be/be-second-header-bg.jpg");
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 125px;
@@ -1537,8 +1512,8 @@ body main section.second .content .cslMobile-control .counter .line {
   height: 20px;
   margin-left: 10px;
   -webkit-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 body main section.second .content .cslMobile-control .arrows .arrow {
@@ -1549,7 +1524,6 @@ body main section.second .content .cslMobile-control .arrows .arrow {
   border-width: 2px;
   border-color: #35383b;
   border-style: solid;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -1582,7 +1556,7 @@ body main section.second .content .cslMobile .carousel-item .head:hover .circle 
 
 body main section.second .content .cslMobile .carousel-item .head:hover .circle img {
   -webkit-filter: none;
-  filter: none;
+          filter: none;
 }
 
 body main section.second .content .cslMobile .carousel-item .head:hover .circle p.text {
@@ -1608,11 +1582,10 @@ body main section.second .content .cslMobile .carousel-item .head p.text {
 
 body main section.second .content .cslMobile .carousel-item .head .circle {
   -webkit-box-shadow: 0 0 5px #fff;
-  box-shadow: 0 0 5px #fff;
+          box-shadow: 0 0 5px #fff;
   border-width: 1px;
   border-color: #EAEAEA;
   border-style: solid;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: white;
   width: 113px;
@@ -1628,7 +1601,7 @@ body main section.second .content .cslMobile .carousel-item .head .circle img {
   -o-transition: 0.3s;
   transition: 0.3s;
   -webkit-filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4);
-  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4);
+          filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4);
 }
 
 body main section.second .content img.bg {
@@ -1686,7 +1659,6 @@ body main section.second .content ul li .circle {
   border-width: 1px;
   border-color: #EAEAEA;
   border-style: solid;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: white;
   width: 113px;
@@ -1701,7 +1673,7 @@ body main section.second .content ul li .circle img {
   -o-transition: 0.3s;
   transition: 0.3s;
   -webkit-filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4);
-  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4);
+          filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.4);
 }
 
 body main section.second .content ul li:hover .circle {
@@ -1711,7 +1683,7 @@ body main section.second .content ul li:hover .circle {
 
 body main section.second .content ul li:hover .circle img {
   -webkit-filter: none;
-  filter: none;
+          filter: none;
 }
 
 body main section.second .content ul li:hover p.text {
@@ -1725,7 +1697,6 @@ body main section.third .header {
   padding-top: 120px;
   padding-bottom: 120px;
   background-image: url("../img/be/be-third-header-bg.jpg");
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1823,7 +1794,6 @@ body main section.fourth .header {
   padding-top: 120px;
   padding-bottom: 45px;
   background-image: url("../img/be/be-fourth-header-bg.jpg");
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1866,8 +1836,8 @@ body main section.fourth .header .container .slash {
   height: 120px;
   width: 1px;
   -webkit-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
 }
 
 body main section.fourth .header .container .infblock {
@@ -1905,7 +1875,6 @@ body main section.fourth .content .circleBgT, body main section.fourth .content 
   border-width: 1px;
   border-color: rgba(0, 0, 5, 0.102);
   border-style: solid;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   z-index: -1;
   pointer-events: none;
@@ -1944,7 +1913,7 @@ body main section.fourth .content .wrap .step3 .numberBg {
 
 body main section.fourth .content .wrap .step3 .bg {
   -webkit-mask-image: url("../img/be/be-fourth-content-step-mask3.png");
-  mask-image: url("../img/be/be-fourth-content-step-mask3.png");
+          mask-image: url("../img/be/be-fourth-content-step-mask3.png");
 }
 
 body main section.fourth .content .wrap .step2 img.posImg {
@@ -1961,7 +1930,7 @@ body main section.fourth .content .wrap .step2 .numberBg {
 
 body main section.fourth .content .wrap .step2 .bg {
   -webkit-mask-image: url("../img/be/be-fourth-content-step-mask2.png");
-  mask-image: url("../img/be/be-fourth-content-step-mask2.png");
+          mask-image: url("../img/be/be-fourth-content-step-mask2.png");
 }
 
 body main section.fourth .content .wrap .step1 .numberBg {
@@ -1971,12 +1940,12 @@ body main section.fourth .content .wrap .step1 .numberBg {
 
 body main section.fourth .content .wrap .step1 .bg {
   -webkit-mask-image: url("../img/be/be-fourth-content-step-mask1.png");
-  mask-image: url("../img/be/be-fourth-content-step-mask1.png");
+          mask-image: url("../img/be/be-fourth-content-step-mask1.png");
 }
 
 body main section.fourth .content .wrap .step:hover {
   -webkit-box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
-  box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
+          box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
 }
 
 body main section.fourth .content .wrap .step:hover .bg .fillred {
@@ -2003,8 +1972,8 @@ body main section.fourth .content .wrap .step .numberBg {
   position: absolute;
   z-index: -1;
   -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 body main section.fourth .content .wrap .step .bg {
@@ -2017,9 +1986,9 @@ body main section.fourth .content .wrap .step .bg {
   width: 100%;
   z-index: 20;
   -webkit-mask-size: cover;
-  mask-size: cover;
+          mask-size: cover;
   -webkit-mask-position: right;
-  mask-position: right;
+          mask-position: right;
 }
 
 body main section.fourth .content .wrap .step .bg img {
@@ -2061,8 +2030,8 @@ body main section.fourth .content .wrap .step .headblock .slash {
   background-color: #383b3e;
   opacity: 0.2;
   -webkit-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
   width: 1px;
   height: 25px;
   margin-left: 20px;
@@ -2104,7 +2073,6 @@ body main section.fourth .content .wrap .step .buttons .btnR {
   background-color: #ff2e2f;
   width: 210px;
   height: 58px;
-  -webkit-border-radius: 30px;
   border-radius: 30px;
   cursor: pointer;
 }
@@ -2120,7 +2088,6 @@ body main section.fourth .content .wrap .step .buttons .btnW {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.102);
   border-style: solid;
-  -webkit-border-radius: 30px;
   border-radius: 30px;
   width: 248px;
   height: 56px;
@@ -2137,7 +2104,6 @@ body main section.result .header {
   padding-left: 15px;
   padding-right: 15px;
   background-image: url("../img/be/be-result-header-bg.jpg");
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 105px;
@@ -2168,8 +2134,8 @@ body main section.result .header .numbers .slash {
   background-color: white;
   opacity: 0.2;
   -webkit-transform: rotate(12.5deg);
-  -ms-transform: rotate(12.5deg);
-  transform: rotate(12.5deg);
+      -ms-transform: rotate(12.5deg);
+          transform: rotate(12.5deg);
   height: 120px;
   width: 1px;
   margin-left: 140px;
@@ -2190,7 +2156,6 @@ body main section.result .content .container .arrowPrev, body main section.resul
   cursor: pointer;
   position: absolute;
   z-index: 30;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #ff2c2d;
   width: 50px;
@@ -2243,7 +2208,6 @@ body main section.result .content .container .csl ol.carousel-indicators {
 }
 
 body main section.result .content .container .csl ol.carousel-indicators li, body main section.result .content .container .csl ol.carousel-indicators li:hover {
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: black;
   width: 5px;
@@ -2298,8 +2262,8 @@ body main section.result .content .container .csl .carousel-inner .carousel-item
   border-bottom-style: solid;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   line-height: 1.2;
 }
 
@@ -2313,8 +2277,8 @@ body main section.result .content .container .csl .carousel-inner .carousel-item
 body main section.result .content .container .csl .carousel-inner .carousel-item .textBlock .topLine .counter {
   -webkit-box-align: baseline;
   -webkit-align-items: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 body main section.result .content .container .csl .carousel-inner .carousel-item .textBlock .topLine .counter span.single {
@@ -2329,8 +2293,8 @@ body main section.result .content .container .csl .carousel-inner .carousel-item
   height: 15px;
   width: 1px;
   -webkit-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
   margin-right: 7.5px;
 }
 
@@ -2360,8 +2324,8 @@ body main section.result .content .container .csl .carousel-inner .carousel-item
   max-width: 170px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body main section.result .content .container .csl .carousel-inner .carousel-item .textBlock .results .line span {
@@ -2376,7 +2340,6 @@ body main section.result .content .container .csl .carousel-inner .carousel-item
 
 body main section.howSignUp {
   background-image: url("../img/be/be-howSignUp-bg.jpg");
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
@@ -2397,8 +2360,8 @@ body main section.howSignUp .point {
   grid-template-columns: 75px auto;
   -webkit-box-align: start;
   -webkit-align-items: start;
-  -ms-flex-align: start;
-  align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
   justify-items: start;
   margin-top: 100px;
 }
@@ -2431,7 +2394,6 @@ body main section.howSignUp .button {
   background-color: white;
   width: 220px;
   height: 54px;
-  -webkit-border-radius: 27px;
   border-radius: 27px;
 }
 
@@ -2449,15 +2411,14 @@ body main section.howSignUp .signUp {
   -o-transition: 0.5s;
   transition: 0.5s;
   -webkit-animation: pulsation 2s infinite;
-  animation: pulsation 2s infinite;
+          animation: pulsation 2s infinite;
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #ff2e2f;
   -webkit-box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
-  box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
+          box-shadow: 4.499px 19.487px 49px 0px rgba(255, 24, 24, 0.31);
   width: 170px;
   height: 170px;
 }
@@ -2482,9 +2443,9 @@ body main section.howSignUp .signUp svg {
 
 body main section.howSignUp .signUp:hover {
   -webkit-animation: none;
-  animation: none;
+          animation: none;
   -webkit-box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
-  box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+          box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
 }
 
 body main section.howSignUp .signUp:hover svg {
@@ -2494,15 +2455,15 @@ body main section.howSignUp .signUp:hover svg {
 @keyframes pulsation {
   0% {
     -webkit-box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
-    box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
+            box-shadow: 0 0 200px rgba(255, 44, 45, 0.9);
   }
   70% {
     -webkit-box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
-    box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
+            box-shadow: 0 0 0 200px rgba(255, 44, 45, 0);
   }
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
-    box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
+            box-shadow: 0 0 0 0 rgba(255, 44, 46, 0);
   }
 }
 
@@ -2637,8 +2598,8 @@ body main section.howSignUp .signUp:hover svg {
     display: flex !important;
     -webkit-box-pack: end !important;
     -webkit-justify-content: flex-end !important;
-    -ms-flex-pack: end !important;
-    justify-content: flex-end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
   }
   body header.container-fluid nav .adress {
     display: none !important;
@@ -2822,7 +2783,6 @@ body main section.howSignUp .signUp:hover svg {
 @media only screen and (max-width: 992px) {
   body header.container-fluid {
     background-image: url("../img/be/be-header-mobileBg.png");
-    -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -2901,7 +2861,7 @@ body main section.howSignUp .signUp:hover svg {
     position: relative;
     height: auto;
     -webkit-mask: none;
-    mask: none;
+            mask: none;
   }
   body main section.fourth .content .container .wrap .step .bg img {
     position: relative;
@@ -2918,14 +2878,14 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main section.result .content .container .csl .carousel .carousel-inner .carousel-item .picture {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body main section.result .content .container .csl .carousel .carousel-inner .carousel-item .picture .pre img, body main section.result .content .container .csl .carousel .carousel-inner .carousel-item .picture .post img {
     width: 100%;
@@ -2975,18 +2935,18 @@ body main section.howSignUp .signUp:hover svg {
   body header.container-fluid .content .btnLink {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
-    -ms-flex-order: 2;
-    order: 2;
+        -ms-flex-order: 2;
+            order: 2;
     -webkit-box-pack: end !important;
     -webkit-justify-content: flex-end !important;
-    -ms-flex-pack: end !important;
-    justify-content: flex-end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
   }
   body header.container-fluid .content .dateStart {
     -webkit-box-pack: start !important;
     -webkit-justify-content: flex-start !important;
-    -ms-flex-pack: start !important;
-    justify-content: flex-start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
   }
   body header.container-fluid .content .textMobile {
     font-size: 50px;
@@ -3006,7 +2966,6 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.purpose {
     background-image: url("../img/be/be-purpose-mobile-bg.jpg");
-    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: repeat;
   }
@@ -3021,7 +2980,6 @@ body main section.howSignUp .signUp:hover svg {
     padding-top: 10px;
   }
   body main section.first .numbers {
-    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: repeat;
   }
@@ -3029,15 +2987,15 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main section.first .numbers .points .slashLine {
     display: none;
     -webkit-box-align: center;
     -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body main section.first .numbers .points .point {
     text-align: center;
@@ -3056,12 +3014,12 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start !important;
     -webkit-align-items: start !important;
-    -ms-flex-align: start !important;
-    align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
   }
   body main section.result .header .container .numbers .slash {
     display: none;
@@ -3076,7 +3034,6 @@ body main section.howSignUp .signUp:hover svg {
   body main section.howSignUp {
     background-image: url("../img/be/be-result-header-bg.jpg");
     background-repeat: repeat;
-    -webkit-background-size: contain;
     background-size: contain;
   }
   body main section.howSignUp .button {
@@ -3192,14 +3149,14 @@ body main section.howSignUp .signUp:hover svg {
     margin-top: 0;
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
-    -ms-flex-pack: center !important;
-    justify-content: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   body header.container-fluid .content .dateStart {
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
-    -ms-flex-pack: center !important;
-    justify-content: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   body main section.purpose {
     padding-top: 25px;
@@ -3227,7 +3184,6 @@ body main section.howSignUp .signUp:hover svg {
     width: 35px;
   }
   body main section.second .header {
-    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: repeat;
   }
@@ -3248,12 +3204,12 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start !important;
     -webkit-align-items: start !important;
-    -ms-flex-align: start !important;
-    align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
   }
   body main section.second .header .container .fact p.desc {
     margin-left: 0;
@@ -3261,7 +3217,6 @@ body main section.howSignUp .signUp:hover svg {
   }
   body main section.third .header {
     padding-bottom: 60px;
-    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: repeat;
   }
@@ -3286,18 +3241,17 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start !important;
     -webkit-align-items: start !important;
-    -ms-flex-align: start !important;
-    align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
   }
   body main section.third .header .container .fact p.desc {
     margin-left: 0;
   }
   body main section.fourth .header {
-    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: repeat;
     padding-top: 75px;
@@ -3322,12 +3276,12 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start !important;
     -webkit-align-items: start !important;
-    -ms-flex-align: start !important;
-    align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
   }
   body main section.fourth .header .container .fact p.desc {
     margin-left: 0;
@@ -3390,16 +3344,16 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start !important;
     -webkit-align-items: start !important;
-    -ms-flex-align: start !important;
-    align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
-    -ms-flex-pack: center !important;
-    justify-content: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
     padding-left: 12.5px;
   }
   body main section.third .content .container ul li p.desc {
@@ -3476,12 +3430,12 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start !important;
     -webkit-align-items: start !important;
-    -ms-flex-align: start !important;
-    align-items: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
   }
   body main section.second .content .cslMobile .carousel-item .head .circle {
     width: 103px;
@@ -3502,8 +3456,8 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main section.first .points .content ul li img.icon {
     width: 55px;
@@ -3538,8 +3492,8 @@ body main section.howSignUp .signUp:hover svg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main section.fourth .content .container .wrap .step .buttons .btnW {
     margin-left: 0;

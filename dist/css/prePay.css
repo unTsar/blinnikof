@@ -31,6 +31,14 @@
 }
 
 @font-face {
+  font-family: "MullerLightItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot");
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLightItalic/MullerLightItalic.woff") format("woff"), url("../fonts/MullerLightItalic/MullerLightItalic.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "MullerThin";
   font-weight: normal;
   font-style: normal;
@@ -62,10 +70,435 @@
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "MullerBlack";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBlack/MullerBlack.eot");
+  src: url("../fonts/MullerBlack/MullerBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBlack/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype");
+}
+
+.popupError {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 32%;
+  height: auto;
+  background-color: #ffffff;
+  padding: 67px 15px;
+  display: none;
+  text-align: center;
+  border-radius: 27px;
+}
+
+.popupError img {
+  width: 133px;
+  height: auto;
+}
+
+.popupError p {
+  line-height: 1.3;
+  margin-top: 45px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 420px;
+  font-family: 'MullerRegular';
+  font-size: 24px;
+  color: #333333;
+}
+
+.popupError .buttonOk {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #333333;
+  width: 97px;
+  height: 54px;
+  border-radius: 27px;
+  margin-top: 27px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'MullerBold';
+  font-size: 16px;
+}
+
+.popupError .buttonOk:hover {
+  background-color: #ff2e2f;
+}
+
+main section.contacts {
+  text-align: left;
+}
+
 main .header-breadcrumbs {
   padding-top: 65px;
 }
 
 main .header-breadcrumbs .breadcrumbs a.active {
   color: #777777;
+}
+
+main h1 {
+  font-family: 'MullerExtraBold';
+  font-size: 60px;
+  color: #333333;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+
+main .subhead {
+  padding-top: 30px;
+}
+
+main .subhead h2 {
+  font-family: 'MullerMedium';
+  font-size: 30px;
+  color: #333333;
+  margin-bottom: 0;
+}
+
+main .subhead .line {
+  background-color: #ff2e2f;
+  height: 4px;
+  width: 78px;
+  margin-left: 25px;
+}
+
+main .subhead .line, main .subhead h2 {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+main .orderInf .contentBlock {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  background-color: #fff;
+  border-radius: 25px;
+  margin-top: 60px;
+}
+
+main .orderInf .contentBlock .list .listTable.mob {
+  display: none;
+}
+
+main .orderInf .contentBlock .list .listTable.mob .topLine, main .orderInf .contentBlock .list .listTable.mob .line {
+  grid-template-columns: 1fr;
+}
+
+main .orderInf .contentBlock .list .listTable.mob .topLine {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main .orderInf .contentBlock .list .listTable.mob .line {
+  line-height: 2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main .orderInf .contentBlock .list .listTable.mob .noBrs {
+  border-radius: 0px;
+}
+
+main .orderInf .contentBlock .list .topLine, main .orderInf .contentBlock .list .line {
+  display: grid;
+  grid-template-columns: 41% 38% 21%;
+}
+
+main .orderInf .contentBlock .list .topLine {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #3b3b3b;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+main .orderInf .contentBlock .list .topLine span {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'MullerBold';
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+main .orderInf .contentBlock .list .line {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  background-color: #fff;
+}
+
+main .orderInf .contentBlock .list .line.gray {
+  background-color: #F5F5F5;
+}
+
+main .orderInf .contentBlock .list .results {
+  padding-right: 78px;
+}
+
+main .orderInf .contentBlock .list .results .item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+main .orderInf .contentBlock .list span {
+  font-family: 'MullerMedium';
+  font-size: 20px;
+  color: #333333;
+}
+
+main .orderInf .contentBlock .list span.l {
+  font-family: 'MullerLight';
+}
+
+main .orderInf .contentBlock .list span.b {
+  font-family: 'MullerBold';
+}
+
+main .orderInf .contentBlock .list span.gr {
+  color: #b4aeae;
+}
+
+main .orderInf .contentBlock .list span.jusR {
+  justify-self: right;
+}
+
+main .acceptTerms {
+  padding-top: 55px;
+}
+
+main .acceptTerms .text {
+  max-width: 515px;
+  margin-left: 35px;
+  font-family: 'MullerRegular';
+  font-size: 18px;
+  color: #333333;
+}
+
+main .acceptTerms .text a.red {
+  color: #ff2e2f;
+}
+
+main .acceptTerms input {
+  display: none;
+}
+
+main .acceptTerms label {
+  margin-top: 5px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+main .acceptTerms label::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #b6b6b6;
+}
+
+main .acceptTerms label::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  display: none;
+  left: 0px;
+  top: -4px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/checkbox-icon.png");
+}
+
+main .acceptTerms input:checked + label::after {
+  display: block;
+}
+
+main a.button {
+  background-color: #ff2e2f;
+  width: 215px;
+  height: 54px;
+  border-radius: 35px;
+  font-family: 'MullerBold';
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 18px;
+}
+
+@media only screen and (max-width: 1400px) {
+  body .popupError {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  body main .container-fluid .orderInf .contentBlock .list .results {
+    padding-right: 38px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body .popupError {
+    width: 65%;
+  }
+  body main .container-fluid h1 {
+    margin-top: 75px;
+    font-size: 50px;
+  }
+  body main .container-fluid .subhead h2 {
+    font-size: 25px;
+  }
+  body main .container-fluid .orderInf .contentBlock {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  body main .container-fluid .orderInf .contentBlock .list .line, body main .container-fluid .orderInf .contentBlock .list .topLine {
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: 42% 34% 24%;
+  }
+  body main .container-fluid .orderInf .contentBlock .list .line span, body main .container-fluid .orderInf .contentBlock .list .results span {
+    font-size: 18px;
+  }
+  body main .container-fluid .orderInf .contentBlock .list .results {
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body .popupError {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 75%;
+  }
+  body .popupError img {
+    width: 90px;
+  }
+  body .popupError p {
+    font-size: 20px;
+  }
+  body main .container-fluid h1 {
+    margin-top: 50px;
+  }
+  body main .container-fluid .subhead {
+    padding-top: 17.5px;
+  }
+  body main .container-fluid .orderInf .contentBlock {
+    margin-top: 30px;
+  }
+  body main .container-fluid .orderInf .contentBlock .list .listTable.desk {
+    display: none;
+  }
+  body main .container-fluid .orderInf .contentBlock .list .listTable.mob {
+    display: block;
+  }
+  body main .container-fluid .orderInf .contentBlock .list .results {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  body main .container-fluid .orderInf .contentBlock .list .results .item {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .container-fluid .acceptTerms {
+    padding-top: 35px;
+  }
+  body main .container-fluid .acceptTerms input {
+    margin-top: 4px;
+  }
+  body main .container-fluid .acceptTerms .text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body .popupError {
+    width: 90%;
+  }
+  body main .container-fluid h1 {
+    font-size: 30px;
+  }
+  body main .container-fluid .subhead .line {
+    width: 60px;
+  }
+  body main .container-fluid .subhead h2 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  body .popupError p {
+    margin-top: 28px;
+    font-size: 16px;
+  }
+  body .popupError .buttonOk {
+    margin-top: 22px;
+  }
+  body main {
+    text-align: center;
+  }
+  body main .container-fluid .header-breadcrumbs {
+    padding-top: 40px;
+    text-align: left;
+  }
+  body main .container-fluid h1 {
+    margin-top: 35px;
+  }
+  body main .container-fluid .subhead .line {
+    display: none;
+  }
+  body main .container-fluid .orderInf .contentBlock {
+    margin-top: 25px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+  }
+  body main .container-fluid .orderInf .contentBlock .list .listTable.mob .topLine span, body main .container-fluid .orderInf .contentBlock .list .results .topLine span {
+    font-size: 12px;
+  }
+  body main .container-fluid .orderInf .contentBlock .list .listTable.mob span, body main .container-fluid .orderInf .contentBlock .list .results span {
+    font-size: 14px;
+  }
+  body main .container-fluid .orderInf .contentBlock .list .listTable.mob span.l, body main .container-fluid .orderInf .contentBlock .list .results span.l {
+    font-weight: bold;
+  }
+  body main .container-fluid .acceptTerms {
+    text-align: left;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .container-fluid .acceptTerms .text {
+    max-width: 190px;
+  }
+  body main .container-fluid a.button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

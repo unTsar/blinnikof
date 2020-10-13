@@ -31,6 +31,22 @@
 }
 
 @font-face {
+  font-family: "MullerLightItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot");
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLightItalic/MullerLightItalic.woff") format("woff"), url("../fonts/MullerLightItalic/MullerLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerThin";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerThin/MullerThin.eot");
+  src: url("../fonts/MullerThin/MullerThin.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerThin/MullerThin.woff") format("woff"), url("../fonts/MullerThin/MullerThin.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "MullerMedium";
   font-weight: normal;
   font-style: normal;
@@ -54,20 +70,33 @@
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "MullerBlack";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBlack/MullerBlack.eot");
+  src: url("../fonts/MullerBlack/MullerBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBlack/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype");
+}
+
+.popup::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 .popup {
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   width: 50%;
-  height: auto;
   padding: 25px;
   background-color: #F8F8F8;
   -webkit-box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
-  box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
+          box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
   font-family: 'MullerLight';
   font-size: 16px;
   color: #313131;
   display: none;
+  max-height: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 main section.list .container {
@@ -111,7 +140,7 @@ main section.list .container .item:hover img.fotof {
 
 main section.list .container .item:hover {
   -webkit-box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
-  box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
+          box-shadow: 0px 29px 101px 0px rgba(238, 87, 87, 0.33);
 }
 
 main section.list .container .item {
@@ -149,14 +178,14 @@ main section.list .container .item .c7 .name .line {
   width: 1px;
   height: 30px;
   -webkit-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
   background-color: #E8E8E8;
 }
 
 main section.list .container .item .c7 .name span.red {
   font-family: 'MullerBold';
-  color: #e93333;
+  color: #ff2e2f;
   font-size: 24px;
   line-height: 1.2;
 }
@@ -171,7 +200,7 @@ main section.list .container .item .c7 .desc {
 }
 
 main section.list .container .item .c7 .desc .red {
-  color: #e93333;
+  color: #ff2e2f;
   font-family: 'MullerMedium';
   font-size: 15px;
   cursor: pointer;
@@ -208,8 +237,8 @@ main section.list .container .item .c7 .list span.name {
   color: #313131;
   line-height: 1;
   -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 main section.list .container .item .c7 .list .flexCol {
@@ -305,7 +334,7 @@ main section.list .container .advert span.red {
 main section.list .container .advert .button {
   cursor: pointer;
   margin-left: 50px;
-  background-color: #e93333;
+  background-color: #ff2e2f;
   width: 320px;
   height: 64px;
   font-family: 'MullerMedium';
@@ -380,12 +409,12 @@ main section.list .container .advert .button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 30px;
   }
   body main section.list .container .advert .button {
@@ -424,8 +453,8 @@ main section.list .container .advert .button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 25px;
     line-height: 1.2;
     padding-left: 0;
@@ -437,25 +466,25 @@ main section.list .container .advert .button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   body main section.list .container .item.row .c7 .list.d-flex span.name {
     -webkit-align-self: flex-start;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
     margin-bottom: 10px;
   }
   body main section.list .container .item.row .c7 .buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 10px;
     margin-bottom: 10px;
   }

@@ -1,0 +1,2570 @@
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerRegular/MullerRegular.eot");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype"), url("../fonts/MullerRegular/MullerRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MullerLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLight/MullerLight.eot");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype"), url("../fonts/MullerLight/MullerLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MullerLightItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot");
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLightItalic/MullerLightItalic.woff") format("woff"), url("../fonts/MullerLightItalic/MullerLightItalic.ttf") format("truetype"), url("../fonts/MullerLightItalic/MullerLightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MullerThin";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerThin/MullerThin.eot");
+  src: url("../fonts/MullerThin/MullerThin.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerThin/MullerThin.woff") format("woff"), url("../fonts/MullerThin/MullerThin.ttf") format("truetype"), url("../fonts/MullerThin/MullerThin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MullerMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerMedium/MullerMedium.eot");
+  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype"), url("../fonts/MullerMedium/MullerMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MullerBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBold/MullerBold.eot");
+  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype"), url("../fonts/MullerBold/MullerBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MullerExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype"), url("../fonts/MullerExtraBold/MullerExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MullerBlack";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBlack/MullerBlack.eot");
+  src: url("../fonts/MullerBlack/MullerBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBlack/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype"), url("../fonts/MullerBlack/MullerBlack.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport/Aeroport.eot");
+  src: url("../fonts/Aeroport/Aeroport.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport/Aeroport.woff") format("woff"), url("../fonts/Aeroport/Aeroport.ttf") format("truetype"), url("../fonts/Aeroport/Aeroport.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-Bold/Aeroport-Bold.eot");
+  src: url("../fonts/Aeroport-Bold/Aeroport-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-Bold/Aeroport-Bold.woff") format("woff"), url("../fonts/Aeroport-Bold/Aeroport-Bold.ttf") format("truetype"), url("../fonts/Aeroport-Bold/Aeroport-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-BoldItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic.eot");
+  src: url("../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic.woff") format("woff"), url("../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic.ttf") format("truetype"), url("../fonts/Aeroport-BoldItalic/Aeroport-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-Italic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-Italic/Aeroport-Italic.eot");
+  src: url("../fonts/Aeroport-Italic/Aeroport-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-Italic/Aeroport-Italic.woff") format("woff"), url("../fonts/Aeroport-Italic/Aeroport-Italic.ttf") format("truetype"), url("../fonts/Aeroport-Italic/Aeroport-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-Light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-Light/Aeroport-Light.eot");
+  src: url("../fonts/Aeroport-Light/Aeroport-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-Light/Aeroport-Light.woff") format("woff"), url("../fonts/Aeroport-Light/Aeroport-Light.ttf") format("truetype"), url("../fonts/Aeroport-Light/Aeroport-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-LightItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-LightItalic/Aeroport-LightItalic.eot");
+  src: url("../fonts/Aeroport-LightItalic/Aeroport-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-LightItalic/Aeroport-LightItalic.woff") format("woff"), url("../fonts/Aeroport-LightItalic/Aeroport-LightItalic.ttf") format("truetype"), url("../fonts/Aeroport-LightItalic/Aeroport-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-Medium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-Medium/Aeroport-Medium.eot");
+  src: url("../fonts/Aeroport-Medium/Aeroport-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-Medium/Aeroport-Medium.woff") format("woff"), url("../fonts/Aeroport-Medium/Aeroport-Medium.ttf") format("truetype"), url("../fonts/Aeroport-Medium/Aeroport-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeroport-MediumItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic.eot");
+  src: url("../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic.woff") format("woff"), url("../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic.ttf") format("truetype"), url("../fonts/Aeroport-MediumItalic/Aeroport-MediumItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AeroportMono";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/AeroportMono/AeroportMono.eot");
+  src: url("../fonts/AeroportMono/AeroportMono.eot?#iefix") format("embedded-opentype"), url("../fonts/AeroportMono/AeroportMono.woff") format("woff"), url("../fonts/AeroportMono/AeroportMono.ttf") format("truetype"), url("../fonts/AeroportMono/AeroportMono.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold.eot");
+  src: url("../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Bold/HeadingSmallcasePro-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Book";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book.eot");
+  src: url("../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Book/HeadingSmallcasePro-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-ExtLt";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt.eot");
+  src: url("../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt.woff") format("woff"), url("../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-ExtLt/HeadingSmallcasePro-ExtLt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-ExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold.eot");
+  src: url("../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold.woff") format("woff"), url("../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-ExtraBold/HeadingSmallcasePro-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Heavy";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy.eot");
+  src: url("../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Heavy/HeadingSmallcasePro-Heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Light";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light.eot");
+  src: url("../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Light/HeadingSmallcasePro-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular.eot");
+  src: url("../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Regular/HeadingSmallcasePro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HeadingSmallcasePro-Thin";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin.eot");
+  src: url("../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin.woff") format("woff"), url("../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin.ttf") format("truetype"), url("../fonts/HeadingSmallcasePro-Thin/HeadingSmallcasePro-Thin.otf") format("opentype");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.rel {
+  position: relative;
+}
+
+h1, h2, h3, span, p {
+  font-weight: normal;
+}
+
+.transform-disabled {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+          transform: translate3d(0, 0, 0) !important;
+}
+
+.transition-disabled {
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+body {
+  background-color: #000;
+  width: 100%;
+  font-size: 16px;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+body a, body a:active, body a:focus, body a:link, body a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+body #menu-pagedim {
+  background-color: #000000;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4500;
+}
+
+body #menu-pagedim.turned {
+  display: block;
+}
+
+body #menu-pagedim.turnedOpacity {
+  opacity: 0.3;
+}
+
+body nav.menu.hidden {
+  left: -500px;
+}
+
+body nav.menu {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  z-index: 5000;
+  height: 100%;
+  min-width: 500px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 100px;
+  background-color: #303030;
+}
+
+body nav.menu ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+body nav.menu ul .separLine {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body nav.menu ul li.item {
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body nav.menu ul li.item a {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  font-family: 'MullerLight';
+  font-size: 24px;
+}
+
+body nav.menu ul li.item a:hover {
+  color: #ff2e2f;
+}
+
+body .container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body .d-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .align-items-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .justify-content-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .justify-content-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .video .preview img.img-btn {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .video:hover .preview img.img-btn {
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+body a.btn {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .vimeo-video-popup {
+  display: none;
+  position: fixed;
+  z-index: 9000;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body .vimeo-video-popup #vimeo-video-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+}
+
+body .vimeo-video-popup #vimeo-video-container img.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 32px;
+  margin-right: 31px;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .vimeo-video-popup #vimeo-video-container img.btn-close:hover {
+  opacity: 1;
+}
+
+body .vimeo-video-popup #vimeo-video-container iframe {
+  width: 1077px;
+  height: 600px;
+  max-height: 100%;
+}
+
+body .scrollText-block {
+  width: 100%;
+  height: 117px;
+  background-image: url("../img/be-box/scrollText-be-box.svg");
+  background-repeat: repeat;
+  -webkit-animation: 4.5s linear scrollText infinite;
+          animation: 4.5s linear scrollText infinite;
+}
+
+@-webkit-keyframes scrollText {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1117px;
+  }
+}
+
+@keyframes scrollText {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1117px;
+  }
+}
+
+body section h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+body section h2 span.sm-text {
+  font-family: 'Aeroport-Bold';
+  font-size: 30px;
+}
+
+body section h2 span.b-text {
+  font-family: 'HeadingSmallcasePro-Regular';
+  font-size: 72px;
+}
+
+body section h2 span.underline-text {
+  position: relative;
+}
+
+body section h2 span.underline-text::after {
+  content: '';
+  position: absolute;
+  background-color: #FF0006;
+  width: 105%;
+  height: 4px;
+  bottom: 0;
+  left: -2.5%;
+}
+
+body header.active {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+body header {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  background-color: black;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+body header .bg-outer {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body header .bg-outer .bg-inner {
+  width: 110%;
+  height: 110%;
+  margin-left: -2.5%;
+  margin-top: -2.5%;
+  background-image: url("../img/be-box/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-blend-mode: color;
+}
+
+body header .logo img.imgLogo {
+  width: 42px;
+  height: auto;
+}
+
+body header .logo .textLogo {
+  line-height: 1.2;
+  margin-left: 10px;
+}
+
+body header .logo .textLogo span {
+  color: #fff;
+}
+
+body header .logo .textLogo span.name {
+  letter-spacing: 3px;
+  font-family: 'MullerExtraBold';
+  text-transform: uppercase;
+  font-size: 26.53px;
+}
+
+body header .logo .textLogo span.desc {
+  font-family: 'MullerRegular';
+  font-size: 15px;
+}
+
+body header nav {
+  padding: 37px 0;
+}
+
+body header nav .menu {
+  padding: 0;
+}
+
+body header nav .menu .circle {
+  border-radius: 50%;
+  position: relative;
+  z-index: 5000;
+  cursor: pointer;
+  background-color: #ff1c1c;
+  width: 66px;
+  height: 66px;
+  outline: none;
+}
+
+body header nav .menu .hamburger {
+  outline: none;
+}
+
+body header nav .menu .hamburger .hamburger-box {
+  width: 35px;
+}
+
+body header nav .menu .hamburger .hamburger-box .hamburger-inner,
+body header nav .menu .hamburger .hamburger-box .hamburger-inner::after,
+body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
+  background-color: #fff;
+  width: 35px;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body header nav .menu .hamburger:hover, body header nav .menu .hamburger.is-active:hover {
+  opacity: 1;
+}
+
+body header nav .logo {
+  margin-left: 45px;
+}
+
+body header nav .contacts {
+  margin-left: auto;
+}
+
+body header nav .contacts a {
+  font-family: "Aeroport";
+  font-size: 18px;
+  color: #fff;
+  margin-left: 30px;
+}
+
+body header .maintext-outer {
+  position: absolute;
+  height: 30%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+body header .maintext-outer .maintext.animate__animated {
+  opacity: 1;
+}
+
+body header .maintext-outer .maintext {
+  pointer-events: all;
+  position: relative;
+  opacity: 0;
+  display: inline-block;
+}
+
+body header .maintext-outer .maintext span.tag {
+  font-family: 'Aeroport-Bold';
+  font-size: 30px;
+  color: #FF0006;
+}
+
+body header .maintext-outer .maintext h1 {
+  position: relative;
+  max-width: 944px;
+  text-transform: uppercase;
+  font-family: 'HeadingSmallcasePro-Regular';
+  font-size: 96px;
+  color: #fff;
+  margin: 0;
+  margin-top: 30px;
+  line-height: 0.9;
+}
+
+body header .maintext-outer .maintext h1::before {
+  content: '';
+  background-color: #FF0006;
+  width: 141px;
+  height: 6px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 34px;
+  margin-left: -176px;
+}
+
+body header .maintext-outer .maintext a.btn-submit {
+  display: inline-block;
+  margin-top: 15px;
+  text-align: center;
+  background-color: #FF0006;
+  width: 300px;
+  height: 65px;
+  line-height: 64px;
+  font-family: 'Aeroport-Bold';
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+body header .maintext-outer .maintext a.btn:hover {
+  font-size: 20px;
+}
+
+body header .scrollDown {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  margin-top: 73px;
+  margin-bottom: 50px;
+}
+
+body header .scrollDown p.text {
+  color: #fff;
+  font-family: 'Aeroport-Bold';
+  font-size: 14px;
+  max-width: 180px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+body header .scrollDown img {
+  width: 38px;
+  position: relative;
+  opacity: 0;
+  -webkit-animation: 1s linear moveDown infinite;
+          animation: 1s linear moveDown infinite;
+}
+
+@-webkit-keyframes moveDown {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  20% {
+    opacity: 1;
+    top: 7px;
+  }
+  80% {
+    top: 28px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 35px;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  20% {
+    opacity: 1;
+    top: 7px;
+  }
+  80% {
+    top: 28px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 35px;
+  }
+}
+
+body section.wantsTo {
+  padding-bottom: 225px;
+}
+
+body section.wantsTo .container {
+  padding-top: 20%;
+  margin-top: -20%;
+}
+
+body section.wantsTo h2 {
+  margin-top: 180px;
+  line-height: 1.4;
+}
+
+body section.wantsTo .video.active {
+  margin-top: -102px;
+}
+
+body section.wantsTo .video {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+  width: 462px;
+  position: relative;
+  margin-left: auto;
+  margin-top: 0;
+  margin-right: 67px;
+}
+
+body section.wantsTo .video .preview img.poster {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+body section.wantsTo .video .preview .title {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Aeroport-Bold';
+  padding-left: 47px;
+  padding-top: 27px;
+  text-transform: uppercase;
+}
+
+body section.wantsTo .video .preview img.img-btn {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+body section.wantsTo .video iframe#vimeo-video1 {
+  width: 462px;
+  height: 292px;
+  position: relative;
+  z-index: 2;
+}
+
+body section.wantsTo ul.desires {
+  padding: 0;
+  margin: 0;
+  margin-right: 60px;
+  margin-top: 160px;
+}
+
+body section.wantsTo ul.desires li {
+  position: relative;
+  color: #fff;
+  font-family: 'Aeroport';
+  font-size: 24px;
+  margin-top: 65px;
+  margin-left: auto;
+  list-style: none;
+  line-height: 1.2;
+  max-width: 310px;
+}
+
+body section.wantsTo ul.desires li::before {
+  content: '';
+  width: 0px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 12px;
+  margin-left: -110px;
+  background-color: #FF0006;
+}
+
+body section.wantsTo ul.desires li.active::before {
+  width: 80px;
+}
+
+body section.wantsTo .circle-text-outer {
+  width: 196px;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+}
+
+body section.wantsTo .circle-text-outer img.zipper {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body section.wantsTo .circle-text-outer img.circle-text {
+  -webkit-animation: 10s fullRotate infinite;
+          animation: 10s fullRotate infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+  width: 100%;
+}
+
+@-webkit-keyframes fullRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fullRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body section.wantsTo .circle-text-outer .photo1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: -55px;
+  z-index: -3;
+  width: 800px;
+  height: 534px;
+}
+
+body section.wantsTo .circle-text-outer .photo2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 95px;
+  margin-left: -55px;
+  z-index: -2;
+  width: 800px;
+  height: 534px;
+}
+
+body section.wantsTo .figure-block {
+  margin-top: 280px;
+}
+
+body section.wantsTo .figure-block .fb-img {
+  width: 0;
+  height: 166px;
+  background-repeat: no-repeat;
+  background-image: url("../img/be-box/800.svg");
+  background-size: 230px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+body section.wantsTo .figure-block .fb-img.active {
+  width: 230px;
+}
+
+body section.wantsTo .figure-block p {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-family: 'Aeroport';
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+body section.whatGet {
+  padding-top: 375px;
+  background-image: url("../img/be-box/whatGet-bg.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+body section.whatGet h2 {
+  opacity: 0;
+  line-height: normal;
+}
+
+body section.whatGet h2 span.sm-text {
+  line-height: 2.2;
+}
+
+body section.whatGet .advantages {
+  margin-top: 125px;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  background-color: #FF0006;
+}
+
+body section.whatGet .advantages .table {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -40px;
+}
+
+body section.whatGet .advantages .table .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: none;
+  width: -webkit-calc((100% / 2) - 11.7%);
+  width: calc((100% / 2) - 11.7%);
+  margin-left: 11.7%;
+  margin-bottom: 60px;
+}
+
+body section.whatGet .advantages .table .item img, body section.whatGet .advantages .table .item p {
+  opacity: 0;
+}
+
+body section.whatGet .advantages .table .item p {
+  font-size: 20px;
+  font-family: 'Aeroport';
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+body section.whatGet .advantages a.btn-subscribe {
+  margin: auto;
+  background-color: #000;
+  color: #fff;
+  width: 340px;
+  height: 65px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Aeroport-Bold';
+  font-size: 18px;
+}
+
+body section.whatGet .advantages a.btn:hover {
+  font-size: 20px;
+}
+
+@-webkit-keyframes kick {
+  0% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  55% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes kick {
+  0% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  55% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+body section.antidepr {
+  margin-top: 200px;
+  margin-bottom: 250px;
+  height: 800px;
+  opacity: 0;
+  position: relative;
+  background-image: url("../img/be-box/antidepr-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+body section.antidepr .cross-block {
+  pointer-events: none;
+  max-width: 1425px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+body section.antidepr img.cross.active {
+  -webkit-animation: 1s kick;
+          animation: 1s kick;
+}
+
+body section.antidepr img.cross {
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+body section.antidepr img.db {
+  display: block;
+}
+
+body section.antidepr img.cross1 {
+  top: 75px;
+  left: 144px;
+  width: 61px;
+  height: 61px;
+}
+
+body section.antidepr img.cross2 {
+  top: 280px;
+  right: 120px;
+  width: 125px;
+  height: 125px;
+}
+
+body section.antidepr img.cross3 {
+  bottom: -42px;
+  right: 625px;
+  width: 90px;
+  height: 90px;
+}
+
+body section.antidepr .text-block {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 465px;
+  width: 100%;
+  margin-left: auto;
+  padding-top: 500px;
+}
+
+body section.antidepr .text-block h3 span.b-text {
+  font-family: 'HeadingSmallcasePro-Bold';
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+body section.antidepr .text-block h3 span.sm-text {
+  font-family: 'Aeroport-Bold';
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+body section.antidepr .text-block p.desc {
+  font-family: 'Aeroport';
+  font-size: 24px;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+body section.reasons {
+  background-color: #FF0006;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+body section.reasons span.underline-text::after {
+  background-color: #000;
+}
+
+body section.reasons .table {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 -20px;
+  margin-top: 90px;
+}
+
+body section.reasons .table .item {
+  opacity: 0;
+  margin: 0 20px;
+  margin-bottom: 65px;
+  width: -webkit-calc((100% / 4) - 40px);
+  width: calc((100% / 4) - 40px);
+}
+
+body section.reasons .table .item .number {
+  font-family: 'HeadingSmallcasePro-Regular';
+  font-size: 72px;
+  line-height: 1.3;
+}
+
+body section.reasons .table .item p {
+  margin: 0;
+  margin-top: 12px;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Aeroport';
+  line-height: 1.2;
+}
+
+body section.reasons .table .heart-boxing {
+  position: relative;
+  margin: 0 20px;
+  width: 225px;
+  height: 207px;
+  line-height: 195px;
+  text-align: center;
+}
+
+body section.reasons .table .heart-boxing span {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 48px;
+  font-family: 'HeadingSmallcasePro-Regular';
+}
+
+body section.reasons .table .heart-boxing::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../img/be-box/heart-outline.svg");
+  background-repeat: no-repeat;
+  -webkit-animation: 1s heartPulse infinite;
+          animation: 1s heartPulse infinite;
+}
+
+@-webkit-keyframes heartPulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+  }
+  40% {
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12);
+  }
+}
+
+@keyframes heartPulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+  }
+  40% {
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12);
+  }
+}
+
+body section.finishing {
+  opacity: 0;
+  height: 927px;
+  background-image: url("../img/be-box/finishing-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 628px;
+}
+
+body section.videos {
+  margin: 250px 0;
+  padding: 0 40px;
+}
+
+body section.videos .container {
+  padding: 95px 0;
+  border: 4px solid #fff;
+  border-color: transparent;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+body section.videos .container.active {
+  border-color: #fff;
+}
+
+body section.videos h2 {
+  line-height: 1.2;
+  margin-bottom: 95px;
+}
+
+body section.videos .table {
+  margin: 0 -60px;
+}
+
+body section.videos .table .video-item {
+  width: -webkit-calc((100% / 2) - 40px);
+  width: calc((100% / 2) - 40px);
+  height: auto;
+  margin: 0 20px;
+}
+
+body section.videos .table .video-item p.desc {
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Aeroport';
+}
+
+body section.videos .table .video-item .video.animate__animated {
+  opacity: 1;
+}
+
+body section.videos .table .video-item .video {
+  cursor: pointer;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+body section.videos .table .video-item .video .preview {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+body section.videos .table .video-item .video .preview img.poster {
+  vertical-align: bottom;
+  width: 100%;
+  z-index: -1;
+}
+
+body section.videos .table .video-item .video .preview img.img-btn {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+body section.videos .table .video-item .video iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+body section.trainer {
+  height: 939px;
+  background-image: url("../img/be-box/trainer-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body section.trainer .container {
+  position: relative;
+  height: 100%;
+}
+
+body section.trainer .container img.aim {
+  position: absolute;
+  display: none;
+}
+
+body section.trainer .container img.db {
+  display: block;
+}
+
+body section.trainer .container img.aim1 {
+  top: 0;
+  right: 0;
+  width: 112px;
+  height: 112px;
+  margin-top: -56px;
+  margin-right: 35%;
+}
+
+body section.trainer .container img.aim2 {
+  left: 0;
+  bottom: 0;
+  margin-bottom: 117px;
+  margin-left: 3.3%;
+  width: 60px;
+  height: 60px;
+}
+
+body section.trainer .text-block {
+  padding-top: 200px;
+  padding-left: 17.5%;
+}
+
+body section.trainer .text-block h2 {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+body section.trainer .text-block h2 span.b-text {
+  font-size: 48px;
+}
+
+body section.trainer .text-block h2 span.sm-text {
+  font-size: 24px;
+}
+
+body section.trainer .text-block .desc {
+  margin-top: 350px;
+  font-size: 30px;
+  color: #fff;
+}
+
+body section.trainer .text-block .desc p.subhead {
+  font-family: 'Aeroport-Bold';
+  line-height: 1.2;
+  margin: 0;
+}
+
+body section.trainer .text-block .desc p.text {
+  font-family: 'Aeroport';
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1.2;
+  font-size: 24px;
+}
+
+body section.trainer .trainer-img.animate__animated {
+  opacity: 1;
+}
+
+body section.trainer .trainer-img {
+  opacity: 0;
+  width: 42%;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-bottom: 80px;
+}
+
+body section.trainer .trainer-img img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  vertical-align: bottom;
+}
+
+body section.trainer .trainer-img::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 92%;
+  height: 92%;
+  z-index: 1;
+  background-color: #FF0006;
+  margin-right: -5px;
+  margin-bottom: -5px;
+}
+
+body section.gym {
+  padding: 250px 0;
+}
+
+body section.gym h2 {
+  line-height: 1.3;
+  margin-bottom: 95px;
+  opacity: 0;
+}
+
+body section.gym h2.animate__animated {
+  opacity: 1;
+}
+
+body section.gym .gym-carousel .owl-item {
+  opacity: 0.2;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+body section.gym .gym-carousel .owl-item.active {
+  opacity: 1;
+}
+
+body section.gym .gym-carousel .owl-nav button.owl-next, body section.gym .gym-carousel .owl-nav button.owl-prev, body section.gym .gym-carousel .owl-nav button:hover, body section.gym .gym-carousel .owl-nav button:focus {
+  position: absolute;
+  background-color: #FF0006;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+body section.gym .gym-carousel .owl-nav button.owl-next span, body section.gym .gym-carousel .owl-nav button.owl-prev span, body section.gym .gym-carousel .owl-nav button:hover span, body section.gym .gym-carousel .owl-nav button:focus span {
+  display: none;
+}
+
+body section.gym .gym-carousel .owl-nav button.owl-next {
+  background-position: 15px center;
+  margin-right: 8%;
+  right: 0;
+  background-image: url("../img/be-box/owl-next.svg");
+}
+
+body section.gym .gym-carousel .owl-nav button.owl-prev {
+  background-position: 13px center;
+  margin-left: 8%;
+  left: 0;
+  background-image: url("../img/be-box/owl-prev.svg");
+}
+
+body section.buyCourse {
+  overflow: hidden;
+  padding-bottom: 365px;
+}
+
+body section.buyCourse h2 {
+  line-height: 1.4;
+  margin-bottom: 240px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body section.buyCourse h2.active {
+  opacity: 1;
+  -webkit-animation: 1s kick;
+          animation: 1s kick;
+}
+
+body section.buyCourse h2.active span.underline-text::after {
+  width: 0;
+}
+
+body section.buyCourse h2.active span.underline-text.active::after {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  width: 105%;
+}
+
+body section.buyCourse .course-card {
+  width: 100%;
+  background-color: #FF0006;
+  padding-top: 100px;
+}
+
+body section.buyCourse .course-card .text-block, body section.buyCourse .course-card .btns-block {
+  width: 50%;
+}
+
+body section.buyCourse .course-card .text-block {
+  text-align: right;
+  padding-left: 50px;
+}
+
+body section.buyCourse .course-card .text-block ul {
+  opacity: 0;
+  display: inline-block;
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body section.buyCourse .course-card .text-block ul li {
+  position: relative;
+  font-family: 'Aeroport';
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+body section.buyCourse .course-card .text-block ul li::before {
+  content: '';
+  width: 51px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  right: 100%;
+  top: 4px;
+  bottom: 0;
+  margin: auto;
+  margin-right: 20px;
+}
+
+body section.buyCourse .course-card .text-block .video {
+  cursor: pointer;
+  opacity: 0;
+  width: 462px;
+  height: 292px;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: -125px;
+  margin-top: 55px;
+}
+
+body section.buyCourse .course-card .text-block .video .preview {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+body section.buyCourse .course-card .text-block .video .preview img.poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+body section.buyCourse .course-card .text-block .video .preview .title {
+  text-align: left;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Aeroport-Bold';
+  padding-left: 47px;
+  padding-top: 27px;
+  text-transform: uppercase;
+}
+
+body section.buyCourse .course-card .text-block .video .preview img.img-btn {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+body section.buyCourse .course-card .text-block .video iframe#vimeo-video4 {
+  width: 462px;
+  height: 292px;
+  position: relative;
+  z-index: 2;
+}
+
+body section.buyCourse .course-card .btns-block {
+  text-align: center;
+}
+
+body section.buyCourse .course-card .btns-block span.price, body section.buyCourse .course-card .btns-block a.btn {
+  margin-right: -20px;
+  display: inline-block;
+}
+
+body section.buyCourse .course-card .btns-block span.price {
+  color: #000;
+  line-height: 1;
+}
+
+body section.buyCourse .course-card .btns-block span.price span.number {
+  font-size: 118px;
+  font-family: 'HeadingSmallcasePro-Regular';
+}
+
+body section.buyCourse .course-card .btns-block span.price span.text {
+  font-family: 'Aeroport';
+  font-size: 36px;
+  margin-left: 5px;
+}
+
+body section.buyCourse .course-card .btns-block a.btn {
+  height: 65px;
+  line-height: 65px;
+  width: 340px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Aeroport-Bold';
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 18px;
+}
+
+body section.buyCourse .course-card .btns-block a.btn:hover {
+  font-size: 22.5px;
+}
+
+body section.buyCourse .course-card .btns-block a.btn-buyNow:hover {
+  font-size: 19px;
+}
+
+body section.buyCourse .course-card .btns-block a.btn-submit {
+  background-color: #000;
+}
+
+body section.buyCourse .course-card .btns-block a.btn-buyNow {
+  display: none;
+  line-height: 60px;
+  background-color: transparent;
+  border: 3px solid #fff;
+}
+
+body footer {
+  padding: 150px 0;
+}
+
+body footer .logo img.imgLogo {
+  width: 42px;
+  height: auto;
+}
+
+body footer .logo .textLogo {
+  line-height: 1.2;
+  margin-left: 10px;
+}
+
+body footer .logo .textLogo span {
+  color: #fff;
+}
+
+body footer .logo .textLogo span.name {
+  letter-spacing: 3px;
+  font-family: 'MullerExtraBold';
+  text-transform: uppercase;
+  font-size: 26.53px;
+}
+
+body footer .logo .textLogo span.desc {
+  font-family: 'MullerRegular';
+  font-size: 15px;
+}
+
+body footer a.phone {
+  color: #fff;
+  font-family: 'Aeroport';
+  font-size: 24px;
+}
+
+body footer a.btn-submit {
+  display: inline-block;
+  text-align: center;
+  background-color: #FF0006;
+  width: 300px;
+  height: 65px;
+  line-height: 64px;
+  font-family: 'Aeroport-Bold';
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+body footer a.btn:hover {
+  font-size: 20px;
+}
+
+@media only screen and (max-height: 830px) {
+  body nav.menu {
+    overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 1499px) {
+  body nav.menu {
+    min-width: 450px;
+  }
+  body nav.menu.hidden {
+    left: -450px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  body .vimeo-video-popup #vimeo-video-container iframe {
+    width: 900px;
+    height: 517px;
+  }
+  body header nav .contacts a {
+    font-size: 16px;
+    margin-left: 17px;
+  }
+  body header .scrollDown {
+    margin-top: 25px;
+    margin-bottom: 130px;
+  }
+  body section.reasons .table .heart-boxing {
+    width: 199px;
+    height: 182px;
+    line-height: 165px;
+  }
+  body section.reasons .table .heart-boxing::before {
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body nav.menu {
+    min-width: 400px;
+  }
+  body nav.menu.hidden {
+    left: -400px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 10px;
+  }
+  body {
+    font-size: 10px;
+  }
+  body .container {
+    padding: 0 3em;
+  }
+  body .vimeo-video-popup #vimeo-video-container iframe {
+    width: 72rem;
+    height: 41.5rem;
+  }
+  body section h2 {
+    font-size: 1em;
+  }
+  body section h2 span.b-text {
+    font-size: 9.16em;
+    line-height: 1.2;
+  }
+  body section h2 span.sm-text {
+    font-size: 3.75em;
+  }
+  body header {
+    background-image: url("../img/be-box/header-mob-bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 10em;
+    min-height: auto;
+  }
+  body header .bg-outer {
+    display: none;
+  }
+  body header nav {
+    padding: 3em 0;
+  }
+  body header nav .contacts {
+    display: none;
+  }
+  body header nav .logo {
+    margin-left: auto;
+  }
+  body header nav .logo img.imgLogo {
+    width: 6.3em;
+  }
+  body header nav .logo .textLogo {
+    margin-left: 1.5em;
+  }
+  body header nav .logo .textLogo span.name {
+    font-size: 4.2em;
+  }
+  body header nav .logo .textLogo span.desc {
+    font-size: 1.9em;
+  }
+  body header nav .menu button.circle {
+    width: 75px;
+    height: 75px;
+  }
+  body header nav .menu .hamburger .hamburger-box {
+    width: 40px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner, body header nav .menu .hamburger .hamburger-box .hamburger-inner::after, body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
+    width: 40px;
+  }
+  body header .maintext-outer {
+    margin: 0;
+    position: relative;
+  }
+  body header .maintext-outer .maintext {
+    margin-top: 33em;
+  }
+  body header .maintext-outer .maintext span.tag {
+    font-size: 3.75em;
+  }
+  body header .maintext-outer .maintext h1 {
+    font-size: 10.8em;
+    max-width: 56rem;
+  }
+  body header .maintext-outer .maintext a.btn-submit {
+    width: 47rem;
+    height: 11rem;
+    font-size: 3.3em;
+    line-height: 11rem;
+    margin-top: 3rem;
+  }
+  body header .maintext-outer .maintext a.btn:hover {
+    font-size: 4.125em;
+  }
+  body header .scrollDown {
+    position: relative;
+    margin: 0;
+  }
+  body header .scrollDown p.text {
+    font-size: 2.9em;
+    max-width: none;
+    margin-top: 3.4em;
+    margin-bottom: 1.1em;
+  }
+  body section.wantsTo {
+    padding-bottom: 29em;
+  }
+  body section.wantsTo .video.active {
+    margin-top: 200px;
+  }
+  body section.wantsTo .video {
+    width: 100%;
+    margin: 0;
+    padding: 0 6em;
+  }
+  body section.wantsTo .video .preview img.img-btn {
+    width: 8.2em;
+  }
+  body section.wantsTo .video .preview .title {
+    font-size: 2.9em;
+    padding-top: 0;
+    padding-left: 3em;
+    bottom: 0;
+    margin-bottom: 2rem;
+    top: auto;
+    line-height: 1.2;
+    max-width: 55rem;
+  }
+  body section.wantsTo h2 {
+    margin-top: 28em;
+    max-width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body section.wantsTo ul.desires {
+    margin-top: 28em;
+    padding-left: 15em;
+    margin-left: 2em;
+    margin-right: 6em;
+  }
+  body section.wantsTo ul.desires li {
+    margin-top: 5rem;
+    margin-left: 0;
+    font-size: 3.75em;
+    max-width: none;
+  }
+  body section.wantsTo ul.desires li::before {
+    margin-left: -15rem;
+    margin-top: 2.2rem;
+  }
+  body section.wantsTo ul.desires li.active::before {
+    width: 8rem;
+  }
+  body section.wantsTo .photo-outer {
+    padding-top: 0;
+  }
+  body section.wantsTo .circle-text-outer {
+    width: 35em;
+    margin-top: 0;
+  }
+  body section.wantsTo .circle-text-outer img.circle-text {
+    width: 100%;
+  }
+  body section.wantsTo .circle-text-outer img.zipper {
+    width: 10.5em;
+  }
+  body section.wantsTo .circle-text-outer .photo2, body section.wantsTo .circle-text-outer .photo1 {
+    width: 80em;
+    height: 53.4em;
+    background-size: contain;
+  }
+  body section.wantsTo .circle-text-outer .photo1 {
+    bottom: 12.5em;
+    left: 0;
+    margin-left: -14em;
+  }
+  body section.wantsTo .circle-text-outer .photo2 {
+    top: 16.5em;
+    left: auto;
+    right: 0;
+    margin: 0;
+    margin-right: -14em;
+  }
+  body section.wantsTo .figure-block {
+    margin-top: 49em;
+    text-align: center;
+  }
+  body section.wantsTo .figure-block .fb-img {
+    display: inline-block;
+    height: 25em;
+    background-size: 34em;
+    margin-left: -34em;
+  }
+  body section.wantsTo .figure-block .fb-img.active {
+    width: 34em;
+    margin-left: 0;
+  }
+  body section.wantsTo .figure-block p {
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 20px;
+    font-size: 4.58em;
+    max-width: 60rem;
+  }
+  body section.wantsTo .figure-block p br {
+    display: none;
+  }
+  body section.whatGet {
+    padding-top: 37.5em;
+    background-size: 205%;
+  }
+  body section.whatGet h2 {
+    max-width: 63.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body section.whatGet h2 span.sm-text {
+    line-height: 1.2;
+  }
+  body section.whatGet .advantages {
+    margin-top: 0;
+    padding-top: 15em;
+    padding-bottom: 15em;
+  }
+  body section.whatGet .advantages .table {
+    margin: 0;
+  }
+  body section.whatGet .advantages .table .item {
+    width: 100%;
+    max-width: 54em;
+    margin-bottom: 7em;
+  }
+  body section.whatGet .advantages .table .item p {
+    font-size: 3.3em;
+    margin-left: 3.5rem;
+  }
+  body section.whatGet .advantages .table .item p br {
+    display: none;
+  }
+  body section.whatGet .advantages .table .item img {
+    width: 7.6em;
+  }
+  body section.whatGet .advantages a.btn-subscribe {
+    width: 47rem;
+    height: 11rem;
+    font-size: 3.3em;
+    line-height: 11rem;
+    margin-top: 3rem;
+  }
+  body section.whatGet .advantages a.btn:hover {
+    font-size: 3.9em;
+  }
+  body section.antidepr {
+    height: auto;
+    background-size: cover;
+    margin-top: 30em;
+    margin-bottom: 30em;
+    background-position: 40% 0;
+  }
+  body section.antidepr .text-block {
+    padding-top: 38em;
+    margin-right: 10em;
+    padding-bottom: 1em;
+  }
+  body section.antidepr .text-block h3 {
+    line-height: 1.2;
+  }
+  body section.antidepr .text-block h3 span.sm-text {
+    font-size: 4.5rem;
+  }
+  body section.antidepr .text-block h3 span.b-text {
+    font-size: 6.66em;
+    line-height: 1;
+  }
+  body section.antidepr .text-block p.desc {
+    font-size: 3.4rem;
+    margin-top: 8.2rem;
+    margin-bottom: 3.3rem;
+    max-width: 46.2rem;
+  }
+  body section.antidepr img.cross1 {
+    width: 6.1em;
+    height: 6.1em;
+    top: 7em;
+    left: 2em;
+  }
+  body section.antidepr img.cross2 {
+    width: 12.5em;
+    height: 12.5em;
+    top: 29em;
+    right: 5em;
+  }
+  body section.antidepr img.cross3 {
+    left: auto;
+    right: 14em;
+    width: 9em;
+    height: 9em;
+    bottom: -4.2em;
+  }
+  body section.reasons {
+    padding-top: 14em;
+    padding-bottom: 14em;
+  }
+  body section.reasons .table {
+    margin: 0;
+    margin-top: 10em;
+    display: block;
+    padding: 0 3em;
+  }
+  body section.reasons .table .item {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10em;
+  }
+  body section.reasons .table .item .number {
+    font-size: 10em;
+  }
+  body section.reasons .table .item p {
+    margin-top: 1em;
+    font-size: 3.3em;
+  }
+  body section.reasons .table .heart-boxing {
+    width: 43.6em;
+    height: 40.1em;
+    margin: 0 auto;
+    margin-top: 2em;
+    line-height: 37em;
+  }
+  body section.reasons .table .heart-boxing span {
+    font-size: 9.4em;
+  }
+  body section.videos {
+    margin: 29em 0;
+    padding: 0 3em;
+  }
+  body section.videos .container {
+    padding: 14em 0 5em 0;
+  }
+  body section.videos .container h2 {
+    margin-bottom: 9em;
+  }
+  body section.videos .container h2 span.sm-text {
+    display: inline-block;
+    max-width: 13.33em;
+  }
+  body section.videos .container h2 span.sm-text span.tag {
+    display: block;
+  }
+  body section.videos .container .table {
+    display: block;
+    margin: 0;
+    padding: 0 3em;
+  }
+  body section.videos .container .table .video-item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 9em;
+  }
+  body section.videos .container .table .video-item .video .preview img.img-btn {
+    width: 8.7em;
+  }
+  body section.videos .container .table .video-item p.desc {
+    font-size: 3.3em;
+    margin-top: 1em;
+  }
+  body section.trainer {
+    height: auto;
+    background-image: url("../img/be-box/trainer-bg-mob.jpg");
+    background-size: contain;
+  }
+  body section.trainer .container img.aim2 {
+    width: 6em;
+    height: 6em;
+    margin-left: 2em;
+    margin-top: 64.2em;
+    margin-bottom: auto;
+    top: 0;
+    bottom: auto;
+  }
+  body section.trainer .container img.aim1 {
+    width: 11.2em;
+    height: 11.2em;
+    margin-top: -5.6em;
+    margin-right: 13.6em;
+  }
+  body section.trainer .text-block {
+    padding-top: 4.5em;
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+  body section.trainer .text-block h2 {
+    line-height: 1.2;
+  }
+  body section.trainer .text-block h2 span.b-text {
+    font-size: 6.66em;
+  }
+  body section.trainer .text-block h2 span.sm-text {
+    font-size: 3.33em;
+    line-height: 0.4;
+  }
+  body section.trainer .text-block .trainer-img {
+    position: relative;
+    width: 95%;
+    margin-left: auto;
+    margin-top: 35em;
+  }
+  body section.trainer .text-block .desc {
+    margin-top: 0;
+  }
+  body section.trainer .text-block .desc p.text {
+    margin-top: 0;
+    font-size: 3.4rem;
+  }
+  body section.trainer .text-block .desc p.subhead {
+    font-size: 4rem;
+  }
+  body section.gym {
+    padding: 29em 0;
+    background-position: center;
+  }
+  body section.gym h2 {
+    margin-bottom: 9.5em;
+  }
+  body section.buyCourse {
+    padding-bottom: 45.5em;
+  }
+  body section.buyCourse h2 {
+    margin-bottom: 29em;
+  }
+  body section.buyCourse .container {
+    padding: 0;
+  }
+  body section.buyCourse .container .course-card {
+    position: relative;
+    display: block;
+    padding-top: 15em;
+    padding-bottom: 39em;
+  }
+  body section.buyCourse .container .course-card .text-block, body section.buyCourse .container .course-card .btns-block {
+    width: 100%;
+  }
+  body section.buyCourse .container .course-card .text-block {
+    text-align: left;
+    padding-left: 11em;
+    padding-right: 9em;
+  }
+  body section.buyCourse .container .course-card .text-block ul li::before {
+    width: 11em;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+  body section.buyCourse .container .course-card .text-block ul li {
+    font-size: 3.33em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }
+  body section.buyCourse .container .course-card .text-block .video {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 6em;
+    left: 0;
+    margin-bottom: -22%;
+    margin-top: 5.5em;
+  }
+  body section.buyCourse .container .course-card .text-block .video .preview {
+    position: relative;
+    height: auto;
+  }
+  body section.buyCourse .container .course-card .text-block .video .preview img.img-btn {
+    width: 8.7em;
+  }
+  body section.buyCourse .container .course-card .text-block .video img.poster {
+    position: relative;
+    vertical-align: bottom;
+  }
+  body section.buyCourse .container .course-card .text-block .video .title {
+    position: absolute;
+    top: 0;
+    padding-left: 4.7rem;
+    padding-right: 1em;
+    padding-top: 2.7rem;
+    font-size: 2.6em;
+    line-height: 1;
+  }
+  body section.buyCourse .container .course-card .btns-block span.price {
+    display: block;
+    text-align: center;
+  }
+  body section.buyCourse .container .course-card .btns-block span.price span.number {
+    font-size: 16.53em;
+  }
+  body section.buyCourse .container .course-card .btns-block span.price span.text {
+    font-size: 5.06em;
+  }
+  body section.buyCourse .container .course-card .btns-block span.price, body section.buyCourse .container .course-card .btns-block a.btn {
+    margin: 0;
+  }
+  body section.buyCourse .container .course-card .btns-block a.btn {
+    width: 53.3rem;
+    height: 11rem;
+    font-size: 3.3em;
+    line-height: 11rem;
+    margin-top: 2rem;
+  }
+  body section.buyCourse .container .course-card .btns-block a.btn:hover {
+    font-size: 4.125em;
+  }
+  body section.buyCourse .container .course-card .btns-block a.btn-buyNow:hover {
+    font-size: 3em;
+  }
+  body section.buyCourse .container .course-card .btns-block a.btn-buyNow {
+    font-size: 2.7em;
+    line-height: 9.9rem;
+  }
+  body section.finishing {
+    height: 57em;
+    background-size: cover;
+    padding-top: 36em;
+  }
+  body footer {
+    padding: 29em 0;
+  }
+  body footer .footer-d-flex {
+    display: block;
+    text-align: center;
+  }
+  body footer .footer-d-flex .logo {
+    text-align: left;
+  }
+  body footer .footer-d-flex .logo img.imgLogo {
+    width: 6.3em;
+  }
+  body footer .footer-d-flex .logo .textLogo {
+    margin-left: 1.5em;
+  }
+  body footer .footer-d-flex .logo .textLogo span.name {
+    font-size: 4.2em;
+  }
+  body footer .footer-d-flex .logo .textLogo span.desc {
+    font-size: 1.9em;
+  }
+  body footer .footer-d-flex a.phone {
+    display: block;
+    font-size: 5em;
+    margin: 3em 0;
+  }
+  body footer .footer-d-flex a.btn-submit {
+    width: 47rem;
+    height: 11rem;
+    font-size: 3.3em;
+    line-height: 11rem;
+    margin-top: 3rem;
+  }
+  body footer .footer-d-flex a.btn:hover {
+    font-size: 4.125em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body nav.menu {
+    min-width: 390px;
+  }
+  body nav.menu.hidden {
+    left: -390px;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  body, html {
+    font-size: 6.66px;
+  }
+  body .scrollText-block {
+    height: 60px;
+    background-size: 574px;
+  }
+  @-webkit-keyframes scrollText {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: -574px;
+    }
+  }
+  @keyframes scrollText {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: -574px;
+    }
+  }
+  body header nav .menu button.circle {
+    width: 66px;
+    height: 66px;
+  }
+  body header nav .menu .hamburger .hamburger-box {
+    width: 35px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner, body header nav .menu .hamburger .hamburger-box .hamburger-inner::after, body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
+    width: 35px;
+  }
+  body header .maintext {
+    margin-top: 29em;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  body, html {
+    font-size: 5px;
+  }
+  body header nav .menu button.circle {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+  body header nav .menu .hamburger .hamburger-box {
+    width: 25px;
+    height: 19px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner, body header nav .menu .hamburger .hamburger-box .hamburger-inner::after, body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
+    width: 25px;
+    height: 3px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner {
+    top: 2px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner::before {
+    top: 8px;
+  }
+  body header nav .menu .hamburger .hamburger-box .hamburger-inner::after {
+    top: 16px;
+  }
+  body header nav .menu .hamburger--slider.is-active .hamburger-inner::after {
+    -webkit-transform: translate3d(0, -16px, 0) rotate(-90deg);
+            transform: translate3d(0, -16px, 0) rotate(-90deg);
+  }
+  body header nav .menu .hamburger--slider.is-active .hamburger-inner {
+    -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
+            transform: translate3d(0, 8px, 0) rotate(45deg);
+  }
+  body header .maintext-outer .maintext {
+    margin-top: 15em;
+  }
+  body section.wantsTo .container {
+    padding-top: 30%;
+    margin-top: -30%;
+  }
+  body section.wantsTo .container ul.desires {
+    margin-top: 7.5em;
+  }
+  body section.whatGet h2 {
+    margin-top: 20em;
+  }
+  body section.trainer {
+    background-position-y: top;
+  }
+  body section.trainer .text-block .trainer-img {
+    margin-bottom: 5em;
+    margin-top: 40em;
+  }
+  body section.videos .container .table {
+    margin-bottom: -15%;
+  }
+  body section.gym .gym-carousel .owl-nav button.owl-next, body section.gym .gym-carousel .owl-nav button.owl-prev, body section.gym .gym-carousel .owl-nav button:hover, body section.gym .gym-carousel .owl-nav button:focus {
+    width: 30px;
+    height: 30px;
+  }
+  body section.gym .gym-carousel .owl-nav button.owl-next {
+    background-size: 11px;
+    background-position: 9px center;
+    margin-right: 2%;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background-image: url("../img/be-box/owl-prev.svg");
+  }
+  body section.gym .gym-carousel .owl-nav button.owl-prev {
+    background-size: 11px;
+    background-position: 9px center;
+    margin-left: 2%;
+  }
+  body section.buyCourse .course-card .text-block ul li::before {
+    top: 1px;
+  }
+  body footer .footer-d-flex .logo .textLogo span.name {
+    font-size: 4.2em;
+  }
+  body footer .footer-d-flex .logo .textLogo span.desc {
+    font-size: 1.9em;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  body section.wantsTo .video .preview .title {
+    font-size: 2.2em;
+  }
+  body section h2 span.b-text {
+    font-size: 8em;
+  }
+  body section.whatGet .advantages .table .item {
+    margin-left: 2em;
+  }
+  body section.trainer .text-block .desc {
+    font-size: 3.2em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body nav.menu {
+    padding-top: 125px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body nav.menu {
+    width: 100%;
+    min-width: 320px;
+  }
+  body nav.menu ul li.item a {
+    font-size: 20px;
+  }
+  body nav.menu.hidden {
+    left: -100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body section.buyCourse .course-card .text-block .video {
+    margin-bottom: -30px;
+  }
+}

@@ -43,8 +43,8 @@ gulp.task('styles:dev', function() {
 
 gulp.task('styles:build', function() {
 	return gulp.src('app/css/*.css')
-	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
-	.pipe(autoprefixer(['last 15 versions']))
+	// .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
+	// .pipe(autoprefixer(['last 15 versions']))
 	// .pipe(cleancss( {level: { 1: { specialComments: 0 } } }))
 	.pipe(gulp.dest('dist/css'))
 });
@@ -72,31 +72,40 @@ gulp.task('html:build', function(){
         pretty: true
     }))
 
-    .pipe(pug())
+    // .pipe(pug())
 
     .pipe(gulp.dest('dist'))
 });
 
 
-gulp.task('img', function() {
-    gulp.src('app/img/**/*.jpg')
-        .pipe(imagemin([
-            jpegoptim({
-                progressive: true,
-                max: 40,
-                stripAll: true
-            })
-        ],{
-            verbose: true
-        }))
+gulp.task('img-jpg', function() {
+	return gulp.src('app/img/**/*.jpg')
+		.pipe(imagemin([
+			jpegoptim({
+				progressive: true,
+				max: 90,
+				stripAll: true
+			})
+		],{
+			verbose: true
+		}))
 		.pipe(gulp.dest('dist/img'))
-    gulp.src('app/img/**/*.png')
-        .pipe(pngquant({quality: 50, speed: 5}))
+});
+gulp.task('img-png', function() {
+	return gulp.src('app/img/**/*.png')
+		.pipe(pngquant({quality: 50, speed: 5}))
 		.pipe(gulp.dest('dist/img'))
-    gulp.src('app/img/**/*.svg')
-    .pipe(gulp.dest('dist/img')) 
-  gulp.src('app/img/**/*.*')
-  .pipe(gulp.dest('dist/img'))
+
+});
+gulp.task('svg', function() {
+	return gulp.src('app/img/**/*.svg')
+		.pipe(gulp.dest('dist/img'))
+
+});
+gulp.task('fonts', function() {
+	return gulp.src('app/fonts/**/*.*')
+		.pipe(gulp.dest('dist/fonts'))
+
 });
 
 // gulp.task('rsync', function() {
@@ -122,7 +131,7 @@ gulp.task('watch', function() {
 });
 gulp.task('default', gulp.parallel('styles:dev', 'html:dev', 'browser-sync', 'watch'));
 
-gulp.task('build', gulp.parallel('styles:build', 'scripts', 'html:build', 'img'));
+gulp.task('build', gulp.parallel('styles:build', 'scripts', 'html:build', 'img-png', 'img-jpg', 'svg', 'fonts'));
 
 
 

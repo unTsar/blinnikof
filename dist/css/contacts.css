@@ -14,11 +14,11 @@ section.contacts .ymap .map {
   height: 100%;
   z-index: 2;
   -webkit-mask: url("../img/additional/bg6-mask.png");
-  mask: url("../img/additional/bg6-mask.png");
+          mask: url("../img/additional/bg6-mask.png");
   -webkit-mask-position: top;
-  mask-position: top;
+          mask-position: top;
   -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
 }
 
 section.contacts .ymap .bg-mobile {

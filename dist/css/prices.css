@@ -31,6 +31,22 @@
 }
 
 @font-face {
+  font-family: "MullerLightItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot");
+  src: url("../fonts/MullerLightItalic/MullerLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLightItalic/MullerLightItalic.woff") format("woff"), url("../fonts/MullerLightItalic/MullerLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerThin";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerThin/MullerThin.eot");
+  src: url("../fonts/MullerThin/MullerThin.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerThin/MullerThin.woff") format("woff"), url("../fonts/MullerThin/MullerThin.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "MullerMedium";
   font-weight: normal;
   font-style: normal;
@@ -52,6 +68,14 @@
   font-style: normal;
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
   src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MullerBlack";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBlack/MullerBlack.eot");
+  src: url("../fonts/MullerBlack/MullerBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBlack/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype");
 }
 
 main section.header .container {
@@ -107,7 +131,6 @@ main section.schoolProgress {
   padding-top: 150px;
   padding-bottom: 85px;
   background-image: url("../img/prices/prices-schoolProgress-bg.png");
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -120,7 +143,7 @@ main section.schoolProgress .steps {
 
 main section.schoolProgress .steps .step:hover {
   -webkit-box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
-  box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
+          box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
 }
 
 main section.schoolProgress .steps .step:hover .buy .button {
@@ -128,11 +151,10 @@ main section.schoolProgress .steps .step:hover .buy .button {
 }
 
 main section.schoolProgress .steps .step {
-  -webkit-border-radius: 8px;
   border-radius: 8px;
   background-color: #fff;
   -webkit-box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
-  box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
+          box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -145,7 +167,6 @@ main section.schoolProgress .steps .step .header {
 
 main section.schoolProgress .steps .step .header .circle {
   margin-right: 5px;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #e93333;
   width: 38px;
@@ -226,7 +247,6 @@ main section.schoolProgress .steps .step .buy .button {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  -webkit-border-radius: 30px;
   border-radius: 30px;
   cursor: pointer;
   margin-top: 25px;
@@ -245,7 +265,6 @@ main section.sizePlus {
   border-top-width: 4px;
   border-top-style: solid;
   background-image: url("../img/prices/prices-sizePlus-bg.png");
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -260,7 +279,7 @@ main section.sizePlus .courses {
 
 main section.sizePlus .courses .course:hover {
   -webkit-box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
-  box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
+          box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
 }
 
 main section.sizePlus .courses .course:hover .buy .button {
@@ -271,11 +290,10 @@ main section.sizePlus .courses .course {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  -webkit-border-radius: 8px;
   border-radius: 8px;
   background-color: #fff;
   -webkit-box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
-  box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
+          box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
 }
 
 main section.sizePlus .courses .course .header {
@@ -287,7 +305,6 @@ main section.sizePlus .courses .course .header {
 main section.sizePlus .courses .course .header .circle {
   margin-right: 7.5px;
   margin-bottom: 20px;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #e93333;
   width: 38px;
@@ -373,7 +390,6 @@ main section.sizePlus .courses .course .buy .button {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  -webkit-border-radius: 30px;
   border-radius: 30px;
   cursor: pointer;
   margin-top: 25px;
@@ -409,7 +425,7 @@ main section.schoolSupport .head span.head span.red {
 
 main section.schoolSupport .courses .course:hover {
   -webkit-box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
-  box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
+          box-shadow: 1.8px 7.795px 68px 0px rgba(225, 26, 26, 0.43);
 }
 
 main section.schoolSupport .courses .course:hover .buy .button {
@@ -421,11 +437,10 @@ main section.schoolSupport .courses .course {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  -webkit-border-radius: 8px;
   border-radius: 8px;
   background-color: #fff;
   -webkit-box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
-  box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
+          box-shadow: 1.8px 7.795px 27px 0px rgba(67, 67, 67, 0.09);
 }
 
 main section.schoolSupport .courses .course .header {
@@ -435,7 +450,6 @@ main section.schoolSupport .courses .course .header {
 
 main section.schoolSupport .courses .course .header .circle {
   margin-right: 5px;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #e93333;
   width: 35px;
@@ -522,7 +536,6 @@ main section.schoolSupport .courses .course .buy .button {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  -webkit-border-radius: 30px;
   border-radius: 30px;
   cursor: pointer;
   margin-top: 25px;
@@ -556,8 +569,8 @@ main section.schoolSupport .courses .course .buy .button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body main section.schoolProgress .steps .step .header .wrap {
     margin-bottom: 10px;
@@ -589,7 +602,6 @@ main section.schoolSupport .courses .course .buy .button {
     background-color: #303030;
     padding-top: 190px;
     padding-bottom: 0;
-    -webkit-background-size: auto auto;
     background-size: auto;
   }
   body main section.schoolProgress .container .head {
@@ -617,8 +629,8 @@ main section.schoolSupport .courses .course .buy .button {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
   }
@@ -654,8 +666,8 @@ main section.schoolSupport .courses .course .buy .button {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
   }
@@ -673,7 +685,6 @@ main section.schoolSupport .courses .course .buy .button {
   }
   body main section.sizePlus {
     background-color: #303030;
-    -webkit-background-size: auto auto;
     background-size: auto;
   }
   body main section.sizePlus .container .head span.head {
