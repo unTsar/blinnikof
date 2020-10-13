@@ -83,7 +83,7 @@ gulp.task('img-jpg', function() {
 		.pipe(imagemin([
 			jpegoptim({
 				progressive: true,
-				max: 90,
+				max: 80,
 				stripAll: true
 			})
 		],{
